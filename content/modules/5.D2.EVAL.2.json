@@ -1,0 +1,269 @@
+{
+  "id": "5.D2.EVAL.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Savoir reconnaître la fiabilité d'une information en évaluant ses producteurs et ses transmetteurs.",
+  "titre": "Fiable ou pas fiable ?",
+  "accroche": "Deux sites annoncent la même découverte. L'un est sérieux, l'autre veut juste tes clics. Sauras-tu les départager ?",
+  "documents": {
+    "articleDouteux": {
+      "template": "site-article",
+      "nomSite": "BUZZ-ANIMAUX.NET",
+      "url": "http://buzz-animaux.net/lezard-geant-incroyable",
+      "menu": ["Accueil", "Chocs", "Insolite", "Tests"],
+      "surtitre": "Insolite",
+      "titre": "INCROYABLE !!! Un LÉZARD GÉANT découvert, les scientifiques CACHENT la vérité 😱",
+      "chapo": "Tu ne devineras JAMAIS ce que cette créature peut faire. Les images sont CHOQUANTES.",
+      "corps": [
+        "Des témoins auraient vu un lézard « aussi grand qu'une voiture ». Les autorités refusent de répondre, ce qui prouve bien qu'on nous cache quelque chose.",
+        "PARTAGE VITE cet article avant qu'il soit supprimé !!!"
+      ],
+      "pub": "GAGNE un smartphone en 1 clic — il ne reste que 2 minutes !",
+      "footer": []
+    },
+    "articleSerieux": {
+      "template": "site-article",
+      "nomSite": "SCIENCES-JUNIOR.FR",
+      "url": "https://www.sciences-junior.fr/nature/nouveau-gecko-madagascar",
+      "menu": ["Accueil", "Nature", "Espace", "Corps humain", "Quiz"],
+      "surtitre": "Nature",
+      "titre": "Une nouvelle espèce de gecko découverte à Madagascar",
+      "auteur": "Par Nadia Rousseau, journaliste scientifique",
+      "date": "Publié le 3 mars 2026",
+      "chapo": "Une équipe du Muséum national d'histoire naturelle décrit un petit lézard inconnu jusqu'ici, dans une étude publiée par la revue Zootaxa.",
+      "corps": [
+        "Le gecko, long de 9 centimètres, a été repéré lors d'une mission dans le nord de l'île. « Sa peau se détache quand un prédateur l'attrape, ce qui lui permet de fuir », explique la chercheuse Aina Rakoto, co-autrice de l'étude.",
+        "L'équipe estime qu'il reste de nombreuses espèces à découvrir dans cette région, menacée par la déforestation."
+      ],
+      "footer": ["Qui sommes-nous ?", "Mentions légales", "Nos sources", "Contact"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleDouteux",
+          "questions": [
+            {
+              "question": "Cherche l'auteur et la date de cet article. Que trouves-tu ?",
+              "options": [
+                "Un auteur identifié et une date récente",
+                "Un auteur mais pas de date",
+                "Ni auteur, ni date",
+                "Une date mais pas d'auteur"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : personne ne signe, rien n'est daté. Personne n'assume cette « information » — premier gros signal d'alarme sur ce transmetteur.",
+              "feedbackKo": "Cherche bien : aucune signature, aucune date nulle part. Quand personne n'assume une information, c'est un premier signal d'alarme sérieux."
+            },
+            {
+              "question": "« PARTAGE VITE avant que l'article soit supprimé !!! » — pourquoi cette phrase doit-elle t'alerter ?",
+              "options": [
+                "C'est un conseil sympa entre internautes",
+                "L'urgence est une technique pour t'empêcher de vérifier",
+                "Ça prouve que l'info est importante",
+                "Tous les sites sérieux écrivent ça"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : l'urgence (comme le cadeau « en 1 clic » dans la pub) est une technique de manipulation classique. Une info vraie n'a pas besoin que tu te dépêches — elle sera encore vraie demain.",
+              "feedbackKo": "L'urgence est une technique de manipulation : te presser pour t'empêcher de réfléchir et de vérifier. Une information vraie sera encore vraie demain — celui qui te bouscule a quelque chose à te faire avaler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Trie ces sources comme un enquêteur : on peut s'y fier, ou il faut vérifier d'abord ?",
+          "categories": [
+            { "id": "fiable", "label": "✓ On peut s'y fier" },
+            { "id": "verifier", "label": "⚠ À vérifier d'abord" }
+          ],
+          "items": [
+            {
+              "texte": "Article signé d'une journaliste, daté d'hier, qui cite l'étude d'origine",
+              "categorie": "fiable",
+              "feedbackOk": "Oui : auteur identifié + date + sources citées, le trio gagnant de la fiabilité.",
+              "feedbackKo": "Signature, date, sources citées : ce transmetteur assume et permet de vérifier. On peut s'y fier (tout en gardant l'esprit critique)."
+            },
+            {
+              "texte": "Site officiel qui se termine en .gouv.fr",
+              "categorie": "fiable",
+              "feedbackOk": "Exact : les adresses en .gouv.fr appartiennent à l'État. Le producteur est clairement identifié et responsable.",
+              "feedbackKo": ".gouv.fr = site officiel de l'État français. On sait exactement qui parle et qui est responsable du contenu."
+            },
+            {
+              "texte": "Vidéo sans date ni auteur reçue sur le groupe de la classe",
+              "categorie": "verifier",
+              "feedbackOk": "Bien vu : le transmetteur (ton groupe) n'est pas la source ! Sans auteur ni date, impossible de savoir d'où elle sort.",
+              "feedbackKo": "Attention : celui qui transmet (un copain) n'est pas celui qui a produit la vidéo. Sans auteur ni date, on vérifie avant de croire — et surtout avant de repartager."
+            },
+            {
+              "texte": "Chaîne inconnue, titre tout en MAJUSCULES avec 😱😱",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : les MAJUSCULES et les émojis choc servent à provoquer l'émotion, pas à informer. Méfiance.",
+              "feedbackKo": "Titre en MAJUSCULES + émojis choc = recherche du clic et de l'émotion. Pas forcément faux, mais sûrement pas à croire sans vérifier."
+            },
+            {
+              "texte": "Article de Vikidia, l'encyclopédie relue par sa communauté",
+              "categorie": "fiable",
+              "feedbackOk": "Oui — les encyclopédies collaboratives sont relues et corrigées en continu. Pour un doute sérieux, on peut encore croiser avec une source experte.",
+              "feedbackKo": "Vikidia est relue et corrigée par sa communauté : c'est une source plutôt fiable pour ton niveau. Pour un exposé, croiser avec une deuxième source reste un bon réflexe."
+            },
+            {
+              "texte": "Post qui te promet un cadeau si tu partages",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : le cadeau contre partage est une technique d'arnaque classique. On ne partage pas, on signale.",
+              "feedbackKo": "« Cadeau si tu partages » = technique d'arnaque pour se propager grâce à toi. Jamais fiable — on ne partage pas, on signale."
+            }
+          ]
+        },
+        {
+          "consigne": "Trie ces sources comme un enquêteur : on peut s'y fier, ou il faut vérifier d'abord ?",
+          "categories": [
+            { "id": "fiable", "label": "✓ On peut s'y fier" },
+            { "id": "verifier", "label": "⚠ À vérifier d'abord" }
+          ],
+          "items": [
+            {
+              "texte": "Le site du Muséum d'histoire naturelle qui publie la découverte",
+              "categorie": "fiable",
+              "feedbackOk": "Oui : c'est le producteur de la recherche lui-même, une institution scientifique identifiée.",
+              "feedbackKo": "Un muséum est une institution scientifique : producteur identifié, responsable, spécialiste du sujet. Fiable."
+            },
+            {
+              "texte": "Un compte anonyme qui « balance des infos que les médias cachent »",
+              "categorie": "verifier",
+              "feedbackOk": "Bien vu : anonymat + posture du « on vous cache tout » = deux signaux d'alarme classiques.",
+              "feedbackKo": "Anonyme + « on vous cache la vérité » : ce discours sert à se rendre intéressant sans rien prouver. Grande méfiance."
+            },
+            {
+              "texte": "L'article d'un journal connu, signé et daté d'aujourd'hui",
+              "categorie": "fiable",
+              "feedbackOk": "Exact : rédaction identifiée, journaliste qui signe, date claire — on sait qui assume l'information.",
+              "feedbackKo": "Journal connu + signature + date : le transmetteur est identifié et engage sa réputation. On peut s'y fier."
+            },
+            {
+              "texte": "Une capture d'écran d'un titre, sans le lien vers l'article",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : une capture se fabrique ou se découpe en 30 secondes. Sans lien vers l'original, impossible de vérifier.",
+              "feedbackKo": "Une capture d'écran peut être truquée ou sortie de son contexte. Sans le lien vers l'article original, on vérifie avant de croire."
+            },
+            {
+              "texte": "La page « santé » d'un site qui vend justement le produit miracle",
+              "categorie": "verifier",
+              "feedbackOk": "Bien vu : le producteur de l'info est aussi le vendeur… Son intérêt n'est pas de t'informer, mais de vendre.",
+              "feedbackKo": "Quand celui qui informe est aussi celui qui vend, l'information est au service de la vente. À vérifier auprès d'une source neutre."
+            },
+            {
+              "texte": "Le dictionnaire en ligne utilisé par ton professeur",
+              "categorie": "fiable",
+              "feedbackOk": "Oui : ouvrage de référence, rédigé par des spécialistes et vérifié avant publication.",
+              "feedbackKo": "Un dictionnaire de référence est écrit et relu par des spécialistes : c'est un producteur fiable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleSerieux",
+          "questions": [
+            {
+              "question": "Voici la même découverte racontée par un autre site. Lequel de ces éléments N'EST PAS un indice de fiabilité ?",
+              "options": [
+                "La journaliste est nommée et son métier est indiqué",
+                "L'article cite l'étude et les chercheurs d'origine",
+                "La date de publication est affichée",
+                "Le site a un joli design"
+              ],
+              "bonnes": [3],
+              "feedbackOk": "Exact : un beau design s'achète en trois clics, même pour un site menteur. La fiabilité se juge sur le producteur (qui écrit ?) et les preuves (quelles sources ?), jamais sur le look.",
+              "feedbackKo": "Signature, sources citées et date sont de vrais indices de fiabilité. Le design, lui, ne prouve rien : les sites trompeurs peuvent être très beaux — et certains sites sérieux très moches !"
+            },
+            {
+              "question": "Compare avec l'article de BUZZ-ANIMAUX vu au début. Quelle est LA grande différence ?",
+              "options": [
+                "Celui-ci est plus long",
+                "Celui-ci permet de vérifier : auteure, date, étude citée",
+                "Celui-ci a moins d'émojis",
+                "Celui-ci parle d'un animal plus petit"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est le cœur de la fiabilité : cet article te donne les moyens de vérifier (qui écrit, quand, d'après quelle étude). L'autre te demandait juste de croire — et de partager vite.",
+              "feedbackKo": "La différence décisive : ici, tu peux vérifier — auteure identifiée, date, étude et chercheurs cités. BUZZ-ANIMAUX ne te donnait rien à vérifier : il te demandait de croire et de partager vite."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Sami", "avatar": "😱" },
+          "etapes": [
+            { "de": "eux", "texte": "URGENT regarde ce que j'ai reçu 👇" },
+            { "de": "eux", "texte": "« Le collège ferme 3 semaines à cause d'un virus informatique qui a effacé toutes les notes !! Fais tourner !! »" },
+            { "de": "eux", "texte": "on prévient tout le monde ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, vite ! Tout le monde doit savoir !",
+                  "ok": false,
+                  "feedback": "Stop : partager sans vérifier, c'est devenir soi-même un transmetteur de rumeur. Plus une fausse info circule, plus elle paraît vraie."
+                },
+                {
+                  "texte": "Attends. Qui a écrit ça ? Il y a une source ?",
+                  "ok": true,
+                  "feedback": "Le bon réflexe : avant de juger l'info, on évalue son producteur (qui l'a écrite ?) et son transmetteur (qui te l'envoie ?)."
+                },
+                {
+                  "texte": "Je demande au groupe de la classe si c'est vrai.",
+                  "ok": false,
+                  "feedback": "Le groupe ne sait pas mieux que toi — il a reçu le même message ! Demander autour de soi n'est pas vérifier : il faut remonter à la source."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "euh… c'est une capture d'écran, y a pas de nom, pas de date, pas de lien 🤔" },
+            {
+              "choix": [
+                {
+                  "texte": "Donc personne ne peut vérifier. On ne partage pas.",
+                  "ok": true,
+                  "feedback": "Exactement : sans producteur identifiable, l'information est invérifiable — et une info invérifiable ne se partage pas."
+                },
+                {
+                  "texte": "Pas grave, ça a l'air vrai quand même. Trois semaines sans cours 🤩",
+                  "ok": false,
+                  "feedback": "« Ça a l'air vrai » et « j'ai envie que ce soit vrai » sont les deux meilleurs amis des rumeurs. Justement quand une info nous arrange : on vérifie deux fois."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok on checke le site du collège et l'ENT… rien. On demandera à la vie scolaire demain." },
+            { "de": "info", "texte": "Le lendemain : aucune fermeture, les notes vont très bien. La rumeur s'est arrêtée… en partie grâce à vous deux. 🕵️" }
+          ]
+        }
+      ]
+    }
+  ]
+}

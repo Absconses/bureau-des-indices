@@ -1,0 +1,249 @@
+/* ==========================================================================
+   BUREAU DES INDICES — Design tokens v1
+   Plateforme EMI collège (11-15 ans) · Direction « enquête »
+   Mobile-first (écrans conçus à 390 px) · Contrastes AA · Cibles ≥ 44 px
+   Polices : IBM Plex Sans + IBM Plex Mono (Google Fonts, auto-hébergeables)
+   ========================================================================== */
+
+:root {
+
+  /* ----- 1. FONDS & ENCRE -------------------------------------------------
+     Papier crème + encre noire. Le noir #1C1B18 sert de couleur de texte,
+     de bordure structurante (2px) et de bouton primaire. */
+  --paper:        #F5F0E6;  /* fond général des écrans */
+  --paper-raised: #FFFDF7;  /* cartes, champs, surfaces posées sur le fond */
+  --paper-sunken: #F0EADB;  /* éléments désactivés / verrouillés */
+  --paper-track:  #E4DECD;  /* piste des barres de progression */
+  --ink:          #1C1B18;  /* texte principal, bordures, bouton primaire */
+  --ink-soft:     #5A564C;  /* texte secondaire (AA sur --paper) */
+  --ink-faint:    #8A8577;  /* légendes, labels — réserver aux textes ≥ 14px gras ou décoratifs */
+  --line:         #D8D2C2;  /* bordures discrètes, séparateurs */
+  --dark:         #1C1B18;  /* fond des écrans « mode chrono » ; texte inversé : --paper */
+
+  /* ----- 2. ACCENT DE MARQUE ---------------------------------------------- */
+  --brand:        oklch(0.58 0.19 30);   /* rouge tampon — logo, ombre du bouton primaire, XP gagnés */
+
+  /* ----- 3. COULEURS SÉMANTIQUES ------------------------------------------
+     Jamais seules : toujours couleur + icône (✓ / ✕ / ⚠) + texte. */
+  --ok:           oklch(0.45 0.12 150);  /* juste — fond de bandeau, bordure */
+  --ok-soft:      oklch(0.52 0.13 150 / 0.14);  /* fond de bouton « bonne réponse » */
+  --ok-ink:       oklch(0.32 0.10 150);  /* texte sur fond --ok-soft */
+  --ko:           oklch(0.47 0.17 25);   /* faux */
+  --ko-soft:      oklch(0.54 0.19 25 / 0.12);
+  --ko-ink:       oklch(0.35 0.14 25);
+  --neutral:      var(--ink-soft);       /* feedback neutre / « passé » */
+
+  /* ----- 4. COULEUR PAR DOMAINE DU PROGRAMME ------------------------------ */
+  --d1: oklch(0.50 0.15 250);  /* Dossier 01 — Chercher l'information (bleu) */
+  --d2: oklch(0.55 0.12 80);   /* Dossier 02 — Vérifier & analyser (ocre) */
+  --d3: oklch(0.50 0.13 310);  /* Dossier 03 — Publier & interagir (violet) */
+  /* Sur ces trois couleurs le texte est --paper-raised (AA). */
+
+  /* ----- 5. MÉDAILLES ------------------------------------------------------
+     Tampon « Affaire classée » : cercle pointillé incliné -8°.
+     bronze ≥ 50 % · argent ≥ 75 % · or = 100 % */
+  --medal-bronze:      oklch(0.55 0.07 55);
+  --medal-bronze-ink:  oklch(0.42 0.07 55);
+  --medal-silver:      oklch(0.62 0.015 260);
+  --medal-silver-ink:  oklch(0.45 0.015 260);
+  --medal-gold:        oklch(0.60 0.12 85);
+  --medal-gold-ink:    oklch(0.48 0.11 85);
+  --medal-gold-soft:   oklch(0.72 0.13 85 / 0.15);
+
+  /* ----- 6. TYPOGRAPHIE -----------------------------------------------------
+     Sans = titres, questions, corps. Mono = labels, boutons, chiffres, codes.
+     Les labels mono sont en MAJUSCULES + letter-spacing 0.06-0.1em. */
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --text-xs:   11px;  /* labels mono majuscules */
+  --text-sm:   13px;  /* texte secondaire, feedback */
+  --text-base: 15px;  /* corps, options de réponse */
+  --text-md:   17px;  /* question, titre de carte */
+  --text-lg:   20px;  /* proposition chrono */
+  --text-xl:   26px;  /* titre d'écran */
+  --text-2xl:  30px;  /* titre d'accueil */
+  --leading-tight: 1.15;
+  --leading-body:  1.5;
+
+  /* ----- 7. ESPACEMENTS (base 4) ------------------------------------------ */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;   /* marge latérale standard des écrans 390px */
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+
+  /* ----- 8. RAYONS ---------------------------------------------------------- */
+  --r-sm:   6px;    /* tags, badges rectangulaires */
+  --r-md:   10px;   /* champs, petits boutons */
+  --r-lg:   12px;   /* boutons pleine largeur, cartes de liste */
+  --r-xl:   14px;   /* cartes de domaine */
+  --r-2xl:  16px;   /* panneaux, zones de dépôt */
+  --r-full: 999px;  /* barres de progression, pastilles */
+
+  /* ----- 9. BORDURES & OMBRES ------------------------------------------------
+     Le style repose sur des bordures franches + ombres dures décalées
+     (pas de flou). L'ombre dure signale l'élément actif / saisissable. */
+  --border-strong: 2px solid var(--ink);
+  --border-soft:   1.5px solid var(--line);
+  --shadow-pop:    4px 4px 0 var(--brand);        /* bouton primaire */
+  --shadow-card:   3px 3px 0 var(--line);         /* carte saisissable (drag) */
+  --shadow-ok:     3px 3px 0 var(--ok);           /* réponse juste */
+  --shadow-ko:     3px 3px 0 var(--ko);           /* réponse fausse */
+  --shadow-press:  0 5px 0;                       /* + couleur foncée : boutons GO/NO GO */
+
+  /* ----- 10. TAILLES TACTILES ------------------------------------------------ */
+  --tap-min:  44px;   /* minimum absolu (boutons icône, lignes de liste) */
+  --tap-cta:  52px;   /* boutons de réponse, CTA standard */
+  --tap-big:  56px;   /* CTA principal d'écran */
+  --tap-game: 84px;   /* GO / NO GO */
+}
+
+/* ==========================================================================
+   COMPOSANTS DE RÉFÉRENCE
+   ========================================================================== */
+
+/* --- Bouton primaire --- */
+.btn-primary {
+  min-height: var(--tap-big);
+  border: var(--border-strong);
+  border-radius: var(--r-lg);
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 14px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-pop);
+  cursor: pointer;
+}
+.btn-primary:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--brand); }
+
+/* --- Bouton secondaire --- */
+.btn-secondary {
+  min-height: var(--tap-min);
+  border: var(--border-strong);
+  border-radius: var(--r-lg);
+  background: var(--paper-raised);
+  color: var(--ink);
+  font: 600 13px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* --- Bouton de réponse (QCM) --- */
+.btn-answer {
+  min-height: var(--tap-cta);
+  border: var(--border-strong);
+  border-radius: var(--r-lg);
+  background: var(--paper-raised);
+  padding: var(--sp-3) var(--sp-4);
+  display: flex; align-items: center; gap: var(--sp-3);
+  text-align: left;
+  font: 600 14px/1.35 var(--font-sans);
+  color: var(--ink);
+  cursor: pointer;
+}
+.btn-answer[data-state="correct"] {
+  border-color: var(--ok); background: var(--ok-soft);
+  color: var(--ok-ink); box-shadow: var(--shadow-ok);
+}
+.btn-answer[data-state="wrong"] {
+  border-color: var(--ko); background: var(--ko-soft);
+  color: var(--ko-ink); box-shadow: var(--shadow-ko);
+}
+.btn-answer[data-state="dimmed"] {
+  border-color: var(--line); background: var(--paper-sunken); color: var(--ink-faint);
+}
+
+/* --- Champ de saisie --- */
+.field {
+  height: var(--tap-cta);
+  border: var(--border-strong);
+  border-radius: var(--r-md);
+  background: var(--paper);
+  padding: 0 14px;
+  font: 600 16px var(--font-mono);
+  color: var(--ink);
+}
+.field:focus { outline: none; border-color: var(--brand); background: var(--paper-raised); }
+
+/* --- Carte de domaine / module --- */
+.card {
+  background: var(--paper-raised);
+  border: var(--border-strong);
+  border-radius: var(--r-xl);
+  padding: var(--sp-4);
+  position: relative; /* pour le tag flottant */
+}
+.card--locked {
+  background: var(--paper-sunken);
+  border: 2px dashed var(--line);
+}
+.card__tag { /* étiquette « DOSSIER 01 » à cheval sur le bord haut */
+  position: absolute; top: -12px; left: 14px;
+  font: 600 10px var(--font-mono); letter-spacing: 0.1em;
+  padding: 4px 10px; border-radius: var(--r-sm);
+  border: var(--border-strong);
+  color: var(--paper-raised);
+  /* background : --d1 / --d2 / --d3 selon le domaine */
+}
+
+/* --- Barre de progression --- */
+.progress {
+  height: 10px;
+  background: var(--paper-track);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--r-full);
+  overflow: hidden;
+}
+.progress__fill { height: 100%; /* background : couleur du domaine */ }
+.progress--thin { height: 6px; border: none; } /* stepper d'activité */
+
+/* --- Médaille tampon --- */
+.medal {
+  border-radius: 50%;
+  border: 3px dashed var(--medal-gold);
+  display: grid; place-items: center;
+  transform: rotate(-8deg);
+  background: var(--medal-gold-soft);
+}
+.medal__inner {
+  border-radius: 50%;
+  border: 2px solid var(--medal-gold);
+  display: grid; place-items: center;
+  font: 700 11px/1.2 var(--font-mono);
+  color: var(--medal-gold-ink);
+  text-align: center;
+}
+/* Déclinaisons : remplacer gold par bronze / silver. */
+
+/* --- Toast de feedback (bandeau bas d'écran) --- */
+.toast {
+  border-top: var(--border-strong);
+  padding: 18px var(--sp-5) var(--sp-5);
+  color: var(--paper-raised);
+}
+.toast--ok { background: var(--ok); }
+.toast--ko { background: var(--ko); }
+.toast__title { font: 700 17px var(--font-sans); display: flex; align-items: center; gap: 10px; }
+.toast__icon {  /* ✓ ou ✕ : pastille blanche, glyphe coloré */
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--paper-raised);
+  display: grid; place-items: center;
+  font: 700 15px var(--font-mono);
+}
+.toast__body { font: 400 13px/1.5 var(--font-sans); margin-top: var(--sp-2); }
+
+/* --- Badge d'état (suivi prof) --- */
+.badge {
+  font: 600 10px var(--font-mono);
+  padding: 3px 8px;
+  border-radius: var(--r-full);
+  border: 1px solid currentColor;
+  /* OR / AR / BR : fond médaille translucide + texte médaille-ink
+     EC : fond blanc + --ink-faint · — : --paper-sunken + bordure pointillée */
+}

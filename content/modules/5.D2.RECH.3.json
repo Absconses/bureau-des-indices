@@ -1,0 +1,148 @@
+{
+  "id": "5.D2.RECH.3",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Collecter les informations.",
+  "titre": "Garde une trace",
+  "accroche": "Tu as trouvé des infos en or ? Encore faut-il les garder sans les perdre… ni oublier d'où elles viennent. C'est le document de collecte.",
+  "documents": {
+    "collecteAbeilles": {
+      "template": "collecte",
+      "sujet": "Les abeilles en danger (exposé SVT)",
+      "extraits": [
+        {
+          "texte": "Environ un tiers de notre alimentation dépend de la pollinisation par les abeilles.",
+          "source": "fr.vikidia.org/wiki/Abeille — consulté le 3 mars 2026"
+        },
+        {
+          "texte": "Certains pesticides désorientent les abeilles, qui ne retrouvent plus leur ruche.",
+          "source": null
+        },
+        {
+          "texte": "Il existerait près de 20 000 espèces d'abeilles dans le monde.",
+          "source": "un site sur les animaux"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre la démarche pour collecter une information sans la perdre.",
+          "items": [
+            { "texte": "Je lis le document en entier pour comprendre de quoi il parle" },
+            { "texte": "Je repère le passage qui répond à ma question" },
+            { "texte": "Je copie ce passage dans mon document de collecte" },
+            { "texte": "Je note aussitôt la source : adresse, auteur, date" },
+            { "texte": "Plus tard, je reformule avec mes mots pour l'exposé" }
+          ],
+          "feedbackOk": "C'est la bonne démarche : lire, sélectionner, copier, sourcer — et reformuler seulement à la fin. La source se note TOUT DE SUITE : après, on ne retrouve jamais la page.",
+          "feedbackKo": "Retiens l'ordre logique : on lit d'abord (pour comprendre), on sélectionne le passage utile, on le copie, on note la source immédiatement — et on reformule en dernier. Noter la source « plus tard » = source perdue, c'est prouvé à chaque exposé !"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteAbeilles",
+          "questions": [
+            {
+              "question": "Un de ces extraits sera impossible à vérifier ou à citer dans l'exposé. Lequel ?",
+              "options": [
+                "L'extrait 1 (un tiers de notre alimentation)",
+                "L'extrait 2 (les pesticides)",
+                "L'extrait 3 (20 000 espèces)"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : sa source est « ??? ». Sans adresse ni auteur, impossible de retrouver la page, de vérifier le chiffre ou de le citer. L'info est peut-être vraie… mais inutilisable.",
+              "feedbackKo": "Regarde les lignes « Source » : l'extrait 2 n'en a aucune (« ??? »). Une information dont on ne peut plus retrouver l'origine est inutilisable dans un exposé, même si elle est vraie."
+            },
+            {
+              "question": "Que manque-t-il à la source de l'extrait 3 (« un site sur les animaux ») pour être utilisable ?",
+              "options": [
+                "Rien, c'est suffisant",
+                "L'adresse exacte de la page et la date de consultation",
+                "Le nombre de visiteurs du site",
+                "Une photo d'abeille"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « un site sur les animaux », ça ne se retrouve pas. Une source utilisable = l'adresse précise de la page + la date où tu l'as consultée (et l'auteur si tu l'as).",
+              "feedbackKo": "« Un site sur les animaux » est trop vague pour retrouver la page. Compare avec la source de l'extrait 1 : adresse exacte + date de consultation. C'est ça, une trace utilisable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Clique UNIQUEMENT sur ce qui doit figurer dans ton document de collecte. Laisse filer le reste !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "L'adresse exacte de la page où tu as trouvé l'info",
+              "bonne": true,
+              "feedback": "Indispensable : c'est elle qui permet de retrouver et de vérifier l'information plus tard."
+            },
+            {
+              "texte": "Tout l'article copié-collé en entier",
+              "bonne": false,
+              "feedback": "Piège ! On copie seulement le passage qui répond à ta question. Tout copier = ne rien sélectionner = ne rien comprendre."
+            },
+            {
+              "texte": "La date où tu as consulté la page",
+              "bonne": true,
+              "feedback": "Oui : une page web peut changer ou disparaître. La date de consultation fait partie de la trace."
+            },
+            {
+              "texte": "Le nombre de likes de la page",
+              "bonne": false,
+              "feedback": "Les likes mesurent la popularité, pas la fiabilité ni l'utilité. Rien à faire dans ta collecte."
+            },
+            {
+              "texte": "Le passage exact qui répond à ta question",
+              "bonne": true,
+              "feedback": "Le cœur de la collecte : l'extrait utile, entre guillemets, prêt à être reformulé ensuite."
+            },
+            {
+              "texte": "Ton avis sur le design du site",
+              "bonne": false,
+              "feedback": "Le look du site ne dit rien de la valeur de l'information — tu le verras encore dans le module « Fiable ou pas fiable ? »."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Complète la règle d'or de la collecte.",
+          "texte": "Pour chaque extrait copié, je note l'{1} exacte de la page, l'{2} s'il est indiqué, et la {3} de consultation. Sans ces traces, impossible de {4} l'information ou de la citer dans mon exposé.",
+          "etiquettes": ["adresse", "auteur", "date", "vérifier", "émotion", "partager"],
+          "reponses": ["adresse", "auteur", "date", "vérifier"],
+          "feedbackOk": "Tu as la règle d'or : adresse + auteur + date = une trace complète. Ton document de collecte devient une vraie boîte à preuves pour l'exposé.",
+          "feedbackKo": "La règle d'or : je note l'ADRESSE de la page, l'AUTEUR s'il est indiqué et la DATE de consultation — sinon impossible de VÉRIFIER plus tard. (L'émotion et le partage, c'est pour les réseaux, pas pour la collecte !)"
+        }
+      ]
+    }
+  ]
+}

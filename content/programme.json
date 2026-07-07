@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "source": "Projet de programmes d'éducation aux médias et à l'information du cycle 4, CSP, juin 2025",
+  "parcours": [
+    {
+      "id": "5e",
+      "label": "Parcours 5e",
+      "domaines": [
+        {
+          "id": "D1",
+          "nom": "Se situer dans le paysage médiatique et informationnel",
+          "labelEleve": "Se repérer dans les médias",
+          "couleur": "d1",
+          "disponible": false,
+          "rubriques": []
+        },
+        {
+          "id": "D2",
+          "nom": "S'informer",
+          "labelEleve": "S'informer",
+          "couleur": "d2",
+          "disponible": true,
+          "rubriques": [
+            {
+              "id": "OUT",
+              "nom": "Connaître les outils pour s'informer et savoir les mobiliser",
+              "modules": [
+                {
+                  "id": "5.D2.OUT.1",
+                  "titre": "Chaque info a sa forme",
+                  "objectif": "Connaître les différents supports d'information, leur structuration et leur spécificité.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.OUT.1.json"
+                },
+                {
+                  "id": "5.D2.OUT.2",
+                  "titre": "Le trésor caché du CDI",
+                  "objectif": "Utiliser une base documentaire et un portail documentaire.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.OUT.2.json"
+                },
+                {
+                  "id": "5.D2.OUT.3",
+                  "titre": "Duel de moteurs",
+                  "objectif": "Identifier différents types de moteurs de recherche et savoir les comparer.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.OUT.3.json"
+                }
+              ]
+            },
+            {
+              "id": "RECH",
+              "nom": "Rechercher l'information",
+              "modules": [
+                {
+                  "id": "5.D2.RECH.1",
+                  "titre": "De quoi as-tu vraiment besoin ?",
+                  "objectif": "Identifier son besoin d'information.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.RECH.1.json"
+                },
+                {
+                  "id": "5.D2.RECH.2",
+                  "titre": "Enquête dans la presse",
+                  "objectif": "Rechercher de l'information dans la presse.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.RECH.2.json"
+                },
+                {
+                  "id": "5.D2.RECH.3",
+                  "titre": "Garde une trace",
+                  "objectif": "Collecter les informations.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.RECH.3.json"
+                }
+              ]
+            },
+            {
+              "id": "EVAL",
+              "nom": "Évaluer l'information",
+              "modules": [
+                {
+                  "id": "5.D2.EVAL.1",
+                  "titre": "Qui parle ?",
+                  "objectif": "Identifier l'auteur de l'information et les éléments permettant de saisir son rapport au sujet et ses éventuelles intentions.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.EVAL.1.json"
+                },
+                {
+                  "id": "5.D2.EVAL.2",
+                  "titre": "Fiable ou pas fiable ?",
+                  "objectif": "Savoir reconnaître la fiabilité d'une information en évaluant ses producteurs et ses transmetteurs.",
+                  "disponible": true,
+                  "fichier": "content/modules/5.D2.EVAL.2.json"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "D3",
+          "nom": "Partager et produire de l'information de manière éthique et responsable",
+          "labelEleve": "Partager & produire",
+          "couleur": "d3",
+          "disponible": false,
+          "rubriques": []
+        }
+      ]
+    }
+  ]
+}

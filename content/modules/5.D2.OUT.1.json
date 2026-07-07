@@ -1,0 +1,257 @@
+{
+  "id": "5.D2.OUT.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Connaître les différents supports d'information, leur structuration et leur spécificité.",
+  "titre": "Chaque info a sa forme",
+  "accroche": "Le gymnase du collège a fermé d'un coup. Radio, journal, site, réseau social : chacun en parle à sa façon. À toi d'enquêter.",
+  "documents": {
+    "articleGymnase": {
+      "template": "site-article",
+      "nomSite": "ACTU-MAVILLE.FR",
+      "url": "https://www.actu-maville.fr/vie-locale/gymnase-jean-moulin-ferme",
+      "menu": ["Accueil", "Ma ville", "Sport", "Culture", "Météo"],
+      "surtitre": "Vie locale",
+      "titre": "Le gymnase Jean-Moulin fermé en urgence à cause d'une fuite d'eau",
+      "auteur": "Par Léa Martin, journaliste",
+      "date": "Publié hier à 17h32 · Mis à jour à 19h05",
+      "chapo": "Une fuite dans le toit a inondé une partie du sol. Les cours d'EPS du collège sont déplacés au stade jusqu'à nouvel ordre.",
+      "corps": [
+        "La fuite a été repérée mardi matin par un agent d'entretien. Par sécurité, la mairie a fermé le bâtiment dans la journée.",
+        "« Les réparations devraient durer deux semaines », a précisé la principale du collège, interrogée en fin de journée."
+      ],
+      "pub": "Tes baskets préférées à -50 % — offre limitée !",
+      "footer": ["Qui sommes-nous ?", "Mentions légales", "Contact", "S'abonner"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleGymnase",
+          "questions": [
+            {
+              "question": "Qui a écrit cet article ?",
+              "options": [
+                "La mairie de la ville",
+                "Léa Martin, journaliste",
+                "La principale du collège",
+                "Impossible de le savoir"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la signature est juste sous le titre. Sur un site d'information sérieux, on trouve presque toujours le nom de l'auteur à cet endroit.",
+              "feedbackKo": "Regarde juste sous le titre de l'article : « Par Léa Martin, journaliste ». C'est la signature — elle dit qui a écrit l'article."
+            },
+            {
+              "question": "L'article a-t-il été modifié après sa première publication ?",
+              "options": [
+                "Oui, il a été mis à jour",
+                "Non, il n'a jamais changé",
+                "Un article en ligne ne peut pas être modifié"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : « Publié hier à 17h32 · Mis à jour à 19h05 ». C'est une spécificité du web : un article peut être corrigé ou complété après sa sortie.",
+              "feedbackKo": "Relis la ligne sous la signature : « Mis à jour à 19h05 ». Sur le web, un article peut être modifié après sa publication — c'est impossible sur un journal papier déjà imprimé."
+            }
+          ]
+        },
+        {
+          "document": "articleGymnase",
+          "questions": [
+            {
+              "question": "Dans quelle rubrique du site cet article est-il rangé ?",
+              "options": [
+                "Sport",
+                "Vie locale",
+                "Météo",
+                "Ce site n'a pas de rubriques"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : « VIE LOCALE » est écrit juste au-dessus du titre. Les sites d'information rangent leurs articles par rubriques, comme les rayons d'un magasin.",
+              "feedbackKo": "Regarde le petit mot écrit au-dessus du titre : « VIE LOCALE ». C'est la rubrique — les sites d'info classent leurs articles pour qu'on s'y retrouve."
+            },
+            {
+              "question": "Qui a annoncé la durée des réparations ?",
+              "options": [
+                "La journaliste elle-même",
+                "Un agent d'entretien",
+                "La principale du collège",
+                "Personne, aucune durée n'est donnée"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : la phrase entre guillemets est une citation de la principale. La journaliste rapporte les paroles des personnes qu'elle interroge.",
+              "feedbackKo": "Relis la phrase entre guillemets : « Les réparations devraient durer deux semaines », a précisé la principale. Les guillemets signalent les paroles de quelqu'un d'autre que la journaliste."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le même événement, quatre supports. Range chaque indice dans la bonne pile.",
+          "categories": [
+            { "id": "radio", "label": "📻 Radio" },
+            { "id": "papier", "label": "📰 Journal papier" },
+            { "id": "site", "label": "🌐 Site d'actu" },
+            { "id": "rs", "label": "📱 Réseau social" }
+          ],
+          "items": [
+            {
+              "texte": "Un flash de 30 secondes que tu écoutes dans la voiture, sans aucune image.",
+              "categorie": "radio",
+              "feedbackOk": "Oui : la radio, c'est du son uniquement. Pas d'image, pas de texte à lire.",
+              "feedbackKo": "Que du son, aucune image : c'est la radio. C'est sa spécificité — on l'écoute en faisant autre chose."
+            },
+            {
+              "texte": "Une vidéo verticale de 15 secondes avec le hashtag #gymnase et 128 ❤️.",
+              "categorie": "rs",
+              "feedbackOk": "Exact : vidéo verticale, hashtag, likes… ce sont les codes des réseaux sociaux.",
+              "feedbackKo": "Hashtag, likes, vidéo verticale filmée au téléphone : ce sont les codes des réseaux sociaux."
+            },
+            {
+              "texte": "Un article publié à 8h, puis complété à 11h avec la réaction de la principale.",
+              "categorie": "site",
+              "feedbackOk": "Bien vu : seul un site peut mettre à jour un article déjà publié. Le papier, lui, est figé une fois imprimé.",
+              "feedbackKo": "« Complété à 11h » : seul un site web peut modifier un article déjà publié. Un journal imprimé ne change plus."
+            },
+            {
+              "texte": "Une double page avec trois photos, disponible le lendemain matin chez le marchand de journaux.",
+              "categorie": "papier",
+              "feedbackOk": "Oui : le journal papier arrive le lendemain, le temps de l'imprimer. En échange, il a la place d'approfondir.",
+              "feedbackKo": "« Le lendemain matin » : il faut du temps pour imprimer et livrer un journal papier. C'est plus lent, mais souvent plus complet."
+            },
+            {
+              "texte": "N'importe qui peut y publier son propre message sur la fermeture, sans vérification.",
+              "categorie": "rs",
+              "feedbackOk": "Exact : sur un réseau social, tout le monde publie sans contrôle avant diffusion. À la radio ou dans un journal, quelqu'un vérifie avant.",
+              "feedbackKo": "Publier sans que personne ne vérifie avant : c'est possible uniquement sur un réseau social. Dans les médias classiques, une rédaction relit avant de diffuser."
+            },
+            {
+              "texte": "Il faut payer 1,30 € pour le lire en entier.",
+              "categorie": "papier",
+              "feedbackOk": "Oui : le journal papier s'achète au numéro. C'est une façon pour lui de payer les journalistes.",
+              "feedbackKo": "Acheter le numéro chez le marchand : c'est le journal papier. Vendre le journal permet de payer le travail des journalistes."
+            }
+          ]
+        },
+        {
+          "consigne": "Le même événement, quatre supports. Range chaque indice dans la bonne pile.",
+          "categories": [
+            { "id": "radio", "label": "📻 Radio" },
+            { "id": "papier", "label": "📰 Journal papier" },
+            { "id": "site", "label": "🌐 Site d'actu" },
+            { "id": "rs", "label": "📱 Réseau social" }
+          ],
+          "items": [
+            {
+              "texte": "Tu peux l'écouter en direct à 7h30, mais impossible de revenir en arrière.",
+              "categorie": "radio",
+              "feedbackOk": "Oui : le direct radio file comme le temps. Si tu rates le flash, il faut attendre le suivant (ou le podcast).",
+              "feedbackKo": "Un direct qu'on ne peut pas rembobiner : c'est la radio. Le son passe, puis disparaît."
+            },
+            {
+              "texte": "Sous la vidéo, des dizaines de commentaires se disputent déjà.",
+              "categorie": "rs",
+              "feedbackOk": "Exact : les commentaires ouverts à tous, c'est la marque des réseaux sociaux.",
+              "feedbackKo": "Des commentaires ouverts à tout le monde, qui réagissent en direct : c'est un réseau social."
+            },
+            {
+              "texte": "L'article affiche « Mis à jour il y a 20 minutes ».",
+              "categorie": "site",
+              "feedbackOk": "Bien vu : la mise à jour permanente, c'est la force du site d'actualité.",
+              "feedbackKo": "« Mis à jour il y a 20 minutes » : un texte qui évolue en continu, c'est un site web."
+            },
+            {
+              "texte": "Impossible de corriger la coquille repérée en page 3 : c'est déjà imprimé.",
+              "categorie": "papier",
+              "feedbackOk": "Oui : une fois imprimé, le journal papier ne bouge plus. La correction paraîtra… le lendemain.",
+              "feedbackKo": "Une erreur qu'on ne peut plus corriger car c'est imprimé : c'est le journal papier."
+            },
+            {
+              "texte": "On y trouve la météo, les programmes télé et les mots croisés.",
+              "categorie": "papier",
+              "feedbackOk": "Exact : le journal papier regroupe plein de rubriques dans un même objet qu'on feuillette.",
+              "feedbackKo": "Météo, programmes, mots croisés à feuilleter : c'est l'organisation d'un journal papier."
+            },
+            {
+              "texte": "La vidéo t'est proposée automatiquement parce que tes amis l'ont aimée.",
+              "categorie": "rs",
+              "feedbackOk": "Oui : sur un réseau social, c'est un algorithme qui choisit ce que tu vois, selon ce que toi et tes amis aimez.",
+              "feedbackKo": "Un contenu choisi pour toi par un algorithme selon tes amis : c'est le fonctionnement d'un réseau social."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux ? Tu as 8 secondes par affirmation.",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Un article publié sur un site web peut être corrigé après sa publication.",
+              "vrai": true,
+              "feedback": "Vrai. C'est la spécificité du web : on peut corriger, compléter, mettre à jour à tout moment."
+            },
+            {
+              "texte": "Un journal papier peut être modifié après son impression.",
+              "vrai": false,
+              "feedback": "Faux. Une fois imprimé, le papier est figé. S'il y a une erreur, la correction paraît dans le numéro suivant."
+            },
+            {
+              "texte": "À la radio, on peut montrer des photos de l'événement.",
+              "vrai": false,
+              "feedback": "Faux. La radio, c'est uniquement du son. C'est pour ça qu'on y décrit beaucoup les choses avec des mots."
+            },
+            {
+              "texte": "Sur un réseau social, n'importe qui peut publier une info, même sans être journaliste.",
+              "vrai": true,
+              "feedback": "Vrai. C'est ce qui rend les réseaux rapides… et parfois peu fiables : personne ne vérifie avant la publication."
+            },
+            {
+              "texte": "Une info vue sur un réseau social a forcément été vérifiée avant d'être publiée.",
+              "vrai": false,
+              "feedback": "Faux. Sur les réseaux, on publie d'abord, on vérifie (parfois) après. Dans un journal ou à la radio, une rédaction vérifie avant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleGymnase",
+          "consigne": "Un site sérieux dit toujours qui le fabrique. Touche l'endroit de la page qui permet de découvrir qui est derrière ce site.",
+          "cibles": ["footer"],
+          "essaisMax": 3,
+          "indices": [
+            "Ce n'est pas dans l'article lui-même. Explore le reste de la page…",
+            "Descends tout en bas de la page, après la fin de l'article."
+          ],
+          "feedbackOk": "Bien joué ! « Qui sommes-nous ? » et « Mentions légales » se trouvent presque toujours tout en bas d'un site. La loi oblige les sites à dire qui les publie — c'est ton premier réflexe d'enquêteur pour juger un site.",
+          "feedbackKo": "C'était tout en bas de la page : « Qui sommes-nous ? » et « Mentions légales ». Retiens ce réflexe : le pied de page dit qui fabrique le site — la loi l'oblige."
+        }
+      ]
+    }
+  ]
+}

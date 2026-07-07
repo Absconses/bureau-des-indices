@@ -1,0 +1,177 @@
+{
+  "id": "5.D2.OUT.3",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Identifier différents types de moteurs de recherche et savoir les comparer.",
+  "titre": "Duel de moteurs",
+  "accroche": "Tu tapes « éruption volcanique » et la page se remplit. Mais qui décide de ce qui s'affiche en premier — et pourquoi ?",
+  "documents": {
+    "serpVolcans": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=%C3%A9ruption+volcanique",
+      "requete": "éruption volcanique",
+      "nbResultats": "Environ 2 340 000 résultats (0,42 seconde)",
+      "resultats": [
+        {
+          "annonce": true,
+          "url": "www.voyages-volcans.com › sejours",
+          "titre": "Visitez l'Etna en famille — Séjours à -30 % cette semaine !",
+          "extrait": "Réservez maintenant votre excursion au bord du cratère. Offre limitée, places réservées aux 100 premiers inscrits."
+        },
+        {
+          "url": "fr.vikidia.org › wiki › Éruption_volcanique",
+          "titre": "Éruption volcanique — Vikidia, l'encyclopédie des 8-13 ans",
+          "extrait": "Une éruption volcanique se produit quand le magma remonte à la surface. Il existe deux grands types d'éruptions : effusives et explosives…"
+        },
+        {
+          "url": "www.actu-sciences.fr › geologie",
+          "titre": "En Islande, une éruption sous haute surveillance",
+          "extrait": "Les vulcanologues suivent heure par heure l'activité du volcan, qui menace une route très fréquentée. Publié il y a 2 jours."
+        },
+        {
+          "url": "forum-randonneurs.net › discussion-8812",
+          "titre": "Quelqu'un a déjà vu une éruption en vrai ?? [forum]",
+          "extrait": "moi perso j'en ai vu une c'était INCROYABLE, bon après je connais rien aux volcans mais…"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpVolcans",
+          "consigne": "Un de ces résultats est là parce qu'une entreprise a payé le moteur pour l'afficher en premier. Touche la mention qui le prouve.",
+          "cibles": ["res-1-annonce"],
+          "essaisMax": 3,
+          "indices": [
+            "Compare le premier résultat aux autres : un petit mot le distingue…",
+            "Regarde juste au-dessus de l'adresse « voyages-volcans.com » : un mot dans un petit cadre."
+          ],
+          "feedbackOk": "C'est la mention « Annonce » : ce résultat est une publicité payée, pas le « meilleur » résultat. Les moteurs gratuits gagnent leur argent comme ça. Premier réflexe : repérer les annonces avant de cliquer.",
+          "feedbackKo": "C'était le petit cadre « Annonce » au-dessus du premier résultat. Cette mention (obligatoire) signale une publicité payée : le site n'est pas premier parce qu'il est le meilleur, mais parce qu'il a payé."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpVolcans",
+          "questions": [
+            {
+              "question": "Tu veux une explication simple et fiable des éruptions pour ton exposé. Quel résultat ouvres-tu en premier ?",
+              "options": [
+                "Le 1er : Visitez l'Etna en famille",
+                "Le 2e : Vikidia, l'encyclopédie des 8-13 ans",
+                "Le 3e : En Islande, une éruption sous haute surveillance",
+                "Le 4e : le forum des randonneurs"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bon choix : une encyclopédie pour ton âge, faite pour expliquer. Le 1er est une pub, le 3e parle d'une actualité précise, le 4e est un témoignage qui « ne connaît rien aux volcans ».",
+              "feedbackKo": "Relis les adresses et les extraits : le 1er est une publicité (Annonce), le 3e traite d'une actualité précise en Islande, le 4e est un forum où l'auteur avoue « je connais rien aux volcans ». Pour comprendre un phénomène, l'encyclopédie Vikidia est le bon point de départ."
+            },
+            {
+              "question": "Pourquoi « voyages-volcans.com » apparaît-il tout en haut de la page ?",
+              "options": [
+                "C'est le site le plus fiable sur les volcans",
+                "Il a payé le moteur de recherche pour être affiché là",
+                "C'est le site le plus récent",
+                "Le moteur l'a tiré au sort"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la mention « Annonce » le prouve. Être premier ne veut pas dire être meilleur — parfois, ça veut juste dire avoir payé.",
+              "feedbackKo": "La mention « Annonce » au-dessus du résultat te donne la réponse : ce site a payé pour cette place. Retiens : premier ≠ meilleur. Les vrais résultats commencent après les annonces."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Chaque outil de recherche a sa spécialité. Associe chaque outil à sa description.",
+          "paires": [
+            {
+              "gauche": "Google",
+              "droite": "Le plus utilisé au monde — gratuit, car il gagne de l'argent grâce à la publicité et à tes données",
+              "feedbackOk": "Oui. Gratuit ne veut pas dire sans contrepartie : la pub et les données des utilisateurs financent le service.",
+              "feedbackKo": "Google est le moteur le plus utilisé au monde ; il est gratuit parce que la publicité et les données des utilisateurs le financent."
+            },
+            {
+              "gauche": "Qwant",
+              "droite": "Un moteur qui ne collecte pas tes données personnelles",
+              "feedbackOk": "Exact. Des moteurs comme Qwant ne tracent pas leurs utilisateurs : mêmes recherches, plus de discrétion.",
+              "feedbackKo": "Qwant est connu pour respecter les données personnelles : il ne garde pas l'historique de ce que tu cherches."
+            },
+            {
+              "gauche": "Le moteur interne de YouTube",
+              "droite": "Ne cherche que parmi les vidéos de sa propre plateforme",
+              "feedbackOk": "Oui. Beaucoup de sites ont leur propre moteur interne : il ne voit rien en dehors de sa plateforme.",
+              "feedbackKo": "Le moteur de YouTube ne cherche que dans YouTube. Pratique pour des vidéos, inutile pour un livre ou un article."
+            },
+            {
+              "gauche": "Le portail documentaire du CDI",
+              "droite": "Ne cherche que dans les documents de ton collège",
+              "feedbackOk": "Exact — tu l'as vu dans le module précédent : peu de résultats, mais tous choisis et disponibles près de toi.",
+              "feedbackKo": "Le portail du CDI est aussi un outil de recherche, mais sa base est minuscule et locale : uniquement les documents de ton collège."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Des affirmations sur les moteurs de recherche vont défiler. Clique UNIQUEMENT sur celles qui sont vraies. Si c'est faux : ne touche à rien !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Tous les moteurs de recherche donnent exactement les mêmes résultats.",
+              "bonne": false,
+              "feedback": "Chaque moteur a ses propres règles de classement : comparer deux moteurs sur une même recherche le montre tout de suite."
+            },
+            {
+              "texte": "Certains moteurs respectent mieux tes données personnelles que d'autres.",
+              "bonne": true,
+              "feedback": "Oui — c'est même un bon critère pour choisir son moteur, comme le recommande le Safer Internet Day."
+            },
+            {
+              "texte": "Le premier résultat est toujours le plus fiable.",
+              "bonne": false,
+              "feedback": "Le premier résultat est parfois… une publicité payée. La mention « Annonce » te le dit."
+            },
+            {
+              "texte": "Comparer deux moteurs, c'est taper la même recherche dans les deux et observer les différences.",
+              "bonne": true,
+              "feedback": "Exactement. Essaie « volcan » sur deux moteurs différents : ni le même ordre, ni les mêmes sites."
+            },
+            {
+              "texte": "Un moteur gratuit ne gagne d'argent avec rien du tout.",
+              "bonne": false,
+              "feedback": "Si c'est gratuit, il y a un modèle derrière : le plus souvent la publicité, parfois liée à tes données."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

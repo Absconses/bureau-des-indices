@@ -1,0 +1,173 @@
+{
+  "id": "5.D2.OUT.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Utiliser une base documentaire et un portail documentaire.",
+  "titre": "Le trésor caché du CDI",
+  "accroche": "Exposé sur les volcans dans une semaine. Le CDI a sûrement ce qu'il te faut — encore faut-il savoir le trouver.",
+  "documents": {
+    "noticeVolcans": {
+      "template": "notice",
+      "nomPortail": "MONCDI · Portail documentaire du collège",
+      "url": "https://moncdi.mon-college.fr/recherche?q=volcans",
+      "recherche": "volcans",
+      "nbResultats": "12 résultats dans la base du CDI",
+      "type": "Livre documentaire",
+      "titre": "Les volcans, géants de feu",
+      "auteur": "Sandrine Mirza",
+      "editeur": "Éditions Milan, collection « Les Docs », 2023",
+      "resume": "Comment naît un volcan ? Pourquoi entre-t-il en éruption ? Un documentaire illustré pour tout comprendre.",
+      "cote": "551.2 MIR",
+      "disponible": false,
+      "retour": "12 mai"
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "noticeVolcans",
+          "questions": [
+            {
+              "question": "Tu veux emprunter ce livre aujourd'hui. C'est possible ?",
+              "options": [
+                "Oui, il est disponible",
+                "Non, quelqu'un l'a déjà emprunté",
+                "Impossible de le savoir avec le portail"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : « ✕ Emprunté — retour le 12 mai ». Le portail sait en direct qui a emprunté quoi : c'est sa grande force par rapport à un moteur de recherche.",
+              "feedbackKo": "Regarde le badge en bas de la notice : « ✕ Emprunté — retour le 12 mai ». Le portail du CDI sait en temps réel si un document est sorti — aucun moteur de recherche ne peut te dire ça."
+            },
+            {
+              "question": "Qu'est-ce que cette fiche décrit exactement ?",
+              "options": [
+                "Un site web sur les volcans",
+                "Un livre documentaire présent au CDI",
+                "Une vidéo en ligne",
+                "Un article de presse"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : l'étiquette « Livre documentaire » l'indique. Cette fiche s'appelle une notice : elle décrit un document de la base du CDI.",
+              "feedbackKo": "Regarde l'étiquette en haut de la fiche : « Livre documentaire ». Cette fiche s'appelle une notice — elle décrit un vrai document rangé au CDI, pas une page web."
+            }
+          ]
+        },
+        {
+          "document": "noticeVolcans",
+          "questions": [
+            {
+              "question": "Qui a écrit ce livre ?",
+              "options": [
+                "Sandrine Mirza",
+                "Les Éditions Milan",
+                "Le professeur documentaliste",
+                "Ce n'est pas indiqué"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact. La notice sépare bien l'autrice (Sandrine Mirza) de l'éditeur (Milan) : deux informations différentes, toutes les deux utiles pour citer ta source.",
+              "feedbackKo": "Relis la notice : « Sandrine Mirza » est l'autrice ; « Éditions Milan » est l'éditeur, c'est-à-dire l'entreprise qui fabrique le livre."
+            },
+            {
+              "question": "Combien de documents sur les volcans possède ton CDI ?",
+              "options": [
+                "Un seul, celui-ci",
+                "12",
+                "Des millions",
+                "Le portail ne le dit pas"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : « 12 résultats dans la base du CDI ». Le portail cherche uniquement dans les documents du collège — c'est peu, mais tout est choisi et vérifié.",
+              "feedbackKo": "C'est écrit sous la barre de recherche : « 12 résultats dans la base du CDI ». Contrairement à un moteur de recherche, le portail ne cherche que dans les documents de TON collège."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre les étapes pour trouver un livre au CDI grâce au portail.",
+          "items": [
+            { "texte": "Je tape mes mots-clés dans le portail documentaire" },
+            { "texte": "J'ouvre la notice du document qui m'intéresse" },
+            { "texte": "Je vérifie qu'il est disponible" },
+            { "texte": "Je note sa cote" },
+            { "texte": "Je vais au rayon du CDI qui correspond à la cote" }
+          ],
+          "feedbackOk": "C'est exactement la démarche : chercher dans la base, lire la notice, vérifier la disponibilité, noter la cote, puis aller au rayon. Tu gagnes un temps fou à chaque exposé.",
+          "feedbackKo": "Retiens la logique : d'abord chercher dans la base (mots-clés → notice), ensuite seulement se déplacer dans le CDI (cote → rayon). La cote est le « GPS » du livre : sans elle, tu cherches au hasard."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "noticeVolcans",
+          "consigne": "Le livre est rangé quelque part dans le CDI. Touche l'information de la notice qui te dit OÙ le trouver dans les rayons.",
+          "cibles": ["cote"],
+          "essaisMax": 3,
+          "indices": [
+            "Ce n'est ni le titre ni l'auteur… Cherche un code avec des chiffres et des lettres.",
+            "Regarde en bas de la notice, à côté du badge de disponibilité : « 551.2 MIR »."
+          ],
+          "feedbackOk": "C'est la cote : 551.2 MIR. Ce code indique l'adresse du livre dans les rayons — 551.2 pour le thème (sciences de la Terre), MIR pour les premières lettres de l'autrice. Tous les documents du CDI en ont une.",
+          "feedbackKo": "C'était la cote : « 📍 551.2 MIR », en bas de la notice. Ce code est l'adresse du livre dans les rayons : 551.2 = le thème (sciences de la Terre), MIR = l'autrice. Note-la à chaque recherche !"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Portail du CDI ou moteur de recherche : vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Le portail documentaire cherche uniquement dans les documents du collège.",
+              "vrai": true,
+              "feedback": "Vrai. C'est une base fermée : moins de résultats qu'un moteur, mais des documents choisis et accessibles au CDI."
+            },
+            {
+              "texte": "Google peut te dire si un livre est disponible dans TON CDI.",
+              "vrai": false,
+              "feedback": "Faux. Seul le portail du collège connaît les emprunts en cours. Chaque outil a sa spécialité."
+            },
+            {
+              "texte": "Dans la base du CDI, chaque document est décrit par une fiche appelée notice.",
+              "vrai": true,
+              "feedback": "Vrai. La notice donne le titre, l'auteur, le résumé, la cote et la disponibilité."
+            },
+            {
+              "texte": "Il faut connaître la cote par cœur pour trouver un livre.",
+              "vrai": false,
+              "feedback": "Faux. C'est justement le portail qui te donne la cote : tu la cherches, tu la notes, tu vas au rayon."
+            },
+            {
+              "texte": "Le portail du CDI est aussi accessible depuis chez toi.",
+              "vrai": true,
+              "feedback": "Vrai. C'est un site web : tu peux préparer ta liste de documents à la maison et les emprunter le lendemain."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

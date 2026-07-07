@@ -1,0 +1,187 @@
+{
+  "id": "5.D2.EVAL.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Identifier l'auteur de l'information et les éléments permettant de saisir son rapport au sujet et ses éventuelles intentions.",
+  "titre": "Qui parle ?",
+  "accroche": "Derrière chaque info, il y a quelqu'un. Qui ? Quel est son lien avec le sujet ? Que cherche-t-il : informer, convaincre, vendre ? Enquête.",
+  "documents": {
+    "postCantine": {
+      "template": "post",
+      "pseudo": "@GreenCantine",
+      "avatar": "🥦",
+      "bio": "Compte officiel de l'association « Bien Manger au Collège » — parents et élèves",
+      "texte": "Notre sondage est clair : 78 % des élèves trouvent les repas trop gras 🍟. Nous demandons plus de légumes frais à la cantine ! Signez notre pétition ➡ lien en bio",
+      "likes": 214,
+      "partages": 58,
+      "commentaires": 31
+    },
+    "aproposVolcans": {
+      "template": "site-article",
+      "nomSite": "SUPERVOLCANS.FR",
+      "url": "https://www.supervolcans.fr/qui-suis-je",
+      "menu": ["Accueil", "Photos", "Quiz", "Qui suis-je ?"],
+      "surtitre": "Qui suis-je ?",
+      "titre": "Salut, moi c'est Tom !",
+      "corps": [
+        "J'ai 14 ans et je suis passionné de volcans depuis la 6e. J'ai créé ce site pour partager ma passion avec des photos et des quiz.",
+        "Attention : je ne suis pas un scientifique ! Je résume ce que je lis dans des magazines et des vidéos. Si tu repères une erreur, écris-moi via la page Contact."
+      ],
+      "footer": ["Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postCantine",
+          "questions": [
+            {
+              "question": "Qui publie ce message ?",
+              "options": [
+                "Un élève en colère contre la cantine",
+                "Une association de parents et d'élèves",
+                "La direction du collège",
+                "Un journaliste"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : c'est écrit dans la bio, sous le pseudo. Premier réflexe devant un post : lire qui parle, pas seulement ce qui est dit.",
+              "feedbackKo": "Lis la ligne sous le pseudo : « Compte officiel de l'association Bien Manger au Collège — parents et élèves ». La bio d'un compte te dit qui parle : c'est toujours ta première vérification."
+            },
+            {
+              "question": "Que cherche surtout ce compte avec ce message ?",
+              "options": [
+                "Informer de façon neutre sur les menus",
+                "Convaincre et faire signer une pétition",
+                "Vendre des légumes",
+                "Faire rire"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « Nous demandons… Signez notre pétition » — ce compte défend une cause. Ce n'est pas interdit ni malhonnête, mais son chiffre de 78 % vient de SON sondage : à vérifier ailleurs avant de le répéter.",
+              "feedbackKo": "Relis la fin du message : « Nous demandons plus de légumes… Signez notre pétition ». Ce compte défend une cause : il veut convaincre. Du coup, son « 78 % » vient de son propre sondage — pas neutre, à vérifier ailleurs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Qui parle → pourquoi il parle. Associe chaque auteur à son intention la plus probable.",
+          "paires": [
+            {
+              "gauche": "La mairie annonce les dates des travaux du gymnase",
+              "droite": "Informer les habitants",
+              "feedbackOk": "Oui : annonce pratique, intention d'informer. L'auteur institutionnel est identifiable et responsable de ce qu'il publie.",
+              "feedbackKo": "Une annonce de travaux par la mairie relève de l'information pratique : elle informe les habitants."
+            },
+            {
+              "gauche": "Une marque présente ses nouvelles baskets « révolutionnaires »",
+              "droite": "Te donner envie d'acheter",
+              "feedbackOk": "Exact : c'est de la communication commerciale. « Révolutionnaire » n'est pas une information, c'est un argument de vente.",
+              "feedbackKo": "Une marque qui parle de son propre produit veut vendre. Son discours n'est pas neutre : c'est de la publicité, même déguisée en info."
+            },
+            {
+              "gauche": "Un supporter raconte le match de son équipe de cœur",
+              "droite": "Partager sa passion — avec un regard pas vraiment neutre",
+              "feedbackOk": "Oui : il est sincère, mais son rapport au sujet (c'est SON équipe) colore tout son récit. L'arbitre a rarement raison contre son équipe…",
+              "feedbackKo": "Le supporter est passionné et sincère — mais son lien avec le sujet (c'est son équipe !) rend son récit partial. Rapport au sujet = lunettes teintées."
+            },
+            {
+              "gauche": "Une association de défense des animaux publie sur les zoos",
+              "droite": "Convaincre et faire agir",
+              "feedbackOk": "Exact : une association défend une cause. Ses informations peuvent être justes, mais elles sont choisies pour convaincre — croise avec d'autres sources.",
+              "feedbackKo": "Une association milite pour une cause : elle choisit les informations qui servent son combat. Pas forcément faux, mais orienté — à croiser avec d'autres sources."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "aproposVolcans",
+          "questions": [
+            {
+              "question": "Quel est le rapport de Tom avec les volcans ?",
+              "options": [
+                "C'est un scientifique spécialiste",
+                "C'est un passionné, mais pas un expert",
+                "C'est un journaliste",
+                "Impossible à savoir"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact — et c'est tout à son honneur de le dire lui-même : « je ne suis pas un scientifique ». La page « Qui suis-je ? » sert exactement à ça : connaître le rapport de l'auteur avec son sujet.",
+              "feedbackKo": "Relis sa présentation : « passionné depuis la 6e » mais « je ne suis pas un scientifique, je résume ce que je lis ». La page « Qui suis-je ? » d'un site te renseigne sur le rapport de l'auteur au sujet — pense à la chercher."
+            },
+            {
+              "question": "Peux-tu utiliser le site de Tom pour ton exposé de SVT ?",
+              "options": [
+                "Oui, les yeux fermés : il est sympa et honnête",
+                "Oui, mais en vérifiant ses infos dans une source experte",
+                "Non : un site fait par un jeune est forcément faux",
+                "Non : seuls les livres ont le droit d'être cités"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est la bonne nuance : Tom est honnête, son site peut donner des idées et des pistes — mais comme il n'est pas expert, on vérifie dans une source scientifique avant de citer. Évaluer, ce n'est pas tout rejeter ni tout croire.",
+              "feedbackKo": "La bonne réponse était la nuance : son site peut servir de point de départ (il est honnête sur ses limites), mais pour un exposé on vérifie dans une source experte. Évaluer un auteur, ce n'est ni tout croire, ni tout jeter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les auteurs et leurs intentions ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Connaître l'auteur d'une information aide à comprendre ses intentions.",
+              "vrai": true,
+              "feedback": "Vrai. Qui parle, quel est son lien avec le sujet, que veut-il ? C'est le cœur de l'évaluation d'une info."
+            },
+            {
+              "texte": "Un compte qui vend quelque chose peut présenter l'information à son avantage.",
+              "vrai": true,
+              "feedback": "Vrai. Ce n'est pas toujours mentir : c'est choisir ce qu'on montre. D'où l'intérêt de croiser les sources."
+            },
+            {
+              "texte": "Un passionné non expert dit forcément des choses fausses.",
+              "vrai": false,
+              "feedback": "Faux. Il peut dire des choses justes ! Mais sans expertise, il peut aussi se tromper sans le savoir : on vérifie ailleurs."
+            },
+            {
+              "texte": "Si on ne trouve ni auteur ni page « Qui sommes-nous », l'info est plus difficile à évaluer.",
+              "vrai": true,
+              "feedback": "Vrai. Un auteur introuvable, c'est un gros point d'interrogation sur toute l'information."
+            },
+            {
+              "texte": "Informer et convaincre, c'est exactement la même chose.",
+              "vrai": false,
+              "feedback": "Faux. Informer = présenter des faits vérifiés. Convaincre = défendre une cause. Les deux existent, mais il faut savoir lequel on lit."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

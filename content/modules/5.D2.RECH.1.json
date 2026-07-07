@@ -1,0 +1,174 @@
+{
+  "id": "5.D2.RECH.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Identifier son besoin d'information.",
+  "titre": "De quoi as-tu vraiment besoin ?",
+  "accroche": "Avant de foncer sur internet, un bon enquêteur se pose LA question : qu'est-ce que je cherche, exactement ?",
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Sami (groupe exposé)", "avatar": "🦈" },
+          "etapes": [
+            { "de": "eux", "texte": "au secours 😱 on a l'exposé sur les requins à rendre lundi avec Mme Diallo" },
+            { "de": "eux", "texte": "tu commences par quoi toi ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Je tape « requin » sur internet et je prends le premier site.",
+                  "ok": false,
+                  "feedback": "« Requin » tout seul, c'est des millions de résultats : films, peluches, équipes de foot… Avant de chercher, il faut savoir ce qu'on cherche."
+                },
+                {
+                  "texte": "Je relis la consigne pour savoir ce que l'exposé doit contenir exactement.",
+                  "ok": true,
+                  "feedback": "Bon réflexe : ton besoin d'information vient de la consigne. C'est elle qui dit ce que tu dois trouver — pas le premier site venu."
+                },
+                {
+                  "texte": "Je regarde des vidéos de requins pour me mettre dans l'ambiance.",
+                  "ok": false,
+                  "feedback": "Tentant… mais sans savoir ce que tu cherches, tu vas regarder des vidéos pendant une heure sans avancer. La consigne d'abord !"
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok la consigne dit : « présenter comment les requins chassent et pourquoi ils sont menacés »" },
+            { "de": "eux", "texte": "et maintenant ? on cherche comment ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On découpe le sujet en questions : comment ils repèrent leurs proies ? qui les menace ?",
+                  "ok": true,
+                  "feedback": "Exactement. Transformer le sujet en petites questions précises, c'est identifier son besoin d'information. Chaque question donnera ses mots-clés."
+                },
+                {
+                  "texte": "On copie un exposé tout fait trouvé en ligne.",
+                  "ok": false,
+                  "feedback": "En plus d'être du plagiat, ça ne répond pas à TA consigne. Et Mme Diallo connaît très bien les exposés tout faits…"
+                },
+                {
+                  "texte": "On met plein de photos, ça suffira.",
+                  "ok": false,
+                  "feedback": "Les photos illustrent, mais ne répondent pas aux questions de la consigne. D'abord les questions, ensuite les images."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ça marche ! moi je prends « comment ils chassent », toi « pourquoi ils sont menacés » 💪" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ta question d'exposé : « Comment les requins chassent-ils ? ». Trie ces idées de recherche.",
+          "categories": [
+            { "id": "bonne", "label": "🎯 Bonne piste" },
+            { "id": "vague", "label": "🌫 Trop vague" },
+            { "id": "hors", "label": "🚫 Hors sujet" }
+          ],
+          "items": [
+            {
+              "texte": "technique de chasse du requin blanc",
+              "categorie": "bonne",
+              "feedbackOk": "Oui : des mots précis, directement liés à ta question. Tu obtiendras des résultats utiles.",
+              "feedbackKo": "C'est une bonne piste : « technique de chasse » + « requin blanc », des mots précis qui collent à ta question."
+            },
+            {
+              "texte": "requin",
+              "categorie": "vague",
+              "feedbackOk": "Exact : un seul mot = des millions de résultats sur tout et n'importe quoi (films, jouets, sport…).",
+              "feedbackKo": "« Requin » tout seul est trop vague : films, peluches, équipes sportives… Ta question porte sur la chasse, dis-le au moteur !"
+            },
+            {
+              "texte": "comment les requins repèrent leurs proies",
+              "categorie": "bonne",
+              "feedbackOk": "Très bonne piste : c'est une sous-question précise de ton sujet. Les questions complètes marchent bien dans les moteurs.",
+              "feedbackKo": "C'était une bonne piste : repérer les proies fait partie de la chasse, et la question est précise."
+            },
+            {
+              "texte": "film Les Dents de la mer",
+              "categorie": "hors",
+              "feedbackOk": "Bien vu : c'est du cinéma, pas de la biologie. Un requin de film ne chasse pas comme un vrai.",
+              "feedbackKo": "Hors sujet : c'est un film ! Ton exposé porte sur les vrais requins, pas sur leur légende au cinéma."
+            },
+            {
+              "texte": "les requins",
+              "categorie": "vague",
+              "feedbackOk": "Oui, à peine mieux que « requin » : toujours aucune précision sur ce que tu veux savoir.",
+              "feedbackKo": "« Les requins » reste trop vague : rien n'indique que tu t'intéresses à la chasse. Précise toujours ta recherche."
+            },
+            {
+              "texte": "vidéo requin trop mignon 😍",
+              "categorie": "hors",
+              "feedbackOk": "Exact : divertissant, mais ta question d'exposé n'avance pas d'un centimètre.",
+              "feedbackKo": "Hors sujet : mignon peut-être, utile pour l'exposé, non. C'est le piège classique qui fait perdre une heure."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "questions": [
+            {
+              "question": "Ton match de foot de demain risque d'être annulé à cause de la pluie. De quoi as-tu besoin ?",
+              "options": [
+                "D'une information rapide et toute récente",
+                "D'un livre documentaire sur la météo",
+                "D'un dossier complet sur le climat",
+                "D'une encyclopédie"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : ici tu veux juste te tenir au courant. Une info fraîche et rapide suffit (site du club, météo du jour).",
+              "feedbackKo": "Pour savoir si le match a lieu, pas besoin d'étudier le climat : il te faut une info rapide et récente. C'est un besoin de type « se tenir au courant »."
+            },
+            {
+              "question": "Pour ton exposé de SVT sur les séismes, il te faut plutôt…",
+              "options": [
+                "Les toutes dernières nouvelles de la minute",
+                "Des explications complètes et vérifiées, même si ça prend du temps",
+                "L'avis de tes copains",
+                "Une seule photo impressionnante"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : un exposé demande d'approfondir — comprendre, croiser plusieurs sources sérieuses. C'est l'autre grand type de besoin d'information.",
+              "feedbackKo": "Un exposé demande d'approfondir un sujet : explications complètes, sources vérifiées, plusieurs documents. Se tenir au courant et approfondir sont deux besoins différents — et on ne cherche pas pareil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Complète la méthode de l'enquêteur avec les bonnes étiquettes.",
+          "texte": "Avant de chercher, je me demande de {1} j'ai besoin : est-ce que je veux juste me tenir au {2}, ou {3} un sujet pour un exposé ? Ensuite, je transforme mes questions en {4}-clés précis.",
+          "etiquettes": ["quoi", "courant", "approfondir", "mots", "vite", "likes"],
+          "reponses": ["quoi", "courant", "approfondir", "mots"],
+          "feedbackOk": "C'est la méthode complète : identifier son besoin (se tenir au courant ou approfondir), puis le traduire en mots-clés. Tu l'appliqueras dans les deux prochains modules.",
+          "feedbackKo": "La méthode : je me demande de QUOI j'ai besoin — me tenir au COURANT ou APPROFONDIR — puis je transforme mes questions en MOTS-clés. (« Vite » et « likes » n'ont rien à faire dans une recherche réfléchie !)"
+        }
+      ]
+    }
+  ]
+}

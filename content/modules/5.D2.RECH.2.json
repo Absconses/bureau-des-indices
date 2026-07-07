@@ -1,0 +1,158 @@
+{
+  "id": "5.D2.RECH.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Rechercher de l'information dans la presse.",
+  "titre": "Enquête dans la presse",
+  "accroche": "Un journal, ça se lit comme une carte au trésor : chaque zone de la Une a un rôle. Apprends à t'y repérer pour trouver vite.",
+  "documents": {
+    "unePetitRegional": {
+      "template": "une",
+      "nomJournal": "Le Petit Régional",
+      "date": "Mercredi 12 mars 2026",
+      "prix": "1,30 €",
+      "manchette": "Inondations : trois communes toujours privées d'école",
+      "sousTitre": "Après les pluies de lundi, 600 élèves suivent les cours à distance. Retour en classe espéré vendredi.",
+      "photo": { "emoji": "🌊", "legende": "Le gymnase de Saint-Aubin transformé en centre d'accueil, mardi soir." },
+      "secondaires": [
+        { "rubrique": "Sport", "titre": "Le club de hand qualifié pour la finale régionale" },
+        { "rubrique": "Culture", "titre": "Le festival BD cherche 40 bénévoles" }
+      ],
+      "sommaire": [
+        { "rubrique": "Ma ville", "page": "2" },
+        { "rubrique": "Sport", "page": "10" },
+        { "rubrique": "Culture", "page": "12" },
+        { "rubrique": "Météo", "page": "15" },
+        { "rubrique": "Jeux", "page": "16" }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "hotspots",
+      "famille": "exploration",
+      "xpParReussite": 20,
+      "variantes": [
+        {
+          "document": "unePetitRegional",
+          "consigne": "Voici la Une d'un journal. Touche les 4 pastilles pour découvrir le rôle de chaque zone.",
+          "points": [
+            {
+              "zone": "nom-journal",
+              "titre": "Le nom du journal",
+              "texte": "Toujours en haut, bien visible : c'est la « marque » du journal. À côté : la date et le prix. Un journal papier paraît à un rythme fixe (chaque jour ou chaque semaine)."
+            },
+            {
+              "zone": "manchette",
+              "titre": "La manchette",
+              "texte": "LE titre le plus important, choisi par la rédaction, écrit en énorme. C'est ce que le journal considère comme l'information n°1 du jour. Un autre journal ferait peut-être un autre choix !"
+            },
+            {
+              "zone": "legende",
+              "titre": "La légende de la photo",
+              "texte": "La petite phrase sous la photo dit QUI on voit, OÙ et QUAND. Sans légende, une photo ne prouve rien — retiens ça pour la suite de ton enquête."
+            },
+            {
+              "zone": "sommaire",
+              "titre": "Le sommaire",
+              "texte": "Le journal est rangé en rubriques (Ma ville, Sport, Culture…), chacune à sa page. Pour chercher une info précise, on ne lit pas tout : on va directement à la bonne rubrique."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "unePetitRegional",
+          "questions": [
+            {
+              "question": "Combien d'élèves suivent les cours à distance à cause des inondations ?",
+              "options": [
+                "40",
+                "600",
+                "1 300",
+                "La Une ne le dit pas"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : c'est dans le sous-titre, sous la manchette. La Une donne l'essentiel en quelques lignes ; le détail est à l'intérieur du journal.",
+              "feedbackKo": "Relis la phrase sous la manchette : « 600 élèves suivent les cours à distance ». Ce sous-titre résume l'essentiel de l'article — les détails sont à l'intérieur du journal."
+            },
+            {
+              "question": "Tu veux le résultat complet du match de hand. À quelle page du journal vas-tu directement ?",
+              "options": [
+                "Page 2",
+                "Page 10",
+                "Page 15",
+                "Il faut feuilleter tout le journal"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : le sommaire indique « Sport p.10 ». Chercher dans la presse, c'est utiliser les rubriques — pas feuilleter au hasard.",
+              "feedbackKo": "Regarde le sommaire en bas de la Une : « Sport p.10 ». Les rubriques servent exactement à ça : aller droit à l'information qu'on cherche."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "surligner",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Voici le début de l'article en page 2. Surligne les 3 mots qui répondent aux questions QUAND et OÙ.",
+          "texte": "Depuis *lundi*, les habitants de *Saint-Aubin* s'organisent face à la montée des eaux. La mairie a ouvert le gymnase pour accueillir les familles, et l'école du centre restera fermée au moins jusqu'à *vendredi*, le temps de sécher et de nettoyer les salles.",
+          "feedbackOk": "Parfait : « lundi » et « vendredi » répondent à QUAND, « Saint-Aubin » répond à OÙ. Un article de presse répond toujours aux questions qui-quoi-où-quand : les repérer, c'est lire comme un enquêteur.",
+          "feedbackKo": "Les 3 mots à trouver : « lundi » (quand ça a commencé), « Saint-Aubin » (où), « vendredi » (quand ça finira). Un article répond aux questions qui-quoi-où-quand — entraîne-toi à repérer ces mots, ils contiennent l'essentiel."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur la presse ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "La manchette est le titre le plus important, choisi par la rédaction.",
+              "vrai": true,
+              "feedback": "Vrai. Et deux journaux peuvent choisir des manchettes différentes le même jour : c'est un choix éditorial."
+            },
+            {
+              "texte": "La Une d'un journal papier change plusieurs fois dans la journée.",
+              "vrai": false,
+              "feedback": "Faux. Le papier est imprimé une fois. C'est le site web du journal qui se met à jour en continu — le fameux « bi-média »."
+            },
+            {
+              "texte": "Dans un journal, les articles sont rangés par rubriques.",
+              "vrai": true,
+              "feedback": "Vrai. Ma ville, Sport, Culture… C'est ce qui permet de chercher efficacement dans la presse."
+            },
+            {
+              "texte": "Une photo de presse se suffit à elle-même, pas besoin de légende.",
+              "vrai": false,
+              "feedback": "Faux. Sans légende (qui, où, quand), une photo peut illustrer n'importe quoi — et faire dire n'importe quoi."
+            },
+            {
+              "texte": "On peut lire la presse sur papier, sur un site, sur une application ou sur les réseaux.",
+              "vrai": true,
+              "feedback": "Vrai. Le même journal existe souvent sur plusieurs supports — avec des contenus parfois différents."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,17 @@ pour le cycle 4 (5e-4e-3e), structurée sur le *Projet de programmes d'EMI du
 cycle 4* (CSP, juin 2025). Direction visuelle « enquête » : design tokens dans
 `css/tokens.css`.
 
-**État : v1** — moteur complet (12 types d'activités dont l'embed H5P),
-les 8 modules du parcours 5e · Domaine 2 « S'informer », connexion par code
-pseudonyme + PIN, écran professeur, synchronisation Supabase prête à brancher
-(voir [docs/deploiement.md](docs/deploiement.md)).
+**État : v2 — programme complet.** Moteur avec 12 types d'activités (dont
+l'embed H5P), **les 68 modules du programme** (parcours 5e / 4e / 3e × 3
+domaines, un module par objectif d'apprentissage officiel), connexion par code
+pseudonyme + PIN, écran professeur multi-niveaux, synchronisation Supabase
+prête à brancher (voir [docs/deploiement.md](docs/deploiement.md)).
+
+Site : <https://absconses.github.io/bureau-des-indices/>
+
+Après tout ajout ou modification de module : relancer
+`outils/assembler-programme.ps1` (régénère `content/programme.json`), puis
+pousser sur `main`.
 
 ## Tester en local
 

@@ -1,0 +1,219 @@
+{
+  "id": "5.D3.ELAB.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Sélectionner et agréger plusieurs sources d'information.",
+  "titre": "Trois sources, un dossier",
+  "accroche": "Le journal du collège te confie le dossier « Les animaux du parc des Tilleuls ». Six sources s'empilent sur ton bureau : garde les bonnes, écarte les autres, et monte un dossier béton !",
+  "documents": {
+    "postLynx": {
+      "template": "post",
+      "pseudo": "@MystereAnimal",
+      "avatar": "👻",
+      "bio": "Le compte qui révèle ce qu'on te cache 👀 — 0 source, 100 % frissons",
+      "texte": "ALERTE 😱 Un LYNX rôderait dans le parc des Tilleuls !!! Le copain d'un copain l'a vu près de la mare. Pas de photo mais partagez au MAX avant qu'il ne soit trop tard ⚠️⚠️",
+      "likes": 342,
+      "partages": 127,
+      "commentaires": 56
+    },
+    "articleMairie": {
+      "template": "site-article",
+      "nomSite": "VALBRUNE.FR — SITE DE LA MAIRIE",
+      "url": "https://www.valbrune.fr/nature/recensement-parc-des-tilleuls",
+      "menu": ["Accueil", "Ma ville", "Nature", "Démarches"],
+      "surtitre": "Nature en ville",
+      "titre": "Recensement 2026 : qui vit au parc des Tilleuls ?",
+      "auteur": "Par le service Espaces verts de Valbrune",
+      "date": "Publié le 14 avril 2026",
+      "chapo": "Comme chaque printemps, nos agents ont compté les animaux du parc. Voici les résultats officiels.",
+      "corps": [
+        "Le comptage 2026 recense trois familles de hérissons, douze canards colverts sur la mare et une trentaine d'écureuils roux. Deux couples de chouettes hulottes nichent dans les grands chênes.",
+        "Vingt nichoirs ont été posés cet hiver par les agents du parc. Aucun grand prédateur n'a été observé : les seuls félins croisés sont… les chats du quartier."
+      ],
+      "footer": ["Contact", "Mentions légales", "Accessibilité"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postLynx",
+          "questions": [
+            {
+              "question": "Ce post mérite-t-il une place dans ton dossier sur les animaux du parc ?",
+              "options": [
+                "Oui : un lynx, c'est le scoop qui fera lire le journal",
+                "Non : témoin introuvable, aucune preuve, et le compte cherche surtout des partages",
+                "Oui, à condition d'ajouter un point d'interrogation au titre",
+                "Non : les posts avec des emojis sont toujours faux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu. « Le copain d'un copain », zéro photo, « partagez au MAX » : ce post veut faire le buzz, pas informer. Un dossier sérieux n'embarque pas ce genre de passager.",
+              "feedbackKo": "Relis le post : le témoin est « le copain d'un copain », il n'y a aucune preuve et on te presse de partager. Trois signes d'une source douteuse — et un point d'interrogation au titre ne transforme pas une rumeur en info."
+            },
+            {
+              "question": "Quel est l'indice le PLUS grave contre ce post ?",
+              "options": [
+                "Il a beaucoup de likes",
+                "Personne ne peut vérifier : témoin vague et aucune preuve",
+                "Il parle d'un animal sauvage",
+                "Il est écrit en majuscules par endroits"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : une affirmation qu'on ne peut pas vérifier n'est pas une information. Les majuscules et l'urgence mettent l'ambiance, mais l'invérifiable, c'est l'indice qui disqualifie.",
+              "feedbackKo": "L'indice décisif est dans le texte : « le copain d'un copain » et « pas de photo ». Une affirmation invérifiable ne peut pas entrer dans un dossier. Les likes, eux, ne prouvent rien : on peut liker une rumeur."
+            }
+          ]
+        },
+        {
+          "document": "articleMairie",
+          "questions": [
+            {
+              "question": "Qu'est-ce que cet article apporte à ton dossier ?",
+              "options": [
+                "Des chiffres officiels et récents sur les animaux du parc",
+                "L'avis des habitants du quartier",
+                "Des conseils pour nourrir les canards",
+                "Rien : une mairie ne connaît pas les animaux"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : un comptage fait ce printemps par le service qui gère le parc. Auteur identifiable, compétent, chiffres récents — le socle idéal de ton dossier.",
+              "feedbackKo": "Relis le chapô et le premier paragraphe : les agents ont compté les animaux ce printemps. Cet article apporte des chiffres officiels et récents, exactement ce qu'une source « socle » doit fournir."
+            },
+            {
+              "question": "D'après cet article, que penser de la rumeur d'un lynx dans le parc ?",
+              "options": [
+                "Elle est confirmée : les chouettes hulottes sont des félins",
+                "Elle est très douteuse : « aucun grand prédateur n'a été observé »",
+                "L'article n'en parle pas du tout",
+                "La mairie cache forcément la vérité"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : le comptage officiel ne signale aucun grand prédateur, juste les chats du quartier. Croiser une rumeur avec une source fiable, c'est exactement le réflexe d'un bon rédacteur.",
+              "feedbackKo": "La réponse était dans le dernier paragraphe : « aucun grand prédateur n'a été observé ». Quand une source officielle et vérifiable contredit une rumeur, ton dossier suit la source."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Six sources pour ton dossier « Les animaux du parc des Tilleuls ». Trie : trois à garder, les autres dehors.",
+          "categories": [
+            { "id": "garde", "label": "📌 Je garde" },
+            { "id": "douteuse", "label": "⚠️ Douteuse : j'écarte" },
+            { "id": "inutile", "label": "🚫 Hors sujet ou doublon" }
+          ],
+          "items": [
+            {
+              "texte": "Le recensement des animaux du parc, publié sur le site de la mairie de Valbrune",
+              "categorie": "garde",
+              "feedbackOk": "Oui : des chiffres officiels et récents, signés par le service qui gère le parc. C'est le socle du dossier.",
+              "feedbackKo": "À garder ! Auteur identifiable (la mairie), comptage récent, sujet pile dans le thème : difficile de faire plus solide."
+            },
+            {
+              "texte": "L'interview de M. Bensaïd, garde du parc depuis 15 ans, dans Le Courrier de Valbrune",
+              "categorie": "garde",
+              "feedbackOk": "Exact : le garde raconte ce que les chiffres ne disent pas — la vie des animaux au quotidien. Ça complète la mairie sans la répéter.",
+              "feedbackKo": "À garder : un témoin expert du terrain apporte du vécu que les chiffres de la mairie n'ont pas. Complémentaire = précieux."
+            },
+            {
+              "texte": "Le chapitre « hérissons et écureuils » du livre du CDI Les animaux de nos villes",
+              "categorie": "garde",
+              "feedbackOk": "Bien vu : le livre explique POURQUOI ces animaux s'installent en ville. Chiffres + témoignage + explication : ton trio couvre tout le sujet.",
+              "feedbackKo": "À garder : ce livre apporte l'explication scientifique qui manque aux deux autres sources retenues. Trois sources différentes qui se complètent, c'est ça, agréger."
+            },
+            {
+              "texte": "Le post de @MystereAnimal : « un lynx rôderait dans le parc, partagez !!! »",
+              "categorie": "douteuse",
+              "feedbackOk": "Exact : témoin invérifiable, aucune preuve, appel au partage. Et le recensement officiel n'a vu aucun grand prédateur…",
+              "feedbackKo": "Douteuse : « le copain d'un copain », pas de photo, et on te presse de partager. Une rumeur spectaculaire n'est pas une info — elle n'entre pas dans le dossier."
+            },
+            {
+              "texte": "La vidéo « Un écureuil fait du skate au Canada 😂 » (2 millions de vues)",
+              "categorie": "inutile",
+              "feedbackOk": "Oui : très drôle, mais ton dossier porte sur les animaux DU parc des Tilleuls, pas sur tous les animaux du monde.",
+              "feedbackKo": "Hors sujet : cet écureuil est adorable… au Canada. Les vues ne changent rien : si ça ne répond pas à TA question, ça sort du dossier."
+            },
+            {
+              "texte": "Le blog de Théo (3e), qui recopie mot pour mot la page de la mairie",
+              "categorie": "inutile",
+              "feedbackOk": "Bien vu : c'est un doublon. Tu as déjà l'original — une copie n'apporte aucune information nouvelle.",
+              "feedbackKo": "Doublon : Théo recopie la mairie mot pour mot. Deux sources identiques = une seule info. Agréger, c'est croiser des sources qui apportent chacune du neuf."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "production",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Tes trois sources sont choisies. Assemble ton dossier dans un ordre logique.",
+          "items": [
+            { "texte": "Ouvrir le dossier : présenter le parc des Tilleuls et poser la question « qui vit là ? »" },
+            { "texte": "Donner les faits : les chiffres du recensement de la mairie (hérissons, canards, écureuils…)" },
+            { "texte": "Faire vivre : le témoignage du garde du parc sur le quotidien des animaux" },
+            { "texte": "Expliquer : grâce au livre du CDI, pourquoi ces animaux s'installent en ville" },
+            { "texte": "Refermer le dossier : conclure et citer tes trois sources" }
+          ],
+          "feedbackOk": "Ton dossier tient debout : on présente, on donne les faits, on les fait vivre, on les explique, puis on conclut en citant ses sources. Chaque source à sa place — c'est ça, agréger.",
+          "feedbackKo": "L'ordre logique : d'abord présenter le sujet, puis les faits (les chiffres), puis le vécu (le garde), puis l'explication (le livre), et on referme en citant ses sources. Un dossier se construit du plus simple au plus approfondi."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur l'art de monter un dossier ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Trois sources qui disent exactement la même chose, c'est trois fois plus solide.",
+              "vrai": false,
+              "feedback": "Faux. Trois copies = une seule info. Un bon dossier croise des sources qui apportent chacune quelque chose de différent."
+            },
+            {
+              "texte": "Écarter une info spectaculaire mais invérifiable, c'est un bon choix de rédacteur.",
+              "vrai": true,
+              "feedback": "Vrai. Un scoop sans preuve n'est pas une info. Mieux vaut un dossier vrai qu'un dossier qui fait le buzz."
+            },
+            {
+              "texte": "Citer ses sources à la fin, c'est réservé aux journalistes professionnels.",
+              "vrai": false,
+              "feedback": "Faux. Journal du collège, exposé, dossier : dire d'où viennent tes infos permet à chacun de vérifier. C'est la marque des travaux sérieux."
+            },
+            {
+              "texte": "Un chiffre officiel + un témoignage + une explication : voilà des sources qui se complètent.",
+              "vrai": true,
+              "feedback": "Vrai. Chacune répond à une question différente : combien ? comment ? pourquoi ? Les agréger, c'est couvrir tout le sujet."
+            },
+            {
+              "texte": "Une vidéo d'animaux très drôle a sa place dans le dossier, puisqu'on parle d'animaux.",
+              "vrai": false,
+              "feedback": "Faux. Ta question porte sur les animaux DU parc. Drôle mais hors sujet = hors dossier, même avec des millions de vues."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

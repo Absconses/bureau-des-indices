@@ -1,0 +1,230 @@
+{
+  "id": "5.D1.FON.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Identifier les différents types de médias (radio, télévision, presse écrite, numérique).",
+  "titre": "Un match, quatre récits",
+  "accroche": "Lundi soir, les Comètes, le club de basket de Montvillard, ont gagné la finale ! Radio, télé, journal papier et site web racontent le même match : à toi de reconnaître chaque média à ses codes.",
+  "documents": {
+    "uneGazette": {
+      "template": "une",
+      "nomJournal": "La Gazette de Montvillard",
+      "date": "Mardi 12 mai 2026",
+      "prix": "1,20 €",
+      "manchette": "Les Comètes sur le toit de la région !",
+      "sousTitre": "Menées à la pause, les basketteuses de Montvillard ont renversé Roqueval 78-71 lundi soir. Revivez la finale en quatre pages.",
+      "photo": { "emoji": "🏀", "legende": "La capitaine Léna Costa soulève le trophée, lundi soir au gymnase Jean-Brossard." },
+      "secondaires": [
+        { "rubrique": "Ma ville", "titre": "Le marché déménage place des Tilleuls" },
+        { "rubrique": "Culture", "titre": "Le collège Simone-Veil monte sa comédie musicale" }
+      ],
+      "sommaire": [
+        { "rubrique": "Sport", "page": "2" },
+        { "rubrique": "Ma ville", "page": "6" },
+        { "rubrique": "Culture", "page": "10" },
+        { "rubrique": "Jeux", "page": "15" }
+      ]
+    },
+    "articleMontvillardInfo": {
+      "template": "site-article",
+      "nomSite": "MONTVILLARD-INFO.FR",
+      "url": "https://www.montvillard-info.fr/sport/cometes-championnes",
+      "menu": ["Accueil", "Ma ville", "Sport", "Culture", "Vidéos"],
+      "surtitre": "Sport",
+      "titre": "Basket : les Comètes championnes régionales !",
+      "auteur": "Par Hugo Ferrand",
+      "date": "Publié lundi à 22h47, mis à jour à 23h12",
+      "chapo": "Les basketteuses de Montvillard ont battu Roqueval 78-71 ce lundi soir. Revivez le dernier quart-temps et laissez vos réactions en commentaire.",
+      "corps": [
+        "Menées de 9 points à la pause, les Comètes ont tout renversé dans le dernier quart-temps, portées par un gymnase Jean-Brossard bouillant.",
+        "Mise à jour, 23h12 : la mairie annonce une réception des joueuses samedi matin. Notre vidéo du dernier panier sera en ligne dans quelques minutes."
+      ],
+      "footer": ["Qui sommes-nous ?", "Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "hotspots",
+      "famille": "exploration",
+      "xpParReussite": 20,
+      "variantes": [
+        {
+          "document": "uneGazette",
+          "consigne": "Le match a eu lieu lundi soir. Mardi matin, voici la Une de la Gazette. Touche les 4 pastilles pour découvrir les codes du journal papier.",
+          "points": [
+            {
+              "zone": "nom-journal",
+              "titre": "Le nom, la date, le prix",
+              "texte": "Un journal papier a un nom, une date et un prix : il s'achète, au kiosque ou par abonnement. Et il paraît à rythme fixe : celui-ci sort chaque matin — le match de lundi soir est donc raconté… mardi."
+            },
+            {
+              "zone": "manchette",
+              "titre": "La manchette",
+              "texte": "Le titre géant de la Une. La rédaction a choisi la victoire des Comètes comme info n°1 du jour. Et une fois imprimée, impossible de la modifier !"
+            },
+            {
+              "zone": "legende",
+              "titre": "La photo et sa légende",
+              "texte": "Une grande photo choisie avec soin, et sa légende qui dit qui, où, quand. Sur le papier, pas de vidéo ni de son : une image fixe — mais qu'on peut garder et afficher dans sa chambre."
+            },
+            {
+              "zone": "sommaire",
+              "titre": "Le sommaire",
+              "texte": "Le journal est rangé en rubriques, chacune à sa page. Pour tout savoir du match : Sport, page 2. Sur un site web, tu cliquerais dans un menu — sur le papier, tu tournes les pages."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleMontvillardInfo",
+          "questions": [
+            {
+              "question": "Observe la ligne sous le titre de l'article. Quel indice montre que tu es sur un média numérique ?",
+              "options": [
+                "Il est signé par un journaliste",
+                "Il a été publié lundi à 22h47, puis mis à jour à 23h12",
+                "Il parle de basket",
+                "Il a un grand titre"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : publié le soir même, corrigé 25 minutes plus tard. Publier et mettre à jour en continu, c'est LE code du média numérique — le papier, lui, est figé une fois imprimé.",
+              "feedbackKo": "L'indice était la ligne « Publié lundi à 22h47, mis à jour à 23h12 » : seul un média numérique publie le soir même puis corrige en continu. Un journaliste ou un grand titre, tu en trouves aussi dans le journal papier."
+            },
+            {
+              "question": "Compare avec la Une de la Gazette que tu viens d'explorer. Quelle différence repères-tu ?",
+              "options": [
+                "Le site a publié lundi soir, le journal papier est sorti mardi matin",
+                "Le site raconte un autre match",
+                "C'est le journal papier qui annonce une vidéo",
+                "Il n'y a aucune différence"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien comparé : même match, mais le site sort à 22h47 le soir même, quand le journal doit être imprimé et distribué pour le lendemain. Vitesse contre recul : chaque média a son rythme.",
+              "feedbackKo": "Regarde les dates : le site publie lundi à 22h47, la Gazette est datée de mardi 12 mai. Un journal papier doit être imprimé et distribué : il paraît le lendemain, avec plus de recul. Et la vidéo, c'est le site qui la promet — le papier ne peut pas en afficher !"
+            }
+          ]
+        },
+        {
+          "document": "articleMontvillardInfo",
+          "questions": [
+            {
+              "question": "Lis la fin de l'article. Qu'est-ce que ce site peut faire que le journal papier ne peut pas ?",
+              "options": [
+                "Mettre à jour l'article après publication et ajouter une vidéo",
+                "Écrire un titre accrocheur",
+                "Donner le score du match",
+                "Citer le nom des joueuses"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : « Mise à jour, 23h12 », vidéo annoncée, commentaires ouverts… Le numérique mélange texte, image et vidéo, et change en continu. Le papier, une fois imprimé, ne bouge plus.",
+              "feedbackKo": "Relis la fin de l'article : mise à jour à 23h12 et vidéo du dernier panier annoncée. Titre, score, noms des joueuses : le papier sait le faire aussi. Ce qui est propre au numérique, c'est la mise à jour permanente et la vidéo."
+            },
+            {
+              "question": "D'après l'adresse de la page et la signature, qui publie cet article ?",
+              "options": [
+                "Un site d'information locale, avec un journaliste identifié",
+                "La radio de Montvillard",
+                "Le compte d'une supportrice",
+                "La chaîne de télé régionale"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : l'adresse montvillard-info.fr et la signature « Par Hugo Ferrand » indiquent un site d'info locale. Repérer qui publie, c'est le premier réflexe sur un média numérique.",
+              "feedbackKo": "Deux indices dans le document : l'adresse « montvillard-info.fr » (un site d'info) et la signature « Par Hugo Ferrand » (un journaliste). Une radio s'écoute, une télé se regarde ; ici, tu es sur une page web signée."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le même match, raconté quatre fois. Associe chaque extrait au média qui l'a produit.",
+          "paires": [
+            {
+              "gauche": "« Il est 22h, vous écoutez le direct : dernier panier… les Comètes sont championnes ! »",
+              "droite": "📻 La radio",
+              "feedbackOk": "Oui : la voix, le direct, aucune image. La radio est souvent la plus rapide — et tu peux l'écouter partout, même dans le bus.",
+              "feedbackKo": "C'était la radio : « vous écoutez… », du son et du direct. Pas d'image à regarder, pas de page à tourner : la voix seule raconte."
+            },
+            {
+              "gauche": "Images du panier final au ralenti, puis interview de la capitaine face caméra au journal de 20h",
+              "droite": "📺 La télévision",
+              "feedbackOk": "Exact : image animée + son + journal à heure fixe, c'est la télé. Le ralenti et l'interview face caméra sont ses codes.",
+              "feedbackKo": "C'était la télévision : des images au ralenti, une interview face caméra, un journal à heure fixe. L'image animée avec le son, c'est sa signature."
+            },
+            {
+              "gauche": "Grande photo en Une, quatre pages d'analyse à lire le lendemain matin, 1,20 €",
+              "droite": "📰 La presse papier",
+              "feedbackOk": "Oui : imprimée, achetée, lue le lendemain. Le papier est plus lent que les autres, mais il prend le temps d'analyser.",
+              "feedbackKo": "C'était le journal papier : il s'achète (1,20 €), sort le lendemain matin et approfondit sur quatre pages ce que les autres ont annoncé en direct."
+            },
+            {
+              "gauche": "Article publié à 22h47, mis à jour à 23h12, avec vidéo et espace commentaires",
+              "droite": "💻 Le média numérique",
+              "feedbackOk": "Exact : publication immédiate, mise à jour, vidéo, commentaires… Le numérique mélange tous les formats et change en continu.",
+              "feedbackKo": "C'était le média numérique : lui seul peut publier à 22h47, corriger à 23h12 et réunir texte, vidéo et commentaires au même endroit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Après le match, ton téléphone sonne sans arrêt. Clique les messages qui viennent d'un vrai média identifiable — retiens-toi sur les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Radio Colline, 22h05 : « Les Comètes battent Roqueval 78-71 en finale régionale. »",
+              "bonne": true,
+              "feedback": "Une source identifiée (Radio Colline), une heure, un fait précis : les codes d'un vrai média."
+            },
+            {
+              "texte": "URGENT !!! LA VIDÉO DU MATCH VA ÊTRE SUPPRIMÉE, CLIQUE VITE ICI !!!",
+              "bonne": false,
+              "feedback": "Urgence + majuscules + aucune source : la panique fabriquée est une technique classique pour te faire cliquer sans réfléchir."
+            },
+            {
+              "texte": "montvillard-info.fr : notre article complet sur la finale, avec les réactions de la coach.",
+              "bonne": true,
+              "feedback": "Un site d'info identifiable, un contenu annoncé clairement : tu sais qui parle et où vérifier."
+            },
+            {
+              "texte": "🎁 GAGNE le maillot officiel des Comètes ! Partage à 10 contacts pour participer !",
+              "bonne": false,
+              "feedback": "Le cadeau contre partage est un piège connu : un vrai média n'a pas besoin que tu spammes tes contacts."
+            },
+            {
+              "texte": "😭😭 Le club va être DISSOUS malgré la victoire… Partage pour le SAUVER !",
+              "bonne": false,
+              "feedback": "Appel à l'émotion + majuscules + zéro source : on te fait pleurer pour te faire partager. Vérifie d'abord auprès d'un média identifié."
+            },
+            {
+              "texte": "La Gazette de Montvillard : demain en kiosque, quatre pages spéciales sur le titre des Comètes.",
+              "bonne": true,
+              "feedback": "Le journal papier annonce son édition du lendemain : source claire, et c'est le rythme normal de la presse imprimée."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "id": "4.D3.POST.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Adopter une posture réflexive et critique sur les contenus publiés et sur leurs impacts sociétaux et environnementaux.",
+  "titre": "Viral, mais à quel prix ?",
+  "accroche": "Le #DefiCascadeCaddie cartonne : 40 millions de vues en trois semaines. Rires, blessés, tonnes de CO2… ouvre le dossier et mesure ce que cette vidéo coûte vraiment.",
+  "documents": {
+    "postDefi": {
+      "template": "post",
+      "pseudo": "@Leo_Xtrem",
+      "avatar": "🛒",
+      "bio": "Cascades, défis, zéro limite 😈 — nouvelle vidéo chaque semaine",
+      "texte": "DÉFI CASCADE CADDIE 🛒💨 J'ai dévalé la rue du Marché À FOND !!! Qui fait mieux ?? Je nomine @Nora2Turbo et @MaxouDuGarage : vous avez 48h ⏳😈 #DefiCascadeCaddie",
+      "image": {
+        "emoji": "🛒",
+        "legende": "Léo lancé à pleine vitesse dans un caddie, devant le supermarché de Valbrune"
+      },
+      "likes": 890000,
+      "partages": 76000,
+      "commentaires": 41000
+    },
+    "articleImpact": {
+      "template": "site-article",
+      "nomSite": "PIXEL-VERT.FR",
+      "url": "https://www.pixel-vert.fr/enquetes/defi-cascade-caddie",
+      "menu": ["Accueil", "Enquêtes", "Numérique", "Planète"],
+      "surtitre": "ENQUÊTE",
+      "titre": "#DefiCascadeCaddie : l'addition cachée d'une vidéo virale",
+      "auteur": "Par Anaïs Rebour",
+      "date": "Publié le 12 mai",
+      "chapo": "40 millions de vues en trois semaines pour une descente en caddie. Drôle ? Peut-être. Gratuit ? Pas du tout. Enquête sur ce que cette vidéo coûte, loin de l'écran.",
+      "corps": [
+        "Premier coût : la santé. Le défi est déjà imité un peu partout, et douze collégiens ont fini aux urgences après avoir dévalé une pente en caddie, selon les pompiers de Valbrune.",
+        "Deuxième coût : l'énergie. Regarder la vidéo, c'est faire tourner des serveurs, des antennes et des écrans. Pour 40 millions de vues en HD : environ 30 tonnes de CO2, autant qu'une voiture qui ferait six fois le tour de la Terre.",
+        "Troisième coût : les personnes. Sur les images, des clients du supermarché apparaissent sans avoir donné leur accord. Et l'algorithme pousse déjà des défis « encore plus forts » pour garder les spectateurs devant l'écran.",
+        "Des gestes simples réduisent pourtant la note : baisser la résolution (480p suffit largement sur un téléphone), préférer le Wi-Fi à la 4G, et surtout ne pas repartager un défi dangereux — chaque partage relance la machine."
+      ],
+      "footer": ["Qui sommes-nous ?", "Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleImpact",
+          "questions": [
+            {
+              "question": "D'après l'article, d'où vient le CO2 lié à cette vidéo ?",
+              "options": [
+                "Du caddie, qui roule à l'essence",
+                "Des serveurs, antennes et écrans qui diffusent 40 millions de vues",
+                "Des ambulances envoyées aux urgences",
+                "De nulle part : une vidéo, c'est virtuel, donc sans impact"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : le deuxième paragraphe l'explique. Chaque vue fait tourner des serveurs, des antennes et des écrans. Le numérique a un corps bien réel, même si on ne le voit pas.",
+              "feedbackKo": "Relis le deuxième paragraphe : regarder la vidéo « fait tourner des serveurs, des antennes et des écrans ». Virtuel ne veut pas dire sans impact : 40 millions de vues, c'est environ 30 tonnes de CO2."
+            },
+            {
+              "question": "Quel geste l'article recommande-t-il pour réduire l'impact d'une vidéo ?",
+              "options": [
+                "La regarder en 4K pour en profiter une bonne fois pour toutes",
+                "Baisser la résolution et préférer le Wi-Fi à la 4G",
+                "La repartager pour que chacun la regarde moins longtemps",
+                "Changer de téléphone chaque année"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact, c'est dans le dernier paragraphe : 480p suffit sur un petit écran, et le Wi-Fi consomme moins que la 4G. Des gestes minuscules, mais multipliés par des millions de vues.",
+              "feedbackKo": "La réponse était dans le dernier paragraphe : baisser la résolution (480p suffit sur un téléphone) et préférer le Wi-Fi à la 4G. Repartager, au contraire, « relance la machine »."
+            }
+          ]
+        },
+        {
+          "document": "postDefi",
+          "questions": [
+            {
+              "question": "Qu'est-ce qui, dans ce post, pousse d'autres personnes à refaire le défi ?",
+              "options": [
+                "Léo nomine deux comptes et leur donne 48 heures",
+                "Le post détaille les consignes de sécurité",
+                "Léo demande de ne surtout pas l'imiter",
+                "Rien : le post ne s'adresse à personne"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : nomination + compte à rebours (« vous avez 48h ⏳ »), c'est la mécanique boule de neige. Chaque nominé nomine à son tour, et le défi se répand tout seul.",
+              "feedbackKo": "Relis la fin du post : « Je nomine @Nora2Turbo et @MaxouDuGarage : vous avez 48h ». Nomination + urgence = machine à imitations. Et aucune consigne de sécurité nulle part."
+            },
+            {
+              "question": "D'après les compteurs sous le post, pourquoi ce défi risque-t-il de continuer à se répandre ?",
+              "options": [
+                "76 000 partages : des milliers de personnes relancent déjà la vidéo",
+                "Les commentaires sont désactivés",
+                "La vidéo est en mode privé",
+                "Personne ne l'a aimée"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : regarde la ligne des réactions, 🔁 76 000. Chaque partage remet la vidéo sous de nouveaux yeux — c'est exactement ça, la viralité.",
+              "feedbackKo": "La réponse était sous le post : 🔁 76 000 partages. Chaque partage expose la vidéo à de nouvelles personnes, et relance imitations et streaming."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Chaque détail de l'affaire cache un impact au-delà de l'écran. Associe-les.",
+          "paires": [
+            {
+              "gauche": "Douze collégiens dévalent une pente en caddie « comme dans la vidéo »",
+              "droite": "Impact santé : les imitations dangereuses",
+              "feedbackOk": "Oui : un défi viral ne reste jamais dans l'écran. Ceux qui l'imitent prennent les risques à la place de celui qui récolte les vues.",
+              "feedbackKo": "C'était l'impact santé : imiter un défi filmé, c'est prendre de vrais risques — les urgences de Valbrune peuvent en témoigner."
+            },
+            {
+              "gauche": "40 millions de vues en HD, souvent en 4G",
+              "droite": "Impact environnement : serveurs et réseaux qui émettent du CO2",
+              "feedbackOk": "Exact : chaque vue consomme de l'énergie, du serveur jusqu'à ton écran. Multiplié par 40 millions, le « petit clic » devient des tonnes de CO2.",
+              "feedbackKo": "C'était l'impact environnement : streamer fait tourner serveurs, antennes et écrans. À 40 millions de vues, ça se compte en tonnes de CO2."
+            },
+            {
+              "gauche": "Des clients du supermarché filmés sans leur accord",
+              "droite": "Impact sur les personnes : le droit à l'image ignoré",
+              "feedbackOk": "Bien vu : on n'a pas le droit de diffuser l'image de quelqu'un sans son accord. Les gens filmés subissent la vidéo, ils ne l'ont pas choisie.",
+              "feedbackKo": "C'était le droit à l'image : diffuser le visage de quelqu'un sans son accord n'est pas anodin — c'est même interdit."
+            },
+            {
+              "gauche": "L'algorithme met en avant des défis « encore plus forts »",
+              "droite": "Impact société : la surenchère pour capter l'attention",
+              "feedbackOk": "Exact : l'algorithme récompense ce qui choque, donc chaque défi doit dépasser le précédent. C'est une spirale, pas un hasard.",
+              "feedbackKo": "C'était la surenchère : l'algorithme pousse ce qui retient l'attention, donc les défis deviennent de plus en plus extrêmes. La spirale est fabriquée."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "La vidéo tourne encore ! Clique les gestes qui réduisent les dégâts, laisse filer les pièges à viralité.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Regarder en 480p : sur un écran de téléphone, ça suffit largement",
+              "bonne": true,
+              "feedback": "Bon réflexe : baisser la résolution divise la quantité de données transportées, donc l'énergie consommée — sans différence visible sur un petit écran."
+            },
+            {
+              "texte": "PARTAGE VITE avant que la vidéo soit SUPPRIMÉE !!! ⏰",
+              "bonne": false,
+              "feedback": "Piège d'urgence : majuscules et compte à rebours servent à te faire cliquer sans réfléchir. Rien ne t'oblige jamais à partager « vite »."
+            },
+            {
+              "texte": "Se connecter au Wi-Fi plutôt que streamer en 4G",
+              "bonne": true,
+              "feedback": "Oui : à vidéo égale, la 4G consomme nettement plus d'énergie que le Wi-Fi. Petit geste, gros effet quand on le multiplie par des millions de vues."
+            },
+            {
+              "texte": "Reposte le défi et gagne un skin EXCLUSIF 🎁",
+              "bonne": false,
+              "feedback": "Piège du cadeau : on t'offre un truc « exclusif » pour que tu fasses la pub à ta place. Le vrai gagnant, c'est le compte qui récolte les vues."
+            },
+            {
+              "texte": "😱 Tout le monde l'a déjà fait, sois pas le dernier !",
+              "bonne": false,
+              "feedback": "Piège de la pression sociale : « tout le monde le fait » n'est ni une preuve ni une raison. C'est l'argument classique pour propager les défis dangereux."
+            },
+            {
+              "texte": "Signaler la vidéo dangereuse au lieu de la repartager",
+              "bonne": true,
+              "feedback": "Exact : signaler alerte la plateforme sans relancer le compteur de vues. Repartager « pour dénoncer » nourrit quand même l'algorithme."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Rapport de fin d'enquête : complète les conclusions avec les bonnes étiquettes.",
+          "texte": "Une vidéo virale a des impacts bien réels : sur la {1} de ceux qui imitent les défis, sur l'{2} des personnes filmées sans accord, et sur la {3}, à cause de l'énergie du streaming. Avant de partager, j'adopte une posture {4} : je me demande qui y gagne et qui peut y perdre.",
+          "etiquettes": ["santé", "image", "planète", "critique", "célébrité", "vitesse"],
+          "reponses": ["santé", "image", "planète", "critique"],
+          "feedbackOk": "Rapport bouclé : santé, image des personnes, planète — trois impacts invisibles depuis l'écran. Et la posture critique, c'est ce réflexe : qui gagne, qui perd, avant de cliquer.",
+          "feedbackKo": "Les conclusions étaient : la SANTÉ de ceux qui imitent, l'IMAGE des personnes filmées, la PLANÈTE (le streaming consomme de l'énergie), et une posture CRITIQUE. « Célébrité » et « vitesse », c'est ce que cherche la vidéo — pas toi."
+        }
+      ]
+    }
+  ]
+}

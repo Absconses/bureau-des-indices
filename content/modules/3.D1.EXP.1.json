@@ -1,0 +1,261 @@
+{
+  "id": "3.D1.EXP.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Comprendre que son accès aux médias et à l'information est influencé par différents facteurs.",
+  "titre": "Deux écrans, deux mondes",
+  "accroche": "Lina et Yanis tapent la même recherche, au même moment… et leurs écrans n'affichent pas la même chose. Bug ? Non : enquête sur les filtres invisibles qui trient ce que tu vois.",
+  "documents": {
+    "testDeuxTels": {
+      "template": "collecte",
+      "sujet": "Expérience pour le stage de 3e : « métier vétérinaire » tapé au même moment sur deux téléphones",
+      "extraits": [
+        {
+          "texte": "Téléphone de Lina — 1er résultat : vidéo « Une journée avec une véto » (elle suit trois comptes d'animaux 🐶). 2e résultat : le site de la clinique vétérinaire de Vireuil, sa ville.",
+          "source": "Capture du 12 mars, 17h02 — téléphone en français, compte déclaré « 14 ans »"
+        },
+        {
+          "texte": "Téléphone de Yanis — 1er résultat : « Veterinary careers: top 10 skills », en anglais (téléphone resté réglé en anglais). 2e résultat : publicité pour une école privée payante.",
+          "source": "Capture du 12 mars, 17h02 — compte déclaré « 18 ans »"
+        },
+        {
+          "texte": "Sur le téléphone de Yanis, une pub pour une boisson énergisante s'affiche. Sur celui de Lina : rien. Son compte est déclaré mineur.",
+          "source": "Note ajoutée par les deux enquêteurs"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "testDeuxTels",
+          "questions": [
+            {
+              "question": "D'après le document, pourquoi Lina voit-elle en premier la vidéo « Une journée avec une véto » ?",
+              "options": [
+                "Le moteur a décidé que c'est la meilleure vidéo pour tout le monde",
+                "Elle suit déjà des comptes d'animaux : le moteur lui propose ce qu'elle aime",
+                "C'est un hasard complet",
+                "Son téléphone est plus récent que celui de Yanis"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la parenthèse du document le dit — « elle suit trois comptes d'animaux ». Tes abonnements et ton historique nourrissent l'algorithme, qui te ressert ce que tu aimes déjà. Pratique… mais ça enferme.",
+              "feedbackKo": "Relis la première capture : « elle suit trois comptes d'animaux 🐶 ». Tes abonnements et ton historique sont des filtres : le moteur te propose d'abord ce que tu aimes déjà, pas ce qui est « le mieux » pour tout le monde."
+            },
+            {
+              "question": "Deux réglages expliquent les résultats différents de Yanis. Lesquels ?",
+              "options": [
+                "La langue du téléphone et l'âge déclaré du compte",
+                "La couleur de la coque et le fond d'écran",
+                "La marque du téléphone et le prix du forfait",
+                "L'heure de la recherche et la météo du jour"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : « téléphone resté réglé en anglais » → résultats en anglais, et compte « 18 ans » → pubs interdites aux mineurs. Deux réglages, deux versions du web. (L'heure ? Impossible : les deux captures datent de 17h02 pile.)",
+              "feedbackKo": "Les indices étaient sous les captures : « téléphone resté réglé en anglais » et « compte déclaré 18 ans ». Ces deux réglages changent la langue des résultats ET les pubs affichées — l'heure, elle, était identique (17h02) sur les deux téléphones."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Yanis", "avatar": "🎧" },
+          "etapes": [
+            { "de": "eux", "texte": "attends c'est trop bizarre 😅 on a tapé exactement pareil et j'ai pas du tout tes résultats" },
+            { "de": "eux", "texte": "moi tout est en anglais et toi t'as la clinique de ta ville… mon tel bugue ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Ouais, redémarre ton téléphone, ça va se remettre.",
+                  "ok": false,
+                  "feedback": "Rien à redémarrer : le moteur fonctionne parfaitement. Il personnalise les résultats selon la langue, le lieu et l'historique de chacun. Ce n'est pas une panne, c'est un réglage."
+                },
+                {
+                  "texte": "C'est pas un bug : le moteur nous connaît. Langue, ville, historique… il trie pour chacun de nous.",
+                  "ok": true,
+                  "feedback": "Exactement. Même recherche, mais pas même profil : le moteur compose une page différente pour chaque personne. Ton écran n'est pas LE web, c'est TA version du web."
+                },
+                {
+                  "texte": "T'as dû mal taper, refais la recherche.",
+                  "ok": false,
+                  "feedback": "Vous aviez vérifié : c'était mot pour mot la même recherche. La différence vient des profils — langue, localisation, historique. Le moteur personnalise, il ne se trompe pas de requête."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok… mais pour le rapport de stage, si on voit pas les mêmes infos, on fait comment ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On garde chacun nos résultats, c'est plus simple.",
+                  "ok": false,
+                  "feedback": "Chacun resterait enfermé dans sa bulle. Le filtre te cache une partie du web : sans comparer, tu ne sauras jamais ce que tu as raté."
+                },
+                {
+                  "texte": "On compare nos deux écrans et on va chercher plus loin que la première page.",
+                  "ok": true,
+                  "feedback": "Réflexe de pro : croiser vos deux écrans, c'est voir deux morceaux du web au lieu d'un seul. Et la première page n'est que le début du classement fait pour toi."
+                },
+                {
+                  "texte": "On laisse tomber, internet est truqué de toute façon.",
+                  "ok": false,
+                  "feedback": "Personnalisé ne veut pas dire truqué. Une fois qu'on sait que les résultats sont triés pour chacun, on peut reprendre la main : comparer, varier les sources, creuser."
+                }
+              ]
+            },
+            { "de": "info", "texte": "À retenir : ton écran affiche TA version du web. Langue, lieu, âge déclaré, historique, abonnements… autant de filtres invisibles. Pour élargir la vue : compare avec d'autres et dépasse la première page." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Filtre de la machine ou filtre de ta vie ? Trie ces situations qui changent ce que tu vois.",
+          "categories": [
+            { "id": "machine", "label": "🤖 Filtre de la machine" },
+            { "id": "vie", "label": "🏠 Filtre de ta vie" }
+          ],
+          "items": [
+            {
+              "texte": "La langue réglée sur ton téléphone change la langue des résultats",
+              "categorie": "machine",
+              "feedbackOk": "Oui : un simple réglage et le moteur te sert un autre pan du web. C'est la machine qui filtre à partir de tes paramètres.",
+              "feedbackKo": "C'est un réglage de l'appareil : la machine s'en sert pour choisir quels résultats t'afficher. Filtre de la machine."
+            },
+            {
+              "texte": "Ton âge déclaré à l'inscription bloque certaines vidéos et pubs",
+              "categorie": "machine",
+              "feedbackOk": "Exact : la plateforme applique des règles automatiques selon l'âge du compte — même si cet âge est faux.",
+              "feedbackKo": "C'est la plateforme qui filtre automatiquement selon l'âge déclaré du compte : un filtre de la machine, pas de ta vie."
+            },
+            {
+              "texte": "L'appli te géolocalise et met en avant l'actu de ta ville",
+              "categorie": "machine",
+              "feedbackOk": "Oui : ta position est une donnée que l'algorithme utilise pour trier les infos. Change de ville, change de résultats.",
+              "feedbackKo": "La géolocalisation est une donnée utilisée par l'algorithme pour trier : c'est la machine qui choisit selon l'endroit où tu es."
+            },
+            {
+              "texte": "Chez toi, la radio est allumée tous les matins sur la même station",
+              "categorie": "vie",
+              "feedbackOk": "Exact : les habitudes de ta famille façonnent les infos que tu croises, sans le moindre algorithme.",
+              "feedbackKo": "Aucun algorithme ici : ce sont les habitudes de ta maison qui décident des infos que tu entends chaque matin. Filtre de ta vie."
+            },
+            {
+              "texte": "Pas d'ordi à la maison : tu fais toutes tes recherches sur téléphone",
+              "categorie": "vie",
+              "feedbackOk": "Oui : l'équipement change ta façon de t'informer — petit écran, lecture plus rapide, moins de sites ouverts en même temps.",
+              "feedbackKo": "C'est une question d'équipement, pas d'algorithme : avec ou sans ordi, on ne s'informe pas de la même façon. Filtre de ta vie."
+            },
+            {
+              "texte": "Ton grand frère t'a abonné à toutes ses chaînes préférées",
+              "categorie": "vie",
+              "feedbackOk": "Bien vu : ton entourage installe des habitudes… que l'algorithme amplifiera ensuite. Mais au départ, c'est ta vie qui filtre.",
+              "feedbackKo": "Le point de départ, c'est ton entourage : c'est lui qui a choisi ces abonnements. Ta vie filtre d'abord, la machine amplifie ensuite."
+            }
+          ]
+        },
+        {
+          "consigne": "Qu'est-ce qui filtre ce que tu vois : la machine ou ta vie ? Trie chaque situation.",
+          "categories": [
+            { "id": "machine", "label": "🤖 Filtre de la machine" },
+            { "id": "vie", "label": "🏠 Filtre de ta vie" }
+          ],
+          "items": [
+            {
+              "texte": "Ton historique de recherche influence les prochains résultats",
+              "categorie": "machine",
+              "feedbackOk": "Oui : le moteur mémorise ce que tu as cherché pour te proposer « plus du même ». C'est le cœur de la personnalisation.",
+              "feedbackKo": "L'historique est une donnée que la machine mémorise pour trier tes prochains résultats. Filtre de la machine."
+            },
+            {
+              "texte": "Le compte est réglé « moins de 15 ans » : certaines vidéos n'apparaissent jamais",
+              "categorie": "machine",
+              "feedbackOk": "Exact : la plateforme filtre automatiquement selon l'âge du compte. Tu ne vois même pas ce qui est bloqué.",
+              "feedbackKo": "C'est la plateforme qui bloque automatiquement selon l'âge déclaré : un filtre de la machine, invisible en plus."
+            },
+            {
+              "texte": "Le moteur met en avant les résultats proches de ta position GPS",
+              "categorie": "machine",
+              "feedbackOk": "Oui : ta position est une donnée de tri pour l'algorithme. À Vireuil ou ailleurs, la première page change.",
+              "feedbackKo": "La position GPS est utilisée par l'algorithme pour classer les résultats : c'est bien la machine qui filtre."
+            },
+            {
+              "texte": "Dans ta famille, personne ne lit de journal : toute l'info passe par les réseaux",
+              "categorie": "vie",
+              "feedbackOk": "Exact : les habitudes familiales orientent tes sources d'info bien avant tout algorithme.",
+              "feedbackKo": "Pas d'algorithme là-dedans : ce sont les habitudes de ta famille qui décident par où l'info arrive chez toi. Filtre de ta vie."
+            },
+            {
+              "texte": "Ta connexion rame : tu évites les vidéos et les longs articles",
+              "categorie": "vie",
+              "feedbackOk": "Oui : la qualité de ton équipement et de ta connexion limite ce que tu consultes réellement. Un filtre très concret.",
+              "feedbackKo": "C'est ton équipement qui filtre : avec une connexion lente, tu renonces à certains contenus. Rien à voir avec un algorithme."
+            },
+            {
+              "texte": "Au club, tout le monde suit le même compte de sport, alors toi aussi",
+              "categorie": "vie",
+              "feedbackOk": "Bien vu : ton entourage influence tes abonnements… et l'algorithme amplifiera ce choix ensuite. Au départ, c'est ta vie qui filtre.",
+              "feedbackKo": "Le point de départ, c'est le groupe : c'est lui qui t'a amené vers ce compte. Ta vie filtre d'abord, la machine renforce après."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les filtres invisibles ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Deux personnes qui font la même recherche peuvent voir des résultats différents.",
+              "vrai": true,
+              "feedback": "Vrai. Historique, langue, lieu, âge déclaré : le moteur compose une page différente pour chaque personne."
+            },
+            {
+              "texte": "Le premier résultat est forcément le plus fiable.",
+              "vrai": false,
+              "feedback": "Faux. Il est premier pour TOI : pub, popularité ou personnalisation. Premier ne veut pas dire meilleur."
+            },
+            {
+              "texte": "Ta famille et ton équipement influencent aussi ta façon de t'informer.",
+              "vrai": true,
+              "feedback": "Vrai. Radio du matin, pas d'ordi, connexion lente : ces filtres-là n'ont rien d'algorithmique, et ils comptent autant."
+            },
+            {
+              "texte": "Changer la langue ou la position du téléphone peut changer les résultats.",
+              "vrai": true,
+              "feedback": "Vrai. Ce sont des données que le moteur utilise pour trier. Deux réglages, deux versions du web."
+            },
+            {
+              "texte": "Impossible de sortir de sa bulle de résultats personnalisés.",
+              "vrai": false,
+              "feedback": "Faux. Comparer avec d'autres, varier les sources, dépasser la première page : la bulle n'est pas une prison."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

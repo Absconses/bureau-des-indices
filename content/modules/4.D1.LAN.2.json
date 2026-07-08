@@ -1,0 +1,213 @@
+{
+  "id": "4.D1.LAN.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Comprendre les cadres dans lesquels les médias remplissent deux fonctions essentielles : la diffusion d'informations et l'expression d'opinions.",
+  "titre": "Page 3 contre page 12",
+  "accroche": "Dans le même journal, la page 3 t'annonce « Le collège rénové ouvrira en mars » et la page 12 s'exclame « Édito — Il était temps ! ». Les deux sont réglo… à condition de savoir lire les étiquettes : mène l'enquête.",
+  "documents": {
+    "pageReportage": {
+      "template": "site-article",
+      "nomSite": "LA GAZETTE DE MONTVERT",
+      "url": "https://www.gazette-montvert.fr/actualites/college-tilleuls-renove-mars",
+      "menu": ["Actualités", "Sports", "Culture", "Opinions"],
+      "surtitre": "Actualités • Reportage",
+      "titre": "Le collège rénové ouvrira en mars",
+      "auteur": "Par Inès Carvalho, journaliste",
+      "date": "Publié mardi à 18h05 · Édition papier : page 3",
+      "chapo": "Après quinze mois de travaux, le collège des Tilleuls accueillera de nouveau ses 540 élèves le 2 mars, a confirmé la mairie de Montvert lundi soir.",
+      "corps": [
+        "Sur le chantier, il reste à poser les sols du CDI et à équiper les nouvelles salles de sciences. « Tout sera livré fin février », assure Karim Bensaïd, conducteur des travaux.",
+        "Le chantier aura coûté 3,8 millions d'euros, financés par le département. Pendant les travaux, les cours avaient lieu dans des bâtiments provisoires installés sur le parking."
+      ],
+      "footer": ["La rédaction", "Contact", "Mentions légales"]
+    },
+    "pageEdito": {
+      "template": "site-article",
+      "nomSite": "LA GAZETTE DE MONTVERT",
+      "url": "https://www.gazette-montvert.fr/opinions/edito-il-etait-temps",
+      "menu": ["Actualités", "Sports", "Culture", "Opinions"],
+      "surtitre": "Opinions • Édito",
+      "titre": "Il était temps !",
+      "auteur": "Par Paul Verdier, rédacteur en chef",
+      "date": "Publié mardi à 18h05 · Édition papier : page 12",
+      "chapo": "Le collège des Tilleuls rouvrira en mars. Bonne nouvelle — mais quel temps perdu, estime la rédaction.",
+      "corps": [
+        "Enfin ! Quinze mois de préfabriqués glacés l'hiver, étouffants en juin : nos collégiens méritaient mieux. Cette rénovation, réclamée depuis des années, aurait dû arriver bien plus tôt.",
+        "Réjouissons-nous quand même : de beaux locaux, c'est important. Mais un bâtiment neuf ne suffira pas s'il manque encore des surveillants à la rentrée. Nous y reviendrons."
+      ],
+      "footer": ["La rédaction", "Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "pageEdito",
+          "consigne": "Page 12 du même journal, le ton change : « Il était temps ! ». Ce texte donne un avis — et il en a le droit. Touche l'étiquette qui l'annonce clairement au lecteur.",
+          "cibles": ["surtitre"],
+          "essaisMax": 3,
+          "indices": [
+            "Les journaux étiquettent leurs textes. Cherche une petite mention près du titre.",
+            "Regarde la ligne juste au-dessus de « Il était temps ! »."
+          ],
+          "feedbackOk": "« Opinions • Édito » : voilà l'étiquette. Elle prévient le lecteur qu'ici, la rédaction donne son avis. Un texte d'opinion est réglo tant qu'il est annoncé — c'est ce cadre qui change tout.",
+          "feedbackKo": "L'étiquette était le surtitre « Opinions • Édito », juste au-dessus du titre. Prends le réflexe : avant de lire, repère la rubrique. C'est elle qui te dit si le texte t'informe ou te donne un avis."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "pageReportage",
+          "questions": [
+            {
+              "question": "Page 3, cet article remplit laquelle des deux grandes missions d'un journal ?",
+              "options": [
+                "Diffuser des informations vérifiées",
+                "Exprimer l'avis de la rédaction",
+                "Faire de la publicité pour la mairie",
+                "Amuser les lecteurs"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : une date de réouverture, un coût, un témoin cité… L'article rapporte des faits vérifiables sans dire s'il trouve ça bien ou mal. C'est la fonction « informer », et l'étiquette « Reportage » l'annonce.",
+              "feedbackKo": "Relis la page : une date (le 2 mars), un coût (3,8 millions), un témoin cité — que des faits vérifiables, aucun jugement. Étiquette « Actualités • Reportage » = le journal est ici dans sa mission d'information."
+            },
+            {
+              "question": "Quels indices de la page prouvent qu'on est côté « information » ?",
+              "options": [
+                "L'étiquette « Reportage », des chiffres précis et un témoin cité",
+                "Les points d'exclamation et les mots qui font réagir",
+                "La signature du rédacteur en chef",
+                "Le mot « Enfin ! » au début du texte"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact. Rubrique Actualités, étiquette Reportage, faits datés et chiffrés, témoin nommé : le cadre de l'information. La journaliste ne dit nulle part ce qu'elle en pense.",
+              "feedbackKo": "Les indices étaient sur la page : étiquette « Actualités • Reportage », coût chiffré, date précise, témoin cité. Ni « Enfin ! » ni exclamation ici — ça, c'est le langage de l'édito, page 12."
+            }
+          ]
+        },
+        {
+          "document": "pageEdito",
+          "questions": [
+            {
+              "question": "Page 12, ce texte remplit laquelle des deux grandes missions d'un journal ?",
+              "options": [
+                "Annoncer un fait tout neuf",
+                "Exprimer l'avis de la rédaction",
+                "Vendre des places de spectacle",
+                "Corriger une erreur du journal"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « Enfin ! », « quel temps perdu », « méritaient mieux »… Le rédacteur en chef juge, il n'annonce rien de neuf. C'est la fonction « exprimer une opinion » — et l'étiquette Édito l'assume.",
+              "feedbackKo": "Relis le texte : « Enfin ! », « quel temps perdu », « méritaient mieux » — des jugements, pas des faits nouveaux. Signé du rédacteur en chef, rangé dans Opinions : c'est un édito, la voix du journal."
+            },
+            {
+              "question": "D'après la page, qu'est-ce qui rend cet édito « réglo » ?",
+              "options": [
+                "Il est étiqueté « Opinions • Édito », signé, et loin des pages d'actu",
+                "Il donne le coût exact des travaux",
+                "Il est publié en page 3, au milieu des actualités",
+                "Il est anonyme, donc neutre"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "C'est tout le cadre : rubrique Opinions, étiquette Édito, signature de Paul Verdier, page 12 loin des actus. Le lecteur sait qu'il lit un avis. Un journal a le droit d'avoir une opinion — à condition de l'annoncer.",
+              "feedbackKo": "Regarde la page : surtitre « Opinions • Édito », signature du rédacteur en chef, page 12. Un avis est légitime dans un journal s'il est étiqueté et séparé des pages d'information — jamais déguisé en reportage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Quatre étiquettes que tu croiseras dans tous les journaux. Associe chacune à ce qu'elle annonce au lecteur.",
+          "paires": [
+            {
+              "gauche": "Reportage",
+              "droite": "Un journaliste rapporte des faits vérifiés, constatés sur place",
+              "feedbackOk": "Oui. Le reportage est côté information : le journaliste décrit ce qu'il a vu et vérifié, sans donner son avis. Comme l'article de la page 3.",
+              "feedbackKo": "Reportage = des faits vus et vérifiés sur le terrain. C'est le cœur de la mission « informer », comme « Le collège rénové ouvrira en mars »."
+            },
+            {
+              "gauche": "Édito",
+              "droite": "L'avis officiel de la rédaction, signé par un de ses responsables",
+              "feedbackOk": "Exact. L'édito engage tout le journal : c'est sa voix, assumée et signée — souvent par le rédacteur en chef. Toujours rangé côté Opinions.",
+              "feedbackKo": "L'édito, c'est l'avis de la rédaction elle-même, signé par un responsable du journal — comme « Il était temps ! » page 12."
+            },
+            {
+              "gauche": "Tribune",
+              "droite": "Le texte d'une personne extérieure au journal, qui défend son point de vue",
+              "feedbackOk": "Oui. Le journal prête sa page à un invité : élue, scientifique, association… L'avis publié est celui de l'invité, pas celui du journal.",
+              "feedbackKo": "La tribune est écrite par quelqu'un d'extérieur au journal (élu, expert, association). Le journal la publie, mais ce n'est pas son avis à lui."
+            },
+            {
+              "gauche": "Chronique",
+              "droite": "Le rendez-vous régulier d'un auteur qui assume son regard personnel",
+              "feedbackOk": "Exact. Le chroniqueur revient chaque semaine avec son ton et ses opinions : le lecteur le sait et lit son texte comme tel.",
+              "feedbackKo": "La chronique, c'est le rendez-vous régulier d'un auteur au regard personnel assumé. Encore un texte d'opinion — étiqueté comme tel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Radar chrono ! Clique les phrases qui donnent un FAIT vérifiable. Retiens-toi sur les avis — surtout ceux déguisés en infos.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Le collège rénové ouvrira le 2 mars, annonce la mairie.",
+              "bonne": true,
+              "feedback": "Fait vérifiable : une date précise et une source nommée. On peut appeler la mairie pour contrôler — c'est ça, une information."
+            },
+            {
+              "texte": "Il était GRAND TEMPS que ça bouge !!!",
+              "bonne": false,
+              "feedback": "Majuscules + exclamations = émotion, pas information. C'est un avis qui crie fort — la recette classique pour te faire réagir sans réfléchir."
+            },
+            {
+              "texte": "Les travaux ont coûté 3,8 millions d'euros, financés par le département.",
+              "bonne": true,
+              "feedback": "Fait chiffré et sourcé, vérifiable dans les documents publics. Un montant précis avec sa source, c'est de l'information."
+            },
+            {
+              "texte": "Tout le monde sait que ce collège était une HONTE.",
+              "bonne": false,
+              "feedback": "« Tout le monde sait » = fausse évidence : on te pousse à être d'accord sans aucune preuve. Et « honte » est un jugement, pas un fait."
+            },
+            {
+              "texte": "Pendant le chantier, les cours avaient lieu dans des bâtiments provisoires.",
+              "bonne": true,
+              "feedback": "Fait précis et vérifiable : n'importe quel élève du collège peut le confirmer. Aucun jugement là-dedans."
+            },
+            {
+              "texte": "Partage VITE cet article avant que la mairie le fasse SUPPRIMER 😱",
+              "bonne": false,
+              "feedback": "Urgence + complot + émoji panique : le trio de la manipulation. Une vraie info n'a jamais besoin de te presser pour être partagée."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

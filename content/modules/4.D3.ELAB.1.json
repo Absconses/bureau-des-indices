@@ -1,0 +1,220 @@
+{
+  "id": "4.D3.ELAB.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Élaborer un contenu original à partir de plusieurs sources d'information.",
+  "titre": "Remixe, ne recopie pas !",
+  "accroche": "Le journal du collège te commande une revue de presse sur le nouveau skatepark de Roche-Verte. Ta collecte est prête : à toi d'en faire un article original — le copié-collé, ça se repère à des kilomètres !",
+  "documents": {
+    "collecteSkate": {
+      "template": "collecte",
+      "sujet": "Revue de presse : le nouveau skatepark de Roche-Verte — Question : qu'est-ce que ça change pour les jeunes de la ville ?",
+      "extraits": [
+        {
+          "texte": "① « Le skatepark de la Plaine, 800 m², a ouvert samedi après huit mois de travaux financés par la ville (120 000 €). »",
+          "source": "le-petit-rochois.fr/skatepark-ouverture — consulté le 3 mars 2026"
+        },
+        {
+          "texte": "② « Dès le premier week-end, plus de 200 jeunes sont venus tester les modules, selon la mairie. »",
+          "source": "le-petit-rochois.fr/skatepark-ouverture — consulté le 3 mars 2026"
+        },
+        {
+          "texte": "③ « Avant, on skatait sur le parking du supermarché et on se faisait chasser. Là, on a enfin un vrai lieu à nous », raconte Lina, 14 ans.",
+          "source": "mag-jeunes-rocheverte.fr/interview-lina — consulté le 4 mars 2026"
+        },
+        {
+          "texte": "④ « Le club municipal proposera des initiations gratuites tous les mercredis après-midi. »",
+          "source": "mag-jeunes-rocheverte.fr/interview-lina — consulté le 4 mars 2026"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteSkate",
+          "questions": [
+            {
+              "question": "Ta revue de presse croise ces deux sources. Pourquoi forment-elles une bonne équipe ?",
+              "options": [
+                "Elles racontent exactement la même chose : c'est plus sûr",
+                "Le journal donne les faits et les chiffres, le magazine apporte le vécu des jeunes",
+                "Elles ont été consultées le même mois",
+                "Elles parlent toutes les deux de sport, ça suffit"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : le-petit-rochois.fr fournit les faits (800 m², 120 000 €, 200 visiteurs) et mag-jeunes-rocheverte.fr le témoignage de Lina. Deux sources qui se complètent, c'est la matière première d'un contenu original.",
+              "feedbackKo": "Regarde les sources de ta collecte : les extraits ① et ② (le journal) donnent les chiffres, les extraits ③ et ④ (le magazine) apportent le vécu de Lina et les initiations. Croiser des sources complémentaires, c'est ce qui rend TON article plus riche que chacune d'elles."
+            },
+            {
+              "question": "Dans ton brouillon, tu écris : « Le skatepark de la Plaine, 800 m², a ouvert samedi après huit mois de travaux financés par la ville. » Sans guillemets, sans source. Quel est le problème ?",
+              "options": [
+                "Aucun : la phrase est vraie, c'est tout ce qui compte",
+                "C'est l'extrait ① recopié mot pour mot : sans guillemets ni source, c'est du plagiat",
+                "La phrase est trop courte pour un article",
+                "Il fallait recopier l'extrait ② à la place"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : compare avec ta collecte, c'est l'extrait ① au mot près. Une phrase vraie mais recopiée sans guillemets ni source reste du plagiat. Deux issues : reformuler avec tes mots, ou citer proprement.",
+              "feedbackKo": "Compare avec l'extrait ① de ta collecte : c'est la même phrase au mot près. Recopier sans guillemets ni source, c'est du plagiat, même si l'info est vraie. Soit tu reformules avec tes mots, soit tu cites entre guillemets avec la source."
+            }
+          ]
+        },
+        {
+          "document": "collecteSkate",
+          "questions": [
+            {
+              "question": "Qu'est-ce que le magazine mag-jeunes-rocheverte.fr apporte que le journal local n'a pas ?",
+              "options": [
+                "Le coût des travaux du skatepark",
+                "Le témoignage de Lina et l'annonce des initiations gratuites",
+                "Le nombre de jeunes venus le premier week-end",
+                "La surface exacte du skatepark"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : les extraits ③ et ④ apportent le vécu (Lina) et une info pratique (les initiations du mercredi). Le journal, lui, donnait les chiffres. Chaque source ajoute sa pièce au puzzle : c'est ça, croiser.",
+              "feedbackKo": "Vérifie les sources : coût, surface et nombre de visiteurs viennent du journal (extraits ① et ②). Le magazine ajoute le témoignage de Lina et les initiations (③ et ④). Repérer ce que chaque source apporte en propre, c'est le premier pas vers un contenu original."
+            },
+            {
+              "question": "Laquelle de ces phrases peut entrer telle quelle dans ta revue de presse ?",
+              "options": [
+                "Le skatepark de la Plaine, 800 m², a ouvert samedi après huit mois de travaux financés par la ville.",
+                "D'après le-petit-rochois.fr, la ville a investi 120 000 € dans ce skatepark de 800 m², inauguré samedi.",
+                "On a enfin un vrai lieu à nous, ça change tout pour les jeunes de la ville.",
+                "Le skatepark de 900 m² a ouvert dimanche dernier."
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : l'info est reformulée avec tes mots ET la source est citée. Compare les autres avec ta collecte : la première recopie l'extrait ① mot pour mot, la troisième reprend les mots de Lina sans guillemets, la dernière déforme les chiffres.",
+              "feedbackKo": "La bonne était « D'après le-petit-rochois.fr… » : info reformulée + source citée. La première recopie l'extrait ① au mot près (plagiat), la troisième vole les mots de Lina sans guillemets, la dernière change les chiffres (c'était 800 m² et samedi). Reformuler, oui — déformer, jamais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le rédac' chef inspecte les brouillons. Classe chaque façon de faire : contenu original, citation correcte ou copié-collé déguisé ?",
+          "categories": [
+            { "id": "original", "label": "✍️ Contenu original" },
+            { "id": "citation", "label": "📚 Citation correcte" },
+            { "id": "plagiat", "label": "📋 Copié-collé déguisé" }
+          ],
+          "items": [
+            {
+              "texte": "Expliquer l'ouverture du skatepark avec tes propres mots, sources citées à la fin",
+              "categorie": "original",
+              "feedbackOk": "Oui : tes mots, ta construction, et les sources en bas — c'est exactement ça, un contenu original.",
+              "feedbackKo": "C'est le modèle du contenu original : tu as digéré l'info, tu la racontes avec tes mots, et tu dis d'où elle vient."
+            },
+            {
+              "texte": "Recopier l'article du journal en remplaçant juste « samedi » par « le week-end dernier »",
+              "categorie": "plagiat",
+              "feedbackOk": "Bien vu : changer deux mots ne rend pas le texte à toi. Ça reste la phrase du journaliste — et ça se repère en une lecture.",
+              "feedbackKo": "C'est du copié-collé déguisé : changer un mot ou deux ne suffit pas, la phrase reste celle du journaliste. Reformuler, c'est réécrire l'idée entièrement avec tes mots."
+            },
+            {
+              "texte": "Écrire : « On a enfin un vrai lieu à nous », raconte Lina au mag-jeunes-rocheverte.fr — avec les guillemets",
+              "categorie": "citation",
+              "feedbackOk": "Exact : guillemets + nom de la source = citation correcte. Tu as le droit de reprendre les mots exacts de quelqu'un, à condition de le dire.",
+              "feedbackKo": "C'est une citation correcte : les guillemets montrent que ce sont les mots de Lina, et la source est nommée. Citer n'est pas copier — quand c'est annoncé."
+            },
+            {
+              "texte": "Coller trois paragraphes pris sur trois sites différents, les uns sous les autres",
+              "categorie": "plagiat",
+              "feedbackOk": "Oui : c'est un patchwork, pas un article. Trois textes cousus ensemble, sans une seule phrase de toi.",
+              "feedbackKo": "Un patchwork de copiés-collés reste du plagiat, même avec trois sources : aucune phrase n'est de toi. Croiser des sources, c'est les faire dialoguer avec TES mots."
+            },
+            {
+              "texte": "Croiser les chiffres du journal et le témoignage de Lina pour écrire ta propre conclusion",
+              "categorie": "original",
+              "feedbackOk": "Exact : tirer une idée neuve de deux sources, c'est le cœur du contenu original — ta conclusion n'existe dans aucune des deux.",
+              "feedbackKo": "C'est du contenu original : ta conclusion croise deux sources et n'existe telle quelle nulle part ailleurs. C'est ça, élaborer."
+            },
+            {
+              "texte": "Recopier une phrase exacte du journal, entre guillemets, avec le nom du site",
+              "categorie": "citation",
+              "feedbackOk": "Oui : phrase exacte + guillemets + source = citation dans les règles. À petite dose : un article n'est pas une collection de citations.",
+              "feedbackKo": "C'est une citation correcte : la phrase est recopiée MAIS les guillemets et la source l'annoncent. La différence avec le plagiat tient à ces deux détails."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "production",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ta collecte est pleine, ton article est vide. Remets dans l'ordre les étapes qui mènent du document de collecte à la revue de presse.",
+          "items": [
+            { "texte": "Relire ta collecte et surligner l'idée principale de chaque extrait" },
+            { "texte": "Repérer ce que chaque source apporte en plus des autres" },
+            { "texte": "Rédiger avec tes mots, en gardant entre guillemets les phrases citées" },
+            { "texte": "Ajouter ta touche : un titre et une conclusion qui croisent les sources" },
+            { "texte": "Lister tes sources à la fin (adresse du site et date de consultation)" }
+          ],
+          "feedbackOk": "C'est le bon chemin : comprendre sa collecte, repérer l'apport de chaque source, rédiger avec ses mots, ajouter sa touche, puis citer ses sources. À l'arrivée : un texte qui n'existe nulle part ailleurs — le tien.",
+          "feedbackKo": "L'ordre gagnant : relire et surligner sa collecte, repérer l'apport de chaque source, rédiger avec ses mots, ajouter titre et conclusion, puis citer ses sources à la fin. Impossible de rédiger avant d'avoir compris ce que chaque source apporte."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Les conseils fusent dans la salle de rédaction ! Clique les réflexes du rédacteur original, laisse filer les pièges à plagiat.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Ferme la page source et raconte l'info avec tes mots.",
+              "bonne": true,
+              "feedback": "Écran fermé = copié-collé impossible. Si tu sais l'expliquer sans regarder, c'est que tu l'as comprise : ton texte sera original."
+            },
+            {
+              "texte": "Copie-colle tout et change deux mots, PERSONNE ne le verra !!",
+              "bonne": false,
+              "feedback": "Majuscules + promesse facile : le piège classique. Deux mots changés, ça reste du plagiat — et ça se repère en une lecture (ou en un clic)."
+            },
+            {
+              "texte": "Mets les phrases recopiées entre guillemets, avec le nom de la source.",
+              "bonne": true,
+              "feedback": "La règle d'or de la citation : guillemets + source. Recopier en le disant, c'est citer ; recopier en le cachant, c'est plagier."
+            },
+            {
+              "texte": "Pas le temps de rédiger ? 🎁 Rends l'article tout fait trouvé en ligne, cadeau !",
+              "bonne": false,
+              "feedback": "Urgence + cadeau : la recette pour te faire foncer sans réfléchir. Rendre le travail d'un autre, c'est le plagiat total — zéro contenu de toi."
+            },
+            {
+              "texte": "Croise deux sources qui se complètent avant d'écrire.",
+              "bonne": true,
+              "feedback": "Deux sources complémentaires — les faits d'un côté, le vécu de l'autre — c'est la matière d'un contenu que ni l'une ni l'autre ne raconte seule."
+            },
+            {
+              "texte": "Tout le monde copie-colle, fonce, c'est bientôt l'heure de rendre !!",
+              "bonne": false,
+              "feedback": "« Tout le monde le fait » + urgence : deux pressions pour t'empêcher de réfléchir. Un patchwork rendu à la dernière minute se voit au premier coup d'œil."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

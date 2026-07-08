@@ -1,0 +1,280 @@
+{
+  "id": "3.D1.EXP.3",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Être conscient des éléments constitutifs de sa citoyenneté numérique.",
+  "titre": "Que dit ta trace ?",
+  "accroche": "Ton pseudo, tes posts, tes commentaires : tout ça compose déjà ton image publique. Avant ton stage de 3e, enquête sur la trace de Maxime, alias Maxou_Driftz — puis pense à la tienne.",
+  "documents": {
+    "serpPseudo": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=Maxou_Driftz",
+      "requete": "Maxou_Driftz",
+      "nbResultats": "Environ 47 résultats (0,31 seconde)",
+      "resultats": [
+        {
+          "url": "klipzy.com › @Maxou_Driftz",
+          "titre": "Maxou_Driftz (@Maxou_Driftz) — profil Klipzy",
+          "extrait": "⚽🎮 En 3e au collège des Tilleuls à Brévannes. Mes clips de foot et de drift virtuel. 312 abonnés — compte public."
+        },
+        {
+          "url": "forum-glitchzone.net › topic-8814",
+          "titre": "Ce jeu est une arnaque ?? [page 3] — Forum GlitchZone",
+          "extrait": "Maxou_Driftz, il y a 3 ans : « ceux qui aiment ce jeu sont des gros nuls, allez pleurer 🤡 » — 14 réponses"
+        },
+        {
+          "url": "college-les-tilleuls.fr › vie-du-college",
+          "titre": "Le club robotique remporte le défi départemental !",
+          "extrait": "Bravo à l'équipe des Tilleuls ! Maxime, alias Maxou_Driftz, a programmé le robot vainqueur devant 22 collèges."
+        },
+        {
+          "url": "vizzle.tv › v › compil-drift-fail-12",
+          "titre": "COMPIL DRIFT FAIL #12 — Vizzle",
+          "extrait": "Commentaire de Maxou_Driftz : « mdr le troisième il sait même pas conduire 😂 » — il y a 2 ans"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpPseudo",
+          "questions": [
+            {
+              "question": "La tutrice de stage de Maxime tape son pseudo sur Cherchio. Quel résultat risque de lui faire la plus mauvaise impression ?",
+              "options": [
+                "Le profil Klipzy avec les clips de foot",
+                "Le commentaire « gros nuls » sur forum-glitchzone",
+                "L'article du club robotique",
+                "Le commentaire sous la compil de drift"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : un commentaire méprisant, même posté il y a 3 ans, reste public et parle à ta place. C'est exactement le genre de trace qu'on repère — et qu'on nettoie — avant un stage.",
+              "feedbackKo": "Regarde le résultat n°2 : « ceux qui aiment ce jeu sont des gros nuls »… posté il y a 3 ans, toujours en ligne. Une trace publique ne s'efface pas toute seule avec le temps : elle continue de parler pour toi."
+            },
+            {
+              "question": "Quel résultat relie le pseudo Maxou_Driftz à la vraie identité de Maxime ?",
+              "options": [
+                "Le commentaire sur forum-glitchzone",
+                "Le commentaire sur Vizzle",
+                "L'article du site du collège",
+                "Aucun : un pseudo protège totalement l'identité"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien vu : « Maxime, alias Maxou_Driftz », écrit noir sur blanc. Il suffit d'UNE page qui fait le lien pour que toutes les traces du pseudo deviennent les tiennes. Un pseudo n'est pas une cape d'invisibilité.",
+              "feedbackKo": "Relis le résultat n°3 : le site du collège écrit « Maxime, alias Maxou_Driftz ». Une seule page qui fait le lien, et tout ce qui est posté sous ce pseudo — profil, commentaires — se rattache à la vraie personne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Citoyen numérique, tu as des droits ET des responsabilités. Trie ces situations.",
+          "categories": [
+            { "id": "droit", "label": "🛡️ Ton droit" },
+            { "id": "respo", "label": "🧭 Ta responsabilité" }
+          ],
+          "items": [
+            {
+              "texte": "Faire effacer tes données d'un vieux compte que tu n'utilises plus",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est le droit à l'effacement du RGPD. Un site doit supprimer tes données personnelles si tu le demandes — et ce droit est renforcé pour les mineurs.",
+              "feedbackKo": "C'était un droit : le RGPD oblige les sites à effacer tes données personnelles sur demande. Tu n'as pas à attendre d'avoir 18 ans pour l'exercer."
+            },
+            {
+              "texte": "Tourner sept fois tes pouces avant de poster un commentaire énervé",
+              "categorie": "respo",
+              "feedbackOk": "Exact : personne ne t'y oblige, mais un commentaire public parle à ta place pendant des années. Demande à Maxime…",
+              "feedbackKo": "C'était une responsabilité : aucune loi n'interdit d'être énervé, mais tu réponds de ce que tu publies. Le com « gros nuls » de Maxime a 3 ans et il est toujours là."
+            },
+            {
+              "texte": "Faire retirer des résultats de recherche une page gênante qui parle de toi",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est le droit au déréférencement. Le moteur de recherche doit examiner ta demande et retirer le résultat si elle est justifiée.",
+              "feedbackKo": "C'était un droit : le déréférencement. Tu peux demander à un moteur de retirer de ses résultats une page qui te concerne — c'est prévu par le RGPD."
+            },
+            {
+              "texte": "Demander son accord à un ami avant de publier une photo de lui",
+              "categorie": "respo",
+              "feedbackOk": "Exact : lui a un droit (le droit à l'image) ; toi, tu as la responsabilité de le respecter. Les droits des autres créent tes responsabilités.",
+              "feedbackKo": "C'était ta responsabilité… justement parce que c'est SON droit à l'image. Publier la photo de quelqu'un sans accord, c'est déjà lui créer une trace qu'il n'a pas choisie."
+            },
+            {
+              "texte": "Savoir quelles données un jeu « gratuit » collecte sur toi",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est le droit d'accès du RGPD. Tout service doit te dire ce qu'il collecte et pourquoi. Un jeu gratuit se paie souvent en données…",
+              "feedbackKo": "C'était un droit : le droit d'accès du RGPD. Tout service, même un petit jeu mobile, doit te dire quelles données il collecte sur toi et pour quoi faire."
+            }
+          ]
+        },
+        {
+          "consigne": "Citoyen numérique, tu as des droits ET des responsabilités. Trie ces situations.",
+          "categories": [
+            { "id": "droit", "label": "🛡️ Ton droit" },
+            { "id": "respo", "label": "🧭 Ta responsabilité" }
+          ],
+          "items": [
+            {
+              "texte": "Faire corriger une info fausse publiée sur toi",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est le droit de rectification du RGPD. Une donnée inexacte te concernant doit être corrigée si tu le demandes.",
+              "feedbackKo": "C'était un droit : le RGPD prévoit la rectification. Un site qui publie une info fausse sur toi doit la corriger quand tu le demandes."
+            },
+            {
+              "texte": "Choisir un pseudo qui ne révèle ni ton nom ni ton collège",
+              "categorie": "respo",
+              "feedbackOk": "Exact : ce choix prudent, toi seul peux le faire. Ton pseudo est la porte d'entrée vers toutes tes traces publiques.",
+              "feedbackKo": "C'était une responsabilité : personne ne choisit ton pseudo à ta place. Un pseudo trop bavard relie toutes tes traces à ta vraie identité."
+            },
+            {
+              "texte": "Refuser que ta photo apparaisse sur le site du collège",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est ton droit à l'image. Même le collège doit obtenir une autorisation (la tienne et celle de tes parents) avant de publier ta photo.",
+              "feedbackKo": "C'était un droit : le droit à l'image. Sans autorisation signée, ta photo ne peut pas être publiée — même par le collège."
+            },
+            {
+              "texte": "Ne pas repartager un montage moqueur sur un camarade",
+              "categorie": "respo",
+              "feedbackOk": "Exact : repartager, c'est publier. Tu deviens responsable du contenu que tu fais circuler, au même titre que son auteur.",
+              "feedbackKo": "C'était une responsabilité : celui qui repartage un contenu moqueur en devient responsable, comme celui qui l'a créé. Le bouton « partager » engage."
+            },
+            {
+              "texte": "Demander à un réseau social la liste des données qu'il garde sur toi",
+              "categorie": "droit",
+              "feedbackOk": "Oui : c'est le droit d'accès du RGPD. Le réseau doit te répondre, gratuitement — et le résultat est souvent surprenant.",
+              "feedbackKo": "C'était un droit : le droit d'accès du RGPD. Tout service doit te fournir gratuitement la liste des données qu'il détient sur toi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maxime (Maxou_Driftz)", "avatar": "🏎️" },
+          "etapes": [
+            { "de": "eux", "texte": "hé, j'ai tapé mon pseudo sur Cherchio pour voir 😅" },
+            { "de": "eux", "texte": "y'a encore mon com « gros nuls » d'il y a 3 ans… et mon stage commence lundi 😱 je fais quoi ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Rien à faire : ce qui est sur internet y reste pour toujours.",
+                  "ok": false,
+                  "feedback": "Faux fataliste ! Le RGPD te donne un droit à l'effacement : tu peux exiger la suppression de tes données, même avant 18 ans. Internet n'oublie pas tout seul — mais toi, tu peux agir."
+                },
+                {
+                  "texte": "Connecte-toi au forum et supprime-le. Compte perdu ? Écris au site pour demander l'effacement : c'est ton droit.",
+                  "ok": true,
+                  "feedback": "Exactement. Le RGPD donne à chacun le droit de faire effacer ses données personnelles — et ce droit est même renforcé pour ce qu'on a publié mineur."
+                },
+                {
+                  "texte": "Poste plein de nouveaux trucs pour enterrer le vieux com dans les résultats.",
+                  "ok": false,
+                  "feedback": "Ça peut le faire descendre… mais il reste en ligne, retrouvable en deux clics. Commence par le vrai levier : demander sa suppression au site, c'est ton droit (RGPD)."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok j'ai écrit au forum… et s'ils répondent jamais ? 😤" },
+            {
+              "choix": [
+                {
+                  "texte": "Tant pis, t'auras au moins essayé.",
+                  "ok": false,
+                  "feedback": "Ne lâche pas si vite : la loi prévoit la suite. Tu peux demander au moteur de déréférencer la page, et saisir la CNIL si le site fait le mort."
+                },
+                {
+                  "texte": "Demande au moteur de déréférencer la page. Et si ça bloque, la CNIL peut t'aider.",
+                  "ok": true,
+                  "feedback": "Oui ! Le déréférencement retire la page des résultats de recherche liés à ton pseudo. Et la CNIL existe exactement pour ça : faire respecter tes droits numériques."
+                },
+                {
+                  "texte": "Lance un appel à tes 312 abonnés pour qu'ils spamment le forum.",
+                  "ok": false,
+                  "feedback": "Mauvais plan : harceler un site n'est pas un droit, c'est un problème de plus. Les vrais leviers s'appellent déréférencement et CNIL."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et l'article du club robotique avec mon prénom, je le fais supprimer aussi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, efface tout, c'est plus sûr.",
+                  "ok": false,
+                  "feedback": "Dommage ! Cet article montre ce que tu sais faire. Une trace publique peut jouer POUR toi : ta tutrice qui lit ça a plutôt une bonne impression."
+                },
+                {
+                  "texte": "Garde-le : cette trace-là parle en ta faveur pour le stage et le lycée.",
+                  "ok": true,
+                  "feedback": "C'est ça, gérer sa présence en ligne : effacer ce qui te dessert, garder et construire ce qui te ressemble. Ta trace peut devenir un atout."
+                },
+                {
+                  "texte": "Peu importe, personne ne lit le site du collège.",
+                  "ok": false,
+                  "feedback": "Ta tutrice l'a trouvé en 4 résultats sur Cherchio… Tout ce qui est public compte. Et celle-ci est une bonne trace : garde-la précieusement."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Ta présence en ligne, c'est tout ça : ce que tu postes, ce qu'on trouve sur toi, ce que tu fais effacer. Des droits (RGPD, déréférencement, CNIL) + des choix réfléchis = ta citoyenneté numérique. 🛡️" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur tes traces et tes droits ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Un commentaire public posté il y a 3 ans peut toujours apparaître dans un moteur de recherche.",
+              "vrai": true,
+              "feedback": "Vrai. Une trace publique ne s'efface pas avec le temps : elle reste indexée tant que personne ne demande sa suppression."
+            },
+            {
+              "texte": "Le RGPD te donne le droit de faire effacer tes données personnelles, même avant 18 ans.",
+              "vrai": true,
+              "feedback": "Vrai. Le droit à l'effacement vaut pour tous — et il est même renforcé pour ce qui a été publié quand on était mineur."
+            },
+            {
+              "texte": "Poster sous pseudo rend impossible de remonter jusqu'à toi.",
+              "vrai": false,
+              "feedback": "Faux. Une seule page qui relie ton pseudo à ton nom, et toutes tes traces te suivent. Et la justice, elle, peut toujours identifier un compte."
+            },
+            {
+              "texte": "Le déréférencement supprime la page de tout internet.",
+              "vrai": false,
+              "feedback": "Faux. Il la retire seulement des résultats du moteur : la page existe encore. Pour la faire disparaître, il faut demander l'effacement au site lui-même."
+            },
+            {
+              "texte": "Insulter quelqu'un en ligne peut être puni par la loi, comme dans la vraie vie.",
+              "vrai": true,
+              "feedback": "Vrai. En ligne aussi tu es responsable de ce que tu publies : injure, diffamation et harcèlement sont punis par la loi."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

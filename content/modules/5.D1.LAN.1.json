@@ -1,0 +1,235 @@
+{
+  "id": "5.D1.LAN.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Saisir la diversité des langages utilisés par les médias (écrit, image, audiovisuel, multimédia, etc.).",
+  "titre": "Une crue, quatre langages",
+  "accroche": "Cette nuit, la rivière Serette a débordé à Valbrune. Article, photo, reportage audio, infographie : la même inondation racontée en quatre langages — à toi de repérer ce que chacun montre… et ce qu'il cache.",
+  "documents": {
+    "articleCrue": {
+      "template": "site-article",
+      "nomSite": "VALBRUNE-INFOS.FR",
+      "url": "https://www.valbrune-infos.fr/ma-ville/crue-serette-centre-ville",
+      "menu": ["Accueil", "Ma ville", "Météo", "Sport", "Culture"],
+      "surtitre": "Ma ville",
+      "titre": "Crue de la Serette : trois quartiers de Valbrune sous les eaux",
+      "auteur": "Par Lina Roche, journaliste",
+      "date": "Publié mercredi à 8h15 · Mis à jour à 11h40",
+      "chapo": "La rivière est sortie de son lit dans la nuit de mardi à mercredi. 120 habitants ont été évacués vers le gymnase Jean-Moulin.",
+      "corps": [
+        "L'eau a commencé à monter mardi vers 23 h. À 3 h du matin, la sirène a réveillé le quartier du Port : la Serette avait gagné 2,10 mètres en quatre heures, du jamais-vu depuis 2010.",
+        "Selon la mairie, la crue s'explique par des sols déjà saturés : il pleuvait sans arrêt depuis quarante-huit heures, après une semaine déjà très humide. Les pompiers ont mené une trentaine de sauvetages en barque, sans aucun blessé."
+      ],
+      "footer": ["Qui sommes-nous ?", "Mentions légales", "Contact"]
+    },
+    "uneEcho": {
+      "template": "une",
+      "nomJournal": "L'Écho de Valbrune",
+      "date": "Jeudi 19 mars 2026",
+      "prix": "1,40 €",
+      "manchette": "VALBRUNE LES PIEDS DANS L'EAU",
+      "sousTitre": "La Serette a débordé dans la nuit : trois quartiers touchés, 120 habitants évacués",
+      "photo": { "emoji": "🌊", "legende": "La rue du Port mercredi à 7 h : un pompier en barque devant la boulangerie Pelletier." },
+      "secondaires": [
+        { "rubrique": "Ma ville", "titre": "Le gymnase Jean-Moulin transformé en centre d'accueil" },
+        { "rubrique": "Météo", "titre": "Accalmie attendue à partir de samedi" }
+      ],
+      "sommaire": [
+        { "rubrique": "Ma ville", "page": "2" },
+        { "rubrique": "Sport", "page": "10" },
+        { "rubrique": "Météo", "page": "14" },
+        { "rubrique": "Jeux", "page": "16" }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleCrue",
+          "questions": [
+            {
+              "question": "D'après l'article, qu'est-ce qui explique la crue de la Serette ?",
+              "options": [
+                "Un barrage qui a cédé en amont",
+                "Des sols déjà saturés après des jours de pluie",
+                "La sirène qui a sonné trop tard",
+                "L'article ne donne aucune explication"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact, c'est dans le deuxième paragraphe. C'est la grande force du langage écrit : prendre le temps d'expliquer les causes. Une photo montre l'eau, jamais le pourquoi.",
+              "feedbackKo": "Relis le deuxième paragraphe : « la crue s'explique par des sols déjà saturés » après quarante-huit heures de pluie. Retiens la force de l'écrit : expliquer les causes — ce qu'aucune photo ne peut faire."
+            },
+            {
+              "question": "Quelle information précise te donne cet article, impossible à voir sur une photo ?",
+              "options": [
+                "La couleur de l'eau dans les rues",
+                "La montée exacte de la rivière : 2,10 m en quatre heures",
+                "L'ampleur des dégâts en un seul coup d'œil",
+                "La tristesse sur le visage des habitants"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : chiffres précis et chronologie, c'est la spécialité de l'écrit. La photo, elle, gagne sur l'ampleur en un coup d'œil — chaque langage a ses forces.",
+              "feedbackKo": "La bonne réponse était les 2,10 mètres en quatre heures, donnés dans le premier paragraphe. Un chiffre précis et une heure exacte, c'est l'écrit qui les porte le mieux ; la photo montre l'ampleur, pas les mesures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "La rédaction de Valbrune-Infos couvre l'inondation. Envoie chaque élément vers le langage qui le racontera le mieux.",
+          "categories": [
+            { "id": "ecrit", "label": "📰 Article écrit" },
+            { "id": "photo", "label": "📷 Photo légendée" },
+            { "id": "audio", "label": "🎙️ Reportage audio" },
+            { "id": "infographie", "label": "📊 Infographie" }
+          ],
+          "items": [
+            {
+              "texte": "Le récit détaillé, heure par heure, de la nuit de la crue",
+              "categorie": "ecrit",
+              "feedbackOk": "Oui : une chronologie précise avec des détails, c'est le terrain de l'écrit. Et on peut la relire autant qu'on veut.",
+              "feedbackKo": "C'était l'article écrit : lui seul peut dérouler une nuit entière heure par heure, avec des détails qu'on peut relire."
+            },
+            {
+              "texte": "La rue du Port transformée en rivière, saisie en une seule image",
+              "categorie": "photo",
+              "feedbackOk": "Exact : pour faire comprendre l'ampleur en un coup d'œil, rien ne bat l'image. Mais elle ne dira ni pourquoi ni comment.",
+              "feedbackKo": "C'était la photo : « en une seule image », c'est sa force — montrer l'ampleur instantanément. Le pourquoi, lui, reste invisible."
+            },
+            {
+              "texte": "Le bruit de l'eau et la voix tremblante d'une habitante secourue",
+              "categorie": "audio",
+              "feedbackOk": "Oui : les sons et les voix, c'est le langage de l'audio. Une voix qui tremble transmet ce que l'écrit peine à décrire.",
+              "feedbackKo": "C'était le reportage audio : un « bruit » et une « voix », ça s'écoute ! L'audio fait entendre l'émotion en direct."
+            },
+            {
+              "texte": "La carte des trois quartiers touchés, avec la hauteur d'eau pour chacun",
+              "categorie": "infographie",
+              "feedbackOk": "Exact : une carte avec des chiffres, c'est une infographie. Elle rend visibles des données qu'un long texte rendrait indigestes.",
+              "feedbackKo": "C'était l'infographie : une carte + des chiffres = des données transformées en image. C'est exactement son rôle."
+            },
+            {
+              "texte": "L'explication complète des causes, avec les relevés de pluie de la semaine",
+              "categorie": "ecrit",
+              "feedbackOk": "Oui : expliquer des causes demande des phrases, des nuances, des chiffres commentés — le langage écrit est fait pour ça.",
+              "feedbackKo": "C'était l'article écrit : pour expliquer des causes avec des relevés commentés, il faut du texte. Une photo ou un son ne le peuvent pas."
+            }
+          ]
+        },
+        {
+          "consigne": "Après l'inondation, la rédaction prépare sa couverture. Envoie chaque info vers le langage qui la raconte le mieux.",
+          "categories": [
+            { "id": "ecrit", "label": "📰 Article écrit" },
+            { "id": "photo", "label": "📷 Photo légendée" },
+            { "id": "audio", "label": "🎙️ Reportage audio" },
+            { "id": "infographie", "label": "📊 Infographie" }
+          ],
+          "items": [
+            {
+              "texte": "La sirène d'alerte et les appels des pompiers, enregistrés à 3 h du matin",
+              "categorie": "audio",
+              "feedbackOk": "Oui : un enregistrement, ça s'écoute. L'audio te plonge dans la nuit de la crue comme si tu y étais.",
+              "feedbackKo": "C'était le reportage audio : une sirène et des appels « enregistrés », c'est du son. Aucun autre langage ne les fait entendre."
+            },
+            {
+              "texte": "Le gymnase rempli de lits de camp, capturé en un seul cliché",
+              "categorie": "photo",
+              "feedbackOk": "Exact : « un seul cliché » qui dit tout, c'est la puissance de l'image. Mais sans légende, tu ne saurais ni où ni quand.",
+              "feedbackKo": "C'était la photo : un cliché montre la situation d'un coup. Retiens quand même qu'il cache le contexte — d'où la légende."
+            },
+            {
+              "texte": "Trois chiffres comparés d'un coup d'œil : les crues de 2010, 2018 et cette année",
+              "categorie": "infographie",
+              "feedbackOk": "Oui : comparer des chiffres d'un coup d'œil, c'est le métier de l'infographie. En texte, la comparaison serait bien moins claire.",
+              "feedbackKo": "C'était l'infographie : « comparer d'un coup d'œil », c'est sa spécialité. Elle transforme les chiffres en image lisible."
+            },
+            {
+              "texte": "L'enquête qui explique pourquoi les sols n'ont pas absorbé la pluie",
+              "categorie": "ecrit",
+              "feedbackOk": "Exact : expliquer un phénomène demande du texte, des nuances, des sources. C'est la force de l'écrit.",
+              "feedbackKo": "C'était l'article écrit : « expliquer pourquoi », c'est son territoire. Ni une photo ni une sirène ne racontent les causes."
+            },
+            {
+              "texte": "Un pompier portant un enfant sur les épaules, l'image forte de la nuit",
+              "categorie": "photo",
+              "feedbackOk": "Oui : une scène qui touche en une seconde, c'est l'image. Attention : émotion forte ne veut pas dire information complète.",
+              "feedbackKo": "C'était la photo : « l'image forte », littéralement ! L'image transmet l'émotion instantanément — mais elle ne dit pas tout."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Chaque langage montre… et cache. Vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une photo peut faire comprendre l'ampleur d'une inondation en un seul coup d'œil.",
+              "vrai": true,
+              "feedback": "Vrai. C'est la grande force de l'image : l'ampleur, tout de suite. Mais elle ne dit ni pourquoi ni comment c'est arrivé."
+            },
+            {
+              "texte": "Un reportage audio peut faire entendre l'émotion dans la voix d'un habitant.",
+              "vrai": true,
+              "feedback": "Vrai. Une voix qui tremble, le bruit de l'eau : le son transmet ce que l'écrit décrit difficilement."
+            },
+            {
+              "texte": "Une infographie sert surtout à faire pleurer ou rire.",
+              "vrai": false,
+              "feedback": "Faux. L'infographie transforme des chiffres et des cartes en image claire. Pour l'émotion, la photo et l'audio sont bien plus forts."
+            },
+            {
+              "texte": "Pour expliquer les causes d'une crue en détail, l'article écrit est le mieux placé.",
+              "vrai": true,
+              "feedback": "Vrai. L'écrit prend le temps : causes, chiffres précis, chronologie. C'est son terrain de jeu."
+            },
+            {
+              "texte": "Tous les langages des médias montrent exactement la même chose.",
+              "vrai": false,
+              "feedback": "Faux. Chaque langage montre certaines choses et en cache d'autres. C'est pour ça que les médias les combinent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "uneEcho",
+          "consigne": "Sur cette Une, la photo frappe fort… mais elle ne dit ni où, ni quand, ni qui. Touche l'élément ÉCRIT qui explique ce que montre l'image.",
+          "cibles": ["legende"],
+          "essaisMax": 3,
+          "indices": [
+            "Cherche tout près de la photo, pas dans les gros titres.",
+            "C'est la petite ligne de texte collée juste sous l'image."
+          ],
+          "feedbackOk": "C'est la légende ! Sans elle, impossible de savoir où et quand la photo a été prise. Image et écrit travaillent en équipe : chaque langage complète ce que l'autre cache.",
+          "feedbackKo": "La réponse était la légende, la petite phrase sous la photo. Une image seule ne donne ni le lieu ni le moment : c'est l'écrit qui les précise. Retiens-le : les langages se complètent."
+        }
+      ]
+    }
+  ]
+}

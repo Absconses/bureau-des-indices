@@ -1,0 +1,247 @@
+{
+  "id": "4.D1.EXP.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Faire preuve de recul sur ses propres usages.",
+  "titre": "3 h 40 par jour ?!",
+  "accroche": "Le relevé de temps d'écran de Nino vient de tomber : 3 h 40 par jour, alors qu'il aurait juré « une heure, grand max ». Ta mission : comprendre où file ce temps — sans juger, juste avec des indices.",
+  "documents": {
+    "releveNino": {
+      "template": "site-article",
+      "nomSite": "TEMPO — BILAN D'ÉCRAN",
+      "url": "https://app.tempo-bilan.fr/rapport/nino",
+      "surtitre": "Rapport hebdomadaire",
+      "titre": "Ton bilan de la semaine, Nino",
+      "date": "Semaine du 29 juin au 5 juillet",
+      "chapo": "Temps d'écran moyen : 3 h 40 par jour (+25 min par rapport à la semaine dernière).",
+      "corps": [
+        "Détail par appli : Zipzip (vidéos courtes) 2 h 50 · Bulle (messages) 30 min · Pixwar (jeux) 20 min.",
+        "Déverrouillages : 87 par jour en moyenne. Moment le plus actif : entre 21 h et 23 h.",
+        "Session la plus longue : 1 h 05 sur Zipzip, mardi soir — lancée « juste pour regarder une vidéo »."
+      ],
+      "footer": ["Paramètres", "Aide", "Exporter le rapport"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "releveNino",
+          "questions": [
+            {
+              "question": "Combien de temps Nino passe-t-il chaque jour sur les vidéos courtes ?",
+              "options": [
+                "30 minutes",
+                "2 h 50",
+                "3 h 40",
+                "1 h 05"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : la ligne « Détail par appli » indique Zipzip (vidéos courtes) 2 h 50. Les 3 h 40, c'est le total — savoir séparer le total du détail, c'est déjà lire ses données.",
+              "feedbackKo": "Regarde la ligne « Détail par appli » : Zipzip (vidéos courtes) 2 h 50. Les 3 h 40 du haut, c'est le TOTAL de toutes les applis. Un relevé se lit ligne par ligne, comme une pièce à conviction."
+            },
+            {
+              "question": "D'après le relevé, à quel moment Nino utilise-t-il le plus son téléphone ?",
+              "options": [
+                "Le matin avant les cours",
+                "Entre 21 h et 23 h",
+                "À midi, à la cantine",
+                "Le relevé ne le dit pas"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact, c'est écrit à côté des déverrouillages : « moment le plus actif : entre 21 h et 23 h ». Indice précieux : c'est pile le moment où le sommeil se prépare.",
+              "feedbackKo": "L'info était sur la ligne « Déverrouillages » : « moment le plus actif : entre 21 h et 23 h ». Ces relevés ne donnent pas qu'un total : ils disent aussi QUAND — souvent le soir, au détriment du sommeil."
+            }
+          ]
+        },
+        {
+          "document": "releveNino",
+          "questions": [
+            {
+              "question": "Combien de fois par jour Nino déverrouille-t-il son téléphone, en moyenne ?",
+              "options": [
+                "8 fois",
+                "25 fois",
+                "87 fois",
+                "350 fois"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui : 87 déverrouillages, c'est écrit noir sur blanc. Environ une fois toutes les dix minutes de la journée — souvent par réflexe, pas par besoin.",
+              "feedbackKo": "C'était sur la ligne « Déverrouillages : 87 par jour en moyenne ». Ce chiffre-là est un super indice : on déverrouille souvent par réflexe, sans même savoir pourquoi."
+            },
+            {
+              "question": "Sur les 3 h 40 quotidiennes de Nino, quelle part est engloutie par les vidéos courtes ?",
+              "options": [
+                "Moins de la moitié",
+                "Environ les trois quarts",
+                "La quasi-totalité (plus de 90 %)",
+                "Impossible à savoir avec ce relevé"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien calculé : 2 h 50 sur 3 h 40, ça fait environ les trois quarts. Une seule appli avale presque tout le temps d'écran — c'est LA découverte du relevé.",
+              "feedbackKo": "Le relevé permettait de calculer : Zipzip 2 h 50 sur un total de 3 h 40, soit environ les trois quarts. Comparer une ligne au total, c'est comme ça qu'on fait parler des chiffres."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Nino", "avatar": "😳" },
+          "etapes": [
+            { "de": "eux", "texte": "attends c'est quoi ce délire, mon tel dit 3h40 PAR JOUR 😳" },
+            { "de": "eux", "texte": "moi j'aurais dit 1h, grand max… il ment non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Il exagère forcément, t'inquiète.",
+                  "ok": false,
+                  "feedback": "Le relevé ne devine pas, il chronomètre. C'est notre cerveau qui sous-estime : les petites sessions de 2 minutes, on les oublie toutes."
+                },
+                {
+                  "texte": "Il ne ment pas : il compte tout, même les mini-sessions qu'on oublie.",
+                  "ok": true,
+                  "feedback": "Exactement. 87 déverrouillages de quelques minutes, mis bout à bout, ça fait des heures. Presque tout le monde sous-estime son temps réel — Nino n'a rien d'anormal."
+                },
+                {
+                  "texte": "Supprime l'appli de relevé, tu seras tranquille.",
+                  "ok": false,
+                  "feedback": "Casser le thermomètre ne fait pas baisser la fièvre 😄. Le relevé n'est pas une punition : c'est un indice pour comprendre."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok mais POURQUOI 2h50 sur Zipzip ?? à chaque fois je voulais juste regarder UNE vidéo 😭" },
+            {
+              "choix": [
+                {
+                  "texte": "Parce que t'as zéro volonté 😂",
+                  "ok": false,
+                  "feedback": "Pas de morale ici : Zipzip est conçue par des équipes entières pour te garder le plus longtemps possible. Le problème n'est pas la volonté de Nino."
+                },
+                {
+                  "texte": "Parce que l'appli enchaîne les vidéos toute seule et que le fil n'a pas de fin.",
+                  "ok": true,
+                  "feedback": "C'est ça : lecture automatique + défilement infini = jamais de moment « stop » où décider d'arrêter. Repérer ces mécanismes, c'est déjà reprendre la main."
+                },
+                {
+                  "texte": "Parce que chaque vidéo dure plus longtemps que tu crois.",
+                  "ok": false,
+                  "feedback": "Au contraire : elles sont courtes exprès ! Ce n'est pas la durée d'une vidéo qui fait 2 h 50, c'est l'enchaînement sans fin de centaines de vidéos."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Verdict : le relevé ne juge personne, il informe. Savoir OÙ passe ton temps et COMMENT l'appli s'y prend pour te retenir, c'est ça, avoir du recul sur ses usages." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Perquisition dans l'appli Zipzip ! Classe chaque mécanisme : est-il conçu pour te retenir, ou pour te rendre le contrôle ?",
+          "categories": [
+            { "id": "aimant", "label": "🧲 Conçu pour te retenir" },
+            { "id": "controle", "label": "🛞 Te rend le contrôle" }
+          ],
+          "items": [
+            {
+              "texte": "La vidéo suivante se lance toute seule",
+              "categorie": "aimant",
+              "feedbackOk": "Oui : tu n'as même plus à décider de continuer, l'appli décide pour toi. Chaque décision évitée, c'est du temps gagné… pour elle.",
+              "feedbackKo": "C'est un aimant : la lecture automatique supprime le moment où tu pourrais choisir d'arrêter. Décider à ta place, c'est sa façon de te garder."
+            },
+            {
+              "texte": "Le fil est infini : on n'arrive jamais « au bout »",
+              "categorie": "aimant",
+              "feedbackOk": "Exact : pas de dernière page, pas de fin, donc pas de signal « c'est terminé ». Un livre se finit, un fil infini jamais.",
+              "feedbackKo": "C'était un aimant : le défilement infini supprime le signal de fin. Sans « dernière page », ton cerveau ne reçoit jamais le message d'arrêter."
+            },
+            {
+              "texte": "Le minuteur « pause après 45 minutes d'affilée »",
+              "categorie": "controle",
+              "feedbackOk": "Oui : cet écran t'oblige à remarquer le temps qui passe et à re-décider. C'est toi qui reprends le volant.",
+              "feedbackKo": "Celui-là te rend le contrôle : il interrompt l'enchaînement et te redonne un moment pour choisir. Exactement ce que le fil infini t'enlève."
+            },
+            {
+              "texte": "La notification « 🔥 ta série de 12 jours va s'éteindre ! »",
+              "categorie": "aimant",
+              "feedbackOk": "Bien vu : la « série » n'existe que pour te faire revenir chaque jour, par peur de perdre. Tu ne perds rien de réel si elle s'éteint.",
+              "feedbackKo": "C'était un aimant : la « série » fabrique une peur de perdre… quelque chose qui n'existe pas. Son seul but : te faire ouvrir l'appli tous les jours."
+            },
+            {
+              "texte": "L'écran « Temps passé aujourd'hui : 1 h 12 »",
+              "categorie": "controle",
+              "feedbackOk": "Exact : une information claire sur ton propre usage, comme le relevé de Nino. Voir le chiffre, c'est le premier pas du recul.",
+              "feedbackKo": "Celui-là te rend le contrôle : il t'informe sur ton usage réel au lieu de le cacher. C'est le même rôle que le relevé de Nino."
+            },
+            {
+              "texte": "Le bouton « voir moins de vidéos de ce genre »",
+              "categorie": "controle",
+              "feedbackOk": "Oui : là, c'est toi qui règles la machine au lieu de la subir. Peu de gens savent que ce bouton existe.",
+              "feedbackKo": "Il te rend le contrôle : c'est toi qui dis à l'algorithme quoi te montrer, au lieu de le laisser choisir. Cherche-le, il est souvent bien caché."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "22 h, le téléphone de Nino vibre. Clique les notifications réglo, retiens-toi sur celles fabriquées pour le faire revenir !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "🔥 DERNIÈRE CHANCE : ta série de 15 jours expire à MINUIT !!!",
+              "bonne": false,
+              "feedback": "Urgence + majuscules + peur de perdre la « série » : trois techniques dans une seule notification. Il n'y a rien à perdre, sauf ta soirée."
+            },
+            {
+              "texte": "Maman : tu peux vider le lave-vaisselle avant de dormir ? 🙏",
+              "bonne": true,
+              "feedback": "Un vrai message, d'une vraie personne, qui attend une vraie réponse. Rien à vendre, rien à scroller."
+            },
+            {
+              "texte": "🎁 CADEAU : 100 pièces offertes si tu te reconnectes MAINTENANT",
+              "bonne": false,
+              "feedback": "Le combo cadeau + urgence : le « cadeau » est virtuel, mais le temps que tu vas y passer est bien réel. C'est toi le produit."
+            },
+            {
+              "texte": "😱 Tout le monde parle de cette vidéo… ne sois pas le dernier à la voir !",
+              "bonne": false,
+              "feedback": "Appel à la peur de rater (le fameux FOMO). Personne n'en parle : ce message est envoyé par un robot à des millions de gens."
+            },
+            {
+              "texte": "Collège des Tilleuls : la sortie au musée de jeudi est confirmée.",
+              "bonne": true,
+              "feedback": "Information pratique, datée, source identifiée. Elle te dit quelque chose d'utile puis te laisse tranquille : c'est toute la différence."
+            },
+            {
+              "texte": "Quelqu'un a peut-être regardé ton profil 👀 Découvre qui…",
+              "bonne": false,
+              "feedback": "Mystère fabriqué pour te faire ouvrir l'appli : « peut-être » veut dire qu'il n'y a probablement rien. La curiosité est un aimant très efficace."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

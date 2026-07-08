@@ -1,0 +1,289 @@
+{
+  "id": "3.D3.POST.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Intégrer les enjeux des traces numériques dans sa communication en ligne.",
+  "titre": "Portrait-robot numérique",
+  "accroche": "L'animalerie où Nora postule pour son stage a tapé son pseudo dans un moteur de recherche… et son portrait s'est affiché tout seul. Mène l'enquête sur ses traces, puis reprends la main sur les tiennes.",
+  "documents": {
+    "serpFuria": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=nora_furia",
+      "requete": "nora_furia",
+      "nbResultats": "Environ 38 résultats (0,27 seconde)",
+      "resultats": [
+        {
+          "url": "zikbox.io › profil › nora_furia",
+          "titre": "nora_furia — playlists publiques | Zikbox",
+          "extrait": "Nora L., 3e au collège de Port-Marin 🎧 Playlists : « rage & révisions », « tristesse solo », « soirée pyjama »… 87 abonnés — profil public."
+        },
+        {
+          "url": "brikavis.fr › snack-le-croustillant › avis",
+          "titre": "Snack Le Croustillant, Port-Marin — 32 avis clients",
+          "extrait": "nora_furia ⭐☆☆☆☆ il y a 8 mois : « Frites molles, serveurs NULS, une équipe de bras cassés. FUYEZ. » — 3 personnes ont trouvé cet avis utile"
+        },
+        {
+          "url": "forum-pixelquest.net › topic-2291",
+          "titre": "Recrute team niveau 40+ [page 12] — Forum PixelQuest",
+          "extrait": "nora_furia, il y a 2 ans : « add-moi !! je joue tous les soirs après 21h, jsuis souvent seule à la maison le mardi 🎮 » — 6 réponses"
+        },
+        {
+          "url": "mediatheque-portmarin.fr › club-ados",
+          "titre": "Le club ados de la médiathèque fait le plein !",
+          "extrait": "Bravo à Nora L., alias nora_furia sur notre serveur, pour ses ateliers BD très suivis. Les inscriptions au club sont ouvertes ! 📚"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpFuria",
+          "questions": [
+            {
+              "question": "La responsable de l'animalerie a repéré le pseudo dans l'adresse mail de Nora et l'a tapé sur Cherchio. Quel résultat risque de lui faire douter d'accueillir Nora dans son équipe ?",
+              "options": [
+                "Le profil Zikbox et ses playlists",
+                "L'avis posté sur Brikavis",
+                "Le message du forum PixelQuest",
+                "L'article de la médiathèque"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : « serveurs NULS, équipe de bras cassés »… La façon dont tu parles publiquement des gens qui travaillent en dit long sur le collègue que tu serais. Un avis posté en 30 secondes de colère parle encore à ta place 8 mois plus tard.",
+              "feedbackKo": "Relis le résultat n°2 : Nora y traite une équipe entière de « bras cassés », en majuscules. Pour quelqu'un qui hésite à la prendre dans SON équipe, cette trace pèse plus lourd qu'une playlist. Ce que tu publies sous le coup de la colère devient ton portrait."
+            },
+            {
+              "question": "Un inconnu malveillant tombe sur ces mêmes résultats. Lequel lui donne les infos les plus dangereuses ?",
+              "options": [
+                "Sa note d'une étoile sur Brikavis",
+                "Sa playlist « rage & révisions »",
+                "Le message du forum PixelQuest",
+                "Le nombre de ses abonnés Zikbox"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien vu : « tous les soirs après 21h, souvent seule à la maison le mardi ». Nora a publié ses horaires et ses moments de solitude — exactement ce qu'un inconnu malveillant cherche. On ne poste jamais son emploi du temps ni quand on est seul.",
+              "feedbackKo": "Regarde le résultat n°3 : Nora y écrit qu'elle est « souvent seule à la maison le mardi », après 21h. Croisé avec sa ville et son collège (résultat n°1), c'est une carte au trésor pour un inconnu malveillant. Les horaires et la solitude ne se publient jamais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Nora (nora_furia)", "avatar": "🦊" },
+          "etapes": [
+            { "de": "eux", "texte": "gros stress 😩 la dame de l'animalerie m'a dit « j'ai vu votre avis sur le Croustillant »… j'avais même oublié qu'il existait" },
+            { "de": "eux", "texte": "et j'envoie mon dossier pour le lycée option ciné le mois prochain 😱 je fais quoi de tout ce bazar ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Commence par te chercher toi-même : ton pseudo ET ton nom, pour voir ce que n'importe qui peut voir.",
+                  "ok": true,
+                  "feedback": "Exactement. On ne peut pas trier ce qu'on ne connaît pas. Fais la recherche sans être connectée à tes comptes : tu verras ton portrait comme le voit un inconnu — ou un lycée."
+                },
+                {
+                  "texte": "Supprime ton adresse mail, comme ça plus personne ne remonte jusqu'à toi.",
+                  "ok": false,
+                  "feedback": "Ça ne change rien : les traces déjà publiées restent en ligne, avec ou sans ton adresse. La première étape, c'est de te chercher toi-même pour dresser la liste de ce qui est visible."
+                },
+                {
+                  "texte": "Laisse tomber, personne ne fouille vraiment ces trucs-là.",
+                  "ok": false,
+                  "feedback": "La responsable de l'animalerie vient LITTÉRALEMENT de le faire… Lycées et employeurs cherchent aussi. Première étape : te chercher toi-même pour savoir ce qu'ils trouveront."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok j'ai tout listé 😳 l'avis énervé, le post du forum avec mes horaires, et ma playlist « tristesse solo » en public…" },
+            {
+              "choix": [
+                {
+                  "texte": "Supprime l'avis et le post, passe tes playlists en privé, et garde l'article de la médiathèque bien visible.",
+                  "ok": true,
+                  "feedback": "C'est le grand tri en trois gestes : effacer ce qui te dessert, paramétrer ce qui est intime, garder ce qui joue pour toi. L'article de la médiathèque, c'est de l'or pour ton dossier de lycée."
+                },
+                {
+                  "texte": "Efface absolument tout, même l'article de la médiathèque.",
+                  "ok": false,
+                  "feedback": "Dommage ! Cet article montre ce que tu sais faire : c'est une trace qui parle POUR toi. Un bon portrait numérique n'est pas un portrait vide — on efface ce qui dessert, on garde ce qui ressemble."
+                },
+                {
+                  "texte": "Passe juste tout en privé, pas besoin de supprimer quoi que ce soit.",
+                  "ok": false,
+                  "feedback": "Un avis posté sur un site d'avis n'a pas de mode privé, et le post du forum non plus. Le paramétrage marche pour TES comptes (playlists, profil) ; le reste, il faut le supprimer toi-même ou le demander au site."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "le forum répond pas pour supprimer mon vieux post 😤 il reste en premier quand on tape mon pseudo" },
+            {
+              "choix": [
+                {
+                  "texte": "Remplis le formulaire de déréférencement du moteur de recherche : la page n'apparaîtra plus quand on te cherche.",
+                  "ok": true,
+                  "feedback": "Oui ! Le déréférencement, c'est demander au moteur de ne plus afficher cette page dans les résultats liés à ton nom ou ton pseudo. La page existe encore, mais elle ne s'affiche plus quand on te cherche — c'est ce qui compte ici."
+                },
+                {
+                  "texte": "Crée des faux comptes pour harceler les modérateurs jusqu'à ce qu'ils craquent.",
+                  "ok": false,
+                  "feedback": "Tu créerais de nouvelles traces bien pires que l'ancienne — et le harcèlement est puni par la loi. Le vrai levier s'appelle le déréférencement : un formulaire du moteur de recherche, tout simplement."
+                },
+                {
+                  "texte": "Change de pseudo partout et n'y pense plus.",
+                  "ok": false,
+                  "feedback": "Le post reste en ligne avec tes horaires dedans, et la médiathèque a déjà relié nora_furia à ton prénom. Changer de pseudo ne recolle pas le passé : demande le déréférencement au moteur."
+                }
+              ]
+            },
+            { "de": "info", "texte": "La méthode de Nora : se chercher, trier, paramétrer, déréférencer. Et le geste qui évite tout le reste : réfléchir AVANT de poster. Chaque publication d'aujourd'hui, c'est ton portrait de demain. 🕵️" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Grand tri dans les traces de Nora. Pour chacune, choisis la meilleure stratégie.",
+          "categories": [
+            { "id": "garder", "label": "✅ Garder public" },
+            { "id": "parametrer", "label": "🔒 Passer en privé" },
+            { "id": "supprimer", "label": "🧹 Supprimer" },
+            { "id": "dereferencer", "label": "🙈 Déréférencer" }
+          ],
+          "items": [
+            {
+              "texte": "L'article de la médiathèque qui félicite Nora pour ses ateliers BD",
+              "categorie": "garder",
+              "feedbackOk": "Oui : cette trace montre ce qu'elle sait faire. Pour un dossier de lycée ou un stage, c'est un atout — gérer ses traces, ce n'est pas tout effacer.",
+              "feedbackKo": "Celle-là, on la garde publique ! Elle parle en faveur de Nora : un portrait numérique réussi met en avant ce qui te ressemble, pas une page blanche."
+            },
+            {
+              "texte": "Sa playlist « tristesse solo », visible par n'importe qui",
+              "categorie": "parametrer",
+              "feedbackOk": "Exact : rien d'interdit, mais c'est intime. Le réglage « privé » existe pour ça : deux clics dans les paramètres, et ses humeurs ne sont plus offertes aux inconnus.",
+              "feedbackKo": "C'était « passer en privé » : la playlist est sur SON compte, donc elle contrôle sa visibilité dans les paramètres. Pas besoin de supprimer ce qui peut simplement devenir privé."
+            },
+            {
+              "texte": "Son avis « équipe de bras cassés » posté sur Brikavis",
+              "categorie": "supprimer",
+              "feedbackOk": "Oui : elle en est l'autrice, elle peut l'effacer depuis son compte. Un avis agressif parle plus de toi que du resto — celui-là ne mérite pas de survivre.",
+              "feedbackKo": "C'était « supprimer » : Nora a écrit cet avis, donc elle peut l'effacer elle-même depuis son compte Brikavis. Un site d'avis n'a pas de mode privé — quand une trace te dessert et que tu en es l'auteur, tu l'effaces."
+            },
+            {
+              "texte": "Le post du forum avec ses horaires, que le site refuse d'effacer",
+              "categorie": "dereferencer",
+              "feedbackOk": "Exact : quand le site ne répond pas, on demande au moteur de recherche de ne plus afficher la page dans les résultats. Elle existe encore, mais on ne la trouve plus en cherchant Nora.",
+              "feedbackKo": "C'était « déréférencer » : le site fait le mort, donc supprimer est impossible. Le plan B, c'est le formulaire du moteur de recherche pour que la page n'apparaisse plus quand on cherche son pseudo."
+            },
+            {
+              "texte": "Son vieux compte de jeu abandonné, avec sa ville écrite dans le profil",
+              "categorie": "supprimer",
+              "feedbackOk": "Oui : un compte qu'on n'utilise plus, c'est une trace qui traîne sans surveillance. On le supprime, et ses données avec.",
+              "feedbackKo": "C'était « supprimer » : ce compte dort depuis des années avec sa ville dedans. Un compte abandonné ne sert à rien et reste trouvable — on le ferme pour de bon."
+            }
+          ]
+        },
+        {
+          "consigne": "Grand tri dans TES traces, cette fois. Pour chacune, choisis la meilleure stratégie.",
+          "categories": [
+            { "id": "garder", "label": "✅ Garder public" },
+            { "id": "parametrer", "label": "🔒 Passer en privé" },
+            { "id": "supprimer", "label": "🧹 Supprimer" },
+            { "id": "dereferencer", "label": "🙈 Déréférencer" }
+          ],
+          "items": [
+            {
+              "texte": "Ton compte où tu postes tes dessins, suivi par ton club d'arts plastiques",
+              "categorie": "garder",
+              "feedbackOk": "Oui : cette trace montre ton talent et ta régularité. Pour un dossier de lycée, c'est un atout — un bon portrait numérique n'est pas un portrait vide.",
+              "feedbackKo": "Celui-là, garde-le public ! Il parle POUR toi : gérer ses traces, c'est effacer ce qui dessert et mettre en avant ce qui te ressemble."
+            },
+            {
+              "texte": "Tes stories et ta liste d'amis réglées sur « visible par tout le monde »",
+              "categorie": "parametrer",
+              "feedbackOk": "Exact : c'est TON compte, donc tu contrôles la visibilité dans les paramètres. « Amis seulement », et tes journées ne sont plus un spectacle public.",
+              "feedbackKo": "C'était « passer en privé » : pas besoin de supprimer un compte que tu utilises. Les paramètres de confidentialité servent exactement à ça : choisir QUI voit tes stories."
+            },
+            {
+              "texte": "Ton commentaire « ce serveur est rempli de guignols » posté sous une vidéo",
+              "categorie": "supprimer",
+              "feedbackOk": "Oui : tu en es l'auteur, tu peux l'effacer toi-même. Un commentaire méprisant parle de toi bien plus que de sa cible — et il reste lisible des années.",
+              "feedbackKo": "C'était « supprimer » : c'est ton commentaire, donc tu peux l'effacer directement. Un commentaire public n'a pas de mode privé — quand il te dessert, tu le retires."
+            },
+            {
+              "texte": "Une vieille page de blog qui cite ton nom complet, dont l'auteur ne répond plus",
+              "categorie": "dereferencer",
+              "feedbackOk": "Exact : tu ne peux pas supprimer la page d'un site qui ne répond pas. Le formulaire de déréférencement du moteur la fera disparaître des recherches sur ton nom.",
+              "feedbackKo": "C'était « déréférencer » : la page ne t'appartient pas et l'auteur est injoignable, donc impossible de la supprimer. On demande au moteur de ne plus l'afficher quand on cherche ton nom."
+            },
+            {
+              "texte": "Ton profil sur un réseau que tu as quitté l'an dernier",
+              "categorie": "supprimer",
+              "feedbackOk": "Oui : un compte abandonné, c'est une vitrine de toi que plus personne ne surveille. On le supprime, lui et ses données.",
+              "feedbackKo": "C'était « supprimer » : ce profil continue de t'afficher alors que tu n'y mets plus les pieds. Un compte qu'on n'utilise plus se ferme — sinon il vieillit tout seul, en public."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Ton fil défile ! Attrape les bons réflexes avant de publier, laisse filer les pièges qui veulent te faire lâcher des traces.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Avant de poster, je me demande : « Et si mon futur lycée voyait ça ? »",
+              "bonne": true,
+              "feedback": "Bon réflexe : ce test de 3 secondes filtre presque toutes les traces regrettables. Publier, c'est écrire son portrait de demain."
+            },
+            {
+              "texte": "🎁 100 ABONNÉS OFFERTS !! Poste ton nom complet + ton collège en commentaire !!!",
+              "bonne": false,
+              "feedback": "Piège du cadeau : les majuscules et le « gratuit » te font payer en données. Nom + collège = de quoi te retrouver dans la vraie vie. Rien n'est jamais « offert »."
+            },
+            {
+              "texte": "Je vérifie qui peut voir mon post : « amis seulement », pas « tout le monde ».",
+              "bonne": true,
+              "feedback": "Oui : régler la visibilité AVANT de publier, c'est choisir qui lit ton portrait au lieu de le laisser traîner en public."
+            },
+            {
+              "texte": "⏰ DERNIÈRE CHANCE ! Quiz « quel ado es-tu ? » — réponds VITE avec ta date de naissance !",
+              "bonne": false,
+              "feedback": "Piège de l'urgence : le compte à rebours t'empêche de réfléchir, c'est fait exprès. Ta date de naissance est une donnée précieuse, pas une réponse de quiz."
+            },
+            {
+              "texte": "😢 Ce chaton sera abandonné si tu ne partages pas sa photo avec le nom de ta ville…",
+              "bonne": false,
+              "feedback": "Piège de l'émotion : aucun chaton ne sera sauvé, mais ta ville sera publiée. Quand un message te serre le cœur pour te faire poster, repose le téléphone."
+            },
+            {
+              "texte": "Photo de groupe : je demande l'accord des autres avant de la publier.",
+              "bonne": true,
+              "feedback": "Exact : leurs traces leur appartiennent. Publier quelqu'un sans son accord, c'est lui imposer une trace qu'il n'a pas choisie."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

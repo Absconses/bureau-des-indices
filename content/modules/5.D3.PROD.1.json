@@ -1,0 +1,277 @@
+{
+  "id": "5.D3.PROD.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Comprendre les règles de communication avant d'élaborer un contenu.",
+  "titre": "Publiable ou pas ?",
+  "accroche": "Le club journal boucle son numéro spécial « portables au collège ». Avant d'appuyer sur Publier, fixe les règles avec l'équipe : ce qui peut sortir… et ce qui reste au brouillon.",
+  "documents": {
+    "brouillonDebat": {
+      "template": "site-article",
+      "nomSite": "LE MÉGAPHONE — blog du club journal",
+      "url": "https://blog.college-simone-arnal.fr/megaphone/brouillon-portables",
+      "menu": ["Accueil", "Débats", "Vie du collège", "Archives"],
+      "surtitre": "BROUILLON — relecture avant publication",
+      "titre": "Portables au collège : faut-il les interdire ?",
+      "auteur": "Par Tom et Léna, club journal",
+      "date": "Brouillon du 12 mars",
+      "chapo": "Le conseil d'administration discute d'une interdiction totale des portables. Le Mégaphone ouvre le débat.",
+      "corps": [
+        "D'après notre sondage, 100 % des élèves veulent garder leur portable. (Sondage réalisé auprès des 12 élèves présents au club mardi.)",
+        "M. Bréval, le CPE, défend l'interdiction totale. De toute façon, il est trop vieux pour comprendre les élèves, son avis ne compte pas vraiment.",
+        "Mme Ferro, représentante des parents, propose des casiers pour déposer les téléphones le matin. Elle a accepté de répondre à nos questions dans le prochain numéro."
+      ],
+      "footer": ["Contact", "Mentions légales", "Charte du club"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya (club journal)", "avatar": "📰" },
+          "etapes": [
+            { "de": "eux", "texte": "grosse soirée bouclage 😅 le numéro spécial « portables au collège » part à l'impression demain" },
+            { "de": "eux", "texte": "problème : Tom veut écrire que le principal interdit les portables « juste pour embêter les élèves ». On garde ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, c'est son avis, et dans un journal chacun écrit ce qu'il veut.",
+                  "ok": false,
+                  "feedback": "Un journal engage tout le club, pas seulement Tom. Et prêter une intention à quelqu'un sans preuve, ce n'est pas un avis : c'est une accusation."
+                },
+                {
+                  "texte": "Non : on n'a aucune preuve de cette intention. On vérifie avant d'affirmer.",
+                  "ok": true,
+                  "feedback": "Règle n°1 du club : vérifier avant d'affirmer. Personne ne connaît les intentions du principal — par contre, on peut l'interviewer pour les lui demander !"
+                },
+                {
+                  "texte": "On garde, mais on ajoute « selon certains » pour se couvrir.",
+                  "ok": false,
+                  "feedback": "« Selon certains » ne rend pas l'accusation plus vraie — et le journal reste responsable de ce qu'il publie. On vérifie, ou on ne publie pas."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok on lui dit 👍 autre chose : Léna a écrit « l'interdiction totale est une mauvaise idée, et voici nos 3 arguments ». Ça passe ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Non, on n'a pas le droit de critiquer une décision des adultes.",
+                  "ok": false,
+                  "feedback": "Si ! Critiquer une IDÉE avec des arguments, c'est permis — c'est même le principe d'un débat. Ce qui est interdit, c'est d'attaquer les PERSONNES."
+                },
+                {
+                  "texte": "Oui : elle critique une idée avec des arguments. C'est le but d'une page débat.",
+                  "ok": true,
+                  "feedback": "Tu tiens la différence clé : discuter une idée, c'est permis et même sain ; attaquer une personne, jamais. Léna reste du bon côté de la ligne."
+                },
+                {
+                  "texte": "Oui, et on peut ajouter que ceux qui veulent interdire sont ridicules.",
+                  "ok": false,
+                  "feedback": "La chronique de Léna critiquait l'idée : ça passe. « Ridicules », ça vise les personnes : ça ne passe plus. Ne mélange jamais les deux."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "dernier truc 😬 M. Berthon, cité dans le numéro d'avant, dit qu'on a déformé ses propos et veut s'expliquer" },
+            {
+              "choix": [
+                {
+                  "texte": "Trop tard, le numéro est sorti. On passe à autre chose.",
+                  "ok": false,
+                  "feedback": "Impossible : une personne mise en cause peut demander à répondre, c'est le droit de réponse. L'ignorer, c'est l'erreur qui ruine la confiance des lecteurs."
+                },
+                {
+                  "texte": "On publie sa mise au point dans le prochain numéro : c'est son droit de réponse.",
+                  "ok": true,
+                  "feedback": "Exactement : le droit de réponse permet à une personne mise en cause de s'expliquer. Un journal sérieux le respecte — et gagne la confiance de ses lecteurs."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Règles du club adoptées : on vérifie avant d'affirmer ✔ on critique les idées, jamais les personnes ✔ on respecte le droit de réponse ✔ Bon bouclage !" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ces phrases sont proposées pour le numéro spécial. Trie : ce qui peut partir tel quel, ce qui demande une vérification, ce qui ne passera jamais.",
+          "categories": [
+            { "id": "publiable", "label": "✅ Publiable" },
+            { "id": "verifier", "label": "🔍 À vérifier d'abord" },
+            { "id": "jamais", "label": "🚫 Jamais" }
+          ],
+          "items": [
+            {
+              "texte": "« L'interdiction totale nous semble excessive : voici nos trois arguments. »",
+              "categorie": "publiable",
+              "feedbackOk": "Oui : c'est une critique d'IDÉE, annoncée avec des arguments. C'est exactement le rôle d'une page débat.",
+              "feedbackKo": "C'était publiable : on y critique une idée, avec des arguments. C'est permis — et c'est même le but d'un débat."
+            },
+            {
+              "texte": "« Le principal a décidé l'interdiction pour toucher une prime secrète. »",
+              "categorie": "jamais",
+              "feedbackOk": "Bien vu : accuser quelqu'un sans preuve, c'est de la diffamation. Même « pour rigoler », ça peut coûter très cher au journal.",
+              "feedbackKo": "Jamais : c'est une accusation grave sans aucune preuve. Ça s'appelle de la diffamation, et le journal en serait responsable."
+            },
+            {
+              "texte": "« D'après un sondage vu passer sur les réseaux, 80 % des élèves seraient contre. »",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : « vu passer sur les réseaux » n'est pas une source. On retrouve le sondage d'origine avant de citer le chiffre.",
+              "feedbackKo": "À vérifier : qui a fait ce sondage ? Où ? « Vu sur les réseaux » n'est pas une source — on vérifie avant d'affirmer."
+            },
+            {
+              "texte": "« Mme Vialat, la prof de techno, est nulle de toute façon. »",
+              "categorie": "jamais",
+              "feedbackOk": "Oui : ça n'apporte rien au débat et ça attaque une personne. On critique les idées, jamais les gens.",
+              "feedbackKo": "Jamais publiable : « est nulle » vise la personne, pas ses idées. Une attaque personnelle n'a pas sa place dans un journal."
+            },
+            {
+              "texte": "« La déléguée de 5eB explique pourquoi elle est pour les casiers à portables. »",
+              "categorie": "publiable",
+              "feedbackOk": "Oui : une élève donne son avis argumenté, en son nom et avec son accord. Un débat vit de ce genre de témoignages.",
+              "feedbackKo": "C'était publiable : elle donne son avis sur le sujet, en son nom, avec des raisons. Rien de faux, rien de blessant."
+            },
+            {
+              "texte": "« Un collège voisin aurait déjà testé les casiers, d'après un élève. »",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : le conditionnel « aurait » + un seul témoin = à confirmer. Un appel au collège en question, et on saura.",
+              "feedbackKo": "À vérifier : « aurait testé, d'après un élève », c'est une rumeur pour l'instant. On confirme à la source avant d'écrire."
+            }
+          ]
+        },
+        {
+          "consigne": "Dernier tri avant le bouclage : classe ces phrases proposées pour la page débat du numéro spécial.",
+          "categories": [
+            { "id": "publiable", "label": "✅ Publiable" },
+            { "id": "verifier", "label": "🔍 À vérifier d'abord" },
+            { "id": "jamais", "label": "🚫 Jamais" }
+          ],
+          "items": [
+            {
+              "texte": "« Trois élèves de 4e racontent comment le portable les aide à réviser. »",
+              "categorie": "publiable",
+              "feedbackOk": "Oui : des témoignages recueillis et assumés, en lien direct avec le débat. Ça, c'est du contenu solide.",
+              "feedbackKo": "C'était publiable : des témoignages donnés volontairement, sur le sujet du débat. Rien à vérifier de louche, rien de blessant."
+            },
+            {
+              "texte": "« Le CPE veut l'interdiction parce qu'il déteste les élèves, c'est évident. »",
+              "categorie": "jamais",
+              "feedbackOk": "Bien vu : on lui invente une intention méchante sans aucune preuve. C'est un procès d'intention, pas une information.",
+              "feedbackKo": "Jamais : prêter une intention (« il déteste les élèves ») sans preuve, c'est attaquer la personne, pas discuter son idée."
+            },
+            {
+              "texte": "« Il paraît que le règlement change dès lundi prochain. »",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : « il paraît que » = rumeur. Une question à la vie scolaire, et tu sauras si c'est vrai.",
+              "feedbackKo": "À vérifier : « il paraît que » annonce une rumeur. Avant de l'écrire, on demande confirmation à la vie scolaire."
+            },
+            {
+              "texte": "« Nous ne sommes pas d'accord avec les casiers : voici nos arguments. »",
+              "categorie": "publiable",
+              "feedbackOk": "Oui : désaccord annoncé + arguments = critique d'idée. C'est permis, et c'est ce qui rend un débat intéressant.",
+              "feedbackKo": "C'était publiable : le journal a le droit d'être en désaccord avec une idée, tant qu'il le montre avec des arguments."
+            },
+            {
+              "texte": "« Le surveillant garderait les portables confisqués pour les revendre. »",
+              "categorie": "jamais",
+              "feedbackOk": "Oui : accuser quelqu'un de vol sans preuve, c'est de la diffamation. Le conditionnel « garderait » ne protège de rien.",
+              "feedbackKo": "Jamais : accuser quelqu'un de revendre des objets confisqués, sans preuve, c'est diffamatoire — conditionnel ou pas."
+            },
+            {
+              "texte": "« Un site affirme que les portables sont interdits dans tous les collèges d'Europe. »",
+              "categorie": "verifier",
+              "feedbackOk": "Exact : « un site affirme »… lequel ? On retrouve la source et on vérifie l'info avant de la reprendre.",
+              "feedbackKo": "À vérifier : « un site » n'est pas une source identifiée. On cherche qui l'affirme, et sur quelles bases, avant de publier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "brouillonDebat",
+          "questions": [
+            {
+              "question": "Dans ce brouillon, une phrase attaque une personne au lieu de discuter son idée. Laquelle ?",
+              "options": [
+                "« 100 % des élèves veulent garder leur portable »",
+                "« Il est trop vieux pour comprendre les élèves »",
+                "« Mme Ferro propose des casiers pour déposer les téléphones »",
+                "« Elle a accepté de répondre à nos questions »"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : cette phrase ne discute pas l'idée de M. Bréval, elle s'en prend à lui (son âge). On peut être contre l'interdiction — mais avec des arguments, pas en visant la personne.",
+              "feedbackKo": "Relis le 2e paragraphe : « trop vieux pour comprendre » ne critique pas l'idée d'interdiction, ça attaque M. Bréval lui-même. Critiquer une idée : oui. Attaquer une personne : jamais."
+            },
+            {
+              "question": "Le « 100 % » du premier paragraphe pose un problème. Lequel ?",
+              "options": [
+                "Les sondages sont interdits dans un journal scolaire",
+                "Il fallait écrire le chiffre en toutes lettres",
+                "Il vient d'un mini-sondage de 12 élèves du club, présenté comme l'avis de tous",
+                "Il manque une photo pour l'illustrer"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact — la parenthèse le trahit : 12 élèves du club, déjà motivés par le sujet, ce n'est pas « les élèves ». Avant d'affirmer un chiffre, on vérifie ce qu'il vaut vraiment.",
+              "feedbackKo": "Regarde la parenthèse du 1er paragraphe : « sondage réalisé auprès des 12 élèves présents au club mardi ». Présenter l'avis de 12 membres du club comme celui de tout le collège, c'est affirmer sans avoir vérifié."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Les règles avant de publier : vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Avant de publier une info, on la vérifie — même si elle vient d'un copain.",
+              "vrai": true,
+              "feedback": "Vrai. La confiance n'est pas une preuve : un journal vérifie tout ce qu'il affirme, quelle que soit la source."
+            },
+            {
+              "texte": "Critiquer une idée avec des arguments, c'est interdit dans un journal scolaire.",
+              "vrai": false,
+              "feedback": "Faux. C'est permis, et c'est même le cœur d'un débat. L'interdit, c'est l'attaque contre les personnes."
+            },
+            {
+              "texte": "Accuser quelqu'un d'un acte grave sans preuve peut être de la diffamation.",
+              "vrai": true,
+              "feedback": "Vrai. Et un journal — même scolaire, même en ligne — est responsable de ce qu'il publie."
+            },
+            {
+              "texte": "Sur le blog du club, on peut tout écrire : c'est notre blog.",
+              "vrai": false,
+              "feedback": "Faux. Pas de diffamation, pas d'attaques : les règles s'appliquent partout, y compris en ligne. Publier = être responsable."
+            },
+            {
+              "texte": "Une personne mise en cause dans un article peut demander à répondre.",
+              "vrai": true,
+              "feedback": "Vrai. C'est le droit de réponse : le journal doit lui laisser la place de s'expliquer."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

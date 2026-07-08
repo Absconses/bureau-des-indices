@@ -1,0 +1,240 @@
+{
+  "id": "3.D2.OUT.3",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Connaître et utiliser des outils simples de veille numérique.",
+  "titre": "L'info vient à toi",
+  "accroche": "Fatigué de retaper les mêmes recherches sur ton futur métier ? Un bon enquêteur ne court pas après les indices : il pose des capteurs — alertes, abonnements, flux — et c'est toi qui choisis les robinets.",
+  "documents": {
+    "postSoigneur": {
+      "template": "post",
+      "pseudo": "@ZooDesMetiers",
+      "avatar": "🦁",
+      "bio": "Le compte qui fait découvrir les métiers animaliers — tenu par le parc pédagogique de Valbrune",
+      "texte": "📢 Notre soigneuse Léna répond à vos questions mercredi à 18h, en direct ! Études, salaire, journée type… posez tout 🐾 #MetierSoigneur #OrientationCollege",
+      "likes": 342,
+      "partages": 87,
+      "commentaires": 56
+    },
+    "articleSoigneur": {
+      "template": "site-article",
+      "nomSite": "CAP HORIZON",
+      "url": "https://www.cap-horizon.fr/metiers/soigneur-animalier",
+      "menu": ["Accueil", "Métiers", "Stages", "S'abonner"],
+      "surtitre": "Fiche métier",
+      "titre": "Soigneur animalier : un métier qui ne connaît pas le dimanche",
+      "auteur": "Par Awa Rimbert",
+      "date": "Publié le 12 mai 2026",
+      "chapo": "Nourrir, observer, soigner : plongée dans le quotidien d'un métier très demandé par les collégiens.",
+      "corps": [
+        "Au parc ou en refuge, la journée du soigneur commence tôt : préparation des rations, nettoyage des enclos, observation des animaux. Le métier attire, mais les places sont rares et les formations sélectives.",
+        "Envie de suivre nos prochaines fiches métiers ? Abonne-toi à notre lettre d'info ou à notre flux RSS via le menu « S'abonner » : chaque nouvelle fiche viendra à toi."
+      ],
+      "footer": ["Contact", "Mentions légales", "Flux RSS"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postSoigneur",
+          "questions": [
+            {
+              "question": "Tu veux voir passer d'autres infos sur ce métier, même publiées par des comptes que tu ne connais pas encore. Quel mot-dièse suivre en priorité ?",
+              "options": [
+                "#OrientationCollege",
+                "#MetierSoigneur",
+                "#ParcDeValbrune",
+                "#QuestionsReponses"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : ce mot-dièse cible exactement ton métier. En le suivant, tu verras passer les posts de plein de comptes différents — refuges, écoles, soigneurs — pas seulement celui-ci.",
+              "feedbackKo": "Regarde les deux mots-dièse à la fin du post : #OrientationCollege parle de tous les métiers à la fois, alors que #MetierSoigneur vise pile ton sujet. Un bon mot-dièse de veille est précis : ni trop large, ni inventé."
+            },
+            {
+              "question": "D'après sa bio, pourquoi ce compte mérite-t-il une place dans ta veille ?",
+              "options": [
+                "C'est le compte personnel de Léna",
+                "C'est un parc animalier : il parle du métier de l'intérieur",
+                "C'est un compte d'humour sur les animaux",
+                "C'est le compte officiel de ton collège"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la bio annonce « parc pédagogique de Valbrune ». Une source de terrain, qui organise même des directs avec une vraie soigneuse — un excellent robinet pour une veille métier.",
+              "feedbackKo": "La réponse était dans la bio, juste sous le pseudo : c'est le compte du parc pédagogique de Valbrune. Avant d'ajouter un robinet à ta veille, lis toujours la bio — elle te dit qui parle et si la source vaut le coup."
+            }
+          ]
+        },
+        {
+          "document": "articleSoigneur",
+          "questions": [
+            {
+              "question": "Tu veux être prévenu dès que ce site publie une nouvelle fiche métier. Que propose-t-il ?",
+              "options": [
+                "Rien : il faut revenir vérifier soi-même",
+                "Une lettre d'info et un flux RSS",
+                "Un abonnement payant à 5 € par mois",
+                "Un numéro de téléphone à appeler"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : c'est écrit à la fin de l'article et dans le menu « S'abonner ». Lettre d'info ou flux RSS : deux robinets gratuits qui t'apportent les nouveautés sans que tu reviennes chercher.",
+              "feedbackKo": "La réponse était dans la dernière ligne de l'article (et dans le menu) : le site propose une lettre d'info et un flux RSS. Beaucoup de sites ont ces robinets — cherche le lien « S'abonner » ou le logo RSS."
+            },
+            {
+              "question": "Tu choisis le flux RSS de ce site. Concrètement, qu'est-ce que ça change pour toi ?",
+              "options": [
+                "Les nouveaux articles arrivent tout seuls dans ton application de lecture",
+                "Le site t'appelle en visio à chaque publication",
+                "Tu dois recopier l'adresse du site chaque matin",
+                "Le site devient payant"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "C'est ça : le flux RSS envoie chaque nouvel article dans ton lecteur, à côté de ceux de tes autres sites. Un seul endroit à consulter au lieu de dix sites à visiter — c'est l'affût, pas la chasse.",
+              "feedbackKo": "Un flux RSS, c'est un tuyau : chaque nouvel article du site tombe automatiquement dans ton application de lecture, avec ceux de tes autres sources. Fini la tournée manuelle des sites un par un."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre les étapes pour monter ta veille sur le métier que tu vises.",
+          "items": [
+            { "texte": "Je choisis un sujet précis à surveiller : le métier que je vise" },
+            { "texte": "Je repère les sources qui en parlent sérieusement : sites, comptes, mots-dièse" },
+            { "texte": "J'ouvre mes robinets : alerte sur le sujet, abonnements, flux RSS" },
+            { "texte": "Je trie ce qui arrive et je garde ce qui m'est utile" },
+            { "texte": "Je règle ma veille : je coupe les robinets qui ne donnent rien" }
+          ],
+          "feedbackOk": "C'est la bonne mécanique : sujet → sources → robinets → tri → réglage. Une veille se monte une fois, puis se règle comme un instrument — l'info vient à toi sans que tu coures après.",
+          "feedbackKo": "L'ordre logique : d'abord un sujet précis, puis les sources repérées, ensuite seulement tu ouvres les robinets (alerte, abonnements, flux), tu tries ce qui arrive, et enfin tu coupes ce qui ne sert pas. Impossible d'ouvrir un robinet avant de savoir quoi surveiller !"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maëlle (stage de 3e)", "avatar": "🦊" },
+          "etapes": [
+            { "de": "eux", "texte": "je stresse pour mon stage 😩 je veux le faire au refuge animalier de Trézac mais je rate toutes leurs annonces" },
+            { "de": "eux", "texte": "je retape « refuge Trézac » dans le moteur genre trois fois par semaine, y'a jamais rien de neuf" },
+            {
+              "choix": [
+                {
+                  "texte": "Pose une alerte sur « refuge de Trézac » : tu recevras un message dès qu'une page neuve en parle.",
+                  "ok": true,
+                  "feedback": "C'est le principe de la veille : tu poses le capteur une fois, et l'outil surveille le web à ta place. L'info vient à toi."
+                },
+                {
+                  "texte": "Cherche plus souvent, genre trois fois par jour.",
+                  "ok": false,
+                  "feedback": "C'est la chasse épuisante… et tu vas encore rater des trucs. La veille, c'est l'inverse : un outil surveille pour toi pendant que tu vis ta vie."
+                },
+                {
+                  "texte": "Laisse tomber, choisis un stage plus simple à trouver.",
+                  "ok": false,
+                  "feedback": "Renoncer ? Jamais. Il existe des outils qui surveillent un sujet à ta place : une alerte sur « refuge de Trézac », et tu es prévenue automatiquement."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok l'alerte est posée 👌 mais le refuge annonce surtout ses actus sur son compte @AnimoRefuge et je scrolle des heures pour le retrouver" },
+            {
+              "choix": [
+                {
+                  "texte": "Abonne-toi au compte et active la cloche : ses posts viendront à toi tout seuls.",
+                  "ok": true,
+                  "feedback": "Voilà : l'abonnement, c'est un robinet que TU choisis d'ouvrir. Avec la cloche, chaque annonce du refuge te prévient — plus besoin de scroller au hasard."
+                },
+                {
+                  "texte": "Scrolle plus vite, tu finiras par tomber dessus.",
+                  "ok": false,
+                  "feedback": "Le hasard n'est pas une méthode d'enquêteur. Abonne-toi au compte et active les notifications : ses annonces viendront te chercher."
+                },
+                {
+                  "texte": "Recopie tous ses posts dans un cahier chaque soir.",
+                  "ok": false,
+                  "feedback": "Courageux mais inutile : c'est le travail d'un outil, pas le tien. L'abonnement avec la cloche fait exactement ça, sans effort et sans oubli."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et pour voir plus large ? d'autres refuges, des conseils de soigneurs, tout ça" },
+            {
+              "choix": [
+                {
+                  "texte": "Suis un mot-dièse comme #MetierSoigneur : tu verras passer plein de comptes que tu ne connais pas encore.",
+                  "ok": true,
+                  "feedback": "Exact : le mot-dièse suit un SUJET, pas un compte. Refuges, écoles, pros du métier : tout ce qui porte cette étiquette passera devant toi."
+                },
+                {
+                  "texte": "Abonne-toi à tous les comptes d'animaux qui existent, au hasard.",
+                  "ok": false,
+                  "feedback": "Trop de robinets ouverts = inondation. Ta veille serait noyée sous les vidéos de chatons. Un mot-dièse précis comme #MetierSoigneur suit le sujet, pas le bruit."
+                },
+                {
+                  "texte": "Demande au refuge de t'envoyer un texto à chaque nouveauté.",
+                  "ok": false,
+                  "feedback": "Ils n'auront jamais le temps de texter chaque collégien ! Le mot-dièse fait ce travail tout seul : suis #MetierSoigneur et le sujet entier vient à toi."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Alerte + abonnement + mot-dièse : Maëlle a monté sa veille avec trois robinets bien choisis. L'info vient à elle — et si un robinet ne donne rien, elle pourra le couper." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les outils de veille ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une alerte sur un sujet te prévient quand du nouveau contenu en parle.",
+              "vrai": true,
+              "feedback": "Vrai. Tu poses l'alerte une fois, l'outil surveille le web pour toi : c'est le capteur de base de la veille."
+            },
+            {
+              "texte": "Un flux RSS t'oblige à visiter chaque site un par un.",
+              "vrai": false,
+              "feedback": "Faux, c'est tout l'inverse : le flux RSS rassemble les nouveautés de tes sites dans une seule application de lecture."
+            },
+            {
+              "texte": "Suivre un mot-dièse te montre des publications de comptes que tu ne connais pas encore.",
+              "vrai": true,
+              "feedback": "Vrai. Le mot-dièse suit un sujet, pas un compte : parfait pour découvrir de nouvelles sources sur ton métier."
+            },
+            {
+              "texte": "Faire de la veille, c'est retaper la même recherche tous les jours.",
+              "vrai": false,
+              "feedback": "Faux. Ça, c'est la chasse ! La veille, c'est l'affût : les outils t'apportent le neuf, toi tu tries."
+            },
+            {
+              "texte": "Mieux vaut peu de robinets bien choisis que cinquante abonnements au hasard.",
+              "vrai": true,
+              "feedback": "Vrai. Trop de sources = noyade. Une bonne veille se règle : on garde ce qui nourrit, on coupe ce qui inonde."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

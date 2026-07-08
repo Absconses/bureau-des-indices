@@ -1,0 +1,253 @@
+{
+  "id": "4.D3.PROD.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Élaborer et diffuser des contenus en s'inscrivant dans le cadre légal de la liberté d'expression et de ses limites.",
+  "titre": "Publier ou pas ?",
+  "accroche": "Le club journal te confie son compte pour la semaine. Tu peux dire beaucoup de choses… mais pas tout : à toi de repérer où passe la ligne.",
+  "documents": {
+    "postRadar": {
+      "template": "post",
+      "pseudo": "@radar_des_tilleuls",
+      "avatar": "🕶",
+      "bio": "Le compte qui dit tout haut ce que le collège des Tilleuls pense tout bas",
+      "texte": "La sortie au parc des sciences est ANNULÉE sans aucune explication 😤 Organisation zéro, on mérite mieux. Et on sait tous pourquoi : c'est M. Roche qui a piqué dans la caisse du voyage. Ce type est une ordure.",
+      "likes": 87,
+      "partages": 23,
+      "commentaires": 41
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina (club journal)", "avatar": "📰" },
+          "etapes": [
+            { "de": "eux", "texte": "hey ! je prépare les posts du compte du club journal pour cette semaine 📱" },
+            { "de": "eux", "texte": "premier brouillon : « Mardi, la cantine a encore servi des frites molles et froides. On mérite mieux ! » je publie ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui : c'est une critique du service de la cantine, on en a le droit.",
+                  "ok": true,
+                  "feedback": "Exact. La liberté d'expression protège la critique d'un service, d'une institution ou d'une idée. Tant que tu vises la cantine et pas une personne, tu es dans le cadre."
+                },
+                {
+                  "texte": "Non : on n'a pas le droit de critiquer le collège en public.",
+                  "ok": false,
+                  "feedback": "Si ! Critiquer un service (la cantine, les horaires, un règlement), c'est exactement ce que la liberté d'expression protège. Ce qui est interdit, c'est d'attaquer des personnes : injure, diffamation."
+                },
+                {
+                  "texte": "Oui, et j'ajoute que le cuisinier est un gros nul.",
+                  "ok": false,
+                  "feedback": "Stop : « gros nul », c'est une injure contre une personne, punie par la loi. La critique du service passe, l'attaque contre quelqu'un, non. Publie la première partie seulement."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok publié ✅ deuxième brouillon : « Info exclu : M. Ferrand est absent parce qu'il se soigne pour une grave maladie » 👀" },
+            {
+              "choix": [
+                {
+                  "texte": "Non : sa santé, c'est sa vie privée. On ne publie pas.",
+                  "ok": true,
+                  "feedback": "Bon réflexe. La santé de quelqu'un relève de sa vie privée : cette info ne t'appartient pas, même si tout le collège en parle. La loi protège la vie privée, écran ou pas."
+                },
+                {
+                  "texte": "Oui : c'est vrai, donc on a le droit de le dire.",
+                  "ok": false,
+                  "feedback": "Piège classique : vrai ne veut pas dire publiable. La santé fait partie de la vie privée, et la révéler sans accord est interdit, même si l'info est exacte."
+                },
+                {
+                  "texte": "Oui, mais sans son nom : juste « un prof de maths ».",
+                  "ok": false,
+                  "feedback": "Si tout le monde peut deviner de qui il s'agit, c'est comme si tu avais donné le nom. Une info de vie privée reste privée, avec ou sans pseudo-anonymat."
+                }
+              ]
+            },
+            { "de": "info", "texte": "À retenir : tu peux critiquer des idées, des services, des œuvres. Tu ne peux pas attaquer des personnes (injure, diffamation) ni exposer leur vie privée. C'est ça, le cadre légal de la liberté d'expression." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Tu modères le compte du club journal. Pour chaque brouillon : je publie, ou je ne publie pas ?",
+          "categories": [
+            { "id": "publie", "label": "✅ Je publie" },
+            { "id": "bloque", "label": "🚫 Je ne publie pas" }
+          ],
+          "items": [
+            {
+              "texte": "« La pizza de la cantine mérite un zéro pointé 🍕 »",
+              "categorie": "publie",
+              "feedbackOk": "Oui : c'est une critique du service, pas d'une personne. La liberté d'expression protège ce genre d'avis, même piquant.",
+              "feedbackKo": "Tu pouvais publier : cette phrase critique un plat, pas une personne. Critiquer un service, c'est le cœur de la liberté d'expression."
+            },
+            {
+              "texte": "Un dessin qui se moque de la mode des trottinettes électriques",
+              "categorie": "publie",
+              "feedbackOk": "Exact : la caricature vise une mode, une idée — pas une personne. Se moquer d'une idée est protégé par la loi.",
+              "feedbackKo": "C'était publiable : ce dessin caricature une mode, pas quelqu'un. On a le droit de se moquer des idées ; ce sont les attaques contre les personnes qui sont punies."
+            },
+            {
+              "texte": "« Maxime a volé l'argent du foyer » (tu n'as aucune preuve)",
+              "categorie": "bloque",
+              "feedbackOk": "Bien vu : accuser quelqu'un d'un fait précis sans preuve, c'est de la diffamation. C'est puni par la loi, même si la rumeur circule déjà.",
+              "feedbackKo": "À bloquer : accuser Maxime d'un vol sans preuve, c'est de la diffamation — un fait précis affirmé sans pouvoir le prouver. La loi punit ça, en ligne comme ailleurs."
+            },
+            {
+              "texte": "« Mme Karel est nulle et moche »",
+              "categorie": "bloque",
+              "feedbackOk": "Exact : ça n'accuse d'aucun fait, c'est juste blessant. C'est une injure, punie par la loi même sur un petit compte de collège.",
+              "feedbackKo": "À bloquer : « nulle et moche », c'est une injure — des mots blessants contre une personne. Rien à voir avec une critique d'idée : c'est interdit."
+            },
+            {
+              "texte": "Un post qui appelle à rejeter les élèves arrivés d'un autre pays",
+              "categorie": "bloque",
+              "feedbackOk": "Oui, et c'est même la limite la plus grave : appeler à rejeter un groupe pour ses origines, c'est de l'incitation à la haine. Sanctions lourdes.",
+              "feedbackKo": "À bloquer absolument : viser un groupe à cause de ses origines, c'est de l'incitation à la haine — une des limites les plus strictes de la liberté d'expression."
+            },
+            {
+              "texte": "Une critique du nouveau règlement sur les téléphones",
+              "categorie": "publie",
+              "feedbackOk": "Oui : contester une règle, un texte, une décision, c'est un droit. Tu peux être en désaccord publiquement, tant que tu n'insultes personne.",
+              "feedbackKo": "Tu pouvais publier : critiquer un règlement, c'est critiquer une décision, pas une personne. Le désaccord public est un droit."
+            }
+          ]
+        },
+        {
+          "consigne": "Tu modères le compte du club journal. Pour chaque brouillon : je publie, ou je ne publie pas ?",
+          "categories": [
+            { "id": "publie", "label": "✅ Je publie" },
+            { "id": "bloque", "label": "🚫 Je ne publie pas" }
+          ],
+          "items": [
+            {
+              "texte": "« Le nouveau self est trop bruyant, il faut des panneaux anti-bruit »",
+              "categorie": "publie",
+              "feedbackOk": "Oui : c'est une critique d'un lieu et une proposition. Aucune personne visée : tu es en plein dans ce que la liberté d'expression protège.",
+              "feedbackKo": "Tu pouvais publier : critiquer le self et proposer une solution, c'est un avis sur un service, pas une attaque contre quelqu'un."
+            },
+            {
+              "texte": "Un dessin qui exagère la passion des profs pour les contrôles surprise",
+              "categorie": "publie",
+              "feedbackOk": "Exact : cette caricature se moque d'une pratique, pas d'un prof en particulier. Se moquer d'une idée ou d'une habitude est permis.",
+              "feedbackKo": "C'était publiable : le dessin vise une pratique (les contrôles surprise), pas une personne précise. La caricature d'idées est protégée par la loi."
+            },
+            {
+              "texte": "« Le surveillant a triché pour être embauché » (simple rumeur)",
+              "categorie": "bloque",
+              "feedbackOk": "Bien vu : accuser quelqu'un d'un fait précis sans preuve, c'est de la diffamation. Une rumeur n'est pas une preuve.",
+              "feedbackKo": "À bloquer : c'est de la diffamation — un fait précis (avoir triché) affirmé sans preuve. Répéter une rumeur en public peut te mener au tribunal."
+            },
+            {
+              "texte": "« Enzo est un abruti fini »",
+              "categorie": "bloque",
+              "feedbackOk": "Exact : aucun fait, juste des mots blessants contre une personne. C'est une injure, punie par la loi même entre élèves.",
+              "feedbackKo": "À bloquer : « abruti fini », c'est une injure. Elle n'accuse de rien de précis, elle blesse — et c'est exactement ce que la loi interdit."
+            },
+            {
+              "texte": "Un post qui demande d'exclure du club les élèves d'un quartier",
+              "categorie": "bloque",
+              "feedbackOk": "Oui : rejeter un groupe entier à cause de son quartier, c'est de la discrimination et un appel à la haine. Limite absolue.",
+              "feedbackKo": "À bloquer : viser tout un groupe (ici, un quartier) pour l'exclure, c'est de la discrimination et de l'incitation à la haine — sévèrement puni."
+            },
+            {
+              "texte": "« Le dernier album de Novaë est une catastrophe 🎧 »",
+              "categorie": "publie",
+              "feedbackOk": "Oui : c'est une critique d'œuvre. On a le droit de détester un album, un film, un jeu — et de le dire publiquement.",
+              "feedbackKo": "Tu pouvais publier : détester un album et le dire, c'est de la critique d'œuvre. La liberté d'expression protège les avis, même très négatifs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postRadar",
+          "questions": [
+            {
+              "question": "Dans ce post, quelle phrase est de la diffamation (accuser quelqu'un d'un fait précis sans preuve) ?",
+              "options": [
+                "« La sortie au parc des sciences est ANNULÉE sans aucune explication »",
+                "« Organisation zéro, on mérite mieux »",
+                "« C'est M. Roche qui a piqué dans la caisse du voyage »",
+                "« Ce type est une ordure »"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien vu : accuser M. Roche d'avoir volé, c'est un fait précis affirmé sans preuve — la définition exacte de la diffamation. Les deux premières phrases, elles, critiquent l'organisation : c'est permis.",
+              "feedbackKo": "La diffamation, c'est accuser quelqu'un d'un fait précis sans preuve : ici, « c'est M. Roche qui a piqué dans la caisse ». Critiquer l'annulation ou l'organisation, en revanche, reste dans le cadre légal."
+            },
+            {
+              "question": "Et « Ce type est une ordure », c'est quoi au juste ?",
+              "options": [
+                "Une opinion comme une autre, protégée par la loi",
+                "Une injure : c'est puni, même en ligne",
+                "De la diffamation, comme la phrase sur la caisse",
+                "De l'humour, donc c'est permis"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Une injure, c'est un mot blessant lancé contre une personne, sans fait précis. Différent de la diffamation (fait précis sans preuve), mais tout aussi puni par la loi — écran ou pas.",
+              "feedbackKo": "« Ordure » n'accuse d'aucun fait précis : ce n'est pas de la diffamation, c'est une injure. Et une injure publiée en ligne est punie par la loi, même « pour rigoler »."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! La loi autorise… ou pas ? Vrai ou faux.",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Écrire « ce film est nul, n'y allez pas », c'est autorisé.",
+              "vrai": true,
+              "feedback": "Vrai. Critiquer une œuvre, une idée ou un service, c'est le cœur de la liberté d'expression."
+            },
+            {
+              "texte": "Révéler la maladie de quelqu'un, c'est autorisé si l'info est vraie.",
+              "vrai": false,
+              "feedback": "Faux. La santé relève de la vie privée : même vraie, cette info ne t'appartient pas. Vrai ne veut pas dire publiable."
+            },
+            {
+              "texte": "Un dessin qui se moque d'une idée ou d'une mode, c'est autorisé.",
+              "vrai": true,
+              "feedback": "Vrai. La caricature vise des idées, pas des personnes : elle est protégée par la loi."
+            },
+            {
+              "texte": "Insulter quelqu'un en ligne, ça passe si c'est « pour rire ».",
+              "vrai": false,
+              "feedback": "Faux. L'injure publique est punie par la loi, et « c'était pour rire » n'est pas une excuse devant un juge."
+            },
+            {
+              "texte": "Appeler à s'en prendre à un groupe à cause de ses origines, c'est interdit.",
+              "vrai": true,
+              "feedback": "Vrai. L'incitation à la haine est l'une des limites les plus strictes de la liberté d'expression."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

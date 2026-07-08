@@ -1,0 +1,229 @@
+{
+  "id": "4.D2.OUT.4",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Rechercher de l'information sur les différentes plateformes numériques.",
+  "titre": "Trois plateformes, une enquête",
+  "accroche": "Le journal du collège t'envoie retracer l'histoire du mouvement #UnCartablePourTous. Réseau social, plateforme vidéo, encyclopédie collaborative : chaque plateforme a son moteur de recherche, ses codes… et ses angles morts.",
+  "documents": {
+    "postOrigine": {
+      "template": "post",
+      "pseudo": "@nora.vlc",
+      "avatar": "🎒",
+      "bio": "Élève de 3e au collège des Tilleuls (Valcourt) — club solidarité 💛",
+      "texte": "Ce matin, un 6e est arrivé sans trousse ni cahiers 😔 Avec le club solidarité, on lance #UnCartablePourTous : dépose tes fournitures en trop au CDI, on en fait des kits de rentrée pour ceux qui en ont besoin. Partage ! ✏️🎒",
+      "likes": 3421,
+      "partages": 1187,
+      "commentaires": 256
+    },
+    "serpVidiplay": {
+      "template": "serp",
+      "nomMoteur": "VIDIPLAY",
+      "url": "https://www.vidiplay.fr/resultats?q=un+cartable+pour+tous",
+      "requete": "un cartable pour tous",
+      "nbResultats": "Environ 1 840 vidéos (0,21 seconde)",
+      "resultats": [
+        {
+          "url": "www.vidiplay.fr › BuzzOrama",
+          "titre": "UN CARTABLE POUR TOUS : LA FACE CACHÉE 😱",
+          "extrait": "Chaîne BuzzOrama • 2,3 M de vues • il y a 3 jours. « On vous RÉVÈLE TOUT sur ce mouvement !! » Réagissez en commentaire 🔥"
+        },
+        {
+          "url": "www.vidiplay.fr › TeleVallee",
+          "titre": "Le mouvement #UnCartablePourTous fête ses 2 ans — reportage",
+          "extrait": "Chaîne Télé Vallée • 46 000 vues • il y a 1 mois. Le média local retrace deux ans de collectes, interviews d'élèves et de familles à l'appui."
+        },
+        {
+          "url": "www.vidiplay.fr › ClubSolidariteTilleuls",
+          "titre": "On lance #UnCartablePourTous ! 🎒",
+          "extrait": "Chaîne Club Solidarité — Collège des Tilleuls • 9 200 vues • il y a 2 ans. L'appel du club, filmé au CDI : « dépose tes fournitures en trop, on en fait des kits ! »"
+        },
+        {
+          "url": "www.vidiplay.fr › CreaLoulou",
+          "titre": "DIY : customise ton cartable pour la rentrée 🎨",
+          "extrait": "Chaîne CreaLoulou • 512 000 vues • il y a 7 mois. Tuto déco facile : pompons, stickers et peinture pour un cartable unique ✨"
+        }
+      ]
+    },
+    "wikiCartable": {
+      "template": "site-article",
+      "nomSite": "OMNIPÉDIA",
+      "url": "https://fr.omnipedia.org/wiki/Un_cartable_pour_tous",
+      "menu": ["Article", "Discussion", "Historique", "Modifier"],
+      "surtitre": "Encyclopédie collaborative — article que chacun peut modifier",
+      "titre": "Un cartable pour tous (mouvement)",
+      "corps": [
+        "Un cartable pour tous est un mouvement solidaire de collecte de fournitures scolaires, lancé en septembre 2024 par une élève et le club solidarité du collège des Tilleuls, à Valcourt. L'appel, diffusé sous le mot-dièse #UnCartablePourTous, invite à déposer les fournitures en trop au CDI pour composer des kits de rentrée[1].",
+        "Repris par des collèges voisins, puis par la presse locale, le mouvement s'étend à tout le département au cours de l'année 2025[2]. En 2026, ses organisateurs annoncent 200 établissements participants, un chiffre qui n'a pas été confirmé par une source indépendante[réf. nécessaire]."
+      ],
+      "footer": [
+        "Sources : [1] Télé Vallée, reportage, septembre 2024 · [2] La Gazette de Valcourt, juin 2025",
+        "Dernière modification il y a 3 jours, par Kelvin2010"
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postOrigine",
+          "questions": [
+            {
+              "question": "Tu as cherché le mot-dièse #UnCartablePourTous sur le réseau social et trié les posts du plus ancien au plus récent : voici le tout premier. Qui a lancé le mouvement ?",
+              "options": [
+                "Une grande association nationale",
+                "Une élève et le club solidarité de son collège",
+                "La mairie de Valcourt",
+                "Une marque de cartables"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la bio dit « élève de 3e au collège des Tilleuls » et le texte précise « avec le club solidarité ». Le mot-dièse t'a permis de remonter à l'origine — à condition de trier par date, pas par popularité.",
+              "feedbackKo": "Relis la bio sous le pseudo et le début du texte : « élève de 3e » + « avec le club solidarité, on lance… ». La recherche par mot-dièse retrouve TOUS les posts qui l'utilisent : pour trouver le premier, on trie par date."
+            },
+            {
+              "question": "Qu'est-ce qui prouve, dans le texte du post, qu'il s'agit bien du point de départ du mouvement ?",
+              "options": [
+                "Les mots « on lance #UnCartablePourTous »",
+                "Les 3 421 likes",
+                "L'émoji cartable",
+                "Le nombre de commentaires"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : « on lance », c'est l'acte de naissance du mouvement. Les likes, eux, mesurent la popularité d'un post, pas son ancienneté ni son rôle.",
+              "feedbackKo": "C'était écrit dans le texte : « on lance #UnCartablePourTous ». Les likes et les commentaires disent qu'un post circule, pas qu'il est à l'origine. Pour dater un mouvement, cherche le post qui l'annonce."
+            }
+          ]
+        },
+        {
+          "document": "postOrigine",
+          "questions": [
+            {
+              "question": "Tu as retrouvé ce tout premier post grâce à la recherche par mot-dièse. D'après son texte, que faut-il faire concrètement pour participer ?",
+              "options": [
+                "Envoyer de l'argent en ligne",
+                "Déposer ses fournitures en trop au CDI",
+                "Acheter un cartable neuf",
+                "Signer une pétition à la mairie"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : « dépose tes fournitures en trop au CDI, on en fait des kits ». Tu tiens le fonctionnement d'origine du mouvement — précieux pour ton article.",
+              "feedbackKo": "La réponse était dans le texte : « dépose tes fournitures en trop au CDI ». Lis toujours le message complet : le mot-dièse rassemble les posts, il ne les résume pas."
+            },
+            {
+              "question": "1 187 partages sous ce post : qu'est-ce que ce chiffre t'apprend, exactement ?",
+              "options": [
+                "Que l'information du post est vraie",
+                "Que le post a beaucoup circulé sur le réseau",
+                "Que 1 187 personnes ont donné des fournitures",
+                "Que le réseau social a vérifié le compte"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : les partages mesurent la circulation d'un post, rien d'autre. C'est un des codes du réseau social : populaire ne veut dire ni vrai, ni efficace.",
+              "feedbackKo": "Regarde la ligne des réactions : les partages comptent les personnes qui ont rediffusé le post. Ils prouvent qu'il a circulé — pas que l'info est vraie, ni que les dons ont suivi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ton enquête va traverser plusieurs plateformes. Associe chacune à sa façon de chercher… et à son angle mort.",
+          "paires": [
+            {
+              "gauche": "📱 Réseau social",
+              "droite": "Recherche par mot-dièse — mais n'importe qui peut l'ajouter à son post",
+              "feedbackOk": "Oui : le mot-dièse rassemble tous les posts qui l'utilisent… y compris les blagues, les pubs et les récupérations. À toi de trier.",
+              "feedbackKo": "Sur un réseau social, on cherche par mot-dièse. Son angle mort : n'importe qui peut coller #UnCartablePourTous sur n'importe quoi."
+            },
+            {
+              "gauche": "🎬 Plateforme vidéo",
+              "droite": "Moteur interne qui met en avant les vidéos les plus regardées",
+              "feedbackOk": "Exact : le moteur d'une plateforme vidéo pousse ce qui fait rester les gens, donc les grosses audiences. La vidéo fiable ou originale peut se cacher plus bas.",
+              "feedbackKo": "Le moteur interne d'une plateforme vidéo classe surtout par popularité. Son angle mort : la vidéo la plus vue n'est ni la plus fiable, ni la plus ancienne."
+            },
+            {
+              "gauche": "📚 Encyclopédie collaborative",
+              "droite": "Un article par sujet, que chacun peut modifier — sources en bas de page",
+              "feedbackOk": "Oui : la force de l'encyclopédie collaborative, ce sont ses sources citées en bas. Sa fragilité : tout le monde peut modifier, donc on vérifie les références.",
+              "feedbackKo": "L'encyclopédie collaborative propose un article par sujet, modifiable par tous. Ses sources en bas de page sont ta porte de sortie pour vérifier."
+            },
+            {
+              "gauche": "🔎 Moteur de recherche du web",
+              "droite": "Fouille des millions de sites d'un coup — annonces payées en tête",
+              "feedbackOk": "Exact : très large, très rapide… mais les premiers résultats sont parfois des annonces payées, et certains contenus des réseaux lui échappent.",
+              "feedbackKo": "Le moteur de recherche du web interroge des millions de sites. Son code à connaître : la mention « Annonce » signale un résultat payé, placé en tête."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpVidiplay",
+          "consigne": "Sur Vidiplay, tu cherches la vidéo qui a LANCÉ le mouvement il y a deux ans. Touche le bon résultat (son titre ou son adresse).",
+          "cibles": ["res-3", "res-3-titre", "res-3-url"],
+          "essaisMax": 3,
+          "indices": [
+            "Ne te fie pas au nombre de vues : compare les dates de publication de chaque vidéo.",
+            "Cherche la vidéo publiée « il y a 2 ans » par la chaîne du club solidarité lui-même."
+          ],
+          "feedbackOk": "C'est elle : publiée il y a 2 ans par la chaîne du club, avec le même appel que le post d'origine. Le moteur de Vidiplay l'avait pourtant classée sous une vidéo à 2,3 millions de vues : il pousse le populaire, pas l'original.",
+          "feedbackKo": "La bonne vidéo était la 3e : « On lance #UnCartablePourTous ! », publiée il y a 2 ans par la chaîne Club Solidarité. Retiens : sur une plateforme vidéo, croise la date ET la chaîne — le classement, lui, suit surtout les vues."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "wikiCartable",
+          "questions": [
+            {
+              "question": "Dernière étape : l'encyclopédie collaborative. Le chiffre de « 200 établissements participants » est suivi de la mention [réf. nécessaire]. Qu'est-ce que cela signifie ?",
+              "options": [
+                "Le chiffre est faux : il va être supprimé",
+                "Personne n'a encore apporté de source fiable pour confirmer ce chiffre",
+                "Il faut payer pour consulter la référence",
+                "Le chiffre a été vérifié par l'encyclopédie"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : sur une encyclopédie collaborative, chaque information doit s'appuyer sur une source. [réf. nécessaire] signale un passage encore sans preuve — à ne pas recopier tel quel dans ton article.",
+              "feedbackKo": "Relis la fin du 2e paragraphe : le chiffre vient des organisateurs et « n'a pas été confirmé par une source indépendante ». La mention [réf. nécessaire] avertit : info sans preuve pour l'instant, à vérifier avant de la citer."
+            },
+            {
+              "question": "Pour ton article du journal, quelle est la meilleure façon d'utiliser cette page d'encyclopédie ?",
+              "options": [
+                "La recopier telle quelle : tout y est déjà écrit",
+                "Remonter à ses sources [1] et [2] en bas de page pour vérifier et citer les originaux",
+                "L'ignorer : un article modifiable par tous est forcément faux",
+                "Demander la permission à Kelvin2010, son dernier modificateur"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est le bon usage : l'article te donne la vue d'ensemble, et ses sources en bas de page (Télé Vallée, La Gazette de Valcourt) te mènent aux documents d'origine, vérifiables et citables.",
+              "feedbackKo": "La bonne piste était en bas de page : les sources [1] et [2]. Un article collaboratif est un excellent point de départ — modifiable par tous, il n'est jamais un point d'arrivée. On vérifie et on cite ses sources d'origine."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

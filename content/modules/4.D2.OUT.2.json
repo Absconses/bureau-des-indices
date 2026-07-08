@@ -1,0 +1,228 @@
+{
+  "id": "4.D2.OUT.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Analyser les résultats de recherche.",
+  "titre": "Cinq résultats, cinq suspects",
+  "accroche": "Tu tapes « énergies renouvelables » pour ton exposé de physique : cinq résultats s'affichent. Avant de cliquer, mène l'interrogatoire — chaque adresse a quelque chose à révéler.",
+  "documents": {
+    "serpEnergies": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=%C3%A9nergies+renouvelables",
+      "requete": "énergies renouvelables",
+      "nbResultats": "Environ 8 560 000 résultats (0,38 seconde)",
+      "resultats": [
+        {
+          "annonce": true,
+          "url": "www.panosol-direct.fr › promo",
+          "titre": "Panneaux solaires à -40 % ☀️ Devis gratuit en 2 minutes",
+          "extrait": "Installation rapide partout en France. Offre spéciale rentrée, stock limité : demandez votre devis aujourd'hui !"
+        },
+        {
+          "url": "www.agence-energie.gouv.fr › comprendre",
+          "titre": "Les énergies renouvelables : définitions et chiffres clés",
+          "extrait": "Solaire, éolien, hydraulique, biomasse : le point complet de l'Agence nationale de l'énergie. Fiches pédagogiques et données mises à jour chaque année."
+        },
+        {
+          "url": "www.eolix-energie.com › nos-offres",
+          "titre": "Passez à l'électricité verte avec Eolix ⚡",
+          "extrait": "Eolix vous propose des contrats d'électricité 100 % renouvelable. Souscrivez en ligne et parrainez un ami : 50 € offerts."
+        },
+        {
+          "url": "blog.vent-debout.org › dossiers",
+          "titre": "Pourquoi notre association défend l'éolien",
+          "extrait": "Vent Debout milite pour le développement des éoliennes près de chez vous. Notre dossier répond aux idées reçues, chiffres à l'appui."
+        },
+        {
+          "url": "www.vidiplay.fr › watch?v=ener4",
+          "titre": "C'est quoi, une énergie renouvelable ? 🎬 (vidéo, 4 min)",
+          "extrait": "Une animation simple pour tout comprendre : d'où vient l'énergie du soleil, du vent et de l'eau. Par la chaîne « Prof Watt »."
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpEnergies",
+          "consigne": "Un seul de ces cinq sites appartient à une institution publique. Sans cliquer, touche l'adresse qui le prouve.",
+          "cibles": ["res-2-url"],
+          "essaisMax": 3,
+          "indices": [
+            "Ne lis pas les titres : lis les adresses, les petites lignes au-dessus de chaque titre.",
+            "Cherche une terminaison réservée à l'État français : « .gouv.fr »."
+          ],
+          "feedbackOk": "« agence-energie.gouv.fr » : la terminaison .gouv.fr est réservée aux institutions publiques françaises. Tu viens de repérer la source la plus officielle de la page — sans avoir ouvert un seul site.",
+          "feedbackKo": "C'était l'adresse du 2e résultat : « www.agence-energie.gouv.fr ». La terminaison .gouv.fr est réservée aux sites publics français. Retiens : l'adresse d'un résultat se lit AVANT de cliquer, comme une carte d'identité."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpEnergies",
+          "questions": [
+            {
+              "question": "Pour la partie « définitions » de ton exposé de physique, quel résultat ouvres-tu en premier ?",
+              "options": [
+                "Le 1er : Panneaux solaires à -40 %",
+                "Le 2e : l'Agence nationale de l'énergie",
+                "Le 3e : les offres d'électricité Eolix",
+                "Le 4e : le blog de l'association Vent Debout"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bon réflexe : site public (.gouv.fr), fiches pédagogiques, mission d'informer. Le 1er est une annonce payée, le 3e veut te vendre un contrat, le 4e défend une cause.",
+              "feedbackKo": "Décode les adresses : le 1er porte la mention « Annonce » (pub payée), le 3e mène à « nos-offres » (page commerciale), le 4e annonce lui-même qu'il « défend l'éolien ». Pour des définitions fiables, vise l'agence publique en .gouv.fr."
+            },
+            {
+              "question": "Sans cliquer, à quoi reconnais-tu que le résultat Eolix est une page commerciale ?",
+              "options": [
+                "À son adresse « nos-offres » et à ses « 50 € offerts »",
+                "À sa position dans la page de résultats",
+                "Au mot « électricité » dans le titre",
+                "Impossible à savoir sans ouvrir le site"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exactement : « nos-offres » dans l'adresse plus une promo dans l'extrait, c'est un site qui veut vendre. L'adresse et l'extrait parlent avant le clic.",
+              "feedbackKo": "Deux indices sautaient aux yeux : « nos-offres » dans l'adresse et « 50 € offerts » dans l'extrait. Un résultat se décode sans cliquer : l'adresse et l'extrait suffisent souvent à deviner qui parle et pourquoi."
+            }
+          ]
+        },
+        {
+          "document": "serpEnergies",
+          "questions": [
+            {
+              "question": "Le résultat Panosol est tout en haut de la page. Pourquoi ?",
+              "options": [
+                "C'est le site le plus complet sur les énergies renouvelables",
+                "Il porte la mention « Annonce » : il a payé le moteur",
+                "C'est le site le plus récent",
+                "Le moteur classe par ordre alphabétique"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la mention « Annonce » signale une publicité payée. Ce site est premier parce qu'il a payé, pas parce qu'il est le meilleur pour ton exposé.",
+              "feedbackKo": "Regarde juste au-dessus de son adresse : la mention « Annonce ». Elle est obligatoire et signale une pub payée. Premier de la page ne veut pas dire premier de la classe."
+            },
+            {
+              "question": "Le blog de Vent Debout promet des « chiffres à l'appui ». Que fais-tu de ces chiffres ?",
+              "options": [
+                "Je les recopie : une association ne se trompe jamais",
+                "Je les vérifie ailleurs : cette association défend une cause",
+                "Je les ignore : un site en .org est toujours faux",
+                "Je les garde seulement s'il y a des photos"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est la bonne nuance : Vent Debout « milite » et « défend » l'éolien, ses chiffres servent sa cause. Pas forcément faux — mais à croiser, par exemple avec l'agence publique juste au-dessus.",
+              "feedbackKo": "L'extrait te le dit lui-même : l'association « milite pour » l'éolien. Ses chiffres peuvent être justes, mais ils sont choisis pour convaincre. On les croise avec une source neutre, comme le site en .gouv.fr."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Nouvelle page de résultats, mêmes réflexes : classe chaque adresse dans sa famille de site, sans cliquer.",
+          "categories": [
+            { "id": "com", "label": "💰 Page commerciale" },
+            { "id": "pub", "label": "🏛️ Institution publique" },
+            { "id": "asso", "label": "🤝 Association" }
+          ],
+          "items": [
+            {
+              "texte": "boutique.soleil-max.com › promos",
+              "categorie": "com",
+              "feedbackOk": "Oui : « boutique » et « promos » dans l'adresse, ce site veut vendre. Tu l'as su sans ouvrir la page.",
+              "feedbackKo": "Relis l'adresse : « boutique » + « promos ». Deux mots qui crient « page commerciale » avant même le clic."
+            },
+            {
+              "texte": "www.mairie-valcourt.fr › energie",
+              "categorie": "pub",
+              "feedbackOk": "Exact : une mairie est une institution publique. Sa page « énergie » informe les habitants, elle ne vend rien.",
+              "feedbackKo": "« Mairie » dans l'adresse = institution publique. Comme les .gouv.fr, c'est une source officielle, responsable de ce qu'elle publie."
+            },
+            {
+              "texte": "blog.vent-debout.org › adherer",
+              "categorie": "asso",
+              "feedbackOk": "Bien vu : le .org et la page « adhérer » signalent une association. Elle informe, mais pour défendre sa cause.",
+              "feedbackKo": "Le « .org » et la page « adhérer » trahissent une association : on y adhère, on n'y achète pas. Son info défend une cause."
+            },
+            {
+              "texte": "www.agence-climat.gouv.fr › dossiers",
+              "categorie": "pub",
+              "feedbackOk": "Oui : .gouv.fr, la terminaison réservée aux institutions publiques françaises. Impossible à acheter par une entreprise.",
+              "feedbackKo": "La terminaison .gouv.fr est réservée à l'État : c'est forcément une institution publique. C'est l'indice le plus fiable de toute la liste."
+            },
+            {
+              "texte": "www.eolix-energie.com › parrainage",
+              "categorie": "com",
+              "feedbackOk": "Exact : une page « parrainage » sert à recruter des clients. Eolix est une entreprise, son but est de vendre.",
+              "feedbackKo": "« Parrainage » = amène-nous des clients. Ajouté au .com d'une entreprise, ça sent la page commerciale à plein nez."
+            },
+            {
+              "texte": "www.riviere-propre.org › petitions",
+              "categorie": "asso",
+              "feedbackOk": "Oui : des pétitions, c'est l'outil des associations qui militent. Info sincère, mais engagée : à croiser.",
+              "feedbackKo": "Une page « pétitions » en .org : c'est une association qui milite. Ni une boutique, ni une institution — un point de vue engagé."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les pages de résultats ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "La mention « Annonce » signifie que le site a payé pour être affiché là.",
+              "vrai": true,
+              "feedback": "Vrai. Cette mention est obligatoire : elle sépare la publicité des vrais résultats. Repère-la en premier."
+            },
+            {
+              "texte": "Une adresse en .gouv.fr appartient forcément à une institution publique.",
+              "vrai": true,
+              "feedback": "Vrai. Cette terminaison est réservée à l'État français : aucune entreprise ne peut l'acheter."
+            },
+            {
+              "texte": "Il faut ouvrir chaque site pour savoir à qui on a affaire.",
+              "vrai": false,
+              "feedback": "Faux. L'adresse, le titre et l'extrait révèlent déjà qui parle et pourquoi. L'analyse commence sur la page de résultats."
+            },
+            {
+              "texte": "Des mots comme « boutique » ou « offres » dans une adresse annoncent une page commerciale.",
+              "vrai": true,
+              "feedback": "Vrai. L'adresse est une carte d'identité : ces mots te préviennent que le site veut d'abord vendre."
+            },
+            {
+              "texte": "Le blog d'une association donne toujours une information neutre.",
+              "vrai": false,
+              "feedback": "Faux. Une association défend une cause : son info peut être juste, mais elle est choisie pour convaincre. À croiser."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

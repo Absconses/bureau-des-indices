@@ -1,0 +1,209 @@
+{
+  "id": "5.D3.PROD.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Élaborer et diffuser des contenus en respectant la protection des données personnelles.",
+  "titre": "Chasse aux données perso",
+  "accroche": "L'article sur la sortie au musée est prêt : photo de classe, prénoms, et même un numéro de téléphone qui traîne dans un coin… Nettoie tout ça avant publication, enquêteur !",
+  "documents": {
+    "brouillonArticle": {
+      "template": "site-article",
+      "nomSite": "LE PETIT FURETEUR",
+      "url": "https://blog.college-quatre-vents.fr/sortie-musee-sciences",
+      "menu": ["Accueil", "Vie du collège", "Sorties", "Clubs"],
+      "surtitre": "Vie du collège — BROUILLON à relire",
+      "titre": "Les 5e B à l'assaut du musée des Sciences !",
+      "auteur": "Le club journal",
+      "date": "mardi 12 mai",
+      "chapo": "La sortie de l'année ! Récit, photo de classe et souvenirs — l'article part en ligne dans cinq minutes.",
+      "corps": [
+        "Mardi, les 5e B ont passé la journée au musée des Sciences de Valbrune. Au programme : séance de planétarium, maquette géante du système solaire et atelier fusée à eau. Le retour s'est fait en car, avec un concours de chant que les accompagnateurs ne sont pas près d'oublier.",
+        "Félicitations à Maëlys Fontaine et Adam Berthier, qui ont remporté le grand quiz du planétarium devant tout le groupe !",
+        "Vous voulez récupérer les photos et les vidéos de la journée ? Envoyez un message à Inès au 06 45 12 78 33, elle a tout filmé !"
+      ],
+      "footer": ["Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "brouillonArticle",
+          "consigne": "Ce brouillon part en ligne dans cinq minutes. Un passage est vraiment dangereux à publier : touche-le.",
+          "cibles": ["para-3"],
+          "essaisMax": 3,
+          "indices": [
+            "Cherche une information qui permettrait à n'importe qui, même un inconnu, de contacter une élève directement.",
+            "Regarde le dernier paragraphe : un numéro qui commence par 06…"
+          ],
+          "feedbackOk": "Bien vu : un numéro de téléphone publié sur un site, c'est n'importe qui — y compris des inconnus — qui peut contacter Inès. On le supprime, et on fait passer les demandes de photos par le club journal.",
+          "feedbackKo": "Le danger était dans le dernier paragraphe : le 06 d'Inès. Un numéro perso mis en ligne peut être vu et utilisé par n'importe qui. Ça ne se publie jamais, même pour rendre service."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "brouillonArticle",
+          "questions": [
+            {
+              "question": "Dans ce brouillon, combien d'élèves sont identifiables par leur prénom ET leur nom ?",
+              "options": ["Aucun", "Un", "Deux", "Trois"],
+              "bonnes": [2],
+              "feedbackOk": "Oui : Maëlys Fontaine et Adam Berthier. Prénom + nom, c'est une donnée personnelle : ça identifie quelqu'un pour tout internet. On écrit plutôt « les deux gagnants du quiz », ou on demande leur autorisation.",
+              "feedbackKo": "Relis le deuxième paragraphe : Maëlys Fontaine et Adam Berthier, donc deux. (Inès n'est citée que par son prénom.) Prénom + nom = donnée personnelle : ça identifie une personne, et ça ne se publie pas sans accord."
+            },
+            {
+              "question": "Que faire du passage « Envoyez un message à Inès au 06 45 12 78 33 » ?",
+              "options": [
+                "Le garder : c'est pratique pour récupérer les photos",
+                "Supprimer le numéro et faire passer les demandes par le club journal",
+                "Écrire le numéro en plus petit pour qu'il se voie moins",
+                "Ajouter aussi le nom de famille d'Inès pour faire plus sérieux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : le service reste rendu (on peut avoir les photos), mais sans exposer le numéro d'Inès. Protéger les données, ce n'est pas tout interdire : c'est trouver la solution qui ne met personne en danger.",
+              "feedbackKo": "La bonne solution : supprimer le numéro et faire passer les demandes par le club journal. Le numéro perso d'une élève sur une page publique, c'est la porte ouverte aux inconnus — et c'est interdit sans son accord et celui de ses parents."
+            }
+          ]
+        },
+        {
+          "document": "brouillonArticle",
+          "questions": [
+            {
+              "question": "Quel passage du brouillon doit absolument être corrigé avant publication ?",
+              "options": [
+                "« Les 5e B ont passé la journée au musée des Sciences »",
+                "« Félicitations à Maëlys Fontaine et Adam Berthier »",
+                "« Au programme : planétarium et atelier fusée à eau »",
+                "« Le retour s'est fait en car »"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : prénom + nom, ça identifie deux élèves aux yeux de tout internet. On peut féliciter « les deux gagnants du quiz » sans donner leur identité — ou leur demander l'autorisation d'abord.",
+              "feedbackKo": "Le passage à corriger était les félicitations : Maëlys Fontaine et Adam Berthier sont cités avec prénom + nom. C'est une donnée personnelle : elle identifie quelqu'un, et ça ne se publie pas sans accord."
+            },
+            {
+              "question": "Le brouillon donne le numéro de téléphone d'Inès. Qui a le droit de décider de le publier ?",
+              "options": [
+                "Le club journal, puisque c'est lui qui écrit l'article",
+                "Le collège, puisque c'est son site",
+                "Inès et ses parents — et même avec leur accord, ça n'a rien à faire sur une page publique",
+                "Tout le monde : un numéro, ce n'est pas un secret"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : les données personnelles d'Inès lui appartiennent. C'est le principe du RGPD, la loi européenne : chacun garde le contrôle de ses données. Ni le club, ni même le collège ne peuvent décider à sa place.",
+              "feedbackKo": "La bonne réponse : Inès et ses parents. Ses données personnelles lui appartiennent — c'est le principe du RGPD, la loi européenne qui protège nos données. Ni le club, ni le collège ne peuvent les publier à sa place."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Dernière relecture avant publication ! Trie chaque élément de l'article : donnée personnelle à protéger, ou info publiable ?",
+          "categories": [
+            { "id": "perso", "label": "🔒 Donnée personnelle" },
+            { "id": "ok", "label": "✅ Publiable sans risque" }
+          ],
+          "items": [
+            {
+              "texte": "Le numéro de téléphone d'Inès",
+              "categorie": "perso",
+              "feedbackOk": "Oui : un numéro permet de contacter quelqu'un directement, n'importe quand. C'est une des données personnelles les plus sensibles.",
+              "feedbackKo": "Un numéro de téléphone, c'est LA donnée personnelle par excellence : il permet à n'importe qui de joindre Inès directement."
+            },
+            {
+              "texte": "Maëlys Fontaine, citée avec prénom et nom",
+              "categorie": "perso",
+              "feedbackOk": "Exact : prénom + nom = identification. Le RGPD protège toute information qui permet de reconnaître une personne.",
+              "feedbackKo": "Prénom + nom, ça identifie Maëlys pour tout internet : c'est une donnée personnelle, protégée par le RGPD."
+            },
+            {
+              "texte": "La photo de classe où on reconnaît les visages",
+              "categorie": "perso",
+              "feedbackOk": "Exact : un visage reconnaissable est une donnée personnelle. Pour publier la photo, il faut l'autorisation écrite de chaque famille — c'est le droit à l'image.",
+              "feedbackKo": "Un visage reconnaissable identifie quelqu'un : donnée personnelle ! Publier la photo demande l'autorisation écrite des familles — c'est le droit à l'image."
+            },
+            {
+              "texte": "Le prix d'entrée du musée : 6 €",
+              "categorie": "ok",
+              "feedbackOk": "Oui : un tarif ne dit rien sur personne. Aucune donnée personnelle là-dedans.",
+              "feedbackKo": "Un prix d'entrée n'identifie personne : c'est une information publique, publiable sans souci."
+            },
+            {
+              "texte": "La date et le lieu de la sortie",
+              "categorie": "ok",
+              "feedbackOk": "Exact : la sortie est déjà passée, et cette info ne révèle rien sur un élève en particulier.",
+              "feedbackKo": "La sortie a déjà eu lieu et cette info ne désigne personne en particulier : publiable."
+            },
+            {
+              "texte": "« Le concours de chant dans le car était mémorable »",
+              "categorie": "ok",
+              "feedbackOk": "Oui : une anecdote sans nom ni visage, tout le monde peut la lire sans risque pour personne.",
+              "feedbackKo": "Cette anecdote ne cite personne : aucune donnée personnelle. Elle rend l'article vivant sans exposer qui que ce soit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le club journal reçoit des idées et des messages. Clique ceux qui protègent les données perso, laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Publier la photo de classe : toutes les familles ont signé l'autorisation ✅",
+              "bonne": true,
+              "feedback": "Oui ! Avec l'autorisation écrite de chaque famille, le droit à l'image est respecté. C'est LA condition pour publier des visages."
+            },
+            {
+              "texte": "URGENT !!! Poste la photo CE SOIR ou l'article ne sortira JAMAIS !",
+              "bonne": false,
+              "feedback": "Urgence + majuscules = technique de pression pour te faire publier sans réfléchir. Rien n'oblige jamais à publier vite : on vérifie d'abord."
+            },
+            {
+              "texte": "Flouter les visages des deux élèves dont les parents n'ont pas répondu",
+              "bonne": true,
+              "feedback": "Bon réflexe : pas d'autorisation = pas de visage reconnaissable. Le floutage permet de publier la photo sans exposer personne."
+            },
+            {
+              "texte": "Cadeau 🎁 : 500 abonnés gratuits pour le blog contre la liste des élèves de la classe !",
+              "bonne": false,
+              "feedback": "Un « cadeau » contre des données personnelles, c'est une collecte déguisée. C'est exactement le genre de pratique que la CNIL, la gardienne française des données, surveille et sanctionne."
+            },
+            {
+              "texte": "Signer l'article « Le club journal » au lieu de citer les noms complets des élèves",
+              "bonne": true,
+              "feedback": "Bien vu : on peut informer sans identifier. Moins de données personnelles publiées, c'est moins de risques pour tout le monde."
+            },
+            {
+              "texte": "Tout le monde a déjà vu la photo… La retirer maintenant briserait le cœur de la classe 😢",
+              "bonne": false,
+              "feedback": "L'appel à l'émotion est une technique de manipulation. Une photo publiée sans accord doit être retirée — le RGPD te donne même le droit de l'exiger."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

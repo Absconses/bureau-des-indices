@@ -1,0 +1,234 @@
+{
+  "id": "5.D3.POST.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Intégrer les enjeux des traces numériques dans sa communication en ligne.",
+  "titre": "Le pseudo qui en dit trop",
+  "accroche": "Un compte « 100 % anonyme » du collège vient d'être démasqué… sans aucun piratage. À toi de découvrir ce qui l'a trahi — et d'apprendre les réflexes pour que ça ne t'arrive jamais.",
+  "documents": {
+    "postPhenix": {
+      "template": "post",
+      "pseudo": "@Phenix_Masque",
+      "avatar": "🎭",
+      "bio": "Compte 100 % anonyme 🤫 personne ne devinera jamais qui je suis",
+      "texte": "Trop fier 🤩 le club robotique du collège des Tilleuls a gagné le tournoi de Roncy ! Et je suis le seul élève de 5e de l'équipe 😎 On fête ça vendredi au CDI 🤖",
+      "likes": 47,
+      "partages": 12,
+      "commentaires": 9
+    },
+    "postLouve": {
+      "template": "post",
+      "pseudo": "@Louve_Fantome",
+      "avatar": "🐺",
+      "bio": "Ici je suis invisible 🐾 même mes amis ne savent pas que ce compte est à moi",
+      "texte": "Grosse victoire au tournoi de hand de Vireclair 🥳 j'ai tout arrêté dans les buts 🥅 pas mal pour la seule gardienne de l'équipe du collège Marcel-Vigne 😏",
+      "likes": 63,
+      "partages": 8,
+      "commentaires": 14
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postPhenix",
+          "questions": [
+            {
+              "question": "La bio promet : « personne ne devinera jamais qui je suis ». Quels indices du post permettent pourtant de retrouver son auteur ?",
+              "options": [
+                "Aucun : avec un pseudo, on est introuvable",
+                "Le collège, le club et la classe, mis bout à bout",
+                "Le nombre de likes",
+                "L'avatar 🎭"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : collège des Tilleuls + club robotique + élève de 5e… une seule personne coche les trois cases. Chaque détail semble inoffensif, c'est leur recoupement qui identifie.",
+              "feedbackKo": "Relis le texte du post : collège des Tilleuls, club robotique, élève de 5e. Chaque détail seul ne dit rien, mais mis bout à bout, ils désignent une seule personne. Un pseudo ne protège pas des indices qu'on sème soi-même."
+            },
+            {
+              "question": "Quelle phrase du post réduit à elle seule la liste des suspects à un seul élève ?",
+              "options": [
+                "« Trop fier 🤩 »",
+                "« On fête ça vendredi au CDI »",
+                "« Je suis le seul élève de 5e de l'équipe »",
+                "« a gagné le tournoi de Roncy »"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : s'il est LE SEUL de 5e, tout le monde peut savoir qui c'est. Avant de poster, traque ce genre de phrase qui ne correspond qu'à une personne : toi.",
+              "feedbackKo": "C'était « je suis le seul élève de 5e de l'équipe » : un détail qui ne correspond qu'à une seule personne, c'est une signature. Le pseudo ne sert plus à rien après ça."
+            }
+          ]
+        },
+        {
+          "document": "postLouve",
+          "questions": [
+            {
+              "question": "La bio affirme : « ici je suis invisible ». Quels indices du post permettent pourtant de retrouver son autrice ?",
+              "options": [
+                "Aucun : personne ne connaît ce pseudo",
+                "Le tournoi, le collège et le poste de gardienne, recoupés ensemble",
+                "Le nombre de partages",
+                "L'emoji 🥅"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : tournoi de Vireclair + collège Marcel-Vigne + gardienne de l'équipe… une seule personne coche les trois cases. Ce n'est pas le pseudo qui trahit, c'est le recoupement des détails.",
+              "feedbackKo": "Relis le texte du post : tournoi de Vireclair, collège Marcel-Vigne, gardienne de l'équipe. Chaque détail seul semble anodin, mais mis bout à bout, ils désignent une seule personne. Un pseudo ne protège pas des indices qu'on sème soi-même."
+            },
+            {
+              "question": "Quelle expression du post réduit à elle seule la liste des suspects à une seule élève ?",
+              "options": [
+                "« Grosse victoire »",
+                "« la seule gardienne de l'équipe »",
+                "« tournoi de hand »",
+                "« 🥳 »"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : s'il n'y a qu'UNE gardienne dans l'équipe, tout le monde peut savoir qui c'est. Avant de poster, traque ce genre de détail qui ne correspond qu'à une personne : toi.",
+              "feedbackKo": "C'était « la seule gardienne de l'équipe » : un détail qui ne correspond qu'à une seule personne, c'est une signature. Le pseudo ne sert plus à rien après ça."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya", "avatar": "🦉" },
+          "etapes": [
+            { "de": "eux", "texte": "😱 t'es au courant ?? tout le monde sait qui est derrière @Corbeau_Mystere maintenant" },
+            { "de": "eux", "texte": "pourtant il n'a jamais donné son nom ! juste des posts sur son club d'échecs, sa classe, le nom du collège… comment ils ont fait ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Quelqu'un a forcément piraté son compte.",
+                  "ok": false,
+                  "feedback": "Pas besoin de piratage : il a tout donné lui-même, un détail à la fois. Club + classe + collège, mis bout à bout, ça ne désigne qu'une seule personne."
+                },
+                {
+                  "texte": "Ses petits détails se recoupent : club + classe + collège = une seule personne possible.",
+                  "ok": true,
+                  "feedback": "Exactement. Chaque post semblait anodin, mais les traces s'additionnent et se recoupent avec le temps. C'est comme ça qu'un « anonyme » se fait démasquer."
+                },
+                {
+                  "texte": "C'est le hasard, pas de chance pour lui.",
+                  "ok": false,
+                  "feedback": "Ce n'est pas de la malchance : ce sont ses propres posts qui l'ont identifié. Chaque détail publié est une trace, et les traces se recoupent."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "glaçant 🥶 moi aussi j'ai un compte pseudo… et là j'allais justement poster un truc bien méchant sur quelqu'un de la classe" },
+            {
+              "choix": [
+                {
+                  "texte": "Vas-y, personne ne saura que c'est toi.",
+                  "ok": false,
+                  "feedback": "Tu viens de voir le contraire avec @Corbeau_Mystere : un pseudo ne protège pas. Et un post méchant finit souvent par se retourner contre son auteur."
+                },
+                {
+                  "texte": "N'envoie pas : un pseudo ne cache rien, et une capture d'écran peut ressortir dans six mois.",
+                  "ok": true,
+                  "feedback": "Bon conseil. Un post part en une seconde, mais il peut être capturé, partagé, retrouvé des mois plus tard — même si tu le supprimes."
+                },
+                {
+                  "texte": "Poste-le ce soir et supprime-le demain matin.",
+                  "ok": false,
+                  "feedback": "Supprimer n'efface pas les captures d'écran déjà faites. En une seule nuit, un post peut être copié des dizaines de fois."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok ok 😅 du coup, avant de poster quoi que ce soit, je fais quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Tu postes seulement la nuit, moins de gens regardent.",
+                  "ok": false,
+                  "feedback": "L'heure ne change rien : le post reste en ligne, daté, visible le lendemain. La question n'est pas QUAND tu postes, mais QUOI."
+                },
+                {
+                  "texte": "Tu te demandes : « est-ce que j'assume ce post devant tout le monde, encore dans six mois ? »",
+                  "ok": true,
+                  "feedback": "C'est LE réflexe. Si la réponse est non, on n'envoie pas. Tout ce que tu publies laisse une trace datée, souvent publique, parfois définitive."
+                },
+                {
+                  "texte": "Tu enlèves juste ton prénom, ça suffit.",
+                  "ok": false,
+                  "feedback": "@Corbeau_Mystere n'avait jamais donné son prénom non plus… Ce sont les détails qui identifient, pas seulement le nom."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Réflexe d'enquêteur : chaque action en ligne laisse une trace datée. Pseudo ou pas, publie uniquement ce que tu assumerais devant tout le collège — aujourd'hui et dans six mois." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre la checklist de l'enquêteur avant de publier un post.",
+          "items": [
+            { "texte": "J'écris mon message, mais je garde le doigt loin du bouton « publier »." },
+            { "texte": "Je relis en traquant les indices qui peuvent m'identifier : collège, classe, club, visage…" },
+            { "texte": "Je vérifie qui pourra voir le post : tout le monde, ou seulement mes amis ?" },
+            { "texte": "Je me pose la question des six mois : est-ce que je l'assumerai encore ?" },
+            { "texte": "Seulement maintenant, je publie — ou je supprime sans regret." }
+          ],
+          "feedbackOk": "C'est la checklist complète : écrire sans envoyer, chasser les indices, vérifier l'audience, penser aux six mois… et décider en dernier. Trente secondes qui évitent des mois d'ennuis.",
+          "feedbackKo": "L'ordre logique : 1. écrire sans envoyer, 2. relire pour chasser les indices identifiants, 3. vérifier qui verra le post, 4. se demander si on l'assumera dans six mois, 5. publier ou renoncer. On décide en dernier — jamais en premier."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les traces numériques ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Un pseudo bien choisi rend vraiment anonyme.",
+              "vrai": false,
+              "feedback": "Faux. Les détails de tes posts (collège, club, classe…) se recoupent et finissent par t'identifier, pseudo ou pas."
+            },
+            {
+              "texte": "Un simple like laisse une trace, comme un post.",
+              "vrai": true,
+              "feedback": "Vrai. Likes, commentaires, partages : chaque action est enregistrée, datée — et souvent visible par d'autres."
+            },
+            {
+              "texte": "Supprimer un post efface toutes ses copies.",
+              "vrai": false,
+              "feedback": "Faux. Les captures d'écran et les partages, eux, restent. Supprimer n'est pas effacer."
+            },
+            {
+              "texte": "Des détails anodins postés à des mois d'écart peuvent être recoupés.",
+              "vrai": true,
+              "feedback": "Vrai. C'est exactement comme ça que les comptes « anonymes » sont démasqués : les traces s'additionnent avec le temps."
+            },
+            {
+              "texte": "Ce que tu postes aujourd'hui disparaît tout seul au bout de six mois.",
+              "vrai": false,
+              "feedback": "Faux. Rien ne s'efface tout seul : un post reste en ligne, daté, tant que personne ne le retire — et même supprimé, des copies peuvent circuler."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

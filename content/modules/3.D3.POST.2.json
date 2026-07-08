@@ -1,0 +1,222 @@
+{
+  "id": "3.D3.POST.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Adopter une posture réflexive et critique sur les contenus publiés et sur leur pouvoir d'influence (impacts psycho-sociaux, sociétaux, économiques, politiques, environnementaux, etc.)",
+  "titre": "Autopsie d'un post viral",
+  "accroche": "Un post a fait le tour du collège en une soirée. Ta mission : l'ouvrir comme un dossier d'enquête, comprendre pourquoi il cartonne — et décider quoi en faire.",
+  "documents": {
+    "postLeo": {
+      "template": "post",
+      "pseudo": "@LeoVortex",
+      "avatar": "🌪️",
+      "bio": "2,3 M d'abonnés · Lifestyle & bons plans · 19 ans",
+      "texte": "😱 SCANDALE : la cantine de mon ancien collège jette 200 kg de nourriture PAR SEMAINE pendant que des élèves sautent le repas du midi… Ça me rend malade 💔. Heureusement ma gourde isotherme NordikFlow me suit partout, zéro gaspillage pour moi 😉 (code LEO10 = -10 %). Partagez si vous êtes dégoûtés ! #BalanceTaCantine",
+      "likes": 48200,
+      "partages": 12400,
+      "commentaires": 3100
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postLeo",
+          "questions": [
+            {
+              "question": "Pourquoi ce post donne-t-il envie de le partager tout de suite ?",
+              "options": [
+                "Il donne des informations précises et sourcées",
+                "Il provoque une émotion forte : l'indignation",
+                "Il est écrit par un journaliste",
+                "Il propose une réduction de 10 %"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « SCANDALE », « ça me rend malade 💔 », « Partagez si vous êtes dégoûtés » — tout est calibré pour déclencher ta colère. L'indignation est le carburant numéro un de la viralité.",
+              "feedbackKo": "Relis le post : « SCANDALE » en majuscules, « ça me rend malade 💔 », « Partagez si vous êtes dégoûtés ». Léo ne t'informe pas, il te met en colère — parce qu'un contenu qui indigne se partage sans réfléchir."
+            },
+            {
+              "question": "Que remarques-tu à propos de la gourde NordikFlow glissée dans le post ?",
+              "options": [
+                "C'est un conseil désintéressé contre le gaspillage",
+                "C'est une pub déguisée : le code promo rapporte de l'argent à Léo",
+                "C'est la gourde officielle du collège",
+                "Elle n'a aucun rapport, c'est juste une erreur"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : un code promo à son nom (LEO10) signifie que chaque vente lui rapporte. La cause « anti-gaspillage » sert d'emballage à un placement de produit — et rien n'indique « collaboration commerciale », ce que la loi exige pourtant.",
+              "feedbackKo": "Regarde le « code LEO10 = -10 % » : un code promo au nom de l'influenceur, c'est de l'argent versé à chaque vente. La pub se cache derrière l'émotion, et la mention « collaboration commerciale » exigée par la loi est absente."
+            }
+          ]
+        },
+        {
+          "document": "postLeo",
+          "questions": [
+            {
+              "question": "D'où vient le chiffre « 200 kg de nourriture par semaine » ?",
+              "options": [
+                "D'un rapport officiel cité dans le post",
+                "D'une enquête de journalistes",
+                "D'aucune source : Léo l'affirme sans preuve",
+                "Du site du collège concerné"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : aucun lien, aucun rapport, aucun nom de collège. Un chiffre précis fait sérieux, mais sans source il ne vaut rien — c'est même une technique classique pour paraître crédible.",
+              "feedbackKo": "Cherche une source dans le post : il n'y en a aucune. Ni lien, ni rapport, ni nom d'établissement. Retiens : un chiffre précis sans source n'est pas une information, c'est une affirmation."
+            },
+            {
+              "question": "À quoi sert le mot-dièse #BalanceTaCantine à la fin du post ?",
+              "options": [
+                "À classer le post dans la rubrique cuisine",
+                "À rattacher le post à un mouvement militant et amplifier sa portée",
+                "À signaler le post à la plateforme",
+                "À créditer l'auteur de la photo"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : un mot-dièse militant transforme un post isolé en cause collective. Chaque reprise du # regroupe les publications, met la pression sur les établissements — c'est un vrai levier politique, à manier en connaissance de cause.",
+              "feedbackKo": "Un mot-dièse comme #BalanceTaCantine n'est pas décoratif : il rattache le post à un mouvement collectif et démultiplie sa visibilité. En le reprenant, tu rejoins une action militante — parfois sans même t'en rendre compte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Dissèque le post de Léo : associe chaque extrait au ressort d'influence qu'il actionne.",
+          "paires": [
+            {
+              "gauche": "« 😱 SCANDALE… Ça me rend malade 💔 »",
+              "droite": "Émotion : déclencher l'indignation",
+              "feedbackOk": "Oui : majuscules, emojis choc, vocabulaire du dégoût. Ton cerveau en colère partage avant de vérifier — c'est exactement le but.",
+              "feedbackKo": "« SCANDALE » et « ça me rend malade », c'est le registre de l'émotion : provoquer l'indignation pour court-circuiter ta réflexion."
+            },
+            {
+              "gauche": "« code LEO10 = -10 % »",
+              "droite": "Argent : placement de produit déguisé",
+              "feedbackOk": "Exact : le code promo au nom de Léo lui rapporte à chaque vente. L'indignation attire ton attention, la gourde encaisse.",
+              "feedbackKo": "Un code promo personnalisé, c'est le ressort économique : Léo touche une commission sur chaque gourde vendue. La pub se cache dans le scandale."
+            },
+            {
+              "gauche": "« #BalanceTaCantine »",
+              "droite": "Politique : rallier à un mouvement",
+              "feedbackOk": "Oui : le mot-dièse militant relie le post à une cause collective et met la pression sur les établissements. C'est le ressort politique du post.",
+              "feedbackKo": "Le mot-dièse militant est un ressort politique : il transforme un coup de gueule en mouvement collectif et donne au post une portée bien plus large."
+            },
+            {
+              "gauche": "« Partagez si vous êtes dégoûtés ! »",
+              "droite": "Viralité : transformer ta colère en partages",
+              "feedbackOk": "Exact : l'appel direct au partage convertit l'émotion en clics. Plus de partages = plus de visibilité = plus de ventes de gourdes.",
+              "feedbackKo": "« Partagez si… » est un appel à l'action : il transforme ton émotion en partages. Chaque clic augmente la visibilité du post — et les ventes qui vont avec."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Inès (déléguée)", "avatar": "🕵️‍♀️" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu le post de LeoVortex sur les cantines ?? tout le monde le partage au collège 😳" },
+            { "de": "eux", "texte": "et si l'ancien collège dont il parle c'était le nôtre ?! je le repartage ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Fonce, 48 000 likes ça ne peut pas mentir.",
+                  "ok": false,
+                  "feedback": "Les likes mesurent l'émotion déclenchée, pas la vérité. Son « 200 kg » n'a aucune source, et rien ne dit de quel collège il parle. Partager, c'est engager TA responsabilité."
+                },
+                {
+                  "texte": "Attends : son chiffre n'a aucune source et il ne nomme même pas le collège.",
+                  "ok": true,
+                  "feedback": "Bon réflexe : avant de partager, tu vérifies. Un chiffre sans source + un établissement anonyme = une rumeur, pas une info. Et une rumeur partagée 12 000 fois reste une rumeur."
+                },
+                {
+                  "texte": "Réponds-lui direct pour l'insulter, ça lui apprendra.",
+                  "ok": false,
+                  "feedback": "Mauvais calcul : pour l'algorithme, un commentaire furieux vaut autant qu'un like. En répondant avec colère, tu augmentes la visibilité du post que tu voulais combattre."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok ok… mais t'as vu qu'il place sa gourde avec un code promo en plein milieu du « scandale » 🙄" },
+            { "de": "eux", "texte": "du coup on fait quoi, on le signale ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui : pub non déclarée + chiffre invérifiable présenté comme un fait, ça se signale.",
+                  "ok": true,
+                  "feedback": "Exact. En France, un influenceur payé doit afficher « collaboration commerciale » : ici, rien. Signaler à la plateforme, c'est une action précise et utile — pas un geste de colère."
+                },
+                {
+                  "texte": "Non, on crée un compte anonyme pour se moquer de lui.",
+                  "ok": false,
+                  "feedback": "Là, tu passes du côté du problème : compte anonyme + moqueries = cyberharcèlement, puni par la loi. On conteste un contenu, on n'attaque pas une personne."
+                },
+                {
+                  "texte": "On laisse tomber, de toute façon internet c'est le far west.",
+                  "ok": false,
+                  "feedback": "Ignorer est parfois le bon choix pour un contenu juste agaçant. Mais ici la pub déguisée est illégale : le signalement existe exactement pour ça, autant s'en servir."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Partager, répondre, signaler, ignorer : quatre boutons, quatre effets très différents. Avant d'appuyer, pose-toi LA question de l'enquêteur : qui gagne quoi si ce post circule ?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur le pouvoir d'influence des contenus ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Un post qui met en colère se partage plus vite qu'un post neutre.",
+              "vrai": true,
+              "feedback": "Vrai. L'indignation pousse au clic immédiat, et les algorithmes amplifient ce qui fait réagir. C'est pour ça que tant de posts jouent la carte du scandale."
+            },
+            {
+              "texte": "48 000 likes prouvent qu'une information est vraie.",
+              "vrai": false,
+              "feedback": "Faux. Les likes mesurent l'émotion et la visibilité, jamais l'exactitude. Une rumeur peut cumuler des millions de likes en restant fausse."
+            },
+            {
+              "texte": "Un influenceur payé pour montrer un produit doit l'indiquer clairement.",
+              "vrai": true,
+              "feedback": "Vrai. En France, la loi impose la mention « collaboration commerciale ». Un code promo glissé sans cette mention, c'est de la pub déguisée — et c'est signalable."
+            },
+            {
+              "texte": "Commenter un post avec colère fait baisser sa visibilité.",
+              "vrai": false,
+              "feedback": "Faux. Pour l'algorithme, toute interaction compte : ton commentaire furieux booste le post autant qu'un partage. Priver d'attention est parfois plus efficace."
+            },
+            {
+              "texte": "Reprendre un mot-dièse militant, c'est participer à une action collective.",
+              "vrai": true,
+              "feedback": "Vrai. Un # militant relie ta publication à un mouvement et amplifie sa portée politique. Rien d'interdit — mais fais-le en connaissance de cause, pas par réflexe."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "id": "3.D1.LAN.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Comprendre la manière dont les médias adaptent leurs langages aux pratiques de leurs publics.",
+  "titre": "Un reportage, quatre langages",
+  "accroche": "Stage de 3e au Phare de Brévanne : la rédaction publie le même reportage en article, vidéo, thread et podcast. À toi de repérer ce qui reste, ce qui saute — et pourquoi le ton change.",
+  "documents": {
+    "articleTanneurs": {
+      "template": "site-article",
+      "nomSite": "LE PHARE DE BRÉVANNE",
+      "url": "https://www.lephare-brevanne.fr/culture/street-art-tanneurs",
+      "menu": ["Accueil", "Ma ville", "Culture", "Sports"],
+      "surtitre": "Culture",
+      "titre": "Street-art : trois jours qui ont changé le visage des Tanneurs",
+      "auteur": "Par Maël Guérin",
+      "date": "Publié mardi à 18h04 · 6 min de lecture",
+      "chapo": "Douze artistes ont repeint 800 m² de murs du quartier des Tanneurs ce week-end, lors du premier festival de street-art de Brévanne. Récit, chiffres et réactions.",
+      "corps": [
+        "Le projet, financé à hauteur de 18 000 € par la mairie, a mobilisé douze artistes venus de toute la région. « On voulait rendre ses couleurs à un quartier qu'on traverse sans le regarder », explique la maire, Carole Vasseur.",
+        "Côté habitants, les avis sont partagés. « C'est vivant, on dirait un musée à ciel ouvert », sourit Mme Bertin, 62 ans. Son voisin, M. Costa, est plus réservé : « C'est joli, mais j'aurais préféré qu'on répare d'abord les trottoirs. »",
+        "Les Tanneurs portent le nom des ateliers de cuir qui ont fait vivre Brévanne jusqu'à leur fermeture, en 1987. Depuis, le quartier cherchait un second souffle : les fresques racontent d'ailleurs cette histoire ouvrière, machines et tabliers compris."
+      ],
+      "footer": ["Contact", "Mentions légales", "S'abonner"]
+    },
+    "postVideoTanneurs": {
+      "template": "post",
+      "pseudo": "@LePhareBrevanne",
+      "avatar": "🗼",
+      "bio": "Le Phare de Brévanne — l'info de ta ville, aussi en vidéo 🎬",
+      "texte": "🎨 800 m² de murs repeints en 3 jours ! Le quartier des Tanneurs change de visage 🤯 Vidéo 59 s, sous-titrée : tu peux la regarder sans le son 🔇 Budget, avis des habitants, histoire du quartier ➡ article complet, lien en bio",
+      "image": { "emoji": "🎥", "legende": "Vidéo verticale · 0:59 · sous-titres incrustés" },
+      "likes": 482,
+      "partages": 121,
+      "commentaires": 37
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postVideoTanneurs",
+          "questions": [
+            {
+              "question": "L'article complet fait six minutes de lecture. D'après ce post, qu'a gardé la version vidéo du reportage ?",
+              "options": [
+                "Les chiffres qui claquent et les images du chantier",
+                "Le détail du budget de la mairie",
+                "Les avis opposés des habitants",
+                "L'histoire du quartier depuis 1987"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien lu : le post met en avant « 800 m² », « 3 jours » et la vidéo. Le reste — « budget, avis des habitants, histoire » — est renvoyé vers l'article. En 59 secondes, on garde ce qui accroche l'œil.",
+              "feedbackKo": "Relis la fin du post : « Budget, avis des habitants, histoire du quartier ➡ article complet ». Tout ça a sauté de la vidéo, qui garde les chiffres spectaculaires et les images. Le format court trie, il n'efface pas : il renvoie vers le format long."
+            },
+            {
+              "question": "Pourquoi la rédaction précise-t-elle « sous-titrée : tu peux la regarder sans le son » ?",
+              "options": [
+                "Parce que son public regarde souvent les vidéos sans le son, en scrollant",
+                "Parce que le micro du journaliste était en panne",
+                "Parce que la musique de la vidéo est interdite",
+                "Pour paraître plus sérieuse que l'article"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact. La rédaction connaît les pratiques de son public : sur téléphone, la plupart des vidéos se regardent sans le son. Les sous-titres, c'est le langage adapté à cette habitude.",
+              "feedbackKo": "Rien dans le post ne parle de panne ni de musique : il s'adresse à ceux qui scrollent. Sur téléphone, on regarde souvent sans le son, alors la rédaction sous-titre. Adapter son langage aux pratiques de son public, c'est exactement ça."
+            }
+          ]
+        },
+        {
+          "document": "articleTanneurs",
+          "questions": [
+            {
+              "question": "La même rédaction publie une vidéo de 59 secondes. Quelle partie de cet article a le moins de chances d'y survivre ?",
+              "options": [
+                "Les avis opposés de Mme Bertin et de M. Costa, expliqués et nuancés",
+                "Le chiffre des 800 m² repeints",
+                "Les images des fresques",
+                "Le nom du quartier"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : présenter deux points de vue demande du temps. En 59 secondes, la nuance saute souvent en premier — les gros chiffres et les belles images, eux, passent très bien à l'écran.",
+              "feedbackKo": "Relis le paragraphe des habitants : deux avis opposés, ça s'explique — et expliquer prend du temps. Dans un format court, c'est la nuance qui saute en premier ; « 800 m² » et les fresques tiennent en une image."
+            },
+            {
+              "question": "À quoi sert le dernier paragraphe, sur les ateliers de cuir fermés en 1987 ?",
+              "options": [
+                "À donner le contexte que les formats courts n'ont pas la place de raconter",
+                "À prouver que le festival était illégal",
+                "À faire de la publicité pour une marque de cuir",
+                "À rien : le journaliste remplit la page"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : ce retour en 1987 explique pourquoi ces fresques comptent pour le quartier. C'est le luxe du format long — la vidéo montre, le thread résume, l'article raconte et explique.",
+              "feedbackKo": "Relis ce paragraphe : il raconte d'où vient le nom des Tanneurs et pourquoi le quartier « cherchait un second souffle ». C'est du contexte, la spécialité du format long. Sans lui, on voit les fresques sans les comprendre."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "En stage au Phare de Brévanne, tu aides à répartir les éléments du reportage. Chaque carte va dans le format dont c'est le langage.",
+          "categories": [
+            { "id": "article", "label": "📰 Article long" },
+            { "id": "video", "label": "📱 Vidéo verticale" },
+            { "id": "thread", "label": "🧵 Thread" },
+            { "id": "audio", "label": "🎧 Podcast" }
+          ],
+          "items": [
+            {
+              "texte": "Sous-titres gros et colorés, lisibles sans le son",
+              "categorie": "video",
+              "feedbackOk": "Oui : sur téléphone, la plupart des vidéos se regardent sans le son. Sans sous-titres, la vidéo perd son public au premier scroll.",
+              "feedbackKo": "C'était la vidéo verticale : elle est pensée pour le scroll silencieux, alors elle écrit ce qu'on n'entend pas. Une adaptation directe aux pratiques du public."
+            },
+            {
+              "texte": "Le pschitt des bombes de peinture et le brouhaha du festival",
+              "categorie": "audio",
+              "feedbackOk": "Exact : le podcast n'a pas d'images, alors il raconte avec les sons. L'ambiance sonore, c'est sa caméra à lui.",
+              "feedbackKo": "C'était le podcast : sans image, ce sont les sons d'ambiance qui te transportent sur place. Chaque format raconte avec ses propres moyens."
+            },
+            {
+              "texte": "Trois paragraphes sur l'histoire du quartier depuis 1987",
+              "categorie": "article",
+              "feedbackOk": "Oui : un retour en arrière détaillé demande de la place, et seul le format long en a. C'est là que vivent le contexte et les explications.",
+              "feedbackKo": "C'était l'article long : trois paragraphes d'histoire ne tiennent ni en 59 secondes ni en un message court. Le contexte est la spécialité du format long."
+            },
+            {
+              "texte": "L'info découpée en 8 messages courts, numérotés 1/8, 2/8…",
+              "categorie": "thread",
+              "feedbackOk": "Bien vu : le thread découpe le reportage en petites bouchées qu'on lit en scrollant. Une idée par message, et l'envie de lire le suivant.",
+              "feedbackKo": "C'était le thread : des messages courts et numérotés à la chaîne, c'est sa signature. Un langage taillé pour la lecture rapide, pouce sur l'écran."
+            },
+            {
+              "texte": "Format vertical plein écran, 59 secondes chrono",
+              "categorie": "video",
+              "feedbackOk": "Exact : vertical comme le téléphone qu'on tient à une main, court comme l'attention d'un scroll. Le format épouse le geste du public.",
+              "feedbackKo": "C'était la vidéo verticale : filmer en vertical et faire court, c'est se caler sur la façon dont le public tient son téléphone et zappe."
+            },
+            {
+              "texte": "L'interview de la maire en entier, avec sa voix et ses silences",
+              "categorie": "audio",
+              "feedbackOk": "Oui : le podcast a le temps, et il fait entendre ce que l'écrit ne rend pas — le ton, les hésitations, les silences.",
+              "feedbackKo": "C'était le podcast : une voix entière avec ses silences, ça s'écoute. L'article en citera deux phrases, la vidéo trois secondes — l'audio la garde en entier."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Nadia (rédac cheffe)", "avatar": "🗞️" },
+          "etapes": [
+            { "de": "eux", "texte": "Deuxième jour de stage au Phare, et déjà une vraie mission pour toi 😄" },
+            { "de": "eux", "texte": "Notre reportage sur les Tanneurs cartonne. On le décline en thread ce midi : tu me proposes quoi comme premier message ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On copie-colle le premier paragraphe de l'article, c'est le plus simple.",
+                  "ok": false,
+                  "feedback": "Un paragraphe écrit pour le site est trop long et trop dense pour un thread. On ne copie pas d'un format à l'autre : on réécrit dans le langage du format."
+                },
+                {
+                  "texte": "Une phrase choc et le chiffre des 800 m², pour accrocher dès la première seconde de scroll.",
+                  "ok": true,
+                  "feedback": "Exactement. Sur les réseaux, le premier message doit arrêter le pouce. Mêmes faits que l'article, mais un langage taillé pour la lecture rapide."
+                },
+                {
+                  "texte": "Le détail du budget dès le premier message, pour faire sérieux.",
+                  "ok": false,
+                  "feedback": "Le budget intéresse, mais en ouverture il fait défiler sans s'arrêter. En thread on accroche d'abord, on détaille ensuite — ou on renvoie vers l'article."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Adopté ! Dernier chantier : la version podcast de 3 minutes. On garde quoi absolument ?" },
+            {
+              "choix": [
+                {
+                  "texte": "La description écrite des fresques, lue mot à mot.",
+                  "ok": false,
+                  "feedback": "Un texte pensé pour être lu ne passe pas à l'oral, ça s'entend tout de suite. En audio, on fait entendre les choses plutôt que les décrire."
+                },
+                {
+                  "texte": "Les sons du festival et les voix de la maire et des artistes.",
+                  "ok": true,
+                  "feedback": "Oui : l'audio raconte avec les oreilles. Ambiance et voix, c'est son langage à lui — ce que ni l'article ni le thread ne peuvent offrir."
+                },
+                {
+                  "texte": "Rien : on met la musique de la vidéo en boucle pendant 3 minutes.",
+                  "ok": false,
+                  "feedback": "Sans information, ce n'est plus un reportage. Changer de format, c'est changer de langage — pas vider le contenu."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Quatre formats, une seule enquête : la rédaction change de langage, jamais de faits. Article pour comprendre, vidéo pour le scroll, thread pour la lecture rapide, podcast pour les oreilles — à chaque public sa pratique." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Un reportage, quatre formats : vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Les rédactions sous-titrent leurs vidéos parce que beaucoup de gens les regardent sans le son.",
+              "vrai": true,
+              "feedback": "Vrai. Les médias observent les pratiques de leur public et s'y adaptent : scroll silencieux, donc sous-titres."
+            },
+            {
+              "texte": "Raccourcir un reportage en vidéo de 59 secondes, c'est forcément tromper le public.",
+              "vrai": false,
+              "feedback": "Faux. Adapter n'est pas mentir : on garde l'essentiel. Mais les nuances sautent souvent — pour le contexte, retourne au format long."
+            },
+            {
+              "texte": "Le même média peut changer de ton selon la plateforme sans changer les faits.",
+              "vrai": true,
+              "feedback": "Vrai. Emojis sur les réseaux, ton posé sur le site : l'emballage change, les faits vérifiés restent les mêmes."
+            },
+            {
+              "texte": "Un thread donne autant de contexte et de détails qu'un article long.",
+              "vrai": false,
+              "feedback": "Faux. Le thread résume et accroche ; l'histoire, les chiffres et les débats vivent dans l'article. D'où le lien vers la version longue."
+            },
+            {
+              "texte": "Connaître les habitudes de son public aide un média à choisir ses formats.",
+              "vrai": true,
+              "feedback": "Vrai. C'est toute l'idée : les médias adaptent leurs langages aux pratiques de leurs publics — scroll, lecture, écoute."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

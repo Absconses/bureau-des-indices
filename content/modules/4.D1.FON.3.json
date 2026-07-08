@@ -1,0 +1,249 @@
+{
+  "id": "4.D1.FON.3",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Connaître les principales autorités qui garantissent et régulent cette liberté.",
+  "titre": "Les gendarmes de l'antenne",
+  "accroche": "Hier soir, la chaîne KTV a diffusé une émission bourrée de fausses infos santé, avec un jeu-concours louche en prime. Liberté d'expression ou abus ? Et surtout : qui peut agir ? À toi d'enquêter.",
+  "documents": {
+    "articleKTV": {
+      "template": "site-article",
+      "nomSite": "LE PHARE INFO",
+      "url": "https://www.lephare-info.fr/medias/ktv-trois-autorites",
+      "menu": ["Accueil", "Médias", "Local", "Sport"],
+      "surtitre": "Médias",
+      "titre": "Émission « Minuit Vérité » : trois autorités se penchent sur la chaîne KTV",
+      "auteur": "Théo Vasseur",
+      "date": "12 mars 2026",
+      "chapo": "Fausses informations santé, jeu-concours douteux, médecin accusée à tort : le cas KTV mobilise trois autorités différentes. Chacune dans son rôle.",
+      "corps": [
+        "L'ARCOM, l'autorité qui veille sur les télés, les radios et les grandes plateformes, a mis en demeure KTV : la chaîne devra rectifier à l'antenne les fausses informations diffusées dans « Minuit Vérité », sous peine d'amende. « Nous n'interdisons pas une émission avant sa diffusion : nous sanctionnons les manquements après », rappelle l'autorité.",
+        "La CNIL, gardienne des données personnelles, ouvre de son côté une enquête : le jeu-concours de l'émission aurait revendu les numéros de téléphone des participants à des publicitaires, sans les prévenir.",
+        "Enfin, la Dre Ferrand, accusée à tort par l'émission d'avoir « caché la vérité » sur un médicament, annonce saisir la justice pour diffamation. C'est le juge qui tranchera : il pourra condamner la chaîne à des dommages et intérêts."
+      ],
+      "footer": ["Contact", "Qui sommes-nous ?", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina", "avatar": "🕵️" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu « Minuit Vérité » hier sur KTV ?? 😳" },
+            { "de": "eux", "texte": "ils ont dit qu'un médicament rendait malade, sans AUCUNE preuve… et à la fin fallait envoyer son numéro pour un jeu-concours" },
+            { "de": "eux", "texte": "mais bon, liberté d'expression : personne peut rien faire, non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Exact. Liberté d'expression = chacun dit ce qu'il veut, aucune limite.",
+                  "ok": false,
+                  "feedback": "Non : la liberté d'expression est garantie, mais la loi lui fixe des limites (fausses infos qui causent un tort, diffamation…). Et des autorités veillent au respect de ces règles."
+                },
+                {
+                  "texte": "Si ! Des autorités font respecter les règles. Pour la télé, c'est l'ARCOM.",
+                  "ok": true,
+                  "feedback": "Exactement. L'ARCOM surveille les télés, les radios et les grandes plateformes : elle peut rappeler à l'ordre une chaîne et la sanctionner si elle ne respecte pas les règles."
+                },
+                {
+                  "texte": "Ouais, faut appeler la police pour couper l'antenne tout de suite !",
+                  "ok": false,
+                  "feedback": "Couper l'antenne avant ou pendant, ce serait de la censure. En démocratie, on n'interdit pas de s'exprimer : une autorité, l'ARCOM, sanctionne les abus APRÈS la diffusion."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok… et le jeu-concours ? mon frère a envoyé son numéro et là il reçoit des pubs bizarres non-stop 📱" },
+            {
+              "choix": [
+                {
+                  "texte": "C'est le job de la CNIL : revendre son numéro sans le prévenir, c'est interdit.",
+                  "ok": true,
+                  "feedback": "Bien vu. La CNIL protège les données personnelles (nom, numéro, photos, localisation). Elle peut enquêter et infliger de grosses amendes à ceux qui les utilisent sans autorisation."
+                },
+                {
+                  "texte": "Tant pis pour lui, un numéro de téléphone c'est pas si grave.",
+                  "ok": false,
+                  "feedback": "Si, c'est grave : un numéro est une donnée personnelle. La CNIL existe justement pour ça : elle peut enquêter et sanctionner ceux qui collectent ou revendent tes données sans te prévenir."
+                },
+                {
+                  "texte": "C'est encore l'ARCOM, elle gère tout ce qui touche à la télé.",
+                  "ok": false,
+                  "feedback": "Presque, mais non : chacun son rôle. L'ARCOM s'occupe des programmes ; les données personnelles, c'est la CNIL. Ton frère peut d'ailleurs la saisir directement en ligne."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et la médecin qu'ils ont accusée de « cacher la vérité », elle fait quoi elle ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Elle peut saisir le juge : accuser quelqu'un à tort, c'est de la diffamation.",
+                  "ok": true,
+                  "feedback": "Oui. Quand quelqu'un est diffamé, c'est la justice qui tranche : le juge peut condamner la chaîne à réparer le tort causé. Toujours après la diffusion, jamais avant."
+                },
+                {
+                  "texte": "Rien du tout : c'est la télé, elle a forcément raison.",
+                  "ok": false,
+                  "feedback": "Une chaîne peut se tromper ou mentir comme n'importe qui. La personne accusée à tort peut saisir le juge pour diffamation : c'est lui qui tranche et peut condamner la chaîne."
+                }
+              ]
+            },
+            { "de": "info", "texte": "🗂 Récap de l'enquête : l'ARCOM pour l'antenne et les plateformes, la CNIL pour tes données, le juge pour trancher après coup. La liberté d'expression est garantie ET encadrée — réguler, ce n'est pas censurer." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Un problème, une autorité : associe chaque situation à qui peut agir.",
+          "paires": [
+            {
+              "gauche": "KTV diffuse une émission pleine de fausses infos santé",
+              "droite": "L'ARCOM peut la rappeler à l'ordre et la sanctionner",
+              "feedbackOk": "Oui : l'ARCOM est le gendarme des télés, des radios et des grandes plateformes. Une chaîne qui diffuse n'importe quoi risque une mise en demeure, puis une amende.",
+              "feedbackKo": "Une émission de télé qui déraille, c'est le domaine de l'ARCOM : elle surveille l'antenne et sanctionne les chaînes qui ne respectent pas les règles."
+            },
+            {
+              "gauche": "Le jeu-concours de la chaîne revend les numéros des participants",
+              "droite": "La CNIL peut enquêter et infliger une amende",
+              "feedbackOk": "Exact : un numéro de téléphone est une donnée personnelle. La CNIL veille sur leur utilisation et sanctionne ceux qui les revendent sans prévenir.",
+              "feedbackKo": "Numéros, noms, photos, localisation : dès qu'il s'agit de données personnelles, c'est la CNIL qui agit. Elle peut enquêter et infliger de lourdes amendes."
+            },
+            {
+              "gauche": "La médecin accusée à tort par l'émission veut se défendre",
+              "droite": "Le juge peut condamner la chaîne pour diffamation",
+              "feedbackOk": "Oui : accuser quelqu'un à tort, c'est de la diffamation. C'est la justice qui tranche ce conflit et peut condamner la chaîne à réparer le tort.",
+              "feedbackKo": "Quand une personne est accusée à tort, elle saisit la justice : le juge tranche et peut condamner pour diffamation. Ni l'ARCOM ni la CNIL ne jugent ce type de conflit."
+            },
+            {
+              "gauche": "Un ministre voudrait interdire l'émission AVANT sa diffusion",
+              "droite": "Personne : ce serait de la censure, interdite en démocratie",
+              "feedbackOk": "Bien vu : interdire de s'exprimer avant, c'est de la censure. En démocratie, on ne l'accepte pas : les autorités régulent et sanctionnent les abus APRÈS la diffusion.",
+              "feedbackKo": "Piège ! Interdire avant la diffusion, c'est de la censure — personne n'a ce pouvoir en démocratie. Les autorités agissent après coup : c'est ça, réguler sans censurer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleKTV",
+          "questions": [
+            {
+              "question": "D'après l'article, que demande exactement l'ARCOM à la chaîne KTV ?",
+              "options": [
+                "De rectifier ses fausses informations à l'antenne, sous peine d'amende",
+                "De fermer définitivement la chaîne",
+                "De rembourser les téléspectateurs",
+                "De changer de présentateur"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien lu : une « mise en demeure », c'est un avertissement officiel — rectifie, sinon amende. L'ARCOM sanctionne les abus, elle ne supprime pas la liberté d'antenne.",
+              "feedbackKo": "La réponse était dans le premier paragraphe : mise en demeure = obligation de rectifier les fausses infos, sous peine d'amende. L'ARCOM encadre les chaînes, elle ne les ferme pas à la première faute."
+            },
+            {
+              "question": "Pourquoi la CNIL enquête-t-elle sur KTV, d'après l'article ?",
+              "options": [
+                "Parce que l'émission a diffusé de fausses infos santé",
+                "Parce que le jeu-concours aurait revendu les numéros des participants sans les prévenir",
+                "Parce que la chaîne a accusé une médecin à tort",
+                "Parce que l'émission passait trop tard le soir"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la CNIL ne s'occupe pas des programmes mais des données personnelles. Revendre des numéros sans prévenir, c'est pile son domaine.",
+              "feedbackKo": "Relis le deuxième paragraphe : la CNIL enquête sur le jeu-concours qui aurait revendu les numéros. Les fausses infos, c'est l'ARCOM ; la diffamation, c'est le juge. Chacun son rôle !"
+            }
+          ]
+        },
+        {
+          "document": "articleKTV",
+          "questions": [
+            {
+              "question": "D'après l'article, pourquoi l'ARCOM n'a-t-elle pas empêché la diffusion de l'émission ?",
+              "options": [
+                "Elle n'était pas au courant",
+                "Elle n'interdit pas avant la diffusion : elle sanctionne les manquements après",
+                "Elle trouvait l'émission très bien",
+                "Seule la police peut interdire une émission"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exactement ce que dit l'autorité dans l'article. Interdire avant, ce serait de la censure ; réguler, c'est fixer des règles et sanctionner les abus après coup.",
+              "feedbackKo": "La citation était dans le premier paragraphe : « Nous n'interdisons pas une émission avant sa diffusion : nous sanctionnons les manquements après ». Retiens la différence : censurer = interdire avant, réguler = sanctionner après."
+            },
+            {
+              "question": "Que va faire la Dre Ferrand, accusée à tort par l'émission ?",
+              "options": [
+                "Saisir la justice pour diffamation",
+                "Porter plainte auprès de la CNIL",
+                "Demander à l'ARCOM de couper l'antenne",
+                "Créer sa propre chaîne pour répondre"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : être accusé à tort, c'est de la diffamation, et c'est le juge qui tranche. Il pourra condamner la chaîne à des dommages et intérêts.",
+              "feedbackKo": "C'était dans le dernier paragraphe : elle « annonce saisir la justice pour diffamation ». La CNIL protège les données, l'ARCOM surveille l'antenne — mais trancher un conflit et condamner, c'est le rôle du juge."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Attrape les affirmations vraies sur les autorités, laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "L'ARCOM veille sur les télés, les radios et les grandes plateformes.",
+              "bonne": true,
+              "feedback": "Oui : c'est le gendarme de l'audiovisuel. Elle peut rappeler à l'ordre et sanctionner une chaîne qui ne respecte pas les règles."
+            },
+            {
+              "texte": "⚠ URGENT : la télé sera COUPÉE ce soir dans toute la France, partage vite !!!",
+              "bonne": false,
+              "feedback": "Urgence, majuscules, « partage vite » : le kit complet de l'intox. Aucune autorité ne « coupe la télé » d'un claquement de doigts — et une vraie info n'a jamais besoin de te presser."
+            },
+            {
+              "texte": "La CNIL protège tes données personnelles : nom, numéro, photos, localisation.",
+              "bonne": true,
+              "feedback": "Exact. Dès que tes données sont collectées ou revendues sans ton accord, c'est la CNIL qui peut enquêter et sanctionner."
+            },
+            {
+              "texte": "Réguler les médias, c'est exactement la même chose que les censurer.",
+              "bonne": false,
+              "feedback": "Piège ! Censurer = interdire AVANT de s'exprimer. Réguler = fixer des règles et sanctionner les abus APRÈS. En démocratie, on régule, on ne censure pas."
+            },
+            {
+              "texte": "🎁 KTV t'offre un smartphone : envoie juste ton nom, ta classe et ton adresse !",
+              "bonne": false,
+              "feedback": "Le cadeau trop beau sert à récolter tes données personnelles. C'est exactement le genre de collecte que la CNIL surveille — ne donne jamais tes infos contre un lot."
+            },
+            {
+              "texte": "Le juge peut condamner une chaîne après la diffusion d'une émission.",
+              "bonne": true,
+              "feedback": "Vrai. La justice intervient après coup : diffamation, tort causé par de fausses infos… Le juge sanctionne, mais n'empêche personne de s'exprimer avant."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

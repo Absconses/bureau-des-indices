@@ -1,0 +1,236 @@
+{
+  "id": "5.D3.ELAB.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Choisir un langage cohérent pour mettre en valeur un contenu élaboré à partir de sources d'information variées et de langages médiatiques divers.",
+  "titre": "Affiche, podcast ou article ?",
+  "accroche": "Ton enquête sur la cantine est bouclée : chiffres du sondage, témoignages d'élèves, appel à voter. Reste le choix décisif — quel langage pour quelle info ?",
+  "documents": {
+    "postRadarA": {
+      "template": "post",
+      "pseudo": "@RadarDuCollege",
+      "avatar": "📡",
+      "bio": "Le club journal du collège Simone-Vallon — on enquête pour vous !",
+      "texte": "Enquête cantine bouclée 🎉 Demain on publie TOUT : les 6 pourcentages du sondage seront lus un par un dans un podcast de 15 minutes, et le témoignage bouleversant de Lina sera résumé en un tableau de chiffres. Hâte d'avoir vos avis !",
+      "likes": 87,
+      "partages": 12,
+      "commentaires": 25
+    },
+    "postRadarB": {
+      "template": "post",
+      "pseudo": "@RadarDuCollege",
+      "avatar": "📡",
+      "bio": "Le club journal du collège Simone-Vallon — on enquête pour vous !",
+      "texte": "Le plan de publication est prêt 💪 L'appel à voter pour le menu de jeudi sera glissé tout en bas d'un article de 3 pages, et les interviews des élèves seront transformées en un grand camembert 🥧. On assure, non ?",
+      "likes": 64,
+      "partages": 9,
+      "commentaires": 18
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ton enquête contient 4 types d'infos. Associe chaque contenu au langage qui le met le plus en valeur.",
+          "paires": [
+            {
+              "gauche": "Les 6 pourcentages de ton sondage (plats préférés, gaspillage…)",
+              "droite": "Une infographie avec des graphiques",
+              "feedbackOk": "Oui : des chiffres à comparer, ça se regarde. Un graphique montre en une seconde ce qu'un long texte explique en dix lignes.",
+              "feedbackKo": "Des pourcentages à comparer se lisent d'un coup d'œil sur une infographie. Récités ou noyés dans un texte, on les oublie aussitôt."
+            },
+            {
+              "gauche": "Les témoignages d'élèves recueillis à la sortie du self",
+              "droite": "Un podcast où on entend leurs voix",
+              "feedbackOk": "Exact : l'émotion d'un témoignage passe par la voix — les hésitations, les rires. Aucun texte ne rend ça aussi bien.",
+              "feedbackKo": "Un témoignage prend vie quand on l'entend : la voix, le ton, les silences. C'est exactement la force du podcast."
+            },
+            {
+              "gauche": "L'appel à voter jeudi pour le menu de la semaine du goût",
+              "droite": "Une affiche avec un slogan dans le hall",
+              "feedbackOk": "Oui : pour faire agir, il faut être vu par tous, vite. Slogan court + date + lieu : l'affiche est faite pour ça.",
+              "feedbackKo": "Un appel à voter doit toucher tout le monde en une seconde : c'est le travail d'une affiche dans le hall, avec un slogan et une date."
+            },
+            {
+              "gauche": "Le récit complet de ton enquête, avec photos et sources",
+              "droite": "Un article illustré sur le site du collège",
+              "feedbackOk": "Exact : pour raconter en détail et citer ses sources, il faut de la place. L'article, c'est le langage de la profondeur.",
+              "feedbackKo": "Un récit détaillé avec photos et sources demande de la place et du texte : c'est le terrain de l'article illustré, pas d'une affiche."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postRadarA",
+          "questions": [
+            {
+              "question": "Lis le post du club journal. Quel est le problème avec les 6 pourcentages du sondage ?",
+              "options": [
+                "Aucun : un podcast rend les chiffres passionnants",
+                "Des chiffres à comparer s'oublient à l'oreille : il faut les montrer, par exemple en infographie",
+                "Il est interdit de dire des chiffres dans un podcast",
+                "6 pourcentages, c'est trop peu pour un sondage"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : essaie de retenir 6 pourcentages entendus une seule fois… impossible. Les chiffres à comparer se montrent — graphique, infographie — ils ne se récitent pas.",
+              "feedbackKo": "Relis le post : « les 6 pourcentages lus un par un dans un podcast de 15 minutes ». À l'oreille, les chiffres s'oublient aussitôt. Pour comparer des nombres, on les montre : infographie ou graphique."
+            },
+            {
+              "question": "Et le témoignage de Lina, « résumé en un tableau de chiffres » ?",
+              "options": [
+                "Bonne idée : les chiffres font plus sérieux que les paroles",
+                "On perd sa voix et son émotion : un témoignage se fait entendre ou se cite avec ses mots",
+                "Il fallait carrément supprimer ce témoignage",
+                "Un tableau prend moins de place, donc c'est mieux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la force d'un témoignage, c'est la personne — sa voix, ses mots à elle. Transformé en tableau, Lina disparaît. Chaque contenu a son langage.",
+              "feedbackKo": "Le post annonce « le témoignage bouleversant de Lina résumé en un tableau de chiffres » : le tableau efface la voix et l'émotion. Un témoignage s'écoute (podcast) ou se cite avec ses mots (article)."
+            }
+          ]
+        },
+        {
+          "document": "postRadarB",
+          "questions": [
+            {
+              "question": "Lis le post du club journal. Pourquoi l'appel à voter risque-t-il de tomber à l'eau ?",
+              "options": [
+                "Caché tout en bas d'un article de 3 pages, presque personne ne le verra : il lui faut une affiche visible par tous",
+                "Aucun risque : les élèves lisent toujours les articles jusqu'au bout",
+                "Il fallait plutôt le glisser dans un podcast d'une heure",
+                "Voter pour un menu, ça ne sert à rien"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : un appel à agir doit sauter aux yeux de tout le monde. Enterré en page 3, il ne mobilisera personne — une affiche dans le hall frappe en une seconde.",
+              "feedbackKo": "Relis le post : « glissé tout en bas d'un article de 3 pages ». Qui lira jusque-là ? Un appel à voter doit être vu vite et par tous : c'est le travail d'une affiche, pas d'une fin d'article."
+            },
+            {
+              "question": "Et les interviews des élèves « transformées en un grand camembert » ?",
+              "options": [
+                "Parfait : un camembert, c'est joli et moderne",
+                "Un graphique résume des chiffres, pas des paroles : les interviews doivent s'entendre ou se lire avec les mots des élèves",
+                "Il fallait faire deux camemberts au lieu d'un",
+                "Les interviews ne servent à rien dans une enquête"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : un camembert compare des quantités, il ne raconte rien. La richesse d'une interview, ce sont les mots et la voix — podcast ou citations dans l'article.",
+              "feedbackKo": "Le post annonce des « interviews transformées en camembert » : mariage raté. Un graphique sert aux chiffres ; les paroles des élèves doivent s'entendre (podcast) ou se citer (article)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le club te confie la répartition. Envoie chaque contenu vers le langage qui le sert le mieux.",
+          "categories": [
+            { "id": "infographie", "label": "📊 Infographie" },
+            { "id": "podcast", "label": "🎙️ Podcast" },
+            { "id": "affiche", "label": "🖼️ Affiche" },
+            { "id": "article", "label": "📰 Article illustré" }
+          ],
+          "items": [
+            {
+              "texte": "Comparer les 5 plats préférés des élèves avec leurs pourcentages",
+              "categorie": "infographie",
+              "feedbackOk": "Oui : cinq nombres à comparer, l'œil fait ça en une seconde sur un graphique. C'est le langage des chiffres.",
+              "feedbackKo": "Cinq pourcentages à comparer, c'est un travail pour l'infographie : l'œil compare des barres bien mieux que la mémoire ne retient des nombres."
+            },
+            {
+              "texte": "Comparer le gaspillage de septembre et celui de décembre, chiffres à l'appui",
+              "categorie": "infographie",
+              "feedbackOk": "Exact : une comparaison chiffrée avant/après, c'est deux barres côte à côte. L'infographie rend la différence visible instantanément.",
+              "feedbackKo": "Septembre contre décembre, chiffres à l'appui : c'est une comparaison de nombres, donc une infographie. Deux barres, et tout le monde comprend."
+            },
+            {
+              "texte": "Faire entendre la cheffe cuisinière, avec le bruit des casseroles derrière",
+              "categorie": "podcast",
+              "feedbackOk": "Oui : sa voix, son accent, les casseroles… tout ça, c'est du son. Seul le podcast transporte l'ambiance de la cuisine.",
+              "feedbackKo": "« Faire entendre », les casseroles en fond : tout est sonore ici. C'est le podcast qui transporte les voix et l'ambiance, pas une image ou un texte."
+            },
+            {
+              "texte": "Les réactions à chaud des élèves qui goûtent le nouveau dessert",
+              "categorie": "podcast",
+              "feedbackOk": "Exact : les « mmmh » et les « beurk » spontanés, ça s'écoute ! À l'écrit, ces réactions perdraient toute leur vie.",
+              "feedbackKo": "Des réactions à chaud, spontanées, ça s'entend : c'était le podcast. Écrites, elles deviennent plates — la voix porte l'émotion."
+            },
+            {
+              "texte": "Le slogan « Jeudi, ta fourchette vote ! » à voir de loin dans le hall",
+              "categorie": "affiche",
+              "feedbackOk": "Oui : un slogan court, en gros, visible de loin — c'est la définition même de l'affiche. Elle doit frapper en une seconde.",
+              "feedbackKo": "« À voir de loin dans le hall », un slogan court : c'est une affiche. Son travail : accrocher l'œil en une seconde pour faire agir."
+            },
+            {
+              "texte": "Le récit complet de tes 3 semaines d'enquête, avec photos et sources",
+              "categorie": "article",
+              "feedbackOk": "Exact : pour tout raconter, montrer les photos et citer les sources, il faut de la place. L'article illustré est le langage du détail.",
+              "feedbackKo": "Trois semaines d'enquête, des photos, des sources : ça demande de la place et du texte. C'est l'article illustré — impossible de faire tenir ça sur une affiche."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Dernière validation avant publication ! Attrape les bons mariages contenu-langage, laisse filer les ratés et les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Une infographie pour comparer les pourcentages du sondage",
+              "bonne": true,
+              "feedback": "Bon mariage : des chiffres à comparer se montrent en graphique. L'œil compare bien mieux que l'oreille."
+            },
+            {
+              "texte": "Un podcast pour entendre les avis des élèves et l'ambiance du self",
+              "bonne": true,
+              "feedback": "Bon mariage : les voix et les bruits du self rendent les témoignages vivants. C'est la force du son."
+            },
+            {
+              "texte": "« URGENT !!! VOTEZ AVANT MIDI OU LA CANTINE FERME POUR TOUJOURS !!! »",
+              "bonne": false,
+              "feedback": "Piège : fausse urgence + majuscules qui crient + menace inventée. C'est de la manipulation, pas de l'information."
+            },
+            {
+              "texte": "Lire à voix haute un tableau de 40 chiffres dans le podcast",
+              "bonne": false,
+              "feedback": "Mariage raté : personne ne retient 40 chiffres à l'oreille. Les tableaux se montrent, ils ne se récitent pas."
+            },
+            {
+              "texte": "Une affiche : slogan court, date du vote, lieu — visible de loin",
+              "bonne": true,
+              "feedback": "Bon mariage : pour faire agir, l'affiche frappe en une seconde. Court, gros, visible : tout y est."
+            },
+            {
+              "texte": "Une photo qui fait pleurer, sans aucune source : « partagez massivement 😭 »",
+              "bonne": false,
+              "feedback": "Piège : appel à l'émotion + zéro source = recette classique de la manipulation. On vérifie avant de publier ou partager."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

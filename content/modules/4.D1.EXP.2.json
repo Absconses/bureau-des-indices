@@ -1,0 +1,204 @@
+{
+  "id": "4.D1.EXP.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Mettre à distance l'information reçue sur un plan intellectuel et émotionnel.",
+  "titre": "Respire avant de partager",
+  "accroche": "Une vidéo choc débarque dans le groupe classe : un chien attaché sous la pluie 😭. Toi aussi tu bous de colère — mais avant de cliquer, ton enquête commence.",
+  "documents": {
+    "postChien": {
+      "template": "post",
+      "pseudo": "@SOS_PattesEnDetresse",
+      "avatar": "🐾",
+      "bio": "On partage TOUT ce qui peut sauver un animal 🐶 Compte non officiel, géré par des passionnés",
+      "texte": "😭😭 REGARDEZ ce pauvre chien ABANDONNÉ, attaché sous la pluie !!! PARTAGEZ VITE avant que la vidéo soit supprimée ⏳ Il faut retrouver ces monstres 😡😡 Identifie tes amis pour que ça tourne !!!",
+      "likes": 12400,
+      "partages": 8931,
+      "commentaires": 2307
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina (groupe classe)", "avatar": "🎧" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu la vidéo que Mehdi a envoyée ?? 😭 le chien attaché sous la pluie" },
+            { "de": "eux", "texte": "c'est HORRIBLE, je suis trop en colère 😡 je la partage partout, là, tout de suite" },
+            {
+              "choix": [
+                {
+                  "texte": "Attends. Moi aussi ça me met en colère — mais justement, on respire avant de partager.",
+                  "ok": true,
+                  "feedback": "Exactement le bon réflexe : tu as le droit d'être en colère, mais tu remarques ton émotion et tu fais une pause avant d'agir. C'est ça, mettre l'info à distance."
+                },
+                {
+                  "texte": "Vas-y, partage vite, il faut que tout le monde voie ça !",
+                  "ok": false,
+                  "feedback": "Là, c'est l'émotion qui appuie sur le bouton, pas toi. Une vidéo peut être vieille, sortie de son contexte ou mise en scène : on respire d'abord, on partage (peut-être) ensuite."
+                },
+                {
+                  "texte": "On retrouve le compte des maîtres et on va leur dire ce qu'on pense 😡",
+                  "ok": false,
+                  "feedback": "Stop : tu ne sais ni qui a filmé, ni si l'histoire est vraie. Des gens ont déjà été harcelés à cause de vidéos mal interprétées. La colère se respire, elle ne se « balance » pas."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok ok je respire 😮‍💨 mais on fait quoi alors ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On se pose les questions de l'enquête : qui a filmé ? quand ? où ? et pourquoi ça nous touche autant ?",
+                  "ok": true,
+                  "feedback": "C'est la méthode complète : je ressens, je respire, je questionne. Une vidéo sans auteur, sans lieu et sans date ne se partage pas les yeux fermés."
+                },
+                {
+                  "texte": "On demande à Mehdi de la renvoyer pour la revoir, elle était trop triste.",
+                  "ok": false,
+                  "feedback": "La revoir va juste relancer ta colère, sans rien t'apprendre. Ce qui manque, ce n'est pas une deuxième dose d'émotion : ce sont les réponses à qui, quand, où."
+                },
+                {
+                  "texte": "On vote dans le groupe : si la majorité y croit, c'est qu'elle est vraie.",
+                  "ok": false,
+                  "feedback": "La vérité ne se vote pas. Une vidéo peut émouvoir dix mille personnes et rester fausse ou sortie de son contexte. Ce sont les questions qui tranchent, pas les votes."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Le réflexe à retenir : je ressens ✅ je respire ✅ je questionne ✅. Maintenant, passe le post à la loupe." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postChien",
+          "questions": [
+            {
+              "question": "Quels indices, dans ce post, montrent qu'on cherche à te faire réagir à chaud ?",
+              "options": [
+                "Les MAJUSCULES, les émojis qui pleurent et le « PARTAGEZ VITE »",
+                "La date et le lieu précis de la scène",
+                "Le lien vers un article qui explique tout",
+                "Le ton calme et factuel du texte"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien repéré : MAJUSCULES, 😭😡, « VITE », « avant que la vidéo soit supprimée »… tout est fait pour court-circuiter ta réflexion. Quand un message te presse, c'est le signal de ralentir.",
+              "feedbackKo": "Relis le texte du post : MAJUSCULES, émojis en larmes, « PARTAGEZ VITE avant que la vidéo soit supprimée »… Ce sont des techniques pour te faire agir sous le coup de l'émotion. Plus un post te presse, plus tu respires."
+            },
+            {
+              "question": "Pourquoi le « avant que la vidéo soit supprimée ⏳ » doit-il t'alerter ?",
+              "options": [
+                "Il fabrique une urgence pour t'empêcher de vérifier",
+                "Il prouve que la vidéo est authentique",
+                "Les vidéos supprimées sont toujours illégales",
+                "C'est juste une faute de style sans importance"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : l'urgence fabriquée est une technique classique. Si tu crois n'avoir que quelques secondes, tu partages sans réfléchir. Une info vraie supporte très bien d'attendre dix minutes.",
+              "feedbackKo": "La bonne réponse était l'urgence fabriquée : ce compte veut te faire croire que tu n'as pas le temps de vérifier. C'est exactement l'inverse d'une info fiable, qui n'a pas peur d'attendre tes questions."
+            }
+          ]
+        },
+        {
+          "document": "postChien",
+          "questions": [
+            {
+              "question": "Parmi les questions de l'enquête (qui, quand, où), lesquelles restent sans réponse dans ce post ?",
+              "options": [
+                "Toutes : on ne sait ni qui a filmé, ni quand, ni où",
+                "Aucune : tout y est déjà",
+                "Seulement le lieu de la scène",
+                "Seulement la date de la vidéo"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : aucun lieu, aucune date, aucun nom de témoin. Sans qui/quand/où, impossible de savoir si la scène est récente, locale… ni même réelle. C'est LA vérification avant tout partage.",
+              "feedbackKo": "Relis le post en cherchant un lieu, une date ou le nom de la personne qui a filmé : il n'y a rien. Une vidéo sans qui/quand/où peut dater de dix ans ou venir d'un autre pays — on ne la partage pas telle quelle."
+            },
+            {
+              "question": "D'après sa bio, que sait-on du compte @SOS_PattesEnDetresse ?",
+              "options": [
+                "C'est un compte non officiel qui repartage « tout » sans vérifier",
+                "C'est une association reconnue de protection animale",
+                "C'est le compte de la personne qui a filmé la scène",
+                "C'est un compte officiel de la mairie"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : la bio annonce un « compte non officiel » qui « partage TOUT ». Ce n'est ni un témoin ni une association : juste un relais d'émotions. L'émotion est réelle, la fiabilité beaucoup moins.",
+              "feedbackKo": "La réponse était dans la bio, juste sous le pseudo : « compte non officiel » qui « partage TOUT ». Ce n'est ni un témoin, ni une association. Lire la bio avant de faire confiance, c'est un réflexe de base."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Une vidéo choc vient d'arriver dans le groupe. Remets dans l'ordre le réflexe de l'enquêteur.",
+          "items": [
+            { "texte": "Je remarque ce que je ressens : colère, tristesse, envie de cliquer." },
+            { "texte": "Je respire : rien ne m'oblige à réagir dans la seconde." },
+            { "texte": "Je questionne : qui a filmé ? quand ? où ? pourquoi ça me touche autant ?" },
+            { "texte": "Je cherche si une source fiable parle de cette histoire." },
+            { "texte": "Je décide à froid : partager, signaler ou laisser passer." }
+          ],
+          "feedbackOk": "C'est le bon enchaînement : ressentir d'abord (c'est humain), respirer ensuite, questionner après — et décider en dernier. L'émotion lance l'enquête, elle ne la remplace pas.",
+          "feedbackKo": "L'ordre était : je ressens → je respire → je questionne → je vérifie → je décide. Retiens surtout que la décision arrive en DERNIER : tout ce qui te pousse à agir avant, c'est l'émotion qui conduit à ta place."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux : émotions et vidéos chocs.",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une vidéo peut me mettre en colère ET être sortie de son contexte.",
+              "vrai": true,
+              "feedback": "Vrai. Ton émotion est réelle, mais elle ne prouve rien sur la vidéo : une scène filmée il y a cinq ans à l'autre bout du monde peut te faire bouillir aujourd'hui."
+            },
+            {
+              "texte": "Si tout le groupe classe partage une vidéo, c'est qu'elle est vraie.",
+              "vrai": false,
+              "feedback": "Faux. Le nombre de partages mesure l'émotion, pas la vérité. Des milliers de personnes peuvent relayer une vidéo mal interprétée."
+            },
+            {
+              "texte": "Ressentir de la colère devant une injustice, c'est un problème.",
+              "vrai": false,
+              "feedback": "Faux. L'émotion est normale et même utile : elle te signale qu'un sujet compte pour toi. Le problème, c'est d'agir avant de réfléchir."
+            },
+            {
+              "texte": "Les MAJUSCULES et les « partagez vite » cherchent à me faire réagir sans réfléchir.",
+              "vrai": true,
+              "feedback": "Vrai. Urgence et majuscules sont des techniques pour court-circuiter ta réflexion. Quand un post pousse fort, freine fort."
+            },
+            {
+              "texte": "Se demander « pourquoi ce post me fait autant réagir ? » fait partie de l'enquête.",
+              "vrai": true,
+              "feedback": "Vrai. Mettre à distance, c'est aussi se questionner soi-même : ce post vise-t-il mon émotion ? Cette question te rend beaucoup plus difficile à manipuler."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

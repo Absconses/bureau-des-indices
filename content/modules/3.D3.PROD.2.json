@@ -1,0 +1,253 @@
+{
+  "id": "3.D3.PROD.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Intégrer les enjeux de l'IAG dans le cadre d'une production (cadre réglementaire, opportunités, risques, etc.).",
+  "titre": "Fausse image, vraie enquête",
+  "accroche": "Le club journal lance son enquête : l'IAG peut-elle désinformer ? Pour le savoir, vous avez fabriqué (sans jamais la publier, promis !) une fausse image plus vraie que nature — à toi d'analyser les résultats.",
+  "documents": {
+    "postIncendie": {
+      "template": "post",
+      "pseudo": "@ScoopExpress_officiel",
+      "avatar": "⚡",
+      "bio": "L'info avant tout le monde ⚡ Ici on partage d'abord, on vérifie après 😅",
+      "texte": "🚨 URGENT : la médiathèque de Valbonne-sur-Cère en flammes cette nuit ! Photo exclusive 😱 Partagez au MAX avant que ça disparaisse 🔁🔁",
+      "image": "Photo ultra-réaliste : flammes immenses devant la médiathèque. En zoomant : les lettres de l'enseigne « MÉDIATHÈQUE » sont à moitié fondues et l'horloge de la façade affiche 27:80.",
+      "likes": 3412,
+      "partages": 1897,
+      "commentaires": 456
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postIncendie",
+          "questions": [
+            {
+              "question": "Voici le faux post fabriqué par le club pour l'expérience. Zoome sur la photo générée : quel détail trahit l'IA ?",
+              "options": [
+                "L'horloge de la façade qui affiche 27:80",
+                "La couleur trop orange des flammes",
+                "La présence de la médiathèque",
+                "Le ciel de nuit"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : 27:80, cette heure n'existe pas. Les IAG ratent souvent les textes et les chiffres — lettres fondues, cadrans impossibles, doigts en trop. Zoomer sur ces détails est un vrai réflexe de vérification.",
+              "feedbackKo": "Regarde la description de la photo : l'horloge affiche 27:80, une heure impossible. Les IAG ratent souvent les chiffres et les textes — c'est là qu'il faut zoomer en premier pour démasquer une image générée."
+            },
+            {
+              "question": "Le club a aussi imité les codes des comptes de désinfo. Quel indice dans la bio du compte devrait alerter n'importe quel lecteur ?",
+              "options": [
+                "« On partage d'abord, on vérifie après »",
+                "L'emoji ⚡",
+                "Le mot « info »",
+                "Rien, la bio est rassurante"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : un compte qui assume de ne pas vérifier n'est pas une source. Et le « _officiel » du pseudo ne prouve rien — n'importe qui peut l'écrire.",
+              "feedbackKo": "Lis la bio, juste sous le pseudo : « on partage d'abord, on vérifie après 😅 ». Un compte qui annonce lui-même qu'il ne vérifie pas n'est pas une source fiable, même avec « officiel » dans le pseudo."
+            }
+          ]
+        },
+        {
+          "document": "postIncendie",
+          "questions": [
+            {
+              "question": "Voici le faux post fabriqué par le club pour l'expérience. Quel détail de l'enseigne trahit l'image générée par IA ?",
+              "options": [
+                "Des lettres à moitié fondues",
+                "Elle est écrite en anglais",
+                "Elle est trop petite pour être lue",
+                "Elle clignote"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : les textes dans les images IA sont souvent déformés — lettres fondues, mots inventés. Un simple zoom suffit parfois à démasquer le faux.",
+              "feedbackKo": "La description de la photo l'indique : les lettres de « MÉDIATHÈQUE » sont à moitié fondues. Les IAG ratent souvent les textes présents dans l'image : zoome dessus en priorité."
+            },
+            {
+              "question": "Quelle technique le texte du post utilise-t-il pour pousser au partage immédiat ?",
+              "options": [
+                "L'urgence et la peur de rater : « URGENT… avant que ça disparaisse »",
+                "La promesse d'un cadeau",
+                "Un appel au calme et à la vérification",
+                "Des sources citées en fin de message"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : urgence + peur de rater = le combo qui court-circuite la réflexion. Quand un post te presse de partager, c'est justement le moment de ralentir.",
+              "feedbackKo": "Relis le texte : « URGENT… Partagez au MAX avant que ça disparaisse ». Créer l'urgence, c'est LA technique pour faire partager sans vérifier. Un vrai média ne te met jamais la pression comme ça."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Mission 2 : le club compare les règlements de deux plateformes. Pixogram : « Images IA autorisées si elles portent la mention Généré par IA ». Vidéoloop : « Images IA imitant des événements ou des personnes réels interdites, même avec la mention ». Classe chaque projet de publication.",
+          "categories": [
+            { "id": "deux", "label": "🟢 Autorisé sur les deux" },
+            { "id": "pixo", "label": "🟡 Seulement sur Pixogram" },
+            { "id": "aucune", "label": "🔴 Interdit sur les deux" }
+          ],
+          "items": [
+            {
+              "texte": "Un paysage de planète imaginaire, avec la mention « Généré par IA »",
+              "categorie": "deux",
+              "feedbackOk": "Oui : la mention est là (règle Pixogram) et une planète imaginaire n'imite aucun événement réel (règle Vidéoloop). Création assumée = pas de tromperie possible.",
+              "feedbackKo": "Relis les deux règlements : mention présente, et une planète imaginaire n'imite rien de réel. Ce projet respecte les deux règles, il passe partout."
+            },
+            {
+              "texte": "Une fausse photo réaliste d'une tempête dans ta ville, avec la mention",
+              "categorie": "pixo",
+              "feedbackOk": "Exact : Pixogram l'accepte grâce à la mention, mais Vidéoloop interdit d'imiter un événement réel, même étiqueté. Deux plateformes = deux niveaux d'exigence, il faut vérifier chaque règlement.",
+              "feedbackKo": "La mention suffit pour Pixogram, mais pas pour Vidéoloop : une tempête dans une vraie ville imite un événement réel, interdit là-bas même avec l'étiquette « Généré par IA »."
+            },
+            {
+              "texte": "Un portrait réaliste du maire en train de chanter, sans mention",
+              "categorie": "aucune",
+              "feedbackOk": "Bien vu : sans mention, Pixogram refuse ; et une vraie personne imitée, Vidéoloop refuse aussi. Double faute — et en vrai, ça toucherait aussi au droit à l'image.",
+              "feedbackKo": "Pas de mention = refusé par Pixogram. Vraie personne imitée = refusé par Vidéoloop. Ce projet cumule les deux interdits, aucune plateforme ne l'accepte."
+            },
+            {
+              "texte": "Un robot rigolo dessiné par IA pour la une du journal du club, avec la mention",
+              "categorie": "deux",
+              "feedbackOk": "Oui : mention affichée, personnage inventé, personne n'est trompé. C'est exactement l'usage créatif que les règlements autorisent — une vraie opportunité pour illustrer le journal.",
+              "feedbackKo": "Regarde les règles : la mention est là et un robot rigolo n'imite ni événement ni personne réels. Autorisé partout — l'IAG a aussi des usages créatifs légitimes."
+            },
+            {
+              "texte": "Une « photo » de manifestation devant la mairie, sans aucune mention",
+              "categorie": "aucune",
+              "feedbackOk": "Exact : sans mention, Pixogram dit non ; et une manifestation devant une vraie mairie, Vidéoloop dit non aussi. C'est le portrait-robot de la désinformation.",
+              "feedbackKo": "Applique les deux règlements : pas de mention (interdit Pixogram) + événement réel imité (interdit Vidéoloop). Ce projet est refusé partout : c'est exactement une fausse info fabriquée."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Léna (rédac'chef)", "avatar": "📰" },
+          "etapes": [
+            { "de": "eux", "texte": "bon, notre expérience a marché : l'IAG PEUT désinformer 😬 il faut des règles pour le journal maintenant" },
+            { "de": "eux", "texte": "le collège a une charte IA de 2 pages… personne va la lire 😴 on la traduit en 3 consignes simples ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Consigne 1 : on écrit « image générée par IA » sous chaque visuel créé avec une IAG.",
+                  "ok": true,
+                  "feedback": "Oui : la transparence, c'est la base du cadre. Le lecteur a le droit de savoir comment une image a été fabriquée — c'est ce qui sépare la création de la tromperie."
+                },
+                {
+                  "texte": "Consigne 1 : on interdit toute IA au journal, point final.",
+                  "ok": false,
+                  "feedback": "La charte n'interdit pas, elle encadre. L'IAG est aussi une opportunité : illustrations, idées, brouillons. Tout interdire, c'est passer à côté — la bonne règle, c'est la transparence."
+                },
+                {
+                  "texte": "Consigne 1 : on utilise l'IA sans le dire, ça fait plus pro.",
+                  "ok": false,
+                  "feedback": "C'est exactement ce qui rend la désinformation possible ! Cacher l'IA, c'est tromper le lecteur. La première consigne de toute charte, c'est la transparence : on signale ce qui est généré."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok pour la transparence ✅ consigne 2 : on met quoi sur les images d'actu ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Consigne 2 : jamais d'image IA « réaliste » pour illustrer un vrai événement.",
+                  "ok": true,
+                  "feedback": "Exactement. Une image générée qui imite le réel, c'est une fausse preuve — même avec une mention, le doute s'installe. Pour l'actu : de vraies photos ou des illustrations clairement dessinées."
+                },
+                {
+                  "texte": "Consigne 2 : les images IA réalistes, c'est bon si c'est joli.",
+                  "ok": false,
+                  "feedback": "« Joli » n'est pas un critère d'information. Une image réaliste générée pour un vrai événement, c'est une fausse preuve — ton expérience de la médiathèque vient de le montrer. Jamais de faux réel."
+                },
+                {
+                  "texte": "Consigne 2 : si on manque de photos d'un événement, l'IA peut en fabriquer une.",
+                  "ok": false,
+                  "feedback": "C'est fabriquer une fausse preuve, comme votre test de la médiathèque en flammes. Pas de photo ? On le dit, ou on illustre avec un dessin clairement identifié. Jamais de faux réel."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et la 3e ? y a un truc sur les données perso dans la charte non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Consigne 3 : on ne donne jamais à l'IA les noms, photos ou infos perso des élèves.",
+                  "ok": true,
+                  "feedback": "Oui : ce qu'on envoie à une IAG peut être conservé et réutilisé. Les données des camarades ne t'appartiennent pas — c'est un risque encadré par la loi, pas juste un conseil."
+                },
+                {
+                  "texte": "Consigne 3 : on peut coller le trombinoscope de la classe dans l'IA pour gagner du temps.",
+                  "ok": false,
+                  "feedback": "Surtout pas : ce que tu envoies à une IAG peut être stocké et réutilisé. Photos et noms des camarades = données personnelles protégées. La consigne, c'est zéro donnée perso dans l'IA."
+                },
+                {
+                  "texte": "Consigne 3 : l'IA relit et publie toute seule, plus besoin de nous.",
+                  "ok": false,
+                  "feedback": "Une IAG peut inventer des faits avec un aplomb total (on appelle ça des hallucinations). La production reste sous responsabilité humaine : c'est vous qui vérifiez, corrigez et signez. La 3e consigne portait sur les données perso : on n'en donne jamais à l'IA."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Charte traduite en 3 consignes : 1️⃣ transparence (on signale l'IA), 2️⃣ jamais de faux réaliste sur un vrai événement, 3️⃣ zéro donnée perso dans l'IA. Affichées au local du club 📌" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur l'IAG dans tes productions ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une image générée par IA peut être impossible à distinguer d'une vraie photo au premier coup d'œil.",
+              "vrai": true,
+              "feedback": "Vrai — votre expérience l'a prouvé. D'où les réflexes : zoomer sur les détails, chercher la source, exiger la mention « généré par IA »."
+            },
+            {
+              "texte": "Si une image est ultra-réaliste, c'est qu'elle est forcément vraie.",
+              "vrai": false,
+              "feedback": "Faux. Le réalisme ne prouve plus rien : une IAG fabrique du « plus vrai que nature » en quelques secondes. Seule la source permet de trancher."
+            },
+            {
+              "texte": "Écrire « généré par IA » sous une image créée avec une IAG, c'est une règle de transparence.",
+              "vrai": true,
+              "feedback": "Vrai. C'est la base du cadre : le lecteur sait comment l'image a été fabriquée. De plus en plus de plateformes et de médias l'exigent."
+            },
+            {
+              "texte": "On peut envoyer les photos de classe de ses camarades à une IA sans leur demander.",
+              "vrai": false,
+              "feedback": "Faux. Ce sont des données personnelles : droit à l'image + risque que l'IA les conserve. On ne donne jamais les infos des autres à une IAG."
+            },
+            {
+              "texte": "Utiliser l'IAG pour trouver des idées d'articles, puis vérifier et écrire soi-même, c'est un bon usage.",
+              "vrai": true,
+              "feedback": "Vrai. L'IAG est une vraie opportunité pour démarrer — à condition que l'humain vérifie, corrige et assume la publication. L'outil propose, toi tu décides."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "id": "4.D1.FON.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Comprendre comment les médias contribuent à la vie démocratique.",
+  "titre": "Piscine fermée ? Pas si vite !",
+  "accroche": "À Valbourg, le maire annonce la fermeture de la piscine : « trop chère, presque vide ». Le journal local sort sa loupe — suis l'enquête et découvre à quoi sert vraiment un média.",
+  "documents": {
+    "articleCourrier": {
+      "template": "site-article",
+      "nomSite": "LE COURRIER DE VALBOURG",
+      "url": "https://www.courrier-valbourg.fr/ma-ville/piscine-les-vrais-chiffres",
+      "menu": ["Ma ville", "Sports", "Agenda", "Opinions"],
+      "surtitre": "Ma ville • Enquête",
+      "titre": "Fermeture de la piscine : les chiffres du maire ne collent pas",
+      "auteur": "Par Léna Vidal, journaliste",
+      "date": "Publié jeudi à 18h30",
+      "chapo": "« Moins de 30 entrées par jour, un gouffre financier » : c'est l'argument du maire, Gérard Fontan, pour fermer la piscine du Parc. Le Courrier a consulté les registres d'entrées. Verdict : 190 entrées par jour en moyenne.",
+      "corps": [
+        "Notre rédaction a demandé à la mairie les registres d'entrées des douze derniers mois — un document que tout citoyen peut consulter. En comptant les classes des deux collèges, l'école de natation et le club des Espadons, la piscine accueille en réalité 190 personnes par jour.",
+        "« Sans elle, où nos enfants apprendront-ils à nager ? », s'inquiète Nadia Costa, présidente des Espadons. Maël, élève de 4e au collège des Érables : « On y va toutes les semaines avec le collège. »",
+        "Interrogé sur l'écart entre son chiffre et les registres, le maire n'a pas souhaité répondre. Face aux nombreuses réactions des habitants, la mairie annonce finalement une réunion publique mardi soir : le projet de fermeture sera rediscuté."
+      ],
+      "footer": ["Contact", "Qui sommes-nous ?", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleCourrier",
+          "questions": [
+            {
+              "question": "Le maire annonce « moins de 30 entrées par jour ». D'après l'article, quelle est la fréquentation réelle de la piscine ?",
+              "options": [
+                "Moins de 30 entrées : le maire a raison",
+                "Environ 190 entrées par jour en moyenne",
+                "Environ 90 entrées par jour",
+                "L'article ne donne aucun chiffre"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : le journal n'a pas répété l'annonce du maire, il a consulté les registres. Vérifier les affirmations du pouvoir, c'est le rôle de contre-pouvoir de la presse.",
+              "feedbackKo": "Relis le chapô : « Le Courrier a consulté les registres d'entrées. Verdict : 190 entrées par jour ». Retiens le réflexe du journal : ne jamais répéter une annonce officielle sans la vérifier."
+            },
+            {
+              "question": "Sur quoi le journal s'appuie-t-il pour contredire le chiffre du maire ?",
+              "options": [
+                "Sur un sondage posté sur les réseaux",
+                "Sur les registres d'entrées des douze derniers mois",
+                "Sur l'avis personnel de la journaliste",
+                "Sur une rumeur entendue aux vestiaires"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : un registre, c'est un document vérifiable — pas une impression. C'est ce qui rend l'enquête solide, même face au maire.",
+              "feedbackKo": "C'est dans le premier paragraphe : la rédaction a demandé les registres des douze derniers mois. Un journal contredit le pouvoir avec des preuves vérifiables, pas avec des opinions."
+            }
+          ]
+        },
+        {
+          "document": "articleCourrier",
+          "questions": [
+            {
+              "question": "En plus des chiffres, à qui l'article donne-t-il la parole ?",
+              "options": [
+                "Uniquement au maire",
+                "À la présidente du club de natation et à un collégien",
+                "À des influenceurs suivis dans toute la France",
+                "À personne : il n'y a que des chiffres"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : Nadia Costa et Maël, des habitants directement concernés. Le journal sert de place publique : il fait entendre ceux que la décision touche.",
+              "feedbackKo": "Relis le deuxième paragraphe : la présidente des Espadons et Maël, élève de 4e, témoignent. Un journal local est une place publique où les habitants concernés peuvent s'exprimer."
+            },
+            {
+              "question": "Que se passe-t-il à la fin de l'article, après la publication des chiffres réels ?",
+              "options": [
+                "La piscine ferme quand même, sans discussion",
+                "Le maire fait fermer le journal",
+                "Une réunion publique est annoncée : le projet sera rediscuté",
+                "La journaliste est élue maire à la place du maire"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : information vérifiée + parole des habitants = le débat repart, et la décision ne se prend plus en douce. Voilà comment un média nourrit la vie démocratique.",
+              "feedbackKo": "C'est dans le dernier paragraphe : la mairie annonce une réunion publique et le projet sera rediscuté. Grâce à une info vérifiée, les citoyens peuvent peser sur les décisions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Léna (Le Courrier)", "avatar": "🗞️" },
+          "etapes": [
+            { "de": "eux", "texte": "Alerte 🚨 Le maire vient d'annoncer la fermeture de la piscine du Parc : « moins de 30 entrées par jour, un gouffre financier »." },
+            { "de": "eux", "texte": "Tout le monde repartage l'annonce telle quelle. Et nous, au journal, on fait quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On publie l'annonce mot pour mot : ça vient du maire, c'est du sérieux.",
+                  "ok": false,
+                  "feedback": "Recopier le pouvoir sans vérifier, ce n'est pas informer : c'est faire porte-voix. Une annonce officielle se vérifie comme les autres — surtout quand elle vient de ceux qui décident."
+                },
+                {
+                  "texte": "On demande à la mairie les registres d'entrées pour vérifier le chiffre.",
+                  "ok": true,
+                  "feedback": "Réflexe de contre-pouvoir : avant de publier, on vérifie les affirmations de ceux qui décident. Et les registres sont des documents que tout citoyen peut consulter."
+                },
+                {
+                  "texte": "On titre « LE MAIRE MENT ! », ça fera de l'audience.",
+                  "ok": false,
+                  "feedback": "Accuser sans preuve, c'est aussi grave que recopier sans vérifier. D'abord les faits — le titre viendra après, et il n'aura pas besoin de crier."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Registres obtenus : 190 entrées par jour, pas 30 ! 😮 J'écris l'article… mais avec les chiffres tout seuls, il manque quelque chose." },
+            {
+              "choix": [
+                {
+                  "texte": "La parole des habitants : le club de natation, les collégiens qui y nagent.",
+                  "ok": true,
+                  "feedback": "Oui : un journal local est aussi une place publique. Faire entendre les personnes concernées, c'est permettre un vrai débat — pas juste une bataille de chiffres."
+                },
+                {
+                  "texte": "Ton avis perso : tu n'aimes pas ce maire, écris-le !",
+                  "ok": false,
+                  "feedback": "Mon avis n'est pas une information. Les opinions ont leur place dans un journal, mais dans une rubrique signalée comme telle — pas au milieu d'une enquête."
+                },
+                {
+                  "texte": "Des photos de piscines de rêve à l'autre bout du monde.",
+                  "ok": false,
+                  "feedback": "Joli, mais ça n'aide personne à se faire un avis sur NOTRE piscine. Une enquête locale se nourrit de faits et de témoignages locaux."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Article publié. Trois jours plus tard : réunion publique bondée, le projet de fermeture est rediscuté. Quand un journal vérifie le pouvoir et fait circuler la parole, les citoyens peuvent peser sur les décisions. 🗳️" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "L'affaire de la piscine t'a montré deux grands rôles d'un journal. Trie chaque action : contre-pouvoir, place publique… ou pas son rôle du tout ?",
+          "categories": [
+            { "id": "contre", "label": "🕵️ Contre-pouvoir" },
+            { "id": "place", "label": "🗣️ Place publique" },
+            { "id": "non", "label": "🚫 Pas son rôle" }
+          ],
+          "items": [
+            {
+              "texte": "Comparer le chiffre annoncé par le maire avec les registres d'entrées",
+              "categorie": "contre",
+              "feedbackOk": "Oui : vérifier ce qu'affirme le pouvoir, preuves à l'appui, c'est exactement ça, le contre-pouvoir.",
+              "feedbackKo": "C'était « contre-pouvoir » : le journal contrôle une affirmation du maire avec un document. Surveiller le pouvoir, c'est son premier rôle démocratique."
+            },
+            {
+              "texte": "Publier le témoignage de la présidente du club de natation",
+              "categorie": "place",
+              "feedbackOk": "Exact : le journal ouvre ses pages aux habitants concernés. C'est sa fonction de place publique.",
+              "feedbackKo": "C'était « place publique » : donner la parole à une habitante concernée, c'est faire vivre le débat — pas surveiller le pouvoir."
+            },
+            {
+              "texte": "Demander au maire de justifier son chiffre avant la réunion publique",
+              "categorie": "contre",
+              "feedbackOk": "Oui : demander des comptes à un élu, c'est du contre-pouvoir. L'élu sait qu'il devra s'expliquer publiquement.",
+              "feedbackKo": "C'était « contre-pouvoir » : poser des questions qui dérangent aux décideurs et exiger des explications, c'est surveiller le pouvoir."
+            },
+            {
+              "texte": "Publier les réactions des habitants dans le courrier des lecteurs",
+              "categorie": "place",
+              "feedbackOk": "Exact : le courrier des lecteurs, c'est la place publique version journal — les citoyens débattent entre eux.",
+              "feedbackKo": "C'était « place publique » : le courrier des lecteurs permet aux citoyens de réagir et de débattre entre eux. Le journal organise l'échange."
+            },
+            {
+              "texte": "Décider à la place du conseil municipal de garder la piscine",
+              "categorie": "non",
+              "feedbackOk": "Bien vu : un journal informe et fait débattre, mais il ne décide pas. La décision revient aux élus — et aux électeurs.",
+              "feedbackKo": "Ce n'est pas son rôle : un journal éclaire les décisions, il ne les prend pas. Ce sont les élus, choisis par les électeurs, qui votent."
+            },
+            {
+              "texte": "Gonfler les chiffres pour être sûr de sauver la piscine",
+              "categorie": "non",
+              "feedbackOk": "Exact : même pour une « bonne cause », truquer les faits est exclu. La force d'un journal, c'est la confiance dans ses vérifications.",
+              "feedbackKo": "Ce n'est pas son rôle : un journal qui invente des chiffres, même pour une bonne cause, perd toute crédibilité — et ne sert plus à personne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les médias et la démocratie ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Vérifier les déclarations des élus fait partie du travail des journalistes.",
+              "vrai": true,
+              "feedback": "Vrai. C'est le rôle de contre-pouvoir : quand le pouvoir se sait surveillé, il fait plus attention à ce qu'il annonce."
+            },
+            {
+              "texte": "Sans l'enquête du journal, le débat sur la piscine se serait fait avec un chiffre faux.",
+              "vrai": true,
+              "feedback": "Vrai. Pour décider ensemble, il faut des faits vérifiés. C'est ce que les médias apportent à la vie démocratique."
+            },
+            {
+              "texte": "En démocratie, un journal a le droit de critiquer une décision du maire.",
+              "vrai": true,
+              "feedback": "Vrai. C'est la liberté de la presse. Critiquer le pouvoir n'est pas un délit — dans les pays sans presse libre, si."
+            },
+            {
+              "texte": "Donner la parole aux habitants ne sert à rien : seuls les élus comptent.",
+              "vrai": false,
+              "feedback": "Faux. Entre deux élections, la place publique des médias permet aux citoyens de s'informer, de réagir et de peser sur les décisions."
+            },
+            {
+              "texte": "Le rôle d'un journal est de faire gagner le candidat qu'il préfère.",
+              "vrai": false,
+              "feedback": "Faux. Informer n'est pas faire campagne. Un journal peut publier des opinions, mais signalées comme telles — jamais déguisées en faits."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

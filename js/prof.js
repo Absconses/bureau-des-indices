@@ -69,15 +69,24 @@ function rendreTableau(eleves, modules) {
 
 export async function ecranProf(app) {
   const programme = await getProgramme();
-  const modules = programme.parcours[0].domaines
+  let parcoursActif = programme.parcours[0].id;
+  const modulesDe = id => (programme.parcours.find(p => p.id === id)?.domaines || [])
     .flatMap(d => d.rubriques).flatMap(r => r.modules).filter(m => m.disponible);
 
   const contenu = el('div', {});
+  let dernieresDonnees = null;
 
   const afficher = (eleves, source) => {
+    dernieresDonnees = { eleves, source };
+    const pills = programme.parcours.length > 1 && el('div', { class: 'pills', style: 'margin:12px 0' },
+      programme.parcours.map(p => el('button', {
+        class: 'pill' + (p.id === parcoursActif ? ' pill--active' : ''), type: 'button',
+        onclick: () => { parcoursActif = p.id; afficher(eleves, source); }
+      }, p.label)));
     contenu.replaceChildren(
       el('p', { class: 'note-demo' }, source),
-      rendreTableau(eleves, modules),
+      pills,
+      rendreTableau(eleves, modulesDe(parcoursActif)),
       el('div', { class: 'prof__legende' },
         el('span', {}, el('b', {}, 'OR/AR/BR'), ' médaille (module validé ≥ 70 %)'),
         el('span', {}, el('b', {}, 'EC'), ' commencé, pas encore validé'),
@@ -112,7 +121,7 @@ export async function ecranProf(app) {
     el('a', { class: 'retour', href: '#/' }, '← Retour'),
     el('h1', { class: 'titre-ecran' }, 'Suivi de classe'),
     el('p', { class: 'sous-titre' },
-      'Couverture des objectifs du programme (5e · Domaine 2 « S’informer ») par élève. Chaque colonne est un objectif d’apprentissage officiel — survole les en-têtes pour le lire en entier.'),
+      'Couverture des objectifs du programme par élève, parcours par parcours. Chaque colonne est un objectif d’apprentissage officiel — survole les en-têtes pour le lire en entier.'),
     contenu
   ));
 }

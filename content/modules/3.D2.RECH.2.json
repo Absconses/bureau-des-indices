@@ -1,0 +1,280 @@
+{
+  "id": "3.D2.RECH.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Collecter les informations et les organiser en vue d'une production.",
+  "titre": "Du vrac au plan d'expo",
+  "accroche": "Pour l'expo virtuelle d'histoire des arts, Maya a tout collecté… en vrac : extraits en pagaille, un intrus caché, une source perdue. À toi de transformer ce chantier en plan de production béton.",
+  "documents": {
+    "collecteMaya": {
+      "template": "collecte",
+      "sujet": "Document de collecte de Maya — Expo virtuelle d'histoire des arts « L'art s'affiche dans la rue » (fresques et affiches), pour le site du collège. À rendre le 15 mai.",
+      "extraits": [
+        {
+          "texte": "À la fin du XIXe siècle, les grandes affiches illustrées envahissent les murs des villes : pour la première fois, l'art sort des musées et s'adresse à tous les passants.",
+          "source": "Encyclorama, article « Affiche (art) » — consulté le 6 mai"
+        },
+        {
+          "texte": "Avant de peindre une fresque géante, l'artiste projette son dessin sur le mur à la tombée de la nuit, puis trace les contours au fusain avant de passer à la couleur.",
+          "source": "Le Mag des Arts, n° 122, p. 18 — noté le 7 mai"
+        },
+        {
+          "texte": "Depuis 2023, la fresque « Marée haute » de l'artiste Mara Solis recouvre les 400 m² du château d'eau de Port-Ferrand. La ville l'a commandée pour raconter son passé de port de pêche.",
+          "source": "lagazette-portferrand.fr, article du 12 avril — consulté le 7 mai"
+        },
+        {
+          "texte": "Record battu au festival de skate de Port-Ferrand : 5 000 visiteurs au skatepark cet été 🛹",
+          "source": "lagazette-portferrand.fr — consulté le 7 mai"
+        },
+        {
+          "texte": "L'art urbain naît dans les années 1960-1970, quand les premiers graffitis recouvrent les murs et les métros des grandes villes américaines.",
+          "source": "??? (copié un soir, site oublié 😅)"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteMaya",
+          "questions": [
+            {
+              "question": "Un extrait de la collecte est impossible à citer proprement dans l'expo. Lequel ?",
+              "options": [
+                "Celui sur les affiches du XIXe siècle",
+                "Celui sur la projection du dessin sur le mur",
+                "Celui sur les premiers graffitis américains",
+                "Celui sur la fresque « Marée haute »"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui : regarde sa ligne source — « ??? site oublié ». Sans source, impossible de l'indiquer aux visiteurs ni de vérifier l'info. Maya devra la retrouver… ou écarter la phrase.",
+              "feedbackKo": "Vérifie les lignes « Source : » de la collecte. Affiches, technique et « Marée haute » ont des sources complètes ; les graffitis américains sortent d'un « site oublié 😅 » : impossible à citer, impossible à vérifier."
+            },
+            {
+              "question": "Un extrait est hors-sujet pour l'expo « L'art s'affiche dans la rue ». Lequel ?",
+              "options": [
+                "La fresque de Mara Solis sur le château d'eau",
+                "Le record du festival de skate",
+                "Les affiches illustrées du XIXe siècle",
+                "La projection du dessin sur le mur la nuit"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : le skatepark, c'est la rue… mais pas l'art. Avant de garder un extrait, compare-le toujours au sujet noté en haut de ta collecte.",
+              "feedbackKo": "Relis le sujet dans l'en-tête : « L'art s'affiche dans la rue ». Le festival de skate se passe dans la rue, mais ne parle pas d'art : il n'apportera rien aux visiteurs de l'expo."
+            }
+          ]
+        },
+        {
+          "document": "collecteMaya",
+          "questions": [
+            {
+              "question": "Maya prévoit une salle « Comment on fabrique une fresque géante ». Quelle source sera indiquée sous le texte de cette salle ?",
+              "options": [
+                "Encyclorama, article « Affiche (art) »",
+                "Le Mag des Arts, n° 122, p. 18",
+                "lagazette-portferrand.fr, article du 12 avril",
+                "Aucune : la collecte ne parle pas de fabrication"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : projection du dessin, contours au fusain… c'est l'extrait du Mag des Arts. Chaque info gardée part avec sa ligne source : c'est ça, citer proprement.",
+              "feedbackKo": "Cherche l'extrait qui explique la fabrication : projection sur le mur, contours au fusain. Sa ligne source dit « Le Mag des Arts, n° 122 ». Une info et sa source voyagent toujours ensemble, de la collecte jusqu'à la production."
+            },
+            {
+              "question": "Quelle information de la collecte alimentera la salle « Un exemple près de chez nous » ?",
+              "options": [
+                "Les 400 m² de « Marée haute » sur le château d'eau",
+                "Les 5 000 visiteurs du skatepark",
+                "Les affiches illustrées du XIXe siècle",
+                "Les graffitis américains des années 1960"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : c'est le seul extrait qui parle à la fois d'art ET de Port-Ferrand. Le skate est local mais hors-sujet, les deux autres sont dans le sujet mais pas locaux.",
+              "feedbackKo": "Il fallait croiser deux critères : de l'art + près de chez nous. Seule « Marée haute » à Port-Ferrand coche les deux cases. Le skatepark est local mais ce n'est pas de l'art ; affiches et graffitis sont de l'art, mais pas d'ici."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le plan de l'expo prévoit trois salles virtuelles. Range chaque info de la collecte dans la bonne salle — ou écarte-la.",
+          "categories": [
+            { "id": "histoire", "label": "🕰 Salle 1 — D'où ça vient" },
+            { "id": "technique", "label": "🎨 Salle 2 — Comment c'est fait" },
+            { "id": "exemple", "label": "📍 Salle 3 — Près de chez nous" },
+            { "id": "ecarter", "label": "🗑 À écarter" }
+          ],
+          "items": [
+            {
+              "texte": "Les affiches illustrées envahissent les rues à la fin du XIXe siècle",
+              "categorie": "histoire",
+              "feedbackOk": "Oui : c'est une origine, la naissance de l'art dans la rue. Sa place est au début du parcours, là où l'on raconte d'où ça vient.",
+              "feedbackKo": "Cet extrait raconte une naissance : l'art qui sort des musées au XIXe siècle. C'est de l'histoire — Salle 1."
+            },
+            {
+              "texte": "Les premiers graffitis apparaissent dans les villes américaines vers 1960-1970",
+              "categorie": "histoire",
+              "feedbackOk": "Exact : une étape de plus dans l'histoire de l'art urbain. Attention quand même : sa source est perdue, à retrouver avant l'ouverture !",
+              "feedbackKo": "Des dates, une origine, une évolution : c'est le rayon histoire, donc Salle 1. (Et pense à retrouver sa source perdue avant de l'afficher.)"
+            },
+            {
+              "texte": "Le dessin est projeté sur le mur la nuit, puis tracé au fusain",
+              "categorie": "technique",
+              "feedbackOk": "Oui : projection, fusain, couleur… on est dans l'atelier de l'artiste. C'est la salle « Comment c'est fait ».",
+              "feedbackKo": "Cet extrait décrit des gestes et des outils : c'est de la technique de fabrication, pas de l'histoire ni un exemple local. Salle 2."
+            },
+            {
+              "texte": "« Marée haute » couvre le château d'eau de Port-Ferrand depuis 2023",
+              "categorie": "exemple",
+              "feedbackOk": "Exact : une œuvre réelle, à deux pas du collège. C'est l'exemple concret qui fera le clou de l'expo.",
+              "feedbackKo": "Une fresque précise, dans TA ville : c'est l'exemple local par excellence. Salle 3, « Près de chez nous »."
+            },
+            {
+              "texte": "5 000 visiteurs au festival de skate cet été",
+              "categorie": "ecarter",
+              "feedbackOk": "Bien vu : c'est local et sympa, mais ça ne parle pas d'art. Garder un extrait juste parce qu'on l'a collecté, c'est le piège classique.",
+              "feedbackKo": "Relis le sujet de l'expo : l'ART dans la rue. Le skate, c'est la rue sans l'art — hors-sujet, on écarte, même si l'info est vraie."
+            },
+            {
+              "texte": "Une vidéo « Les graffitis les plus drôles » trouvée en passant 😂",
+              "categorie": "ecarter",
+              "feedbackOk": "Exact : drôle ne veut pas dire utile. Cette vidéo ne répond à aucune salle du plan — elle dilue la production au lieu de la nourrir.",
+              "feedbackKo": "Amusant, mais quelle salle du plan cette vidéo nourrit-elle ? Aucune. Une info se garde si elle sert le sujet, pas si elle fait rire."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya (expo HDA)", "avatar": "🎨" },
+          "etapes": [
+            { "de": "eux", "texte": "grâce à toi ma collecte est triée en 3 salles 🙌" },
+            { "de": "eux", "texte": "mais je les mets dans quel ordre ? les visiteurs commencent par où ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Dans l'ordre où tu as trouvé les infos, c'est plus simple.",
+                  "ok": false,
+                  "feedback": "L'ordre de ta collecte, c'est l'ordre du hasard. Un plan de production se construit pour le visiteur, pas pour toi : on hiérarchise."
+                },
+                {
+                  "texte": "Du général au précis : l'histoire, puis la technique, puis l'exemple local.",
+                  "ok": true,
+                  "feedback": "C'est ça, hiérarchiser : le visiteur comprend d'où ça vient, puis comment c'est fait, puis découvre l'œuvre sous ses fenêtres. Chaque salle prépare la suivante."
+                },
+                {
+                  "texte": "Peu importe : dans une expo virtuelle, on clique où on veut.",
+                  "ok": false,
+                  "feedback": "Même en ligne, tu proposes un parcours. Sans ordre pensé, le visiteur tombe sur « Marée haute » sans rien savoir des fresques : ton plan doit guider."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok ! et les phrases copiées dans ma collecte, je les colle direct dans les salles ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, colle tout : personne n'ira vérifier.",
+                  "ok": false,
+                  "feedback": "C'est du plagiat, et ça se voit : un prof repère un copier-collé en deux secondes. Et sans source affichée, ton expo perd toute crédibilité."
+                },
+                {
+                  "texte": "Reformule ou mets des guillemets — et indique la source sous chaque texte.",
+                  "ok": true,
+                  "feedback": "La règle d'or : reformuler ou citer entre guillemets, avec la source visible. Ta collecte a déjà tout noté : il n'y a qu'à recopier chaque ligne « Source : … »."
+                },
+                {
+                  "texte": "Écris juste « source : internet » à la fin.",
+                  "ok": false,
+                  "feedback": "« Internet » n'est pas une source, c'est un océan. On cite le site, l'article, la date : le visiteur doit pouvoir retrouver l'info."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "aïe… ma phrase sur les graffitis américains, j'ai perdu le site 😅 je la garde ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Garde-la, elle fait pro.",
+                  "ok": false,
+                  "feedback": "Sans source, tu ne peux ni la citer ni la vérifier. Une info invérifiable n'a pas sa place dans une production."
+                },
+                {
+                  "texte": "Refais la recherche pour retrouver une source fiable — sinon, écarte la phrase.",
+                  "ok": true,
+                  "feedback": "Exactement : soit tu retrouves qui le dit (et tu le cites), soit la phrase sort du plan. Pas de source, pas de place dans l'expo."
+                },
+                {
+                  "texte": "Invente une source crédible, ni vu ni connu.",
+                  "ok": false,
+                  "feedback": "Inventer une source, c'est tromper tes lecteurs. Et le jour où quelqu'un clique pour vérifier, c'est toute ton expo qui est décrédibilisée."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "salles ordonnées ✅ sources sous chaque texte ✅ phrase mystère en quarantaine ✅ l'expo peut ouvrir 🎉 merci !" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Dernier contrôle avant l'ouverture de l'expo ! Clique les bons réflexes de production, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Je regroupe mes extraits par thème avant de rédiger.",
+              "bonne": true,
+              "feedback": "Réflexe de pro : regrouper d'abord, rédiger ensuite. Les paquets d'infos deviennent les parties de ton plan."
+            },
+            {
+              "texte": "⏰ DERNIER JOUR : télécharge une expo TOUTE FAITE, GRATUIT !!!",
+              "bonne": false,
+              "feedback": "Urgence + cadeau + majuscules : le combo de manipulation classique. Une expo toute faite ne répond pas à TON sujet — et c'est du plagiat."
+            },
+            {
+              "texte": "Sous chaque texte de l'expo, j'indique d'où vient l'info.",
+              "bonne": true,
+              "feedback": "Oui : la source visible sous chaque texte, c'est ce qui rend ta production fiable — et vérifiable par n'importe quel visiteur."
+            },
+            {
+              "texte": "Pas besoin de citer : ce qui est sur internet est à tout le monde 😉",
+              "bonne": false,
+              "feedback": "La fausse évidence qui arrange tout le monde. Les contenus en ligne ont des auteurs : utiliser sans citer, c'est du plagiat, même sur internet."
+            },
+            {
+              "texte": "J'écarte l'extrait hors-sujet, même s'il est drôle.",
+              "bonne": true,
+              "feedback": "Bien vu : une info se garde si elle sert le sujet, pas si elle fait rire. Le hors-sujet dilue ta production."
+            },
+            {
+              "texte": "COPIE-COLLE tout ce soir, tu reformuleras plus tard, VITE !",
+              "bonne": false,
+              "feedback": "« Plus tard » = jamais, et l'urgence est le plus vieux des pièges. Reformuler et citer au fil de la collecte, c'est ça qui fait vraiment gagner du temps."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

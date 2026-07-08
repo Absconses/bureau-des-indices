@@ -1,0 +1,244 @@
+{
+  "id": "5.D3.POST.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Adopter une posture réflexive sur les contenus publiés et sur leur réception, en mobilisant les compétences d'ordre psychologique et social du socle commun de connaissances, de compétences et de culture.",
+  "titre": "Drôle pour qui ?",
+  "accroche": "Un copain qui tombe, une photo hilarante, toute la classe qui la réclame… Avant d'appuyer sur « publier », enquête express : drôle pour qui, exactement ?",
+  "documents": {
+    "postChute": {
+      "template": "post",
+      "pseudo": "@les_boulets_du_college",
+      "avatar": "😂",
+      "bio": "Le pire du collège des Tilleuls 😆 Envoie tes photos en MP, on publie tout !",
+      "texte": "Quand tu rates la dernière marche devant TOUTE la cantine 🤣🤣 Il va s'en souvenir longtemps ! Taguez-le si vous le connaissez 👇",
+      "likes": 342,
+      "partages": 89,
+      "commentaires": 57
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina", "avatar": "😹" },
+          "etapes": [
+            { "de": "eux", "texte": "MDRRR 😂 j'ai LA photo de Mehdi qui s'étale devant le CDI, cartable qui vole et tout" },
+            { "de": "eux", "texte": "elle est ÉNORME. je l'envoie sur le groupe de la classe ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Vas-y, c'est trop drôle, tout le monde va rigoler !",
+                  "ok": false,
+                  "feedback": "Drôle pour toi et la classe… mais Mehdi, lui, devient LA blague du collège. Avant de publier, demande-toi comment LUI va recevoir la photo."
+                },
+                {
+                  "texte": "Attends. Demande-toi d'abord comment Mehdi va le vivre, lui.",
+                  "ok": true,
+                  "feedback": "Bon réflexe : une même photo n'est pas reçue pareil par tout le monde. Hilarante pour toi, humiliante pour lui — et c'est lui qui est dessus."
+                },
+                {
+                  "texte": "Envoie-la juste à moi, ça restera entre nous 🤫",
+                  "ok": false,
+                  "feedback": "Rien ne « reste entre nous » : dès que la photo quitte son téléphone, chacun peut la re-partager. Le problème est le même, juste plus lent."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "oh ça va, c'est juste pour rire… il rigolera aussi, non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Fais le test des trois lecteurs : Mehdi, ses parents, un inconnu. Si un seul peut être blessé, tu ne postes pas.",
+                  "ok": true,
+                  "feedback": "Exactement. Mehdi : honte. Ses parents : indignation. Un inconnu : moquerie sans même le connaître. Trois lecteurs, zéro bonne réception — on ne publie pas."
+                },
+                {
+                  "texte": "S'il le prend mal, tant pis, faut savoir rire dans la vie.",
+                  "ok": false,
+                  "feedback": "« Faut savoir rire », dit toujours celui qui n'est PAS sur la photo. Rire ensemble, oui ; rire DE quelqu'un qui n'a rien choisi, non."
+                },
+                {
+                  "texte": "Floute son visage et poste, comme ça personne ne saura.",
+                  "ok": false,
+                  "feedback": "Toute la classe le reconnaîtra quand même : le lieu, le cartable, l'heure… Le flou ne protège pas Mehdi, il te donne juste bonne conscience."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "vu comme ça… ok. je lui montre la photo d'abord, et c'est lui qui décide 👍" },
+            { "de": "info", "texte": "Réflexe enquêteur 🕵️ : avant de publier, imagine la réception. La personne concernée, ses proches, un inconnu — si un seul des trois peut être blessé, la photo reste dans ton téléphone." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postChute",
+          "questions": [
+            {
+              "question": "Ce compte a publié la photo d'un élève qui tombe. La phrase « Taguez-le si vous le connaissez 👇 » sert surtout à…",
+              "options": [
+                "Aider l'élève à récupérer sa photo",
+                "Faire identifier l'élève pour que la moquerie le suive partout",
+                "Vérifier que la photo est vraie",
+                "Remercier les abonnés du compte"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : taguer, c'est coller un nom sur la pire chute de quelqu'un. La moquerie sort de l'écran et le suit dans les couloirs du collège.",
+              "feedbackKo": "Relis la fin du post : « Taguez-le si vous le connaissez ». Le but est de mettre un nom sur l'élève — la moquerie devient personnelle et le poursuit dans la vraie vie."
+            },
+            {
+              "question": "Regarde les chiffres sous le post. Lequel prouve que l'élève ne pourra jamais tout effacer ?",
+              "options": [
+                "Les 342 likes",
+                "Les 89 partages : il existe déjà 89 copies chez d'autres gens",
+                "Les 57 commentaires",
+                "L'emoji 🤣 dans le texte"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : chaque partage crée une copie de la photo chez quelqu'un d'autre. Même si le post d'origine est supprimé, 89 copies peuvent ressortir n'importe quand.",
+              "feedbackKo": "Regarde la ligne des réactions : 89 partages, donc 89 copies de la photo chez d'autres gens. Supprimer le post d'origine n'efface pas les copies — voilà pourquoi on réfléchit AVANT de publier."
+            }
+          ]
+        },
+        {
+          "document": "postChute",
+          "questions": [
+            {
+              "question": "Lis la bio du compte. Qui décide de publier ces photos d'élèves ?",
+              "options": [
+                "Le collège des Tilleuls, officiellement",
+                "Un compte anonyme qui publie « tout » ce qu'on lui envoie",
+                "Les élèves photographiés, avec leur accord",
+                "Les parents d'élèves du collège"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la bio annonce « Envoie tes photos en MP, on publie tout ! ». Personne ne demande l'accord des élèves photographiés — leur image ne leur appartient plus.",
+              "feedbackKo": "Relis la bio, sous le pseudo : « Envoie tes photos en MP, on publie tout ! ». C'est un compte anonyme qui publie sans jamais demander l'accord des élèves photographiés."
+            },
+            {
+              "question": "Le post affirme « Il va s'en souvenir longtemps ! ». En quoi cette phrase est-elle plus vraie que son auteur ne le croit ?",
+              "options": [
+                "La photo publiée peut être copiée et ressortir des mois ou des années plus tard",
+                "Parce qu'une chute dans un escalier fait mal au genou",
+                "Le post sera vite supprimé, donc vite oublié",
+                "Les élèves oublient tout après les vacances"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : avec 89 partages, la photo vit sa propre vie. Elle peut réapparaître en 3e… ou bien après. Sur internet, l'humiliation d'un jour peut durer des années.",
+              "feedbackKo": "Regarde les 89 partages : la photo est déjà copiée partout et peut ressortir des mois ou des années plus tard. C'est ça, « s'en souvenir longtemps », version internet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le test des trois lecteurs : imagine que la photo de la chute est publiée. Associe chaque réaction à la personne qui la vit.",
+          "categories": [
+            { "id": "copain", "label": "😳 Le copain photographié" },
+            { "id": "parents", "label": "😠 Ses parents" },
+            { "id": "inconnu", "label": "🤷 Un inconnu sur internet" }
+          ],
+          "items": [
+            {
+              "texte": "Honte : toute la classe a vu sa chute en boucle",
+              "categorie": "copain",
+              "feedbackOk": "Oui. Ce qui te fait rire dix secondes peut lui coller à la peau des semaines : c'est lui que tout le monde regarde.",
+              "feedbackKo": "C'est le copain photographié qui vit ça : la honte est pour celui qui est SUR la photo, pas pour ceux qui rigolent."
+            },
+            {
+              "texte": "Peur d'entendre les moqueries à chaque récré",
+              "categorie": "copain",
+              "feedbackOk": "Exact : la peur d'y retourner, c'est l'effet invisible d'une photo « drôle ». Le rire des autres devient son stress quotidien.",
+              "feedbackKo": "C'est le copain : la photo le suit au collège, et chaque récré devient un moment redouté. Voilà la réception côté personne concernée."
+            },
+            {
+              "texte": "Indignation : « Qui a publié ça sans son accord ?! »",
+              "categorie": "parents",
+              "feedbackOk": "Oui : les parents ne trouvent pas ça drôle une seconde. Publier l'image de quelqu'un sans son accord, ils peuvent en demander le retrait — et c'est leur droit.",
+              "feedbackKo": "Ce sont ses parents : eux voient leur enfant humilié, pas une blague. L'indignation vient de ceux qui l'aiment — pense à eux avant de poster."
+            },
+            {
+              "texte": "Inquiétude : ils cherchent comment faire retirer la photo",
+              "categorie": "parents",
+              "feedbackOk": "Exact. Une fois la photo partagée, la faire retirer partout est presque impossible — d'où leur inquiétude.",
+              "feedbackKo": "Ce sont les parents : ils s'inquiètent et tentent de faire retirer la photo. Preuve qu'une « blague » peut devenir un vrai problème de famille."
+            },
+            {
+              "texte": "Moquerie : il partage la photo sans même savoir qui c'est",
+              "categorie": "inconnu",
+              "feedbackOk": "Oui : pour un inconnu, ton copain n'est pas une personne, juste une image drôle. Il partage sans penser une seconde à lui.",
+              "feedbackKo": "C'est l'inconnu : il ne connaît pas ton copain, il voit juste « une chute marrante » et il partage. La photo voyage alors chez des gens que tu ne connaîtras jamais."
+            },
+            {
+              "texte": "Indifférence : une image rigolote de plus, vite vue… mais quand même partagée",
+              "categorie": "inconnu",
+              "feedbackOk": "Exact : l'inconnu s'en fiche — mais son petit partage « sans y penser » ajoute une copie de plus. L'indifférence aussi fait voyager l'humiliation.",
+              "feedbackKo": "C'est l'inconnu : il ne ressent presque rien, il fait juste suivre. Des milliers de petits gestes indifférents, et la photo devient virale."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Alerte publication ! Clique les bons réflexes avant de poster. Les pièges qui poussent à publier ? On ne touche pas !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Je demande d'abord son avis à la personne sur la photo",
+              "bonne": true,
+              "feedback": "Réflexe n°1 : son image lui appartient. Si elle dit non, c'est non — même pour « juste le groupe de la classe »."
+            },
+            {
+              "texte": "POSTE VITE avant que quelqu'un d'autre le fasse !!",
+              "bonne": false,
+              "feedback": "Piège de l'urgence : les majuscules et le « vite » servent à t'empêcher de réfléchir. Une bonne décision n'est jamais pressée."
+            },
+            {
+              "texte": "Je fais le test des trois lecteurs : lui, ses parents, un inconnu",
+              "bonne": true,
+              "feedback": "Le bon filtre : si UN seul des trois peut être blessé ou choqué par la photo, elle reste dans ton téléphone."
+            },
+            {
+              "texte": "Publie, tu vas exploser ton compteur d'abonnés 🎁",
+              "bonne": false,
+              "feedback": "Piège du cadeau : des abonnés « gratuits » contre l'humiliation d'un copain. Le vrai prix, c'est lui qui le paie."
+            },
+            {
+              "texte": "T'es vraiment pas drôle si tu gardes ça pour toi 😏",
+              "bonne": false,
+              "feedback": "Piège de la pression du groupe : on joue sur ta peur de passer pour le rabat-joie. Refuser de blesser quelqu'un, c'est fort, pas ringard."
+            },
+            {
+              "texte": "Dans le doute, je ne publie pas",
+              "bonne": true,
+              "feedback": "Oui : le doute est un signal. Une photo non publiée peut toujours l'être demain ; une photo publiée ne peut jamais être totalement effacée."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

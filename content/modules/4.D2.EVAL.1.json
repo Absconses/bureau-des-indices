@@ -1,0 +1,275 @@
+{
+  "id": "4.D2.EVAL.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Distinguer ce qui relève de l'information, de la communication et de l'expression des opinions.",
+  "titre": "Info, pub ou coup de gueule ?",
+  "accroche": "Trois textes circulent sur les fast-foods installés près des collèges de Valbrune : une enquête, un post tout sourire, une tribune furieuse. Trois intentions différentes — à toi de coller la bonne étiquette avant de croire.",
+  "documents": {
+    "enqueteCourrier": {
+      "template": "site-article",
+      "nomSite": "LE COURRIER DE VALBRUNE",
+      "url": "https://www.courrier-valbrune.fr/ville/fast-foods-colleges-enquete",
+      "menu": ["Accueil", "Ville", "Sports", "Culture", "Opinions"],
+      "surtitre": "Enquête",
+      "titre": "Fast-foods près des collèges : trois ouvertures en deux ans à Valbrune",
+      "auteur": "Par Léa Ferrand, journaliste",
+      "date": "Publié le 12 mai 2026",
+      "chapo": "Trois enseignes de restauration rapide se sont installées à moins de 400 mètres des collèges de la ville. Nous avons vérifié les chiffres et interrogé tous les acteurs.",
+      "corps": [
+        "Selon le registre du commerce, MiamBurger, Krousty et O'Snack ont ouvert entre 2024 et 2026 près des collèges des Tilleuls et Jean-Verne. À la sortie des cours, nos journalistes ont compté jusqu'à 60 élèves dans la file d'attente.",
+        "Contactée, la principale du collège des Tilleuls « constate plus d'élèves qui sautent la cantine ». La gérante de MiamBurger, elle, assure « respecter toutes les règles ». La mairie indique étudier la question."
+      ],
+      "footer": ["Qui sommes-nous ?", "Nos sources", "Contact", "Mentions légales"]
+    },
+    "postMiamBurger": {
+      "template": "post",
+      "pseudo": "@MiamBurger_Officiel",
+      "avatar": "🍔",
+      "bio": "Compte officiel MiamBurger — 42 restaurants en France 💛 #TeamMiam",
+      "texte": "On adore voir nos jeunes clients après les cours 😍 Chez MiamBurger, le menu Collège c'est de la salade fraîche, des produits de qualité et des prix mini 🥗✨ Parce que ta pause mérite le meilleur ! #BienManger",
+      "likes": 1874,
+      "partages": 236,
+      "commentaires": 89
+    },
+    "tribuneMarc": {
+      "template": "site-article",
+      "nomSite": "LE COURRIER DE VALBRUNE",
+      "url": "https://www.courrier-valbrune.fr/opinions/tribune-fast-foods-colleges",
+      "menu": ["Accueil", "Ville", "Sports", "Culture", "Opinions"],
+      "surtitre": "Tribune — les opinions publiées n'engagent que leurs auteurs",
+      "titre": "« Laisser des fast-foods encercler nos collèges, c'est inadmissible »",
+      "auteur": "Par Marc Delval, parent d'élève à Valbrune",
+      "date": "Publié le 15 mai 2026",
+      "chapo": "Père de deux collégiennes, Marc Delval réagit à notre enquête du 12 mai.",
+      "corps": [
+        "Je suis en colère. Chaque midi, je vois des dizaines d'élèves délaisser la cantine pour des frites. Je trouve scandaleux qu'on laisse faire, et à mon avis la mairie doit agir maintenant.",
+        "On me dira que chacun est libre. Mais je refuse que la santé de nos enfants passe après le commerce. Interdisons ces enseignes à moins de 500 mètres des collèges !"
+      ],
+      "footer": ["Qui sommes-nous ?", "Proposer une tribune", "Contact"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "enqueteCourrier",
+          "questions": [
+            {
+              "question": "Ce texte relève surtout de quoi ?",
+              "options": [
+                "De l'information : des faits vérifiés, présentés par une journaliste",
+                "De la communication : le journal veut vendre des abonnements",
+                "De l'opinion : la journaliste est contre les fast-foods",
+                "D'une publicité pour MiamBurger"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : chiffres vérifiés « selon le registre du commerce », comptage sur place, et tous les acteurs interrogés — même la gérante. Vérifier des faits et écouter tous les camps, c'est le travail d'information.",
+              "feedbackKo": "Relis le chapo et le corps : « nous avons vérifié les chiffres », « selon le registre du commerce », principale ET gérante interrogées. Aucun avis personnel, aucun produit à vendre : des faits vérifiés = de l'information."
+            },
+            {
+              "question": "Quel indice montre le mieux que c'est un travail d'information ?",
+              "options": [
+                "L'article vérifie ses chiffres et fait parler les deux camps",
+                "L'article est publié sur internet",
+                "Le titre contient le mot « fast-foods »",
+                "L'article parle d'un sujet sérieux"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "C'est LE bon réflexe : sources citées + points de vue croisés (principale, gérante, mairie). Un texte peut être sérieux ou en ligne sans être de l'information — c'est la méthode qui compte.",
+              "feedbackKo": "Regarde la méthode, pas le support : l'article cite sa source (le registre du commerce) et interroge les deux camps. Être en ligne ou parler d'un sujet sérieux, une pub sait le faire aussi !"
+            }
+          ]
+        },
+        {
+          "document": "postMiamBurger",
+          "questions": [
+            {
+              "question": "Ce post relève surtout de quoi ?",
+              "options": [
+                "De l'information : l'enseigne donne des faits sur ses menus",
+                "De la communication : une marque parle d'elle-même pour donner envie",
+                "De l'opinion : un client partage son avis",
+                "D'une enquête de journalistes"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : c'est le compte officiel de la marque qui vante ses propres produits (« qualité », « le meilleur »). Pas forcément faux, mais choisi pour séduire : c'est de la communication.",
+              "feedbackKo": "Regarde qui parle : « @MiamBurger_Officiel », le compte de la marque, qui dit que ses produits sont « de qualité » et « le meilleur ». Quand une marque parle d'elle-même pour donner envie, c'est de la communication — pas une info vérifiée."
+            },
+            {
+              "question": "Quel détail doit te mettre la puce à l'oreille ?",
+              "options": [
+                "C'est la marque elle-même qui juge ses propres menus",
+                "Il y a des emojis, donc c'est forcément faux",
+                "Il y a 1874 likes, c'est louche",
+                "Le post parle de salade"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exactement : MiamBurger est juge et partie. Les emojis et les likes ne prouvent rien — ni le vrai ni le faux. La vraie question, c'est toujours : qui parle, et qu'a-t-il à y gagner ?",
+              "feedbackKo": "Le vrai signal était dans le pseudo : « @MiamBurger_Officiel » — la marque note ses propres menus, comme un élève qui corrigerait son propre contrôle. Emojis et likes, eux, ne prouvent rien du tout."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ces extraits viennent des trois textes de Valbrune. Colle à chacun la bonne étiquette.",
+          "categories": [
+            { "id": "info", "label": "📰 Information" },
+            { "id": "com", "label": "📢 Communication" },
+            { "id": "opinion", "label": "💬 Opinion" }
+          ],
+          "items": [
+            {
+              "texte": "Selon le registre du commerce, trois enseignes ont ouvert près des collèges depuis 2024.",
+              "categorie": "info",
+              "feedbackOk": "Oui : un fait précis, avec sa source citée. N'importe qui peut aller vérifier — c'est la marque de l'information.",
+              "feedbackKo": "« Selon le registre du commerce » : un fait daté, chiffré, avec sa source. C'est vérifiable par tous, donc c'est de l'information."
+            },
+            {
+              "texte": "Ta pause mérite le meilleur : découvre le menu Collège à prix mini ! ✨",
+              "categorie": "com",
+              "feedbackOk": "Exact : on te flatte (« tu mérites ») et on te vend un produit. Aucun fait vérifiable, juste de l'envie : communication.",
+              "feedbackKo": "C'était de la communication : « tu mérites le meilleur » ne s'adresse pas à ta tête mais à ton envie. Une phrase qui vend un produit sans fait vérifiable, c'est de la pub."
+            },
+            {
+              "texte": "Je trouve scandaleux qu'on laisse ces enseignes s'installer face aux grilles.",
+              "categorie": "opinion",
+              "feedbackOk": "Bien vu : « je trouve scandaleux » = un jugement personnel assumé. C'est une opinion — permise, mais à ne pas confondre avec un fait.",
+              "feedbackKo": "« Je trouve scandaleux » : quelqu'un dit ce qu'il pense, à la première personne. C'est une opinion — elle a le droit d'exister, mais ce n'est pas un fait."
+            },
+            {
+              "texte": "À la sortie des cours, nos journalistes ont compté jusqu'à 60 élèves dans la file.",
+              "categorie": "info",
+              "feedbackOk": "Oui : des journalistes sont allés compter sur place. Une observation vérifiable, sans jugement : information.",
+              "feedbackKo": "Des journalistes qui vont compter sur place, c'est une observation vérifiable — pas un avis, pas une pub. Information."
+            },
+            {
+              "texte": "Chez MiamBurger, chaque recette est préparée avec amour 💛",
+              "categorie": "com",
+              "feedbackOk": "Exact : « avec amour », ça ne se mesure pas et ça ne se vérifie pas. C'est une image pour te séduire : communication.",
+              "feedbackKo": "« Préparée avec amour » : impossible à vérifier, et c'est la marque qui le dit d'elle-même. Une jolie image pour vendre = communication."
+            },
+            {
+              "texte": "À mon avis, la mairie devrait tout interdire : c'est une question de bon sens.",
+              "categorie": "opinion",
+              "feedbackOk": "Oui : « à mon avis » annonce la couleur, et « bon sens » n'est pas une preuve. Une opinion, clairement étiquetée par son auteur.",
+              "feedbackKo": "« À mon avis » te donnait la réponse : c'est un avis personnel. Et attention, « c'est du bon sens » n'est pas une preuve — c'est une façon de dire « je pense que »."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Inès (4e B)", "avatar": "🍟" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu le post de MiamBurger ?? ils disent que leur menu Collège c'est de la qualité 🥗" },
+            { "de": "eux", "texte": "du coup l'enquête du Courrier qui dit que les élèves sautent la cantine, elle raconte n'importe quoi non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Attends : c'est MiamBurger qui parle de MiamBurger. C'est de la com, pas une info vérifiée.",
+                  "ok": true,
+                  "feedback": "Exactement. La marque a le droit de se mettre en valeur, mais elle choisit ce qu'elle montre. Ça ne contredit pas l'enquête : ce ne sont pas deux infos qui s'opposent, c'est une info face à une pub."
+                },
+                {
+                  "texte": "Bah oui, la marque sait mieux que personne ce qu'il y a dans ses menus.",
+                  "ok": false,
+                  "feedback": "Elle le sait, oui… et justement, elle ne montre que ce qui l'arrange. Une marque qui parle d'elle-même fait de la communication : son but est de donner envie, pas d'informer."
+                },
+                {
+                  "texte": "Le post a presque 2000 likes, il doit être plus fiable que l'article.",
+                  "ok": false,
+                  "feedback": "Les likes mesurent la popularité, pas la vérité. Une pub réussie peut avoir dix fois plus de likes qu'une enquête sérieuse — ça ne la transforme pas en information."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok 😅 et la tribune du parent super énervé alors ? lui au moins il dit tout haut ce que tout le monde pense !" },
+            {
+              "choix": [
+                {
+                  "texte": "Il exprime son opinion. Il en a le droit, mais un avis n'est ni une info vérifiée ni une preuve.",
+                  "ok": true,
+                  "feedback": "C'est ça. Sa colère est sincère et le débat est utile — mais « je trouve scandaleux » reste un jugement personnel. On peut l'écouter, pas le citer comme un fait."
+                },
+                {
+                  "texte": "S'il est aussi en colère, c'est bien la preuve qu'il a raison.",
+                  "ok": false,
+                  "feedback": "La colère est une émotion, pas une preuve. On peut être très en colère et se tromper — ou avoir raison. Seuls les faits vérifiés permettent de trancher."
+                },
+                {
+                  "texte": "Une opinion ça ne vaut rien, on jette direct.",
+                  "ok": false,
+                  "feedback": "Pas si vite ! Les opinions nourrissent le débat, et celle-ci s'annonce honnêtement comme une tribune. Le danger, ce n'est pas l'opinion : c'est de la prendre pour une information."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Trois textes, trois intentions : l'enquête INFORME avec des faits vérifiés, la marque COMMUNIQUE pour séduire, le parent OPINE pour convaincre. Aucun n'est interdit — mais avant de croire ou de partager, colle la bonne étiquette." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le dossier Valbrune défile ! Clique uniquement sur les phrases qui relèvent de l'INFORMATION (fait vérifiable). Laisse filer la com et les opinions.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "La mairie de Valbrune a reçu 120 courriers de parents à ce sujet, selon son service courrier.",
+              "bonne": true,
+              "feedback": "Un fait chiffré, avec sa source : information. On peut appeler la mairie pour vérifier."
+            },
+            {
+              "texte": "OFFRE FLASH 🎁 : un burger OFFERT aux collégiens, aujourd'hui SEULEMENT !!",
+              "bonne": false,
+              "feedback": "Cadeau + urgence + MAJUSCULES : le combo classique de la pub pour te faire foncer sans réfléchir. Communication, pas information."
+            },
+            {
+              "texte": "Le conseil municipal votera en juin une charte sur les commerces proches des écoles.",
+              "bonne": true,
+              "feedback": "Annonce factuelle et datée, vérifiable dans le compte rendu du conseil : information."
+            },
+            {
+              "texte": "Ces enseignes EMPOISONNENT nos enfants — partage si toi aussi tu es RÉVOLTÉ 😡 !",
+              "bonne": false,
+              "feedback": "Appel à l'émotion + majuscules + « partage » : une opinion qui veut se propager vite. Aucun fait vérifiable là-dedans."
+            },
+            {
+              "texte": "9 jeunes sur 10 nous adorent ❤️ Rejoins la #TeamMiam avant tout le monde !",
+              "bonne": false,
+              "feedback": "Chiffre sorti de nulle part + flatterie + course à l'appartenance : pure communication. Un vrai sondage dirait qui l'a fait, quand, et sur combien de personnes."
+            },
+            {
+              "texte": "Trois enseignes ont ouvert près des collèges depuis 2024, d'après le registre du commerce.",
+              "bonne": true,
+              "feedback": "Fait précis, source citée, vérifiable par n'importe qui : c'est de l'information."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

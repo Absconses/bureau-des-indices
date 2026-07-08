@@ -1,0 +1,281 @@
+{
+  "id": "4.D2.OUT.3",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Utiliser l'intelligence artificielle générative pour s'informer.",
+  "titre": "Interrogatoire d'une IA",
+  "accroche": "Pour ton dossier de géo sur les canicules en ville, une IA te propose son aide : réponses fluides, ton assuré, zéro hésitation. Trop parfait pour être honnête ? À toi de mener l'interrogatoire.",
+  "documents": {
+    "serpVerif": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=rapport+observatoire+national+des+villes+fra%C3%AEches+2022",
+      "requete": "rapport Observatoire national des villes fraîches 2022",
+      "nbResultats": "Environ 12 résultats (0,27 seconde)",
+      "resultats": [
+        {
+          "url": "www.geo-ados.fr › dossiers › villes-chaleur",
+          "titre": "Canicules : comment les villes se rafraîchissent — dossier complet",
+          "extrait": "Arbres, fontaines, toits clairs : un dossier illustré et relu par un climatologue sur l'adaptation des villes à la chaleur. Aucune mention d'un « Observatoire national des villes fraîches »."
+        },
+        {
+          "url": "www.courrier-montviel.fr › environnement",
+          "titre": "À Montviel, la cour végétalisée du collège fait baisser la température",
+          "extrait": "Mesures à l'appui : jusqu'à 3 °C de moins l'été sous les arbres de la cour. Reportage et chiffres vérifiés auprès de la mairie. Publié il y a 5 jours."
+        },
+        {
+          "url": "forum-ecolo.net › discussion-2214",
+          "titre": "quelqu'un connaît l'« Observatoire national des villes fraîches » ?? [forum]",
+          "extrait": "je cherche leur fameux rapport 2022 cité par une IA… introuvable, aucun site officiel, rien 🤔 quelqu'un a un lien ? — 7 réponses, toujours pas de lien"
+        },
+        {
+          "url": "www.assistia.fr › centre-aide › fiabilite",
+          "titre": "Assistia peut-elle inventer des sources ? — Centre d'aide",
+          "extrait": "Oui. Notre IA peut générer des références ou des chiffres qui n'existent pas, avec un ton très assuré. Vérifiez toujours les informations importantes dans des sources fiables."
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Assistia (IA)", "avatar": "🤖" },
+          "etapes": [
+            { "de": "eux", "texte": "Bonjour ! Je suis Assistia, ton assistante IA. Un dossier de géographie sur les canicules en ville ? Excellent sujet, je le connais très bien 😊" },
+            { "de": "eux", "texte": "Voici l'essentiel : pour lutter contre la chaleur, les villes plantent des arbres, créent des fontaines et peignent les toits en clair. D'après le rapport 2022 de l'Observatoire national des villes fraîches, ces mesures ont déjà fait baisser la température de 4 °C dans 120 villes." },
+            {
+              "choix": [
+                {
+                  "texte": "Parfait, je copie tout dans mon dossier, la source aussi.",
+                  "ok": false,
+                  "feedback": "Trop rapide ! Une IA rédige des phrases fluides et sûres d'elles… même quand elle invente. Avant de citer un rapport, on vérifie qu'il existe."
+                },
+                {
+                  "texte": "Merci ! Je note, mais je vérifierai ce rapport ailleurs avant de le citer.",
+                  "ok": true,
+                  "feedback": "Réflexe d'enquêteur. L'IA t'a fait gagner du temps pour démarrer — mais un chiffre et une source ne se recopient jamais sans vérification."
+                },
+                {
+                  "texte": "Je lui demande si elle est sûre à 100 %. Si elle dit oui, c'est bon.",
+                  "ok": false,
+                  "feedback": "Une IA répond avec le même ton assuré quand elle a raison… et quand elle invente. Sa confiance ne prouve rien : la vérification se fait ailleurs, pas dans le chat."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Ce rapport est très fiable, je te le confirme 👍 Tu veux le nom de son autrice ? Il s'agit de la climatologue Anne Verdier, une grande spécialiste." },
+            {
+              "choix": [
+                {
+                  "texte": "Un nom, une date, un titre… là, c'est forcément vrai.",
+                  "ok": false,
+                  "feedback": "C'est justement le piège : plus une IA donne de détails, plus ça a l'air vrai. Mais elle peut inventer les détails aussi. Seule une recherche en dehors du chat permet de trancher."
+                },
+                {
+                  "texte": "Je cherche « Observatoire national des villes fraîches » sur un moteur de recherche.",
+                  "ok": true,
+                  "feedback": "Exactement : on sort du chat et on croise avec d'autres sources. Si le rapport existe, tu le trouveras vite. Sinon… tu tiens ta preuve."
+                },
+                {
+                  "texte": "Je mets « Assistia » comme source dans ma bibliographie, c'est plus simple.",
+                  "ok": false,
+                  "feedback": "Une IA n'est pas une source : elle fabrique du texte à partir de millions de pages sans te dire lesquelles. Ta bibliographie doit citer des documents qu'on peut retrouver et vérifier."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Petit rappel de ma part : je peux me tromper ou inventer des références. Pense à vérifier les informations importantes 😅" },
+            {
+              "choix": [
+                {
+                  "texte": "Je te garde pour les idées et le plan — et je vérifie les faits ailleurs.",
+                  "ok": true,
+                  "feedback": "C'est le bon usage : l'IA t'aide à démarrer, organiser, reformuler. Pour les faits et les chiffres, direction les sources fiables : sites officiels, presse, CDI."
+                },
+                {
+                  "texte": "Je supprime l'appli : une IA qui peut inventer ne sert à rien.",
+                  "ok": false,
+                  "feedback": "Pas besoin de tout jeter ! Pour trouver des idées, structurer ou reformuler, l'IA est très utile. C'est comme source finale qu'elle est disqualifiée."
+                },
+                {
+                  "texte": "Je continue comme avant : si ça a l'air vrai, ça passera.",
+                  "ok": false,
+                  "feedback": "« Avoir l'air vrai », c'est justement la grande spécialité d'une IA générative. Sans vérification, tu risques de présenter un rapport fantôme devant toute la classe."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Une IA générative écrit avec assurance même quand elle invente — on appelle ça une hallucination. Utilise-la pour démarrer, structurer et reformuler, jamais comme source finale : les faits se vérifient toujours ailleurs." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpVerif",
+          "questions": [
+            {
+              "question": "Tu as cherché le fameux rapport cité par Assistia. Que t'apprend cette page de résultats ?",
+              "options": [
+                "Le rapport existe : il suffit de cliquer sur le premier résultat",
+                "Aucune trace du rapport : même un forum le cherche sans le trouver",
+                "Le moteur de recherche est en panne",
+                "Le rapport est trop récent pour être déjà en ligne"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : aucun résultat ne mène au rapport, et un internaute le cherche déjà en vain sur le forum. Une « source » introuvable partout, c'est le signe qu'elle a été inventée.",
+              "feedbackKo": "Regarde les résultats un par un : aucun ne mène au rapport, et le forum montre que quelqu'un le cherche déjà sans succès. Quand une référence citée par une IA est introuvable partout, c'est qu'elle n'existe probablement pas."
+            },
+            {
+              "question": "Quel résultat confirme que l'IA elle-même peut inventer des références ?",
+              "options": [
+                "Le dossier de geo-ados.fr",
+                "L'article du Courrier de Montviel",
+                "La discussion du forum-ecolo.net",
+                "La page du centre d'aide d'Assistia"
+              ],
+              "bonnes": [3],
+              "feedbackOk": "Oui : la page d'aide d'Assistia le dit noir sur blanc — l'IA « peut générer des références qui n'existent pas ». Quand les créateurs de l'outil te disent de vérifier ailleurs, écoute-les !",
+              "feedbackKo": "C'était le dernier résultat : le centre d'aide d'Assistia reconnaît que son IA « peut générer des références ou des chiffres qui n'existent pas ». Le fabricant lui-même recommande de vérifier dans des sources fiables."
+            }
+          ]
+        },
+        {
+          "document": "serpVerif",
+          "questions": [
+            {
+              "question": "Ton dossier a besoin d'un vrai chiffre sur la fraîcheur en ville. Quel résultat peut remplacer le « rapport » cité par l'IA ?",
+              "options": [
+                "L'article du Courrier de Montviel : jusqu'à 3 °C de moins mesurés sous les arbres",
+                "Le rapport de l'Observatoire, en cherchant encore un peu",
+                "La discussion du forum : quelqu'un finira bien par donner le lien",
+                "Aucun : sans l'IA, impossible de trouver un chiffre"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : un journal local qui publie des mesures vérifiées auprès de la mairie, c'est une source qu'on peut retrouver et citer — tout l'inverse du rapport fantôme.",
+              "feedbackKo": "La bonne piste était l'article du Courrier de Montviel : des mesures réelles (« jusqu'à 3 °C de moins »), vérifiées, avec une source identifiable. Le rapport de l'Observatoire, lui, reste introuvable : il n'a jamais existé."
+            },
+            {
+              "question": "Que t'apprend le message du forum-ecolo.net ?",
+              "options": [
+                "Il prouve que le rapport existe quelque part",
+                "Tu n'es pas le seul à qui une IA a cité ce rapport introuvable",
+                "Il donne le chiffre qu'il te faut pour ton dossier",
+                "Il faut répondre au message pour obtenir le lien"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : un autre internaute cherche ce rapport « cité par une IA »… et personne n'a de lien après 7 réponses. L'hallucination n'arrive pas qu'à toi : c'est un fonctionnement normal des IA génératives.",
+              "feedbackKo": "Relis l'extrait du forum : la personne cherche ce rapport « cité par une IA », et après 7 réponses, toujours aucun lien. Preuve de plus que la référence est inventée — et que ça peut arriver à tout le monde."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Verdict de l'enquête : l'IA peut aider, mais pas pour tout. Trie ces usages pour ton dossier.",
+          "categories": [
+            { "id": "bon", "label": "✅ Bon usage" },
+            { "id": "risque", "label": "🚨 Mauvaise idée" }
+          ],
+          "items": [
+            {
+              "texte": "Demander à l'IA un plan en trois parties pour démarrer",
+              "categorie": "bon",
+              "feedbackOk": "Oui : proposer des idées et structurer, c'est là que l'IA excelle. Tu restes le chef du dossier.",
+              "feedbackKo": "C'était un bon usage : demander un plan pour démarrer ne crée aucune fausse info. C'est le contenu que tu vérifieras ensuite."
+            },
+            {
+              "texte": "Recopier un chiffre donné par l'IA sans le vérifier",
+              "categorie": "risque",
+              "feedbackOk": "Bien vu : un chiffre d'IA peut être inventé ou périmé, même annoncé avec aplomb. Vérification ailleurs obligatoire avant de le citer.",
+              "feedbackKo": "Mauvaise idée : l'IA peut inventer un chiffre avec un aplomb parfait — tu viens de le vivre avec les « 4 °C dans 120 villes » du rapport fantôme."
+            },
+            {
+              "texte": "Faire reformuler un paragraphe que tu trouves trop compliqué",
+              "categorie": "bon",
+              "feedbackOk": "Exact : reformuler, simplifier, clarifier — l'IA le fait très bien, et tu gardes le contrôle du fond.",
+              "feedbackKo": "C'était un bon usage : reformuler TON texte ne fabrique pas de fausse information. Le danger, c'est de lui confier les faits, pas la formulation."
+            },
+            {
+              "texte": "Mettre « Assistia » dans ta bibliographie comme source principale",
+              "categorie": "risque",
+              "feedbackOk": "Exact : une IA n'est pas une source, elle ne sait pas d'où viennent ses propres phrases. Une bibliographie cite des documents vérifiables.",
+              "feedbackKo": "Mauvaise idée : une bibliographie cite des sources qu'on peut retrouver et vérifier. Une IA fabrique du texte sans dire d'où il vient — impossible à vérifier."
+            },
+            {
+              "texte": "Vérifier chaque info importante de l'IA dans une source fiable (site officiel, CDI)",
+              "categorie": "bon",
+              "feedbackOk": "C'est LE réflexe : l'IA propose, les sources fiables confirment. Dossier béton.",
+              "feedbackKo": "C'était un bon usage — et pas une perte de temps : c'est exactement ce réflexe qui t'a évité de citer un rapport inventé devant la classe."
+            },
+            {
+              "texte": "Rendre tel quel un dossier entièrement rédigé par l'IA",
+              "categorie": "risque",
+              "feedbackOk": "Bien vu : des erreurs invisibles peuvent s'y cacher, et surtout ce n'est plus ton travail. Les profs repèrent vite le style IA…",
+              "feedbackKo": "Mauvaise idée : erreurs possibles que tu ne verras pas, style repérable, et ce n'est plus ton dossier. L'IA aide, elle ne remplace pas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Pubs d'IA et réflexes d'enquêteur défilent. Clique les bons réflexes, laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "⚡ OFFRE FLASH : cette IA fait tes devoirs à ta place, 100 % INDÉTECTABLE !!!",
+              "bonne": false,
+              "feedback": "Piège : urgence + majuscules + promesse trop belle. Et « à ta place », ce n'est pas de l'aide, c'est une arnaque à ton apprentissage."
+            },
+            {
+              "texte": "Je demande un plan à l'IA, puis je vérifie les infos dans des sources fiables.",
+              "bonne": true,
+              "feedback": "C'est le bon usage : l'IA pour démarrer et organiser, les sources fiables pour les faits."
+            },
+            {
+              "texte": "Notre IA ne se trompe JAMAIS 🎁 Abonne-toi vite, cadeau pour les 50 premiers !",
+              "bonne": false,
+              "feedback": "« Jamais », un cadeau et un compte à rebours : trois techniques de manipulation d'un coup. Toutes les IA peuvent se tromper — leurs créateurs le disent eux-mêmes."
+            },
+            {
+              "texte": "Une IA peut citer une étude qui n'existe pas, avec un ton très sûr d'elle.",
+              "bonne": true,
+              "feedback": "Exact : ça s'appelle une hallucination. C'est pour ça qu'on vérifie toujours les références en dehors du chat."
+            },
+            {
+              "texte": "😱 Tout le monde utilise l'IA sans vérifier, arrête de perdre ton temps à contrôler !",
+              "bonne": false,
+              "feedback": "Appel à l'émotion + « tout le monde le fait » : deux manipulations. Vérifier prend deux minutes et t'évite de citer une source fantôme."
+            },
+            {
+              "texte": "Avant de citer une référence donnée par l'IA, je vérifie qu'elle existe vraiment.",
+              "bonne": true,
+              "feedback": "Réflexe d'enquêteur : une référence introuvable partout est une référence inventée."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

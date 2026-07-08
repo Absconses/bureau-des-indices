@@ -1,0 +1,223 @@
+{
+  "id": "5.D1.EXP.3",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Comprendre que nous sommes la cible de campagnes de communication qui peuvent avoir des buts très différents.",
+  "titre": "Que te veulent ces posts ?",
+  "accroche": "Trois posts se suivent sur ton fil : des baskets, des fruits, ton club de foot. Ils se ressemblent… mais chacun attend quelque chose de toi. Quoi, exactement ?",
+  "documents": {
+    "pubBaskets": {
+      "template": "post",
+      "pseudo": "@FlashRun_Officiel",
+      "avatar": "👟",
+      "bio": "Marque de baskets — Boutique en ligne ⚡ Livraison 48h",
+      "texte": "La nouvelle FlashRun 5 est arrivée 🔥 Cours plus vite, saute plus haut ! -30 % avec le code FLASH30, aujourd'hui seulement ⏳",
+      "likes": 1842,
+      "partages": 267,
+      "commentaires": 94
+    },
+    "postPrevention": {
+      "template": "post",
+      "pseudo": "@Objectif5Fruits",
+      "avatar": "🍎",
+      "bio": "Campagne publique de prévention santé — pour les 11-15 ans",
+      "texte": "Ton corps est ton meilleur coéquipier 🥝 Pense à manger 5 fruits et légumes par jour. Pas de code promo, pas de cadeau : juste ta santé 💚",
+      "likes": 312,
+      "partages": 88,
+      "commentaires": 25
+    },
+    "postClub": {
+      "template": "post",
+      "pseudo": "@FC_Montvert",
+      "avatar": "⚽",
+      "bio": "Club de foot de Montvert — matchs, entraînements, vie du club",
+      "texte": "Victoire 3-1 des U13 ce samedi 🎉 Bravo à tous ! Prochain match dimanche au stade des Tilleuls, venez nombreux nous encourager 📣",
+      "likes": 156,
+      "partages": 41,
+      "commentaires": 38
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postPrevention",
+          "questions": [
+            {
+              "question": "Qui est derrière ce message ?",
+              "options": [
+                "Un vendeur de fruits et légumes",
+                "Une campagne publique de prévention santé",
+                "Un élève fan de kiwis",
+                "Une marque de compléments alimentaires"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : la bio l'annonce — « Campagne publique de prévention santé ». Ici, personne ne gagne d'argent avec toi : le but est de protéger ta santé.",
+              "feedbackKo": "La réponse était dans la bio, la ligne sous le pseudo : « Campagne publique de prévention santé ». Lire qui parle, c'est le premier pas pour deviner ce qu'on te veut."
+            },
+            {
+              "question": "Que cherche à obtenir ce post, exactement ?",
+              "options": [
+                "Que tu achètes des fruits d'une marque précise",
+                "Que tu changes une habitude pour ta santé",
+                "Que tu t'abonnes pour gagner un cadeau",
+                "Que tu viennes à un événement"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « pense à manger 5 fruits et légumes par jour »… et il précise même « pas de code promo ». Ce message veut changer tes habitudes, pas vider ta tirelire.",
+              "feedbackKo": "Relis le texte : « Pense à manger 5 fruits et légumes par jour… juste ta santé ». Pas de marque, pas de promo : ce message veut faire évoluer une habitude, pas te vendre quelque chose."
+            }
+          ]
+        },
+        {
+          "document": "postClub",
+          "questions": [
+            {
+              "question": "Qui publie ce post ?",
+              "options": [
+                "Une marque d'équipements de foot",
+                "Le club de foot de Montvert",
+                "Un journaliste sportif",
+                "La mairie de Montvert"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la bio dit « Club de foot de Montvert — matchs, entraînements, vie du club ». Identifier qui parle, c'est le premier réflexe devant un post.",
+              "feedbackKo": "La réponse était dans la bio, sous le pseudo : « Club de foot de Montvert — matchs, entraînements, vie du club ». Commence toujours par lire qui publie."
+            },
+            {
+              "question": "Que veut ce message de toi ?",
+              "options": [
+                "Te vendre le nouveau maillot du club",
+                "Te faire manger plus équilibré",
+                "T'informer et te faire venir au stade",
+                "Te faire cliquer sur un lien"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : un résultat de match, puis « venez nombreux nous encourager ». Ce post informe et rassemble — il attend ta présence, pas ton argent.",
+              "feedbackKo": "Relis la fin du post : « venez nombreux nous encourager ». Le club informe et invite : lui aussi veut quelque chose de toi (ta venue au stade !), mais pas ton argent."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Trois comptes, trois buts. Lis chaque phrase et range-la selon ce que son auteur veut obtenir de toi.",
+          "categories": [
+            { "id": "acheter", "label": "💸 Te faire acheter" },
+            { "id": "sante", "label": "💚 Changer tes habitudes" },
+            { "id": "rassembler", "label": "📣 T'informer, te rassembler" }
+          ],
+          "items": [
+            {
+              "texte": "-30 % avec le code FLASH30, aujourd'hui seulement ⏳",
+              "categorie": "acheter",
+              "feedbackOk": "Oui : code promo + « aujourd'hui seulement » = pression pour acheter vite. L'urgence est l'astuce préférée des pubs.",
+              "feedbackKo": "Un code promo et un compte à rebours, c'est une pub : le but est de te faire acheter vite, avant que tu aies le temps de réfléchir."
+            },
+            {
+              "texte": "Pense à manger 5 fruits et légumes par jour 🥝",
+              "categorie": "sante",
+              "feedbackOk": "Exact : aucun produit à acheter, juste un conseil pour ta santé. C'est le but d'une campagne de prévention.",
+              "feedbackKo": "Ce message ne vend rien : il veut t'aider à prendre une habitude bonne pour ta santé. C'est de la prévention, pas de la pub."
+            },
+            {
+              "texte": "Prochain match dimanche au stade, venez nous encourager 📣",
+              "categorie": "rassembler",
+              "feedbackOk": "Oui : le club t'informe et t'invite. Son but, c'est remplir les tribunes — pas ton panier.",
+              "feedbackKo": "« Venez nous encourager » : le club veut te rassembler au stade. Il attend ta présence, pas ton argent."
+            },
+            {
+              "texte": "La nouvelle FlashRun 5 est arrivée, cours plus vite 🔥",
+              "categorie": "acheter",
+              "feedbackOk": "Bien vu : « cours plus vite » n'est pas une information vérifiée, c'est un argument de vente pour la nouvelle basket.",
+              "feedbackKo": "Une marque qui vante son propre produit veut le vendre. « Cours plus vite », c'est une promesse publicitaire, pas un fait."
+            },
+            {
+              "texte": "Victoire 3-1 des U13 samedi, bravo à tous 🎉",
+              "categorie": "rassembler",
+              "feedbackOk": "Exact : un résultat et des félicitations — le club raconte sa vie et soude ses supporters.",
+              "feedbackKo": "C'était une info de la vie du club : un résultat de match. Ce post informe et rassemble, il ne vend rien et ne fait pas la morale."
+            },
+            {
+              "texte": "Bouge 30 minutes par jour, ton cœur te dira merci 💚",
+              "categorie": "sante",
+              "feedbackOk": "Oui : encore un conseil santé, sans marque ni promo. Le but : t'aider à prendre une bonne habitude.",
+              "feedbackKo": "Pas de produit, pas de marque : ce message veut te faire bouger pour ta santé. C'est le ton d'une campagne de prévention."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "pubBaskets",
+          "consigne": "Ce post te parle comme un copain… Touche l'endroit qui révèle QUI est vraiment derrière le message.",
+          "cibles": ["bio"],
+          "essaisMax": 3,
+          "indices": [
+            "Le texte du post te parle, mais il ne te dit pas qui parle. Cherche ailleurs.",
+            "Regarde juste sous le pseudo : la petite ligne qui décrit le compte."
+          ],
+          "feedbackOk": "La bio vend la mèche : « Marque de baskets — Boutique en ligne ». Quand une marque parle de son propre produit, son but est de te faire acheter — même si le post joue au copain.",
+          "feedbackKo": "C'était la bio, la ligne sous le pseudo : « Marque de baskets — Boutique en ligne ». Réflexe à garder : avant de croire un post, lis qui le publie — ça révèle souvent son but."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les messages qui te ciblent ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une pub veut d'abord te faire acheter, même quand elle est drôle ou sympa.",
+              "vrai": true,
+              "feedback": "Vrai. L'humour sert à attirer ton attention, mais le but reste la vente. Un post rigolo peut très bien être une pub déguisée."
+            },
+            {
+              "texte": "Une campagne de prévention cherche à gagner de l'argent avec toi.",
+              "vrai": false,
+              "feedback": "Faux. Elle veut changer une habitude pour te protéger (santé, sécurité…). Son but n'est pas commercial."
+            },
+            {
+              "texte": "Sur ton fil, pubs, prévention et posts de clubs peuvent beaucoup se ressembler.",
+              "vrai": true,
+              "feedback": "Vrai. Mêmes photos, mêmes emojis, même ton complice… C'est pour ça qu'il faut chercher le but derrière la forme."
+            },
+            {
+              "texte": "Si un message ne vend rien, c'est qu'il ne veut rien de toi.",
+              "vrai": false,
+              "feedback": "Faux. Il peut vouloir ton attention, ta venue, ton partage ou un changement d'habitude. Tout message a un but."
+            },
+            {
+              "texte": "Se demander « qui parle et que veut-il ? » aide à repérer le but d'un message.",
+              "vrai": true,
+              "feedback": "Vrai. C'est LE réflexe de l'enquêteur : identifier l'auteur et son intention avant de croire, liker ou partager."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

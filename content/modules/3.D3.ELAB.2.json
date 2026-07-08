@@ -1,0 +1,184 @@
+{
+  "id": "3.D3.ELAB.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Adapter son choix de langage informationnel et médiatique pour mettre en valeur un contenu original dans le cadre d'un débat d'idées.",
+  "titre": "Débat : convaincre sans tricher",
+  "accroche": "Jeudi, débat en EMC : pour ou contre l'uniforme au collège ? Tu as une opinion — reste à la défendre avec des faits solides et le bon format, sans jamais tomber dans les coups tordus.",
+  "documents": {
+    "postMael": {
+      "template": "post",
+      "pseudo": "@Mael_3eB",
+      "avatar": "🎤",
+      "bio": "Maël — délégué 3eB au collège des Tilleuls (Valbourg). Team débat 💬",
+      "texte": "Jeudi, débat en EMC : pour ou contre l'uniforme au collège ? 👔 Je suis CONTRE, et je l'assume. Mon appui : l'enquête du journal du collège (mai 2026, 240 élèves interrogés) — 71 % des 3e y sont opposés. Et entre nous, l'uniforme c'est la honte en sortie scolaire 😅",
+      "likes": 87,
+      "partages": 12,
+      "commentaires": 23
+    },
+    "articleGazette": {
+      "template": "site-article",
+      "nomSite": "LA GAZETTE DE VALBOURG",
+      "url": "https://www.gazette-valbourg.fr/education/uniforme-college-bilan",
+      "menu": ["Actu", "Éducation", "Sports", "Agenda"],
+      "surtitre": "Éducation",
+      "titre": "Uniforme au collège des Tilleuls : le bilan après un an d'essai",
+      "auteur": "Par Salomé Vidal",
+      "date": "Publié le 12 juin 2026",
+      "chapo": "Le collège des Tilleuls teste l'uniforme depuis septembre 2025. La Gazette a consulté le bilan présenté au conseil d'administration.",
+      "corps": [
+        "Premier enseignement : selon ce bilan, les incidents liés aux moqueries sur les vêtements ont baissé de 30 % en un an.",
+        "Mais le coût refroidit : 145 € par élève à la rentrée. « Certaines familles ont renoncé », reconnaît la principale, Mme Okafor."
+      ],
+      "footer": ["Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postMael",
+          "questions": [
+            {
+              "question": "Maël prépare le débat. Dans son post, quel passage est un fait sourcé, réutilisable tel quel jeudi ?",
+              "options": [
+                "« L'uniforme c'est la honte en sortie scolaire »",
+                "« 71 % des 3e y sont opposés » — enquête du journal du collège, mai 2026, 240 élèves",
+                "« Je suis CONTRE, et je l'assume »",
+                "L'emoji 👔, qui montre qu'il connaît le sujet"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : ce passage dit qui a enquêté, quand, et sur combien d'élèves. C'est vérifiable — exactement le genre d'appui qui tient debout face à la contradiction.",
+              "feedbackKo": "Relis le post : un seul passage cite une source, une date et un nombre d'interrogés (enquête du journal du collège, mai 2026, 240 élèves). « C'est la honte » est un avis, pas un fait — il ne tiendra pas deux secondes face à l'équipe adverse."
+            },
+            {
+              "question": "Et sa phrase « l'uniforme c'est la honte », Maël en fait quoi au débat ?",
+              "options": [
+                "Il la garde telle quelle : c'est son argument le plus fort",
+                "Il peut l'assumer comme opinion, à condition de ne pas la déguiser en fait",
+                "Il la supprime : on n'a pas le droit d'avoir un avis dans un débat",
+                "Il la met en majuscules pour lui donner plus de poids"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Dans un débat d'idées, l'opinion est bienvenue — à condition de l'annoncer comme telle et de l'appuyer sur des faits. « Je pense que… et voici pourquoi » : c'est ça, une opinion assumée.",
+              "feedbackKo": "L'opinion n'est pas interdite : un débat sert justement à en défendre une ! Mais elle se présente comme un avis (« je pense que »), appuyée sur des faits sourcés — jamais déguisée en vérité, ni gonflée à coups de majuscules."
+            }
+          ]
+        },
+        {
+          "document": "articleGazette",
+          "questions": [
+            {
+              "question": "Tu défends le POUR au débat. Quel élément de l'article met le mieux ton opinion en valeur ?",
+              "options": [
+                "La baisse de 30 % des moqueries, tirée du bilan officiel, avec source et date",
+                "Le mot « bilan » dans le titre : ça fait sérieux",
+                "Ton avis perso : « l'uniforme, c'est plus pratique le matin »",
+                "Le nom de la journaliste, Salomé Vidal"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : un chiffre issu d'un bilan officiel, daté, publié par un journal identifiable. Ton opinion reste la tienne — mais c'est ce fait vérifiable qui la met en valeur au débat.",
+              "feedbackKo": "Le passage utile était la baisse de 30 % des moqueries : un fait chiffré, tiré du bilan du conseil d'administration, daté de juin 2026. Un titre qui « fait sérieux » ou un avis perso ne pèsent rien sans fait vérifiable derrière."
+            },
+            {
+              "question": "L'équipe adverse a lu le même article. Quel passage va-t-elle te sortir — et que tu dois anticiper ?",
+              "options": [
+                "La date de publication de l'article",
+                "Le coût de 145 € par élève, qui a fait renoncer des familles",
+                "Le nom du collège des Tilleuls",
+                "Le menu du site de la Gazette"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : c'est LE point faible de ton camp, et il est dans le même article. Lire aussi ce qui te dérange, c'est pouvoir préparer ta réponse au lieu de la subir en direct.",
+              "feedbackKo": "Relis le deuxième paragraphe : 145 € par élève, des familles qui renoncent. C'est l'argument que l'équipe adverse citera en premier. Anticiper la contradiction, c'est lire aussi ce qui gêne ton camp — et préparer ta réponse avant jeudi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "surligner",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ton brouillon pour le débat. Surligne les passages qui rendent ton argument vérifiable : la source, le lieu, la date.",
+          "texte": "L'uniforme divise, mais j'assume mon opinion : je suis pour. *Selon le bilan présenté au conseil d'administration*, les moqueries ont baissé de 30 % *au collège des Tilleuls* *depuis septembre 2025*. Reste la question du prix — et j'ai déjà préparé ma réponse.",
+          "feedbackOk": "C'est ça : qui l'a mesuré (le bilan du conseil d'administration), où (le collège des Tilleuls), depuis quand (septembre 2025). Ces trois précisions changent tout : n'importe qui peut vérifier. Ton opinion, elle, reste à toi.",
+          "feedbackKo": "Il fallait surligner la source (« selon le bilan présenté au conseil d'administration »), le lieu (« au collège des Tilleuls ») et la date (« depuis septembre 2025 »). Sans ces précisions, ton chiffre de 30 % n'est qu'une rumeur de plus."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "production",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre ta préparation pour le débat de jeudi.",
+          "items": [
+            { "texte": "Je choisis ma position et je la formule en une phrase claire." },
+            { "texte": "Je rassemble des faits sourcés qui l'appuient : qui, quand, combien." },
+            { "texte": "Je repère le meilleur argument d'en face et je prépare ma réponse." },
+            { "texte": "Je choisis le format qui met tout ça en valeur : argumentaire oral, infographie ou thread." },
+            { "texte": "Je m'entraîne à présenter, chrono en main." }
+          ],
+          "feedbackOk": "Ordre parfait : position → preuves → contradiction anticipée → format → entraînement. Le format arrive en quatrième exprès : on choisit l'emballage quand on sait ce qu'il y a dedans.",
+          "feedbackKo": "L'ordre gagnant : 1. formuler sa position, 2. la nourrir de faits sourcés, 3. anticiper l'argument d'en face, 4. choisir le format (oral, infographie, thread), 5. s'entraîner. Choisir le format avant d'avoir le contenu, c'est décorer une boîte vide."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le débat commence ! Clique les interventions honnêtes, laisse filer les techniques de manipulation.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Selon l'enquête du journal du collège (mai 2026, 240 élèves), 71 % des 3e sont contre.",
+              "bonne": true,
+              "feedback": "Intervention solide : une source, une date, la taille de l'enquête. N'importe qui peut vérifier — c'est ça, convaincre sans tricher."
+            },
+            {
+              "texte": "RÉVEILLEZ-VOUS !!! ON VOUS CACHE LA VÉRITÉ SUR L'UNIFORME !!!",
+              "bonne": false,
+              "feedback": "Piège : majuscules + ton complotiste = zéro fait, 100 % pression. Crier n'a jamais remplacé une preuve."
+            },
+            {
+              "texte": "L'argument du coût est sérieux, je le reconnais — et voici ma réponse.",
+              "bonne": true,
+              "feedback": "Honnête et redoutable : reconnaître un bon argument adverse avant d'y répondre, c'est l'arme secrète des meilleurs débatteurs."
+            },
+            {
+              "texte": "Décidez-vous MAINTENANT, demain il sera trop tard !",
+              "bonne": false,
+              "feedback": "Piège : l'urgence artificielle sert à t'empêcher de réfléchir. Un vrai argument supporte très bien d'attendre cinq minutes."
+            },
+            {
+              "texte": "Ceux qui votent contre n'ont clairement rien compris au sujet.",
+              "bonne": false,
+              "feedback": "Piège : attaquer les personnes au lieu des idées. Quand on n'a plus d'arguments, on attaque le camp d'en face — pas toi."
+            },
+            {
+              "texte": "Au collège des Tilleuls, les moqueries ont baissé de 30 % : le bilan est consultable.",
+              "bonne": true,
+              "feedback": "Fait situé, chiffré, vérifiable. Donner au public le moyen de contrôler ce que tu avances, c'est l'exact contraire de la manipulation."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

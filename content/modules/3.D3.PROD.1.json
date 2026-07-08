@@ -1,0 +1,282 @@
+{
+  "id": "3.D3.PROD.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Élaborer et diffuser des contenus pour promouvoir une vision responsable de la liberté d'expression.",
+  "titre": "S'exprimer sans écraser",
+  "accroche": "Le média du collège lance sa campagne « s'exprimer sans écraser » et te recrute dans l'équipe. À toi de produire des contenus qui prouvent qu'on peut tout se dire… sans se détruire.",
+  "documents": {
+    "brouillonLina": {
+      "template": "post",
+      "pseudo": "@megaphone_4vents",
+      "avatar": "🎙️",
+      "bio": "BROUILLON de Lina (3eB) pour le Mégaphone, média des élèves du collège des Quatre-Vents — à valider avant publication",
+      "texte": "La sortie de fin d'année au musée ?? ENCORE une idée nulle 🙄 Franchement, M. Riva ferait mieux de changer de métier 😂 RT si vous validez !!",
+      "image": {
+        "emoji": "📸",
+        "legende": "Photo de M. Riva prise à la cantine, sans qu'il le sache"
+      },
+      "likes": 0,
+      "partages": 0,
+      "commentaires": 0
+    },
+    "brouillonMax": {
+      "template": "post",
+      "pseudo": "@megaphone_4vents",
+      "avatar": "🎙️",
+      "bio": "BROUILLON de Max (3eA) pour le Mégaphone, média des élèves du collège des Quatre-Vents — à valider avant publication",
+      "texte": "Défaite 4-0 au tournoi inter-collèges 😡 Bravo Kévin, officiellement le PIRE gardien de l'histoire du collège !! Likez si vous êtes dégoûtés",
+      "image": {
+        "emoji": "🎥",
+        "legende": "Vidéo de Kévin filmée pendant le match, postée sans lui demander"
+      },
+      "likes": 0,
+      "partages": 0,
+      "commentaires": 0
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "brouillonLina",
+          "questions": [
+            {
+              "question": "Tu relis ce brouillon avant publication. À quel moment Lina bascule-t-elle de l'opinion à l'attaque personnelle ?",
+              "options": [
+                "Quand elle écrit que l'idée de sortie est « nulle »",
+                "Quand elle écrit que M. Riva « ferait mieux de changer de métier »",
+                "Quand elle demande des retweets",
+                "Quand elle utilise l'emoji 🙄"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Trouver l'idée nulle, c'est une opinion — discutable, mais permise. Viser la personne et son métier, c'est une attaque. Le désaccord constructif s'en prend aux idées, jamais aux gens.",
+              "feedbackKo": "Relis la deuxième phrase du post : « M. Riva ferait mieux de changer de métier ». Critiquer la sortie est permis ; humilier la personne, non. La frontière passe entre l'idée et la personne."
+            },
+            {
+              "question": "Au-delà du ton, quel élément du brouillon est carrément illégal ?",
+              "options": [
+                "Le double point d'interrogation",
+                "Le mot « nulle »",
+                "La photo de M. Riva prise sans qu'il le sache",
+                "Le « RT si vous validez »"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui — la légende de l'image te le disait. Diffuser la photo de quelqu'un sans son accord viole son droit à l'image : même prise à la cantine, même « pour rire ».",
+              "feedbackKo": "La réponse était dans la légende de l'image : photo « prise à la cantine, sans qu'il le sache ». Publier l'image de quelqu'un sans son accord viole le droit à l'image. Le reste est maladroit, mais pas illégal."
+            }
+          ]
+        },
+        {
+          "document": "brouillonMax",
+          "questions": [
+            {
+              "question": "Tu relis ce brouillon avant publication. Qu'est-ce qui transforme la déception de Max en contenu qui écrase ?",
+              "options": [
+                "Annoncer que l'équipe a perdu 4-0",
+                "Désigner Kévin comme « le PIRE gardien de l'histoire du collège »",
+                "Utiliser l'emoji 😡",
+                "Parler du tournoi inter-collèges"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Le score, c'est de l'information. Désigner un seul élève à la moquerie de tout le collège (« likez si vous êtes dégoûtés »), c'est l'écraser. On peut commenter un match sans détruire un joueur.",
+              "feedbackKo": "Regarde la deuxième phrase du post : Max livre Kévin à la moquerie collective. Le score est une info ; l'humiliation ciblée d'une personne est exactement ce que la campagne combat."
+            },
+            {
+              "question": "Quel problème pose la vidéo jointe au brouillon ?",
+              "options": [
+                "Elle est trop longue pour un post",
+                "Kévin n'a pas donné son accord pour sa diffusion",
+                "Elle est de mauvaise qualité",
+                "Elle date d'un ancien match"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui — la légende le précise : « postée sans lui demander ». Filmer un match, ça arrive ; diffuser des images centrées sur quelqu'un sans son accord, c'est violer son droit à l'image.",
+              "feedbackKo": "Lis la légende sous la vidéo : « postée sans lui demander ». Avant de diffuser des images où quelqu'un est reconnaissable, il faut son accord : c'est le droit à l'image, et il protège chacun — toi compris."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Pour l'affiche de la campagne, tu prépares des exemples. Classe chaque situation : liberté d'expression protégée, ou limite fixée par la loi ?",
+          "categories": [
+            { "id": "libre", "label": "🗣️ Libre de le dire" },
+            { "id": "stop", "label": "⚖️ La loi dit stop" }
+          ],
+          "items": [
+            {
+              "texte": "Écrire un article qui critique le nouveau règlement du collège, arguments à l'appui",
+              "categorie": "libre",
+              "feedbackOk": "Oui : critiquer une règle ou une décision avec des arguments, c'est le cœur de la liberté d'expression — même quand ça dérange.",
+              "feedbackKo": "C'était « libre de le dire » : la liberté d'expression protège justement la critique argumentée des décisions, y compris celles des adultes du collège."
+            },
+            {
+              "texte": "Publier la photo d'un élève endormi en perm, sans lui demander",
+              "categorie": "stop",
+              "feedbackOk": "Bien vu : c'est le droit à l'image. Cette limite te protège toi aussi — sans elle, n'importe qui pourrait t'afficher à n'importe quel moment.",
+              "feedbackKo": "La loi dit stop : diffuser la photo de quelqu'un sans son accord viole son droit à l'image. Sans cette limite, chacun vivrait sous la menace d'être affiché — plus personne n'oserait rien faire."
+            },
+            {
+              "texte": "Dire qu'on a détesté le dernier album d'un chanteur connu",
+              "categorie": "libre",
+              "feedbackOk": "Exact : juger une œuvre — album, film, jeu — c'est de la critique, totalement protégée, même quand elle est sévère.",
+              "feedbackKo": "C'était « libre de le dire » : on a le droit de détester une œuvre et de l'écrire. La critique vise l'album, pas la dignité de la personne."
+            },
+            {
+              "texte": "Inventer qu'un prof a triché au brevet blanc, et le faire tourner",
+              "categorie": "stop",
+              "feedbackOk": "Oui : accuser quelqu'un d'un fait inventé pour lui nuire, c'est de la diffamation. Cette limite protège ta liberté : sans elle, une rumeur pourrait détruire n'importe qui — toi aussi.",
+              "feedbackKo": "La loi dit stop : accuser quelqu'un d'un fait inventé, c'est de la diffamation, punie par la loi. Une rumeur n'est pas une opinion : elle détruit sans débat."
+            },
+            {
+              "texte": "Insulter quelqu'un à cause de sa religion dans un commentaire",
+              "categorie": "stop",
+              "feedbackOk": "Exact : l'injure liée à la religion, à l'origine ou au genre est un délit. Cette limite ne tue pas le débat : elle empêche qu'on fasse taire des gens en les attaquant pour ce qu'ils sont.",
+              "feedbackKo": "La loi dit stop : insulter quelqu'un pour sa religion est un délit. On peut débattre des idées et des croyances — pas attaquer les personnes pour ce qu'elles sont."
+            },
+            {
+              "texte": "Publier une caricature du maire dans le journal du collège",
+              "categorie": "libre",
+              "feedbackOk": "Oui : la caricature d'un élu dans ses fonctions, même moqueuse, est une forme de critique protégée depuis plus d'un siècle.",
+              "feedbackKo": "C'était « libre de le dire » : caricaturer un responsable public dans l'exercice de ses fonctions est une critique protégée par la loi — c'est différent d'humilier un camarade."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Noa (rédac' du Mégaphone)", "avatar": "🎙️" },
+          "etapes": [
+            { "de": "eux", "texte": "hey ! grosse ambiance sous notre article sur la nouvelle tenue d'EPS 😅" },
+            { "de": "eux", "texte": "un compte anonyme a commenté : « article nul, votre média sert à rien, fermez-le »" },
+            { "de": "eux", "texte": "on répond quoi ? tout le collège va regarder comment on réagit, c'est LA campagne en direct" },
+            {
+              "choix": [
+                {
+                  "texte": "On le clashe, il l'a bien cherché. En plus ça fera des vues 🔥",
+                  "ok": false,
+                  "feedback": "Des vues, sûrement. Mais si le média de la campagne « s'exprimer sans écraser » répond en écrasant, la campagne est morte avant d'avoir commencé."
+                },
+                {
+                  "texte": "On répond : « Dis-nous ce qui t'a déplu, on publie les critiques argumentées. »",
+                  "ok": true,
+                  "feedback": "Exactement : tu ne nies pas son droit de critiquer, tu l'invites à argumenter. C'est ça, montrer l'exemple du désaccord constructif."
+                },
+                {
+                  "texte": "On supprime son commentaire et on le bloque, réglé.",
+                  "ok": false,
+                  "feedback": "Supprimer une critique parce qu'elle est désagréable, c'est faire taire — l'inverse de ce que la campagne défend. On supprime les insultes, pas les désaccords."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "bien vu : il a fini par envoyer de vrais arguments, on publie sa critique la semaine prochaine 👌" },
+            { "de": "eux", "texte": "autre chose : pour le clip de la campagne, on a filmé plein d'élèves dans la cour. je monte et je poste ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Poste direct : la cour, c'est un lieu public du collège.",
+                  "ok": false,
+                  "feedback": "Non : dès qu'une personne est reconnaissable à l'image, il faut son accord — et celui des parents pour les mineurs. La cour n'annule pas le droit à l'image."
+                },
+                {
+                  "texte": "Pas besoin d'accord : c'est pour un projet du collège, pas pour faire le buzz.",
+                  "ok": false,
+                  "feedback": "Même pour un projet scolaire, diffuser l'image de quelqu'un demande son accord. Le droit à l'image ne dépend pas de la bonne intention."
+                },
+                {
+                  "texte": "On fait signer une autorisation aux élèves reconnaissables (et à leurs parents), sinon on floute.",
+                  "ok": true,
+                  "feedback": "C'est la règle des pros : accord écrit des personnes reconnaissables — parents compris pour les mineurs — ou floutage. La voix de chacun compte, son image aussi."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "autorisations lancées ✅ dernier truc : Sofiane râle, il dit « avec toutes ces règles, on peut plus rien dire »" },
+            {
+              "choix": [
+                {
+                  "texte": "Il a raison : la liberté d'expression, c'est pouvoir tout dire, point.",
+                  "ok": false,
+                  "feedback": "Si « tout dire » inclut menacer, humilier ou mentir sur les gens, les plus violents font taire tous les autres. Une liberté sans limites ne protège que les plus forts."
+                },
+                {
+                  "texte": "Réponds-lui que ces limites protègent sa liberté : sans elles, insultes et rumeurs feraient taire tout le monde.",
+                  "ok": true,
+                  "feedback": "C'est l'idée clé de la campagne : les limites légales — diffamation, injure, droit à l'image — garantissent que chacun peut s'exprimer sans être détruit. Elles protègent la liberté, elles ne la tuent pas."
+                },
+                {
+                  "texte": "Dis-lui d'éviter les sujets qui fâchent, c'est plus simple.",
+                  "ok": false,
+                  "feedback": "Fuir tous les sujets sensibles, c'est s'autocensurer — la liberté d'expression meurt aussi par le silence. On peut traiter les sujets qui fâchent en respectant les personnes."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Ton équipe vient de faire la campagne en actes : accueillir la critique, protéger l'image de chacun, défendre des limites qui rendent la parole possible. Publier, c'est une responsabilité — et c'est ce qui rend ta parole crédible." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le fil de la campagne déborde de propositions ! Valide celles qui font vivre « s'exprimer sans écraser », laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Pas d'accord avec un article ? Envoie ta réponse argumentée, on publie les meilleures 💬",
+              "bonne": true,
+              "feedback": "À publier : inviter à la critique argumentée, c'est exactement le désaccord constructif que la campagne veut montrer en exemple."
+            },
+            {
+              "texte": "URGENT ⏰ partagez la rumeur sur le principal AVANT qu'elle soit supprimée !!",
+              "bonne": false,
+              "feedback": "Piège : l'urgence (« URGENT », « avant que ») sert à te faire partager sans réfléchir. Une rumeur pressée est encore plus suspecte qu'une rumeur qui attend."
+            },
+            {
+              "texte": "Photo du tournoi publiée ✅ avec l'accord signé de chaque joueur reconnaissable 📸",
+              "bonne": true,
+              "feedback": "À publier : accord des personnes reconnaissables = droit à l'image respecté. C'est ça, diffuser de façon responsable."
+            },
+            {
+              "texte": "Un tee-shirt du club offert 🎁 à qui balance le pseudo de l'élève qui a critiqué l'équipe",
+              "bonne": false,
+              "feedback": "Piège double : le cadeau sert d'appât, et le but est de faire taire un critique en le livrant à tous. La liberté d'expression protège aussi ceux qui dérangent."
+            },
+            {
+              "texte": "CE PROF DOIT PARTIR 😡😡 LIKEZ SI VOUS ÊTES DÉGOÛTÉS !!!",
+              "bonne": false,
+              "feedback": "Piège : majuscules + appel à la colère = on vise tes émotions, pas ta raison. Zéro argument, une personne ciblée : tout l'inverse de la campagne."
+            },
+            {
+              "texte": "Message écrit sous le coup de la colère ? Attends dix minutes, relis, puis décide 🕙",
+              "bonne": true,
+              "feedback": "À publier : le délai de relecture évite les posts qu'on regrette. S'exprimer librement, c'est choisir ses mots — pas les subir."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

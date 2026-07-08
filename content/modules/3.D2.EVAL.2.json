@@ -1,0 +1,267 @@
+{
+  "id": "3.D2.EVAL.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Mettre en rapport la fiabilité des sources d'information et la véracité des informations fournies.",
+  "titre": "Fiable ne veut pas dire vrai",
+  "accroche": "Un journal sérieux annonce que ta médiathèque ferme pour toujours ; un blog inconnu jure que c'est faux. Ton enquête : démêler la fiabilité de la source et la véracité de l'info — spoiler, ce sont deux curseurs différents.",
+  "documents": {
+    "articleEcho": {
+      "template": "site-article",
+      "nomSite": "L'ÉCHO DU VALMONT",
+      "url": "https://www.echo-du-valmont.fr/roche-verte/mediatheque-fermeture",
+      "menu": ["Actu", "Valmont", "Sports", "Culture", "Abonnés"],
+      "surtitre": "Roche-Verte · Culture",
+      "titre": "La médiathèque des Remparts fermera définitivement ses portes en septembre",
+      "auteur": "Par Bastien Roux, journaliste — rédaction de Valmont",
+      "date": "Publié le 12 mai, 18 h 04",
+      "chapo": "Coup dur pour les habitants : selon nos informations, la médiathèque municipale n'ouvrira plus après l'été.",
+      "corps": [
+        "La nouvelle a circulé en fin de journée dans les couloirs de la mairie : la médiathèque des Remparts, très fréquentée par les collégiens, cesserait toute activité dès le mois de septembre.",
+        "Contactée par notre rédaction, la mairie n'avait pas encore répondu à nos questions au moment de la publication de cet article."
+      ],
+      "footer": ["Qui sommes-nous ?", "La rédaction (12 journalistes)", "Fondé en 1986", "Contact", "Mentions légales"]
+    },
+    "blogCarnet": {
+      "template": "site-article",
+      "nomSite": "Le Carnet de Roche-Verte",
+      "url": "https://carnet-rocheverte.blog-perso.fr/mediatheque-la-verite",
+      "menu": ["Accueil", "Ma ville", "Archives"],
+      "surtitre": "Vie locale",
+      "titre": "Non, la médiathèque ne ferme pas pour toujours !",
+      "auteur": "Par Mélie",
+      "date": "Publié le 13 mai",
+      "chapo": "J'ai lu partout que notre médiathèque fermait définitivement. J'ai vérifié : c'est faux.",
+      "corps": [
+        "Je tiens ce blog toute seule, sur mon temps libre, et je n'ai aucune formation de journaliste. Mais j'étais au conseil municipal de mardi, et j'ai relu le compte-rendu publié sur le site de la mairie (rubrique « Délibérations », séance du 11 mai).",
+        "Il dit noir sur blanc : fermeture temporaire en septembre pour travaux de rénovation, réouverture prévue en janvier. Le lien vers le document officiel est juste en dessous : allez vérifier vous-mêmes."
+      ],
+      "footer": ["Compte-rendu du conseil municipal (mairie-rocheverte.fr)", "Contact"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleEcho",
+          "questions": [
+            {
+              "question": "Quels indices montrent que L'Écho du Valmont est une source plutôt fiable ?",
+              "options": [
+                "Le titre est écrit en gros et fait peur",
+                "Article signé par un journaliste, rédaction de 12 personnes, journal fondé en 1986",
+                "Le site annonce une mauvaise nouvelle, donc il est honnête",
+                "L'article a été publié à 18 h 04 précises"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : signature d'un journaliste identifié, rédaction visible en pied de page, ancienneté. Ce sont des garanties sur la SOURCE — mais ça ne garantit pas encore que CETTE info est vraie.",
+              "feedbackKo": "Regarde la signature sous le titre et le pied de page : journaliste identifié, rédaction de 12 personnes, journal fondé en 1986. C'est ça, la fiabilité d'une source — pas la taille du titre ni l'heure de publication."
+            },
+            {
+              "question": "Quel détail de l'article devrait te faire douter de la véracité de l'info ?",
+              "options": [
+                "L'article parle de collégiens",
+                "Le nom de la médiathèque est bizarre",
+                "« Selon nos informations »… et la mairie n'a pas encore confirmé",
+                "Il y a un menu en haut de la page"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien vu : « selon nos informations » + « la mairie n'avait pas encore répondu » = info non confirmée. Même un média sérieux peut publier trop vite et se tromper.",
+              "feedbackKo": "Relis le chapo et le dernier paragraphe : « selon nos informations »… « la mairie n'avait pas encore répondu ». L'info n'est pas confirmée. Retiens : fiabilité de la source ne veut pas dire véracité garantie."
+            }
+          ]
+        },
+        {
+          "document": "blogCarnet",
+          "questions": [
+            {
+              "question": "Côté SOURCE, que vaut ce blog ?",
+              "options": [
+                "Très fiable : le titre est très convaincant",
+                "Très fiable : Mélie habite la ville",
+                "Aucune valeur : c'est un blog, donc c'est forcément faux",
+                "Peu de garanties : une seule personne, inconnue, pas journaliste"
+              ],
+              "bonnes": [3],
+              "feedbackOk": "Exact : source fragile — une inconnue, sans rédaction pour vérifier derrière elle. Mais fragile ne veut pas dire menteuse : regarde les preuves qu'elle apporte avant de jeter son info.",
+              "feedbackKo": "Elle le dit elle-même dans le premier paragraphe : « je tiens ce blog toute seule… aucune formation de journaliste ». Peu de garanties côté source — mais ça ne suffit pas pour conclure que son info est fausse."
+            },
+            {
+              "question": "Qu'est-ce qui rend son info VÉRIFIABLE malgré tout ?",
+              "options": [
+                "Elle cite le compte-rendu du conseil municipal, consultable sur le site de la mairie",
+                "Elle a assisté au conseil, donc on doit la croire sur parole",
+                "Elle a publié après L'Écho, donc elle est mieux informée",
+                "Elle écrit avec un ton très sûr d'elle"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "C'est LA bonne piste : elle donne sa source (séance du 11 mai, rubrique Délibérations), que n'importe qui peut aller lire. Une info juste peut venir d'un blog inconnu — ce qui tranche, c'est la vérification, pas la réputation.",
+              "feedbackKo": "Relis ses deux paragraphes : elle renvoie au compte-rendu officiel publié par la mairie et t'invite à vérifier toi-même. Un document officiel vérifiable par tous vaut plus que le ton assuré ou la réputation de celui qui parle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "L'affaire de la médiathèque continue. Chaque indice parle-t-il de la fiabilité de la SOURCE, de la véracité de l'INFO… ou ne prouve-t-il rien ?",
+          "categories": [
+            { "id": "source", "label": "🏛 Fiabilité de la source" },
+            { "id": "info", "label": "🔎 Véracité de l'info" },
+            { "id": "rien", "label": "🚮 Ne prouve rien" }
+          ],
+          "items": [
+            {
+              "texte": "L'Écho du Valmont existe depuis 40 ans et emploie des journalistes",
+              "categorie": "source",
+              "feedbackOk": "Oui : ancienneté et rédaction professionnelle sont des garanties sur la SOURCE. Ça rend l'erreur moins probable — pas impossible.",
+              "feedbackKo": "C'est un indice sur la source : son sérieux en général. Ça ne dit rien sur la vérité de CET article précis."
+            },
+            {
+              "texte": "Le compte-rendu du conseil municipal indique « fermeture temporaire, réouverture en janvier »",
+              "categorie": "info",
+              "feedbackOk": "Exact : un document officiel qui confirme (ou dément) le contenu, c'est un indice direct de VÉRACITÉ.",
+              "feedbackKo": "Ce document parle du contenu lui-même : il permet de trancher si l'info est vraie ou fausse. C'est la véracité, pas la réputation."
+            },
+            {
+              "texte": "Le blog de Mélie est tenu par une inconnue sans formation de journaliste",
+              "categorie": "source",
+              "feedbackOk": "Oui : ça concerne qui parle, pas ce qui est dit. Source fragile — et pourtant, cette fois, son info était juste.",
+              "feedbackKo": "Cet indice décrit l'auteure, donc la SOURCE. Il ne prouve pas que son info est fausse : Mélie avait raison, souviens-toi."
+            },
+            {
+              "texte": "La mairie publie un communiqué : « la médiathèque rouvrira bien en janvier »",
+              "categorie": "info",
+              "feedbackOk": "Exact : la mairie confirme le contenu. Croiser avec ce genre de source officielle, c'est ce qui tranche la véracité.",
+              "feedbackKo": "Un communiqué officiel qui confirme les faits porte sur la VÉRACITÉ de l'info. C'est lui qui clôt le débat, pas la notoriété du journal."
+            },
+            {
+              "texte": "L'article de L'Écho a été partagé 3 000 fois",
+              "categorie": "rien",
+              "feedbackOk": "Bien vu : la popularité ne dit rien, ni sur la source ni sur le contenu. Une erreur peut très bien être partagée 3 000 fois.",
+              "feedbackKo": "Les partages mesurent le buzz, pas la vérité. 3 000 personnes peuvent relayer une info fausse — c'est même comme ça qu'elle se répand."
+            },
+            {
+              "texte": "Le blog a une jolie mise en page avec de belles photos",
+              "categorie": "rien",
+              "feedbackOk": "Exact : un beau design se fabrique en trois clics. Il ne prouve ni le sérieux de l'auteur ni la vérité du contenu.",
+              "feedbackKo": "La mise en page ne prouve rien : n'importe qui peut faire un site magnifique et raconter n'importe quoi. Juge sur les preuves, pas sur la déco."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina (stage à la médiathèque)", "avatar": "📚" },
+          "etapes": [
+            { "de": "eux", "texte": "au secours 😭 t'as vu l'article de L'Écho ??" },
+            { "de": "eux", "texte": "« la médiathèque ferme DÉFINITIVEMENT en septembre »… et moi je fais mon stage de 3e là-bas en décembre !!" },
+            {
+              "choix": [
+                {
+                  "texte": "C'est L'Écho, un vrai journal avec des journalistes. Si eux le disent, c'est sûr.",
+                  "ok": false,
+                  "feedback": "La réputation rend l'info crédible, pas certaine. Relis l'article : « selon nos informations », mairie pas encore jointe… Rien n'est confirmé."
+                },
+                {
+                  "texte": "Attends avant de paniquer : une seule source, et l'info n'est même pas confirmée. On croise.",
+                  "ok": true,
+                  "feedback": "Réflexe d'enquêteur : une info sérieuse mais non confirmée reste une hypothèse. On cherche d'autres sources avant d'y croire."
+                },
+                {
+                  "texte": "Balance l'article sur le groupe de la classe, faut prévenir tout le monde !",
+                  "ok": false,
+                  "feedback": "Partager avant de vérifier, c'est exactement comme ça que les fausses infos explosent. D'abord vérifier, ensuite partager — ou pas."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok j'ai cherché… y a juste un blog, « Le Carnet de Roche-Verte », qui dit que c'est une fermeture pour travaux, réouverture en janvier" },
+            { "de": "eux", "texte": "mais bon, un blog inconnu contre un vrai journal, c'est vite vu non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, le journal gagne : plus connu = plus vrai.",
+                  "ok": false,
+                  "feedback": "Piège classique ! La réputation compte, mais elle ne tranche pas. Le blog cite un document officiel : c'est cette preuve qu'il faut aller voir."
+                },
+                {
+                  "texte": "Ni l'un ni l'autre : quand deux sources se contredisent, impossible de savoir.",
+                  "ok": false,
+                  "feedback": "Si, on peut savoir ! Quand deux sources se contredisent, on en cherche une troisième, plus solide — ici le document officiel de la mairie. C'est tout l'intérêt de croiser."
+                },
+                {
+                  "texte": "Le blog cite le compte-rendu du conseil municipal : on va le lire sur le site de la mairie.",
+                  "ok": true,
+                  "feedback": "Exactement. Remonter au document d'origine, c'est ce qui tranche entre deux versions. Ni le logo du journal, ni la déco du blog."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "trouvé sur mairie-rocheverte.fr : « fermeture temporaire pour rénovation, réouverture en janvier » 🎉 mon stage est sauvé !!" },
+            { "de": "info", "texte": "Bilan de l'enquête : le journal sérieux s'était trompé, le blog inconnu disait vrai. La fiabilité d'une source, c'est une probabilité ; la véracité d'une info, ça se vérifie en croisant. Ici, c'est le document officiel qui a tranché." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "L'affaire de la médiathèque fait le buzz. Clique les vrais réflexes d'enquêteur, laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Un média sérieux peut se tromper : je vérifie quand même.",
+              "bonne": true,
+              "feedback": "Oui. Fiable = se trompe rarement, pas jamais. Le doute méthodique s'applique à tout le monde, même aux pros."
+            },
+            {
+              "texte": "⚠ URGENT : la médiathèque FERME, PARTAGE avant qu'il soit trop tard !!!",
+              "bonne": false,
+              "feedback": "Piège : urgence + majuscules = technique pour te faire partager sans réfléchir. Une vraie info peut attendre 5 minutes de vérification."
+            },
+            {
+              "texte": "Deux versions contradictoires ? Je remonte au document officiel.",
+              "bonne": true,
+              "feedback": "Bon réflexe : la source d'origine (compte-rendu, communiqué) tranche mieux que la réputation des sites qui s'affrontent."
+            },
+            {
+              "texte": "Si tu aimes les livres, tu ne peux PAS ignorer cette info 😢📚",
+              "bonne": false,
+              "feedback": "Piège : l'appel à l'émotion court-circuite ta réflexion. Aimer les livres ne rend pas une info vraie."
+            },
+            {
+              "texte": "🎁 Partage cet article et tente de gagner une carte cadeau de 50 € !",
+              "bonne": false,
+              "feedback": "Piège : le cadeau contre partage est une technique classique pour propager n'importe quoi. Personne n'offre 50 € pour une info."
+            },
+            {
+              "texte": "Une info juste peut venir d'un blog inconnu : je juge sur les preuves.",
+              "bonne": true,
+              "feedback": "Oui. La preuve vérifiable compte plus que la réputation — c'est toute la leçon de l'affaire de la médiathèque."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

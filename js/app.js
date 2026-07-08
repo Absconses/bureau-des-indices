@@ -82,11 +82,32 @@ function ecranConnexion() {
   champCode.focus();
 }
 
+/* ---------- Parcours courant (5e / 4e / 3e) ---------- */
+function parcoursParDefaut() {
+  const memorise = localStorage.getItem('bdi-parcours');
+  if (memorise) return memorise;
+  const code = getEtat().code;                    // « 5A-XKR-07 » → « 5e »
+  return /^[345]/.test(code) ? code[0] + 'e' : '5e';
+}
+
+function choisirParcours(id) {
+  localStorage.setItem('bdi-parcours', id);
+}
+
 /* ---------- Écran : tableau de bord ---------- */
 async function ecranAccueil() {
   const programme = await getProgramme();
-  const parcours = programme.parcours[0];   // v1 : parcours 5e
+  const courant = parcoursParDefaut();
+  const parcours = programme.parcours.find(p => p.id === courant) || programme.parcours[0];
   const etat = getEtat();
+
+  const pills = programme.parcours.length > 1 && el('div', { class: 'pills', role: 'tablist', 'aria-label': 'Choix du parcours' },
+    programme.parcours.map(p =>
+      el('button', {
+        class: 'pill' + (p.id === parcours.id ? ' pill--active' : ''),
+        type: 'button', role: 'tab', 'aria-selected': String(p.id === parcours.id),
+        onclick: () => { choisirParcours(p.id); ecranAccueil(); }
+      }, p.label)));
 
   const cartes = parcours.domaines.map((d, i) => {
     const num = String(i + 1).padStart(2, '0');
@@ -100,7 +121,7 @@ async function ecranAccueil() {
     const modules = d.rubriques.flatMap(r => r.modules);
     const valides = modules.filter(m => progressionModule(m.id)?.medaille).length;
     const pct = modules.length ? Math.round((valides / modules.length) * 100) : 0;
-    return el('a', { class: 'card', href: `#/domaine/${d.id}` },
+    return el('a', { class: 'card', href: `#/domaine/${parcours.id}/${d.id}` },
       el('span', { class: 'card__tag', style: `background:var(--${d.couleur})` }, `DOSSIER ${num}`),
       el('h2', { class: 'card__titre' }, d.labelEleve),
       el('p', { class: 'card__meta' }, `${valides}/${modules.length} affaires classées`),
@@ -129,6 +150,7 @@ async function ecranAccueil() {
     ),
     el('h1', { class: 'titre-ecran' }, 'Ton bureau'),
     el('p', { class: 'sous-titre' }, 'Choisis un dossier et mène l’enquête sur l’info.'),
+    pills,
     el('div', { class: 'pile-cartes' }, cartes),
     (estInvite() || !estConfigure()) && el('div', { class: 'note-demo' },
       estInvite()
@@ -138,8 +160,8 @@ async function ecranAccueil() {
 }
 
 /* ---------- Écran : un domaine et ses modules ---------- */
-async function ecranDomaine(domaineId) {
-  const domaine = await getDomaine('5e', domaineId);
+async function ecranDomaine(parcoursId, domaineId) {
+  const domaine = await getDomaine(parcoursId, domaineId);
   if (!domaine || !domaine.disponible) { location.hash = '#/'; return; }
 
   const sections = domaine.rubriques.map(rubrique =>
@@ -180,8 +202,8 @@ async function ecranModule(moduleId) {
   const module_ = await getModule(moduleId);
   app.replaceChildren();
   await jouerModule(app, module_, {
-    onQuitter: () => { location.hash = `#/domaine/${module_.domaine}`; },
-    onSuivant: () => { synchroniser(); location.hash = `#/domaine/${module_.domaine}`; }
+    onQuitter: () => { location.hash = `#/domaine/${module_.parcours}/${module_.domaine}`; },
+    onSuivant: () => { synchroniser(); location.hash = `#/domaine/${module_.parcours}/${module_.domaine}`; }
   });
 }
 
@@ -191,7 +213,11 @@ export async function router() {
   try {
     if (morceaux[0] === 'prof') { await ecranProf(app); }
     else if (!sessionActive()) { ecranConnexion(); }
-    else if (morceaux[0] === 'domaine' && morceaux[1]) await ecranDomaine(morceaux[1]);
+    else if (morceaux[0] === 'domaine' && morceaux[1]) {
+      // #/domaine/5e/D2 — ou ancienne forme #/domaine/D2 (parcours courant)
+      if (/^[345]e$/.test(morceaux[1])) await ecranDomaine(morceaux[1], morceaux[2]);
+      else await ecranDomaine(parcoursParDefaut(), morceaux[1]);
+    }
     else if (morceaux[0] === 'module' && morceaux[1]) await ecranModule(morceaux[1]);
     else await ecranAccueil();
   } catch (erreur) {

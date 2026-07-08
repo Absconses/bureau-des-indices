@@ -1,0 +1,273 @@
+{
+  "id": "3.D1.LAN.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Identifier les opportunités et les risques liés à l'existence des pratiques des communautés sur les réseaux sociaux à l'ère de l'information numérique.",
+  "titre": "Fandom : force ou meute ?",
+  "accroche": "Ton amie Maëlys est à fond dans la NovaSquad, le fan-club en ligne qui fait des miracles… et parfois des dégâts. À toi de démêler la force de la meute.",
+  "documents": {
+    "postRaidCritique": {
+      "template": "post",
+      "pseudo": "@NovaSquad_Officiel",
+      "avatar": "💜",
+      "bio": "Fan-club n°1 de Nova 💜 On stream, on crée, on protège la famille",
+      "texte": "🚨 URGENT — TOUT LE MONDE EN LIGNE 🚨 Le « journaliste » Théo Vasseur de PopScope a osé mettre 4/10 à l'album 😡 Son compte est en commentaire. On ne touche PAS à la famille ❤️ Allez lui montrer ce qu'on pense de lui, chaque minute compte !!",
+      "likes": 3241,
+      "partages": 1876,
+      "commentaires": 654
+    },
+    "postRaidFan": {
+      "template": "post",
+      "pseudo": "@Nova_Protect",
+      "avatar": "🛡️",
+      "bio": "On défend Nova contre les haters, rejoins la garde 💜",
+      "texte": "On est une FAMILLE ici ❤️ Sauf que @Lilou_Mzk, une soi-disant fan, raconte partout que le concert de Verneuil était « moyen » 🙄 Une vraie fan ne critique pas. Vous savez ce qu'il vous reste à faire… montrez-lui la sortie 👋 GO la Squad !!",
+      "likes": 892,
+      "partages": 411,
+      "commentaires": 238
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maëlys (NovaSquad)", "avatar": "💜" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu ?? la NovaSquad a fait passer le nouveau clip de Nova à 2 millions de vues en 3 jours 🤯" },
+            { "de": "eux", "texte": "et le concours de fan-arts est lancé, le gagnant sera reposté par Nova elle-même 🎨 c'est pas génial une communauté ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Franchement si : à des milliers, vous donnez une visibilité énorme à une artiste. Seul, personne n'y arriverait.",
+                  "ok": true,
+                  "feedback": "Exactement. Entraide, créativité, mobilisation : une communauté multiplie la force de chacun. C'est la face lumineuse — retiens-la, parce que la suite se complique."
+                },
+                {
+                  "texte": "Bof, c'est juste des vues, ça sert à rien.",
+                  "ok": false,
+                  "feedback": "Tu passes à côté : 2 millions de vues obtenues par l'entraide de milliers de fans, c'est de la visibilité bien réelle pour une artiste. Les communautés en ligne ont un vrai pouvoir — c'est justement pour ça qu'il faut regarder ce qu'elles en font."
+                },
+                {
+                  "texte": "Génial, du coup tout ce que fait la Squad est forcément bien.",
+                  "ok": false,
+                  "feedback": "Attention au raccourci : la même force qui fait monter un clip peut écraser une personne. Une communauté n'est ni bonne ni mauvaise en soi — tout dépend de l'usage de sa puissance."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "par contre là ça chauffe… un journaliste de PopScope a mis 4/10 à l'album 😤" },
+            { "de": "eux", "texte": "le compte de la Squad vient de poster son @ et tout le monde va le « corriger » en commentaires. j'y vais ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Vas-y, c'est pas du harcèlement si chacun n'envoie qu'un seul message.",
+                  "ok": false,
+                  "feedback": "Si, justement : un message multiplié par 10 000 comptes, c'est une déferlante pour celui qui la reçoit. C'est le harcèlement de meute, et la loi le punit même quand chacun n'a envoyé qu'un seul message."
+                },
+                {
+                  "texte": "N'y va pas : à des milliers contre une seule personne, c'est un raid, pas un débat.",
+                  "ok": true,
+                  "feedback": "Exactement. Il a le droit de ne pas aimer l'album, la Squad a le droit de ne pas être d'accord. Mais déferler à des milliers sur une personne, c'est un raid — du harcèlement en meute, puni par la loi."
+                },
+                {
+                  "texte": "Écris-lui en privé pour exiger qu'il supprime son article.",
+                  "ok": false,
+                  "feedback": "Plus discret, mais toujours pas ok : exiger la suppression d'une critique, c'est de l'intimidation. Un avis négatif sur un album n'est pas une attaque contre les fans."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok ok… mais si je participe pas, la Squad va dire que je suis une traître 😬 je fais quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Signale le post d'appel au raid et reste en dehors. Défendre Nova, ce n'est pas attaquer quelqu'un.",
+                  "ok": true,
+                  "feedback": "C'est la bonne sortie : tu peux rester fan, streamer, créer — et refuser la meute. Signaler un appel au raid protège la cible ET ta communauté."
+                },
+                {
+                  "texte": "Participe un peu, juste un emoji moqueur, personne ne le saura.",
+                  "ok": false,
+                  "feedback": "Un emoji moqueur multiplié par des milliers de comptes, ça reste une meute. Et « personne ne saura » est faux : tout laisse des traces en ligne."
+                },
+                {
+                  "texte": "Quitte le fandom, ils sont tous toxiques de toute façon.",
+                  "ok": false,
+                  "feedback": "Pas besoin de tout jeter : cette même communauté traduit, crée, s'entraide. Le but n'est pas de renoncer à ta passion, c'est de refuser la dérive quand elle arrive."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Une communauté en ligne, c'est une loupe : elle grossit le meilleur (entraide, créativité, visibilité) comme le pire (meute, pression, bulle). La force est la même — c'est l'usage qui change tout." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le forum de la NovaSquad déborde d'idées. Classe chaque pratique : force de la communauté ou dérive ?",
+          "categories": [
+            { "id": "force", "label": "💪 Force de la communauté" },
+            { "id": "derive", "label": "🚨 Dérive dangereuse" }
+          ],
+          "items": [
+            {
+              "texte": "Traduire bénévolement les interviews de Nova pour les fans qui ne parlent pas anglais",
+              "categorie": "force",
+              "feedbackOk": "Oui : de l'entraide gratuite qui profite à tous. C'est exactement ce qu'une communauté a de mieux à offrir.",
+              "feedbackKo": "C'était une force : traduire bénévolement, c'est de l'entraide pure. Personne n'est visé, tout le monde y gagne."
+            },
+            {
+              "texte": "Poster le @ d'un journaliste critique pour que tout le monde aille « le corriger »",
+              "categorie": "derive",
+              "feedbackOk": "Bien vu : donner une cible à des milliers de comptes, c'est lancer un raid. Le mot « corriger » cache mal le harcèlement de meute.",
+              "feedbackKo": "C'était la dérive type : poster le @ de quelqu'un pour que la foule s'en occupe, c'est organiser un raid — du harcèlement de meute, puni par la loi."
+            },
+            {
+              "texte": "Organiser une soirée streaming pour faire monter le clip dans les tendances",
+              "categorie": "force",
+              "feedbackOk": "Exact : se mobiliser pour donner de la visibilité à une artiste, c'est légitime. Personne n'est attaqué, la communauté construit.",
+              "feedbackKo": "C'était une force : streamer ensemble donne de la visibilité à l'artiste sans nuire à personne. Mobilisation ne veut pas dire agression."
+            },
+            {
+              "texte": "Envoyer chacun « juste un petit message » de reproche à une fan qui a critiqué le concert",
+              "categorie": "derive",
+              "feedbackOk": "Exact : « juste un petit message » multiplié par des milliers de comptes, c'est une déferlante. L'effet de meute commence toujours comme ça.",
+              "feedbackKo": "C'était une dérive : un « petit message » envoyé par des milliers de personnes devient un mur de reproches pour celle qui le reçoit. C'est l'effet de meute."
+            },
+            {
+              "texte": "Bloquer et faire bloquer tous les comptes qui ne sont pas 100 % d'accord avec la Squad",
+              "categorie": "derive",
+              "feedbackOk": "Bien vu : à force d'éliminer tout désaccord, la communauté s'enferme dans une bulle qui chauffe — et finit par prendre chaque critique pour une attaque.",
+              "feedbackKo": "C'était une dérive : supprimer tous les avis différents crée une bulle où le groupe s'échauffe seul. Une communauté saine supporte le désaccord."
+            },
+            {
+              "texte": "Lancer un concours de fan-arts avec les créations des abonnés",
+              "categorie": "force",
+              "feedbackOk": "Oui : la créativité partagée, ça fait progresser tout le monde et ça fait vivre la communauté. Zéro victime, que du positif.",
+              "feedbackKo": "C'était une force : un concours de créations met en valeur les talents des fans. Créativité et entraide, c'est la face lumineuse d'un fandom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postRaidCritique",
+          "questions": [
+            {
+              "question": "Que demande vraiment ce post à la NovaSquad ?",
+              "options": [
+                "Donner calmement son avis sur l'album en commentaire",
+                "Aller en masse sur le compte d'un journaliste pour le faire craquer",
+                "Signaler un article mensonger à la plateforme",
+                "Streamer l'album pour soutenir Nova"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : « son compte est en commentaire », « allez lui montrer »… Le post organise un raid contre une personne. Habillé en défense de la « famille », ça reste du harcèlement de meute.",
+              "feedbackKo": "Relis le post : il donne le compte du journaliste et envoie tout le monde « lui montrer ce qu'on pense de lui ». C'est un appel au raid — du harcèlement de meute déguisé en défense de la « famille »."
+            },
+            {
+              "question": "Quelle technique ce post utilise-t-il pour te faire foncer sans réfléchir ?",
+              "options": [
+                "L'urgence et l'émotion : « URGENT », « chaque minute compte », « la famille »",
+                "Des arguments précis sur la qualité de l'album",
+                "Un lien vers l'article complet du journaliste",
+                "L'humour et l'autodérision"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : pas un seul argument sur l'album, mais de l'urgence, des majuscules et de l'affectif. Quand un post veut que tu agisses TOUT DE SUITE, c'est qu'il ne veut pas que tu réfléchisses.",
+              "feedbackKo": "Relis le post : aucun argument, aucun lien vers l'article. Juste « URGENT », des majuscules et « la famille ». Urgence + émotion = la recette pour court-circuiter ta réflexion et lancer la meute."
+            }
+          ]
+        },
+        {
+          "document": "postRaidFan",
+          "questions": [
+            {
+              "question": "Que risque de vivre @Lilou_Mzk dans les heures qui suivent ce post ?",
+              "options": [
+                "Rien, le post ne contient aucune insulte",
+                "Une vague de messages hostiles venus de toute la communauté",
+                "Une invitation au prochain concert de Nova",
+                "La suppression automatique de son compte"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « montrez-lui la sortie » + « GO la Squad », c'est un signal de meute. Pas besoin d'insulte dans le post : c'est la masse des réponses qui fait le harcèlement.",
+              "feedbackKo": "Relis la fin du post : « vous savez ce qu'il vous reste à faire… montrez-lui la sortie 👋 GO la Squad ». Même sans insulte, désigner une cible à des centaines de comptes déclenche une déferlante : c'est ça, le harcèlement de meute."
+            },
+            {
+              "question": "Quelle phrase du post interdit aux fans d'avoir un avis différent ?",
+              "options": [
+                "« GO la Squad !! »",
+                "« le concert de Verneuil »",
+                "« Une vraie fan ne critique pas »",
+                "« rejoins la garde »"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien repéré : cette phrase transforme tout désaccord en trahison. C'est le signe d'une bulle qui chauffe — un groupe où critiquer devient interdit finit par attaquer les siens.",
+              "feedbackKo": "La phrase clé était « Une vraie fan ne critique pas » : elle transforme un simple avis en trahison. Quand un groupe interdit le désaccord, il s'enferme dans une bulle qui chauffe — et Lilou en fait les frais."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le fil de la Squad défile ! Attrape les pratiques qui font vivre la communauté, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Partager un tuto pour apprendre aux nouveaux à faire des montages vidéo 🎬",
+              "bonne": true,
+              "feedback": "Oui : transmettre ses talents, c'est la force d'une communauté. Tout le monde progresse, personne ne trinque."
+            },
+            {
+              "texte": "🚨 URGENT !! Tous sur le compte de ce critique, chaque minute compte !!",
+              "bonne": false,
+              "feedback": "Piège : l'urgence sert à te faire foncer sans réfléchir. Derrière le compte visé, il y a une vraie personne — ça s'appelle un raid."
+            },
+            {
+              "texte": "Organiser une cagnotte pour offrir une place de concert à un fan fauché 🎫",
+              "bonne": true,
+              "feedback": "Belle pratique : l'entraide concrète entre fans, c'est exactement ce qu'une communauté a de meilleur."
+            },
+            {
+              "texte": "🎁 100 places de concert GRATUITES pour ceux qui inondent ce compte de commentaires !",
+              "bonne": false,
+              "feedback": "Piège : le cadeau trop beau est un appât pour te faire participer à un harcèlement de meute. Personne ne verra jamais ces places."
+            },
+            {
+              "texte": "IL A INSULTÉ LA FAMILLE !! ON VENGE NOVA, PARTAGE AVANT QU'IL SUPPRIME 😡😡",
+              "bonne": false,
+              "feedback": "Piège : majuscules + colère + « partage vite » = appel à l'émotion pour lancer la meute. Respire, vérifie, ne partage pas."
+            },
+            {
+              "texte": "Streamer le nouveau clip ce soir pour le faire entrer dans les tendances 📈",
+              "bonne": true,
+              "feedback": "Oui : se mobiliser pour donner de la visibilité à une artiste, c'est légitime — personne n'est attaqué."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

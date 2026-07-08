@@ -1,0 +1,194 @@
+{
+  "id": "3.D2.EVAL.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Évaluer la fiabilité de l'image comme source d'information.",
+  "titre": "Une image, une preuve ?",
+  "accroche": "Un ours polaire sur une plage bretonne : la photo tourne en boucle et tout le monde y croit. Toi, tu partages… ou tu enquêtes ?",
+  "documents": {
+    "postOurs": {
+      "template": "post",
+      "pseudo": "@InsoliteMax",
+      "avatar": "🤳",
+      "bio": "Le meilleur de l'insolite et du jamais-vu 🌍 Divertissement — on poste, vous partagez !",
+      "texte": "😱 INCROYABLE ! Un ours polaire aperçu CE MATIN sur la plage de Kervalen !! Les habitants sont sous le choc. PARTAGEZ avant que la photo soit supprimée !! 🐻‍❄️",
+      "image": {
+        "emoji": "🐻‍❄️",
+        "legende": "Un ours polaire marche sur une plage déserte, mer grise en arrière-plan — aucun crédit photo."
+      },
+      "likes": 12400,
+      "partages": 8912,
+      "commentaires": 640
+    },
+    "uneCourrier": {
+      "template": "une",
+      "nomJournal": "Le Courrier de l'Estuaire",
+      "date": "Vendredi 13 mars 2026",
+      "prix": "1,40 €",
+      "manchette": "« Ours polaire à Kervalen » : la photo qui a piégé les réseaux",
+      "sousTitre": "Partagée plus de 12 000 fois en deux jours, l'image ne montre pas la côte bretonne. Une simple recherche inversée a permis de retrouver son origine.",
+      "photo": {
+        "emoji": "🐻‍❄️",
+        "legende": "Photo prise en 2019 sur l'île de Sorvik (Norvège) par la photographe animalière Lena Sorel — détournée cette semaine sur les réseaux."
+      },
+      "secondaires": [
+        { "rubrique": "Décryptage", "titre": "Recherche inversée d'images : le réflexe qui démasque les photos détournées" },
+        { "rubrique": "Tech", "titre": "Mains à six doigts, textes illisibles : reconnaître une image générée par IA" }
+      ],
+      "sommaire": [
+        { "rubrique": "Décryptage", "page": "2" },
+        { "rubrique": "Ma région", "page": "4" },
+        { "rubrique": "Tech", "page": "7" }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postOurs",
+          "questions": [
+            {
+              "question": "Le post affirme qu'un ours polaire est à Kervalen ce matin. Que prouve la photo, exactement ?",
+              "options": [
+                "Qu'un ours polaire était bien à Kervalen ce matin",
+                "Qu'il existe une photo d'ours sur une plage — sans date, ni lieu, ni auteur vérifiables",
+                "Que les ours polaires arrivent en France à cause du climat",
+                "Rien : toutes les photos qui circulent en ligne sont truquées"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. La photo montre une scène, mais rien ne dit où ni quand elle a été prise, ni par qui. Sans ces trois infos, une image reste un document à vérifier — pas une preuve.",
+              "feedbackKo": "Regarde bien le post : aucune date de prise de vue, aucun lieu vérifiable, aucun crédit photo. Une image ne prouve pas ce que sa légende raconte — c'est un document à dater et à sourcer avant d'y croire."
+            },
+            {
+              "question": "Quel indice, dans le profil du compte, doit te freiner avant de partager ?",
+              "options": [
+                "Le nombre de likes, beaucoup trop élevé pour être honnête",
+                "Sa bio : c'est un compte de divertissement, pas un média d'information",
+                "L'emoji ours à la fin du message",
+                "Le nom de la plage, qui a l'air breton"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : la bio annonce la couleur, « divertissement ». Ce compte vit des partages, pas de la vérité — il n'a aucune raison de vérifier ses images. Toi, si.",
+              "feedbackKo": "L'indice était dans la bio, juste sous le pseudo : « Divertissement — on poste, vous partagez ! ». Un compte à buzz n'est pas une source d'information : il choisit les images qui font cliquer, pas celles qui sont vraies."
+            }
+          ]
+        },
+        {
+          "document": "postOurs",
+          "questions": [
+            {
+              "question": "Cherche dans le post : qui a pris cette photo ?",
+              "options": [
+                "Un habitant de Kervalen, cité dans le message",
+                "L'équipe du compte @InsoliteMax",
+                "Personne n'est indiqué : impossible de remonter à la source de l'image",
+                "Un photographe de presse, crédité sous l'image"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : ni auteur, ni crédit, ni date de prise de vue — la mini-légende le dit elle-même. Une photo sans source, c'est comme un témoin anonyme : on ne peut rien vérifier.",
+              "feedbackKo": "Relis tout le post, y compris sous l'image : « aucun crédit photo ». Personne n'est cité, donc impossible de remonter à la source. Une image sans auteur ni date ne peut pas servir de preuve."
+            },
+            {
+              "question": "« PARTAGEZ avant que la photo soit supprimée !! » — à quoi sert vraiment cette phrase ?",
+              "options": [
+                "À t'avertir qu'une censure est en cours",
+                "À te faire partager vite, sans te laisser le temps de vérifier",
+                "À protéger la photo contre le vol",
+                "À indiquer la source de l'image"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : c'est la technique de l'urgence. Plus tu partages vite, moins tu vérifies — exactement ce que cherche un compte à buzz. Une info solide n'a pas besoin de te presser.",
+              "feedbackKo": "C'était le piège de l'urgence : te presser pour t'empêcher de réfléchir. Personne ne « supprime » cette photo — le compte veut juste tes partages. Quand on te presse, prends justement ton temps."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "uneCourrier",
+          "consigne": "Le Courrier de l'Estuaire a enquêté sur la fameuse photo. Touche l'élément de la Une qui te dit d'où vient VRAIMENT l'image et quand elle a été prise.",
+          "cibles": ["legende"],
+          "essaisMax": 3,
+          "indices": [
+            "Sous une photo de presse, il y a toujours un petit texte qui l'accompagne…",
+            "Regarde la ligne en petits caractères, juste sous la photo."
+          ],
+          "feedbackOk": "C'est la légende : lieu, date, auteure. C'est elle qui transforme une image en document fiable — et ici, elle révèle que la photo date de 2019 et vient de Norvège, pas de Bretagne.",
+          "feedbackKo": "La réponse était la légende, en petits caractères sous la photo : « prise en 2019 en Norvège par Lena Sorel ». Retiens le trio d'une image fiable : datée, localisée, signée."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Une photo choc débarque dans ta story. Remets dans l'ordre la méthode de l'enquêteur avant de partager.",
+          "items": [
+            { "texte": "Je m'arrête : pas de partage immédiat, même si l'image est spectaculaire." },
+            { "texte": "Je regarde qui publie : média d'information ou compte à buzz ?" },
+            { "texte": "Je cherche la légende de l'image : auteur, date, lieu." },
+            { "texte": "Je lance une recherche inversée pour voir où la photo est déjà apparue." },
+            { "texte": "Je décide : je ne partage que si l'image est datée et sourcée." }
+          ],
+          "feedbackOk": "C'est la méthode : s'arrêter, identifier le compte, chercher la source de l'image, retracer son parcours en ligne, puis seulement décider. Une recherche inversée aurait démasqué l'ours en dix secondes.",
+          "feedbackKo": "L'ordre logique : 1. s'arrêter, 2. regarder qui publie, 3. chercher auteur/date/lieu, 4. recherche inversée, 5. décider. On vérifie d'abord, on partage ensuite — jamais l'inverse."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les images et la preuve ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une photo spectaculaire suffit à prouver l'événement qu'elle prétend montrer.",
+              "vrai": false,
+              "feedback": "Faux. Sans date, lieu et auteur, une image ne prouve rien : elle peut être ancienne, détournée ou fabriquée."
+            },
+            {
+              "texte": "La recherche inversée permet de retrouver où une image est déjà apparue en ligne.",
+              "vrai": true,
+              "feedback": "Vrai. C'est LE réflexe : si la photo « d'hier » circule depuis 2019, le détournement est démasqué."
+            },
+            {
+              "texte": "Des mains à six doigts ou un texte illisible en arrière-plan peuvent trahir une image générée par IA.",
+              "vrai": true,
+              "feedback": "Vrai. Les générateurs d'images ratent souvent les mains, les textes et les reflets : zoome sur les détails."
+            },
+            {
+              "texte": "Une vraie photo, non truquée, ne peut pas servir à désinformer.",
+              "vrai": false,
+              "feedback": "Faux. C'est même le cas le plus courant : une vraie photo, mais sortie de son contexte — autre lieu, autre date."
+            },
+            {
+              "texte": "Une légende sérieuse indique qui a pris la photo, où et quand.",
+              "vrai": true,
+              "feedback": "Vrai. Auteur, lieu, date : c'est ce trio qui transforme une image en document fiable."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

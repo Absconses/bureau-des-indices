@@ -1,0 +1,250 @@
+{
+  "id": "4.D1.LAN.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Comprendre que l'information est éditorialisée pour atteindre son public.",
+  "titre": "Une étude, trois titres",
+  "accroche": "Une étude sur le sommeil des ados sort lundi — et trois médias en tirent trois titres qui n'ont rien à voir. Personne ne ment, pourtant : à toi de découvrir pourquoi chacun emballe l'info à sa façon.",
+  "documents": {
+    "serpEtude": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=%C3%A9tude+sommeil+adolescents",
+      "requete": "étude sommeil adolescents",
+      "nbResultats": "Environ 1 240 000 résultats (0,35 seconde)",
+      "resultats": [
+        {
+          "url": "www.wazup.fr › lifestyle",
+          "titre": "Ton tel t'empêche de dormir 😴 (et on a 3 astuces)",
+          "extrait": "La science le confirme : les 13-15 ans dorment 1 h de moins qu'avant. On t'explique comment récupérer ton sommeil sans jeter ton téléphone."
+        },
+        {
+          "url": "www.courrier-montviel.fr › societe",
+          "titre": "Sommeil des adolescents : une étude mesure le recul d'une heure en dix ans",
+          "extrait": "L'Institut du sommeil de Valcourt a suivi 4 000 collégiens pendant trois ans. Les chercheurs pointent le rôle des écrans le soir et formulent des recommandations."
+        },
+        {
+          "url": "www.flashchoc.tv › alerte",
+          "titre": "ALERTE 🔴 Nos ados en DANGER ? Le chiffre qui affole les parents !",
+          "extrait": "Une étude révèle ce que vos enfants font vraiment la nuit. Les images vont vous choquer. Regardez avant qu'il ne soit trop tard !"
+        }
+      ]
+    },
+    "articleWazup": {
+      "template": "site-article",
+      "nomSite": "WAZUP.FR",
+      "url": "https://www.wazup.fr/lifestyle/sommeil-ados-telephone",
+      "menu": ["Accueil", "Séries", "Gaming", "Lifestyle", "Quiz"],
+      "surtitre": "Lifestyle",
+      "titre": "Ton tel t'empêche de dormir 😴 (et on a 3 astuces)",
+      "auteur": "Par Léna, team Wazup",
+      "date": "Publié hier à 17h32 · 3 min de lecture",
+      "chapo": "D'après une étude de l'Institut du sommeil de Valcourt, menée sur 4 000 collégiens pendant trois ans, les 13-15 ans dorment une heure de moins qu'il y a dix ans.",
+      "corps": [
+        "La cause n° 1 ? L'écran du soir. Six collégiens sur dix regardent encore leur téléphone après 22 h — et la lumière de l'écran retarde l'endormissement. Résultat : réveil zombie et concentration en berne. 🧟",
+        "Nos 3 astuces : mode nuit dès 21 h, le tel qui dort HORS de la chambre, et une heure de coucher fixe même le week-end. Ton cerveau (et tes notes) te diront merci 🙏"
+      ],
+      "footer": ["Qui sommes-nous ?", "Contact", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpEtude",
+          "questions": [
+            {
+              "question": "Ces trois résultats parlent de la même étude. Lequel est écrit pour des ados ?",
+              "options": [
+                "Wazup, avec son tutoiement, son emoji et ses astuces",
+                "Le Courrier de Montviel, avec ses chiffres précis",
+                "Flash-Choc TV, avec son alerte rouge",
+                "Aucun : une étude scientifique ne vise personne"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : « Ton tel », l'emoji 😴, la promesse d'astuces… Wazup parle le langage de son public. Chaque média fabrique son titre pour SES lecteurs : c'est l'éditorialisation.",
+              "feedbackKo": "Relis le premier résultat : « Ton tel t'empêche de dormir 😴 ». Tutoiement, emoji, astuces : Wazup s'adresse aux ados. Un titre n'est jamais neutre, il est fabriqué pour un public précis."
+            },
+            {
+              "question": "D'après son titre et son extrait, que cherche d'abord Flash-Choc TV ?",
+              "options": [
+                "Expliquer calmement les résultats de l'étude",
+                "Faire peur aux parents pour les faire cliquer",
+                "Donner des astuces de sommeil aux ados",
+                "Vendre des téléphones"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « ALERTE », « DANGER », « vont vous choquer », « avant qu'il ne soit trop tard »… La recette de l'émotion, calibrée pour des parents inquiets. L'étude existe vraiment — mais l'emballage est conçu pour affoler.",
+              "feedbackKo": "Relis le troisième résultat : majuscules, « ALERTE 🔴 », « les images vont vous choquer »… Tout est fait pour effrayer les parents et déclencher le clic. L'info de départ est la même, mais ce média la vend par la peur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Chaque rédaction choisit son emballage pour SON public. Rends chaque choix éditorial à son média.",
+          "categories": [
+            { "id": "jeune", "label": "📱 Wazup (site pour ados)" },
+            { "id": "serieux", "label": "🗞️ Le Courrier de Montviel (journal sérieux)" },
+            { "id": "sensation", "label": "📺 Flash-Choc TV (chaîne à sensation)" }
+          ],
+          "items": [
+            {
+              "texte": "Titre : « Ton tel t'empêche de dormir 😴 »",
+              "categorie": "jeune",
+              "feedbackOk": "Oui : tutoiement + emoji + sujet téléphone, c'est le code des sites pour ados. Le titre te parle comme un pote.",
+              "feedbackKo": "C'était Wazup : le tutoiement et l'emoji visent les ados. Un journal sérieux ne t'appelle pas « toi », une chaîne à sensation ne te parle pas de TON tel."
+            },
+            {
+              "texte": "Photo choisie : un graphique montrant la baisse du sommeil en dix ans",
+              "categorie": "serieux",
+              "feedbackOk": "Exact : un graphique mise sur les faits, pas sur l'émotion. C'est le choix d'un média qui vise des lecteurs venus comprendre.",
+              "feedbackKo": "C'était le journal sérieux : un graphique donne des faits à lire, pas un frisson. Son public veut comprendre, pas trembler."
+            },
+            {
+              "texte": "Bandeau rouge « ALERTE » avec musique angoissante",
+              "categorie": "sensation",
+              "feedbackOk": "Bien vu : rouge + « ALERTE » + musique dramatique, c'est la panoplie de l'émotion. Objectif : que tu restes scotché, pas que tu comprennes.",
+              "feedbackKo": "C'était la chaîne à sensation : le bandeau rouge et la musique angoissante fabriquent de la peur. C'est un choix éditorial pour capter l'attention, pas pour informer."
+            },
+            {
+              "texte": "Interview posée de la chercheuse qui a dirigé l'étude",
+              "categorie": "serieux",
+              "feedbackOk": "Oui : donner la parole à la scientifique elle-même, calmement, c'est le choix d'un média qui privilégie la fiabilité.",
+              "feedbackKo": "C'était le journal sérieux : interroger la chercheuse à la source, sans cris, c'est miser sur l'expertise. Les deux autres préfèrent l'émotion ou la complicité."
+            },
+            {
+              "texte": "Quiz « Es-tu un zombie du matin ? 🧟 » à la fin de l'article",
+              "categorie": "jeune",
+              "feedbackOk": "Exact : un quiz rigolo avec emoji, c'est pensé pour que les ados s'amusent et partagent. L'info devient un jeu.",
+              "feedbackKo": "C'était Wazup : un quiz avec emoji, ça se partage entre copains. Chaque média habille la même étude avec les codes de son public."
+            },
+            {
+              "texte": "Titre : « Ce que vos enfants font la nuit va vous CHOQUER »",
+              "categorie": "sensation",
+              "feedbackOk": "Oui : « vos enfants » (on parle aux parents), majuscules, promesse de choc… et zéro information dans le titre. Pur appât à clics.",
+              "feedbackKo": "C'était la chaîne à sensation : « vos enfants » vise les parents, « CHOQUER » vend du frisson, et le titre ne donne aucune info. Ce mystère fabriqué, c'est l'appât à clics classique."
+            }
+          ]
+        },
+        {
+          "consigne": "Même étude, trois vitrines. Rends chaque choix éditorial au média qui l'a fait pour SON public.",
+          "categories": [
+            { "id": "jeune", "label": "📱 Wazup (site pour ados)" },
+            { "id": "serieux", "label": "🗞️ Le Courrier de Montviel (journal sérieux)" },
+            { "id": "sensation", "label": "📺 Flash-Choc TV (chaîne à sensation)" }
+          ],
+          "items": [
+            {
+              "texte": "Titre : « Sommeil des ados : une heure perdue en dix ans, selon une étude »",
+              "categorie": "serieux",
+              "feedbackOk": "Oui : un chiffre, la source (« selon une étude »), pas un mot plus haut que l'autre. Ce titre informe avant de séduire.",
+              "feedbackKo": "C'était le journal sérieux : chiffre précis, mention de la source, ton neutre. Ni tutoiement pour ados, ni majuscules qui hurlent."
+            },
+            {
+              "texte": "Photo choisie : un ado mort de rire, téléphone sous la couette",
+              "categorie": "jeune",
+              "feedbackOk": "Exact : une scène drôle où chaque ado se reconnaît. Wazup choisit la complicité, pas la panique.",
+              "feedbackKo": "C'était Wazup : l'image joue la complicité — « c'est toi, avoue ! ». Le journal aurait mis un graphique, la chaîne à sensation un visage terrifié."
+            },
+            {
+              "texte": "Compte à rebours à l'écran : « Les révélations dans 10 minutes ! »",
+              "categorie": "sensation",
+              "feedbackOk": "Bien vu : le compte à rebours fabrique du suspense pour te garder devant l'écran. Une info solide n'a pas besoin de chronomètre.",
+              "feedbackKo": "C'était la chaîne à sensation : un compte à rebours crée du suspense artificiel pour retenir le spectateur. L'étude, elle, était disponible depuis lundi…"
+            },
+            {
+              "texte": "Story avec sondage : « Et toi, tu dors avec ton tel ? 📱 »",
+              "categorie": "jeune",
+              "feedbackOk": "Oui : une story, un sondage, un tutoiement — le format des réseaux, taillé pour que les ados participent et partagent.",
+              "feedbackKo": "C'était Wazup : story + sondage + « et toi ? », c'est le langage des réseaux où vivent les ados. Chaque média choisit le format préféré de son public."
+            },
+            {
+              "texte": "Photo choisie : un parent paniqué dans le noir, les yeux écarquillés",
+              "categorie": "sensation",
+              "feedbackOk": "Exact : cette image vend de la peur, pas de l'info. Elle est choisie pour le frisson des parents, le public cible de la chaîne.",
+              "feedbackKo": "C'était la chaîne à sensation : un visage paniqué transmet une émotion, pas un fait. L'étude ne parle pas de danger nocturne — la photo, si."
+            },
+            {
+              "texte": "Encadré « Méthodologie : comment l'étude a été menée »",
+              "categorie": "serieux",
+              "feedbackOk": "Oui : expliquer COMMENT l'étude a été faite, c'est s'adresser à des lecteurs qui veulent vérifier. La transparence est un choix éditorial aussi.",
+              "feedbackKo": "C'était le journal sérieux : détailler la méthode de l'étude vise un public qui veut pouvoir vérifier. Ni Wazup ni Flash-Choc ne prennent cette place-là."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleWazup",
+          "consigne": "Personne ne ment : même Wazup s'appuie sur la vraie étude. Touche l'endroit précis où l'article cite sa source scientifique.",
+          "cibles": ["chapo"],
+          "essaisMax": 3,
+          "indices": [
+            "Cherche le passage qui dit D'OÙ viennent les chiffres — pas celui qui donne des astuces.",
+            "Regarde le paragraphe d'introduction, juste sous le titre : qui a mené l'étude ?"
+          ],
+          "feedbackOk": "C'est le chapô : « une étude de l'Institut du sommeil de Valcourt, menée sur 4 000 collégiens ». Le titre fun et les emojis sont l'emballage choisi pour toi — mais la source est la même que dans le journal sérieux. Éditorialiser, ce n'est pas mentir.",
+          "feedbackKo": "La source était dans le chapô, juste sous le titre : « une étude de l'Institut du sommeil de Valcourt ». Retiens : sous l'emballage taillé pour son public, un article fiable dit toujours d'où vient l'info."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Une étude, trois médias : vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Un même fait peut donner des titres très différents selon le média qui le raconte.",
+              "vrai": true,
+              "feedback": "Vrai. Chaque média choisit un angle, un titre, une photo pour SON public : c'est l'éditorialisation."
+            },
+            {
+              "texte": "Choisir un titre qui plaît à son public, c'est forcément mentir.",
+              "vrai": false,
+              "feedback": "Faux. Choisir un angle n'est pas inventer des faits. Mais l'angle colore l'info : compare plusieurs médias pour voir le tableau complet."
+            },
+            {
+              "texte": "Les majuscules, « ALERTE » et les questions qui font peur servent surtout à faire cliquer.",
+              "vrai": true,
+              "feedback": "Vrai. C'est la recette de l'émotion : elle attrape ton œil et ton clic avant même de t'informer."
+            },
+            {
+              "texte": "Un article drôle et plein d'emojis contient forcément une info fausse.",
+              "vrai": false,
+              "feedback": "Faux. Le ton vise un public, il ne dit rien de la fiabilité. Vérifie plutôt la source citée dans l'article."
+            },
+            {
+              "texte": "Se demander « pour quel public ce titre a-t-il été écrit ? » aide à mieux lire l'info.",
+              "vrai": true,
+              "feedback": "Vrai. Repérer le public visé, c'est repérer l'angle — et lire le titre pour ce qu'il est : un choix, pas la vérité brute."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "4.D2.RECH.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Comprendre ce que l'on peut attendre des différents types de supports (image, son, texte, vidéo) et de médias.",
+  "titre": "Photo, son, texte ou vidéo ?",
+  "accroche": "Exposé sur les océans en vue ! Photo spectaculaire, témoignage au micro, dossier de quinze pages, vidéo choc : chaque support a ses pouvoirs… et ses angles morts — à toi de choisir le bon pour chaque question.",
+  "documents": {
+    "postCalamar": {
+      "template": "post",
+      "pseudo": "@AbyssesChoc",
+      "avatar": "🦑",
+      "bio": "Les océans comme on ne vous les montre JAMAIS 😱 Sensations garanties chaque soir",
+      "texte": "INCROYABLE 😱😱 Un calamar GÉANT de 30 mètres photographié hier près de Port-Miroir !! La photo ne ment jamais 👇 Partagez VITE avant suppression !!",
+      "image": "📷 Photo sombre et floue : une longue forme claire à la surface de l'eau, près d'un petit bateau",
+      "likes": 8204,
+      "partages": 3417,
+      "commentaires": 892
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ton exposé « Océans » démarre. Associe chaque question de ton enquête au support qui y répond le mieux.",
+          "paires": [
+            {
+              "gauche": "Montrer à quoi ressemble un récif corallien blanchi",
+              "droite": "📷 Une photo",
+              "feedbackOk": "Oui : pour montrer l'apparence d'une chose à un instant précis, l'image est imbattable. Mais elle ne te dira jamais pourquoi le corail a blanchi.",
+              "feedbackKo": "C'était la photo : elle fige un instant et le montre tel quel. Pour une question en « à quoi ça ressemble », l'image gagne — pour un « pourquoi », il faudra autre chose."
+            },
+            {
+              "gauche": "Comprendre pourquoi le niveau de la mer monte, avec des chiffres",
+              "droite": "📄 Un texte long (dossier, article de fond)",
+              "feedbackOk": "Exact : pour expliquer des causes et aligner des chiffres, il faut de la place. C'est la force du texte long : la profondeur, que ni une photo ni un son ne peuvent offrir.",
+              "feedbackKo": "Pour un « pourquoi » avec des chiffres, il fallait le texte long : lui seul a la place de détailler les causes. Une photo montre, un texte explique."
+            },
+            {
+              "gauche": "Faire ressentir la tempête vécue par un marin-pêcheur",
+              "droite": "🎧 Un témoignage audio",
+              "feedbackOk": "Oui : la voix transmet l'émotion, les silences, le vécu — aucun texte ne rend ça aussi bien. Souviens-toi juste qu'un témoignage reste UN point de vue, pas une preuve.",
+              "feedbackKo": "C'était le témoignage audio : la voix du marin fait vivre la tempête mieux que tout. Mais garde en tête qu'un témoignage est un vécu personnel, pas une donnée scientifique."
+            },
+            {
+              "gauche": "Montrer une tortue en train de nager et de se nourrir",
+              "droite": "🎬 Une vidéo",
+              "feedbackOk": "Exact : le mouvement, c'est le terrain de la vidéo. Retiens quand même qu'une vidéo est montée : quelqu'un a choisi ce que tu vois… et ce qu'il coupe.",
+              "feedbackKo": "Pour une action en train de se faire, il fallait la vidéo : c'est le seul support qui montre le mouvement. Mais le montage choisit ce que tu vois — et ce qu'il te cache."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postCalamar",
+          "questions": [
+            {
+              "question": "Que prouve vraiment la photo de ce post ?",
+              "options": [
+                "Qu'un calamar géant de 30 mètres existe : l'image en atteste",
+                "Qu'une forme floue était près d'un bateau — sans espèce, ni taille, ni date vérifiables",
+                "Rien du tout : toutes les photos sont truquées",
+                "Que le photographe était courageux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Une photo prouve seulement ce qu'on y voit : ici, une forme floue près d'un bateau. Le « calamar », les « 30 mètres », le « hier » : c'est le texte qui les affirme, pas l'image.",
+              "feedbackKo": "Regarde la photo décrite : une forme floue, un bateau. Elle ne prouve ni l'espèce, ni la taille, ni la date — tout ça vient du texte du post. Une photo montre un instant, elle ne raconte pas l'histoire qu'on colle dessus."
+            },
+            {
+              "question": "Le post affirme : « La photo ne ment jamais ». Pour ton exposé, qu'en penses-tu ?",
+              "options": [
+                "C'est vrai : une image est une preuve définitive",
+                "Une photo peut être recadrée, retouchée ou sortie de son contexte : seule, elle ne prouve rien",
+                "8 204 likes, ça valide : je peux la citer",
+                "Il faut bannir toutes les images d'un exposé"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bonne nuance. Une image est précieuse pour montrer, mais elle peut être recadrée, retouchée ou venir d'un tout autre endroit. Et le « Partagez VITE avant suppression » du post cherche ta réaction, pas ta réflexion.",
+              "feedbackKo": "La bonne réponse était la nuance : une photo peut être recadrée, retouchée ou sortie de son contexte — celle-ci est floue et invérifiable. Les likes ne prouvent rien, et « Partagez VITE » est un signal d'alerte, pas un argument."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ton dossier « Océans » déborde de documents. Trie-les selon ce que chacun peut vraiment t'apporter.",
+          "categories": [
+            { "id": "voir", "label": "👀 Voir un instant précis" },
+            { "id": "comprendre", "label": "🧠 Comprendre en profondeur" },
+            { "id": "ressentir", "label": "🎧 Entendre un vécu" }
+          ],
+          "items": [
+            {
+              "texte": "La photo satellite d'un iceberg fendu en deux, datée de dimanche",
+              "categorie": "voir",
+              "feedbackOk": "Oui : datée et localisée, cette image montre un instant précis. C'est sa force — mais elle n'explique pas pourquoi l'iceberg s'est fendu.",
+              "feedbackKo": "C'était « voir un instant » : une photo fige un moment, elle le montre. Pour le pourquoi, il te faudra un texte."
+            },
+            {
+              "texte": "Le dossier de quinze pages « Courants marins », avec cartes et chiffres",
+              "categorie": "comprendre",
+              "feedbackOk": "Exact : quinze pages, des cartes, des chiffres — c'est le format qu'il faut pour comprendre un mécanisme compliqué.",
+              "feedbackKo": "C'était « comprendre » : un dossier long a la place d'expliquer les causes et de donner des chiffres. Aucune photo ne peut faire ça."
+            },
+            {
+              "texte": "L'enregistrement d'un pêcheur qui raconte la tempête au micro de Balise FM",
+              "categorie": "ressentir",
+              "feedbackOk": "Oui : sa voix, ses hésitations, sa peur — c'est du vécu. Précieux pour faire vivre ton exposé, mais ça reste UN point de vue.",
+              "feedbackKo": "C'était « entendre un vécu » : un témoignage audio transmet l'expérience et l'émotion d'une personne. Ni une preuve, ni une explication : un vécu."
+            },
+            {
+              "texte": "La vidéo d'une tortue filmée par la caméra fixée sur sa carapace",
+              "categorie": "voir",
+              "feedbackOk": "Bien vu : la vidéo montre l'action en direct, image par image. Elle montre — elle n'explique pas la migration des tortues.",
+              "feedbackKo": "C'était « voir » : une vidéo montre ce qui se passe, en mouvement. Pour comprendre pourquoi la tortue migre, il faudra lire."
+            },
+            {
+              "texte": "L'article long d'une revue scientifique sur la montée des eaux",
+              "categorie": "comprendre",
+              "feedbackOk": "Exact : un article de fond prend le temps d'expliquer, de citer ses sources, de nuancer. Le support roi pour un exposé solide.",
+              "feedbackKo": "C'était « comprendre » : un article long de revue scientifique explique et prouve. C'est là que tu trouveras tes arguments, pas dans une image choc."
+            },
+            {
+              "texte": "Le message vocal de ta cousine, encore émue de sa rencontre avec des dauphins",
+              "categorie": "ressentir",
+              "feedbackOk": "Oui : c'est de l'émotion et du vécu à l'état pur. Touchant, racontable… mais ça ne prouve rien sur les dauphins en général.",
+              "feedbackKo": "C'était « entendre un vécu » : sa voix émue raconte SON expérience. Sympa en ouverture d'exposé, mais aucune valeur de preuve."
+            }
+          ]
+        },
+        {
+          "consigne": "Deuxième vague de documents pour ton exposé « Océans ». Qu'est-ce que chacun peut vraiment t'apporter ?",
+          "categories": [
+            { "id": "voir", "label": "👀 Voir un instant précis" },
+            { "id": "comprendre", "label": "🧠 Comprendre en profondeur" },
+            { "id": "ressentir", "label": "🎧 Entendre un vécu" }
+          ],
+          "items": [
+            {
+              "texte": "La photo légendée d'une plage couverte de déchets, prise le 3 mars à Port-Miroir",
+              "categorie": "voir",
+              "feedbackOk": "Oui : datée, localisée, légendée — cette photo montre un instant réel. Elle ne dit pas d'où viennent les déchets : ça, c'est le travail d'un texte.",
+              "feedbackKo": "C'était « voir un instant » : la photo montre l'état de la plage ce jour-là, rien de plus. L'origine des déchets, il faudra la lire ailleurs."
+            },
+            {
+              "texte": "Le livre documentaire « Océans » de 200 pages, rayon sciences du CDI",
+              "categorie": "comprendre",
+              "feedbackOk": "Exact : 200 pages vérifiées par un éditeur, c'est le format fait pour approfondir. Lent à lire, imbattable pour comprendre.",
+              "feedbackKo": "C'était « comprendre » : un livre documentaire prend le temps d'expliquer et a été relu avant publication. La profondeur, c'est le pouvoir du texte long."
+            },
+            {
+              "texte": "L'interview audio d'un marin-pêcheur sur la disparition des poissons de sa baie",
+              "categorie": "ressentir",
+              "feedbackOk": "Oui : quarante ans de mer dans une voix, c'est irremplaçable. Mais c'est SON expérience : pour des chiffres sur la pêche, il faudra un texte.",
+              "feedbackKo": "C'était « entendre un vécu » : le marin témoigne de ce qu'il a vécu, avec son émotion. Ce n'est ni une statistique ni une étude — un vécu."
+            },
+            {
+              "texte": "La vidéo sous-marine d'un banc de dauphins, plan continu sans montage",
+              "categorie": "voir",
+              "feedbackOk": "Bien vu : un plan continu montre une scène telle qu'elle s'est déroulée. La vidéo montre le mouvement — elle n'explique pas le comportement des dauphins.",
+              "feedbackKo": "C'était « voir » : cette vidéo montre une scène en mouvement, c'est sa force. Comprendre pourquoi les dauphins chassent en groupe demandera un texte."
+            },
+            {
+              "texte": "Le rapport chiffré de l'Institut Marin de Port-Brume sur le plastique en mer",
+              "categorie": "comprendre",
+              "feedbackOk": "Exact : des chiffres, une méthode, un auteur identifié — c'est le document qui prouve et explique. Le cœur de ton exposé.",
+              "feedbackKo": "C'était « comprendre » : un rapport chiffré d'institut explique le phénomène avec des données vérifiables. C'est lui qui donnera du poids à ton exposé."
+            },
+            {
+              "texte": "Le message vocal de ton oncle plongeur, bouleversé par un récif abîmé",
+              "categorie": "ressentir",
+              "feedbackOk": "Oui : son émotion est vraie et touchante — mais c'est un ressenti personnel, pas une mesure de l'état du récif.",
+              "feedbackKo": "C'était « entendre un vécu » : ton oncle partage son émotion, pas une étude. Émouvant en introduction, insuffisant comme preuve."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Ta veille « océans » défile ! Attrape les documents utilisables pour l'exposé, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "🚨 URGENT !! Un MÉGALODON vivant FILMÉ !! Partage VITE avant que la vidéo soit SUPPRIMÉE !!",
+              "bonne": false,
+              "feedback": "Piège : urgence + majuscules + menace de suppression, le trio classique de la manipulation. Un vrai document scientifique n'a jamais besoin de crier."
+            },
+            {
+              "texte": "Dossier : la montée des eaux expliquée en 10 cartes, par l'Institut Marin de Port-Brume",
+              "bonne": true,
+              "feedback": "À garder : un texte long, des cartes, un auteur identifié. Exactement le support qu'il faut pour comprendre en profondeur."
+            },
+            {
+              "texte": "😭 Cette tortue mourra si tu ne partages pas cette vidéo. Prouve que tu as un cœur 😭",
+              "bonne": false,
+              "feedback": "Piège : appel à l'émotion + chantage au partage. Ton partage ne sauve aucune tortue — et l'émotion n'est pas une information."
+            },
+            {
+              "texte": "Podcast : une océanographe raconte sa plongée dans la fosse des Sirènes (Balise FM)",
+              "bonne": true,
+              "feedback": "À garder : un témoignage audio d'une spécialiste identifiée, sur une radio nommée. Parfait pour faire vivre l'exposé — à croiser avec des sources écrites."
+            },
+            {
+              "texte": "🎁 GRATUIT : le documentaire CHOC que les scientifiques veulent te CACHER ! Clique vite !",
+              "bonne": false,
+              "feedback": "Piège : cadeau + complot (« on te cache tout ») + urgence. Ce cocktail sert à te faire cliquer, jamais à t'informer."
+            },
+            {
+              "texte": "Photo légendée : la plage de Port-Miroir le 3 mars, avant/après le nettoyage (mairie)",
+              "bonne": true,
+              "feedback": "À garder : une photo datée, localisée et signée. C'est tout ce qui manque aux images « choc » : le contexte qui permet de vérifier."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "id": "3.D3.ELAB.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Élaborer un contenu original et pertinent à partir de plusieurs sources d'information.",
+  "titre": "La carte des controverses",
+  "accroche": "Faut-il interdire les réseaux sociaux aux moins de 15 ans ? Tout le monde crie son avis — toi, tu vas cartographier le débat : qui parle, avec quels arguments, quelles sources, pour produire une synthèse qui éclaire au lieu de trancher.",
+  "documents": {
+    "collecteDebat": {
+      "template": "collecte",
+      "sujet": "Ma carte des controverses — Faut-il interdire les réseaux sociaux aux moins de 15 ans ?",
+      "extraits": [
+        {
+          "texte": "Nos ados dorment de moins en moins : 82 % des parents de notre collectif constatent des nuits écourtées par les notifications. Il faut interdire, maintenant ! 😡",
+          "source": "@ParentsDebranches — post réseau social du collectif de parents, 12 février"
+        },
+        {
+          "texte": "Interdire sans éduquer déplace le problème : les ados migreront vers des applis moins contrôlées. Nos enquêtes de terrain montrent surtout un manque d'accompagnement.",
+          "source": "Nadia Ferrand, sociologue (université de Valbourne) — entretien au journal L'Écho du Val, 3 mars"
+        },
+        {
+          "texte": "Vérifier l'âge des internautes suppose de collecter des données personnelles sensibles. Toute solution devra d'abord protéger la vie privée des mineurs.",
+          "source": "Rapport public de la CNIL — publié en janvier"
+        },
+        {
+          "texte": "On parle de nous, jamais avec nous 😤 Les réseaux, c'est aussi là qu'on s'informe, qu'on crée, qu'on monte des projets. Interdire = nous faire taire.",
+          "source": "@LenaCree, 16 ans, créatrice de vidéos — post, 15 février, 12 400 partages"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteDebat",
+          "questions": [
+            {
+              "question": "Deux extraits de ta collecte s'appuient sur des enquêtes. Lequel vient d'un acteur qui a mesuré… chez ses propres membres ?",
+              "options": [
+                "Le « 82 % » de @ParentsDebranches",
+                "Les enquêtes de terrain de Nadia Ferrand",
+                "Le rapport de la CNIL",
+                "Le post de @LenaCree"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : « 82 % des parents de notre collectif » — le collectif a sondé ses propres membres. Pas forcément faux, mais un acteur engagé qui se mesure lui-même, ça se recoupe avant d'entrer sur ta carte.",
+              "feedbackKo": "Relis la fin de l'extrait 1 : « 82 % des parents de NOTRE collectif ». Ils ont sondé leurs propres membres, déjà convaincus. Sur ta carte, note d'où sort chaque chiffre : c'est ce qui fait sa valeur."
+            },
+            {
+              "question": "Quel acteur de ta collecte ne se range ni pour ni contre l'interdiction ?",
+              "options": [
+                "@ParentsDebranches",
+                "Nadia Ferrand, la sociologue",
+                "La CNIL",
+                "@LenaCree"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : la CNIL ne dit ni oui ni non. Elle soulève un problème que les deux camps devront régler : vérifier l'âge sans ficher tout le monde. Une carte des controverses a aussi une zone pour ces acteurs-là.",
+              "feedbackKo": "Relis l'extrait 3 : la CNIL ne choisit pas de camp, elle alerte sur les données personnelles qu'exigerait la vérification d'âge. Les parents sont pour, Léna est contre, la sociologue doute de l'efficacité — la CNIL, elle, questionne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ta carte prend forme. Place chaque argument entendu autour de toi dans la bonne zone.",
+          "categories": [
+            { "id": "pour", "label": "🔴 Pour l'interdiction" },
+            { "id": "contre", "label": "🔵 Contre l'interdiction" },
+            { "id": "question", "label": "⚖️ Soulève une question" }
+          ],
+          "items": [
+            {
+              "texte": "« Les notifications à minuit ruinent le sommeil avant le brevet. »",
+              "categorie": "pour",
+              "feedbackOk": "Oui : argument de protection (santé, sommeil). C'est le cœur du camp pour l'interdiction.",
+              "feedbackKo": "C'est un argument POUR l'interdiction : il pointe un danger — le manque de sommeil — dont il faudrait protéger les moins de 15 ans."
+            },
+            {
+              "texte": "« Interdits ici, les ados iront sur des applis sans aucune modération. »",
+              "categorie": "contre",
+              "feedbackOk": "Exact : c'est l'argument de l'effet pervers — l'interdiction empirerait les choses. Camp contre.",
+              "feedbackKo": "Argument CONTRE : il affirme que l'interdiction aggraverait le problème en poussant les jeunes vers des applis non modérées."
+            },
+            {
+              "texte": "« Comment vérifier l'âge sans collecter les données de tout le monde ? »",
+              "categorie": "question",
+              "feedbackOk": "Bien vu : ni pour ni contre, c'est une question de faisabilité. Sur ta carte, ces points d'interrogation comptent autant que les camps.",
+              "feedbackKo": "Cette phrase ne choisit pas de camp : elle demande COMMENT faire. Direction la zone ⚖️ — les questions ouvertes font partie de la carte."
+            },
+            {
+              "texte": "« C'est sur les réseaux que je me suis mis au montage vidéo. »",
+              "categorie": "contre",
+              "feedbackOk": "Oui : les réseaux comme lieu où on apprend et où on crée — argument contre l'interdiction.",
+              "feedbackKo": "C'est un argument CONTRE : il défend ce que les réseaux apportent (créer, apprendre). Les interdire priverait les jeunes de ça."
+            },
+            {
+              "texte": "« Le harcèlement en ligne touche d'abord les plus jeunes : protégeons-les. »",
+              "categorie": "pour",
+              "feedbackOk": "Exact : s'appuyer sur un danger réel pour réclamer une protection, c'est un argument pour l'interdiction.",
+              "feedbackKo": "Argument POUR l'interdiction : il part d'un danger (le harcèlement) pour demander qu'on protège les plus jeunes en les tenant à l'écart."
+            },
+            {
+              "texte": "« A-t-on assez d'études sur les effets réels des réseaux avant 15 ans ? »",
+              "categorie": "question",
+              "feedbackOk": "Oui : demander ce que la science sait vraiment, ce n'est pas choisir un camp — c'est poser LA question qui départagera peut-être les deux.",
+              "feedbackKo": "Pas de camp ici : la phrase demande si on a assez de preuves pour décider. C'est une question ouverte — la zone ⚖️ de ta carte."
+            }
+          ]
+        },
+        {
+          "consigne": "Ta carte prend forme. Place chaque argument entendu autour de toi dans la bonne zone.",
+          "categories": [
+            { "id": "pour", "label": "🔴 Pour l'interdiction" },
+            { "id": "contre", "label": "🔵 Contre l'interdiction" },
+            { "id": "question", "label": "⚖️ Soulève une question" }
+          ],
+          "items": [
+            {
+              "texte": "« Les défis dangereux se propagent d'abord chez les plus jeunes. »",
+              "categorie": "pour",
+              "feedbackOk": "Oui : pointer un danger qui vise les plus jeunes pour réclamer leur protection, c'est un argument du camp pour.",
+              "feedbackKo": "Argument POUR l'interdiction : il s'appuie sur un danger (les défis) pour demander qu'on protège les moins de 15 ans."
+            },
+            {
+              "texte": "« Éduquer aux écrans protège mieux qu'interdire : c'est le rôle de l'école et des familles. »",
+              "categorie": "contre",
+              "feedbackOk": "Exact : proposer une autre solution que l'interdiction (l'éducation), c'est s'y opposer. Camp contre.",
+              "feedbackKo": "Argument CONTRE : il ne nie pas le problème, mais défend une autre solution que l'interdiction — l'éducation aux écrans."
+            },
+            {
+              "texte": "« Qui ferait respecter l'interdiction, et avec quels moyens ? »",
+              "categorie": "question",
+              "feedbackOk": "Bien vu : c'est une question de faisabilité, pas une prise de position. Ta carte a une zone pour ça.",
+              "feedbackKo": "Cette phrase ne dit ni oui ni non : elle demande COMMENT appliquer la mesure. C'est une question ouverte — zone ⚖️."
+            },
+            {
+              "texte": "« Mon club de hand recrute et s'organise sur les réseaux. »",
+              "categorie": "contre",
+              "feedbackOk": "Oui : montrer l'utilité concrète des réseaux (le club, l'orga), c'est un argument contre l'interdiction.",
+              "feedbackKo": "C'est un argument CONTRE : il défend un usage utile des réseaux au quotidien. Les interdire couperait aussi ça."
+            },
+            {
+              "texte": "« Avant 15 ans, on résiste moins aux mécanismes qui rendent accro. »",
+              "categorie": "pour",
+              "feedbackOk": "Exact : argument de vulnérabilité — les plus jeunes seraient moins armés, donc à protéger. Camp pour.",
+              "feedbackKo": "Argument POUR l'interdiction : il affirme que les moins de 15 ans sont plus vulnérables face aux applis conçues pour retenir l'attention."
+            },
+            {
+              "texte": "« Que disent vraiment les études : danger prouvé ou panique collective ? »",
+              "categorie": "question",
+              "feedbackOk": "Oui : réclamer des preuves avant de trancher, ce n'est pas un camp — c'est la question que ta synthèse peut laisser ouverte.",
+              "feedbackKo": "Pas de camp ici : la phrase demande ce que la science a vraiment prouvé. Question ouverte — la zone ⚖️ de ta carte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya (groupe EMI)", "avatar": "🗺️" },
+          "etapes": [
+            { "de": "eux", "texte": "bon, on a tous nos extraits pour la carte des controverses 🗺️" },
+            { "de": "eux", "texte": "la prof veut la synthèse pour vendredi. on écrit quoi ??" },
+            {
+              "choix": [
+                {
+                  "texte": "On donne notre avis direct : l'interdiction, c'est nul.",
+                  "ok": false,
+                  "feedback": "Une synthèse qui tranche dès la première ligne, c'est juste un avis de plus dans le vacarme. Ta carte sert d'abord à montrer le débat, pas à le gagner."
+                },
+                {
+                  "texte": "On présente chaque acteur avec son argument principal et sa source.",
+                  "ok": true,
+                  "feedback": "Oui : acteurs + arguments + sources, c'est le squelette de la carte. Le lecteur voit tout le débat d'un coup d'œil — et c'est TON contenu, pas un copié-collé."
+                },
+                {
+                  "texte": "On recopie le post de Léna, il a 12 400 partages.",
+                  "ok": false,
+                  "feedback": "Populaire ne veut pas dire représentatif : c'est UN point de vue sur quatre. Et recopier n'est pas élaborer — une synthèse croise plusieurs sources avec tes propres mots."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok et la conclusion ? on finit comment sans dire n'importe quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "On écrit « chacun son avis » et c'est réglé.",
+                  "ok": false,
+                  "feedback": "Trop facile : tout ne se vaut pas. Une enquête de sociologue et un sondage maison n'ont pas le même poids — ta synthèse a le droit de le dire."
+                },
+                {
+                  "texte": "On pointe les questions encore ouvertes, comme la vérification de l'âge.",
+                  "ok": true,
+                  "feedback": "Exactement : conclure, c'est éclairer. Montrer ce qui bloque vraiment (comment vérifier l'âge ? avec quelles preuves ?) aide plus le lecteur que trancher à la va-vite."
+                },
+                {
+                  "texte": "On tranche : la CNIL a raison, point final.",
+                  "ok": false,
+                  "feedback": "Piège : la CNIL ne prend pas parti, elle soulève un problème technique. Lui faire dire « qui a raison », c'est déformer ta source — l'erreur interdite en synthèse."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "vendu 🤝 j'ajoute une légende avec un symbole par acteur. carte des controverses niveau pro !" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux : les règles d'une synthèse qui éclaire ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une bonne synthèse présente aussi les arguments que tu ne partages pas.",
+              "vrai": true,
+              "feedback": "Vrai. Cartographier, c'est éclairer le débat, pas gagner un match. Le lecteur se fera son avis avec TOUTES les pièces."
+            },
+            {
+              "texte": "Recopier l'extrait le plus partagé suffit pour faire une synthèse.",
+              "vrai": false,
+              "feedback": "Faux. 12 400 partages ne prouvent rien, et recopier n'est pas élaborer : une synthèse croise plusieurs sources avec tes propres mots."
+            },
+            {
+              "texte": "Indiquer qui parle et d'où vient chaque argument rend ta carte plus fiable.",
+              "vrai": true,
+              "feedback": "Vrai. Un argument sans source ne pèse rien. Acteur + source, c'est la légende de ta carte."
+            },
+            {
+              "texte": "Si deux sources se contredisent, tu dois en supprimer une.",
+              "vrai": false,
+              "feedback": "Faux. Dans une controverse, les désaccords SONT l'information : ta carte montre qui s'oppose à qui, et pourquoi."
+            },
+            {
+              "texte": "Conclure « chacun ses goûts » est la meilleure fin possible.",
+              "vrai": false,
+              "feedback": "Faux. Ne pas trancher ne veut pas dire que tout se vaut : pointe les questions ouvertes et les arguments les plus solides."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "id": "5.D1.EXP.1",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Saisir la diversité des manières de s'informer en partant de son expérience propre.",
+  "titre": "L'info dès le réveil",
+  "accroche": "7h du matin : tu n'as encore rien cherché, et pourtant les infos te tombent déjà dessus. Mène l'enquête sur ton propre trajet, du bol de céréales au portail du collège.",
+  "documents": {
+    "postQuartier": {
+      "template": "post",
+      "pseudo": "@ValbourgMatin",
+      "avatar": "🌅",
+      "bio": "Les infos du quartier de Valbourg, chaque matin à 7h ☕",
+      "texte": "Bonjour Valbourg ! ⛅ Ce matin : 🚌 ligne 12 déviée rue des Acacias (travaux jusqu'à vendredi) • ⛈️ orage attendu vers 18h, sortez couverts ! • 🎪 dimanche, grande braderie place du Marché. Bonne journée à tous 😄",
+      "likes": 87,
+      "partages": 23,
+      "commentaires": 12
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maël", "avatar": "🥐" },
+          "etapes": [
+            { "de": "eux", "texte": "7h10 chrono ⏰ devine ce que j'ai entendu à la radio pendant le petit-déj" },
+            { "de": "eux", "texte": "gros orage prévu ce soir ⛈️ et toi, tu l'aurais su comment sans mon message ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Impossible de le savoir sans toi : les infos n'arrivent que par les copains.",
+                  "ok": false,
+                  "feedback": "Pas seulement ! Radio, notification, appli météo, panneau de la mairie, discussion des parents… Une même info circule par des dizaines de canaux différents."
+                },
+                {
+                  "texte": "Par plein de chemins : la radio, une notification, l'écran de la boulangerie…",
+                  "ok": true,
+                  "feedback": "Exactement. Une même info voyage par plein de canaux — et souvent, elle te trouve avant même que tu la cherches."
+                },
+                {
+                  "texte": "Uniquement en tapant « météo » sur un moteur de recherche.",
+                  "ok": false,
+                  "feedback": "C'est UN moyen, mais pas le seul. La radio de ce matin le prouve : l'info arrive souvent jusqu'à toi sans que tu la cherches."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ah ouais la radio… chez moi elle tourne tous les matins et j'écoute même pas exprès 😅" },
+            { "de": "eux", "texte": "attends. ça veut dire qu'on s'informe même sans le décider ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui : une affiche de bus, une notif, une conversation au portail… l'info vient souvent à toi toute seule.",
+                  "ok": true,
+                  "feedback": "C'est LA découverte du jour : on s'informe même sans le vouloir. D'où l'intérêt de repérer par où l'info arrive jusqu'à toi."
+                },
+                {
+                  "texte": "Non : si tu n'as pas ouvert un journal, tu ne t'es pas informé.",
+                  "ok": false,
+                  "feedback": "Le journal est un canal parmi d'autres. La météo entendue à la radio ce matin, c'est déjà de l'information — sans journal et sans recherche."
+                },
+                {
+                  "texte": "Non : une info reçue sans la chercher, ça ne compte pas.",
+                  "ok": false,
+                  "feedback": "Si, ça compte ! Tu connais l'orage de ce soir sans avoir rien cherché. Info cherchée ou info reçue : tu croises les deux chaque matin."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Mission du jour : entre ton réveil et le portail du collège, compte tous les endroits où une info te trouve. Tu risques d'être surpris. 🕵️" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ce matin, l'info était partout. Trie : cette info, tu l'as cherchée, ou elle est venue à toi ?",
+          "categories": [
+            { "id": "cherche", "label": "🔍 Je l'ai cherchée" },
+            { "id": "recue", "label": "📬 Elle est venue à moi" }
+          ],
+          "items": [
+            {
+              "texte": "La radio annonce la météo pendant ton petit-déjeuner",
+              "categorie": "recue",
+              "feedbackOk": "Oui : tu n'as rien demandé, la radio tournait en fond. Beaucoup d'infos arrivent comme ça, sans qu'on les remarque.",
+              "feedbackKo": "Tu n'as pas allumé la radio pour ça : l'info est passée pendant que tu mangeais. C'est une info reçue, pas cherchée."
+            },
+            {
+              "texte": "Tu tapes « ligne 12 horaires » sur ton téléphone",
+              "categorie": "cherche",
+              "feedbackOk": "Exact : c'est toi qui poses la question au moteur. Là, tu t'informes volontairement, avec un but précis.",
+              "feedbackKo": "Ici c'est toi qui agis : tu tapes une recherche pour obtenir une réponse. C'est le contraire d'une info qui tombe toute seule."
+            },
+            {
+              "texte": "Une notification s'affiche : « Victoire de Valbourg 3-0 hier soir ⚽ »",
+              "categorie": "recue",
+              "feedbackOk": "Bien vu : la notification arrive toute seule. C'est l'appli qui décide du moment, pas toi.",
+              "feedbackKo": "Tu n'as rien fait : la notification s'est affichée d'elle-même. C'est l'appli qui vient à toi, pas l'inverse."
+            },
+            {
+              "texte": "L'affiche de l'abribus annonce la fête du quartier",
+              "categorie": "recue",
+              "feedbackOk": "Oui : tu attendais le bus, pas une info. L'affichage dans la rue est un canal d'information qu'on oublie souvent.",
+              "feedbackKo": "Tu n'as pas cherché cette affiche : elle était là, sur ton chemin. La rue aussi t'informe, sans écran et sans demande."
+            },
+            {
+              "texte": "Tu demandes à ta sœur si le contrôle de maths est bien aujourd'hui",
+              "categorie": "cherche",
+              "feedbackOk": "Oui : poser une question à quelqu'un, c'est aussi chercher une info. Pas besoin d'écran pour s'informer !",
+              "feedbackKo": "C'est toi qui poses la question pour obtenir la réponse : info cherchée, donc — même sans écran ni moteur de recherche."
+            },
+            {
+              "texte": "Au portail, Enzo raconte que la cantine change de menu",
+              "categorie": "recue",
+              "feedbackOk": "Exact : tu n'as rien demandé, Enzo a parlé. Le bouche-à-oreille est un canal d'info très puissant… à vérifier parfois !",
+              "feedbackKo": "Tu n'as rien demandé à Enzo : son info est venue à toi. Les conversations sont un canal d'information comme les autres."
+            }
+          ]
+        },
+        {
+          "consigne": "Même enquête, autre matinée : ces infos, tu les as cherchées ou elles sont venues à toi ?",
+          "categories": [
+            { "id": "cherche", "label": "🔍 Je l'ai cherchée" },
+            { "id": "recue", "label": "📬 Elle est venue à moi" }
+          ],
+          "items": [
+            {
+              "texte": "Tu ouvres l'appli météo pour savoir s'il faut un manteau",
+              "categorie": "cherche",
+              "feedbackOk": "Exact : tu as une question précise et tu vas chercher la réponse. C'est une démarche volontaire.",
+              "feedbackKo": "C'est toi qui ouvres l'appli avec une question en tête : info cherchée. Rien n'est venu tout seul, ici."
+            },
+            {
+              "texte": "Le panneau lumineux de la mairie affiche « Travaux rue des Lilas »",
+              "categorie": "recue",
+              "feedbackOk": "Oui : le panneau était sur ton chemin, tu n'as rien demandé. La ville elle-même est pleine de canaux d'info.",
+              "feedbackKo": "Tu passais devant, c'est tout : le panneau t'a informé sans que tu le décides. Info reçue, comme une affiche ou une notif."
+            },
+            {
+              "texte": "Ta mère te lit à voix haute un titre du journal",
+              "categorie": "recue",
+              "feedbackOk": "Bien vu : c'est elle qui a choisi de partager, pas toi de demander. Les proches sont un canal d'info du quotidien.",
+              "feedbackKo": "Tu n'as rien demandé : le titre est venu à toi par la voix de ta mère. Une personne peut être un canal d'information."
+            },
+            {
+              "texte": "Tu cherches « piscine Valbourg horaires mercredi »",
+              "categorie": "cherche",
+              "feedbackOk": "Oui : question précise, recherche précise. Là, c'est toi qui pilotes ton information.",
+              "feedbackKo": "C'est toi qui tapes la recherche pour un besoin précis : info cherchée, sans aucun doute."
+            },
+            {
+              "texte": "Une notification : « Nouvelle vidéo de ta chaîne préférée 🎮 »",
+              "categorie": "recue",
+              "feedbackOk": "Exact : l'appli te l'envoie sans que tu demandes rien. Elle choisit même le moment pour capter ton attention.",
+              "feedbackKo": "Tu n'as rien fait : la notification est arrivée seule. C'est l'appli qui vient te chercher — pas l'inverse."
+            },
+            {
+              "texte": "Dans le bus, deux voisins parlent du nouveau marché du samedi",
+              "categorie": "recue",
+              "feedbackOk": "Oui : tu n'écoutais même pas exprès. Une conversation entendue, c'est de l'info reçue sans le vouloir.",
+              "feedbackKo": "Tu n'as pas posé de question : l'info a voyagé jusqu'à tes oreilles toute seule. Les conversations autour de toi t'informent aussi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postQuartier",
+          "questions": [
+            {
+              "question": "Tu prends la ligne 12 pour aller au collège. Que t'apprend ce post pour CE matin ?",
+              "options": [
+                "Le bus est supprimé toute la semaine",
+                "Le bus passe par une autre rue jusqu'à vendredi",
+                "Le bus est gratuit dimanche pour la braderie",
+                "Rien : le post ne parle pas de bus"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : « ligne 12 déviée rue des Acacias (travaux jusqu'à vendredi) ». Dans un même post, tu as su repérer l'info qui TE concerne maintenant.",
+              "feedbackKo": "Relis le post : « 🚌 ligne 12 déviée rue des Acacias (travaux jusqu'à vendredi) ». Le bus roule, mais ailleurs. S'informer, c'est repérer dans le flot l'info qui te concerne, toi."
+            },
+            {
+              "question": "Tu as entraînement de foot à 18h30 ce soir. Quelle info du post dois-tu retenir ?",
+              "options": [
+                "La braderie de dimanche",
+                "L'orage attendu vers 18h",
+                "Les 87 mentions J'aime",
+                "Les travaux rue des Acacias"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : orage « vers 18h », pile pendant ton entraînement. Une info devient utile quand tu la relies à TA journée — c'est ça, la traiter.",
+              "feedbackKo": "L'info à retenir était « ⛈️ orage attendu vers 18h » : ton entraînement est à 18h30 ! Une même info n'a pas la même importance pour tout le monde — relie-la toujours à ta propre journée."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur ta matinée d'enquêteur ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Écouter la radio pendant le petit-déjeuner, c'est déjà une manière de s'informer.",
+              "vrai": true,
+              "feedback": "Vrai. Même sans écouter exprès, tu reçois météo et actus. L'info passe par bien plus de canaux que les écrans."
+            },
+            {
+              "texte": "On ne s'informe que quand on le décide.",
+              "vrai": false,
+              "feedback": "Faux. Une affiche, une notification, une conversation : l'info vient souvent à toi sans que tu aies rien demandé."
+            },
+            {
+              "texte": "Une affiche sur un abribus peut t'apporter une information.",
+              "vrai": true,
+              "feedback": "Vrai. La rue aussi informe : affiches, panneaux, écrans de la mairie. Pas besoin de téléphone pour croiser une info."
+            },
+            {
+              "texte": "Une discussion au portail du collège ne contient jamais d'information.",
+              "vrai": false,
+              "feedback": "Faux. Le bouche-à-oreille est un vrai canal d'info — mais il faudra apprendre à vérifier ce qui s'y raconte !"
+            },
+            {
+              "texte": "Entre ton réveil et le collège, tu croises en général plusieurs canaux d'information.",
+              "vrai": true,
+              "feedback": "Vrai. Radio, notifs, affiches, discussions : ton inventaire du matin le prouve. S'informer, c'est tout ça à la fois."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

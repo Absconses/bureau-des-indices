@@ -1,0 +1,217 @@
+{
+  "id": "5.D1.EXP.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Identifier ses besoins (se tenir au courant, approfondir un sujet pour se forger son opinion, s'inscrire dans la société ou dans un groupe, etc.).",
+  "titre": "À chaque envie son info",
+  "accroche": "Samedi soir, Maya a trois envies en tête : le score de son équipe, le sujet de SVT qui l'intrigue, et la série dont toute la classe parle. Trois envies, trois façons de s'informer : à toi de trouver lesquelles !",
+  "documents": {
+    "postClub": {
+      "template": "post",
+      "pseudo": "@HBC_Vireuil",
+      "avatar": "🤾",
+      "bio": "Compte officiel du Handball Club de Vireuil — résultats, annonces et vie du club",
+      "texte": "⚡ RÉSULTAT DU SOIR : nos moins de 13 s'imposent 24-19 contre Saint-Ferréol ! 💪 Prochain match samedi 14h au gymnase des Tilleuls. Bravo à toute l'équipe ! 🤾",
+      "likes": 87,
+      "partages": 12,
+      "commentaires": 9
+    },
+    "serpAbeilles": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=pourquoi+les+abeilles+disparaissent",
+      "requete": "pourquoi les abeilles disparaissent",
+      "nbResultats": "Environ 1 870 000 résultats (0,38 seconde)",
+      "resultats": [
+        {
+          "annonce": true,
+          "url": "www.mielboutic.fr › promo",
+          "titre": "Miel de fleurs à -40 % — MielBoutic, livraison offerte 🍯",
+          "extrait": "Profitez de notre grande promo de l'été. Offre limitée, commandez vite !"
+        },
+        {
+          "url": "www.sciences-junior.fr › dossiers › abeilles",
+          "titre": "Dossier : pourquoi les abeilles disparaissent-elles ? Comprendre en 6 questions",
+          "extrait": "Pesticides, parasites, climat : un dossier complet et illustré, relu par une chercheuse, pour comprendre les causes et se faire son propre avis."
+        },
+        {
+          "url": "www.flash-vireuil.fr › actu-locale",
+          "titre": "Une ruche installée sur le toit de la mairie de Vireuil",
+          "extrait": "La ville accueille ses premières abeilles municipales. Publié il y a 3 heures."
+        },
+        {
+          "url": "forum-jardinage.net › discussion-4521",
+          "titre": "les abeilles c'est fini ?? [forum]",
+          "extrait": "moi je dis que c'est la 5G, mon voisin dit que non, bref chacun son avis les gars…"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postClub",
+          "questions": [
+            {
+              "question": "Samedi 19h, Maya ouvre ce compte dès la fin des matchs. Quel besoin d'information satisfait-elle ?",
+              "options": [
+                "Se tenir au courant avec une info courte et toute fraîche",
+                "Approfondir un sujet pour se forger son opinion",
+                "Préparer un exposé pour le collège",
+                "Apprendre les règles du handball"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : le post donne le score du soir et la date du prochain match. Une info courte, fraîche, régulière — c'est le besoin « se tenir au courant ».",
+              "feedbackKo": "Regarde ce que publie le compte : « RÉSULTAT DU SOIR », « prochain match samedi ». Des nouvelles courtes et toutes fraîches : Maya se tient au courant, elle n'étudie rien en profondeur."
+            },
+            {
+              "question": "Maya veut maintenant comprendre comment mieux défendre au hand. Ce compte est-il la bonne source ?",
+              "options": [
+                "Oui : il parle de handball, donc il explique tout",
+                "Non : il donne des nouvelles fraîches, pas des explications détaillées",
+                "Oui, à condition de liker le post",
+                "Non : on ne peut rien apprendre sur un réseau social"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Tu as bien repéré le type d'infos du compte : des scores et des annonces. Pour comprendre une technique, il faut une source qui explique. Autre besoin, autre source.",
+              "feedbackKo": "Relis le post : un score, une date de match. Parfait pour se tenir au courant, inutile pour approfondir une technique. Chaque besoin d'information appelle sa source."
+            }
+          ]
+        },
+        {
+          "document": "serpAbeilles",
+          "questions": [
+            {
+              "question": "Maya veut vraiment comprendre le sujet vu en SVT pour se faire son propre avis. Quel résultat ouvrir en premier ?",
+              "options": [
+                "La promo sur le miel de fleurs",
+                "Le dossier « comprendre en 6 questions »",
+                "La brève sur la ruche de la mairie",
+                "Le forum « les abeilles c'est fini ?? »"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien joué : un dossier complet, illustré et relu par une chercheuse, c'est le bon format pour approfondir et se forger son opinion. C'est ton besoin qui choisit le résultat.",
+              "feedbackKo": "Pour approfondir, il fallait le dossier en 6 questions : complet et relu par une chercheuse. La pub veut vendre, la brève survole, le forum aligne des avis — aucun n'explique vraiment."
+            },
+            {
+              "question": "Pourquoi le forum n'est-il pas le bon choix pour se forger SON opinion ?",
+              "options": [
+                "Parce que les forums sont interdits aux collégiens",
+                "Parce qu'on y lit des impressions, pas des explications vérifiées",
+                "Parce qu'il n'y a pas de photos",
+                "Parce que c'est trop long à lire"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : se forger une opinion demande d'abord de comprendre les faits. « Moi je dis que c'est la 5G » est une impression, pas une explication vérifiée.",
+              "feedbackKo": "Relis l'extrait du forum : « moi je dis que c'est la 5G, mon voisin dit que non ». Des avis sans preuve. Pour te faire TON opinion, commence par comprendre les faits dans une source qui explique."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Une seule Maya, quatre envies. Associe chaque situation au besoin d'information qui lui correspond.",
+          "paires": [
+            {
+              "gauche": "Samedi soir : savoir si son équipe de hand a gagné",
+              "droite": "Se tenir au courant",
+              "feedbackOk": "Oui : le score du soir, rien de plus. Une info courte, fraîche et régulière — c'est le besoin « se tenir au courant ».",
+              "feedbackKo": "Un score du soir, c'est une nouvelle courte et toute fraîche : Maya veut juste se tenir au courant, pas étudier le handball."
+            },
+            {
+              "gauche": "Comprendre à fond le sujet de SVT sur les abeilles pour se faire son avis",
+              "droite": "Approfondir un sujet",
+              "feedbackOk": "Exact : ici il faut des explications complètes et vérifiées, pas une brève. Approfondir, c'est prendre le temps de comprendre pour se forger sa propre opinion.",
+              "feedbackKo": "« Comprendre à fond… pour se faire son avis » : c'est le signe qu'il faut approfondir. Une info rapide ne suffit pas, il faut des explications complètes."
+            },
+            {
+              "gauche": "Regarder l'épisode dont toute la classe parle pour suivre les discussions",
+              "droite": "S'inscrire dans un groupe",
+              "feedbackOk": "Bien vu : s'informer sert aussi à ça ! Partager les mêmes références que les autres, c'est se sentir membre du groupe.",
+              "feedbackKo": "Ici Maya ne cherche ni un score ni un cours : elle veut pouvoir participer aux discussions de la classe. S'informer pour s'inscrire dans un groupe, c'est un vrai besoin."
+            },
+            {
+              "gauche": "Suivre le projet de skatepark de Vireuil pour en parler au conseil des jeunes",
+              "droite": "S'inscrire dans la société",
+              "feedbackOk": "Oui : s'informer sur sa ville pour participer aux décisions, c'est s'inscrire dans la société. Ce réflexe de citoyen te servira toute ta vie.",
+              "feedbackKo": "Suivre un projet de sa ville pour donner son avis au conseil des jeunes, c'est participer à la vie de la cité : on dit « s'inscrire dans la société »."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Le fil de Maya défile ! Attrape les contenus qui répondent vraiment à ses trois envies, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Hand : Vireuil s'impose 24-19, le résumé du match en 2 minutes 🤾",
+              "bonne": true,
+              "feedback": "Bonne prise : une info courte et fraîche qui répond pile à son envie de suivre son équipe."
+            },
+            {
+              "texte": "URGENT ⏰ CLIQUE VITE : cette vidéo sur les abeilles sera SUPPRIMÉE ce soir !!!",
+              "bonne": false,
+              "feedback": "Piège : l'urgence et les majuscules servent à te faire cliquer sans réfléchir. Une vraie info n'expire pas dans la soirée."
+            },
+            {
+              "texte": "Dossier : pourquoi les abeilles disparaissent, expliqué en 6 questions 🐝",
+              "bonne": true,
+              "feedback": "Oui : un dossier qui explique, parfait pour approfondir le sujet vu en cours et se faire son propre avis."
+            },
+            {
+              "texte": "🎁 GAGNE des places de ciné : partage ce post à 10 contacts !",
+              "bonne": false,
+              "feedback": "Piège au cadeau : on t'appâte pour que tu diffuses le post à ta place. Aucune information là-dedans, juste de la pub gratuite pour le compte."
+            },
+            {
+              "texte": "La série dont tout le collège parle : le récap de l'épisode 3, sans spoiler 📺",
+              "bonne": true,
+              "feedback": "Bien vu : avec ce récap, Maya peut suivre les discussions de la classe sans être larguée. S'informer pour le groupe, c'est aussi un besoin."
+            },
+            {
+              "texte": "Ce qu'ILS te cachent sur les abeilles… la vérité va te CHOQUER 😡",
+              "bonne": false,
+              "feedback": "Appel à l'émotion et au grand secret (« ILS te cachent ») : une technique pour t'attirer, pas pour t'expliquer. Le dossier en 6 questions, lui, explique vraiment."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Complète le carnet d'enquête de Maya avec les bonnes étiquettes.",
+          "texte": "Un même élève peut avoir des besoins d'information très différents : se tenir au {1} pour suivre les résultats de son équipe, {2} un sujet vu en cours pour se forger son {3}, ou s'informer pour participer aux discussions d'un {4}.",
+          "etiquettes": ["courant", "approfondir", "opinion", "groupe", "record", "hasard"],
+          "reponses": ["courant", "approfondir", "opinion", "groupe"],
+          "feedbackOk": "C'est tout le résumé de l'enquête : avant de chercher, identifie ton envie — te tenir au courant, approfondir pour ton opinion, ou t'inscrire dans un groupe. C'est le besoin qui choisit la source, jamais l'inverse.",
+          "feedbackKo": "Relis les trois envies de Maya : se tenir au COURANT (les scores), APPROFONDIR pour se forger son OPINION (les abeilles), s'inscrire dans un GROUPE (les discussions de classe). Trois besoins, trois façons de s'informer."
+        }
+      ]
+    }
+  ]
+}

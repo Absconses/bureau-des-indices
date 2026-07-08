@@ -1,0 +1,255 @@
+{
+  "id": "4.D2.EVAL.3",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Identifier les désordres informationnels.",
+  "titre": "Trois intox dans la tempête",
+  "accroche": "La tempête Malva vient de frapper Port-Guérin — et une deuxième tempête se lève : celle des fausses infos. Trois contenus louches circulent : à toi de démasquer qui se trompe, qui ment et qui veut nuire.",
+  "documents": {
+    "postPhoto": {
+      "template": "post",
+      "pseudo": "@AlerteVigie",
+      "avatar": "🌪️",
+      "bio": "Habitant de Port-Guérin — je relaie ce qui peut être utile aux voisins 🙏",
+      "texte": "😱 La rue du Port ce matin après la tempête Malva !!! Restez chez vous et partagez pour prévenir tout le monde 🙏🙏",
+      "image": "Photo : rue entièrement inondée, voitures à moitié sous l'eau — tampon « Photothèque Azur • août 2019 » en bas à droite",
+      "likes": 1842,
+      "partages": 967,
+      "commentaires": 203
+    },
+    "articleChiffre": {
+      "template": "site-article",
+      "nomSite": "ALERTE-CHOC.NET",
+      "url": "https://www.alerte-choc.net/tempete-malva-apocalypse",
+      "menu": ["Accueil", "Buzz", "Chocs", "Vidéos"],
+      "surtitre": "EXCLUSIF",
+      "titre": "Tempête Malva : 800 MAISONS DÉTRUITES à Port-Guérin !!!",
+      "corps": [
+        "C'est l'apocalypse. Selon nos informations, 800 maisons auraient été DÉTRUITES cette nuit à Port-Guérin. Les autorités cacheraient l'ampleur du désastre.",
+        "Contactée, la mairie parle seulement de 27 toitures abîmées. Peut-on vraiment la croire ? PARTAGEZ cet article avant qu'il ne soit supprimé !!!"
+      ],
+      "footer": ["Publicité", "Publicité", "Publicité"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postPhoto",
+          "questions": [
+            {
+              "question": "Observe bien la photo et le message. Quel détail prouve que cette photo ne montre PAS la tempête Malva ?",
+              "options": [
+                "Le tampon « Photothèque Azur • août 2019 » sur la photo",
+                "Le nombre de partages, beaucoup trop élevé",
+                "Les émojis : une vraie alerte n'en contient jamais",
+                "Une rue inondée, c'est forcément un montage"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : la photo date d'août 2019, la tempête Malva d'hier soir. La photo est vraie… mais recyclée d'un autre événement. C'est LE grand classique après chaque catastrophe.",
+              "feedbackKo": "L'indice était sur la photo elle-même : le tampon « août 2019 ». Malva a eu lieu hier, la photo a des années. Vieille image + événement tout frais = photo recyclée : vérifie toujours la date."
+            },
+            {
+              "question": "Relis la bio et le message de @AlerteVigie. Quelle est la situation la plus probable ?",
+              "options": [
+                "Il se trompe en voulant aider : c'est de la mésinformation",
+                "Il ment pour gagner de l'argent : c'est de la désinformation",
+                "Il veut nuire à quelqu'un de précis : c'est de la malinformation",
+                "Il fait de la publicité pour la Photothèque Azur"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : sa bio (« je relaie ce qui peut être utile aux voisins ») et son « restez chez vous » montrent qu'il croit aider. Info fausse partagée SANS intention de tromper = mésinformation. Fausse quand même : on ne partage pas.",
+              "feedbackKo": "Regarde sa bio : il « relaie ce qui peut être utile aux voisins » et conseille de rester à l'abri. Il croit aider, il ne cherche ni argent ni victime : info fausse sans intention de tromper = mésinformation. Ça reste faux, donc à ne pas partager."
+            }
+          ]
+        },
+        {
+          "document": "articleChiffre",
+          "questions": [
+            {
+              "question": "Cherche dans l'article : d'où vient le chiffre de « 800 maisons détruites » ?",
+              "options": [
+                "De nulle part : « selon nos informations », sans aucune source",
+                "De la mairie de Port-Guérin",
+                "Des pompiers présents sur place",
+                "D'un journaliste qui signe l'article"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : « selon nos informations » = aucune source vérifiable. La seule source citée, la mairie, parle de 27 toitures… et l'article te demande de ne pas la croire. Énorme drapeau rouge.",
+              "feedbackKo": "Relis le premier paragraphe : « selon nos informations », sans nom, sans source. La mairie, elle, annonce 27 toitures abîmées — pas 800 maisons détruites. Un chiffre choc sans source, c'est un chiffre à jeter."
+            },
+            {
+              "question": "Regarde le menu du site (« Buzz », « Chocs ») et les pubs partout. Quel est le but le plus probable de ce chiffre inventé ?",
+              "options": [
+                "Faire cliquer pour gagner de l'argent : c'est de la désinformation",
+                "Prévenir les habitants du danger : c'est de l'information",
+                "Une erreur commise de bonne foi : c'est de la mésinformation",
+                "Nuire à un habitant précis : c'est de la malinformation"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : un site rempli de pubs vit du clic. Info fausse + fabriquée EXPRÈS pour en profiter = désinformation. Le « partagez avant suppression » sert juste à te presser.",
+              "feedbackKo": "Les indices étaient dans le décor : rubriques « Buzz » et « Chocs », publicité partout, « PARTAGEZ avant suppression ». Ce site vit du clic : chiffre inventé exprès pour en profiter = désinformation, pas une simple erreur."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Trois désordres, une info fiable. Associe chaque situation vécue à Port-Guérin à sa bonne étiquette.",
+          "paires": [
+            {
+              "gauche": "Partager une photo de 2019 en croyant montrer la tempête d'hier",
+              "droite": "Mésinformation : c'est faux, mais sans intention de tromper",
+              "feedbackOk": "Oui : la personne se trompe sincèrement. Pas de menteur ici — mais l'info fausse circule quand même, et fait autant de dégâts.",
+              "feedbackKo": "Ici, la personne croit aider : elle se trompe sans le vouloir. Faux + pas d'intention de tromper = mésinformation."
+            },
+            {
+              "gauche": "Inventer « 800 maisons détruites » pour récolter des clics",
+              "droite": "Désinformation : c'est faux, et c'est fait exprès",
+              "feedbackOk": "Exact : le chiffre est fabriqué volontairement pour en tirer profit. L'intention de tromper, c'est ce qui distingue la désinformation de la simple erreur.",
+              "feedbackKo": "Un chiffre inventé EXPRÈS pour faire cliquer, c'est de la désinformation : faux + volonté de tromper. C'est l'intention qui fait la différence."
+            },
+            {
+              "gauche": "Balancer l'adresse d'un habitant pour que les gens s'en prennent à lui",
+              "droite": "Malinformation : c'est vrai, mais diffusé pour nuire",
+              "feedbackOk": "Oui, et c'est le piège : l'adresse est exacte ! Une info vraie diffusée pour faire du mal à quelqu'un, c'est de la malinformation — et ça peut être puni par la loi.",
+              "feedbackKo": "Piège classique : l'adresse est VRAIE. Mais une info vraie diffusée pour nuire à quelqu'un, c'est de la malinformation. Vrai ne veut pas dire partageable."
+            },
+            {
+              "gauche": "Publier un bilan de la tempête daté, signé et sourcé",
+              "droite": "Information fiable : vérifiée, sourcée, sans piège",
+              "feedbackOk": "Exact : auteur identifié, date, sources — les trois signatures d'une info fiable. Ça existe aussi, heureusement !",
+              "feedbackKo": "Daté, signé, sourcé : rien ne cloche ici. C'est de l'information fiable — le contre-exemple qui te sert de référence pour repérer les trois désordres."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Lina", "avatar": "🌧️" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu ce qui tourne ?? 😳 @JusticePourPortGuerin a posté « C'est LUI le responsable de l'échafaudage tombé sur l'école, il habite 12 rue des Tilleuls, allez lui dire ce que vous en pensez 😡 »" },
+            { "de": "eux", "texte": "et le pire c'est que c'est sa vraie adresse… du coup c'est pas grave de partager vu que c'est vrai, non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Justement si : c'est vrai, mais c'est diffusé pour lui nuire. C'est de la malinformation, on ne partage pas.",
+                  "ok": true,
+                  "feedback": "Exactement. Le troisième désordre est le plus vicieux : l'info est exacte, mais l'intention est de faire du mal. Vrai ≠ partageable."
+                },
+                {
+                  "texte": "Si c'est vrai, c'est de l'information : on peut partager.",
+                  "ok": false,
+                  "feedback": "Non : une info vraie diffusée pour nuire à quelqu'un, c'est de la malinformation. La vérité d'une info ne suffit pas, son intention compte aussi."
+                },
+                {
+                  "texte": "On partage, mais en floutant le numéro de la rue.",
+                  "ok": false,
+                  "feedback": "Flouter ne change rien : tu fais quand même circuler un post conçu pour nuire. Malinformation floutée = malinformation quand même."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok mais les gens ont bien le droit de savoir qui est responsable, non ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Déterminer les responsabilités, c'est le travail de l'enquête et de la justice — pas d'une foule sur les réseaux.",
+                  "ok": true,
+                  "feedback": "Oui. Le post ne prouve rien, il désigne une cible. Entre « informer » et « livrer quelqu'un à la vindicte », il y a un monde."
+                },
+                {
+                  "texte": "Oui, et s'il est coupable, il l'a bien cherché.",
+                  "ok": false,
+                  "feedback": "Personne n'a prouvé sa culpabilité — et même coupable, il a droit à la justice, pas à une foule devant chez lui. C'est exactement ce que cherche la malinformation."
+                },
+                {
+                  "texte": "On attend que le post ait plus de partages pour être sûrs.",
+                  "ok": false,
+                  "feedback": "La popularité ne prouve rien : la photo recyclée avait 967 partages ! Un post très partagé peut être totalement toxique."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok je le signale alors 👍 dernier truc : je fais quoi de la photo de la rue inondée que tout le monde m'envoie ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Vérifie sa date d'abord : si elle est vieille, préviens gentiment la personne qui te l'a envoyée.",
+                  "ok": true,
+                  "feedback": "Parfait : vérifier avant de partager, puis corriger sans humilier. La personne qui mésinforme croit aider — on la renseigne, on ne l'attaque pas."
+                },
+                {
+                  "texte": "Partage-la aussi, une photo ça ne fait de mal à personne.",
+                  "ok": false,
+                  "feedback": "Une photo recyclée fait paniquer les gens sur de fausses bases. Chaque partage sans vérification ajoute une goutte à l'inondation… d'intox."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Trois désordres, trois intentions : se tromper (mésinformation), tromper (désinformation), nuire (malinformation). Et une parade commune : vérifier, signaler, ne pas relayer. 🕵️" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "La tempête fait le buzz ! Clique sur les bons réflexes, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "⚡ URGENT !!! Partage AVANT SUPPRESSION la vidéo INTERDITE de la tempête !!!",
+              "bonne": false,
+              "feedback": "Majuscules + urgence + « avant suppression » : le combo pour te faire partager sans réfléchir. Rien de vrai n'a besoin de te presser autant."
+            },
+            {
+              "texte": "Je vérifie la date de la photo avant de la partager.",
+              "bonne": true,
+              "feedback": "Réflexe n°1 : une photo vraie peut être recyclée d'une vieille catastrophe. La date d'abord, le partage ensuite."
+            },
+            {
+              "texte": "🎁 La mairie rembourse 500 € à chaque habitant : clique vite pour toucher ta prime !",
+              "bonne": false,
+              "feedback": "Cadeau surprise + « clique vite » = hameçonnage. Une vraie aide publique passe par les canaux officiels, jamais par un lien pressé."
+            },
+            {
+              "texte": "Ce chiffre vient d'un site inconnu : je cherche s'il est confirmé ailleurs.",
+              "bonne": true,
+              "feedback": "Croiser les sources, c'est LE moyen de démasquer un chiffre inventé pour faire cliquer."
+            },
+            {
+              "texte": "😭 Ce chaton coincé prouve que les secours ne font RIEN. Partage si tu as un cœur !",
+              "bonne": false,
+              "feedback": "Appel à l'émotion + chantage au partage (« si tu as un cœur ») : on court-circuite ta réflexion. Émotion forte = vérification double."
+            },
+            {
+              "texte": "Quelqu'un poste l'adresse d'un habitant « responsable » : je signale au lieu de partager.",
+              "bonne": true,
+              "feedback": "Oui : vraie ou pas, une adresse diffusée pour nuire est de la malinformation. Signaler protège, partager aggrave."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

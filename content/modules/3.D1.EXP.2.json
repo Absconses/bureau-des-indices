@@ -1,0 +1,185 @@
+{
+  "id": "3.D1.EXP.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "EXP",
+  "objectif": "Porter un regard critique sur ses pratiques et sur ce qui est susceptible de les conditionner.",
+  "titre": "40 vidéos plus tard",
+  "accroche": "« Allez, juste une vidéo. » Quarante vidéos plus tard, il est presque minuit et tu n'as rien décidé : autopsie d'une soirée de scroll.",
+  "documents": {
+    "videoMinuit": {
+      "template": "post",
+      "pseudo": "@MaxiBuzz",
+      "avatar": "😱",
+      "bio": "Recommandé pour toi 🎯 — parce que tu as regardé 3 vidéos semblables",
+      "texte": "Tu ne devineras JAMAIS la fin 😱😱 Reste jusqu'au bout, tu vas halluciner !! #suspense #attends",
+      "image": "▶️ 23:47 — Lecture automatique : vidéo suivante dans 5 s ⏳",
+      "likes": 12400,
+      "partages": 3100,
+      "commentaires": 891
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "hotspots",
+      "famille": "exploration",
+      "xpParReussite": 20,
+      "variantes": [
+        {
+          "document": "videoMinuit",
+          "consigne": "23h47. Tu voulais regarder UNE vidéo, c'est la 40e. Explore ce post : quatre pièges y sont cachés, trouve-les tous.",
+          "points": [
+            {
+              "zone": "bio",
+              "titre": "« Recommandé pour toi »",
+              "texte": "Ce n'est pas toi qui as choisi cette vidéo : l'appli a analysé ce que tu as déjà regardé et te ressert la même chose. C'est la bulle de recommandation — un menu composé pour te retenir, pas pour t'ouvrir l'esprit."
+            },
+            {
+              "zone": "texte",
+              "titre": "Le teaser à suspense",
+              "texte": "Relis cette phrase : elle ne dit RIEN mais promet tout. Ton cerveau déteste rester sur une question sans réponse, alors tu regardes « juste pour savoir la fin ». Technique classique de captation de l'attention."
+            },
+            {
+              "zone": "image",
+              "titre": "La lecture automatique",
+              "texte": "« Vidéo suivante dans 5 s » : si tu ne fais rien, ça continue. Continuer = zéro effort, s'arrêter = un effort. Quand le choix par défaut, c'est de rester, devine ce qui se passe à 23h47…"
+            },
+            {
+              "zone": "reactions",
+              "titre": "La machine à sous",
+              "texte": "Sur 40 vidéos, combien étaient vraiment géniales ? Deux, trois ? C'est le principe des récompenses variables : la pépite arrive de temps en temps, sans prévenir. Comme une machine à sous, c'est l'imprévu qui te fait retenter."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "videoMinuit",
+          "questions": [
+            {
+              "question": "Regarde la vignette de la vidéo : qui décide de lancer la suivante ?",
+              "options": [
+                "Toi, en appuyant sur « suivant »",
+                "L'appli, avec la lecture automatique",
+                "Le créateur @MaxiBuzz",
+                "Personne : c'est le hasard"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : « vidéo suivante dans 5 s », sans que tu touches à rien. Continuer ne demande aucun effort, s'arrêter en demande un — et ce déséquilibre est voulu.",
+              "feedbackKo": "Regarde la vignette : « Lecture automatique : vidéo suivante dans 5 s ». C'est l'appli qui enchaîne, pas toi. Retiens : par défaut, le choix est fait à ta place."
+            },
+            {
+              "question": "D'après la mention sous le pseudo, pourquoi cette vidéo t'est-elle proposée ?",
+              "options": [
+                "Parce que c'est la plus récente",
+                "Parce que tu as déjà regardé des vidéos semblables",
+                "Parce que toute la France la regarde en ce moment",
+                "Par tirage au sort"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « parce que tu as regardé 3 vidéos semblables ». L'appli te ressert ce qui t'a déjà retenu : c'est la bulle de recommandation, et elle se referme à chaque vidéo regardée.",
+              "feedbackKo": "Relis la ligne sous le pseudo : « Recommandé pour toi — parce que tu as regardé 3 vidéos semblables ». L'appli te sert du déjà-vu pour te garder : c'est la bulle de recommandation."
+            }
+          ]
+        },
+        {
+          "document": "videoMinuit",
+          "questions": [
+            {
+              "question": "« Tu ne devineras JAMAIS la fin 😱 » : que fait exactement cette phrase du post ?",
+              "options": [
+                "Elle résume le contenu de la vidéo",
+                "Elle crée un manque : tu regardes juste pour connaître la fin",
+                "Elle prouve que la vidéo est de bonne qualité",
+                "Elle indique la source de l'information"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : elle ne t'apprend rien mais promet tout. Ton cerveau déteste rester sur une question ouverte — le teaser exploite ça pour capter ton attention.",
+              "feedbackKo": "Relis le texte du post : il ne dit RIEN sur le contenu, il promet une surprise. Créer un manque pour forcer le visionnage, c'est la technique du teaser — la repérer, c'est déjà lui résister."
+            },
+            {
+              "question": "Il est 23h47 sur la vignette et tu voulais t'arrêter à 22h30. Quel mécanisme visible sur ce post peux-tu désactiver pour reprendre la main ?",
+              "options": [
+                "La lecture automatique",
+                "Le compteur de likes",
+                "Le pseudo du créateur",
+                "Les hashtags"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : sans lecture auto, chaque fin de vidéo redevient un vrai choix — continuer ou poser le téléphone. Un réglage de 10 secondes qui te rend la décision.",
+              "feedbackKo": "C'est la lecture automatique (« vidéo suivante dans 5 s ») qui supprime ton moment de décision. Coupe-la dans les réglages : chaque fin de vidéo redeviendra un choix."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Opération reprise en main ! Clique sur les vrais réflexes anti-scroll. Ne touche PAS aux pièges de l'appli.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Je coupe la lecture automatique dans les réglages.",
+              "bonne": true,
+              "feedback": "Bon réflexe : sans enchaînement auto, chaque fin de vidéo redevient un moment où TU décides."
+            },
+            {
+              "texte": "⏳ DERNIÈRE CHANCE : cette vidéo disparaît à minuit !",
+              "bonne": false,
+              "feedback": "Piège de l'urgence : le compte à rebours te pousse à regarder MAINTENANT, sans réfléchir. En vrai, rien ne disparaît."
+            },
+            {
+              "texte": "Je fixe une heure de fin AVANT d'ouvrir l'appli.",
+              "bonne": true,
+              "feedback": "Oui : décider à froid, avant que les mécanismes s'en mêlent, c'est le meilleur moyen de garder la main."
+            },
+            {
+              "texte": "🎁 Encore 3 vidéos et tu débloques un badge EXCLUSIF !",
+              "bonne": false,
+              "feedback": "Piège du cadeau : la récompense te fait « juste » prolonger. Un badge virtuel ne vaut pas ton heure de sommeil."
+            },
+            {
+              "texte": "😱 NE SOIS PAS LE DERNIER AU COURANT !!!",
+              "bonne": false,
+              "feedback": "Piège de l'émotion : majuscules + peur de rater (FOMO) pour te retenir. Demain, plus personne n'en parlera."
+            },
+            {
+              "texte": "Je me demande : cette vidéo, je l'ai choisie ou on me l'a servie ?",
+              "bonne": true,
+              "feedback": "La question magique : si tu ne l'as pas choisie, c'est la recommandation qui pilote. Se poser la question, c'est déjà reprendre la main."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Rapport d'autopsie de ta soirée : complète les conclusions de l'enquête.",
+          "texte": "La lecture {1} enchaîne les vidéos sans me demander mon avis. Les récompenses {2} me font scroller comme devant une machine à sous : je continue en espérant la pépite. La bulle de {3} ne me montre que ce qui m'a déjà retenu. Pour reprendre la {4}, je fixe une heure de fin avant d'ouvrir l'appli.",
+          "etiquettes": ["automatique", "variables", "recommandation", "main", "publicité", "garanties"],
+          "reponses": ["automatique", "variables", "recommandation", "main"],
+          "feedbackOk": "Rapport signé : lecture automatique, récompenses variables, bulle de recommandation — trois mécanismes conçus pour te retenir. Maintenant que tu sais les voir, ils marchent beaucoup moins bien sur toi.",
+          "feedbackKo": "Les conclusions : lecture AUTOMATIQUE, récompenses VARIABLES (c'est l'imprévu qui accroche, pas la garantie), bulle de RECOMMANDATION, et reprendre la MAIN. Trois mécanismes + un réflexe : voilà ce qu'il faut retenir."
+        }
+      ]
+    }
+  ]
+}

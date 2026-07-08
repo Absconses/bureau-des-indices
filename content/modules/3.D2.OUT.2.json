@@ -1,0 +1,267 @@
+{
+  "id": "3.D2.OUT.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Se familiariser avec l'intelligence artificielle générative (IAG) et percevoir les limites de cet outil.",
+  "titre": "L'IA en garde à vue",
+  "accroche": "NovaChat rédige ton exposé en dix secondes, sans une faute. Trop fort pour être net : au Bureau, les nouveaux témoins passent à l'interrogatoire.",
+  "documents": {
+    "bancEssai": {
+      "template": "collecte",
+      "sujet": "Banc d'essai de Maya — la même question posée au moteur Cherchio et à l'IA NovaChat : « Quand le festival de la BD de Valbourg a-t-il été créé ? »",
+      "extraits": [
+        {
+          "texte": "« Le festival de la BD de Valbourg a été créé en 2009 par le dessinateur Marc Delorme. Il attire chaque année plus de 200 000 visiteurs dans les rues de la ville. »",
+          "source": "NovaChat (IA générative), réponse du 12 mars — aucune source citée"
+        },
+        {
+          "texte": "« Notre histoire : le festival est né en 2014, à l'initiative de la médiathèque de Valbourg et d'une bande de libraires passionnés. »",
+          "source": "festivalbd-valbourg.fr/notre-histoire — site officiel du festival, 1er résultat Cherchio"
+        },
+        {
+          "texte": "« Dixième édition ! Le festival de la BD a fêté ses 10 ans ce week-end sous le soleil, avec une affluence record. »",
+          "source": "gazette-de-valbourg.fr — article du 15 mai 2024, 2e résultat Cherchio"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya (binôme d'exposé)", "avatar": "🤖" },
+          "etapes": [
+            { "de": "eux", "texte": "t'es là ? 🤖 pour l'exposé, j'ai fait un test : la même question posée au moteur Cherchio ET à l'IA NovaChat" },
+            { "de": "eux", "texte": "la question : « quand le festival de la BD de Valbourg a-t-il été créé ? »" },
+            { "de": "eux", "texte": "NovaChat m'a pondu un paragraphe nickel : « créé en 2009 par le dessinateur Marc Delorme »… mais le moteur m'affiche le site officiel du festival, qui dit 2014 😵" },
+            {
+              "choix": [
+                {
+                  "texte": "NovaChat : ça s'écrit tellement bien que c'est forcément vrai.",
+                  "ok": false,
+                  "feedback": "Bien écrit ne veut pas dire vrai. Une IAG fabrique la phrase la plus probable, elle ne vérifie pas les faits — elle peut se tromper avec style."
+                },
+                {
+                  "texte": "Le site officiel : on sait qui parle, et le festival connaît sa propre histoire.",
+                  "ok": true,
+                  "feedback": "Oui. Une source identifiable et directement concernée pèse plus lourd qu'un texte anonyme, même très bien tourné. Ici, l'IA a inventé — joliment."
+                },
+                {
+                  "texte": "Les deux : on n'a qu'à écrire « créé entre 2009 et 2014 ».",
+                  "ok": false,
+                  "feedback": "La vérité ne se coupe pas en deux 😄. Quand deux réponses se contredisent, on cherche la source la plus fiable — on ne fait pas la moyenne."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok mais ça me perturbe… pourquoi NovaChat invente ?? il avait l'air hyper sûr de lui" },
+            {
+              "choix": [
+                {
+                  "texte": "Quelqu'un a dû le pirater pour y glisser des fausses infos.",
+                  "ok": false,
+                  "feedback": "Pas besoin de pirate : c'est son fonctionnement normal. Une IAG assemble des mots probables ; quand elle ne sait pas, elle comble les trous — sans prévenir."
+                },
+                {
+                  "texte": "Il « hallucine » : quand il ne sait pas, il fabrique une réponse plausible.",
+                  "ok": true,
+                  "feedback": "C'est le mot exact : une hallucination. L'IAG produit du texte crédible même quand elle ne sait rien — avec le même aplomb que quand elle a raison."
+                },
+                {
+                  "texte": "Il a raison : c'est le site du festival qui n'est pas à jour.",
+                  "ok": false,
+                  "feedback": "Une date de création ne se périme pas, et le festival est le mieux placé pour connaître la sienne. Le témoin le plus flou ici, c'est l'IA sans source."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Verdict du Bureau : l'IAG rédige vite et bien, mais elle peut inventer avec aplomb et ne cite pas ses sources. Traite-la comme un témoin bavard : écoute, note… et vérifie ailleurs." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Fiche d'identité du suspect « IAG » : classe chaque mission selon ce qu'elle sait vraiment faire.",
+          "categories": [
+            { "id": "fort", "label": "💪 Elle assure" },
+            { "id": "mort", "label": "⚠️ Angle mort" }
+          ],
+          "items": [
+            {
+              "texte": "Reformuler ta lettre de motivation de stage pour la rendre plus claire",
+              "categorie": "fort",
+              "feedbackOk": "Oui : reformuler, c'est son cœur de métier. Elle produit du texte fluide à partir du tien — vérifie juste que le sens n'a pas bougé.",
+              "feedbackKo": "C'est pourtant sa spécialité : produire et reformuler du texte. Là où elle se plante, c'est sur les faits, pas sur le style."
+            },
+            {
+              "texte": "Te donner le score du match d'hier soir",
+              "categorie": "mort",
+              "feedbackOk": "Bien vu : une IAG a appris sur des textes qui s'arrêtent à une certaine date. Pour l'actu toute fraîche, elle risque d'inventer un score.",
+              "feedbackKo": "Piège : ses connaissances s'arrêtent à la date de son entraînement. Pour hier soir, elle peut te sortir un score inventé — moteur ou site d'info obligatoire."
+            },
+            {
+              "texte": "Résumer un article de trois pages en cinq lignes",
+              "categorie": "fort",
+              "feedbackOk": "Exact : résumer un texte qu'on lui donne, elle fait ça très bien. Pratique pour dégrossir un document avant de le lire en entier.",
+              "feedbackKo": "C'est un de ses points forts : condenser un texte qu'on lui fournit. Le danger n'est pas là — il est dans les faits qu'elle avance toute seule."
+            },
+            {
+              "texte": "Citer précisément d'où viennent ses informations",
+              "categorie": "mort",
+              "feedbackOk": "Exact : elle a mélangé des millions de textes sans en garder l'adresse. Souvent pas de source — et parfois des sources… inventées.",
+              "feedbackKo": "Angle mort majeur : une IAG ne garde pas l'adresse de ce qu'elle a lu. Elle cite rarement ses sources, et il lui arrive d'en inventer."
+            },
+            {
+              "texte": "Te proposer un plan pour ton oral de stage",
+              "categorie": "fort",
+              "feedbackOk": "Oui : proposer des idées et une structure, elle fait ça bien. C'est un point de départ — le contenu et le vécu, c'est toi.",
+              "feedbackKo": "C'était un point fort : brainstormer et structurer, elle sait faire. Ensuite, à toi de remplir le plan avec TON stage."
+            },
+            {
+              "texte": "Répondre sans consommer d'eau ni d'électricité",
+              "categorie": "mort",
+              "feedbackOk": "Bien vu : chaque réponse tourne dans des data centers gourmands en électricité et refroidis à l'eau. Une IAG a un coût écologique bien réel.",
+              "feedbackKo": "Angle mort invisible : derrière chaque réponse, des data centers qui consomment de l'électricité et de l'eau de refroidissement. L'IAG n'est pas magique, elle est branchée."
+            }
+          ]
+        },
+        {
+          "consigne": "Fiche d'identité du suspect « IAG » : classe chaque mission selon ce qu'elle sait vraiment faire.",
+          "categories": [
+            { "id": "fort", "label": "💪 Elle assure" },
+            { "id": "mort", "label": "⚠️ Angle mort" }
+          ],
+          "items": [
+            {
+              "texte": "T'aider à trouver des idées pour ton oral du brevet",
+              "categorie": "fort",
+              "feedbackOk": "Oui : brainstormer, proposer des pistes, débloquer une page blanche — elle est douée pour ça. Les idées à garder, c'est toi qui choisis.",
+              "feedbackKo": "C'était un point fort : proposer des idées en vrac, elle sait très bien faire. Son problème, c'est la fiabilité des faits, pas l'imagination."
+            },
+            {
+              "texte": "Garantir que tout ce qu'elle raconte est vrai",
+              "categorie": "mort",
+              "feedbackOk": "Exact : elle peut « halluciner », c'est-à-dire inventer une info plausible avec un ton très sûr d'elle. Aucune garantie sans vérification.",
+              "feedbackKo": "Angle mort central : une IAG peut inventer une réponse crédible sans prévenir — on appelle ça une hallucination. Rien n'est garanti, tout se vérifie."
+            },
+            {
+              "texte": "Corriger l'orthographe de ton CV pour le stage",
+              "categorie": "fort",
+              "feedbackOk": "Oui : orthographe, tournures, mise au propre — c'est du travail sur le texte, son point fort. Relis quand même : le CV, c'est ta vie, pas la sienne.",
+              "feedbackKo": "C'est pourtant dans ses cordes : corriger et améliorer un texte qu'on lui donne. Ses failles sont ailleurs : les faits, les sources, l'actu."
+            },
+            {
+              "texte": "Savoir ce qui s'est passé dans l'actualité cette semaine",
+              "categorie": "mort",
+              "feedbackOk": "Bien vu : ses connaissances datent de son entraînement. L'actu de la semaine, c'est le rayon des sites d'info et des moteurs, pas le sien.",
+              "feedbackKo": "Piège : une IAG a appris sur des textes arrêtés à une certaine date. Pour l'actu récente, elle peut répondre à côté — ou inventer sans te le dire."
+            },
+            {
+              "texte": "Réécrire un paragraphe compliqué en français simple",
+              "categorie": "fort",
+              "feedbackOk": "Exact : simplifier un texte qu'on lui fournit, c'est sa grande force. Idéal pour comprendre un document difficile trouvé au CDI.",
+              "feedbackKo": "C'est un de ses points forts : reformuler en plus simple un texte qu'on lui donne. Le danger, ce sont les infos qu'elle ajoute toute seule."
+            },
+            {
+              "texte": "Fonctionner sans data centers gourmands en énergie",
+              "categorie": "mort",
+              "feedbackOk": "Bien vu : pas d'IAG sans data centers, et pas de data centers sans beaucoup d'électricité et d'eau pour les refroidir. Ce coût écologique reste invisible à l'écran.",
+              "feedbackKo": "Angle mort invisible : chaque requête fait tourner des machines très gourmandes en électricité et en eau. L'impact écologique de l'IAG est bien réel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "bancEssai",
+          "questions": [
+            {
+              "question": "Compare les trois extraits du banc d'essai de Maya : quelle information de NovaChat est contredite par les résultats du moteur ?",
+              "options": [
+                "Le nom de la ville",
+                "La date de création du festival",
+                "Le nombre de visiteurs annoncé",
+                "Aucune : les trois extraits disent la même chose"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : NovaChat annonce 2009, mais le site officiel dit 2014 — et la Gazette confirme en fêtant les 10 ans en 2024. Deux sources identifiables contre une IA sans source : l'enquête est pliée.",
+              "feedbackKo": "Regarde les dates : NovaChat dit « créé en 2009 », le site officiel dit 2014, et l'article qui fête les 10 ans en 2024 confirme 2014. Le nombre de visiteurs, lui, n'est contredit nulle part — il est juste invérifiable."
+            },
+            {
+              "question": "Qu'est-ce qui rend la réponse de NovaChat impossible à vérifier directement ?",
+              "options": [
+                "Elle est trop courte",
+                "Elle ne cite aucune source",
+                "Elle est mal écrite",
+                "Elle ne donne aucun chiffre"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « aucune source citée », dit la fiche. Sans adresse, impossible de remonter à l'origine de l'info. Les extraits du moteur, eux, ont une adresse : tu peux aller vérifier qui parle.",
+              "feedbackKo": "Relis la ligne source du premier extrait : « aucune source citée ». La réponse est bien écrite et pleine de chiffres — mais sans source, tu ne peux pas vérifier qui parle. C'est l'angle mort n°1 des IAG."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Des affirmations et des pubs défilent. Clique les infos fiables sur l'IAG, laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Une IAG peut inventer une réponse fausse avec un ton très sûr d'elle.",
+              "bonne": true,
+              "feedback": "Vrai : c'est l'« hallucination ». Le ton assuré ne prouve rien — on vérifie ailleurs, comme pour n'importe quel témoin."
+            },
+            {
+              "texte": "🎁 OFFRE LIMITÉE : l'IA GénieMax fait tes devoirs SANS AUCUNE ERREUR !",
+              "bonne": false,
+              "feedback": "Piège : cadeau + urgence + promesse impossible. Aucune IA n'est « sans erreur » — c'est un argument de vente, pas une information."
+            },
+            {
+              "texte": "Avant de recopier une réponse d'IA, je la recoupe avec une autre source.",
+              "bonne": true,
+              "feedback": "Bon réflexe d'enquêteur : une IAG est un témoin bavard, pas une preuve. On croise toujours avec une source identifiable."
+            },
+            {
+              "texte": "⚠️ URGENT : teste VITE l'IA qui SAIT TOUT avant son interdiction !!!",
+              "bonne": false,
+              "feedback": "Piège : majuscules, urgence, « sait tout »… trois techniques de manipulation en une phrase. Personne ne sait tout, pas même une IA."
+            },
+            {
+              "texte": "Faire tourner une IAG consomme beaucoup d'électricité et d'eau.",
+              "bonne": true,
+              "feedback": "Vrai : les data centers qui la font fonctionner chauffent, et on les refroidit à l'eau. Chaque requête a un coût écologique."
+            },
+            {
+              "texte": "😭 Sans l'appli BrevetIA, tu vas rater ton brevet, c'est prouvé.",
+              "bonne": false,
+              "feedback": "Piège : appel à la peur + « c'est prouvé » sans aucune preuve. Une pub qui te fait peur veut ton clic, pas ta réussite."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

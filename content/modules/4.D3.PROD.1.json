@@ -1,0 +1,245 @@
+{
+  "id": "4.D3.PROD.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Élaborer et diffuser des contenus en respectant les droits d'auteur et le code de la propriété intellectuelle.",
+  "titre": "Copié, collé, coincé ?",
+  "accroche": "Ton diaporama est superbe : musique stylée, photo de pro, paragraphe impeccable… sauf que rien de tout ça n'est à toi. Avant de le projeter devant la classe, vérifions qu'il est vraiment réglo.",
+  "documents": {
+    "pagePhotoLynx": {
+      "template": "site-article",
+      "nomSite": "LUMIÈRE SAUVAGE",
+      "url": "https://www.lumiere-sauvage.fr/galerie/lynx-des-brumes",
+      "menu": ["Galerie", "Tirages", "Stages photo", "Contact"],
+      "surtitre": "Galerie — Faune des montagnes",
+      "titre": "« Lynx des brumes », l'affût d'une vie",
+      "auteur": "Par Nino Vasseur, photographe animalier",
+      "date": "publié le 12 mars",
+      "chapo": "Quatre nuits d'affût dans le massif du Hautval pour croiser enfin ce regard. Ma photo préférée — et la plus copiée, hélas.",
+      "corps": [
+        "Cette image, je l'ai attendue quatre nuits, par -8 °C. Le lynx est passé à vingt mètres de mon affût, juste avant le lever du soleil. Un seul déclenchement : celui-là.",
+        "Depuis, « Lynx des brumes » circule un peu partout en ligne, souvent sans mon nom. Rappel important : mes photos sont mon travail, c'est lui qui me fait vivre.",
+        "© Nino Vasseur — Tous droits réservés. Toute utilisation (site, blog, exposé, réseaux) demande mon autorisation écrite : passez par la page Contact, je réponds vite — et c'est souvent oui pour les projets scolaires !"
+      ],
+      "footer": ["Contact", "Mentions légales", "Conditions d'utilisation des photos"]
+    },
+    "serpMusique": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=musique+gratuite+pour+diaporama",
+      "requete": "musique gratuite pour diaporama",
+      "nbResultats": "Environ 1 870 000 résultats (0,38 seconde)",
+      "resultats": [
+        {
+          "annonce": true,
+          "url": "www.hits-illimites.biz › vip",
+          "titre": "🎁 TÉLÉCHARGE les 100 tubes du moment GRATUIT !!!",
+          "extrait": "Toutes les chansons de l'année sans payer un centime. Offre limitée, fonce avant la fermeture du site !"
+        },
+        {
+          "url": "www.audiocommuns.org › catalogue",
+          "titre": "AudioCommuns — des milliers de musiques sous licences Creative Commons",
+          "extrait": "Des morceaux que leurs auteurs autorisent à réutiliser. La licence (CC BY, CC0…) est affichée sous chaque piste : vérifie-la avant de télécharger."
+        },
+        {
+          "url": "forum.zikfans.net › discussion-2214",
+          "titre": "le dernier album en mp3, quelqu'un l'a ?",
+          "extrait": "31 messages — « envoie-le moi en privé, ni vu ni connu 🤫 ». Partages de fichiers entre fans."
+        },
+        {
+          "url": "www.encyclo-musique.fr › articles",
+          "titre": "Qu'est-ce qu'une licence musicale ?",
+          "extrait": "Comprendre le droit d'auteur dans la musique : définitions, histoire et grandes dates. Un dossier complet, sans extrait sonore."
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "pagePhotoLynx",
+          "questions": [
+            {
+              "question": "La photo de ton diaporama vient de cette page — sans nom d'auteur. D'après la page, cette photo est…",
+              "options": [
+                "Libre : elle circule déjà partout en ligne",
+                "Protégée : tous droits réservés à Nino Vasseur",
+                "À tout le monde, puisqu'un lynx n'est pas un auteur",
+                "Utilisable si on la recadre un peu"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact, le dernier paragraphe l'annonce : « © Nino Vasseur — Tous droits réservés ». Dès qu'elle est créée, une photo appartient à son auteur : c'est le droit d'auteur, et « déjà copiée partout » ne l'annule pas.",
+              "feedbackKo": "La réponse était dans le dernier paragraphe : « © Nino Vasseur — Tous droits réservés ». Une œuvre appartient à son auteur dès sa création — même recadrée, même copiée mille fois, elle reste protégée."
+            },
+            {
+              "question": "Tu tiens vraiment à cette photo pour ton exposé. Que te propose la page ?",
+              "options": [
+                "Demander l'autorisation via la page Contact — c'est souvent oui pour l'école",
+                "La prendre quand même : un exposé, ce n'est pas vraiment public",
+                "Écrire « source : internet » sous l'image",
+                "Attendre qu'elle soit assez copiée pour devenir libre"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui ! Nino le dit lui-même : « c'est souvent oui pour les projets scolaires ». Demander l'autorisation, c'est simple, souvent gratuit pour l'école — et c'est la seule façon légale d'utiliser une œuvre protégée.",
+              "feedbackKo": "Relis la fin de la page : Nino demande une autorisation écrite via la page Contact — et précise que c'est « souvent oui » pour l'école. « Source : internet » ne crédite personne, et une œuvre ne devient jamais libre à force d'être copiée."
+            }
+          ]
+        },
+        {
+          "document": "pagePhotoLynx",
+          "questions": [
+            {
+              "question": "En lisant la page, pourquoi Nino Vasseur tient-il autant à ses droits sur cette photo ?",
+              "options": [
+                "Il déteste partager ses images",
+                "Ses photos sont son travail : c'est ce qui le fait vivre",
+                "Il veut devenir célèbre",
+                "La loi l'oblige à écrire ce paragraphe"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact, c'est écrit noir sur blanc : « mes photos sont mon travail, c'est lui qui me fait vivre ». Le droit d'auteur protège le travail des créateurs — copier sans accord, c'est les priver de leur salaire.",
+              "feedbackKo": "Le deuxième paragraphe le disait : « mes photos sont mon travail, c'est lui qui me fait vivre ». Quatre nuits à -8 °C pour un seul cliché… Le droit d'auteur existe pour protéger ce travail-là."
+            },
+            {
+              "question": "Ton camarade a mis la photo dans le diapo avec la légende « photo trouvée sur internet ». D'après la page, qu'aurait-il fallu faire ?",
+              "options": [
+                "Rien de plus : une légende suffit toujours",
+                "Écrire le nom de Nino Vasseur, et c'est tout",
+                "Obtenir son autorisation écrite via la page Contact",
+                "Flouter un peu la photo pour la rendre libre"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui, la page est claire : « toute utilisation demande mon autorisation écrite ». Quand une œuvre est « tous droits réservés », créditer ne suffit pas : il faut l'accord de l'auteur. Bonne nouvelle : pour l'école, il dit souvent oui.",
+              "feedbackKo": "Relis le dernier paragraphe : « toute utilisation demande mon autorisation écrite ». Citer le nom ne suffit pas quand l'œuvre est « tous droits réservés » — et « trouvée sur internet », ce n'est même pas un crédit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Tu refais ton diaporama proprement. Pour chaque élément, décide dans quelle case il tombe.",
+          "categories": [
+            { "id": "libre", "label": "✅ Libre, fonce" },
+            { "id": "conditions", "label": "📝 Oui, si tu crédites ou cites" },
+            { "id": "interdit", "label": "🚫 Pas sans autorisation" }
+          ],
+          "items": [
+            {
+              "texte": "La photo du ciel que tu as prise toi-même hier soir",
+              "categorie": "libre",
+              "feedbackOk": "Oui : tu es l'auteur, donc les droits sont à toi. Créer ses propres images, c'est la solution la plus simple — et la plus classe.",
+              "feedbackKo": "C'est TA photo : tu en es l'auteur, les droits t'appartiennent. Tu peux l'utiliser librement — créer soi-même, c'est toujours gagnant."
+            },
+            {
+              "texte": "Une musique publiée sous licence CC BY sur une banque de sons",
+              "categorie": "conditions",
+              "feedbackOk": "Exact : CC BY = utilisation autorisée à condition de créditer l'auteur (BY = « par »). Une licence Creative Commons, c'est une permission donnée à l'avance par l'auteur.",
+              "feedbackKo": "CC BY est une licence Creative Commons : l'auteur autorise l'utilisation à l'avance, à condition d'afficher son nom (BY = « par »). Autorisé, oui — mais jamais sans crédit."
+            },
+            {
+              "texte": "Le tube du moment de ta chanteuse préférée, en fond sonore",
+              "categorie": "interdit",
+              "feedbackOk": "Bien vu : une chanson du commerce est protégée par le droit d'auteur. La diffuser devant la classe sans autorisation est interdit — même « juste en fond ».",
+              "feedbackKo": "Un tube du commerce est protégé : auteur, compositrice, interprète et producteur ont des droits dessus. Sans autorisation, pas de diffusion — même en fond sonore d'un exposé."
+            },
+            {
+              "texte": "Trois phrases d'un livre documentaire, pour appuyer ton idée",
+              "categorie": "conditions",
+              "feedbackOk": "Oui : c'est le droit de citation. Un extrait court est autorisé si tu le mets entre guillemets et que tu indiques l'auteur et le titre. Court + guillemets + source = légal.",
+              "feedbackKo": "Trois phrases, c'est une citation : la loi l'autorise SI l'extrait reste court, entre guillemets, avec l'auteur et le titre. Sans ces conditions, ça devient de la copie."
+            },
+            {
+              "texte": "Un paragraphe entier d'un site, recopié comme si tu l'avais écrit",
+              "categorie": "interdit",
+              "feedbackOk": "Exact : recopier en faisant croire que c'est toi, c'est du plagiat — un vol du travail de l'auteur. Et les profs le repèrent en une seule recherche.",
+              "feedbackKo": "Recopier un texte en le faisant passer pour le tien, c'est du plagiat : interdit, même en changeant deux mots. Reformule vraiment avec tes phrases, puis cite ta source."
+            },
+            {
+              "texte": "Un bruitage publié en CC0 (« aucun droit réservé »)",
+              "categorie": "libre",
+              "feedbackOk": "Oui : CC0, c'est l'auteur qui offre son œuvre à tous, sans aucune condition — même pas le crédit. Utilisation libre (mais citer l'auteur reste sympa).",
+              "feedbackKo": "CC0 = « zéro condition » : l'auteur a volontairement tout offert, c'est la plus libre des licences Creative Commons. Utilisation libre, crédit facultatif."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpMusique",
+          "consigne": "Il te faut une musique légale pour remplacer le tube protégé de ton diapo. Touche le résultat qui te permet d'en trouver une sans enfreindre la loi.",
+          "cibles": ["res-2", "res-2-titre", "res-2-url"],
+          "essaisMax": 3,
+          "indices": [
+            "Élimine ce qui sent le piratage : « GRATUIT !!! », « ni vu ni connu »… Gratuit ne veut pas dire légal.",
+            "Cherche le résultat qui parle de licences Creative Commons : des morceaux que les auteurs autorisent eux-mêmes à réutiliser."
+          ],
+          "feedbackOk": "Bonne pioche : sur AudioCommuns, les auteurs publient leurs morceaux sous licences Creative Commons — la permission est donnée à l'avance et affichée sous chaque piste. Le site des « 100 tubes GRATUIT », lui, distribue des chansons protégées : c'est du piratage, même si c'est gratuit pour toi.",
+          "feedbackKo": "Le bon résultat était le 2e, AudioCommuns : des musiques sous licences Creative Commons, donc autorisées à l'avance par leurs auteurs. « Tubes GRATUIT !!! » et « ni vu ni connu », c'est du piratage de chansons protégées ; et l'encyclopédie explique les licences mais ne propose aucun morceau."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Dernière répétition avant l'exposé ! Clique les réflexes réglo, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Sous la photo, j'écris : « Photo : Nino Vasseur, avec son autorisation »",
+              "bonne": true,
+              "feedback": "Réflexe parfait : autorisation obtenue + crédit affiché. L'auteur est respecté, ton diapo est irréprochable."
+            },
+            {
+              "texte": "🎁 GRATUIT : les 100 tubes de l'été sans payer !! Clique avant MINUIT !!!",
+              "bonne": false,
+              "feedback": "Cadeau + urgence + majuscules : le combo classique du piège. Et derrière, du piratage — ces chansons restent protégées, « gratuit » ne veut pas dire légal."
+            },
+            {
+              "texte": "Je mets ma citation entre guillemets, avec le nom de l'auteure et le titre du livre",
+              "bonne": true,
+              "feedback": "C'est le droit de citation dans les règles : extrait court, guillemets, source. Légal — et en plus, ça rend ton exposé plus sérieux."
+            },
+            {
+              "texte": "Change juste trois mots au paragraphe copié, AUCUN prof ne le verra 😏",
+              "bonne": false,
+              "feedback": "Changer trois mots, c'est toujours du plagiat — et « personne ne le verra » est là pour endormir ta vigilance. Reformule vraiment, puis cite ta source."
+            },
+            {
+              "texte": "Pour le fond sonore, je choisis un morceau en CC0 sur une banque de sons",
+              "bonne": true,
+              "feedback": "Bon réflexe : CC0, c'est l'auteur qui a tout autorisé à l'avance, sans condition. Musique légale, exposé tranquille."
+            },
+            {
+              "texte": "Tout le monde copie-colle, tu serais VRAIMENT bête de te priver…",
+              "bonne": false,
+              "feedback": "« Tout le monde le fait » + moquerie : c'est de la pression sociale, pas un argument. Le plagiat reste du plagiat, même très répandu."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

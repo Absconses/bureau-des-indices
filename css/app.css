@@ -400,6 +400,16 @@ body.mode-chrono .lecteur__quitter { background: transparent; color: var(--paper
   border-top: 2px dashed var(--line); padding-top: var(--sp-4); }
 .chat__choix .legende { text-align: center; }
 
+/* ----- Pastilles de parcours (5e / 4e / 3e) ----------------------------------------------- */
+.pills { display: flex; gap: var(--sp-2); margin-bottom: var(--sp-2); }
+.pill {
+  min-height: var(--tap-min); padding: 0 var(--sp-5);
+  border: var(--border-strong); border-radius: var(--r-full);
+  background: var(--paper-raised); font: 700 13px var(--font-mono);
+  letter-spacing: 0.04em; cursor: pointer; color: var(--ink);
+}
+.pill--active { background: var(--ink); color: var(--paper); box-shadow: var(--shadow-pop); }
+
 /* ----- Écran de connexion --------------------------------------------------------------- */
 .connexion { justify-content: center; max-width: 420px; margin: 0 auto; width: 100%; }
 .connexion__logo { text-align: center; margin-bottom: var(--sp-8); }

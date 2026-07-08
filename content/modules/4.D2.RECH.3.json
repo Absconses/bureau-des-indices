@@ -1,0 +1,202 @@
+{
+  "id": "4.D2.RECH.3",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Collecter les informations et les organiser.",
+  "titre": "Le trou dans la collecte",
+  "accroche": "Ta collecte déborde d'extraits, bravo. Mais avant de rédiger, un bon enquêteur classe ses indices, traque les doublons… et débusque la question restée sans réponse.",
+  "documents": {
+    "collecteSommeil": {
+      "template": "collecte",
+      "sujet": "Écrans et sommeil (exposé SVT) — Sous-questions : ① Pourquoi les écrans retardent le sommeil · ② Combien d'heures il nous faut · ③ Comment mieux dormir",
+      "extraits": [
+        {
+          "texte": "① « La lumière bleue des écrans bloque la mélatonine, l'hormone qui déclenche le sommeil. »",
+          "source": "sciences-ado.fr/lumiere-bleue — consulté le 12 janvier 2026"
+        },
+        {
+          "texte": "② « Entre 13 et 15 ans, un adolescent a besoin d'environ 9 heures de sommeil par nuit. »",
+          "source": "dormir-malin.fr/besoins-ados — consulté le 12 janvier 2026"
+        },
+        {
+          "texte": "① « Le soir, la lumière des écrans empêche la fabrication de mélatonine : on s'endort plus tard. »",
+          "source": "revue-neurones.fr/ecrans-sommeil — consulté le 14 janvier 2026"
+        },
+        {
+          "texte": "② « Un collégien sur trois dort moins de 7 heures les veilles de cours. »",
+          "source": "actu-sante-jeunes.fr/sondage-sommeil — consulté le 15 janvier 2026"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteSommeil",
+          "questions": [
+            {
+              "question": "Ta carte de collecte est affichée. Quelle sous-question n'a encore AUCUN extrait ?",
+              "options": [
+                "① Pourquoi les écrans retardent le sommeil",
+                "② Combien d'heures il nous faut",
+                "③ Comment mieux dormir"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Bien vu : chaque extrait porte un ① ou un ②… mais aucun ③. C'est le trou de ta collecte : si tu rédiges maintenant, ta partie « solutions » sera vide.",
+              "feedbackKo": "Regarde le numéro devant chaque extrait : ①, ②, ①, ②… et zéro ③. « Comment mieux dormir » n'a aucune source — c'est le trou à repérer AVANT de rédiger, pas au moment de rendre l'exposé."
+            },
+            {
+              "question": "Combien d'extraits répondent déjà à la sous-question ② « Combien d'heures il nous faut » ?",
+              "options": ["Aucun", "Un seul", "Deux", "Trois"],
+              "bonnes": [2],
+              "feedbackOk": "Exact : l'extrait 2 (besoin de 9 heures) et l'extrait 4 (un collégien sur trois dort moins de 7 heures) portent le tag ②. Cette partie-là est prête à être rédigée.",
+              "feedbackKo": "Compte les tags ② dans la carte : l'extrait 2 (9 heures de sommeil) et l'extrait 4 (un collégien sur trois). Deux extraits sourcés = une partie prête. Classer par sous-question sert exactement à voir ça d'un coup d'œil."
+            }
+          ]
+        },
+        {
+          "document": "collecteSommeil",
+          "questions": [
+            {
+              "question": "Tu attaques la partie « ③ Comment mieux dormir ». Que montre ta carte de collecte ?",
+              "options": [
+                "Deux extraits sont prêts pour cette partie",
+                "Aucun extrait ne porte le tag ③ : rien n'est collecté",
+                "L'extrait 4 répond à cette sous-question"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : aucun ③ dans la carte. Repérer ce trou maintenant t'évite de bloquer devant un paragraphe vide — direction la collecte avant la rédaction !",
+              "feedbackKo": "Parcours les tags de la carte : ①, ②, ①, ②… aucun ③. L'extrait 4 parle du sommeil trop court, pas des solutions. Une sous-question sans source, c'est un trou à combler avant de rédiger."
+            },
+            {
+              "question": "Tu trouves ce nouvel extrait : « Lire un livre plutôt que scroller aide à s'endormir ». Où le ranger dans ta carte ?",
+              "options": [
+                "① Pourquoi les écrans retardent le sommeil",
+                "② Combien d'heures il nous faut",
+                "③ Comment mieux dormir"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui : c'est un conseil pour mieux dormir → tag ③. Et bonne nouvelle : tu viens de combler le trou de ta collecte.",
+              "feedbackKo": "Relis l'extrait : il donne un conseil (« lire plutôt que scroller »), il répond donc à « Comment mieux dormir » → ③. Un extrait se range sous la sous-question à laquelle il répond, pas juste sous un mot qu'il contient."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "collecteSommeil",
+          "consigne": "Alerte doublon ! Un extrait de ta carte répète l'information de l'extrait 1. Touche-le.",
+          "cibles": ["extrait-3"],
+          "essaisMax": 3,
+          "indices": [
+            "Relis l'extrait 1 : lumière des écrans + mélatonine. Quel autre extrait raconte la même chose ?",
+            "Compare les extraits 3 et 4 : lequel redit, avec d'autres mots, ce que dit déjà l'extrait 1 ?"
+          ],
+          "feedbackOk": "Oui : les extraits 1 et 3 disent la même chose — écrans → mélatonine bloquée → endormissement retardé — juste formulée autrement. Garde-en un seul dans ta carte, et note que deux sources différentes confirment l'info : bon point pour la fiabilité !",
+          "feedbackKo": "Le doublon était l'extrait 3 : comme l'extrait 1, il explique que la lumière des écrans bloque la mélatonine. Un doublon, c'est la même info en double ; on en garde une seule, sinon on rédige deux fois la même phrase dans l'exposé."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "De nouveaux extraits arrivent pour ta carte « Écrans et sommeil ». Range chacun sous la bonne sous-question — et flaire celui que tu as déjà !",
+          "categories": [
+            { "id": "sq1", "label": "① Pourquoi les écrans gênent" },
+            { "id": "sq2", "label": "② Combien d'heures il faut" },
+            { "id": "sq3", "label": "③ Comment mieux dormir" },
+            { "id": "doublon", "label": "🗑 Doublon : déjà dans la carte" }
+          ],
+          "items": [
+            {
+              "texte": "« Les notifications reçues la nuit coupent le sommeil en morceaux. »",
+              "categorie": "sq1",
+              "feedbackOk": "Oui : ça explique comment les écrans gênent le sommeil → ①. Et c'est une info nouvelle : ta carte parlait de la lumière bleue, pas des notifications.",
+              "feedbackKo": "Cet extrait explique un effet des écrans sur le sommeil (les notifications le coupent) : il se range en ①. Et ce n'est pas un doublon : ta carte ne parlait que de la lumière bleue."
+            },
+            {
+              "texte": "« À 14 ans, il est recommandé de dormir environ 9 heures par nuit. »",
+              "categorie": "doublon",
+              "feedbackOk": "Bien flairé : ta carte contient déjà cette info (extrait 2 : 9 heures entre 13 et 15 ans). Même info, autre formulation = doublon, inutile de la collecter deux fois.",
+              "feedbackKo": "Piège ! Relis l'extrait 2 de ta carte : « entre 13 et 15 ans… 9 heures par nuit ». Même info, autre formulation = doublon. Avant de ranger un extrait, vérifie toujours s'il est déjà là."
+            },
+            {
+              "texte": "« Éteindre les écrans une heure avant le coucher facilite l'endormissement. »",
+              "categorie": "sq3",
+              "feedbackOk": "Exact : c'est un conseil pour mieux dormir → ③. Le trou de ta collecte commence enfin à se remplir !",
+              "feedbackKo": "« Éteindre les écrans une heure avant », c'est un conseil pour mieux dormir : direction ③ — justement la sous-question qui n'avait encore aucune source."
+            },
+            {
+              "texte": "« Vers 17 ans, le besoin de sommeil descend autour de 8 heures par nuit. »",
+              "categorie": "sq2",
+              "feedbackOk": "Oui : c'est une info sur le nombre d'heures nécessaires → ②. Et elle est nouvelle : ta carte parlait des 13-15 ans, pas des 17 ans.",
+              "feedbackKo": "Cet extrait parle du besoin de sommeil (8 heures vers 17 ans) : il se range en ②. Ce n'est pas un doublon : ta carte donnait le chiffre des 13-15 ans, pas celui des 17 ans."
+            },
+            {
+              "texte": "« Ranger son téléphone hors de la chambre améliore la qualité du sommeil. »",
+              "categorie": "sq3",
+              "feedbackOk": "Oui : encore un conseil → ③. Avec deux extraits sourcés, ta partie « solutions » est enfin prête à être rédigée.",
+              "feedbackKo": "C'est un conseil pour mieux dormir → ③. Astuce : demande-toi à quelle question l'extrait répond, pas seulement de quoi il parle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur l'organisation de ta collecte ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Classer ses extraits par sous-question aide à voir ce qui manque.",
+              "vrai": true,
+              "feedback": "Vrai. Une carte organisée montre d'un coup d'œil la sous-question vide — le fameux trou à combler avant de rédiger."
+            },
+            {
+              "texte": "Deux extraits qui disent la même chose, c'est deux fois plus d'infos pour l'exposé.",
+              "vrai": false,
+              "feedback": "Faux. C'est un doublon : la même info en double. On en garde un seul — mais deux sources différentes qui confirment, c'est bon signe pour la fiabilité."
+            },
+            {
+              "texte": "On peut commencer à rédiger même si une sous-question n'a aucune source.",
+              "vrai": false,
+              "feedback": "Faux, enfin mauvaise idée : tu vas bloquer sur un paragraphe vide. Repère le trou et retourne collecter d'abord."
+            },
+            {
+              "texte": "Un extrait sans source reste inutilisable, même bien classé.",
+              "vrai": true,
+              "feedback": "Vrai. L'organisation ne remplace pas la trace : sans adresse ni date, impossible de vérifier l'info ou de la citer."
+            },
+            {
+              "texte": "Ranger un extrait sous la mauvaise sous-question peut fausser tout un paragraphe.",
+              "vrai": true,
+              "feedback": "Vrai. Tu risques de rédiger un passage hors sujet. Relis chaque extrait et demande-toi : à quelle question répond-il ?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

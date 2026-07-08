@@ -1,0 +1,281 @@
+{
+  "id": "4.D3.POST.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "POST",
+  "objectif": "Adopter une posture réflexive et critique sur les contenus publiés et mieux comprendre ce qu'est la liberté d'expression.",
+  "titre": "Tout dire, vraiment ?",
+  "accroche": "Ça chauffe sur PixelArena, le forum de jeux vidéo de ta team. On te confie le badge de modérateur : à toi de repérer ce qui relève de la liberté d'expression… et ce qui n'en relève pas.",
+  "documents": {
+    "chartePixelArena": {
+      "template": "site-article",
+      "nomSite": "PIXELARENA.NET",
+      "url": "https://www.pixelarena.net/charte-du-forum",
+      "menu": ["Accueil", "Forums", "Tournois", "Charte"],
+      "surtitre": "Règles de la communauté",
+      "titre": "La charte du forum : tout dire, oui… mais pas n'importe quoi",
+      "auteur": "L'équipe de modération",
+      "date": "mise à jour le 12 mars",
+      "corps": [
+        "Ici, tu peux critiquer un jeu, un test, une mise à jour ou l'avis d'un autre joueur, même très fermement. Le désaccord fait vivre le forum : c'est ta liberté d'expression.",
+        "En revanche, la loi fixe des limites : l'injure, la diffamation et l'incitation à la haine sont interdites. Attaquer une personne, ou tout un groupe pour ce qu'il est (origine, sexe, religion, handicap…), ce n'est pas une opinion : c'est une infraction.",
+        "Les messages qui franchissent ces limites sont supprimés, et leurs auteurs peuvent être bannis, voire signalés aux autorités. Ce n'est pas de la censure : c'est l'application de la loi — la même que dans la rue ou au collège."
+      ],
+      "footer": ["Contact", "Signaler un message", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Premier jour comme modérateur de PixelArena : passe en revue les derniers messages et classe chacun dans la bonne colonne.",
+          "categories": [
+            { "id": "legitime", "label": "🟢 Désaccord musclé mais légitime" },
+            { "id": "moquerie", "label": "🟠 Moquerie limite" },
+            { "id": "stigma", "label": "🔴 Stigmatisation d'un groupe" }
+          ],
+          "items": [
+            {
+              "texte": "« La mise à jour 3.2 a massacré le jeu. Les nouvelles armes sont injouables, les devs devraient avoir honte. »",
+              "categorie": "legitime",
+              "feedbackOk": "Oui : c'est violent, mais ça critique le jeu et le travail des développeurs, pas une personne pour ce qu'elle est. La liberté d'expression protège ce genre de coup de gueule.",
+              "feedbackKo": "Relis bien : ce message s'en prend au jeu, pas aux gens. Critiquer une œuvre ou un travail, même durement, c'est exactement ce que la liberté d'expression protège."
+            },
+            {
+              "texte": "« Ton test de Nova Strike est n'importe quoi : 9/10 pour ça ?? Tes arguments ne tiennent pas une seconde. »",
+              "categorie": "legitime",
+              "feedbackOk": "Exact : il attaque le test et les arguments, pas l'auteur en tant que personne. Le désaccord, même sec, fait partie du débat.",
+              "feedbackKo": "Ce message conteste un avis et des arguments : c'est un désaccord, pas une attaque contre quelqu'un. Débattre fort reste un droit — c'était la colonne verte."
+            },
+            {
+              "texte": "« MDR vous avez vu Leo_du_62 jouer ? Même un poulpe endormi vise mieux que lui 😂 »",
+              "categorie": "moquerie",
+              "feedbackOk": "Bien vu : on ne débat plus, on ridiculise un joueur devant tout le forum. Pas forcément puni par la loi, mais blessant — et la charte peut le sanctionner.",
+              "feedbackKo": "Ici, plus personne ne critique une idée : on se moque d'UNE personne devant tout le monde. C'est la zone orange : blessant, souvent interdit par la charte du forum."
+            },
+            {
+              "texte": "« Warlokk a ENCORE perdu 🤣 quelqu'un peut lui offrir un tuto ? Ou des mains ? »",
+              "categorie": "moquerie",
+              "feedbackOk": "Exact : aucune idée là-dedans, juste une pique pour humilier un joueur. « C'est pour rire » n'empêche pas de blesser.",
+              "feedbackKo": "Ce message ne discute de rien : il se paye la tête d'un joueur précis. Moquerie limite : pas toujours illégal, mais humiliant — la colonne orange."
+            },
+            {
+              "texte": "« Les filles n'ont rien à faire dans les tournois, elles font perdre toutes les équipes. »",
+              "categorie": "stigma",
+              "feedbackOk": "Exact : ce message rejette tout un groupe pour ce qu'il est. Ce n'est plus une opinion, c'est de la discrimination — et la loi ne la protège pas.",
+              "feedbackKo": "Ce message ne critique ni un jeu ni un avis : il exclut toutes les filles, en bloc. Attaquer un groupe pour ce qu'il est, c'est de la stigmatisation — hors liberté d'expression."
+            },
+            {
+              "texte": "« Les joueurs étrangers pourrissent le classement, il faut tous les bannir du serveur. »",
+              "categorie": "stigma",
+              "feedbackOk": "Oui : « tous », à cause de leur origine — c'est un appel à exclure un groupe entier. La loi appelle ça de l'incitation à la haine, et la liberté d'expression ne couvre pas ça.",
+              "feedbackKo": "Regarde le mot « tous » : on condamne un groupe entier à cause de son origine. Ce n'est pas un désaccord, c'est de l'incitation à la haine — interdite par la loi."
+            }
+          ]
+        },
+        {
+          "consigne": "Premier jour comme modérateur de PixelArena : passe en revue les derniers messages et classe chacun dans la bonne colonne.",
+          "categories": [
+            { "id": "legitime", "label": "🟢 Désaccord musclé mais légitime" },
+            { "id": "moquerie", "label": "🟠 Moquerie limite" },
+            { "id": "stigma", "label": "🔴 Stigmatisation d'un groupe" }
+          ],
+          "items": [
+            {
+              "texte": "« Payer pour gagner, c'est honteux. Ce nouveau mode de jeu est une arnaque et je le dis haut et fort. »",
+              "categorie": "legitime",
+              "feedbackOk": "Oui : le ton est dur, mais la cible est le jeu et son système de paiement. Dénoncer ce qu'on trouve injuste, c'est le cœur de la liberté d'expression.",
+              "feedbackKo": "Relis : ce message critique un mode de jeu, pas une personne. Une critique forte d'un produit ou d'une idée reste protégée — colonne verte."
+            },
+            {
+              "texte": "« Ton top 10 est absurde : classer Galaxie Perdue premier, il faut oser. Aucun de tes arguments ne tient. »",
+              "categorie": "legitime",
+              "feedbackOk": "Exact : il démonte un classement et des arguments, pas la personne qui les a écrits. Le désaccord musclé fait partie du jeu.",
+              "feedbackKo": "Ce message s'attaque à un avis et à des arguments, pas à quelqu'un pour ce qu'il est. Débattre sèchement reste un droit — c'était la colonne verte."
+            },
+            {
+              "texte": "« Pixie_Mel a mis 3 heures sur le niveau 1 😂 quelqu'un lui montre où est le bouton “sauter” ? »",
+              "categorie": "moquerie",
+              "feedbackOk": "Bien vu : aucune idée à débattre, juste une joueuse ridiculisée devant tout le forum. Blessant, même « pour rire » — la charte peut sanctionner.",
+              "feedbackKo": "Ici, on ne discute de rien : on se moque d'UNE joueuse devant tout le monde. Zone orange : pas toujours illégal, mais humiliant et souvent contraire à la charte."
+            },
+            {
+              "texte": "« Le skin de TomTom_Gamer… on dirait qu'il s'est habillé dans le noir 🤣🤣 »",
+              "categorie": "moquerie",
+              "feedbackOk": "Exact : c'est une pique contre une personne, pas une critique du jeu. Une fois ça passe, répété ça devient du harcèlement.",
+              "feedbackKo": "Ce message vise un joueur précis pour s'en moquer, pas pour débattre. Moquerie limite : blessante pour la personne — la colonne orange."
+            },
+            {
+              "texte": "« Les joueurs sourds ne devraient pas avoir le droit de jouer en équipe, ils ralentissent tout le monde. »",
+              "categorie": "stigma",
+              "feedbackOk": "Exact : ce message veut exclure des joueurs à cause de leur handicap. Ce n'est pas une opinion, c'est de la discrimination — la loi l'interdit.",
+              "feedbackKo": "Regarde bien : on veut interdire le jeu à des personnes à cause de leur handicap. Attaquer un groupe pour ce qu'il est = stigmatisation, hors liberté d'expression."
+            },
+            {
+              "texte": "« Les gens du quartier des Tilleuls sont tous des tricheurs, bannissez-les à vue. »",
+              "categorie": "stigma",
+              "feedbackOk": "Oui : « tous des tricheurs », juste à cause de leur quartier — on condamne un groupe entier sans aucun fait. C'est de la stigmatisation, pas une opinion.",
+              "feedbackKo": "Le piège : « tous ». Accuser un groupe entier à cause de son origine ou de son quartier, ce n'est pas un avis, c'est de la stigmatisation — colonne rouge."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "chartePixelArena",
+          "questions": [
+            {
+              "question": "D'après la charte, lequel de ces messages a le droit de rester sur le forum ?",
+              "options": [
+                "« Cette mise à jour est une catastrophe, les développeurs devraient avoir honte. »",
+                "« Les joueurs de plus de 40 ans sont tous des boulets, dehors. »",
+                "« Ce joueur est un idiot, bloquez-le tous. »",
+                "« Les filles n'ont qu'à retourner jouer à la poupée. »"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : ce message critique le jeu et le travail des développeurs. Sévère, mais c'est une opinion sur une œuvre — le premier paragraphe de la charte protège exactement ça.",
+              "feedbackKo": "Relis le premier paragraphe : critiquer un jeu « même très fermement » est autorisé. Les trois autres messages attaquent une personne ou un groupe entier : injure et discrimination, la loi les interdit."
+            },
+            {
+              "question": "Un joueur crie à la censure : son message contre « les joueurs étrangers » a été supprimé. Que lui répond la charte ?",
+              "options": [
+                "Supprimer un message, c'est toujours de la censure.",
+                "S'en prendre à un groupe pour ce qu'il est n'est pas une opinion : la loi l'interdit, ici comme ailleurs.",
+                "Il fallait juste ajouter un smiley pour adoucir le message.",
+                "Sur internet, aucune loi ne s'applique."
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : les paragraphes 2 et 3 le disent. La liberté d'expression protège les idées et les critiques, pas les attaques contre des groupes — et appliquer la loi, ce n'est pas censurer.",
+              "feedbackKo": "La réponse était dans les paragraphes 2 et 3 de la charte : viser un groupe pour ce qu'il est relève de l'incitation à la haine, interdite par la loi. Retirer ce message, ce n'est pas censurer une idée, c'est appliquer la même loi que partout ailleurs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maëlle (team PixelArena)", "avatar": "🎮" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu ?? 😡 le modo a supprimé le message de Kylian sur le forum" },
+            { "de": "eux", "texte": "il disait juste que les joueurs étrangers gâchent le classement… c'est de la censure non ? on a le droit de tout dire !" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, on doit pouvoir tout dire, sinon c'est de la dictature.",
+                  "ok": false,
+                  "feedback": "Non : la liberté d'expression a des limites fixées par la loi — injure, diffamation, incitation à la haine. Le message de Kylian visait un groupe entier : ce n'est pas une opinion, c'est une infraction."
+                },
+                {
+                  "texte": "Non : son message s'en prenait à un groupe entier pour son origine. Ça, la loi ne le protège pas.",
+                  "ok": true,
+                  "feedback": "Exactement. La liberté d'expression protège les idées et les critiques, pas les attaques contre des personnes ou des groupes. Supprimer ce message, c'est appliquer la loi, pas censurer."
+                },
+                {
+                  "texte": "Aucune idée, les modos font ce qu'ils veulent de toute façon.",
+                  "ok": false,
+                  "feedback": "Pas vraiment : les modérateurs appliquent une charte et la loi, pas leur humeur. Le message de Kylian visait un groupe entier à cause de son origine — c'est ça, la raison de la suppression."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "hmm ok… mais alors on ne peut plus rien critiquer, c'est ça ? 🤐" },
+            {
+              "choix": [
+                {
+                  "texte": "Si, justement ! Critiquer un jeu, un avis, une mise à jour, même très fort : c'est ça, la liberté d'expression.",
+                  "ok": true,
+                  "feedback": "Voilà la nuance clé : les idées et les œuvres, tu peux les attaquer autant que tu veux. Ce sont les personnes et les groupes que la loi protège."
+                },
+                {
+                  "texte": "Non, il vaut mieux ne plus rien dire du tout, c'est plus prudent.",
+                  "ok": false,
+                  "feedback": "Surtout pas ! Se taire n'est pas le but : critiquer, débattre, contester, c'est un droit précieux. La limite, c'est d'attaquer des personnes ou des groupes, pas des idées."
+                },
+                {
+                  "texte": "Seulement si on est majeur, sinon c'est interdit.",
+                  "ok": false,
+                  "feedback": "L'âge n'a rien à voir : à 13 ou à 40 ans, tu as le droit de critiquer des idées et des jeux. Et à tout âge, la loi interdit l'injure et l'incitation à la haine."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et si je retombe sur un message comme celui de Kylian, je fais quoi ? je le clashe ?? 😤" },
+            {
+              "choix": [
+                {
+                  "texte": "Vas-y, réponds encore plus fort, ça lui apprendra.",
+                  "ok": false,
+                  "feedback": "Mauvais plan : en insultant à ton tour, tu franchis toi-même la limite, et la dispute fait remonter le message. Le bouton « Signaler » est plus efficace — et plus malin."
+                },
+                {
+                  "texte": "Utilise le bouton « Signaler » : c'est fait pour ça, et c'est le modérateur qui gère.",
+                  "ok": true,
+                  "feedback": "Le bon réflexe. Signaler, c'est discret, rapide, et ça déclenche une vraie modération. C'est comme ça qu'on protège le forum sans se mettre en danger."
+                },
+                {
+                  "texte": "Rien, ce n'est pas ton problème.",
+                  "ok": false,
+                  "feedback": "Le message reste alors en ligne et continue de blesser ceux qu'il vise. Signaler prend dix secondes et ne t'expose pas : c'est le geste utile."
+                }
+              ]
+            },
+            { "de": "info", "texte": "À retenir : critiquer des jeux, des avis, des idées = protégé par la liberté d'expression. Attaquer des personnes ou des groupes = puni par la loi. Et face à un message qui dérape : bouton « Signaler »." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Liberté d'expression : vrai ou faux ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "La liberté d'expression te donne le droit de critiquer un jeu vidéo, même très durement.",
+              "vrai": true,
+              "feedback": "Vrai. Les œuvres, les idées, les avis : tu peux les critiquer autant que tu veux. C'est exactement ce que ce droit protège."
+            },
+            {
+              "texte": "Insulter tout un groupe de personnes est protégé par la liberté d'expression.",
+              "vrai": false,
+              "feedback": "Faux. Injure, diffamation, incitation à la haine : la loi les interdit, sur un forum comme dans la rue. Ce ne sont pas des opinions."
+            },
+            {
+              "texte": "Supprimer un message qui appelle à la haine contre un groupe, c'est de la censure.",
+              "vrai": false,
+              "feedback": "Faux. La censure, c'est faire taire des idées. Là, on applique la loi : les attaques contre des groupes n'ont jamais été des idées protégées."
+            },
+            {
+              "texte": "Se moquer d'un joueur peut le blesser, même si c'est « juste pour rire ».",
+              "vrai": true,
+              "feedback": "Vrai. Derrière l'écran, la moquerie publique humilie — et répétée, elle devient du harcèlement. « Pour rire » n'efface rien."
+            },
+            {
+              "texte": "Avant de publier, se demander « j'attaque une idée ou une personne ? » est un bon réflexe.",
+              "vrai": true,
+              "feedback": "Vrai. C'est LE test du module : une idée, tu peux y aller ; une personne ou un groupe, tu franchis la ligne."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

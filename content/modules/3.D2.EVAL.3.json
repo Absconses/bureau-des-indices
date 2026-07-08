@@ -1,0 +1,269 @@
+{
+  "id": "3.D2.EVAL.3",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Prendre conscience de ce qui fait obstacle à l'évaluation d'une information.",
+  "titre": "Suspect n°1 : ton cerveau",
+  "accroche": "Cette fois, le coupable n'est pas derrière l'écran : il pourrait bien être dans ta tête. Biais, émotions, bulle de filtres… viens tester tes réflexes sur des pièges taillés sur mesure.",
+  "documents": {
+    "postRefuge": {
+      "template": "post",
+      "pseudo": "@SOS_Animaux_Valmont",
+      "avatar": "🐶",
+      "bio": "On relaie tout ce qui nous touche 💛 Compte de fans, non officiel",
+      "texte": "🚨 URGENT : le refuge des Quatre Pattes de Valmont ferme DEMAIN !! 40 chiots vont se retrouver à la rue 😭😭 1 partage = 1 repas offert 🍖 Partage MAINTENANT, après il sera trop tard ⏰",
+      "likes": 3400,
+      "partages": 1892,
+      "commentaires": 240
+    },
+    "postEtude": {
+      "template": "post",
+      "pseudo": "@LeVraiDuCollege",
+      "avatar": "😎",
+      "bio": "L'actu des collégiens sans filtre 🔥 Compte parodique — on exagère pour rigoler",
+      "texte": "🎯 Une étude PROUVE que commencer les cours à 10h fait gagner 2 points de moyenne !! Les adultes le savent mais refusent de changer 😤 Partage si toi aussi tu veux dormir le matin 😴",
+      "likes": 5200,
+      "partages": 2310,
+      "commentaires": 480
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Des notifs défilent ! Clique les infos formulées normalement. Ne touche PAS celles qui forcent ta main : urgence, émotion, cadeau, MAJUSCULES…",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "⚠️ DERNIÈRE CHANCE : partage avant 20h ou il sera TROP TARD !!!",
+              "bonne": false,
+              "feedback": "Urgence fabriquée : une vraie info n'expire pas à 20h. Le compte à rebours sert à t'empêcher de réfléchir."
+            },
+            {
+              "texte": "La médiathèque de Bruzac ouvrira le dimanche matin à partir de septembre.",
+              "bonne": true,
+              "feedback": "Formulation calme, fait précis, vérifiable auprès de la médiathèque : aucune pression sur toi."
+            },
+            {
+              "texte": "😭 Ce chaton n'a plus que 24h… 1 partage = 1 don !!!",
+              "bonne": false,
+              "feedback": "Émotion + compte à rebours + « 1 partage = 1 don » (personne ne paie ces dons) : une machine à récolter des partages."
+            },
+            {
+              "texte": "SCANDALE : ILS te CACHENT la VÉRITÉ, regarde avant SUPPRESSION !!",
+              "bonne": false,
+              "feedback": "MAJUSCULES, « ils » mystérieux, suppression imminente : le trio classique du piège à clics."
+            },
+            {
+              "texte": "Le collège met en ligne les dates des oraux de stage de 3e.",
+              "bonne": true,
+              "feedback": "Info pratique, source identifiable (ton collège), facile à vérifier : tu peux la lire tranquillement."
+            },
+            {
+              "texte": "🎁 Les 100 premiers à partager gagnent une console !",
+              "bonne": false,
+              "feedback": "Le cadeau contre partage est un hameçon connu : personne n'offre des consoles pour un clic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postRefuge",
+          "questions": [
+            {
+              "question": "Ce post te presse de partager. Quelle technique repères-tu dans le texte ?",
+              "options": [
+                "Il donne la date exacte de fermeture et un communiqué officiel du refuge",
+                "Il fabrique l'urgence : « DEMAIN », « MAINTENANT », « trop tard », sans aucune preuve",
+                "Il propose un numéro de téléphone pour adopter les chiots",
+                "Il cite un article du journal local"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : trois mots d'urgence dans un seul post, zéro preuve. Cette pression du temps est un obstacle : elle court-circuite ta réflexion pour déclencher le partage.",
+              "feedbackKo": "Relis le texte : « DEMAIN », « MAINTENANT », « trop tard »… mais aucune preuve ni source officielle. L'urgence fabriquée est là pour t'empêcher de vérifier avant de partager."
+            },
+            {
+              "question": "« 1 partage = 1 repas offert » : pourquoi cette promesse doit-elle t'alerter ?",
+              "options": [
+                "Parce qu'un repas pour chiot coûte trop cher",
+                "Parce que personne ne finance ces repas : c'est un mécanisme inventé pour récolter des partages",
+                "Parce que le refuge aurait dû promettre deux repas",
+                "Elle ne doit pas t'alerter : c'est généreux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : qui paierait ces milliers de repas ? Personne. La promesse joue sur ta générosité pour gonfler le compteur de partages — ton émotion est l'outil, pas les chiots.",
+              "feedbackKo": "Pose-toi la question : qui paie les 1 892 repas « offerts » ? Personne. Ce faux mécanisme transforme ta générosité en compteur de partages. Et la bio l'avoue à demi-mot : « compte non officiel »."
+            }
+          ]
+        },
+        {
+          "document": "postEtude",
+          "questions": [
+            {
+              "question": "Tu rêves de commencer les cours à 10h. Pourquoi ce post est-il justement plus piégeux POUR TOI ?",
+              "options": [
+                "Parce qu'il est interdit de critiquer les horaires du collège",
+                "Parce qu'il dit exactement ce que tu as envie d'entendre : tu risques de le croire sans vérifier",
+                "Parce que les études scientifiques se trompent toujours",
+                "Il n'est pas piégeux : une étude est citée"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est le biais de confirmation : quand une info confirme ce qu'on pense — ou ce qu'on espère —, on baisse la garde. Plus une info te fait plaisir, plus elle mérite vérification.",
+              "feedbackKo": "Le piège s'appelle biais de confirmation : une info qui confirme ton envie (dormir le matin !) passe sans contrôle. C'est justement quand ça t'arrange qu'il faut vérifier deux fois."
+            },
+            {
+              "question": "Avant de citer ce post dans un débat en classe, quel indice devrait te freiner ?",
+              "options": [
+                "L'étude n'est ni nommée ni datée, et la bio annonce un « compte parodique »",
+                "Le post a trop de likes pour être honnête",
+                "L'emoji 😤 est interdit dans une vraie information",
+                "Rien : 2 310 partages, c'est une preuve"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Double indice : « une étude » sans nom ni date, ça ne se vérifie pas ; et la bio assume « on exagère pour rigoler ». Deux secondes de lecture de la bio t'évitent un gros moment de solitude en classe.",
+              "feedbackKo": "Regarde la bio : « Compte parodique — on exagère pour rigoler ». Et « une étude » sans nom, sans date, sans lien, ça ne se vérifie pas. Les partages comptent les clics, pas la vérité."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "L'enquête remonte jusqu'à toi ! Classe chaque réflexe selon l'obstacle qui se cache derrière.",
+          "categories": [
+            { "id": "biais", "label": "🪞 Biais de confirmation" },
+            { "id": "emotion", "label": "💥 Émotion / urgence" },
+            { "id": "bulle", "label": "🫧 Bulle de filtres" }
+          ],
+          "items": [
+            {
+              "texte": "« Je le savais ! » Tu partages l'article sans l'ouvrir : le titre te donne raison.",
+              "categorie": "biais",
+              "feedbackOk": "Oui : quand une info nous donne raison, on oublie de la lire vraiment. Le biais de confirmation adore les titres.",
+              "feedbackKo": "C'est le biais de confirmation : « ça confirme ce que je pense » n'est pas une preuve, c'est un signal pour vérifier."
+            },
+            {
+              "texte": "Cette vidéo t'a mis en colère : tu l'envoies au groupe classe avant même la fin.",
+              "categorie": "emotion",
+              "feedbackOk": "Exact : la colère appuie sur « partager » plus vite que ta raison. Une info qui te fait bondir mérite une pause, pas un clic.",
+              "feedbackKo": "Ici c'est l'émotion qui commande : la colère fait partager avant de réfléchir. Plus une info te fait réagir, plus elle mérite une pause."
+            },
+            {
+              "texte": "« Plus que 2 heures pour signer !! » Tu signes sans lire de quoi il s'agit.",
+              "categorie": "emotion",
+              "feedbackOk": "Bien vu : le compte à rebours fabrique la panique. Une cause sérieuse ne disparaît pas en 2 heures.",
+              "feedbackKo": "C'est l'urgence fabriquée : le chrono sert à t'empêcher de lire. Une vraie cause peut attendre que tu te renseignes."
+            },
+            {
+              "texte": "Tout ton fil dit la même chose, donc « tout le monde est d'accord ».",
+              "categorie": "bulle",
+              "feedbackOk": "Exact : ton fil n'est pas « tout le monde », c'est une sélection calculée pour te plaire. Le contradictoire existe — il est juste filtré.",
+              "feedbackKo": "C'est la bulle de filtres : l'appli te montre surtout des gens qui pensent comme toi. Ton fil n'est pas un sondage, c'est un miroir."
+            },
+            {
+              "texte": "Tu ne suis que des comptes qui pensent comme toi — les autres, tu les masques.",
+              "categorie": "bulle",
+              "feedbackOk": "Oui : à force de masquer le contradictoire, tu fabriques ta bulle toi-même. Suivre un compte qui ne pense pas comme toi, c'est de l'entraînement.",
+              "feedbackKo": "En masquant tous les avis contraires, tu construis ta bulle de filtres toi-même. Garde au moins une fenêtre sur ceux qui ne pensent pas comme toi."
+            },
+            {
+              "texte": "Pour ton exposé, tu zappes trois articles qui contredisent ton idée et tu gardes le seul qui va dans ton sens.",
+              "categorie": "biais",
+              "feedbackOk": "Bien vu : choisir uniquement ce qui t'arrange, c'est le biais de confirmation au travail. Un bon exposé cite aussi ce qui dérange.",
+              "feedbackKo": "Garder 1 article pour, ignorer 3 articles contre : c'est le biais de confirmation. Chercher honnêtement, c'est lire aussi ce qui contredit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Noa", "avatar": "🛹" },
+          "etapes": [
+            { "de": "eux", "texte": "😡😡 t'as vu ?? le skatepark de Verneuil va être RASÉ pour construire un parking" },
+            { "de": "eux", "texte": "tout mon fil en parle, y a une pétition, faut partager AVANT CE SOIR" },
+            {
+              "choix": [
+                {
+                  "texte": "Grave !! Je partage direct, ça me met trop en colère.",
+                  "ok": false,
+                  "feedback": "C'est exactement le réflexe que le post attend : la colère partage plus vite que la raison. Une info qui te fait bondir mérite une vérification, pas un clic."
+                },
+                {
+                  "texte": "Attends. Qui l'annonce ? On cherche la source avant de s'énerver.",
+                  "ok": true,
+                  "feedback": "Bon réflexe : tu remarques ta propre colère et tu la mets en pause. Chercher qui parle AVANT de partager, c'est le geste qui déjoue le piège."
+                },
+                {
+                  "texte": "Si tout ton fil en parle, c'est que c'est forcément vrai.",
+                  "ok": false,
+                  "feedback": "Ton fil n'est pas un sondage : l'appli te montre surtout des gens qui te ressemblent. Mille partages dans une bulle, ça reste une bulle."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok j'ai creusé… l'annonce vient d'un compte anonyme. Et le site de la mairie parle d'une RÉNOVATION du skatepark, pas d'une destruction 😳" },
+            { "de": "eux", "texte": "mais pourquoi j'y ai cru direct, moi ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Parce que la mairie cache sûrement quelque chose.",
+                  "ok": false,
+                  "feedback": "Soupçonner sans indice, ce n'est pas enquêter. Ici tu as une source identifiable (la mairie) contre un compte anonyme : l'enquête penche clairement d'un côté."
+                },
+                {
+                  "texte": "Parce que l'info t'a mis en colère : l'émotion fait croire et partager avant de réfléchir.",
+                  "ok": true,
+                  "feedback": "Exactement. L'obstacle n'était pas dans l'info, il était dans ta réaction. Repérer sa propre émotion, c'est la compétence secrète de l'enquêteur."
+                },
+                {
+                  "texte": "Aucune idée, c'est le hasard, ça n'arrive qu'aux autres.",
+                  "ok": false,
+                  "feedback": "Justement non : ces pièges marchent sur tout le monde, même les adultes. Les connaître, c'est déjà moitié moins se faire avoir."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et le fait que TOUT mon fil en parlait, ça prouvait rien alors ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Si, des centaines de partages, c'est quand même une preuve.",
+                  "ok": false,
+                  "feedback": "Les partages comptent les clics, pas la vérité. Une rumeur fausse peut être partagée 10 000 fois — elle reste fausse."
+                },
+                {
+                  "texte": "Non : ton fil te montre des gens qui pensent comme toi. C'est ta bulle, pas la réalité.",
+                  "ok": true,
+                  "feedback": "C'est ça, la bulle de filtres : l'appli sélectionne ce qui te fait réagir et masque le reste. Sortir de sa bulle, c'est aller vérifier là où on ne t'emmène pas tout seul."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Émotion qui presse, biais qui rassure, bulle qui isole : les vrais obstacles sont dans nos réflexes. Le premier suspect à interroger, c'est toi-même. 🕵️" }
+          ]
+        }
+      ]
+    }
+  ]
+}

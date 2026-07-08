@@ -1,0 +1,218 @@
+{
+  "id": "5.D1.LAN.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "LAN",
+  "objectif": "Différencier la présentation des faits et l'expression d'une opinion.",
+  "titre": "Fait ou opinion ?",
+  "accroche": "Le téléphone vient d'être interdit au collège des Tilleuls. Deux textes en parlent : l'un raconte, l'autre s'enflamme. À toi de traquer les mots qui trahissent une opinion !",
+  "documents": {
+    "articleFaits": {
+      "template": "site-article",
+      "nomSite": "VALMONT-INFOS.FR",
+      "url": "https://www.valmont-infos.fr/college/telephones-nouvelle-regle",
+      "menu": ["Accueil", "Ville", "Collège", "Sports"],
+      "surtitre": "Vie du collège",
+      "titre": "Téléphones interdits au collège des Tilleuls : ce qui change",
+      "auteur": "Léa Morvan",
+      "date": "mardi 3 mars",
+      "chapo": "Depuis lundi 2 mars, les 620 élèves du collège des Tilleuls doivent laisser leur téléphone éteint dans un casier.",
+      "corps": [
+        "La nouvelle règle a été votée par le conseil d'administration le 5 février, par 18 voix pour et 6 contre. Des casiers de rangement ont été installés pendant les vacances, pour un coût total de 4 500 euros.",
+        "En janvier, 62 téléphones avaient été confisqués par la vie scolaire. « C'est plus calme dans la cour, les élèves se parlent davantage », estime la principale, Mme Carel. Un premier bilan est prévu en juin."
+      ],
+      "footer": ["Contact", "Mentions légales"]
+    },
+    "tribuneOpinion": {
+      "template": "site-article",
+      "nomSite": "LE MÉGAPHONE — le blog qui dit tout haut",
+      "url": "https://www.blog-lemegaphone.fr/tribunes/portables-college",
+      "menu": ["Accueil", "Tribunes", "Coups de gueule"],
+      "surtitre": "Tribune",
+      "titre": "Portables confisqués : stop au scandale !",
+      "auteur": "Max R.",
+      "date": "mercredi 4 mars",
+      "chapo": "Encore une décision absurde qui punit tous les élèves !",
+      "corps": [
+        "C'est officiel : les téléphones sont interdits au collège des Tilleuls depuis le 2 mars. Scandaleux ! Cette règle ridicule traite les élèves comme des bébés, alors qu'ils sont évidemment assez grands pour se gérer tout seuls.",
+        "Heureusement, des parents courageux protestent déjà. Tout le monde sait que cette interdiction ne servira à rien. Une catastrophe, tout simplement."
+      ],
+      "footer": ["Contact"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "surligner",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Voici un extrait d'un blog sur l'interdiction du téléphone. Surligne les mots qui trahissent l'OPINION de l'auteur — pas les faits.",
+          "texte": "Depuis le 2 mars, les téléphones sont interdits au collège des Tilleuls. *Scandaleux* ! Cette règle *ridicule* punit 620 élèves. *Heureusement*, des parents protestent déjà. La principale promet un bilan en juin. Une décision *catastrophique*, vraiment.",
+          "feedbackOk": "Bien vu : « scandaleux », « ridicule », « heureusement » et « catastrophique » sont des jugements de l'auteur. Les dates et les chiffres (2 mars, 620 élèves, juin), eux, sont des faits qu'on peut vérifier.",
+          "feedbackKo": "Les mots d'opinion étaient « scandaleux », « ridicule », « heureusement » et « catastrophique » : ils disent ce que l'auteur RESSENT. « 2 mars », « 620 élèves », « bilan en juin » sont des faits vérifiables — retiens la différence."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "tribuneOpinion",
+          "questions": [
+            {
+              "question": "Quels mots de cette tribune trahissent l'opinion de l'auteur ?",
+              "options": [
+                "« le 2 mars » et « collège des Tilleuls »",
+                "« Scandaleux », « ridicule » et « heureusement »",
+                "« téléphones » et « parents »",
+                "Aucun : ce texte est neutre"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : ces mots jugent au lieu de décrire. « Heureusement » est le plus sournois — un seul mot, et hop, l'auteur applaudit les parents qui protestent.",
+              "feedbackKo": "Relis le texte : « Scandaleux ! », « règle ridicule », « Heureusement »… Ces mots disent ce que l'auteur pense, pas ce qui s'est passé. « Le 2 mars » ou « collège des Tilleuls », eux, décrivent sans juger."
+            },
+            {
+              "question": "Une seule information de cette tribune est un fait vérifiable. Laquelle ?",
+              "options": [
+                "Les téléphones sont interdits depuis le 2 mars",
+                "Cette règle traite les élèves comme des bébés",
+                "Cette interdiction ne servira à rien",
+                "C'est une catastrophe"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : une date et une décision officielle, ça se vérifie (règlement, site du collège). Le reste, ce sont des jugements — même dans un texte très énervé, il peut y avoir des faits exacts !",
+              "feedbackKo": "Le fait était la date d'interdiction : on peut la vérifier dans le règlement du collège. « Comme des bébés », « ne servira à rien », « catastrophe » : impossible à prouver, ce sont des opinions."
+            }
+          ]
+        },
+        {
+          "document": "articleFaits",
+          "questions": [
+            {
+              "question": "Qu'est-ce qui montre que cet article présente surtout des faits ?",
+              "options": [
+                "Des dates, des chiffres et le résultat précis d'un vote",
+                "Des points d'exclamation partout",
+                "Des mots comme « scandaleux » ou « génial »",
+                "Le journaliste dit ce qu'il pense de la règle"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : 2 mars, 18 voix pour, 4 500 euros, 62 téléphones… Tout cela peut se vérifier. C'est la marque d'un compte rendu factuel : décrire, pas juger.",
+              "feedbackKo": "Regarde le texte de près : il aligne des dates (2 mars, 5 février), des chiffres (18 voix, 4 500 euros, 62 téléphones)… Des éléments vérifiables, sans jugement du journaliste : c'est ça, présenter des faits."
+            },
+            {
+              "question": "La phrase « C'est plus calme dans la cour », dite par Mme Carel, c'est…",
+              "options": [
+                "un fait prouvé par l'article",
+                "une opinion — mais l'article dit clairement qui la donne",
+                "une erreur du journaliste",
+                "une publicité pour le collège"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bonne nuance : c'est l'avis de la principale, entre guillemets et avec son nom. Un article sérieux peut citer des opinions — à condition de dire qui parle.",
+              "feedbackKo": "Regarde les guillemets et le mot « estime » : le journaliste cite l'avis de Mme Carel sans le prendre à son compte. Une opinion peut apparaître dans un article factuel, si on sait qui la donne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Ces phrases viennent des deux textes sur le téléphone au collège. Trie-les : fait vérifiable ou opinion ?",
+          "categories": [
+            { "id": "fait", "label": "📋 Fait vérifiable" },
+            { "id": "opinion", "label": "💬 Opinion" }
+          ],
+          "items": [
+            {
+              "texte": "La règle a été votée le 5 février par 18 voix contre 6.",
+              "categorie": "fait",
+              "feedbackOk": "Oui : une date et un résultat de vote, ça se vérifie dans le compte rendu du conseil d'administration.",
+              "feedbackKo": "C'est un fait : date + résultat chiffré d'un vote. On peut le vérifier dans le compte rendu officiel — personne ne « pense » un vote, on le compte."
+            },
+            {
+              "texte": "Cette interdiction est une idée géniale !",
+              "categorie": "opinion",
+              "feedbackOk": "Exact : « géniale » est un jugement. Quelqu'un d'autre peut trouver la même règle nulle — c'est le propre d'une opinion.",
+              "feedbackKo": "« Géniale » ne se mesure pas et ne se prouve pas : c'est un jugement, donc une opinion. Le point d'exclamation était un indice de plus."
+            },
+            {
+              "texte": "62 téléphones ont été confisqués en janvier.",
+              "categorie": "fait",
+              "feedbackOk": "Oui : un nombre précis, enregistré par la vie scolaire. Vrai ou faux, ça se vérifie — c'est un fait.",
+              "feedbackKo": "Un nombre précis de confiscations, c'est vérifiable dans les registres de la vie scolaire : c'est un fait, pas un avis."
+            },
+            {
+              "texte": "Les élèves sont traités comme des bébés.",
+              "categorie": "opinion",
+              "feedbackOk": "Bien vu : c'est une comparaison qui exprime la colère de l'auteur, pas une réalité mesurable.",
+              "feedbackKo": "« Comme des bébés » est une image pour exprimer un ressenti : impossible à vérifier, c'est une opinion. Les faits, eux, se mesurent."
+            },
+            {
+              "texte": "Les casiers ont coûté 4 500 euros.",
+              "categorie": "fait",
+              "feedbackOk": "Exact : une somme précise, qui figure sur une facture. On peut la vérifier — c'est un fait.",
+              "feedbackKo": "Un coût chiffré se retrouve sur une facture : c'est vérifiable, donc c'est un fait. Une opinion dirait « trop cher » ou « bien dépensé »."
+            },
+            {
+              "texte": "Heureusement, des parents protestent déjà.",
+              "categorie": "opinion",
+              "feedbackOk": "Piège déjoué ! La protestation est un fait… mais « heureusement » montre que l'auteur s'en réjouit. Un seul mot suffit à glisser une opinion.",
+              "feedbackKo": "Attention au piège : des parents qui protestent, c'est un fait, mais « heureusement » ajoute le jugement de l'auteur. Un seul petit mot peut transformer un fait en opinion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les faits et les opinions ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "« Le collège compte 620 élèves » est un fait : on peut le vérifier.",
+              "vrai": true,
+              "feedback": "Vrai. Un nombre précis se vérifie auprès de l'administration. Vérifiable = fait."
+            },
+            {
+              "texte": "« Cette règle est géniale » est un fait.",
+              "vrai": false,
+              "feedback": "Faux. « Géniale » est un jugement : c'est une opinion. Un fait se prouve, une opinion se discute."
+            },
+            {
+              "texte": "Des mots comme « scandaleux » ou « heureusement » signalent une opinion.",
+              "vrai": true,
+              "feedback": "Vrai. Ces mots disent ce que l'auteur ressent, pas ce qui s'est passé. Ce sont tes indices d'enquêteur."
+            },
+            {
+              "texte": "Une opinion, c'est forcément un mensonge.",
+              "vrai": false,
+              "feedback": "Faux. Une opinion est un avis sincère, pas un mensonge. Et attention : un « fait » annoncé peut, lui, être faux — d'où la vérification."
+            },
+            {
+              "texte": "Un article peut citer une opinion, à condition de dire qui parle.",
+              "vrai": true,
+              "feedback": "Vrai. Guillemets + nom de la personne : le journaliste rapporte un avis sans le prendre à son compte."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

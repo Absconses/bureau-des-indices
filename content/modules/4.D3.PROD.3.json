@@ -1,0 +1,287 @@
+{
+  "id": "4.D3.PROD.3",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "PROD",
+  "objectif": "Intégrer les enjeux de l'IAG dans le cadre de sa production (cadre réglementaire, opportunités, risques...).",
+  "titre": "Alerte à l'auteur fantôme",
+  "accroche": "Ton groupe a confié le dossier d'histoire à NovaChat : brouillon brillant… mais deux « faits » inventés et un style de robot. Et M. Berthet demande : « Qui a vraiment écrit ça ? »",
+  "documents": {
+    "brouillonIA": {
+      "template": "collecte",
+      "sujet": "Dossier d'histoire — « Le canal de Serbonne » — passages proposés par NovaChat (IA générative)",
+      "extraits": [
+        {
+          "texte": "Le canal de Serbonne fut inauguré en 1838 par l'ingénieur Auguste Ferrand, devant plus de 10 000 spectateurs en habits de fête.",
+          "source": "NovaChat (IA générative) — aucune source citée"
+        },
+        {
+          "texte": "Avec ses 240 kilomètres, il fut longtemps le plus long canal d'Europe.",
+          "source": "NovaChat (IA générative) — aucune source citée"
+        },
+        {
+          "texte": "Aujourd'hui, le canal est surtout utilisé pour la promenade et le tourisme fluvial.",
+          "source": "NovaChat — confirmé sur patrimoine-serbonne.fr (site de la mairie) ✅"
+        }
+      ]
+    },
+    "articleCanal": {
+      "template": "site-article",
+      "nomSite": "PATRIMOINE-SERBONNE.FR",
+      "url": "https://www.patrimoine-serbonne.fr/histoire-du-canal",
+      "menu": ["Accueil", "Histoire", "Balades", "Contact"],
+      "surtitre": "Histoire locale",
+      "titre": "Le canal de Serbonne, 180 ans d'histoire",
+      "auteur": "Par le service patrimoine de la mairie de Serbonne",
+      "date": "Mis à jour le 14 janvier 2026",
+      "chapo": "De sa construction à la promenade d'aujourd'hui, retour sur l'ouvrage qui a façonné la ville.",
+      "corps": [
+        "Le canal a été inauguré en 1846, après huit ans de travaux dirigés par l'ingénieur Charles Onfroy. Les archives municipales conservent le discours prononcé ce jour-là.",
+        "Long de 68 kilomètres, il servait au transport du grain et de la pierre. Il n'a jamais été le plus long d'Europe, mais il a fait la richesse de toute la région.",
+        "Aujourd'hui, les péniches de commerce ont laissé place à la promenade et au tourisme fluvial."
+      ],
+      "footer": ["Mentions légales", "Contact", "Archives municipales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Jade (groupe dossier)", "avatar": "👻" },
+          "etapes": [
+            { "de": "eux", "texte": "bon… j'ai demandé à NovaChat d'écrire notre partie du dossier sur le canal de Serbonne 😅" },
+            { "de": "eux", "texte": "franchement c'est hyper bien écrit. On rend ça direct ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui ! C'est propre, M. Berthet ne verra rien.",
+                  "ok": false,
+                  "feedback": "Risqué : tu signerais un texte que personne n'a vérifié. Une IAG peut inventer des « faits » très crédibles — et son style trop lisse se repère vite."
+                },
+                {
+                  "texte": "On le garde comme brouillon, mais on vérifie chaque info et on réécrit avec nos mots.",
+                  "ok": true,
+                  "feedback": "C'est l'usage assistant : l'IA propose un brouillon, mais c'est vous qui vérifiez, réécrivez et signez. Les auteurs, c'est vous — donc les responsables aussi."
+                },
+                {
+                  "texte": "On jette tout, utiliser une IA c'est forcément tricher.",
+                  "ok": false,
+                  "feedback": "Pas besoin de tout jeter : demander des idées ou un plan à une IA, c'est une vraie opportunité. Le problème, c'est de la laisser écrire à ta place en secret."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "attends… le site du patrimoine de Serbonne ne parle NI de 1838 NI d'un « Auguste Ferrand » 😬 NovaChat a inventé ??" },
+            {
+              "choix": [
+                {
+                  "texte": "On laisse, une date précise ça fait sérieux.",
+                  "ok": false,
+                  "feedback": "Précis ne veut pas dire vrai : une IAG invente parfois des détails très convaincants. Et un « fait » faux dans un dossier signé de vos noms, c'est vous qui en répondez."
+                },
+                {
+                  "texte": "On corrige avec les infos du site du patrimoine et on note la source.",
+                  "ok": true,
+                  "feedback": "Exactement : vérification obligatoire dans une source extérieure, correction, source citée. C'est ça qui transforme un brouillon d'IA en vrai travail de groupe."
+                },
+                {
+                  "texte": "On demande à NovaChat si c'est vrai.",
+                  "ok": false,
+                  "feedback": "Demander à l'IA de se vérifier elle-même ne prouve rien : elle peut réinventer une réponse avec le même aplomb. On vérifie dans des sources extérieures fiables."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok c'est corrigé ✅ dernier truc : si M. Berthet demande qui a écrit, on dit quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Que tout vient de nous, de A à Z.",
+                  "ok": false,
+                  "feedback": "C'est faux, et ça se voit : style impersonnel, zéro exemple personnel… Cacher l'IA, c'est en faire un auteur fantôme — et là, ça devient de la triche."
+                },
+                {
+                  "texte": "La vérité : brouillon aidé par une IA, puis vérifié et réécrit par nous.",
+                  "ok": true,
+                  "feedback": "Déclarer l'outil, c'est honnête — et c'est ce que demandent les chartes d'usage de l'IA, au collège comme ailleurs. Assistant déclaré : oui. Auteur fantôme : non."
+                },
+                {
+                  "texte": "Que si c'est faux, c'est la faute de NovaChat.",
+                  "ok": false,
+                  "feedback": "Une IA n'est pas responsable : elle n'a ni nom sur la copie, ni note au bulletin. Celui qui signe répond de ce qui est écrit — c'est la règle, pour les élèves comme pour les pros."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Règle du bureau : l'IAG peut être ton assistante (idées, plan, reformulation), jamais ton auteur fantôme. Tu vérifies tout, tu déclares son aide… et c'est toi qui signes." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "brouillonIA",
+          "questions": [
+            {
+              "question": "Regarde la ligne « Source » sous chaque extrait. Lequel peut entrer dans le dossier avec le moins de risque ?",
+              "options": [
+                "L'extrait 1 : la date et le nom font très sérieux",
+                "L'extrait 2 : un record, ça se retient bien",
+                "L'extrait 3 : il a été confirmé dans une source extérieure",
+                "Les trois : NovaChat ne se trompe jamais"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui : c'est le seul extrait vérifié ailleurs que dans l'IA (le site de la mairie). Un « fait » d'IAG ne vaut rien tant qu'une source extérieure ne l'a pas confirmé.",
+              "feedbackKo": "La réponse était dans les lignes « Source » : seul l'extrait 3 est confirmé par une source extérieure. Les détails précis (date, nom, record) peuvent être inventés avec beaucoup d'aplomb."
+            },
+            {
+              "question": "Quel est le vrai problème des extraits 1 et 2 ?",
+              "options": [
+                "Ils sont trop courts pour un dossier",
+                "Aucune source ne les confirme : l'IA a pu les inventer",
+                "Ils parlent d'histoire, pas de géographie",
+                "Ils sont mal écrits"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact. Une IAG fabrique du texte plausible : dates, noms et chiffres peuvent être inventés. Sans source, vérification obligatoire avant de les garder.",
+              "feedbackKo": "Relis leurs lignes « Source » : « aucune source citée ». C'est ça le risque : une IAG peut inventer des détails crédibles. Tout fait sans source se vérifie avant d'entrer dans ton dossier."
+            }
+          ]
+        },
+        {
+          "document": "articleCanal",
+          "questions": [
+            {
+              "question": "NovaChat a écrit : « Le canal fut inauguré en 1838 par l'ingénieur Auguste Ferrand. » Que t'apprend cet article ?",
+              "options": [
+                "Il confirme la date et le nom donnés par l'IA",
+                "Il donne 1846 et Charles Onfroy : NovaChat a inventé ces détails",
+                "Il ne parle pas de l'inauguration",
+                "Il dit que le canal n'a jamais existé"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : 1846, Charles Onfroy, d'après les archives municipales. L'IA avait fabriqué une date et un nom très crédibles — c'est exactement pour ça que la vérification est obligatoire.",
+              "feedbackKo": "Relis le premier paragraphe : « inauguré en 1846 … par l'ingénieur Charles Onfroy ». L'IA avait inventé 1838 et « Auguste Ferrand ». Un détail précis n'est pas forcément vrai : on croise toujours avec une source extérieure."
+            },
+            {
+              "question": "Pourquoi cet article est-il une bonne source pour corriger le brouillon de l'IA ?",
+              "options": [
+                "Son auteur est identifié et s'appuie sur les archives municipales",
+                "Il est plus long que le brouillon de NovaChat",
+                "Il est plus récent, donc forcément vrai",
+                "Il est mieux écrit, avec moins de fautes"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : auteur identifiable (le service patrimoine de la mairie), proche du sujet, archives à l'appui. Face à une IAG qui ne cite aucune source, c'est ce genre de source qui fait foi.",
+              "feedbackKo": "Regarde la signature sous le titre : « service patrimoine de la mairie », qui cite ses archives. Une source se juge à son auteur et à ses preuves — pas à sa longueur ni à sa date."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Assistant déclaré ou auteur fantôme ? Trie les pratiques de ton groupe.",
+          "categories": [
+            { "id": "assistant", "label": "🤝 Assistant déclaré" },
+            { "id": "fantome", "label": "👻 Auteur fantôme" }
+          ],
+          "items": [
+            {
+              "texte": "Demander trois idées de plan à l'IA, puis rédiger vous-mêmes",
+              "categorie": "assistant",
+              "feedbackOk": "Oui : l'IA propose, vous décidez et vous écrivez. Elle t'aide à démarrer — l'auteur reste le groupe.",
+              "feedbackKo": "Ici l'IA ne fait que suggérer un plan : c'est vous qui rédigez. C'est un usage d'assistant, pas un auteur caché."
+            },
+            {
+              "texte": "Copier-coller la réponse de l'IA et signer vos trois prénoms",
+              "categorie": "fantome",
+              "feedbackOk": "Bien vu : signer un texte qu'on n'a pas écrit, c'est faire de l'IA un auteur fantôme — et tromper le lecteur sur qui parle.",
+              "feedbackKo": "Signer un texte écrit par l'IA sans le dire, c'est un auteur fantôme : le prof croit lire votre travail. Même problème que recopier un site sans le citer."
+            },
+            {
+              "texte": "Écrire en bas du dossier : « brouillon préparé avec une IA, vérifié et réécrit par le groupe »",
+              "categorie": "assistant",
+              "feedbackOk": "Exact : déclarer l'aide, c'est jouer franc jeu. L'outil est assumé, et le lecteur sait qui a fait quoi.",
+              "feedbackKo": "Cette mention rend l'aide visible : c'est justement ce qui sépare l'assistant déclaré du fantôme caché."
+            },
+            {
+              "texte": "Faire rédiger toute la conclusion par l'IA sans le dire à personne",
+              "categorie": "fantome",
+              "feedbackOk": "Oui : le mot important est « sans le dire ». Un texte d'IA caché dans un travail signé de vos noms, c'est un auteur fantôme.",
+              "feedbackKo": "« Sans le dire à personne » : voilà le problème. Ce n'est pas l'IA qui est interdite, c'est le secret sur qui a vraiment écrit."
+            },
+            {
+              "texte": "Lui faire reformuler une phrase trop longue, puis vérifier le résultat",
+              "categorie": "assistant",
+              "feedbackOk": "Oui : reformuler, proposer des synonymes… ce sont les opportunités de l'IAG. Tu relis, tu vérifies, tu gardes la main sur ton texte.",
+              "feedbackKo": "Reformuler UNE phrase puis vérifier le résultat, c'est utiliser l'IA comme un outil : tu gardes le contrôle, tu restes l'auteur."
+            },
+            {
+              "texte": "Lui demander d'inventer des témoignages d'habitants « pour faire vivant »",
+              "categorie": "fantome",
+              "feedbackOk": "Bien vu : des témoignages inventés, ce sont de fausses preuves signées de vos noms. Fabriquer des faits n'a jamais sa place dans un dossier.",
+              "feedbackKo": "Des témoignages inventés sont des faits fabriqués : le lecteur croit à de vraies paroles d'habitants. C'est le pire du fantôme : il fait dire des choses à des gens qui n'existent pas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Fin de mission ! Clique les vraies règles d'usage de l'IA, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Je déclare l'aide de l'IA dans mon dossier",
+              "bonne": true,
+              "feedback": "Règle n°1 : l'outil se déclare. Assistant assumé = travail honnête ; aide cachée = triche."
+            },
+            {
+              "texte": "⚡ RENDS TOUT DIRECT, PERSONNE NE VERRA RIEN !!!",
+              "bonne": false,
+              "feedback": "Majuscules + promesse d'impunité : le combo classique pour te faire agir sans réfléchir. Et si, ça se voit : style impersonnel, zéro source."
+            },
+            {
+              "texte": "Je vérifie chaque fait de l'IA dans une source extérieure",
+              "bonne": true,
+              "feedback": "Règle n°2 : vérification obligatoire. Une IAG peut inventer dates, noms et chiffres avec un aplomb parfait."
+            },
+            {
+              "texte": "⏰ Plus le temps de vérifier, c'est pour DEMAIN !",
+              "bonne": false,
+              "feedback": "L'urgence est LA technique pour t'empêcher de vérifier. Deux minutes de vérification valent mieux qu'un faux dans un dossier signé de ton nom."
+            },
+            {
+              "texte": "🎁 Appli miracle : tes dossiers écrits À TA PLACE, zéro effort !",
+              "bonne": false,
+              "feedback": "Le cadeau « zéro effort », grand classique de la pub. Appli ou pas, celui qui signe reste responsable de ce qu'il rend."
+            },
+            {
+              "texte": "Je réécris avec mes mots et je cite mes sources",
+              "bonne": true,
+              "feedback": "Règle n°3 : c'est ça, être l'auteur. Tes mots, tes sources — l'IA t'a aidé, mais le travail est à toi."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

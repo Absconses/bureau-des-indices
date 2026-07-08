@@ -1,0 +1,263 @@
+{
+  "id": "3.D1.FON.2",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Comprendre les liens entre pluralisme des médias et vie démocratique.",
+  "titre": "Un seul son de cloche",
+  "accroche": "Bienvenue à Valdorie, pays imaginaire où TOUS les médias appartiennent au même groupe. Ta mission d'enquêteur : découvrir ce qui disparaît quand tout le monde raconte la même histoire.",
+  "documents": {
+    "serpValdorie": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.vd/recherche?q=r%C3%A9forme+des+transports+avis",
+      "requete": "réforme des transports avis",
+      "nbResultats": "Environ 148 000 résultats (0,31 seconde)",
+      "resultats": [
+        {
+          "url": "www.valdorie-matin.vd › politique",
+          "titre": "Réforme des transports : une chance historique pour Valdorie",
+          "extrait": "Le grand projet du gouvernement enthousiasme tout le pays. Valdorie Matin, un média du groupe Panora."
+        },
+        {
+          "url": "www.vtv-news.vd › actualites",
+          "titre": "Transports : les Valdoriens séduits par une réforme exemplaire",
+          "extrait": "Sur nos plateaux, tous les invités saluent le projet. VTV News, une chaîne du groupe Panora."
+        },
+        {
+          "url": "www.radio-azur.vd › journal",
+          "titre": "Réforme des transports : « un projet formidable », selon nos experts",
+          "extrait": "Notre antenne a recueilli des réactions unanimes. Radio Azur appartient au groupe Panora."
+        },
+        {
+          "url": "www.courrier-valdorie.vd › economie",
+          "titre": "Le grand projet des transports fait l'unanimité",
+          "extrait": "Aucune fausse note pour cette réforme très attendue. Le Courrier de Valdorie, une publication du groupe Panora."
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpValdorie",
+          "questions": [
+            {
+              "question": "Quatre médias différents parlent de la réforme. En lisant bien les quatre résultats, que découvres-tu ?",
+              "options": [
+                "Ce sont quatre points de vue indépendants les uns des autres",
+                "Ils appartiennent tous au même groupe, Panora",
+                "Ce sont des publicités payées au moteur de recherche",
+                "Ils sont tous écrits par le même journaliste"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : chaque extrait se termine par « groupe Panora ». Quatre noms de médias, mais un seul propriétaire — donc un seul point de vue, déguisé en quatre.",
+              "feedbackKo": "Relis la fin de chaque extrait : « un média du groupe Panora », « une chaîne du groupe Panora »… Les quatre appartiennent au même groupe. Quatre logos différents ne garantissent pas quatre regards différents."
+            },
+            {
+              "question": "Les quatre titres sont enthousiastes : « chance historique », « unanimité »… Que prouve cette unanimité sur la qualité de la réforme ?",
+              "options": [
+                "Qu'elle est excellente, puisque tout le monde est d'accord",
+                "Rien : un propriétaire unique fabrique une unanimité automatique",
+                "Qu'elle a été votée à l'unanimité au parlement",
+                "Que le moteur de recherche cache les avis négatifs"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exactement. Quand un seul groupe possède tous les médias, l'accord apparent ne prouve rien : aucune voix critique ne peut se faire entendre. Impossible pour un Valdorien de connaître les défauts du projet.",
+              "feedbackKo": "Cette unanimité ne prouve rien : les quatre médias ont le même propriétaire, donc la même ligne. Sans médias indépendants, pas de débat contradictoire — et les citoyens se décident à l'aveugle."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "À Valdorie, le groupe Panora a racheté tous les médias du pays. Trie : qu'est-ce qui disparaît, qu'est-ce qui survit ?",
+          "categories": [
+            { "id": "disparait", "label": "🫥 Ça disparaît" },
+            { "id": "survit", "label": "✅ Ça survit" }
+          ],
+          "items": [
+            {
+              "texte": "Les enquêtes qui dérangent le groupe Panora",
+              "categorie": "disparait",
+              "feedbackOk": "Oui : difficile d'enquêter librement sur son propre patron. Sans médias indépendants, plus personne ne joue ce rôle de contre-pouvoir.",
+              "feedbackKo": "Elles disparaissent : un journaliste du groupe Panora peut difficilement enquêter contre son propre employeur. C'est le rôle de contre-pouvoir de la presse qui s'éteint."
+            },
+            {
+              "texte": "Le débat entre points de vue opposés sur une réforme",
+              "categorie": "disparait",
+              "feedbackOk": "Exact : tous les médias suivent la même ligne, donc plus de contradiction publique. Les citoyens n'entendent qu'une seule version.",
+              "feedbackKo": "Il disparaît : avec un propriétaire unique, tous les médias défendent la même ligne. Le débat contradictoire a besoin de voix indépendantes pour exister."
+            },
+            {
+              "texte": "La météo et les résultats sportifs",
+              "categorie": "survit",
+              "feedbackOk": "Oui : un monopole peut très bien annoncer la pluie et les scores. C'est sur les sujets qui fâchent que le manque de pluralisme se voit.",
+              "feedbackKo": "Ça survit ! La météo ne dérange personne. Un monopole informe encore très bien sur les sujets neutres — c'est sur les sujets sensibles que le pluralisme manque."
+            },
+            {
+              "texte": "Les critiques contre les amis du propriétaire",
+              "categorie": "disparait",
+              "feedbackOk": "Bien vu : le groupe protège ses alliés. Ce silence-là est le plus sournois… car on ne voit jamais ce qui n'est pas publié.",
+              "feedbackKo": "Elles disparaissent : un média évite de fâcher les amis de son propriétaire. Le plus dangereux, c'est ce silence qu'on ne remarque même pas."
+            },
+            {
+              "texte": "Les jeux, l'horoscope et les programmes télé",
+              "categorie": "survit",
+              "feedbackOk": "Exact : le divertissement continue, il ne menace personne. Un pays sans pluralisme peut rester distrayant — c'est le débat qui meurt, pas la télé.",
+              "feedbackKo": "Ça survit : le divertissement ne gêne aucun propriétaire. Ne confonds pas « il y a plein de contenus » et « il y a plusieurs points de vue »."
+            }
+          ]
+        },
+        {
+          "consigne": "Bon signe ou signal d'alerte pour le débat démocratique ? Trie ces situations.",
+          "categories": [
+            { "id": "bon", "label": "🟢 Bon signe" },
+            { "id": "alerte", "label": "🔴 Signal d'alerte" }
+          ],
+          "items": [
+            {
+              "texte": "Deux journaux défendent des avis opposés sur la même loi",
+              "categorie": "bon",
+              "feedbackOk": "Oui : c'est le pluralisme en action. Tu peux comparer les arguments et te faire TON avis.",
+              "feedbackKo": "C'est un bon signe : des avis opposés publiés librement, c'est exactement ce qui te permet de comparer les arguments avant de juger."
+            },
+            {
+              "texte": "Toutes les chaînes décrivent la manifestation avec les mêmes mots, au détail près",
+              "categorie": "alerte",
+              "feedbackOk": "Bien vu : une unanimité mot pour mot sent la source unique. Demande-toi qui possède ces chaînes.",
+              "feedbackKo": "Signal d'alerte : des récits identiques au mot près trahissent souvent un propriétaire ou une consigne unique. La coïncidence parfaite n'existe pas."
+            },
+            {
+              "texte": "Une aide publique permet à un petit journal indépendant de survivre",
+              "categorie": "bon",
+              "feedbackOk": "Exact : les aides à la presse existent pour ça — garder des voix variées en vie, même peu rentables. La diversité est traitée comme un bien commun.",
+              "feedbackKo": "C'est un bon signe : les aides à la presse maintiennent en vie des journaux peu rentables mais utiles au débat. Sans elles, seuls les plus riches publieraient."
+            },
+            {
+              "texte": "Un journal ne parle jamais des usines polluantes de son propriétaire",
+              "categorie": "alerte",
+              "feedbackOk": "Oui : c'est un angle mort volontaire. Quand le propriétaire est concerné, le silence remplace l'enquête.",
+              "feedbackKo": "Signal d'alerte : ce silence protège le propriétaire. Réflexe d'enquêteur : toujours te demander à qui appartient le média que tu lis."
+            },
+            {
+              "texte": "Un débat télévisé invite des personnes qui ne sont pas d'accord entre elles",
+              "categorie": "bon",
+              "feedbackOk": "Exact : le débat contradictoire, même agité, permet d'entendre les arguments de chaque camp. C'est inconfortable — et indispensable.",
+              "feedbackKo": "Bon signe : entendre des gens en désaccord, c'est le principe même du débat contradictoire. Une démocratie a besoin de ce bruit-là."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Noa (échange scolaire à Valdorie)", "avatar": "🧳" },
+          "etapes": [
+            { "de": "eux", "texte": "hey ! bien arrivé chez mon corres à Valdorie 🧳 c'est stylé mais un truc me perturbe" },
+            { "de": "eux", "texte": "les journaux, la télé, la radio… tout le monde raconte EXACTEMENT la même chose sur la grande réforme des transports" },
+            { "de": "eux", "texte": "au fond c'est reposant non ? au moins personne se dispute 😅" },
+            {
+              "choix": [
+                {
+                  "texte": "Franchement oui. Les débats à la télé, ça sert à rien.",
+                  "ok": false,
+                  "feedback": "Un débat contradictoire n'est pas une dispute pour rien : c'est le seul moyen de comparer les arguments pour ET contre avant de se décider. Sans lui, on avale tout sans réfléchir."
+                },
+                {
+                  "texte": "Justement non : si personne ne peut critiquer, comment savoir si la réforme a des défauts ?",
+                  "ok": true,
+                  "feedback": "Exactement. Sans voix critiques, impossible de connaître les points faibles d'un projet. Le désaccord public, c'est un outil pour réfléchir — pas un bug."
+                },
+                {
+                  "texte": "C'est le moteur de recherche de là-bas qui doit être piraté.",
+                  "ok": false,
+                  "feedback": "Pas besoin de piratage : quand un seul groupe possède tous les médias, l'unanimité se fabrique toute seule. Le problème, c'est la propriété des médias, pas la technique."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "vu comme ça… en plus les élections sont dans un mois ici, et les gens n'auront entendu qu'un seul avis 😬" },
+            { "de": "eux", "texte": "et en France alors, c'est différent ?" },
+            {
+              "choix": [
+                {
+                  "texte": "En France c'est parfait, aucun souci de ce genre chez nous.",
+                  "ok": false,
+                  "feedback": "Pas si vite : en France aussi, quelques groupes possèdent beaucoup de médias. Le pluralisme existe, mais il se surveille en permanence — c'est même un sujet de débat public."
+                },
+                {
+                  "texte": "On a des médias variés, et l'État verse des aides à la presse pour que des journaux différents survivent.",
+                  "ok": true,
+                  "feedback": "Oui ! Ces aides publiques permettent même à des journaux peu rentables d'exister, pour que des opinions différentes restent disponibles. La diversité des voix est protégée comme un bien précieux."
+                },
+                {
+                  "texte": "Aucune idée, moi je m'informe uniquement sur les réseaux.",
+                  "ok": false,
+                  "feedback": "Justement : sur les réseaux aussi, il faut savoir qui possède quoi et croiser des sources variées. Dans quelques années tu votes — avec quelles infos ?"
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok je comprends mieux… je vais chercher s'il reste des médias indépendants ici 🔎" },
+            { "de": "info", "texte": "Pluralisme des médias = des sources d'information variées et indépendantes. C'est lui qui rend possibles le débat contradictoire et le vote éclairé. Sans lui, la démocratie tourne à vide." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur le pluralisme des médias et la démocratie ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Quand tous les médias ont le même propriétaire, les points de vue se ressemblent.",
+              "vrai": true,
+              "feedback": "Vrai. Quatre noms différents ne garantissent pas quatre regards différents : ce qui compte, c'est qui possède quoi."
+            },
+            {
+              "texte": "Le débat contradictoire aide les électeurs à se décider avant de voter.",
+              "vrai": true,
+              "feedback": "Vrai. Comparer des arguments opposés permet de se faire SA propre opinion — c'est la base du vote éclairé."
+            },
+            {
+              "texte": "Si tous les journaux disent la même chose, c'est forcément que c'est vrai.",
+              "vrai": false,
+              "feedback": "Faux. L'unanimité peut venir d'un propriétaire unique, pas des faits. Vérifie toujours qui possède les médias que tu lis."
+            },
+            {
+              "texte": "Les aides publiques à la presse servent à maintenir des journaux variés en vie.",
+              "vrai": true,
+              "feedback": "Vrai. En France, l'État soutient même des journaux peu rentables, pour que la diversité des opinions survive."
+            },
+            {
+              "texte": "Une démocratie fonctionne aussi bien avec un seul média qu'avec cent.",
+              "vrai": false,
+              "feedback": "Faux. Sans pluralisme, plus de débat ni de contre-pouvoir : les citoyens décident sans entendre d'autres voix."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "5.D1.FON.2",
+  "version": 1,
+  "parcours": "5e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Identifier les acteurs du monde de l'information (journalistes, dessinateurs de presse, photoreporters, etc.).",
+  "titre": "Qui fabrique l'info ?",
+  "accroche": "Aujourd'hui, tu pousses la porte de La Gazette de Valbrune. Suis le trajet d'une info, de la tempête de cette nuit jusqu'à la Une de demain !",
+  "documents": {
+    "uneGazette": {
+      "template": "une",
+      "nomJournal": "La Gazette de Valbrune",
+      "date": "Mercredi 13 mai 2026",
+      "prix": "1,20 €",
+      "manchette": "Tempête : la halle du marché perd son toit",
+      "sousTitre": "Les commerçants racontent une nuit de peur. Reportage sur place de Maya Solal.",
+      "photo": { "emoji": "🌪", "legende": "La toiture de la halle arrachée, mercredi à l'aube. Photo : Idris Kova" },
+      "secondaires": [
+        { "rubrique": "Le dessin du jour", "titre": "« La météo présente ses excuses »… signé Zoé Ferrand ✏️" },
+        { "rubrique": "Sport", "titre": "Le club de basket de Valbrune vise la montée" }
+      ],
+      "sommaire": [
+        { "rubrique": "Ma ville", "page": "2" },
+        { "rubrique": "Sport", "page": "8" },
+        { "rubrique": "Jeux", "page": "12" }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maya, journaliste", "avatar": "📰" },
+          "etapes": [
+            { "de": "eux", "texte": "Bienvenue à La Gazette de Valbrune ! Moi c'est Maya, journaliste. Aujourd'hui, tu suis une info avec l'équipe 🕵️" },
+            { "de": "eux", "texte": "Cette nuit, la tempête a arraché le toit de la halle du marché. À ton avis, mon premier réflexe ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Aller sur place : voir les dégâts et interroger des témoins.",
+                  "ok": true,
+                  "feedback": "Exactement mon métier : je ne répète pas ce qu'on raconte, je vais vérifier sur le terrain et je fais parler ceux qui ont vécu l'événement."
+                },
+                {
+                  "texte": "Recopier les messages qui circulent sur les réseaux.",
+                  "ok": false,
+                  "feedback": "Surtout pas tels quels ! Sur les réseaux, vrai et faux se mélangent. Une journaliste vérifie sur place avant d'écrire — c'est ce qui sépare une info d'une rumeur."
+                },
+                {
+                  "texte": "Attendre que quelqu'un t'envoie un article tout prêt.",
+                  "ok": false,
+                  "feedback": "Un article ne tombe pas du ciel : quelqu'un doit enquêter. Ce quelqu'un, c'est moi — la journaliste va chercher l'info là où elle se passe."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Sur place, je ne pars pas seule : Idris vient avec son appareil photo. Son rôle, d'après toi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Photoreporter : il raconte l'événement en images.",
+                  "ok": true,
+                  "feedback": "Oui ! Ses photos prouvent et montrent ce que mes mots racontent. Le photoreporter est un acteur de l'info à part entière, pas un simple accompagnateur."
+                },
+                {
+                  "texte": "Il vient prendre des selfies pour le compte du journal.",
+                  "ok": false,
+                  "feedback": "Raté 😄 Idris est photoreporter : ses images montrent l'événement, pas nos têtes. Une bonne photo de presse informe autant qu'un texte."
+                },
+                {
+                  "texte": "C'est lui qui décide de ce qui paraîtra en Une.",
+                  "ok": false,
+                  "feedback": "Non, ça c'est le rôle du rédacteur en chef, au journal. Idris, lui, est photoreporter : son travail, c'est de raconter l'événement en images."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Article écrit, photos choisies… Dernière étape : qui décide si notre tempête fera la Une de demain ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Le rédacteur en chef : il relit tout et choisit la place de chaque article.",
+                  "ok": true,
+                  "feedback": "Exact. Le rédacteur en chef est le capitaine de la rédaction : il relit, corrige et décide quelle info mérite la Une. Un autre journal ferait peut-être un autre choix !"
+                },
+                {
+                  "texte": "Toi, Maya : c'est ton article après tout.",
+                  "ok": false,
+                  "feedback": "Flatteur, mais non 😅 J'écris, mais c'est le rédacteur en chef qui relit et décide de la place des articles. Chacun son rôle dans une rédaction."
+                },
+                {
+                  "texte": "Personne : les articles se rangent tout seuls dans le journal.",
+                  "ok": false,
+                  "feedback": "Rien n'est automatique ! Le rédacteur en chef choisit et organise : la Une, c'est une décision humaine, réfléchie, prise à chaque numéro."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "Bravo, tu as suivi toute la chaîne 💪 Demain matin, ouvre le journal : derrière chaque info, tu verras maintenant toute une équipe." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Remets dans l'ordre le trajet de l'info sur la tempête, de l'événement jusqu'au journal.",
+          "items": [
+            { "texte": "La tempête arrache le toit de la halle du marché pendant la nuit." },
+            { "texte": "Maya et Idris vont sur place : témoins interrogés, notes prises, photos faites." },
+            { "texte": "Maya écrit son article ; Idris sélectionne sa meilleure photo." },
+            { "texte": "Le rédacteur en chef relit, corrige et place l'article en Une." },
+            { "texte": "Le journal est imprimé : les lecteurs découvrent l'info au petit matin." }
+          ],
+          "feedbackOk": "C'est le trajet complet d'une info : événement → terrain → écriture → choix de la rédaction → publication. À chaque étape, un métier différent entre en jeu.",
+          "feedbackKo": "Le bon ordre : l'événement se produit, l'équipe va vérifier sur le terrain, la journaliste écrit, le rédacteur en chef relit et choisit la Une, puis le journal est imprimé. Une info passe entre plusieurs mains avant d'arriver jusqu'à toi."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "uneGazette",
+          "questions": [
+            {
+              "question": "Cherche sur cette Une : qui a pris la photo de la halle ?",
+              "options": [
+                "Maya Solal",
+                "Idris Kova",
+                "Zoé Ferrand",
+                "Ce n'est pas indiqué"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : le crédit « Photo : Idris Kova » est dans la légende, sous l'image. C'est la signature du photoreporter — son travail est reconnu comme celui du journaliste.",
+              "feedbackKo": "Regarde la légende sous la photo : « Photo : Idris Kova ». Le nom du photoreporter est toujours crédité près de son image, comme une signature."
+            },
+            {
+              "question": "Et Zoé Ferrand, quel est son métier à la Gazette ?",
+              "options": [
+                "Journaliste",
+                "Photoreporter",
+                "Dessinatrice de presse",
+                "Rédactrice en chef"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : son nom signe « Le dessin du jour ». La dessinatrice de presse commente l'actualité par un dessin, souvent avec humour — c'est un point de vue, pas une décoration.",
+              "feedbackKo": "Son nom apparaît sous « Le dessin du jour » : Zoé Ferrand est dessinatrice de presse. Son dessin commente l'info avec humour — il exprime un point de vue."
+            }
+          ]
+        },
+        {
+          "document": "uneGazette",
+          "questions": [
+            {
+              "question": "Cherche sur cette Une : qui a écrit le reportage sur la tempête ?",
+              "options": [
+                "Idris Kova",
+                "Zoé Ferrand",
+                "Maya Solal",
+                "Ce n'est pas indiqué"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Oui : « Reportage sur place de Maya Solal », juste sous le grand titre. Un article de presse est signé : tu sais toujours quel journaliste a enquêté et écrit.",
+              "feedbackKo": "Lis sous la manchette : « Reportage sur place de Maya Solal ». Un article sérieux est signé — ce nom te dit quel journaliste a enquêté."
+            },
+            {
+              "question": "Idris Kova apparaît aussi sur cette Une. Quel est son métier ?",
+              "options": [
+                "Rédacteur en chef",
+                "Photoreporter",
+                "Dessinateur de presse",
+                "Imprimeur"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : son nom suit « Photo : » dans la légende. Le photoreporter va sur le terrain comme la journaliste, mais lui raconte l'événement en images.",
+              "feedbackKo": "L'indice est dans la légende de la photo : « Photo : Idris Kova ». C'est donc le photoreporter, celui qui raconte l'événement en images."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les métiers de l'info ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "La journaliste vérifie les faits sur le terrain avant d'écrire.",
+              "vrai": true,
+              "feedback": "Vrai. Aller voir, interroger des témoins, recouper : c'est la base du métier. Sans vérification, ce n'est pas de l'information."
+            },
+            {
+              "texte": "Le photoreporter écrit les articles du journal.",
+              "vrai": false,
+              "feedback": "Faux. Lui raconte l'événement en images ; les articles, c'est le travail des journalistes. Les deux vont souvent sur le terrain ensemble."
+            },
+            {
+              "texte": "C'est le rédacteur en chef qui choisit ce qui fait la Une.",
+              "vrai": true,
+              "feedback": "Vrai. Il relit les articles et décide de leur place. La Une, c'est son choix de l'info n°1 — un autre journal choisirait peut-être autrement."
+            },
+            {
+              "texte": "Un dessin de presse sert juste à décorer le journal.",
+              "vrai": false,
+              "feedback": "Faux. Le dessin de presse commente l'actualité : il donne un point de vue, souvent avec humour. C'est une vraie prise de position."
+            },
+            {
+              "texte": "Une info passe entre plusieurs mains avant d'être publiée.",
+              "vrai": true,
+              "feedback": "Vrai. Terrain, écriture, photo, relecture du rédacteur en chef… Toute une équipe travaille l'info avant qu'elle arrive jusqu'à toi."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

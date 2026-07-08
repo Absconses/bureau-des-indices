@@ -1,0 +1,249 @@
+{
+  "id": "3.D3.ELAB.3",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Utiliser des outils d'intelligence artificielle générative pour enrichir ses productions et les adapter aux objectifs et aux publics visés.",
+  "titre": "L'IA écrit, tu signes",
+  "accroche": "La rédac du journal du collège te confie l'article sur la victoire du club robotique. Une IAG va t'aider à l'adapter à trois publics — mais la signature en bas, c'est la tienne.",
+  "documents": {
+    "bancTitres": {
+      "template": "collecte",
+      "sujet": "Banc d'essai de la rédac du Fil des Tilleuls — le même chapô confié à deux IAG. Consigne donnée aux deux : « Propose un titre et un chapô pour la newsletter des parents »",
+      "extraits": [
+        {
+          "texte": "Chapô d'origine, validé par la rédac : « L'équipe Robo-Lynx du club robotique a remporté la finale régionale de robotique, le 14 mars à Brévanne, devant onze collèges. »",
+          "source": "Le Fil des Tilleuls — journal en ligne du collège, version vérifiée"
+        },
+        {
+          "texte": "« Titre : Les Robo-Lynx champions ! — Chapô : Le club robotique du collège a remporté la finale nationale de robotique ainsi qu'un chèque de 5 000 €. Vos enfants ont du talent ! »",
+          "source": "Proposition de NovaChat (IAG) — générée le 16 mars"
+        },
+        {
+          "texte": "« Titre : INCROYABLE 😱 CE COLLÈGE CACHE DES GÉNIES !! — Chapô : Vous n'allez JAMAIS croire ce que ces élèves ont fait… La suite va vous étonner ! »",
+          "source": "Proposition de Scribo (IAG) — générée le 16 mars"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Maëlle (rédac' chef)", "avatar": "📰" },
+          "etapes": [
+            { "de": "eux", "texte": "hey ! l'article sur la victoire des Robo-Lynx doit sortir demain 🤖🏆" },
+            { "de": "eux", "texte": "il nous faut le même chapô en 3 versions : post pour les élèves, newsletter des parents, dépliant pour les CM2 qui visitent. tu testes l'IAG du CDI ?" },
+            {
+              "choix": [
+                {
+                  "texte": "J'écris juste : « Fais un texte sur les robots ».",
+                  "ok": false,
+                  "feedback": "Trop vague : sans ton texte de départ, sans public ni objectif, l'IAG sortira un texte générique inutilisable. Une bonne demande dit quoi reformuler, pour qui et pour quoi."
+                },
+                {
+                  "texte": "Je colle notre chapô et j'écris : « Reformule-le pour trois publics : élèves, parents, CM2 — objectif : donner envie de lire l'article ».",
+                  "ok": true,
+                  "feedback": "Exactement : texte source + publics + objectif. C'est comme ça qu'une IAG devient utile : elle adapte TON contenu, elle ne l'invente pas à ta place."
+                },
+                {
+                  "texte": "Je demande : « Écris l'article complet à ma place, je n'aurai plus rien à faire ».",
+                  "ok": false,
+                  "feedback": "Mauvais plan : tu perdrais la maîtrise de ce qui sera publié. L'IAG peut reformuler TON travail, pas le remplacer — c'est toi qui signes à la fin."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "elle a sorti les 3 versions ! mais regarde celle pour les parents : elle dit que le club a gagné « 5 000 € et un stage à la capitale »… on n'a jamais écrit ça 😳" },
+            {
+              "choix": [
+                {
+                  "texte": "On garde : ça rend le club encore plus impressionnant.",
+                  "ok": false,
+                  "feedback": "Publier un détail inventé, c'est publier une fausse info signée par le journal. L'IAG génère du texte plausible, pas des faits vérifiés — tout ce qui ne vient pas de tes infos saute."
+                },
+                {
+                  "texte": "On supprime : ce détail ne vient pas de notre chapô et personne ne peut le vérifier.",
+                  "ok": true,
+                  "feedback": "Réflexe d'auteur responsable. Les IAG « hallucinent » parfois des détails très crédibles : on compare avec ses infos vérifiées, et ce qui n'en vient pas est supprimé."
+                },
+                {
+                  "texte": "On demande à l'IAG de confirmer si c'est vrai.",
+                  "ok": false,
+                  "feedback": "Piège : une IAG ne « sait » pas, elle génère la suite la plus probable. Elle peut te confirmer une invention avec un aplomb total. La vérification, c'est ton travail."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "corrigé ✅ dernière question : on met quoi comme signature sous l'article ?" },
+            {
+              "choix": [
+                {
+                  "texte": "« Article rédigé par NovaChat ».",
+                  "ok": false,
+                  "feedback": "L'IAG n'est pas l'auteur : elle a reformulé ton texte et elle n'assume rien. La responsabilité de ce qui est publié reste humaine — donc la signature aussi."
+                },
+                {
+                  "texte": "Ma signature, avec la mention « versions adaptées avec l'aide d'une IA ».",
+                  "ok": true,
+                  "feedback": "Parfait : tu assumes le contenu ET tu es transparent sur l'outil. C'est ça, publier en auteur responsable."
+                },
+                {
+                  "texte": "Aucune signature : comme ça, pas de problème en cas d'erreur.",
+                  "ok": false,
+                  "feedback": "Raté : un article anonyme perd toute crédibilité, et le journal reste responsable quand même. Signer, c'est assumer — et c'est ce qui donne confiance aux lecteurs."
+                }
+              ]
+            },
+            { "de": "info", "texte": "Tu as utilisé l'IAG en assistant : tu as fourni le texte, précisé publics et objectif, corrigé l'invention, signé. L'outil propose — l'auteur décide et assume." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "L'IAG a reformulé le même chapô pour quatre destinations. Observe le ton, le vocabulaire et les emojis de chaque version, puis retrouve son public.",
+          "paires": [
+            {
+              "gauche": "🔥 GG les Robo-Lynx !! Le club robotique a tout gagné au régional 🤖🏆 Passe voir le robot en salle 112 à la récré !",
+              "droite": "Post pour le compte du collège (élèves)",
+              "feedbackOk": "Oui : emojis, « GG », exclamations, rendez-vous à la récré — tout ce ton familier vise les élèves du collège.",
+              "feedbackKo": "Regarde les indices : emojis, « GG », « passe à la récré »… Ce registre familier s'adresse aux élèves, pas aux adultes ni aux CM2 qui ne connaissent pas la salle 112."
+            },
+            {
+              "gauche": "Le club robotique du collège a remporté la finale régionale. Vos enfants pourront découvrir le robot lors de la réunion de janvier.",
+              "droite": "Newsletter des parents",
+              "feedbackOk": "Exact : « vos enfants », ton posé, rendez-vous officiel — cette version rassure et informe des adultes.",
+              "feedbackKo": "L'indice décisif : « vos enfants ». Ajoute le ton posé et la réunion officielle : ce texte parle à des parents."
+            },
+            {
+              "gauche": "Au collège, il y a un club où l'on fabrique de vrais robots — et cette année, ils ont gagné un grand concours ! Tu pourras l'essayer aux portes ouvertes.",
+              "droite": "Dépliant pour les CM2 en visite",
+              "feedbackOk": "Bien vu : phrases simples, tutoiement, découverte du collège comme une aventure — parfait pour de futurs 6e.",
+              "feedbackKo": "« Au collège, il y a un club… tu pourras l'essayer » : on explique tout depuis zéro, en tutoyant. C'est écrit pour des CM2 qui découvrent le collège."
+            },
+            {
+              "gauche": "Le 14 mars, l'équipe Robo-Lynx du collège des Tilleuls a remporté la finale régionale de robotique de Brévanne, devant onze établissements.",
+              "droite": "Brève pour le journal de la ville",
+              "feedbackOk": "Oui : date, lieu, chiffre, ton neutre, zéro emoji — les codes d'une brève de presse locale.",
+              "feedbackKo": "Date précise, lieu, nombre d'établissements, aucun emoji ni exclamation : ce ton factuel et neutre est celui de la presse locale."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "bancTitres",
+          "questions": [
+            {
+              "question": "Compare la proposition de NovaChat au chapô d'origine. Quel est le problème ?",
+              "options": [
+                "Elle est trop courte pour une newsletter",
+                "Elle transforme la finale « régionale » en « nationale » et invente un chèque de 5 000 €",
+                "Elle est écrite en langage familier",
+                "Elle oublie de parler du club robotique"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : rien dans le chapô d'origine ne parle de « nationale » ni d'argent. Une IAG peut inventer des détails très crédibles — on compare toujours sa proposition avec les faits vérifiés.",
+              "feedbackKo": "Relis le chapô d'origine : finale « régionale », aucun chèque. NovaChat a inventé deux détails plausibles — ça arrive souvent. Avant de publier, compare toujours la version IAG avec tes infos vérifiées."
+            },
+            {
+              "question": "Et la proposition de Scribo : convient-elle à la newsletter des parents ?",
+              "options": [
+                "Oui : les majuscules attirent l'œil",
+                "Non : ton piège à clics et zéro information — ni le public ni l'objectif ne sont respectés",
+                "Oui : le suspense donne envie de lire",
+                "Non : elle est trop précise"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : majuscules, suspense artificiel, aucune info concrète — c'est un piège à clics, pas une newsletter qui informe des parents. Un texte se juge sur son public ET son objectif.",
+              "feedbackKo": "Regarde le texte de Scribo : « INCROYABLE », « vous n'allez JAMAIS croire »… et aucune info concrète. C'est l'inverse de l'objectif demandé (informer) et du public visé (des parents)."
+            }
+          ]
+        },
+        {
+          "document": "bancTitres",
+          "questions": [
+            {
+              "question": "Le chapô de NovaChat annonce une finale « nationale ». Que fais-tu avant de publier ?",
+              "options": [
+                "Je garde « nationale » : ça met le club en valeur",
+                "Je corrige avec le chapô d'origine : la finale était régionale, et c'est la rédac qui signe",
+                "Je publie tel quel : une IAG ne se trompe jamais",
+                "Je supprime tout l'article, tant pis pour le club"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Réflexe d'auteur responsable : tu compares avec la version vérifiée (« finale régionale ») et tu corriges. Ce qui paraît sous ta signature doit être vrai — pas seulement flatteur.",
+              "feedbackKo": "Le chapô d'origine, validé par la rédac, dit « finale régionale » : c'est l'IAG qu'on corrige, pas les faits. Toi qui signes, tu réponds de chaque mot publié — même suggéré par une machine."
+            },
+            {
+              "question": "Quelle proposition retiens-tu comme base pour la newsletter, et pourquoi ?",
+              "options": [
+                "Scribo : son suspense fera ouvrir le mail",
+                "NovaChat, une fois ses inventions corrigées : son ton informatif convient aux parents",
+                "Aucune : un texte d'IAG est inutilisable par principe",
+                "Les deux, collées bout à bout"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "C'est la bonne démarche : le ton de NovaChat colle au public, à toi de vérifier, corriger puis décider. L'outil propose, l'auteur dispose.",
+              "feedbackKo": "La base utile, c'était NovaChat : le bon ton pour des parents, à condition de corriger ses inventions (régionale, pas de chèque). Tout refuser en bloc ou tout garder sans trier, c'est perdre dans les deux cas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur l'écriture avec une IAG ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Préciser le public et l'objectif dans ta demande change le texte produit par l'IAG.",
+              "vrai": true,
+              "feedback": "Vrai. « Pour des CM2 » ou « pour des parents », ce n'est pas le même ton : plus ta demande est précise, plus la proposition est utilisable."
+            },
+            {
+              "texte": "Un texte généré par une IAG peut être publié tel quel, sans relecture.",
+              "vrai": false,
+              "feedback": "Faux. L'IAG peut inventer des détails crédibles ou rater le ton. Relire, vérifier, corriger : c'est le travail de l'auteur."
+            },
+            {
+              "texte": "Si tu publies une erreur inventée par l'IAG, c'est toi le responsable.",
+              "vrai": true,
+              "feedback": "Vrai. La signature en bas, c'est la tienne : tu assumes chaque mot publié, même ceux suggérés par la machine."
+            },
+            {
+              "texte": "Demander trois versions à l'IAG, puis choisir et corriger, c'est tricher.",
+              "vrai": false,
+              "feedback": "Faux. Comparer des propositions et garder la main sur le choix final, c'est utiliser l'outil en auteur. Tricher, ce serait publier sans rien maîtriser."
+            },
+            {
+              "texte": "Une IAG vérifie ses informations avant de te répondre.",
+              "vrai": false,
+              "feedback": "Faux. Elle génère le texte le plus probable, sans vérifier les faits. Elle peut affirmer une invention avec un aplomb total."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

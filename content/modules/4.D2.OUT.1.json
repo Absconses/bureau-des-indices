@@ -1,0 +1,195 @@
+{
+  "id": "4.D2.OUT.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "OUT",
+  "objectif": "Utiliser un moteur de recherche en utilisant ses différentes fonctionnalités.",
+  "titre": "Une affiche, deux millions de résultats",
+  "accroche": "Pour ton exposé d'arts plastiques, tu dois retrouver UNE affiche de cirque de 1897… noyée sous deux millions de résultats. Ton moteur n'est pas une boule de cristal : c'est une boîte à outils, et tu vas apprendre à t'en servir.",
+  "documents": {
+    "serpAffiche": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=affiche+grand+cirque+bellune",
+      "requete": "affiche grand cirque bellune",
+      "nbResultats": "Environ 2 340 000 résultats (0,42 seconde)",
+      "resultats": [
+        {
+          "annonce": true,
+          "url": "www.posterama-deco.fr › promos",
+          "titre": "Affiches vintage dès 9,90 € 🎪 -20 % ce week-end",
+          "extrait": "Reproductions d'affiches anciennes pour décorer ta chambre. Cirque, cinéma, voyages : livraison en 48 h, offre à saisir vite !"
+        },
+        {
+          "url": "www.musee-affiche-valcourt.fr › collections",
+          "titre": "« Le Grand Cirque Bellune » (1897) — collections en ligne",
+          "extrait": "La notice complète de la lithographie de 1897 : artiste, dimensions, histoire. Image en haute définition, téléchargeable et réutilisable pour un usage pédagogique."
+        },
+        {
+          "url": "blog.circorama.net › histoire",
+          "titre": "Le cirque Bellune, roi des tournées 1885-1912",
+          "extrait": "Cinq anecdotes sur ce cirque légendaire, racontées par un passionné. Et quelles affiches ! Des couleurs à tomber du chapiteau."
+        },
+        {
+          "url": "www.gazette-de-valcourt.fr › culture",
+          "titre": "Une affiche du Grand Cirque Bellune adjugée 12 000 €",
+          "extrait": "Publié hier à 18 h 04 — Un collectionneur a remporté aux enchères une lithographie rare de 1897, en parfait état."
+        },
+        {
+          "url": "forum.deco-retro.net › discussion-881",
+          "titre": "Où trouver une affiche de cirque pour mon salon ?",
+          "extrait": "23 messages — « perso, je l'ai imprimée depuis une photo trouvée en ligne, chut 🤫 ». Débats déco et bons plans entre passionnés."
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpAffiche",
+          "questions": [
+            {
+              "question": "Il te faut l'affiche de 1897 en haute définition pour ton diaporama. En lisant les extraits, quel résultat ouvres-tu en premier ?",
+              "options": [
+                "Le 1er : Posterama et sa promo -20 %",
+                "Le 2e : le musée de l'Affiche de Valcourt",
+                "Le 4e : l'article de la Gazette de Valcourt",
+                "Le 5e : le forum déco-rétro"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien lu : l'extrait du musée annonce une « image en haute définition, téléchargeable et réutilisable pour un usage pédagogique ». Pile ton besoin. Les extraits se lisent AVANT de cliquer : ils te disent ce que chaque page va t'offrir.",
+              "feedbackKo": "Relis l'extrait du 2e résultat : « image en haute définition, téléchargeable et réutilisable pour un usage pédagogique » — pile ton besoin. Posterama vend des reproductions, la Gazette raconte une vente, le forum discute déco. L'extrait se lit avant de cliquer."
+            },
+            {
+              "question": "Le 4e résultat est un article publié hier par la Gazette de Valcourt. Pour ne voir QUE des articles de presse récents comme celui-là, tu ouvres…",
+              "options": [
+                "L'onglet Actualités du moteur",
+                "L'onglet Images",
+                "L'onglet Shopping",
+                "Le 1er résultat, celui de la promo"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : l'onglet Actualités ne garde que les articles de presse, classés du plus récent au plus ancien. Un onglet = un rayon de la boîte à outils, à toi de choisir le bon.",
+              "feedbackKo": "C'est l'onglet Actualités qu'il fallait ouvrir : il filtre uniquement les articles de presse récents, comme celui de la Gazette. Les onglets sont les rayons de ta boîte à outils : Images pour voir, Actualités pour l'actu."
+            }
+          ]
+        },
+        {
+          "document": "serpAffiche",
+          "questions": [
+            {
+              "question": "Ton exposé sera projeté à toute la classe : il te faut une image que tu as le DROIT de réutiliser. D'après les extraits, un seul résultat te garantit ce droit. Lequel ?",
+              "options": [
+                "Le 1er : Posterama, affiches à 9,90 €",
+                "Le 2e : le musée de l'Affiche de Valcourt",
+                "Le 3e : le blog Circorama",
+                "Le 5e : le forum déco-rétro"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : « téléchargeable et réutilisable pour un usage pédagogique », c'est écrit noir sur blanc dans l'extrait du musée. Une image trouvée n'est pas forcément une image utilisable : ce droit se vérifie toujours — le filtre « droits d'usage » de l'onglet Images sert exactement à ça.",
+              "feedbackKo": "L'extrait du 2e résultat le disait : l'image du musée est « téléchargeable et réutilisable pour un usage pédagogique ». Sur le forum, quelqu'un avoue imprimer sans permission… Une image trouvée n'est pas forcément utilisable : pense au filtre « droits d'usage » de l'onglet Images."
+            },
+            {
+              "question": "La Gazette de Valcourt parlait hier de cette affiche. Toi, tu veux retrouver des articles publiés il y a plusieurs années. Quel outil du moteur t'y amène directement ?",
+              "options": [
+                "Le filtre par date, dans les outils de recherche",
+                "L'onglet Shopping",
+                "Faire défiler les pages de résultats au hasard",
+                "Retaper la même requête plusieurs fois"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : le filtre par date limite les résultats à la période que TU choisis — dernière heure, dernière année, dates précises. Le moteur t'obéit, à condition de le régler.",
+              "feedbackKo": "L'outil qu'il te fallait : le filtre par date, caché dans le menu « Outils » du moteur. Il n'affiche que les pages publiées dans la période que tu choisis. Faire défiler au hasard, c'est chercher sans boussole."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpAffiche",
+          "consigne": "Deux millions de résultats en vrac : il faut resserrer la recherche avec des guillemets. Touche l'endroit de la page où tu dois les ajouter.",
+          "cibles": ["requete"],
+          "essaisMax": 3,
+          "indices": [
+            "Ce n'est pas dans la liste des résultats : c'est ce que TU as demandé au moteur.",
+            "Regarde tout en haut, à côté du logo CHERCHIO : les mots que tu as tapés."
+          ],
+          "feedbackOk": "C'est ta requête ! En l'entourant de guillemets — \"grand cirque bellune\" — tu ordonnes au moteur de chercher cette expression exacte, mot pour mot et dans cet ordre. Résultats divisés par mille, boutiques et forums balayés.",
+          "feedbackKo": "Il fallait toucher la requête, tout en haut à côté du logo : c'est là que tout se joue. En ajoutant des guillemets autour de l'expression — \"grand cirque bellune\" — le moteur ne garde que les pages qui la contiennent exactement, dans cet ordre."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Affiche retrouvée ! Avant de refermer l'enquête, complète ta fiche « boîte à outils du moteur ».",
+          "texte": "Pour chercher une expression exacte, je la mets entre {1}. Pour voir l'affiche au lieu de lire des descriptions, j'ouvre l'onglet {2}. Pour suivre les dernières ventes aux enchères, l'onglet Actualités et le filtre par {3} sont mes alliés. Et avant de mettre l'image dans mon exposé, je vérifie ses {4} d'usage.",
+          "etiquettes": ["guillemets", "Images", "date", "droits", "majuscules", "étoiles"],
+          "reponses": ["guillemets", "Images", "date", "droits"],
+          "feedbackOk": "Ta boîte à outils est complète : guillemets, onglets, filtre par date, droits d'usage. Le moteur ne devine pas ce que tu veux — c'est toi qui le règles, comme un pro.",
+          "feedbackKo": "Retiens la panoplie : les GUILLEMETS pour l'expression exacte, l'onglet IMAGES pour voir, le filtre par DATE pour choisir la période, les DROITS d'usage pour réutiliser une image. (Les majuscules et les étoiles, elles, ne changent rien pour un moteur.)"
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Arcade finale ! Clique les vrais réflexes de recherche, laisse filer les pièges.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Je mets \"grand cirque bellune\" entre guillemets pour chercher l'expression exacte.",
+              "bonne": true,
+              "feedback": "Bon réflexe : les guillemets transforment une recherche floue en recherche chirurgicale. Le moteur obéit, mot pour mot."
+            },
+            {
+              "texte": "🎁 GAGNÉ !! 1 000 affiches GRATUITES — clique dans les 10 secondes !!!",
+              "bonne": false,
+              "feedback": "Cadeau + urgence + majuscules : la panoplie complète du piège à clics. Un vrai outil n'a jamais besoin de te presser."
+            },
+            {
+              "texte": "J'ouvre l'onglet Images pour voir l'affiche au lieu de lire des descriptions.",
+              "bonne": true,
+              "feedback": "Oui : chaque onglet est un outil. Images montre, Actualités raconte le récent — à toi de choisir le bon rayon."
+            },
+            {
+              "texte": "⚠️ URGENT : sans ce logiciel magique, ta recherche ne trouvera JAMAIS rien !",
+              "bonne": false,
+              "feedback": "Urgence + peur + promesse magique = manipulation. Ton moteur a déjà tous les outils qu'il faut, gratuits et intégrés."
+            },
+            {
+              "texte": "Je filtre par droits d'usage avant de réutiliser une image dans mon exposé.",
+              "bonne": true,
+              "feedback": "Réflexe de pro : une image trouvée n'est pas forcément une image utilisable. Ce filtre montre celles que tu peux réutiliser."
+            },
+            {
+              "texte": "Le 1er résultat est FORCÉMENT le meilleur : le moteur lit dans tes pensées ✨",
+              "bonne": false,
+              "feedback": "Non : le moteur classe, il ne devine pas — et le premier résultat est parfois une pub. Boîte à outils, pas boule de cristal."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

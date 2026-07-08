@@ -1,0 +1,216 @@
+{
+  "id": "3.D1.FON.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Comprendre les bouleversements sociaux, économiques, politiques, environnementaux, engendrés par l'apparition de nouvelles technologies de l'information.",
+  "titre": "Le prix de l'instantané",
+  "accroche": "En 1855, une nouvelle mettait trois jours à traverser la France ; aujourd'hui, ta notification fait le tour du monde en deux secondes. Remonte la frise du télégraphe au smartphone et découvre la facture cachée : métiers balayés, pouvoirs déplacés, planète qui trinque.",
+  "documents": {
+    "uneGazette": {
+      "template": "une",
+      "nomJournal": "La Gazette de Valbourg",
+      "date": "Samedi 12 mai 1855",
+      "prix": "10 centimes",
+      "manchette": "Le télégraphe électrique arrive à Valbourg !",
+      "sousTitre": "Les dépêches de la capitale parviendront désormais en quelques minutes, contre trois jours par la malle-poste. Les négociants de la place se frottent déjà les mains.",
+      "photo": { "emoji": "⚡", "legende": "Les poteaux du télégraphe dressés le long de la route de la capitale, jeudi." },
+      "secondaires": [
+        { "rubrique": "Métiers", "titre": "Les courriers à cheval de la malle-poste craignent pour leur emploi" },
+        { "rubrique": "Commerce", "titre": "Connaître le prix du blé avant les autres : la fortune promise aux abonnés du télégraphe" }
+      ],
+      "sommaire": [
+        { "rubrique": "Dépêches", "page": "2" },
+        { "rubrique": "Commerce", "page": "3" },
+        { "rubrique": "Annonces", "page": "4" }
+      ]
+    },
+    "articleEmpreinte": {
+      "template": "site-article",
+      "nomSite": "PLANETE-PIXEL.INFO",
+      "url": "https://www.planete-pixel.info/enquetes/le-poids-cache-de-ton-smartphone",
+      "menu": ["Accueil", "Enquêtes", "Chiffres", "Agir"],
+      "surtitre": "Enquête",
+      "titre": "Le poids caché de ton smartphone",
+      "auteur": "Par Léna Roussel",
+      "date": "Publié le 12 mars 2026",
+      "chapo": "Il pèse 200 grammes dans ta poche. Mais avant d'y arriver, il a laissé une trace bien plus lourde sur la planète.",
+      "corps": [
+        "Pour fabriquer un smartphone de 200 grammes, il faut extraire environ 70 kilos de matières premières : des métaux rares creusés dans des mines, souvent à l'autre bout du monde. Résultat : les trois quarts de l'empreinte carbone du téléphone sont produits AVANT même sa première utilisation.",
+        "Et après l'achat, la facture continue : chaque vidéo regardée transite par des data centers, d'immenses hangars d'ordinateurs allumés jour et nuit. Pour éviter la surchauffe, ils engloutissent de l'électricité et de grandes quantités d'eau de refroidissement.",
+        "Des gestes existent pourtant : garder son téléphone plus longtemps, acheter reconditionné, baisser la qualité des vidéos. L'info instantanée a un prix — à nous de le faire baisser."
+      ],
+      "footer": ["Qui sommes-nous ?", "Nos sources", "Mentions légales"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Reconstitue la frise express de l'info, du plus ancien au plus récent. Les indices sont cachés dans les descriptions !",
+          "items": [
+            { "texte": "Le télégraphe électrique : des messages filent le long des fils, là où les nouvelles voyageaient à cheval." },
+            { "texte": "La radio : pour la première fois, une voix en direct entre dans des millions de foyers." },
+            { "texte": "La télévision : après le son, c'est l'image en direct qui s'installe dans les salons." },
+            { "texte": "Internet : les ordinateurs du monde entier se connectent, et chacun peut publier sans imprimerie." },
+            { "texte": "Le smartphone : internet quitte le bureau, tient dans la poche et te notifie 24 h/24." }
+          ],
+          "feedbackOk": "Frise en place : télégraphe → radio → télévision → internet → smartphone. À chaque saut, l'info va plus vite et touche plus de monde… et à chaque saut, des métiers, des pouvoirs et l'environnement sont bousculés. C'est la suite de l'enquête.",
+          "feedbackKo": "L'ordre était : télégraphe (le fil remplace le cheval), radio (la voix en direct), télévision (l'image APRÈS le son), internet (tout le monde connecté), smartphone (internet en poche). Relis les descriptions : « là où les nouvelles voyageaient à cheval », « après le son »… chaque techno s'appuie sur la précédente."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "uneGazette",
+          "questions": [
+            {
+              "question": "D'après cette une de 1855, quel métier est directement menacé par l'arrivée du télégraphe ?",
+              "options": [
+                "Les courriers à cheval de la malle-poste",
+                "Les imprimeurs de la Gazette",
+                "Les négociants en blé",
+                "Les poseurs de poteaux"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu, c'était dans l'encadré « Métiers » : porter les dépêches à cheval ne sert plus à rien quand un fil le fait en quelques minutes. Chaque nouvelle technologie de l'info bouscule des métiers — c'était vrai en 1855, c'est encore vrai aujourd'hui.",
+              "feedbackKo": "Regarde l'encadré « Métiers » : « Les courriers à cheval de la malle-poste craignent pour leur emploi ». Quand une techno transporte l'info plus vite, les métiers de l'ancienne vitesse vacillent : un bouleversement social qui se répète à chaque invention."
+            },
+            {
+              "question": "D'après la rubrique « Commerce », quel avantage le télégraphe promet-il à ses abonnés ?",
+              "options": [
+                "Connaître les prix avant les autres, donc gagner plus d'argent",
+                "Payer la Gazette moins cher",
+                "Voyager plus vite vers la capitale",
+                "Envoyer leurs lettres gratuitement"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : recevoir l'info en premier, c'est acheter et vendre au bon moment. L'info rapide déplace le pouvoir et l'argent vers ceux qui y ont accès — une règle née avec le télégraphe et toujours valable à l'ère d'internet.",
+              "feedbackKo": "Relis la rubrique « Commerce » : « Connaître le prix du blé avant les autres : la fortune promise aux abonnés ». Celui qui sait en premier prend l'avantage : chaque technologie de l'info redistribue le pouvoir économique."
+            }
+          ]
+        },
+        {
+          "document": "articleEmpreinte",
+          "questions": [
+            {
+              "question": "D'après l'article, à quel moment un smartphone produit-il l'essentiel de son empreinte carbone ?",
+              "options": [
+                "Avant même sa première utilisation, lors de la fabrication",
+                "Pendant la charge de la batterie, la nuit",
+                "Quand tu regardes des vidéos",
+                "Au moment où tu le jettes"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien lu : 70 kilos de matières premières pour 200 grammes de téléphone, et les trois quarts de l'empreinte carbone AVANT le premier allumage. Le bouleversement environnemental commence à la mine, pas dans ta poche — d'où l'intérêt de garder son téléphone longtemps.",
+              "feedbackKo": "Relis le premier paragraphe : 70 kilos de matières extraites, et « les trois quarts de l'empreinte carbone produits AVANT même sa première utilisation ». Conclusion de l'article : garder son téléphone plus longtemps est le geste le plus efficace."
+            },
+            {
+              "question": "D'après l'article, que consomment les data centers qui font transiter tes vidéos ?",
+              "options": [
+                "De l'électricité et de l'eau pour le refroidissement",
+                "Uniquement de l'énergie solaire",
+                "Rien : le numérique est immatériel",
+                "Du papier et de l'encre"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : des hangars d'ordinateurs allumés jour et nuit, qui « engloutissent de l'électricité et de grandes quantités d'eau de refroidissement ». L'info « dématérialisée » a bien un corps — et une facture environnementale.",
+              "feedbackKo": "C'était dans le deuxième paragraphe : pour éviter la surchauffe, les data centers consomment de l'électricité ET beaucoup d'eau. Le « cloud » n'a rien d'un nuage : c'est du béton, des machines et de l'énergie."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "À chaque techno son bouleversement. Associe chaque saut technologique à ce qu'il a chamboulé : métiers, argent, pouvoir ou planète.",
+          "paires": [
+            {
+              "gauche": "La radio des années 1930 entre dans tous les foyers",
+              "droite": "Les dirigeants parlent directement à des millions de personnes : nouveau pouvoir politique",
+              "feedbackOk": "Oui : pour la première fois, une seule voix atteint tout un pays en même temps, sans intermédiaire. Informer ou manipuler des foules devient possible à grande échelle — un bouleversement politique majeur.",
+              "feedbackKo": "La radio a donné aux dirigeants un accès direct aux oreilles de millions de gens. Retiens : celui qui tient le micro tient un vrai pouvoir politique — chaque techno de l'info redistribue ce pouvoir."
+            },
+            {
+              "gauche": "Internet permet à chacun de publier sans imprimerie",
+              "droite": "Les journaux papier perdent leurs lecteurs et leur publicité",
+              "feedbackOk": "Exact : quand l'info circule gratuitement en ligne, les ventes en kiosque s'effondrent et la pub file sur le web. Des journaux ferment, des métiers disparaissent : un bouleversement économique énorme.",
+              "feedbackKo": "Quand tout le monde peut publier et lire en ligne, les journaux papier vendent moins et la publicité part sur le web. Économiquement, chaque nouvelle technologie fragilise celles d'avant."
+            },
+            {
+              "gauche": "Le smartphone met l'info en continu dans des milliards de poches",
+              "droite": "Mines de métaux rares et data centers : la planète encaisse",
+              "feedbackOk": "Oui : fabrication gourmande en métaux rares, serveurs allumés jour et nuit pour livrer les vidéos… L'instantané a une empreinte environnementale bien réelle, même si on ne la voit pas à l'écran.",
+              "feedbackKo": "Le smartphone, c'est le bouleversement environnemental : extraction de métaux rares pour le fabriquer, data centers énergivores pour l'alimenter. L'info instantanée se paie aussi en ressources naturelles."
+            },
+            {
+              "gauche": "Le télégraphe transmet les nouvelles plus vite que le cheval",
+              "droite": "Les courriers de la malle-poste doivent changer de métier",
+              "feedbackOk": "Exact : le fil électrique rend le galop inutile. À chaque saut technologique, des métiers meurent et d'autres naissent — télégraphiste hier, développeuse d'applis aujourd'hui. Un bouleversement social permanent.",
+              "feedbackKo": "Quand le fil va plus vite que le cheval, les courriers de la malle-poste doivent se reconvertir. Bouleversement social : chaque technologie de l'info détruit des métiers ET en crée de nouveaux."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Fin de l'enquête ! Clique les phrases qui disent vrai sur le prix de l'info instantanée. Laisse filer les pièges qui veulent juste te faire cliquer.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "Fabriquer un smartphone consomme des dizaines de kilos de matières premières.",
+              "bonne": true,
+              "feedback": "Vrai : environ 70 kilos de matières pour 200 grammes de téléphone. Le prix environnemental de l'info commence à la mine, bien avant le premier SMS."
+            },
+            {
+              "texte": "⚡ URGENT !!! Ton téléphone va S'AUTODÉTRUIRE : clique ICI dans les 30 secondes !!!",
+              "bonne": false,
+              "feedback": "Piège : urgence + majuscules + compte à rebours, le kit complet pour te faire cliquer sans réfléchir. Aucune vraie information ne t'impose 30 secondes de délai."
+            },
+            {
+              "texte": "Chaque saut technologique a fait disparaître des métiers et en a créé d'autres.",
+              "bonne": true,
+              "feedback": "Vrai : courrier à cheval, standardiste, télégraphiste… disparus ; développeurs, community managers… apparus. Le bouleversement social se répète à chaque techno."
+            },
+            {
+              "texte": "🎁 GRATUIT : un smartphone neuf offert aux 100 premiers qui partagent !",
+              "bonne": false,
+              "feedback": "Piège du cadeau impossible : personne n'offre des smartphones par centaines. Le vrai but : récolter tes clics, tes partages et tes données."
+            },
+            {
+              "texte": "Recevoir l'information avant les autres peut donner du pouvoir ou de l'argent.",
+              "bonne": true,
+              "feedback": "Vrai depuis le télégraphe : celui qui sait en premier achète, vend ou décide avant les autres. La vitesse de l'info déplace le pouvoir."
+            },
+            {
+              "texte": "😱 Cette vidéo INTERDITE va te faire PLEURER… on te la cache !",
+              "bonne": false,
+              "feedback": "Piège : appel à l'émotion + faux secret. On te promet un choc pour capter ton attention — c'est elle, la marchandise. Personne ne « cache » une vidéo qui s'affiche dans ton fil."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

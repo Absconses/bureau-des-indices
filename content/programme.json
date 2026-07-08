@@ -1,111 +1,743 @@
 {
-  "version": 1,
-  "source": "Projet de programmes d'éducation aux médias et à l'information du cycle 4, CSP, juin 2025",
-  "parcours": [
-    {
-      "id": "5e",
-      "label": "Parcours 5e",
-      "domaines": [
-        {
-          "id": "D1",
-          "nom": "Se situer dans le paysage médiatique et informationnel",
-          "labelEleve": "Se repérer dans les médias",
-          "couleur": "d1",
-          "disponible": false,
-          "rubriques": []
-        },
-        {
-          "id": "D2",
-          "nom": "S'informer",
-          "labelEleve": "S'informer",
-          "couleur": "d2",
-          "disponible": true,
-          "rubriques": [
-            {
-              "id": "OUT",
-              "nom": "Connaître les outils pour s'informer et savoir les mobiliser",
-              "modules": [
-                {
-                  "id": "5.D2.OUT.1",
-                  "titre": "Chaque info a sa forme",
-                  "objectif": "Connaître les différents supports d'information, leur structuration et leur spécificité.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.OUT.1.json"
-                },
-                {
-                  "id": "5.D2.OUT.2",
-                  "titre": "Le trésor caché du CDI",
-                  "objectif": "Utiliser une base documentaire et un portail documentaire.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.OUT.2.json"
-                },
-                {
-                  "id": "5.D2.OUT.3",
-                  "titre": "Duel de moteurs",
-                  "objectif": "Identifier différents types de moteurs de recherche et savoir les comparer.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.OUT.3.json"
-                }
-              ]
-            },
-            {
-              "id": "RECH",
-              "nom": "Rechercher l'information",
-              "modules": [
-                {
-                  "id": "5.D2.RECH.1",
-                  "titre": "De quoi as-tu vraiment besoin ?",
-                  "objectif": "Identifier son besoin d'information.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.RECH.1.json"
-                },
-                {
-                  "id": "5.D2.RECH.2",
-                  "titre": "Enquête dans la presse",
-                  "objectif": "Rechercher de l'information dans la presse.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.RECH.2.json"
-                },
-                {
-                  "id": "5.D2.RECH.3",
-                  "titre": "Garde une trace",
-                  "objectif": "Collecter les informations.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.RECH.3.json"
-                }
-              ]
-            },
-            {
-              "id": "EVAL",
-              "nom": "Évaluer l'information",
-              "modules": [
-                {
-                  "id": "5.D2.EVAL.1",
-                  "titre": "Qui parle ?",
-                  "objectif": "Identifier l'auteur de l'information et les éléments permettant de saisir son rapport au sujet et ses éventuelles intentions.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.EVAL.1.json"
-                },
-                {
-                  "id": "5.D2.EVAL.2",
-                  "titre": "Fiable ou pas fiable ?",
-                  "objectif": "Savoir reconnaître la fiabilité d'une information en évaluant ses producteurs et ses transmetteurs.",
-                  "disponible": true,
-                  "fichier": "content/modules/5.D2.EVAL.2.json"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "D3",
-          "nom": "Partager et produire de l'information de manière éthique et responsable",
-          "labelEleve": "Partager & produire",
-          "couleur": "d3",
-          "disponible": false,
-          "rubriques": []
-        }
-      ]
-    }
-  ]
+    "version":  2,
+    "source":  "Projet de programmes d\u0027Ã©ducation aux mÃ©dias et Ã  l\u0027information du cycle 4, CSP, juin 2025",
+    "parcours":  [
+                     {
+                         "id":  "5e",
+                         "label":  "Parcours 5e",
+                         "domaines":  [
+                                          {
+                                              "id":  "D1",
+                                              "nom":  "Se situer dans le paysage médiatique et informationnel",
+                                              "labelEleve":  "Se repérer dans les médias",
+                                              "couleur":  "d1",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "EXP",
+                                                                    "nom":  "Questionner son expérience des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D1.EXP.1",
+                                                                                        "titre":  "L\u0027info dès le réveil",
+                                                                                        "objectif":  "Saisir la diversité des manières de s\u0027informer en partant de son expérience propre.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.EXP.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D1.EXP.2",
+                                                                                        "titre":  "À chaque envie son info",
+                                                                                        "objectif":  "Identifier ses besoins (se tenir au courant, approfondir un sujet pour se forger son opinion, s\u0027inscrire dans la société ou dans un groupe, etc.).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.EXP.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D1.EXP.3",
+                                                                                        "titre":  "Que te veulent ces posts ?",
+                                                                                        "objectif":  "Comprendre que nous sommes la cible de campagnes de communication qui peuvent avoir des buts très différents.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.EXP.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "FON",
+                                                                    "nom":  "Comprendre le fonctionnement des médias",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D1.FON.1",
+                                                                                        "titre":  "Un match, quatre récits",
+                                                                                        "objectif":  "Identifier les différents types de médias (radio, télévision, presse écrite, numérique).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.FON.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D1.FON.2",
+                                                                                        "titre":  "Qui fabrique l\u0027info ?",
+                                                                                        "objectif":  "Identifier les acteurs du monde de l\u0027information (journalistes, dessinateurs de presse, photoreporters, etc.).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.FON.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "LAN",
+                                                                    "nom":  "Comprendre les langages des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D1.LAN.1",
+                                                                                        "titre":  "Une crue, quatre langages",
+                                                                                        "objectif":  "Saisir la diversité des langages utilisés par les médias (écrit, image, audiovisuel, multimédia, etc.).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.LAN.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D1.LAN.2",
+                                                                                        "titre":  "Fait ou opinion ?",
+                                                                                        "objectif":  "Différencier la présentation des faits et l\u0027expression d\u0027une opinion.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D1.LAN.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D2",
+                                              "nom":  "S\u0027informer",
+                                              "labelEleve":  "S\u0027informer",
+                                              "couleur":  "d2",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "OUT",
+                                                                    "nom":  "Connaître les outils pour s\u0027informer et savoir les mobiliser",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D2.OUT.1",
+                                                                                        "titre":  "Chaque info a sa forme",
+                                                                                        "objectif":  "Connaître les différents supports d\u0027information, leur structuration et leur spécificité.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.OUT.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D2.OUT.2",
+                                                                                        "titre":  "Le trésor caché du CDI",
+                                                                                        "objectif":  "Utiliser une base documentaire et un portail documentaire.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.OUT.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D2.OUT.3",
+                                                                                        "titre":  "Duel de moteurs",
+                                                                                        "objectif":  "Identifier différents types de moteurs de recherche et savoir les comparer.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.OUT.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "RECH",
+                                                                    "nom":  "Rechercher l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D2.RECH.1",
+                                                                                        "titre":  "De quoi as-tu vraiment besoin ?",
+                                                                                        "objectif":  "Identifier son besoin d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.RECH.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D2.RECH.2",
+                                                                                        "titre":  "Enquête dans la presse",
+                                                                                        "objectif":  "Rechercher de l\u0027information dans la presse.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.RECH.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D2.RECH.3",
+                                                                                        "titre":  "Garde une trace",
+                                                                                        "objectif":  "Collecter les informations.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.RECH.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "EVAL",
+                                                                    "nom":  "Évaluer l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D2.EVAL.1",
+                                                                                        "titre":  "Qui parle ?",
+                                                                                        "objectif":  "Identifier l\u0027auteur de l\u0027information et les éléments permettant de saisir son rapport au sujet et ses éventuelles intentions.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.EVAL.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D2.EVAL.2",
+                                                                                        "titre":  "Fiable ou pas fiable ?",
+                                                                                        "objectif":  "Savoir reconnaître la fiabilité d\u0027une information en évaluant ses producteurs et ses transmetteurs.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D2.EVAL.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D3",
+                                              "nom":  "Partager et produire de l\u0027information de manière éthique et responsable",
+                                              "labelEleve":  "Partager \u0026 produire",
+                                              "couleur":  "d3",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "ELAB",
+                                                                    "nom":  "Élaborer et mettre en valeur une information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D3.ELAB.1",
+                                                                                        "titre":  "Trois sources, un dossier",
+                                                                                        "objectif":  "Sélectionner et agréger plusieurs sources d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.ELAB.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D3.ELAB.2",
+                                                                                        "titre":  "Affiche, podcast ou article ?",
+                                                                                        "objectif":  "Choisir un langage cohérent pour mettre en valeur un contenu élaboré à partir de sources d\u0027information variées et de langages médiatiques divers.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.ELAB.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "PROD",
+                                                                    "nom":  "Produire une information et animer un média scolaire de façon éthique et responsable",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D3.PROD.1",
+                                                                                        "titre":  "Publiable ou pas ?",
+                                                                                        "objectif":  "Comprendre les règles de communication avant d\u0027élaborer un contenu.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.PROD.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D3.PROD.2",
+                                                                                        "titre":  "Chasse aux données perso",
+                                                                                        "objectif":  "Élaborer et diffuser des contenus en respectant la protection des données personnelles.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.PROD.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "POST",
+                                                                    "nom":  "Construire une posture critique et responsable pour soi et pour les autres",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "5.D3.POST.1",
+                                                                                        "titre":  "Le pseudo qui en dit trop",
+                                                                                        "objectif":  "Intégrer les enjeux des traces numériques dans sa communication en ligne.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.POST.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "5.D3.POST.2",
+                                                                                        "titre":  "Drôle pour qui ?",
+                                                                                        "objectif":  "Adopter une posture réflexive sur les contenus publiés et sur leur réception, en mobilisant les compétences d\u0027ordre psychologique et social du socle commun de connaissances, de compétences et de culture.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/5.D3.POST.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "4e",
+                         "label":  "Parcours 4e",
+                         "domaines":  [
+                                          {
+                                              "id":  "D1",
+                                              "nom":  "Se situer dans le paysage médiatique et informationnel",
+                                              "labelEleve":  "Se repérer dans les médias",
+                                              "couleur":  "d1",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "EXP",
+                                                                    "nom":  "Questionner son expérience des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D1.EXP.1",
+                                                                                        "titre":  "3 h 40 par jour ?!",
+                                                                                        "objectif":  "Faire preuve de recul sur ses propres usages.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.EXP.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D1.EXP.2",
+                                                                                        "titre":  "Respire avant de partager",
+                                                                                        "objectif":  "Mettre à distance l\u0027information reçue sur un plan intellectuel et émotionnel.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.EXP.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "FON",
+                                                                    "nom":  "Comprendre le fonctionnement des médias",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D1.FON.1",
+                                                                                        "titre":  "Suis l\u0027argent de l\u0027info",
+                                                                                        "objectif":  "Comprendre les principaux modèles économiques des médias et de l\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.FON.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D1.FON.2",
+                                                                                        "titre":  "Piscine fermée ? Pas si vite !",
+                                                                                        "objectif":  "Comprendre comment les médias contribuent à la vie démocratique.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.FON.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D1.FON.3",
+                                                                                        "titre":  "Les gendarmes de l\u0027antenne",
+                                                                                        "objectif":  "Connaître les principales autorités qui garantissent et régulent cette liberté.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.FON.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "LAN",
+                                                                    "nom":  "Comprendre les langages des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D1.LAN.1",
+                                                                                        "titre":  "Une étude, trois titres",
+                                                                                        "objectif":  "Comprendre que l\u0027information est éditorialisée pour atteindre son public.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.LAN.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D1.LAN.2",
+                                                                                        "titre":  "Page 3 contre page 12",
+                                                                                        "objectif":  "Comprendre les cadres dans lesquels les médias remplissent deux fonctions essentielles : la diffusion d\u0027informations et l\u0027expression d\u0027opinions.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D1.LAN.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D2",
+                                              "nom":  "S\u0027informer",
+                                              "labelEleve":  "S\u0027informer",
+                                              "couleur":  "d2",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "OUT",
+                                                                    "nom":  "Connaître les outils pour s\u0027informer et savoir les mobiliser",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D2.OUT.1",
+                                                                                        "titre":  "Une affiche, deux millions de résultats",
+                                                                                        "objectif":  "Utiliser un moteur de recherche en utilisant ses différentes fonctionnalités.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.OUT.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.OUT.2",
+                                                                                        "titre":  "Cinq résultats, cinq suspects",
+                                                                                        "objectif":  "Analyser les résultats de recherche.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.OUT.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.OUT.3",
+                                                                                        "titre":  "Interrogatoire d\u0027une IA",
+                                                                                        "objectif":  "Utiliser l\u0027intelligence artificielle générative pour s\u0027informer.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.OUT.3.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.OUT.4",
+                                                                                        "titre":  "Trois plateformes, une enquête",
+                                                                                        "objectif":  "Rechercher de l\u0027information sur les différentes plateformes numériques.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.OUT.4.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "RECH",
+                                                                    "nom":  "Rechercher l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D2.RECH.1",
+                                                                                        "titre":  "Un volcan, deux missions",
+                                                                                        "objectif":  "Identifier son besoin d\u0027information (se tenir au courant de l\u0027actualité ou approfondir une question).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.RECH.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.RECH.2",
+                                                                                        "titre":  "Photo, son, texte ou vidéo ?",
+                                                                                        "objectif":  "Comprendre ce que l\u0027on peut attendre des différents types de supports (image, son, texte, vidéo) et de médias.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.RECH.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.RECH.3",
+                                                                                        "titre":  "Le trou dans la collecte",
+                                                                                        "objectif":  "Collecter les informations et les organiser.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.RECH.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "EVAL",
+                                                                    "nom":  "Évaluer l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D2.EVAL.1",
+                                                                                        "titre":  "Info, pub ou coup de gueule ?",
+                                                                                        "objectif":  "Distinguer ce qui relève de l\u0027information, de la communication et de l\u0027expression des opinions.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.EVAL.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.EVAL.2",
+                                                                                        "titre":  "Des preuves en béton ?",
+                                                                                        "objectif":  "Identifier la logique et la pertinence d\u0027une argumentation et la qualité des preuves pour la justifier.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.EVAL.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D2.EVAL.3",
+                                                                                        "titre":  "Trois intox dans la tempête",
+                                                                                        "objectif":  "Identifier les désordres informationnels.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D2.EVAL.3.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D3",
+                                              "nom":  "Partager et produire de l\u0027information de manière éthique et responsable",
+                                              "labelEleve":  "Partager \u0026 produire",
+                                              "couleur":  "d3",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "ELAB",
+                                                                    "nom":  "Élaborer et mettre en valeur une information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D3.ELAB.1",
+                                                                                        "titre":  "Remixe, ne recopie pas !",
+                                                                                        "objectif":  "Élaborer un contenu original à partir de plusieurs sources d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.ELAB.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D3.ELAB.2",
+                                                                                        "titre":  "Un scoop, trois versions",
+                                                                                        "objectif":  "Adapter son choix de langage et de format en fonction de l\u0027objectif et du public visés pour mettre en valeur un contenu original.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.ELAB.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "PROD",
+                                                                    "nom":  "Produire une information et animer un média scolaire de façon éthique et responsable",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D3.PROD.1",
+                                                                                        "titre":  "Copié, collé, coincé ?",
+                                                                                        "objectif":  "Élaborer et diffuser des contenus en respectant les droits d\u0027auteur et le code de la propriété intellectuelle.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.PROD.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D3.PROD.2",
+                                                                                        "titre":  "Publier ou pas ?",
+                                                                                        "objectif":  "Élaborer et diffuser des contenus en s\u0027inscrivant dans le cadre légal de la liberté d\u0027expression et de ses limites.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.PROD.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D3.PROD.3",
+                                                                                        "titre":  "Alerte à l\u0027auteur fantôme",
+                                                                                        "objectif":  "Intégrer les enjeux de l\u0027IAG dans le cadre de sa production (cadre réglementaire, opportunités, risques...).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.PROD.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "POST",
+                                                                    "nom":  "Construire une posture critique et responsable pour soi et pour les autres",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "4.D3.POST.1",
+                                                                                        "titre":  "Tout dire, vraiment ?",
+                                                                                        "objectif":  "Adopter une posture réflexive et critique sur les contenus publiés et mieux comprendre ce qu\u0027est la liberté d\u0027expression.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.POST.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "4.D3.POST.2",
+                                                                                        "titre":  "Viral, mais à quel prix ?",
+                                                                                        "objectif":  "Adopter une posture réflexive et critique sur les contenus publiés et sur leurs impacts sociétaux et environnementaux.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/4.D3.POST.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "3e",
+                         "label":  "Parcours 3e",
+                         "domaines":  [
+                                          {
+                                              "id":  "D1",
+                                              "nom":  "Se situer dans le paysage médiatique et informationnel",
+                                              "labelEleve":  "Se repérer dans les médias",
+                                              "couleur":  "d1",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "EXP",
+                                                                    "nom":  "Questionner son expérience des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D1.EXP.1",
+                                                                                        "titre":  "Deux écrans, deux mondes",
+                                                                                        "objectif":  "Comprendre que son accès aux médias et à l\u0027information est influencé par différents facteurs.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.EXP.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D1.EXP.2",
+                                                                                        "titre":  "40 vidéos plus tard",
+                                                                                        "objectif":  "Porter un regard critique sur ses pratiques et sur ce qui est susceptible de les conditionner.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.EXP.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D1.EXP.3",
+                                                                                        "titre":  "Que dit ta trace ?",
+                                                                                        "objectif":  "Être conscient des éléments constitutifs de sa citoyenneté numérique.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.EXP.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "FON",
+                                                                    "nom":  "Comprendre le fonctionnement des médias",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D1.FON.1",
+                                                                                        "titre":  "Le prix de l\u0027instantané",
+                                                                                        "objectif":  "Comprendre les bouleversements sociaux, économiques, politiques, environnementaux, engendrés par l\u0027apparition de nouvelles technologies de l\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.FON.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D1.FON.2",
+                                                                                        "titre":  "Un seul son de cloche",
+                                                                                        "objectif":  "Comprendre les liens entre pluralisme des médias et vie démocratique.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.FON.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D1.FON.3",
+                                                                                        "titre":  "Six voix, un accident",
+                                                                                        "objectif":  "Distinguer les acteurs qui interviennent dans le monde informationnel (journalistes, éditorialistes, experts, intellectuels, lanceurs d\u0027alertes, influenceurs, artistes, etc.) et leurs rôles respectifs.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.FON.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "LAN",
+                                                                    "nom":  "Comprendre les langages des médias et de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D1.LAN.1",
+                                                                                        "titre":  "Un reportage, quatre langages",
+                                                                                        "objectif":  "Comprendre la manière dont les médias adaptent leurs langages aux pratiques de leurs publics.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.LAN.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D1.LAN.2",
+                                                                                        "titre":  "Fandom : force ou meute ?",
+                                                                                        "objectif":  "Identifier les opportunités et les risques liés à l\u0027existence des pratiques des communautés sur les réseaux sociaux à l\u0027ère de l\u0027information numérique.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D1.LAN.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D2",
+                                              "nom":  "S\u0027informer",
+                                              "labelEleve":  "S\u0027informer",
+                                              "couleur":  "d2",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "OUT",
+                                                                    "nom":  "Connaître les outils pour s\u0027informer et savoir les mobiliser",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D2.OUT.1",
+                                                                                        "titre":  "Sous le capot du moteur",
+                                                                                        "objectif":  "Comprendre le fonctionnement d\u0027un moteur de recherche.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.OUT.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D2.OUT.2",
+                                                                                        "titre":  "L\u0027IA en garde à vue",
+                                                                                        "objectif":  "Se familiariser avec l\u0027intelligence artificielle générative (IAG) et percevoir les limites de cet outil.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.OUT.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D2.OUT.3",
+                                                                                        "titre":  "L\u0027info vient à toi",
+                                                                                        "objectif":  "Connaître et utiliser des outils simples de veille numérique.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.OUT.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "RECH",
+                                                                    "nom":  "Rechercher de l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D2.RECH.1",
+                                                                                        "titre":  "Mission stage : plan d\u0027attaque",
+                                                                                        "objectif":  "Structurer la démarche liée au besoin d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.RECH.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D2.RECH.2",
+                                                                                        "titre":  "Du vrac au plan d\u0027expo",
+                                                                                        "objectif":  "Collecter les informations et les organiser en vue d\u0027une production.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.RECH.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "EVAL",
+                                                                    "nom":  "Évaluer l\u0027information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D2.EVAL.1",
+                                                                                        "titre":  "Une image, une preuve ?",
+                                                                                        "objectif":  "Évaluer la fiabilité de l\u0027image comme source d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.EVAL.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D2.EVAL.2",
+                                                                                        "titre":  "Fiable ne veut pas dire vrai",
+                                                                                        "objectif":  "Mettre en rapport la fiabilité des sources d\u0027information et la véracité des informations fournies.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.EVAL.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D2.EVAL.3",
+                                                                                        "titre":  "Suspect n°1 : ton cerveau",
+                                                                                        "objectif":  "Prendre conscience de ce qui fait obstacle à l\u0027évaluation d\u0027une information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D2.EVAL.3.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          },
+                                          {
+                                              "id":  "D3",
+                                              "nom":  "Partager et produire de l\u0027information de manière éthique et responsable",
+                                              "labelEleve":  "Partager \u0026 produire",
+                                              "couleur":  "d3",
+                                              "disponible":  true,
+                                              "rubriques":  [
+                                                                {
+                                                                    "id":  "ELAB",
+                                                                    "nom":  "Élaborer et mettre en valeur une information",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D3.ELAB.1",
+                                                                                        "titre":  "La carte des controverses",
+                                                                                        "objectif":  "Élaborer un contenu original et pertinent à partir de plusieurs sources d\u0027information.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.ELAB.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D3.ELAB.2",
+                                                                                        "titre":  "Débat : convaincre sans tricher",
+                                                                                        "objectif":  "Adapter son choix de langage informationnel et médiatique pour mettre en valeur un contenu original dans le cadre d\u0027un débat d\u0027idées.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.ELAB.2.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D3.ELAB.3",
+                                                                                        "titre":  "L\u0027IA écrit, tu signes",
+                                                                                        "objectif":  "Utiliser des outils d\u0027intelligence artificielle générative pour enrichir ses productions et les adapter aux objectifs et aux publics visés.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.ELAB.3.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "PROD",
+                                                                    "nom":  "Produire une information et animer un média scolaire de façon éthique et responsable",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D3.PROD.1",
+                                                                                        "titre":  "S\u0027exprimer sans écraser",
+                                                                                        "objectif":  "Élaborer et diffuser des contenus pour promouvoir une vision responsable de la liberté d\u0027expression.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.PROD.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D3.PROD.2",
+                                                                                        "titre":  "Fausse image, vraie enquête",
+                                                                                        "objectif":  "Intégrer les enjeux de l\u0027IAG dans le cadre d\u0027une production (cadre réglementaire, opportunités, risques, etc.).",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.PROD.2.json"
+                                                                                    }
+                                                                                ]
+                                                                },
+                                                                {
+                                                                    "id":  "POST",
+                                                                    "nom":  "Construire une posture critique et responsable pour soi et pour les autres",
+                                                                    "modules":  [
+                                                                                    {
+                                                                                        "id":  "3.D3.POST.1",
+                                                                                        "titre":  "Portrait-robot numérique",
+                                                                                        "objectif":  "Intégrer les enjeux des traces numériques dans sa communication en ligne.",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.POST.1.json"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":  "3.D3.POST.2",
+                                                                                        "titre":  "Autopsie d\u0027un post viral",
+                                                                                        "objectif":  "Adopter une posture réflexive et critique sur les contenus publiés et sur leur pouvoir d\u0027influence (impacts psycho-sociaux, sociétaux, économiques, politiques, environnementaux, etc.)",
+                                                                                        "disponible":  true,
+                                                                                        "fichier":  "content/modules/3.D3.POST.2.json"
+                                                                                    }
+                                                                                ]
+                                                                }
+                                                            ]
+                                          }
+                                      ]
+                     }
+                 ]
 }

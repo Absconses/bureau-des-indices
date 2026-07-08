@@ -1,0 +1,234 @@
+{
+  "id": "4.D2.RECH.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Identifier son besoin d'information (se tenir au courant de l'actualité ou approfondir une question).",
+  "titre": "Un volcan, deux missions",
+  "accroche": "Le volcan Kelmara s'est réveillé cette nuit ! Demain tu dois en parler en classe, et dans trois semaines tu rends un exposé sur les volcans : deux missions, deux façons de chercher.",
+  "documents": {
+    "serpKelmara": {
+      "template": "serp",
+      "nomMoteur": "CHERCHIO",
+      "url": "https://www.cherchio.fr/recherche?q=%C3%A9ruption+volcan+Kelmara",
+      "requete": "éruption volcan Kelmara",
+      "nbResultats": "Environ 2 890 000 résultats (0,28 seconde)",
+      "resultats": [
+        {
+          "url": "www.flash-direct.fr › en-continu",
+          "titre": "🔴 EN DIRECT — Éruption du Kelmara : le panache atteint 6 km",
+          "extrait": "Mis à jour il y a 9 minutes. Les habitants de Port-Nélio évacués par précaution. Suivez la situation minute par minute avec notre équipe sur place."
+        },
+        {
+          "url": "www.encyclopeo.fr › sciences-de-la-terre",
+          "titre": "Comment fonctionne un volcan ? Le dossier complet",
+          "extrait": "Publié il y a 2 ans. Magma, plaques tectoniques, types d'éruptions : 12 pages d'explications vérifiées par des géologues, avec schémas et quiz."
+        },
+        {
+          "url": "www.vizzle.tv › v › lave-en-folie",
+          "titre": "LAVE EN FOLIE 🌋 les 10 éruptions les plus INCROYABLES",
+          "extrait": "Compilation d'images spectaculaires !! Abonne-toi et active la cloche pour plus de vidéos de folie 🔥🔥"
+        },
+        {
+          "url": "forum-randonature.net › topic-5521",
+          "titre": "Quelqu'un a déjà grimpé le Kelmara ? — Forum RandoNature",
+          "extrait": "Posté en 2019. « On l'a fait l'été dernier, superbe vue depuis le cratère, prévoir de bonnes chaussures » — 7 réponses"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "serpKelmara",
+          "questions": [
+            {
+              "question": "Mission n°1 : demain matin, tu dois dire à la classe où en est l'éruption. Quel résultat cliques-tu en premier ?",
+              "options": [
+                "Le résultat 1 (flash-direct.fr)",
+                "Le résultat 2 (encyclopeo.fr)",
+                "Le résultat 3 (vizzle.tv)",
+                "Le résultat 4 (forum-randonature.net)"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Oui : « mis à jour il y a 9 minutes », c'est l'indice décisif. Pour te tenir au courant d'un événement en cours, la fraîcheur passe avant tout — l'actualité se périme en quelques heures.",
+              "feedbackKo": "Compare les dates dans les extraits : seul flash-direct.fr est « mis à jour il y a 9 minutes ». Pour parler demain d'une éruption en cours, il te faut la source la plus fraîche, pas la plus épaisse ni la plus spectaculaire."
+            },
+            {
+              "question": "Mission n°2 : ton exposé de SVT sur le fonctionnement des volcans, à rendre dans trois semaines. Quel résultat sera ton meilleur point de départ ?",
+              "options": [
+                "Le résultat 1 (flash-direct.fr)",
+                "Le résultat 2 (encyclopeo.fr)",
+                "Le résultat 3 (vizzle.tv)",
+                "Le résultat 4 (forum-randonature.net)"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « 12 pages d'explications vérifiées par des géologues », c'est du complet et du solide. Et ses 2 ans d'âge ne gênent pas : le fonctionnement d'un volcan ne change pas en deux ans.",
+              "feedbackKo": "C'était le résultat 2 : « dossier complet… vérifié par des géologues ». Pour approfondir, tu as le temps de lire du solide et du vérifié. Sa date (2 ans) n'est pas un problème : ce savoir-là ne se périme pas comme l'actu."
+            }
+          ]
+        },
+        {
+          "document": "serpKelmara",
+          "questions": [
+            {
+              "question": "Quel indice, dans le résultat 1, prouve qu'il sert à SUIVRE l'actualité de l'éruption ?",
+              "options": [
+                "« Mis à jour il y a 9 minutes »",
+                "L'adresse du site finit en .fr",
+                "Il est affiché en premier dans la liste",
+                "Le titre contient le mot « Kelmara »"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "C'est ça : une mise à jour très récente, c'est LA marque d'une source faite pour suivre un événement en cours. C'est cet indice-là que tu traques quand ton besoin est de te tenir au courant.",
+              "feedbackKo": "L'indice était dans l'extrait : « mis à jour il y a 9 minutes ». Être premier de la liste ou finir en .fr ne dit rien de la fraîcheur d'une info — c'est la date de mise à jour qui compte."
+            },
+            {
+              "question": "Le résultat 2 (encyclopeo.fr) date d'il y a 2 ans. Pour quelle mission reste-t-il précieux ?",
+              "options": [
+                "Raconter demain les dernières nouvelles de l'éruption",
+                "L'exposé sur le fonctionnement des volcans",
+                "Aucune : un résultat de 2 ans ne sert plus à rien",
+                "Les deux missions, exactement pareil"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : comprendre comment marche un volcan, ça ne se périme pas en 2 ans. Approfondir une question demande du complet et du vérifié — pas forcément du tout frais.",
+              "feedbackKo": "Relis son extrait : « dossier complet… vérifié par des géologues ». Trop vieux pour l'éruption de cette nuit, mais parfait pour l'exposé : les explications de fond ne vieillissent pas comme les nouvelles du jour."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Deux missions autour du Kelmara : en parler DEMAIN, ou l'exposé dans TROIS SEMAINES. Range chaque outil dans le bon panier.",
+          "categories": [
+            { "id": "actu", "label": "⚡ Pour demain : suivre l'actu" },
+            { "id": "expose", "label": "📚 Pour l'exposé : approfondir" }
+          ],
+          "items": [
+            {
+              "texte": "Les notifications d'une appli d'info sur ton téléphone",
+              "categorie": "actu",
+              "feedbackOk": "Oui : une notification tombe dès qu'il se passe quelque chose de nouveau. C'est l'outil parfait pour rester au courant heure par heure.",
+              "feedbackKo": "Une notification te prévient de ce qui vient d'arriver : c'est l'outil du « pour demain ». Pour un exposé, elle ne t'explique rien en profondeur."
+            },
+            {
+              "texte": "Un livre sur les volcans emprunté au CDI",
+              "categorie": "expose",
+              "feedbackOk": "Exact : un livre prend du recul et explique en profondeur. Il ne sait rien de l'éruption d'hier soir, mais ton exposé n'en a pas besoin.",
+              "feedbackKo": "Un livre imprimé ne peut pas parler de l'éruption d'hier soir ! En revanche, pour comprendre le fonctionnement des volcans, c'est une valeur sûre : panier exposé."
+            },
+            {
+              "texte": "Le fil « en direct » d'un site de presse",
+              "categorie": "actu",
+              "feedbackOk": "Bien vu : un direct est mis à jour minute par minute. Exactement ce qu'il faut pour dire demain où en est l'éruption.",
+              "feedbackKo": "Un fil « en direct » suit l'événement minute par minute : c'est du tout frais, donc panier actu. Trop décousu pour construire un exposé."
+            },
+            {
+              "texte": "Une encyclopédie en ligne relue par des scientifiques",
+              "categorie": "expose",
+              "feedbackOk": "Oui : du contenu vérifié, organisé, qui explique le pourquoi et le comment. La base idéale d'un exposé.",
+              "feedbackKo": "Une encyclopédie explique le fond, pas la dernière nouvelle : elle va dans le panier exposé. Pour demain, il te faut du mis à jour, pas du vérifié depuis 2 ans."
+            },
+            {
+              "texte": "Le journal radio de 7 h pendant le petit-déj",
+              "categorie": "actu",
+              "feedbackOk": "Exact : le journal du matin fait le point sur la nuit. Tu arrives en classe avec les infos du jour, mission accomplie.",
+              "feedbackKo": "Le journal de 7 h résume les toutes dernières nouvelles : c'est un outil pour se tenir au courant, pas pour approfondir pendant trois semaines."
+            },
+            {
+              "texte": "Un documentaire de 50 minutes sur les plaques tectoniques",
+              "categorie": "expose",
+              "feedbackOk": "Oui : 50 minutes d'explications, c'est un investissement — parfait quand on a trois semaines pour comprendre un sujet à fond.",
+              "feedbackKo": "50 minutes sur les plaques tectoniques, ça n'apprend rien sur l'éruption de cette nuit — mais c'est de l'or pour l'exposé. Le temps long va avec l'approfondissement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Nino", "avatar": "🌋" },
+          "etapes": [
+            { "de": "eux", "texte": "t'as vu ?? le Kelmara est entré en éruption cette nuit 😱" },
+            { "de": "eux", "texte": "la prof d'histoire-géo veut qu'on en parle demain… je cherche où moi ??" },
+            {
+              "choix": [
+                {
+                  "texte": "Suis un fil d'actu ou le direct d'un site de presse : il te faut du tout frais.",
+                  "ok": true,
+                  "feedback": "Exactement. Ton besoin ici, c'est te tenir au courant : la situation change d'heure en heure, donc tu choisis des sources mises à jour en continu."
+                },
+                {
+                  "texte": "Fonce au CDI emprunter un gros livre sur les volcans.",
+                  "ok": false,
+                  "feedback": "Un livre est génial pour comprendre en profondeur… mais il ne dira rien de l'éruption de cette nuit. Pour demain, il te faut du mis à jour, pas du complet."
+                },
+                {
+                  "texte": "Attends le magazine scientifique du mois prochain, ce sera mieux expliqué.",
+                  "ok": false,
+                  "feedback": "Le mois prochain ?! La prof, c'est demain. Quand le besoin est de suivre l'actu, la fraîcheur de l'info passe avant tout le reste."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok le direct, noté 👍" },
+            { "de": "eux", "texte": "et pour l'exposé de SVT sur les volcans, dans 3 semaines… je fais pareil ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, garde les alertes info, ça suffira largement.",
+                  "ok": false,
+                  "feedback": "Les alertes disent ce qui se passe maintenant, pas comment fonctionne un volcan. Autre besoin, autres outils : là il faut expliquer, donc approfondir."
+                },
+                {
+                  "texte": "Non : là tu as le temps. Encyclopédie, livre du CDI, documentaire… vise du complet et du vérifié.",
+                  "ok": true,
+                  "feedback": "C'est ça. Pour approfondir une question, tu changes de panier d'outils : des sources solides, vérifiées, quitte à ce qu'elles soient moins récentes."
+                },
+                {
+                  "texte": "Recopie les commentaires des gens sous les vidéos de l'éruption.",
+                  "ok": false,
+                  "feedback": "Les commentaires, c'est des réactions à chaud, pas des explications vérifiées. Un exposé se construit sur des sources fiables, pas sur l'émotion du moment."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "compris : demain = du frais, l'exposé = du solide 💪 deux besoins, deux plans !" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Dernière pièce du dossier : complète la méthode de l'enquêteur avec les bonnes étiquettes.",
+          "texte": "Deux missions, deux stratégies. Pour me tenir au {1} de l'éruption, je choisis des sources très {2}, mises à jour en continu. Pour approfondir ma {3} d'exposé, je prends le temps de croiser des sources {4} et vérifiées.",
+          "etiquettes": ["courant", "récentes", "question", "complètes", "amusantes", "célèbres"],
+          "reponses": ["courant", "récentes", "question", "complètes"],
+          "feedbackOk": "Tu as la boussole : c'est le besoin qui décide de la stratégie. Se tenir au courant = du frais, mis à jour ; approfondir une question = du complet, vérifié. Deux paniers d'outils différents.",
+          "feedbackKo": "La méthode : me tenir au COURANT avec des sources RÉCENTES, ou approfondir une QUESTION avec des sources COMPLÈTES. « Amusantes » et « célèbres » ne sont pas des critères pour choisir une source !"
+        }
+      ]
+    }
+  ]
+}

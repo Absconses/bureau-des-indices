@@ -1,0 +1,242 @@
+{
+  "id": "3.D1.FON.3",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Distinguer les acteurs qui interviennent dans le monde informationnel (journalistes, éditorialistes, experts, intellectuels, lanceurs d'alertes, influenceurs, artistes, etc.) et leurs rôles respectifs.",
+  "titre": "Six voix, un accident",
+  "accroche": "Une cuve explose à l'usine chimique de Verneuil : en quelques heures, six voix très différentes s'emparent de l'affaire. À toi de repérer qui enquête, qui commente, qui fait du buzz.",
+  "documents": {
+    "articleEnquete": {
+      "template": "site-article",
+      "nomSite": "L'ÉCHO DE LA SANCE",
+      "url": "https://www.echodelasance.fr/verneuil/fuite-solvatek-enquete",
+      "menu": ["Actualités", "Ma ville", "Économie", "Opinions"],
+      "surtitre": "Verneuil • Enquête",
+      "titre": "Fuite chez Solvatek : ce que révèle le rapport des pompiers",
+      "auteur": "Par Nadia Bellour, journaliste",
+      "date": "Publié jeudi à 18h32, mis à jour à 20h05",
+      "chapo": "Trois jours après l'explosion d'une cuve, notre journaliste a consulté le rapport d'intervention des pompiers et interrogé onze témoins. Voici ce que l'on sait — et ce que l'on ignore encore.",
+      "corps": [
+        "Le rapport des pompiers, que nous avons pu consulter, parle d'« une fuite de solvant limitée au périmètre de l'usine ». Interrogée, la préfecture confirme : les analyses de l'air réalisées vendredi matin sont normales.",
+        "Contactée, la direction de Solvatek n'a pas souhaité répondre à nos questions. Un salarié nous a en revanche transmis des documents internes : nous les avons fait vérifier avant d'en parler ici. La quantité exacte de solvant échappée reste, elle, inconnue à ce jour."
+      ],
+      "footer": ["Qui sommes-nous ?", "Contact", "Charte de la rédaction"]
+    },
+    "postOuragan": {
+      "template": "post",
+      "pseudo": "@MaxOuragan",
+      "avatar": "🌪️",
+      "bio": "1,2 M d'abonnés 🔥 Je réagis à TOUT avant tout le monde",
+      "texte": "ALERTE VERNEUIL 😱😱 On me dit que le nuage serait ULTRA toxique !! Je vous montre TOUT en live ce soir 21h ⚠️ Abonne-toi et partage VITE avant que ça disparaisse 🔥🔥",
+      "image": "🔴 LIVE ce soir 21h — « LA VÉRITÉ SUR VERNEUIL » — SOYEZ LÀ",
+      "likes": 48200,
+      "partages": 15300,
+      "commentaires": 4076
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le soir de l'accident, quatre personnes prennent la parole. Associe ce que fait chacune au rôle qu'elle joue dans l'info.",
+          "paires": [
+            {
+              "gauche": "Nadia interroge onze témoins, consulte le rapport des pompiers et recoupe tout avant de publier.",
+              "droite": "Journaliste : elle enquête et vérifie les faits",
+              "feedbackOk": "Oui : recouper des sources et vérifier avant de publier, c'est le cœur du métier de journaliste. Ce qu'elle produit, c'est de l'information.",
+              "feedbackKo": "Interroger des témoins et recouper les sources AVANT de publier, c'est la méthode du journaliste. Son rôle : établir les faits, pas les commenter."
+            },
+            {
+              "gauche": "Marc écrit dans sa chronique : « Cet accident prouve qu'on sacrifie nos petites villes industrielles. »",
+              "droite": "Éditorialiste : il commente et donne son avis",
+              "feedbackOk": "Exact : il part des faits, mais ce qu'il publie est un jugement. C'est un rôle légitime… à condition de savoir qu'on lit une opinion, pas une enquête.",
+              "feedbackKo": "« Prouve qu'on sacrifie… » : c'est un jugement, pas un fait vérifié. Marc est éditorialiste : son rôle est de commenter l'actualité, celui du journaliste est de l'établir."
+            },
+            {
+              "gauche": "Awa, chimiste à l'université, explique à la radio les effets de ce solvant, études scientifiques à l'appui.",
+              "droite": "Experte : elle éclaire grâce à ses connaissances",
+              "feedbackOk": "Oui : l'experte n'était pas sur place, mais elle maîtrise le sujet. Son rôle : rendre l'événement compréhensible, chiffres et études à l'appui.",
+              "feedbackKo": "Awa parle de son domaine de recherche, en citant des études : c'est le rôle de l'experte. Elle n'enquête pas sur l'accident, elle l'explique."
+            },
+            {
+              "gauche": "Rémi, technicien chez Solvatek, transmet à la presse des alertes de sécurité ignorées depuis deux ans.",
+              "droite": "Lanceur d'alerte : il révèle de l'intérieur",
+              "feedbackOk": "Exact : Rémi risque gros pour rendre publique une info que seul quelqu'un de l'intérieur pouvait connaître. C'est ça, un lanceur d'alerte.",
+              "feedbackKo": "Rémi travaille DANS l'usine et révèle ce qu'il y a vu : c'est un lanceur d'alerte. Ses documents deviennent de l'info une fois vérifiés par des journalistes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleEnquete",
+          "questions": [
+            {
+              "question": "Dans cet article, qu'est-ce qui montre que Nadia Bellour a fait un vrai travail de vérification ?",
+              "options": [
+                "Elle a consulté le rapport des pompiers et fait confirmer par la préfecture",
+                "Elle a publié dès la première rumeur pour être la plus rapide",
+                "Elle répète mot pour mot ce que dit la direction de Solvatek",
+                "Elle donne son opinion sur les responsables de l'accident"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : rapport officiel consulté, préfecture interrogée, témoins entendus. Croiser plusieurs sources avant de publier, c'est exactement ce qui distingue la journaliste des autres voix.",
+              "feedbackKo": "Relis le chapo et le premier paragraphe : elle a consulté le rapport des pompiers ET fait confirmer par la préfecture. Elle publie trois jours après, la direction n'a pas répondu, et elle ne donne aucun avis : tout l'inverse des autres options."
+            },
+            {
+              "question": "L'article précise : « La quantité exacte de solvant échappée reste inconnue à ce jour. » Pourquoi écrire ça ?",
+              "options": [
+                "Parce qu'une journaliste sérieuse dit aussi ce qu'elle ne sait pas encore",
+                "Pour rendre l'article plus long",
+                "Parce qu'elle a bâclé son enquête",
+                "Pour faire peur aux lecteurs"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : dire honnêtement « on ne sait pas encore », c'est la marque d'une info fiable. Ceux qui font du buzz, eux, affirment tout, tout de suite, sans preuve.",
+              "feedbackKo": "C'était la première option : avouer ce qu'on ignore encore est un signe de sérieux, pas de faiblesse. Compare avec le post de @MaxOuragan qui affirme tout sans aucune source : c'est l'inverse."
+            }
+          ]
+        },
+        {
+          "document": "postOuragan",
+          "questions": [
+            {
+              "question": "Sur quoi repose l'« information » donnée dans ce post ?",
+              "options": [
+                "Sur une rumeur : « on me dit que le nuage serait… »",
+                "Sur le rapport des pompiers",
+                "Sur l'analyse d'une experte en chimie",
+                "Sur des documents internes vérifiés"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien repéré : « on me dit que » + « serait » au conditionnel = aucune source, aucune vérification. Une rumeur relayée à 1,2 million de personnes reste une rumeur.",
+              "feedbackKo": "Relis le début du post : « On me dit que le nuage SERAIT ultra toxique ». Pas de rapport, pas d'expert, pas de document : juste une rumeur au conditionnel. C'est le contraire d'une info vérifiée."
+            },
+            {
+              "question": "Que cherche d'abord @MaxOuragan en publiant ce post ?",
+              "options": [
+                "Informer avec des faits vérifiés",
+                "Gagner des abonnés et des partages",
+                "Expliquer la chimie du solvant",
+                "Aider les habitants de Verneuil"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : « abonne-toi », « partage VITE », un live teasé pour ce soir… Tout est fait pour capter ton attention. Son produit, ce n'est pas l'info : c'est l'audience.",
+              "feedbackKo": "Regarde ses mots d'ordre : « Abonne-toi et partage VITE », plus un live annoncé en majuscules. Rien n'informe, tout pousse à s'abonner : ce post fabrique de l'audience, pas de l'information."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le lendemain, six publications parlent de l'accident. Classe chacune : info vérifiée, opinion assumée ou chasse à l'audience ?",
+          "categories": [
+            { "id": "info", "label": "🔍 Info vérifiée" },
+            { "id": "opinion", "label": "🗣️ Opinion assumée" },
+            { "id": "audience", "label": "📣 Chasse à l'audience" }
+          ],
+          "items": [
+            {
+              "texte": "L'article de Nadia : témoignages recoupés, rapport officiel cité",
+              "categorie": "info",
+              "feedbackOk": "Oui : sources citées, faits recoupés, signature. C'est le produit du travail journalistique : de l'information.",
+              "feedbackKo": "Témoignages recoupés + rapport officiel + article signé : tous les indices de l'info vérifiée sont là."
+            },
+            {
+              "texte": "La chronique de Marc : « Cet accident est le symbole d'un pays qui abandonne ses ouvriers »",
+              "categorie": "opinion",
+              "feedbackOk": "Exact : « symbole d'un pays qui abandonne » est un jugement. L'éditorialiste a le droit de le penser — et toi, celui de ne pas être d'accord.",
+              "feedbackKo": "« Symbole », « abandonne » : des mots qui jugent, pas qui décrivent. C'est une opinion assumée — légitime, mais à ne pas confondre avec l'enquête."
+            },
+            {
+              "texte": "L'interview d'Awa, chimiste, qui explique les effets du solvant en citant des études",
+              "categorie": "info",
+              "feedbackOk": "Oui : une scientifique qui parle de son domaine en citant des études, c'est de la connaissance vérifiée mise à la portée de tous.",
+              "feedbackKo": "Une experte identifiable + des études citées = de l'info vérifiée. Elle explique des faits établis, elle ne donne pas un avis personnel."
+            },
+            {
+              "texte": "Le dessin de Lila : le directeur de l'usine caché sous son bureau pendant que le nuage passe",
+              "categorie": "opinion",
+              "feedbackOk": "Bien vu : un dessin de presse, c'est un point de vue en image. Lila accuse le directeur de se cacher — c'est un regard d'artiste, pas un compte rendu.",
+              "feedbackKo": "Un dessin de presse exprime toujours un point de vue : ici, Lila suggère que le directeur fuit ses responsabilités. C'est de l'opinion par l'image, pas un fait vérifié."
+            },
+            {
+              "texte": "La story de @MaxOuragan : « Je vous dis TOUT ce soir en live, abonne-toi ⚠️ »",
+              "categorie": "audience",
+              "feedbackOk": "Exact : promettre TOUT et ne rien dire, c'est du teasing. Le but est que tu reviennes ce soir, pas que tu sois informé maintenant.",
+              "feedbackKo": "« Je vous dis TOUT ce soir » : il ne t'apprend rien, il te fait revenir. Suspense + abonnement = fabrique à audience."
+            },
+            {
+              "texte": "Le compte @VerneuilBuzz : « Sondage : qui est le COUPABLE ? Vote en commentaire 🔥 »",
+              "categorie": "audience",
+              "feedbackOk": "Oui : désigner un coupable par sondage, ça ne produit aucune info — mais des milliers de commentaires. Et les commentaires, ça rapporte de la visibilité.",
+              "feedbackKo": "Un sondage ne peut pas établir qui est responsable : seule une enquête le peut. Ce post cherche des commentaires, donc de la visibilité — pas la vérité."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Ton fil déborde de posts sur Verneuil. Clique seulement ceux qui relèvent d'un vrai travail d'info — laisse filer les pièges !",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "« Fuite chez Solvatek : ce que dit le rapport des pompiers » — article signé Nadia Bellour",
+              "bonne": true,
+              "feedback": "Article signé, source officielle citée : on sait qui parle et d'où vient l'info. C'est du travail journalistique."
+            },
+            {
+              "texte": "« ‼️ L'EAU DU ROBINET EST CONTAMINÉE, PARTAGE VITE AVANT CENSURE ‼️ »",
+              "bonne": false,
+              "feedback": "Majuscules + urgence + menace de censure : le combo classique pour te faire partager sans réfléchir. Aucune source, aucun auteur : on laisse filer."
+            },
+            {
+              "texte": "« Une chimiste répond à vos questions sur le solvant » — interview d'Awa Sylla, université de Roqueval",
+              "bonne": true,
+              "feedback": "Une experte identifiable qui parle de son domaine : c'est une voix qui éclaire l'événement, pas qui l'exploite."
+            },
+            {
+              "texte": "« J'étais SUR PLACE 😭 c'était l'apocalypse… abonne-toi, je balance tout demain »",
+              "bonne": false,
+              "feedback": "Émotion + suspense + appel à l'abonnement : il vend sa vidéo de demain, pas de l'information. La peur, ça fait des vues."
+            },
+            {
+              "texte": "« Solvatek offre 50 € aux 100 premiers partages pour s'excuser 🎁 »",
+              "bonne": false,
+              "feedback": "Un cadeau contre un partage, c'est la recette des arnaques. Aucune entreprise ne s'excuse en distribuant des billets sur les réseaux."
+            },
+            {
+              "texte": "« Sécurité ignorée depuis deux ans : nos révélations, documents à l'appui » — enquête citant un salarié de l'usine",
+              "bonne": true,
+              "feedback": "Un lanceur d'alerte + une rédaction qui vérifie ses documents avant publication : c'est comme ça que sortent les vraies révélations."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

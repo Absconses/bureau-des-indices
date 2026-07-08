@@ -1,0 +1,214 @@
+{
+  "id": "3.D2.RECH.1",
+  "version": 1,
+  "parcours": "3e",
+  "domaine": "D2",
+  "rubrique": "RECH",
+  "objectif": "Structurer la démarche liée au besoin d'information.",
+  "titre": "Mission stage : plan d'attaque",
+  "accroche": "Décembre approche : il te faut un stage, et pas question de chercher au hasard. Aujourd'hui tu montes ta méthode d'enquêteur — du besoin d'info au dossier final.",
+  "documents": {
+    "carnetNora": {
+      "template": "collecte",
+      "sujet": "Carnet de suivi de Nora — Besoin : stage en studio de jeux vidéo ou entreprise informatique, autour de Brévanne, semaine du 8 décembre",
+      "extraits": [
+        {
+          "texte": "Studio Luciole (jeux mobiles, Brévanne) — trouvé au moteur avec « studio jeu vidéo Brévanne ». Mail envoyé le 3 novembre. Réponse : en attente ⏳",
+          "source": "studio-luciole.fr/contact — noté le 3 novembre"
+        },
+        {
+          "texte": "Fiche « Obtenir sa convention de stage » téléchargée + liste des entreprises qui accueillent des 3e près de Brévanne.",
+          "source": "Portail public du stage de 3e — consulté le 4 novembre"
+        },
+        {
+          "texte": "Alerte créée sur « stage informatique Brévanne » : je reçois un mail dès qu'une nouvelle offre ou entreprise apparaît.",
+          "source": "Veille — alerte activée le 5 novembre"
+        },
+        {
+          "texte": "NovaChat m'a aidée à structurer mon mail de motivation 👍 Mais sur les 4 « studios de Brévanne » qu'il m'a cités, 2 n'existent pas. Vérification obligatoire.",
+          "source": "NovaChat (IA générative) — testé le 5 novembre"
+        }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "chat",
+      "famille": "scenario",
+      "xpParReussite": 25,
+      "variantes": [
+        {
+          "contact": { "nom": "Nora", "avatar": "🎮" },
+          "etapes": [
+            { "de": "eux", "texte": "c'est la panique 😱 il me faut un stage pour la semaine du 8 décembre et j'ai RIEN commencé" },
+            { "de": "eux", "texte": "toi tu gères ces trucs-là… je commence par quoi ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Tape « stage de 3e » dans un moteur et clique sur tout ce qui sort.",
+                  "ok": false,
+                  "feedback": "« Stage de 3e » tout seul, c'est des millions de pages génériques. Avant d'ouvrir un moteur, il faut savoir ce que TU cherches : c'est ton besoin d'information."
+                },
+                {
+                  "texte": "Écris d'abord ta cible : quel secteur, quelle zone, quelles dates, ce que tu veux observer.",
+                  "ok": true,
+                  "feedback": "Exactement. Secteur + lieu + dates + ce que tu veux voir : ton besoin est posé noir sur blanc. Toute la suite de l'enquête découle de cette ligne."
+                },
+                {
+                  "texte": "Attends la réunion parents-profs, quelqu'un aura bien un plan.",
+                  "ok": false,
+                  "feedback": "Attendre n'est pas une méthode. Et même un bon plan devra coller à TON besoin : secteur, lieu, dates. Définis-le d'abord, tu gagneras du temps partout."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "ok j'ai écrit : studio de jeux vidéo ou boîte d'info, autour de Brévanne, semaine du 8 décembre 🎮" },
+            { "de": "eux", "texte": "et maintenant je cherche où ? je demande direct à une IA ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Oui, demande la liste des studios de Brévanne à l'IA, c'est le plus rapide.",
+                  "ok": false,
+                  "feedback": "Piège : une IA générative peut sortir une liste très propre… avec des entreprises inventées. Elle assiste (reformuler, préparer un mail), elle ne remplace pas les outils de recherche."
+                },
+                {
+                  "texte": "Croise les outils : moteur pour les entreprises du coin, portail public pour la convention, une alerte pour la veille — et l'IA en assistant seulement.",
+                  "ok": true,
+                  "feedback": "La panoplie complète. Chaque outil couvre un morceau du besoin : trouver (moteur), cadrer les démarches (portail), rester à l'affût (veille), rédiger (IA, à vérifier)."
+                },
+                {
+                  "texte": "Un seul outil suffit : le moteur trouve tout.",
+                  "ok": false,
+                  "feedback": "Le moteur trouve des pages, mais la fiche convention est sur le portail public et les nouvelles offres arrivent par la veille. Un besoin structuré appelle plusieurs outils."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "et pour pas me perdre entre les mails, les réponses, les numéros… ?" },
+            {
+              "choix": [
+                {
+                  "texte": "Garde tout dans ta tête, t'as que 4-5 entreprises à contacter.",
+                  "ok": false,
+                  "feedback": "Au troisième mail, tu auras oublié qui a répondu quoi. Sans trace écrite, impossible de relancer au bon moment ni de remplir ton dossier à la fin."
+                },
+                {
+                  "texte": "Fais des captures d'écran de tout, tu trieras plus tard.",
+                  "ok": false,
+                  "feedback": "« Plus tard » = jamais. Quarante captures en vrac dans la galerie, ce n'est pas une trace organisée. Un tableau tenu à jour, si."
+                },
+                {
+                  "texte": "Un tableau de suivi : entreprise, contact, date, réponse. Une ligne par piste, mise à jour à chaque action.",
+                  "ok": true,
+                  "feedback": "Le carnet de bord de l'enquêteur. Tu sais qui relancer et quand, et ton dossier de stage se remplit tout seul au fil de la recherche."
+                }
+              ]
+            },
+            { "de": "eux", "texte": "besoin défini ✅ outils choisis ✅ tableau lancé ✅ c'est plus une recherche, c'est une opération commando 😎 merci !" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Plan d'opération : remets la démarche de Nora dans l'ordre, du besoin au dossier.",
+          "items": [
+            { "texte": "Définir le besoin : secteur jeux vidéo ou informatique, autour de Brévanne, semaine du 8 décembre." },
+            { "texte": "Choisir les outils adaptés : moteur pour les entreprises locales, portail public pour la convention, alerte de veille." },
+            { "texte": "Lancer les recherches et noter chaque piste dans le tableau de suivi (entreprise, contact, date)." },
+            { "texte": "Contacter les entreprises, puis mettre à jour le tableau : oui, non, en attente, à relancer." },
+            { "texte": "Rassembler toutes les traces dans le dossier final : convention, contacts, réponses, sources." }
+          ],
+          "feedbackOk": "Démarche impeccable : besoin → outils → recherche notée → contacts suivis → dossier. Chaque étape s'appuie sur la précédente : sans besoin défini, pas de bons outils ; sans traces, pas de dossier.",
+          "feedbackKo": "L'ordre logique : 1. définir le besoin, 2. choisir les outils, 3. chercher en notant tout, 4. contacter et mettre à jour le suivi, 5. rassembler le dossier. On ne choisit pas un outil avant de savoir ce qu'on cherche — et le dossier se construit au fil des traces."
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "carnetNora",
+          "questions": [
+            {
+              "question": "Jeudi, une nouvelle entreprise d'informatique s'installe à Brévanne. Grâce à quelle ligne de son carnet Nora sera-t-elle au courant sans rien faire ?",
+              "options": [
+                "Le mail envoyé au Studio Luciole",
+                "L'alerte de veille activée le 5 novembre",
+                "La fiche convention du portail public",
+                "Le mail de motivation préparé avec NovaChat"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : c'est tout l'intérêt de la veille. Une fois l'alerte posée, l'info vient à toi — pas besoin de relancer la même recherche tous les jours.",
+              "feedbackKo": "Relis la ligne du 5 novembre : « alerte créée… je reçois un mail dès qu'une nouvelle offre ou entreprise apparaît ». C'est ça, la veille : l'outil surveille à ta place, l'info vient à toi."
+            },
+            {
+              "question": "D'après le carnet, à quoi NovaChat a-t-il été vraiment utile ?",
+              "options": [
+                "À fournir une liste fiable des studios de Brévanne",
+                "À structurer le mail de motivation",
+                "À remplir la convention de stage",
+                "À répondre à la place du Studio Luciole"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : l'IA a aidé à rédiger — son rôle d'assistant. Pour les faits, en revanche, le carnet est clair : 2 « studios » inventés sur 4. On vérifie toujours ce qu'elle affirme.",
+              "feedbackKo": "Relis la dernière ligne du carnet : le mail structuré, 👍 ; la liste des studios, 2 inventés sur 4. L'IA générative est un assistant de rédaction, pas une source d'informations vérifiées."
+            }
+          ]
+        },
+        {
+          "document": "carnetNora",
+          "questions": [
+            {
+              "question": "Nora doit faire signer sa convention de stage. D'après son carnet, où a-t-elle déjà trouvé le document qu'il faut ?",
+              "options": [
+                "Sur le site du Studio Luciole",
+                "Sur le portail public du stage de 3e",
+                "Dans la réponse de NovaChat",
+                "Dans son alerte de veille"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : la fiche « Obtenir sa convention de stage » vient du portail public (ligne du 4 novembre). Pour les démarches officielles, le portail institutionnel est l'outil de référence.",
+              "feedbackKo": "Regarde la ligne du 4 novembre : fiche « Obtenir sa convention de stage » téléchargée sur le portail public. Les démarches officielles passent par les portails institutionnels, pas par une IA ni par le site d'une entreprise."
+            },
+            {
+              "question": "Tout en haut du carnet, Nora a écrit « studio de jeux vidéo ou entreprise informatique, autour de Brévanne, semaine du 8 décembre ». Cette ligne, c'est…",
+              "options": [
+                "La requête exacte à taper dans le moteur",
+                "Son besoin d'information : la boussole qui guide outils et requêtes",
+                "La formule de politesse de ses mails",
+                "Le titre imposé par le collège"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : secteur + zone + dates = besoin défini. Regarde le reste du carnet : requête du moteur, alerte de veille, liste du portail… tout découle de cette ligne.",
+              "feedbackKo": "Cette ligne est son besoin d'information formalisé : secteur, lieu, dates. Ce n'est pas une requête toute faite — mais c'est elle qui a permis de choisir la requête « studio jeu vidéo Brévanne », l'alerte et les bons outils."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "trous",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Rapport de mission : complète ta méthode, du besoin au dossier.",
+          "texte": "Je définis d'abord mon {1} : secteur, lieu, dates. Je choisis ensuite les {2} adaptés — moteur, portail, veille, IA en simple assistant. Je {3} chaque piste dans mon tableau de suivi et je garde une {4} de toutes mes sources pour le dossier final.",
+          "etiquettes": ["besoin", "outils", "note", "trace", "hasard", "likes"],
+          "reponses": ["besoin", "outils", "note", "trace"],
+          "feedbackOk": "La chaîne complète est là : BESOIN défini → OUTILS choisis → pistes NOTÉES → TRACE gardée. C'est cette méthode qui transforme une recherche au petit bonheur en dossier de stage solide.",
+          "feedbackKo": "La méthode : je définis mon BESOIN, je choisis mes OUTILS, je NOTE chaque piste, je garde une TRACE de mes sources. (Le « hasard » et les « likes » n'ont jamais décroché un stage !)"
+        }
+      ]
+    }
+  ]
+}

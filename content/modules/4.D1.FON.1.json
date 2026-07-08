@@ -1,0 +1,217 @@
+{
+  "id": "4.D1.FON.1",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D1",
+  "rubrique": "FON",
+  "objectif": "Comprendre les principaux modèles économiques des médias et de l'information.",
+  "titre": "Suis l'argent de l'info",
+  "accroche": "Un site d'actu 100 % gratuit, un journal à 1,30 € au kiosque : cherche l'erreur. Suis l'argent et découvre qui paie vraiment ton info — et avec quoi.",
+  "documents": {
+    "articleZapNews": {
+      "template": "site-article",
+      "nomSite": "ZAPNEWS.FR",
+      "url": "https://www.zapnews.fr/insolite/chaton-chateau-eau-montviel",
+      "menu": ["Accueil", "Buzz", "Insolite", "Jeux", "Tests"],
+      "surtitre": "Insolite",
+      "titre": "Un chaton bloqué trois jours en haut du château d'eau de Montviel",
+      "auteur": "Par la rédaction de ZapNews",
+      "date": "Publié aujourd'hui à 7h14 · Déjà 12 400 partages",
+      "chapo": "Le petit félin a finalement été secouru par les pompiers mercredi soir, sous les applaudissements des habitants.",
+      "corps": [
+        "Repéré lundi par une voisine, le chaton refusait de descendre malgré les croquettes déposées au pied du château d'eau. La grande échelle des pompiers a fini par régler l'affaire en dix minutes.",
+        "À lire aussi : « 10 photos d'animaux coincés que tu ne croiras JAMAIS » — notre diaporama fait le buzz."
+      ],
+      "pub": "PUBLICITÉ — SNEAKZONE ⚡ -70 % sur les baskets, plus que 2 heures ! CLIQUE VITE",
+      "footer": ["Qui sommes-nous ?", "Publicité", "Cookies et données personnelles", "Mentions légales"]
+    },
+    "uneQuotidienMontviel": {
+      "template": "une",
+      "nomJournal": "Le Quotidien de Montviel",
+      "date": "Jeudi 5 mars 2026",
+      "prix": "1,30 €",
+      "manchette": "La piscine municipale rouvrira en juin",
+      "sousTitre": "Après huit mois de travaux, le bassin accueillera à nouveau les scolaires. Notre enquête sur un chantier à deux millions d'euros.",
+      "photo": { "emoji": "🏊", "legende": "Le grand bassin en cours de carrelage, mercredi matin." },
+      "secondaires": [
+        { "rubrique": "Économie", "titre": "Notre journal passe à 1,30 € : où va votre argent ?" },
+        { "rubrique": "Sport", "titre": "Le club d'athlétisme recrute des juges bénévoles" }
+      ],
+      "sommaire": [
+        { "rubrique": "Ma ville", "page": "2" },
+        { "rubrique": "Économie", "page": "6" },
+        { "rubrique": "Sport", "page": "10" },
+        { "rubrique": "Jeux", "page": "14" }
+      ]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleZapNews",
+          "questions": [
+            {
+              "question": "Lire ZapNews ne te coûte rien. D'après cette page, qui paie pour que le site existe ?",
+              "options": [
+                "Toi, avec un abonnement mensuel",
+                "L'annonceur SneakZone, via l'encadré publicitaire",
+                "La mairie de Montviel",
+                "Personne : un site web ne coûte rien"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : l'encadré « PUBLICITÉ » finance le site. SneakZone paie pour être vu par des milliers de visiteurs — plus tu restes sur la page, plus ZapNews gagne d'argent.",
+              "feedbackKo": "Regarde l'encadré « PUBLICITÉ — SneakZone » au milieu de la page : c'est lui qui paie. Un site « gratuit » vit presque toujours de la pub — ce qu'il vend aux annonceurs, c'est ton attention."
+            },
+            {
+              "question": "Observe le menu du site et le « À lire aussi ». Que cherche surtout ZapNews ?",
+              "options": [
+                "T'informer en profondeur sur ta région",
+                "Te faire cliquer et rester le plus longtemps possible",
+                "Vendre son journal papier",
+                "T'aider à préparer tes exposés"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : Buzz, Insolite, Jeux, diaporama « que tu ne croiras JAMAIS »… Tout est conçu pour retenir ton attention, car chaque minute passée sur le site affiche plus de pubs. C'est l'économie de l'attention.",
+              "feedbackKo": "Relis le menu : Buzz, Insolite, Jeux, Tests — et un diaporama racoleur en fin d'article. Ce site vend ton temps de cerveau aux annonceurs : plus tu restes, plus il gagne. C'est ça, l'économie de l'attention."
+            }
+          ]
+        },
+        {
+          "document": "uneQuotidienMontviel",
+          "questions": [
+            {
+              "question": "D'après sa Une, d'où vient d'abord l'argent de ce journal ?",
+              "options": [
+                "Des lecteurs, qui l'achètent 1,30 € au kiosque",
+                "Uniquement de la publicité",
+                "Il est gratuit, donc de nulle part",
+                "Des réseaux sociaux qui le partagent"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : le prix est affiché en haut de la Une, à côté de la date. Quand le lecteur paie, c'est lui le client — le journal travaille d'abord pour lui, pas pour les annonceurs.",
+              "feedbackKo": "Regarde en haut de la Une, près de la date : « 1,30 € ». Ce journal vit de la vente au numéro et des abonnements : c'est le lecteur qui finance l'information."
+            },
+            {
+              "question": "Un article de la Une annonce : « Notre journal passe à 1,30 € : où va votre argent ? ». Que paies-tu surtout avec ces 1,30 € ?",
+              "options": [
+                "Le travail des journalistes et l'impression du journal",
+                "Des publicités supplémentaires",
+                "La collecte de tes données personnelles",
+                "Un cadeau surprise glissé dans chaque numéro"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Exact : enquêter, vérifier, écrire, imprimer, livrer… tout cela coûte cher. Payer l'info, c'est payer ce travail — et le journal dépend alors moins des annonceurs.",
+              "feedbackKo": "L'encadré « Économie » de la Une donnait la piste : ton argent paie le travail des journalistes et l'impression. Retiens la règle : quand c'est payant, tu es le client ; quand c'est gratuit, c'est souvent ton attention qu'on vend."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Suis l'argent ! Associe chaque média à ce qui le fait vivre.",
+          "paires": [
+            {
+              "gauche": "Site d'actu gratuit, bardé de bannières publicitaires",
+              "droite": "Les annonceurs paient pour capter ton attention",
+              "feedbackOk": "Oui : le site est gratuit pour toi parce que les marques paient pour être vues. Le vrai produit vendu, c'est ton temps passé sur la page.",
+              "feedbackKo": "Un site gratuit plein de pubs vit de ses annonceurs : ils paient pour capter ton attention. Gratuit pour toi ne veut pas dire gratuit pour tout le monde."
+            },
+            {
+              "gauche": "Journal à 1,30 € au kiosque, avec ses abonnés",
+              "droite": "Les lecteurs paient directement l'information",
+              "feedbackOk": "Exact : vente au numéro et abonnements, c'est le modèle le plus ancien. Le lecteur qui paie est le client — le journal travaille pour lui.",
+              "feedbackKo": "Le journal vendu 1,30 € vit de ses lecteurs : achats au kiosque et abonnements. Quand tu paies, c'est toi le client, pas l'annonceur."
+            },
+            {
+              "gauche": "Appli d'actu gratuite qui demande ton âge, tes goûts et ta position",
+              "droite": "Tes données personnelles servent à vendre de la pub ciblée",
+              "feedbackOk": "Bien vu : ces infos permettent d'afficher des pubs taillées pour toi, vendues plus cher aux annonceurs. Tes données sont une monnaie — la CNIL encadre d'ailleurs leur collecte.",
+              "feedbackKo": "Âge, goûts, position : l'appli collecte tes données pour vendre de la pub ciblée, bien plus chère. Quand c'est gratuit ET sans pub visible, demande-toi ce que tu donnes en échange."
+            },
+            {
+              "gauche": "Radio publique, sans publicité ou presque",
+              "droite": "L'argent public la finance pour tout le monde",
+              "feedbackOk": "Exact : certains médias sont financés par l'argent public pour garantir une info accessible à tous, sans dépendre des annonceurs.",
+              "feedbackKo": "Une radio sans pub qui vit quand même : c'est le financement public. L'État finance certains médias pour que l'info reste accessible à tous."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "zone",
+      "famille": "exploration",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "articleZapNews",
+          "consigne": "ZapNews est 100 % gratuit pour toi. Touche l'endroit exact de la page qui montre qui paie à ta place.",
+          "cibles": ["pub"],
+          "essaisMax": 3,
+          "indices": [
+            "Ce n'est ni le titre ni l'article lui-même. Cherche ce qui essaie de te vendre quelque chose…",
+            "Repère le gros encadré marqué « PUBLICITÉ », au milieu de la page."
+          ],
+          "feedbackOk": "Trouvé ! Cet encadré rapporte de l'argent à ZapNews chaque fois qu'il s'affiche ou qu'on clique dessus. Site gratuit = payé par la pub : ton attention est sa matière première.",
+          "feedbackKo": "C'était l'encadré « PUBLICITÉ — SneakZone », au milieu de la page. Retiens : un site gratuit vit de la pub. Chaque visiteur qui reste et qui clique fait gagner de l'argent au site."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "defile",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "L'économie de l'attention t'attaque ! Clique les messages qui disent honnêtement qui paie. Laisse filer les pièges à clics.",
+          "tempsParProposition": 8,
+          "propositions": [
+            {
+              "texte": "⚡ DERNIÈRE CHANCE !!! CLIQUE MAINTENANT ou tu vas TOUT RATER !!!",
+              "bonne": false,
+              "feedback": "Piège à clics : urgence + majuscules + points d'exclamation, le trio classique pour te faire cliquer sans réfléchir. Chaque clic pressé rapporte de l'argent publicitaire."
+            },
+            {
+              "texte": "Abonnement : 4,90 €/mois, sans engagement. Vous financez le travail de nos journalistes.",
+              "bonne": true,
+              "feedback": "Message honnête : prix affiché, tu sais qui paie (toi) et pour quoi (le travail des journalistes). C'est le modèle abonnement, joué franc jeu."
+            },
+            {
+              "texte": "🎁 Un téléphone GRATUIT offert aux 50 premiers qui cliquent !",
+              "bonne": false,
+              "feedback": "Le cadeau impossible est un appât : personne n'offre des téléphones. Le but réel : récolter tes clics et tes données personnelles."
+            },
+            {
+              "texte": "Article sponsorisé — contenu payé par la marque Vitaboost (mention affichée).",
+              "bonne": true,
+              "feedback": "La mention « sponsorisé » est obligatoire : elle t'avertit que ce contenu est de la pub payée par une marque. Annoncer qui paie, c'est jouer franc jeu."
+            },
+            {
+              "texte": "😱 Les profs te le CACHENT : l'astuce n°7 va te choquer…",
+              "bonne": false,
+              "feedback": "Appel à l'émotion + faux mystère : la recette du piège à clics. On te promet un choc pour te faire rester… et t'afficher un maximum de pubs."
+            },
+            {
+              "texte": "Cette radio est financée par l'argent public : pas de publicité à l'antenne.",
+              "bonne": true,
+              "feedback": "Transparent : le financement public est annoncé clairement. Tu sais d'où vient l'argent, donc tu peux mieux juger l'information."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

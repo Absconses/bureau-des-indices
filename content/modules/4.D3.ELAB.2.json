@@ -1,0 +1,194 @@
+{
+  "id": "4.D3.ELAB.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D3",
+  "rubrique": "ELAB",
+  "objectif": "Adapter son choix de langage et de format en fonction de l'objectif et du public visés pour mettre en valeur un contenu original.",
+  "titre": "Un scoop, trois versions",
+  "accroche": "Le club journal tient un super reportage : une matinée dans les cuisines de la cantine. À toi de le décliner pour les 6e, les parents et le compte du collège — même info, trois styles.",
+  "documents": {
+    "postCollege": {
+      "template": "post",
+      "pseudo": "@college.troistilleuls",
+      "avatar": "🏫",
+      "bio": "Compte officiel du collège des Trois-Tilleuls",
+      "texte": "🍽️ 450 repas par jour ! Les reporters du club journal ont passé une matinée dans les cuisines du collège 👀 Reportage complet vendredi dans « Le Tilleul Déchaîné » ➡ lien en bio #ClubJournal",
+      "likes": 87,
+      "partages": 12,
+      "commentaires": 9
+    },
+    "articleSixiemes": {
+      "template": "site-article",
+      "nomSite": "LE TILLEUL DÉCHAÎNÉ",
+      "url": "https://letilleuldechaine.blog-college.fr/cantine-coulisses",
+      "menu": ["Accueil", "Reportages", "Jeux", "La rédac'"],
+      "surtitre": "Reportage",
+      "titre": "On a infiltré la cantine (et on a tout vu)",
+      "corps": [
+        "Tu t'es déjà demandé ce qui se passe derrière la porte des cuisines ? Nous, oui. Alors à 7 h du matin, on y est allés.",
+        "Le chef, M. Bergeon, nous a tout montré : les marmites géantes, les 40 kg de carottes à éplucher, et le mystère du gratin du jeudi enfin résolu.",
+        "Notre conseil : dis merci au cuisinier vendredi. Après ce qu'on a vu, il le mérite."
+      ],
+      "footer": ["La rédac'", "Contact"]
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "paires",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "La rédaction a préparé quatre versions du reportage cantine. Lis chaque extrait et associe-le à son public.",
+          "paires": [
+            {
+              "gauche": "« On a infiltré la cantine (et on a tout vu) » — tutoiement, blagues, photos marrantes",
+              "droite": "Les 6e — le journal des élèves",
+              "feedbackOk": "Oui : ton complice, humour, tutoiement — tout est choisi pour donner envie aux plus jeunes de lire jusqu'au bout.",
+              "feedbackKo": "Tutoiement + blagues + « on a infiltré » : ce ton complice s'adresse aux élèves, pas aux adultes. C'est la version 6e."
+            },
+            {
+              "gauche": "« Madame, Monsieur, le club journal vous ouvre les coulisses de la restauration scolaire » — vouvoiement, ton posé",
+              "droite": "Les parents — la lettre d'information",
+              "feedbackOk": "Exact : vouvoiement, vocabulaire soigné (« restauration scolaire »), ton sérieux — la panoplie complète pour s'adresser aux parents.",
+              "feedbackKo": "« Madame, Monsieur » + vouvoiement + « restauration scolaire » : ce registre formel vise les parents. Le langage se choisit selon le lecteur."
+            },
+            {
+              "gauche": "« 🍽️ 450 repas par jour ! Nos reporters ont tout vu 👀 #ClubJournal » — deux phrases et un lien",
+              "droite": "Le compte du collège — post de réseau social",
+              "feedbackOk": "Oui : très court, emojis, hashtag, chiffre choc — l'écriture des réseaux, où tout se joue en deux secondes de défilement.",
+              "feedbackKo": "Emojis + hashtag + deux phrases : c'est le format des réseaux sociaux. Sur un fil, un pavé de texte ne serait jamais lu."
+            },
+            {
+              "gauche": "« La fabrique d'un repas : enquête au cœur des cuisines » — article long, chiffres et sources vérifiés",
+              "droite": "Le jury du concours des journaux scolaires",
+              "feedbackOk": "Bien vu : pour un jury, on sort le grand jeu — enquête fouillée, sources vérifiées, écriture travaillée. Public exigeant, format exigeant.",
+              "feedbackKo": "Article long + sources + chiffres vérifiés : ce format « dossier » vise un lecteur exigeant, comme un jury. Plus le public attend, plus on soigne la forme."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postCollege",
+          "questions": [
+            {
+              "question": "Compare ce post à un article de journal. Quel choix la rédaction a-t-elle fait pour l'adapter au réseau social ?",
+              "options": [
+                "Tout raconter en détail, du début à la fin de la visite",
+                "Un message très court avec emojis, qui renvoie vers l'article complet",
+                "Un texte sans aucune information, juste des hashtags",
+                "Reprendre mot pour mot la lettre envoyée aux parents"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Oui : sur un réseau, on capte l'attention en quelques secondes — chiffre choc, emojis, et un lien vers l'article pour ceux qui veulent la suite. Le format commande la longueur.",
+              "feedbackKo": "Relis le post : un chiffre qui accroche (450 repas !), des emojis, et « reportage complet vendredi ». Sur un réseau social, on va à l'essentiel et on renvoie vers la version longue."
+            },
+            {
+              "question": "Pourquoi le post commence-t-il par « 450 repas par jour ! » ?",
+              "options": [
+                "C'est le seul chiffre que la rédaction connaissait",
+                "Pour accrocher ceux qui font défiler leur fil à toute vitesse",
+                "Parce qu'un post doit obligatoirement commencer par un chiffre",
+                "Pour rallonger le message"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : sur un fil, tout défile vite — un chiffre étonnant placé en premier fait s'arrêter le pouce. C'est un choix d'écriture pensé pour ce format précis.",
+              "feedbackKo": "Sur un réseau social, chacun défile très vite : le chiffre choc en ouverture sert d'hameçon. Ce n'est pas une règle obligatoire, c'est un choix adapté au format et à l'objectif."
+            }
+          ]
+        },
+        {
+          "document": "articleSixiemes",
+          "questions": [
+            {
+              "question": "Quels indices montrent que cet article vise les élèves ?",
+              "options": [
+                "Le vouvoiement et les informations pratiques",
+                "Le tutoiement, l'humour et les anecdotes (le gratin du jeudi)",
+                "Les termes techniques de cuisine professionnelle",
+                "L'absence totale d'informations"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Bien vu : « Tu t'es déjà demandé… », le mystère du gratin, le conseil complice… Ton et anecdotes sont choisis pour donner envie de lire aux élèves.",
+              "feedbackKo": "Relis le début : « Tu t'es déjà demandé… » — tutoiement, humour, anecdotes. Chaque public a son ton : ici, la rédaction parle aux élèves comme à des copains."
+            },
+            {
+              "question": "La lettre aux parents racontera la MÊME visite. Qu'est-ce qui devra changer ?",
+              "options": [
+                "Les faits : on invente une autre histoire pour les parents",
+                "Le ton et la forme : vouvoiement, infos pratiques, pas d'argot",
+                "Rien : un bon texte fonctionne pour tout le monde",
+                "Tout mettre en majuscules pour faire sérieux"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : les faits ne bougent pas, mais le ton, le vocabulaire et la forme s'adaptent au lecteur. C'est ça, mettre en valeur un même contenu.",
+              "feedbackKo": "Les faits restent identiques — on n'invente rien ! Ce qui change, c'est la forme : vouvoiement, ton posé, informations pratiques. Adapter n'est pas déformer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "surligner",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Aïe : la lettre aux parents contient encore des restes de la version élèves. Surligne les expressions qui ne conviennent pas à ce public.",
+          "texte": "Madame, Monsieur, le club journal a visité les cuisines du collège. Le chef, *hyper sympa*, nous a montré la préparation des 450 repas quotidiens. Le reportage complet, *carrément stylé*, paraîtra vendredi dans notre journal. *Ça déchire* — venez le *mater* à l'accueil !",
+          "feedbackOk": "Parfait : « hyper sympa », « carrément stylé », « ça déchire », « mater » — super entre copains, hors sujet dans un courrier qui commence par « Madame, Monsieur ». Le registre familier trahit un texte mal adapté.",
+          "feedbackKo": "Il fallait repérer « hyper sympa », « carrément stylé », « ça déchire » et « mater » : du registre familier, parfait entre élèves mais déplacé dans une lettre formelle. Relis toujours ton texte en pensant à ton lecteur."
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur l'art d'adapter un texte à son public ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Adapter le ton au public, c'est déformer l'information.",
+              "vrai": false,
+              "feedback": "Faux. Les faits restent identiques, seule la forme change. Adapter, c'est mettre en valeur — pas trahir."
+            },
+            {
+              "texte": "Sur un réseau social, un texte court avec un lien vers l'article complet est un bon choix.",
+              "vrai": true,
+              "feedback": "Vrai. Sur un fil, tout se joue en quelques secondes : on accroche, puis on renvoie vers la version longue."
+            },
+            {
+              "texte": "Les emojis conviennent partout, même dans une lettre officielle aux parents.",
+              "vrai": false,
+              "feedback": "Faux. Les emojis vont bien sur un post, pas dans un courrier formel. Chaque format a ses codes."
+            },
+            {
+              "texte": "Un même reportage peut exister en plusieurs versions selon le lecteur visé.",
+              "vrai": true,
+              "feedback": "Vrai. C'est le travail quotidien des rédactions : un contenu, plusieurs habillages selon le public et le support."
+            },
+            {
+              "texte": "Écrire simplement pour les 6e, c'est les prendre pour des bébés.",
+              "vrai": false,
+              "feedback": "Faux. Rendre clair ce qui est compliqué, c'est le sommet du métier — les meilleurs journalistes écrivent simple."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

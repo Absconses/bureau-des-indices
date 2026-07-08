@@ -1,0 +1,212 @@
+{
+  "id": "4.D2.EVAL.2",
+  "version": 1,
+  "parcours": "4e",
+  "domaine": "D2",
+  "rubrique": "EVAL",
+  "objectif": "Identifier la logique et la pertinence d'une argumentation et la qualité des preuves pour la justifier.",
+  "titre": "Des preuves en béton ?",
+  "accroche": "« Les écrans empêchent de dormir ! » Vrai ? Faux ? Avant de trancher le débat, apprends à peser les preuves : certaines sont en béton, d'autres s'écroulent au premier courant d'air.",
+  "documents": {
+    "postLeo": {
+      "template": "post",
+      "pseudo": "@Leo_Duplex",
+      "avatar": "🎮",
+      "bio": "Jeux vidéo, foot, memes. Élève au collège des Tilleuls 🎓",
+      "texte": "Les écrans qui empêchent de dormir ?? 😂 Mon cousin joue à la console TOUS les soirs et il dort comme un bébé. Donc c'est FAUX pour tout le monde, arrêtez avec ça. Débat terminé 🎤⬇️",
+      "likes": 89,
+      "partages": 12,
+      "commentaires": 47
+    },
+    "postVigie": {
+      "template": "post",
+      "pseudo": "@VigieSommeil",
+      "avatar": "🌙",
+      "bio": "On alerte sur le sommeil des ados — compte tenu par des parents de Valmond-sur-Cère",
+      "texte": "😱 INFO CHOC : dans notre ville, les ados qui dorment le moins sont AUSSI ceux qui passent le plus de temps sur les réseaux. La preuve DÉFINITIVE que les réseaux détruisent le sommeil !! Partage pour sauver un ado 🙏",
+      "likes": 312,
+      "partages": 154,
+      "commentaires": 68
+    }
+  },
+  "activites": [
+    {
+      "id": "A1",
+      "type": "ordre",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Grand débat au CDI : « les écrans empêchent-ils de dormir ? ». Quatre preuves arrivent sur ton bureau. Classe-les de la PLUS FRAGILE à la PLUS SOLIDE.",
+          "items": [
+            { "texte": "« Il paraît que les écrans empêchent de dormir. Qui l'a dit ? Aucune idée, ça tourne dans les couloirs. »" },
+            { "texte": "« Mon grand frère joue tard tous les soirs et lui, il dort super mal. »" },
+            { "texte": "« Sondage au collège Berlize : 62 % des 320 élèves interrogés disent moins bien dormir après un écran le soir. »" },
+            { "texte": "« Étude de chercheurs sur 2 400 ados suivis pendant deux ans : l'écran le soir retarde l'endormissement. »" }
+          ],
+          "feedbackOk": "Tu viens de construire l'échelle des preuves : rumeur < témoignage isolé < sondage < étude scientifique. Plus une preuve repose sur de nombreux cas observés avec méthode, plus elle est solide.",
+          "feedbackKo": "L'ordre était : rumeur (personne ne sait d'où ça vient), témoignage isolé (une seule personne), sondage (des centaines d'avis), étude scientifique (des milliers de cas, une méthode vérifiée). Retiens cette échelle : elle sert dans tous les débats."
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "qcm",
+      "famille": "questionnement",
+      "xpParReussite": 30,
+      "variantes": [
+        {
+          "document": "postLeo",
+          "questions": [
+            {
+              "question": "Sur l'échelle des preuves, que vaut l'argument de Léo ?",
+              "options": [
+                "Une étude scientifique : il a bien observé son cousin",
+                "Un sondage : il a demandé autour de lui",
+                "Un témoignage isolé : une seule personne, son cousin",
+                "Une rumeur : personne ne sait d'où ça vient"
+              ],
+              "bonnes": [2],
+              "feedbackOk": "Exact : toute sa « preuve » repose sur UNE personne, son cousin. Un témoignage isolé, c'est le deuxième barreau en partant du bas de l'échelle des preuves.",
+              "feedbackKo": "Relis le post : son seul argument, c'est son cousin. Une seule personne = témoignage isolé, juste au-dessus de la rumeur sur l'échelle des preuves."
+            },
+            {
+              "question": "Léo conclut : « DONC c'est FAUX pour tout le monde ». Quel est le piège ?",
+              "options": [
+                "La généralisation abusive : un seul cas ne prouve rien pour tous",
+                "Le faux lien de cause à effet : il confond cause et coïncidence",
+                "Aucun piège : un contre-exemple suffit à clore le débat",
+                "Le mensonge : son cousin n'existe sûrement pas"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien démasqué : passer de « mon cousin » à « tout le monde », c'est la généralisation abusive. Son cousin existe peut-être vraiment — mais il ne prouve rien pour les autres.",
+              "feedbackKo": "Le piège était la généralisation abusive : Léo passe d'UN cas (son cousin) à une règle pour TOUT LE MONDE. Un exemple, même vrai, ne prouve jamais une généralité."
+            }
+          ]
+        },
+        {
+          "document": "postVigie",
+          "questions": [
+            {
+              "question": "Qu'a réellement observé ce compte ?",
+              "options": [
+                "Que les réseaux détruisent le sommeil de tous les ados",
+                "Que deux faits vont souvent ensemble : moins de sommeil et plus de réseaux",
+                "Que les ados de la ville dorment de mieux en mieux",
+                "Rien du tout : il n'y a aucune observation dans ce post"
+              ],
+              "bonnes": [1],
+              "feedbackOk": "Exact : ils ont observé que deux choses vont ensemble, c'est tout. Le post transforme cette simple observation en « preuve DÉFINITIVE » — c'est là que ça dérape.",
+              "feedbackKo": "Relis bien : le post observe seulement que deux faits vont ensemble (moins de sommeil, plus de réseaux). Une observation, ce n'est pas encore une preuve de cause."
+            },
+            {
+              "question": "« Ils dorment moins ET vont plus sur les réseaux, DONC les réseaux détruisent le sommeil. » Quel est le piège ?",
+              "options": [
+                "Le faux lien de cause à effet : rien ne dit qui cause quoi",
+                "La généralisation abusive : un seul ado a été observé",
+                "Aucun piège : le raisonnement se tient parfaitement",
+                "Le hors-sujet : ce post ne parle pas de sommeil"
+              ],
+              "bonnes": [0],
+              "feedbackOk": "Bien vu : deux faits liés ne disent pas qui cause quoi. Peut-être que ces ados vont sur les réseaux PARCE QU'ils n'arrivent pas à dormir ! Il faudrait une étude pour trancher.",
+              "feedbackKo": "Le piège était le faux lien de cause à effet : les deux faits vont ensemble, mais rien ne prouve que l'un cause l'autre. Peut-être qu'ils scrollent parce qu'ils ne dorment pas — et pas l'inverse !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "tri",
+      "famille": "manipulation",
+      "xpParReussite": 15,
+      "variantes": [
+        {
+          "consigne": "Le débat fait rage en commentaires. Trie ces arguments : lesquels sont piégés, et comment ?",
+          "categories": [
+            { "id": "general", "label": "🐑 Généralisation abusive" },
+            { "id": "cause", "label": "🔗 Faux lien de cause à effet" },
+            { "id": "solide", "label": "✅ Argument solide" }
+          ],
+          "items": [
+            {
+              "texte": "Mon cousin joue à la console tous les soirs et il dort très bien. Donc les écrans ne gênent personne.",
+              "categorie": "general",
+              "feedbackOk": "Bien vu : un seul cousin ne prouve rien pour des millions de gens. Passer de « une personne » à « tout le monde », c'est la généralisation abusive.",
+              "feedbackKo": "C'était une généralisation abusive : un seul cas (le cousin) ne peut pas prouver que c'est vrai pour tout le monde."
+            },
+            {
+              "texte": "Ma voisine n'a jamais eu d'écran et pourtant elle dort mal. Donc les écrans n'ont rien à voir avec le sommeil.",
+              "categorie": "general",
+              "feedbackOk": "Exact : une seule voisine ne suffit pas à conclure pour tous. Un cas isolé, même vrai, ne prouve pas une règle générale.",
+              "feedbackKo": "C'était encore une généralisation abusive : tirer une règle générale d'un seul cas (la voisine), c'est aller trop vite."
+            },
+            {
+              "texte": "Les élèves qui dorment mal sont aussi ceux qui utilisent le plus leur téléphone le soir. La cause, c'est donc forcément le téléphone.",
+              "categorie": "cause",
+              "feedbackOk": "Bravo : deux faits qui vont ensemble, ça ne dit pas qui cause quoi. Peut-être qu'ils prennent leur téléphone PARCE QU'ils n'arrivent pas à dormir !",
+              "feedbackKo": "C'était un faux lien de cause à effet : les deux faits vont ensemble, mais rien ne dit lequel cause l'autre. Peut-être qu'ils prennent le téléphone parce qu'ils ne dorment pas !"
+            },
+            {
+              "texte": "Il y a plus d'écrans qu'avant, et plus d'élèves fatigués qu'avant. La preuve que l'un cause l'autre !",
+              "categorie": "cause",
+              "feedbackOk": "Oui : deux choses qui augmentent en même temps n'ont pas forcément de lien. Les ventes de trottinettes aussi ont augmenté… elles fatiguent les élèves ?",
+              "feedbackKo": "Faux lien de cause à effet : deux courbes qui montent en même temps ne prouvent aucun lien. Plein de choses ont augmenté « depuis avant » sans être coupables."
+            },
+            {
+              "texte": "Une étude menée sur 2 400 ados pendant deux ans montre que l'écran le soir retarde l'endormissement d'environ 30 minutes.",
+              "categorie": "solide",
+              "feedbackOk": "Exact : beaucoup de personnes, une longue durée, une mesure précise. C'est le haut de l'échelle des preuves.",
+              "feedbackKo": "C'était l'argument solide : une étude sur 2 400 ados pendant deux ans, avec une mesure précise. C'est ça, le haut de l'échelle des preuves."
+            },
+            {
+              "texte": "Des chercheurs ont mesuré en laboratoire que la lumière des écrans freine la mélatonine, l'hormone du sommeil.",
+              "categorie": "solide",
+              "feedbackOk": "Oui : des chercheurs, une mesure en laboratoire, un mécanisme expliqué. C'est une preuve scientifique, pas une impression.",
+              "feedbackKo": "C'était un argument solide : des chercheurs, une mesure en laboratoire, un mécanisme expliqué. Rien à voir avec une rumeur ou un ressenti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A4",
+      "type": "gonogo",
+      "famille": "reflexe",
+      "xpParReussite": 10,
+      "variantes": [
+        {
+          "consigne": "Mode chrono ! Vrai ou faux sur les preuves et les pièges du débat ?",
+          "tempsParQuestion": 8,
+          "enonces": [
+            {
+              "texte": "Une rumeur répétée par 100 personnes devient une preuve solide.",
+              "vrai": false,
+              "feedback": "Faux. Répéter une rumeur ne la rend pas plus vraie : sans source identifiable, elle reste tout en bas de l'échelle des preuves."
+            },
+            {
+              "texte": "Une étude scientifique sur des milliers de personnes pèse plus lourd qu'un témoignage isolé.",
+              "vrai": true,
+              "feedback": "Vrai. Plus il y a de cas observés avec méthode, plus la preuve est solide : c'est le principe même de l'échelle des preuves."
+            },
+            {
+              "texte": "« Mon cousin dort très bien avec les écrans » prouve que c'est vrai pour tout le monde.",
+              "vrai": false,
+              "feedback": "Faux. C'est la généralisation abusive : un seul cas, même réel, ne prouve jamais une règle pour tous."
+            },
+            {
+              "texte": "Deux faits qui arrivent en même temps ont forcément un lien de cause à effet.",
+              "vrai": false,
+              "feedback": "Faux. C'est le piège du faux lien de cause à effet : une coïncidence n'est pas une cause. Il faut une étude pour le prouver."
+            },
+            {
+              "texte": "Un sondage dit ce que les gens pensent ou ressentent, pas ce qui est scientifiquement prouvé.",
+              "vrai": true,
+              "feedback": "Vrai. Un sondage est utile, mais il mesure des avis. Pour prouver, il faut une étude avec une méthode — le barreau au-dessus."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

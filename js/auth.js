@@ -72,6 +72,16 @@ export function connecterInvite() {
   localStorage.setItem(CLE_SESSION, 'INVITE');
 }
 
+/* Mode professeur : session locale (jamais synchronisée, jamais comptée
+   dans les statistiques de classe) pour explorer et tester les modules. */
+export function connecterProf() {
+  localStorage.setItem(CLE_SESSION, 'PROF');
+}
+
+export function estProf() {
+  return sessionActive() === 'PROF';
+}
+
 export function deconnecter() {
   localStorage.removeItem(CLE_SESSION);
 }

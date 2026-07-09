@@ -7,6 +7,7 @@
 import { el } from './ui.js';
 import { getProgramme } from './content.js';
 import { estConfigure, tableauProf } from './sync/supabase.js';
+import { connecterProf } from './auth.js';
 
 function badge(medaille, pct) {
   const codes = { or: 'OR', argent: 'AR', bronze: 'BR' };
@@ -117,11 +118,21 @@ export async function ecranProf(app) {
       'Mode local : seules les progressions enregistrées sur CET appareil apparaissent. Une fois Supabase configuré (docs/deploiement.md), ce tableau couvrira toute la classe, protégé par mot de passe.');
   }
 
+  const boutonModeProf = el('button', { class: 'btn-secondary', type: 'button', style: 'margin-top:24px' },
+    '🎓 Explorer les modules en mode professeur');
+  boutonModeProf.addEventListener('click', () => {
+    connecterProf();
+    location.hash = '#/';
+  });
+
   app.replaceChildren(el('div', { class: 'ecran' },
     el('a', { class: 'retour', href: '#/' }, '← Retour'),
     el('h1', { class: 'titre-ecran' }, 'Suivi de classe'),
     el('p', { class: 'sous-titre' },
       'Couverture des objectifs du programme par élève, parcours par parcours. Chaque colonne est un objectif d’apprentissage officiel — survole les en-têtes pour le lire en entier.'),
-    contenu
+    contenu,
+    boutonModeProf,
+    el('p', { class: 'sous-titre', style: 'margin-top:8px;font-size:12px' },
+      'Le mode professeur ouvre les trois parcours pour préparer tes séances : ta progression d’essai reste sur cet appareil et n’entre jamais dans les statistiques de classe.')
   ));
 }

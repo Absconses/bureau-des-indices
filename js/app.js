@@ -4,7 +4,7 @@ import { el, barreProgression } from './ui.js';
 import { getProgramme, getDomaine, getModule } from './content.js';
 import { getEtat, grade, progressionModule } from './state.js';
 import { jouerModule } from './engine.js';
-import { sessionActive, estInvite, connecter, connecterInvite, deconnecter, normaliserCode, codeValide, compteExiste } from './auth.js';
+import { sessionActive, estInvite, estProf, connecter, connecterInvite, deconnecter, normaliserCode, codeValide, compteExiste } from './auth.js';
 import { estConfigure, synchroniser } from './sync/supabase.js';
 import { ecranProf } from './prof.js';
 
@@ -145,10 +145,10 @@ async function ecranAccueil() {
 
   app.replaceChildren(el('div', { class: 'ecran' },
     el('div', { class: 'agent' },
-      el('span', { class: 'agent__avatar', 'aria-hidden': 'true' }, '🕵️'),
+      el('span', { class: 'agent__avatar', 'aria-hidden': 'true' }, estProf() ? '🎓' : '🕵️'),
       el('div', {},
-        el('p', { class: 'agent__nom' }, estInvite() ? 'Agent invité' : 'Agent ' + etat.code),
-        el('p', { class: 'agent__grade' }, 'Grade · ' + grade())),
+        el('p', { class: 'agent__nom' }, estProf() ? 'Professeur' : estInvite() ? 'Agent invité' : 'Agent ' + etat.code),
+        el('p', { class: 'agent__grade' }, estProf() ? 'Accès complet · hors statistiques' : 'Grade · ' + grade())),
       el('div', { class: 'agent__xp' }, el('b', {}, String(etat.xp)), el('span', {}, 'XP')),
       boutonSortie
     ),
@@ -156,10 +156,12 @@ async function ecranAccueil() {
     el('p', { class: 'sous-titre' }, 'Choisis un dossier et mène l’enquête sur l’info.'),
     pills,
     el('div', { class: 'pile-cartes' }, cartes),
-    (estInvite() || !estConfigure()) && el('div', { class: 'note-demo' },
-      estInvite()
-        ? el('span', {}, el('b', {}, 'Mode invité. '), 'Ta progression reste sur cet appareil. Avec un code distribué par ton professeur, elle compte pour ta classe.')
-        : el('span', {}, el('b', {}, 'Mode local. '), 'La synchronisation Supabase n’est pas encore configurée : la progression reste sur cet appareil (voir docs/deploiement.md).'))
+    (estProf() || estInvite() || !estConfigure()) && el('div', { class: 'note-demo' },
+      estProf()
+        ? el('span', {}, el('b', {}, 'Mode professeur. '), 'Les trois parcours sont ouverts pour préparer tes séances. Ta progression d’essai reste sur cet appareil, hors statistiques de classe.')
+        : estInvite()
+          ? el('span', {}, el('b', {}, 'Mode invité. '), 'Ta progression reste sur cet appareil. Avec un code distribué par ton professeur, elle compte pour ta classe.')
+          : el('span', {}, el('b', {}, 'Mode local. '), 'La synchronisation Supabase n’est pas encore configurée : la progression reste sur cet appareil (voir docs/deploiement.md).'))
   ));
 }
 

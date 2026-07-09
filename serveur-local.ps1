@@ -25,6 +25,7 @@ while ($listener.IsListening) {
   if ((Test-Path $fichier -PathType Leaf) -and ((Resolve-Path $fichier).Path.StartsWith($racine))) {
     $ext = [System.IO.Path]::GetExtension($fichier).ToLower()
     $ctx.Response.ContentType = if ($mimes[$ext]) { $mimes[$ext] } else { 'application/octet-stream' }
+    $ctx.Response.Headers.Add('Cache-Control', 'no-store')   # dev local : toujours la dernière version
     $octets = [System.IO.File]::ReadAllBytes($fichier)
     $ctx.Response.ContentLength64 = $octets.Length
     try { $ctx.Response.OutputStream.Write($octets, 0, $octets.Length) } catch {}

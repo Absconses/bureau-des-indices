@@ -53,7 +53,11 @@ function ecranConnexion() {
     if (!compteExiste(code) && blocPin2.hidden) {
       blocPin2.hidden = false;
       champPin2.focus();
-      montrerErreur('Première connexion avec ce code ! Choisis bien ton PIN (tu en auras besoin à chaque fois), puis confirme-le.');
+      // En mode Supabase, un code inconnu de CET appareil peut être un élève
+      // qui a déjà son PIN ailleurs : message neutre pour les deux cas.
+      montrerErreur(estConfigure()
+        ? 'Ce code n’a encore jamais été utilisé sur cet appareil : tape ton PIN une deuxième fois pour confirmer. (Première connexion ? Ce PIN devient ton code secret — retiens-le bien.)'
+        : 'Première connexion avec ce code ! Choisis bien ton PIN (tu en auras besoin à chaque fois), puis confirme-le.');
       return;
     }
     if (!blocPin2.hidden && champPin2.value.trim() !== pin) {

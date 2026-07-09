@@ -16,13 +16,18 @@ export function estConfigure() {
 }
 
 async function rpc(fonction, params) {
+  const entetes = {
+    'Content-Type': 'application/json',
+    'apikey': CONFIG.SUPABASE_ANON_KEY
+  };
+  // Anciennes clés « anon » = JWT (eyJ…) : PostgREST attend aussi un Bearer.
+  // Nouvelles clés « sb_publishable_… » : l'en-tête apikey suffit.
+  if (CONFIG.SUPABASE_ANON_KEY.startsWith('eyJ')) {
+    entetes['Authorization'] = `Bearer ${CONFIG.SUPABASE_ANON_KEY}`;
+  }
   const reponse = await fetch(`${CONFIG.SUPABASE_URL}/rest/v1/rpc/${fonction}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'apikey': CONFIG.SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${CONFIG.SUPABASE_ANON_KEY}`
-    },
+    headers: entetes,
     body: JSON.stringify(params)
   });
   if (!reponse.ok) throw new Error(`RPC ${fonction} : ${reponse.status} ${await reponse.text()}`);

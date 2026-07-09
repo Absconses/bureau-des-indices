@@ -67,7 +67,7 @@ create or replace function connexion_eleve(p_code text, p_pin text)
 returns json
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   v_eleve eleves%rowtype;
@@ -100,7 +100,7 @@ create or replace function reinitialiser_pin(p_mdp text, p_code text)
 returns json
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 begin
   if not exists (select 1 from prof where mdp_hash = crypt(p_mdp, mdp_hash)) then
@@ -118,7 +118,7 @@ create or replace function enregistrer_evenements(p_jeton uuid, p_evenements jso
 returns json
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   v_code text;
@@ -152,7 +152,7 @@ create or replace function tableau_prof(p_mdp text, p_classe text default null)
 returns json
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 begin
   if not exists (select 1 from prof where mdp_hash = crypt(p_mdp, mdp_hash)) then

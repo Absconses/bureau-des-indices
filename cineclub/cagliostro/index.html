@@ -248,6 +248,12 @@ select.pick.wrong { border: 2px solid var(--bad); background: var(--bad-soft); }
 .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .seg button { font: 700 .85rem var(--f-body); padding: 7px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); cursor: pointer; }
 .seg button[aria-pressed="true"][data-v="enqueteur"] { background: var(--jacket-soft); border-color: var(--jacket); }
+.salon { display: grid; gap: 12px; }
+.salon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.salon-item { border: 1px solid var(--line); border-radius: 8px; padding: 10px; display: grid; gap: 8px; background: var(--surface-2); }
+.salon-item.correct { border-color: var(--good); background: var(--good-soft); }
+.salon-item.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.salon-item p { font-size: .92rem; }
 .seg button[aria-pressed="true"][data-v="bandit"] { background: var(--goat-soft); border-color: var(--goat); }
 .sort-card.correct { border-color: var(--good); box-shadow: inset 0 0 0 1px var(--good); }
 .sort-card.wrong { border-color: var(--bad); box-shadow: inset 0 0 0 1px var(--bad); }
@@ -398,7 +404,7 @@ select.pick.wrong { border: 2px solid var(--bad); background: var(--bad-soft); }
       <div class="mission-head">
         <span class="when avant">Avant ou après le film</span>
         <h2>Du détective au bandit</h2>
-        <p class="consigne">Le roman policier est d'abord l'histoire d'un enquêteur. Puis le voleur devient à son tour le héros. <strong>Pour chaque personnage, indique qui est le héros de l'histoire : un enquêteur ou un bandit.</strong></p>
+        <p class="consigne">Le roman policier est d'abord l'histoire d'un enquêteur. Puis le voleur devient à son tour le héros. <strong>Pour chaque personnage, indique qui est le héros de l'histoire : un enquêteur ou un bandit.</strong> Puis découvre ce que le genre gagne en changeant de héros : il quitte le salon pour la rue.</p>
       </div>
       <div class="sort-grid" id="sort-grid"></div>
       <div class="actions">
@@ -409,6 +415,22 @@ select.pick.wrong { border: 2px solid var(--bad); background: var(--bad-soft); }
         <div class="panel" style="display:grid;gap:12px">
           <span class="label">La frise : vert = le héros enquête, rouge = le héros vole</span>
           <div class="frise-wrap"><div class="frise" id="frise"></div></div>
+        </div>
+      </div>
+      <div class="panel salon">
+        <span class="label">Du salon à la rue</span>
+        <h3>Le cerveau ou le corps ?</h3>
+        <p>Le polar classique (le <em>whodunit</em>, « qui l'a fait ? ») est un jeu de réflexion : tout se résout dans un salon, assis, par la seule force de l'intelligence. Quand le héros devient un bandit, l'histoire descend dans la rue : on court, on saute, on prend des coups. <strong>Range chaque élément : salon du détective ou rue du bandit ?</strong></p>
+        <div class="salon-grid" id="salon-grid"></div>
+        <div class="actions">
+          <button class="btn primary" id="salon-check">Vérifier</button>
+          <span class="verdict" id="salon-verdict" aria-live="polite"></span>
+        </div>
+        <div class="synth" id="salon-synth" hidden>
+          <h3>Le polar retrouve l'action.</h3>
+          <p><strong>Le salon, une prison confortable.</strong> Chez Agatha Christie, le crime se résout autour d'une tasse de thé, comme un problème de mathématiques. Poirot fait travailler ses « petites cellules grises », Holmes sa logique. Le héros réfléchit dans un fauteuil.</p>
+          <p><strong>Le retour du corps.</strong> Avec le bandit (et avec le détective privé fauché du roman noir américain), on sort dans la rue et dans la nuit. Le héros court sur les toits comme Nico ou Lupin, il transpire, il est blessé. L'action remplace la déduction.</p>
+          <p><strong>Le panache contre le fauteuil.</strong> Prendre le parti du hors-la-loi, c'est aussi tourner le dos au monde riche et un peu froid des énigmes classiques, peuplé d'aristocrates et de grands bourgeois. Le bandit a de l'énergie, de l'agilité et du panache. Dans <em>Cagliostro</em>, on le sent dès les premières minutes : un casse au casino puis une course-poursuite en Fiat, pas un interrogatoire.</p>
         </div>
       </div>
       <div class="quiz-grid" id="genre-quiz"></div>
@@ -756,10 +778,52 @@ select.pick.wrong { border: 2px solid var(--bad); background: var(--bad-soft); }
       options: ["Un policier honnête doit parfois ruser contre sa propre hiérarchie pour que la vérité éclate.", "Zenigata est devenu un voleur.", "Interpol est le méchant du film."],
       why: "Zenigata reste un policier, et il repart même à la poursuite de Lupin dans la dernière scène. Mais le film montre que l'institution est bloquée par la politique : la justice ne passe qu'en contournant les règles." }
   ];
+  const SALON = [
+    ["Un fauteuil, une tasse de thé et une pièce fermée", "enqueteur"],
+    ["Les toits de la ville, la nuit", "bandit"],
+    ["Les « petites cellules grises » qui réfléchissent", "enqueteur"],
+    ["Une course-poursuite en voiture", "bandit"],
+    ["Tous les suspects réunis pour écouter la solution", "enqueteur"],
+    ["Prendre des coups, transpirer, être blessé", "bandit"],
+    ["Un crime résolu comme un problème de maths", "enqueteur"],
+    ["Du panache, de l'agilité, de l'énergie", "bandit"]
+  ];
+  const salonGrid = document.getElementById("salon-grid");
+  const salonState = {};
+  shuffle(SALON.map((x, i) => i)).forEach(i => {
+    const [t] = SALON[i];
+    const c = el("div", { class: "salon-item" });
+    c.dataset.i = i;
+    c.innerHTML = `<p>${t}</p>`;
+    const seg = el("div", { class: "seg", role: "group", "aria-label": t });
+    [["enqueteur", "Salon du détective"], ["bandit", "Rue du bandit"]].forEach(([v, lbl]) => {
+      const b = el("button", { type: "button", "data-v": v, "aria-pressed": "false" }, lbl);
+      b.addEventListener("click", () => {
+        salonState[i] = v;
+        seg.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+        c.classList.remove("correct", "wrong");
+      });
+      seg.appendChild(b);
+    });
+    c.appendChild(seg);
+    salonGrid.appendChild(c);
+  });
+  let salonOk = false;
+  document.getElementById("salon-check").addEventListener("click", () => {
+    let ok = 0;
+    SALON.forEach(([, v], i) => {
+      const c = salonGrid.querySelector(`[data-i="${i}"]`);
+      c.classList.remove("correct", "wrong");
+      if (salonState[i] === v) { c.classList.add("correct"); ok++; } else c.classList.add("wrong");
+    });
+    const v = document.getElementById("salon-verdict");
+    if (ok === SALON.length) { v.textContent = "Tout est bien rangé !"; v.className = "verdict ok"; document.getElementById("salon-synth").hidden = false; salonOk = true; maybeM4(); }
+    else { v.textContent = `${ok} sur ${SALON.length}. Corrige les cases rouges.`; v.className = "verdict ko"; }
+  });
   buildQuiz("genre-quiz", GENRE_Q, "__m4quiz");
   function maybeM4() {
     const solved = document.querySelectorAll('#genre-quiz .qcard[data-solved="1"]').length === GENRE_Q.length;
-    if (sortOk && solved) markDone("m4");
+    if (sortOk && salonOk && solved) markDone("m4");
   }
   // le quiz de la mission 4 se valide en même temps que le tri
   const _markDone = markDone;
